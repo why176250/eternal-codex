@@ -1,0 +1,63 @@
+import type { Metadata } from "next";
+import { getGuides } from "@/lib/guides";
+import { GuideCard } from "@/components/GuideCard";
+
+export const metadata: Metadata = {
+  title: "Guides",
+  description:
+    "Launch-week guides for World of Warcraft: Forever — rulesets, leveling routes, dual spec, professions, and the systems that matter on the international realms.",
+  alternates: { canonical: "/guides" },
+};
+
+export default function GuidesPage() {
+  const guides = getGuides();
+
+  return (
+    <main>
+      <section className="border-b border-line/60">
+        <div className="container-x py-14 md:py-20">
+          <p className="eyebrow">Guides</p>
+          <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
+            Guides for launch week and beyond
+          </h1>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+            Short, decision-focused guides instead of ten-thousand-word
+            everything-pages. Each one states when it was last checked and how
+            confident we are in the data.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="container-x py-12">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {guides.map((guide) => (
+              <GuideCard key={guide.slug} guide={guide} />
+            ))}
+          </div>
+
+          <div className="panel mt-10 flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="eyebrow">Next up</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Hardcore preparation, pre-raid best-in-slot per class, addon
+                compatibility, and gold routes for the first auction house
+                reset. The roadmap lives on the{" "}
+                <a href="/about" className="text-gold/90 hover:text-gold-soft">
+                  about page
+                </a>
+                .
+              </p>
+            </div>
+            <a
+              href="/about#corrections"
+              className="shrink-0 rounded-lg border border-line px-4 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+            >
+              Report a correction
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "thunderfury",
+    "name": "Thunderfury, Blessed Blade of the Windseeker",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Legendary",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "The iconic tank sword. Its thunderfury proc is the reason every raid wants one — threat and mitigation in a single weapon."
+  },
+  {
+    "id": "sulfuras",
+    "name": "Sulfuras, Hand of Ragnaros",
+    "slot": "Two-Hand Mace",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Legendary",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "The classic two-hander flex. Whoever wields it owns the raid's melee spotlight."
+  },
+  {
+    "id": "arcanite-reaper",
+    "name": "Arcanite Reaper",
+    "slot": "Two-Hand Axe",
+    "type": "Weapon",
+    "level": 58,
+    "quality": "Rare",
+    "sourceType": "Craft",
+    "source": "Blacksmithing",
+    "note": "Affordable warrior leveling weapon near 60. Still the best 'done by the time you hit the level cap' craft."
+  },
+  {
+    "id": "dalrend-sacred",
+    "name": "Dal'Rend's Sacred Charge",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 58,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Upper Blackrock Spire",
+    "note": "Half of the Dal'Rend set. Strong pre-raid choice for warriors and rogues alike."
+  },
+  {
+    "id": "dalrend-tribal",
+    "name": "Dal'Rend's Tribal Guardian",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 58,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Upper Blackrock Spire",
+    "note": "The off-hand half of the set. Together they define the Dal'Rend two-sword look."
+  },
+  {
+    "id": "viskag",
+    "name": "Vis'kag the Bloodletter",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Dungeon",
+    "source": "Upper Blackrock Spire",
+    "note": "A fast sword with a bleed proc — a pre-raid staple for melee DPS."
+  },
+  {
+    "id": "brutality-blade",
+    "name": "Brutality Blade",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "High-end rogue and warrior DPS sword. When it drops, the loot drama starts."
+  },
+  {
+    "id": "perditions-blade",
+    "name": "Perdition's Blade",
+    "slot": "Dagger",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "Dagger rogue priority. The bleed proc adds real damage on long fights."
+  },
+  {
+    "id": "azuresong-mageblade",
+    "name": "Azuresong Mageblade",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "Caster weapon with strong spell power for its slot. A common first raid upgrade for mages and warlocks."
+  },
+  {
+    "id": "robe-of-the-archmage",
+    "name": "Robe of the Archmage",
+    "slot": "Chest",
+    "type": "Cloth Armor",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Craft",
+    "source": "Tailoring",
+    "note": "Crafted caster chest and often the first 'real' epic a spellcaster owns."
+  },
+  {
+    "id": "nightfall",
+    "name": "Nightfall",
+    "slot": "Two-Hand Mace",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Craft",
+    "source": "Blacksmithing",
+    "note": "A group-support weapon: its proc increases spell damage taken by the target. One per raid can be huge."
+  },
+  {
+    "id": "hand-of-justice",
+    "name": "Hand of Justice",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 56,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Blackrock Depths",
+    "note": "Melee trinket that procs extra attacks. Worth more than its rarity suggests."
+  },
+  {
+    "id": "blackhands-breadth",
+    "name": "Blackhand's Breadth",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 60,
+    "quality": "Rare",
+    "sourceType": "Quest",
+    "source": "Upper Blackrock Spire",
+    "note": "Crit trinket from the UBRS quest line. A pre-raid checklist item for most DPS."
+  },
+  {
+    "id": "royal-seal",
+    "name": "Royal Seal of Eldre'Thalas",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 60,
+    "quality": "Rare",
+    "sourceType": "Quest",
+    "source": "Dire Maul",
+    "note": "Caster trinket from the Dire Maul quest chain. Useful well into early raiding."
+  },
+  {
+    "id": "ironfoe",
+    "name": "Ironfoe",
+    "slot": "One-Hand Mace",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Dungeon",
+    "source": "Blackrock Depths",
+    "note": "Extra-attack proc mace and a famous BRD chase item. Its drop rate is the punchline."
+  },
+  {
+    "id": "crown-of-destruction",
+    "name": "Crown of Destruction",
+    "slot": "Head",
+    "type": "Cloth Armor",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "Caster helm with fire-damage synergy, ideal for early fire spec raiders."
+  },
+  {
+    "id": "quel-serar",
+    "name": "Quel'Serrar",
+    "slot": "One-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Quest",
+    "source": "Dire Maul",
+    "note": "Tanking sword from the forging quest. Requires a raid drop and a group willing to run the chain."
+  },
+  {
+    "id": "lionheart-helm",
+    "name": "Lionheart Helm",
+    "slot": "Head",
+    "type": "Plate Armor",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Craft",
+    "source": "Blacksmithing",
+    "note": "Crit-focused plate helm and a pre-raid best-in-slot for warriors."
+  },
+  {
+    "id": "devilsaur-gauntlets",
+    "name": "Devilsaur Gauntlets",
+    "slot": "Hands",
+    "type": "Leather Armor",
+    "level": 55,
+    "quality": "Epic",
+    "sourceType": "Craft",
+    "source": "Leatherworking",
+    "note": "Hit and crit leather gloves from the Devilsaur set. Feral druids and rogues both want them."
+  },
+  {
+    "id": "choker-of-the-fire-lord",
+    "name": "Choker of the Fire Lord",
+    "slot": "Neck",
+    "type": "Necklace",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "note": "Spell power neck and an early caster upgrade that lasts through the first raid tier."
+  }
+]
