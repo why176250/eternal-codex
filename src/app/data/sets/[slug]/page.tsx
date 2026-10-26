@@ -18,9 +18,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const set = foreverSets.find((s) => String(s.id) === slug);
   if (!set) return { title: "Set not found" };
+  const label = set.nameEn ?? set.name;
   return {
-    title: `${set.name} — item set`,
-    description: `${set.name}: ${set.itemCount} pieces. ${set.class}.`,
+    title: `${label} — item set`,
+    description: `${label}${set.nameEn ? ` (${set.name})` : ""}: ${set.itemCount} pieces. ${set.class}.`,
     alternates: { canonical: `/data/sets/${set.id}` },
   };
 }
@@ -39,7 +40,7 @@ export default async function SetPage({
       <div className="container-x pt-8 text-xs text-muted">
         <Link href="/data" className="hover:text-gold-soft">Data</Link>{" "}
         / <Link href="/data/sets" className="hover:text-gold-soft">Sets</Link>{" "}
-        / <span className="text-parchment/80">{set.name}</span>
+        / <span className="text-parchment/80">{set.nameEn ?? set.name}</span>
       </div>
 
       <section className="container-x pb-20 pt-8">
@@ -49,8 +50,11 @@ export default async function SetPage({
             <span className="text-muted">{set.itemCount} pieces</span>
           </div>
           <h1 className="display mt-4 text-3xl text-parchment md:text-4xl">
-            {set.name}
+            {set.nameEn ?? set.name}
           </h1>
+          {set.nameEn ? (
+            <p className="mt-1 text-sm text-muted">{set.name}</p>
+          ) : null}
 
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {set.items.map((item) => (

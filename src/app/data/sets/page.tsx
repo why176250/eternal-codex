@@ -3,6 +3,20 @@ import Link from "next/link";
 import { foreverSets } from "@/lib/forever";
 import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 
+const classEn: Record<string, string> = {
+  "全部/通用": "All / General",
+  "战士": "Warrior",
+  "圣骑士": "Paladin",
+  "猎人": "Hunter",
+  "盗贼": "Rogue",
+  "牧师": "Priest",
+  "萨满": "Shaman",
+  "法师": "Mage",
+  "术士": "Warlock",
+  "德鲁伊": "Druid",
+  "死亡骑士": "Death Knight",
+};
+
 export const metadata: Metadata = {
   title: "Set data — Forever item sets",
   description:
@@ -39,7 +53,7 @@ export default function SetsPage() {
                 href={`#set-${encodeURIComponent(name)}`}
                 className="rounded-full border border-line px-3 py-1.5 text-muted transition-colors hover:border-gold/40 hover:text-parchment"
               >
-                {name}
+                {classEn[name] ?? name}
               </a>
             ))}
           </div>
@@ -53,7 +67,7 @@ export default function SetsPage() {
         <div className="container-x py-12">
           {classNames.map((name) => (
             <div key={name} id={`set-${encodeURIComponent(name)}`} className="mb-12 scroll-mt-24">
-              <h2 className="display text-2xl text-parchment">{name}</h2>
+              <h2 className="display text-2xl text-parchment">{classEn[name] ?? name}</h2>
               <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {groups.get(name)!.map((set) => (
                   <Link
@@ -62,9 +76,9 @@ export default function SetsPage() {
                     className="panel panel-hover flex items-center justify-between gap-3 p-4"
                   >
                     <div className="min-w-0">
-                      <p className="truncate text-sm text-parchment">{set.name}</p>
+                      <p className="truncate text-sm text-parchment">{set.nameEn ?? set.name}</p>
                       <p className="mt-1 text-xs text-muted">
-                        {set.itemCount} pieces
+                        {set.nameEn ? `${set.name} · ` : ""}{set.itemCount} pieces
                       </p>
                     </div>
                     <span className="text-xs text-gold/80">→</span>
