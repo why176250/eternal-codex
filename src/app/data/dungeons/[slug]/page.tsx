@@ -19,7 +19,7 @@ export async function generateMetadata({
   const dungeon = foreverDungeons.find((d) => d.id === slug);
   if (!dungeon) return { title: "Dungeon not found" };
   return {
-    title: `${dungeon.nameZh} ${dungeon.name} — dungeon data`,
+    title: `${dungeon.name} — dungeon data`,
     description: dungeon.desc || dungeon.note,
     alternates: { canonical: `/data/dungeons/${dungeon.id}` },
   };
@@ -65,9 +65,9 @@ export default async function ForeverDungeonPage({
             ) : null}
             <div>
               <h1 className="display text-3xl text-parchment md:text-4xl">
-                {dungeon.nameZh}
+                {dungeon.name}
               </h1>
-              <p className="mt-1 text-base text-muted">{dungeon.name}</p>
+              <p className="mt-1 text-base text-muted">{dungeon.nameZh}</p>
             </div>
           </div>
 

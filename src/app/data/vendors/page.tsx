@@ -42,6 +42,7 @@ export default function VendorsPage() {
             profession. Useful for planning a profession push or pricing
             crafts on the auction house.
           </p>
+          <p className="mt-3"><span className="badge">Names: EN pending</span></p>
           <div className="mt-6">
             <ForeverSourceNote />
           </div>

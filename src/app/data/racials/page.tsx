@@ -44,8 +44,8 @@ export default function RacialsPage() {
                   />
                 ) : null}
                 <div>
-                  <h2 className="display text-xl text-parchment">{race.raceZh}</h2>
-                  <p className="text-xs text-muted">{race.factionZh}</p>
+                  <h2 className="display text-xl text-parchment">{race.raceEn}</h2>
+                  <p className="text-xs text-muted">{race.raceZh} · {race.factionEn}</p>
                 </div>
               </div>
 
@@ -53,16 +53,17 @@ export default function RacialsPage() {
                 {race.abilities.map((ability) => (
                   <li key={`${ability.sid}-${ability.name}`} className="border-t border-line/50 pt-3 text-sm">
                     <div className="flex items-center justify-between gap-3">
-                      <span className="text-parchment">{ability.name}</span>
+                      <span className="text-parchment">{ability.nameEn}</span>
+                      <span className="ml-2 text-[11px] text-muted">{ability.name}</span>
                       <span className={ability.type === "active" ? "badge" : "badge badge-teal"}>
                         {ability.type}
                       </span>
                     </div>
-                    {ability.info ? (
-                      <p className="mt-1 text-[11px] text-muted">{ability.info}</p>
+                    {ability.infoEn ? (
+                      <p className="mt-1 text-[11px] text-muted">{ability.infoEn}</p>
                     ) : null}
-                    {ability.desc ? (
-                      <p className="mt-1 leading-relaxed text-muted">{ability.desc}</p>
+                    {ability.descEn ? (
+                      <p className="mt-1 leading-relaxed text-muted">{ability.descEn}</p>
                     ) : null}
                   </li>
                 ))}

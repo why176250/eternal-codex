@@ -23,6 +23,7 @@ export default function AbilitiesPage() {
             12,799 abilities from the Forever client, searchable by name and
             school. The index loads on demand so the page stays fast.
           </p>
+          <p className="mt-3"><span className="badge">Names: EN pending</span></p>
           <div className="mt-6">
             <ForeverSourceNote />
           </div>

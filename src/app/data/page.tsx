@@ -20,8 +20,9 @@ export default function DataPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Every dataset the site carries, grouped by what it answers. The Forever
-            data set (dungeons, sets, racials, vendor recipes, and hunter pets)
-            comes from the Sargeras community project and is imported as-is.
+            data set comes from the Sargeras community project as a scaffold;
+            English names are being filled in and pages without a verified
+            English name are marked <span className="badge">EN pending</span>.
           </p>
         </div>
       </section>

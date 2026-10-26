@@ -23,6 +23,7 @@ export default function ForeverGuidesPage() {
             Class quests, crafting speed gear, PvP ranks, and hidden books —
             written by the Sargeras community and imported here in full.
           </p>
+          <p className="mt-3"><span className="badge">Chinese text · EN pending</span></p>
           <div className="mt-6">
             <ForeverSourceNote />
           </div>

@@ -43,11 +43,12 @@ export default function HunterPetsPage() {
             {foreverPets.families.map((family) => (
               <div key={family.slug} className="panel p-4 text-sm">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-parchment">{family.name}</span>
+                  <span className="text-parchment">{family.nameEn}</span>
+                  <span className="ml-2 text-[11px] text-muted">{family.name}</span>
                   {family.isNew ? <span className="badge">New</span> : null}
                 </div>
                 <p className="mt-1 text-xs text-muted">
-                  Diet: {family.diet || "—"}
+                  Diet: {family.dietEn || "—"}
                 </p>
                 <p className="mt-1 text-xs text-muted">
                   Damage {family.dmgMod ?? 0} · Armor {family.armorMod ?? 0} · HP{" "}
@@ -56,7 +57,12 @@ export default function HunterPetsPage() {
                 {family.fastestSpeed ? (
                   <p className="mt-1 text-xs text-muted">
                     Fastest: {family.fastestSpeed}
-                    {family.fastestName ? ` (${family.fastestName})` : ""}
+                    {(() => {
+                      const fastest = foreverPets.beasts.find(
+                        (b) => b.nameZh === family.fastestName,
+                      );
+                      return fastest ? ` (${fastest.name})` : family.fastestName ? ` (${family.fastestName})` : "";
+                    })()}
                   </p>
                 ) : null}
               </div>
@@ -74,7 +80,7 @@ export default function HunterPetsPage() {
               return (
                 <details key={family.slug} className="panel p-4">
                   <summary className="cursor-pointer select-none text-sm text-parchment">
-                    {family.name}{" "}
+                    {family.nameEn}{" "}
                     <span className="text-xs text-muted">({beasts.length} beasts)</span>
                   </summary>
                   <div className="mt-3 overflow-x-auto">

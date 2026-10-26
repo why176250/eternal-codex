@@ -72,13 +72,13 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
         </button>
       </div>
 
-      <div className="mt-5 grid gap-4 lg:grid-cols-3">
+      <div className="mt-5 grid gap-4">
         {current.trees.map((tree, treeIndex) => (
           <div key={tree.tabId} className="panel p-3">
             <div className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
               <p className="text-sm text-parchment">
-                {tree.name}
-                <span className="ml-2 text-[11px] text-muted">{tree.nameEn}</span>
+                {tree.nameEn || tree.name}
+                <span className="ml-2 text-[11px] text-muted">{tree.name}</span>
               </p>
               <span className="text-xs text-gold-soft">{treePoints(treeIndex)}</span>
             </div>
@@ -108,7 +108,7 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                       title={rankText || talent.reqText || talent.nameEn}
                     >
                       <span className="block truncate text-[11px] leading-tight text-parchment">
-                        {talent.name}
+                        {talent.nameEn || talent.name}
                       </span>
                       <span className="mt-0.5 block text-[10px] text-muted">
                         {value}/{talent.maxRanks}

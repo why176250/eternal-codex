@@ -58,10 +58,10 @@ export default function ForeverDungeonsPage() {
                 ) : null}
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-sm text-parchment">{dungeon.nameZh}</span>
+                    <span className="text-sm text-parchment">{dungeon.name}</span>
                     {dungeon.isNew ? <span className="badge">New</span> : null}
                   </div>
-                  <p className="truncate text-xs text-muted">{dungeon.name}</p>
+                  <p className="truncate text-xs text-muted">{dungeon.nameZh}</p>
                   <p className="mt-1 text-[11px] text-muted/80">
                     {dungeon.band} · {dungeon.location}
                   </p>
@@ -90,8 +90,8 @@ export default function ForeverDungeonsPage() {
                       />
                     ) : null}
                     <div>
-                      <p className="text-sm text-parchment">{raid.nameZh}</p>
-                      <p className="text-xs text-muted">{raid.name}</p>
+                      <p className="text-sm text-parchment">{raid.name}</p>
+                      <p className="text-xs text-muted">{raid.nameZh}</p>
                       <p className="mt-1 text-[11px] text-muted/80">
                         {raid.band} · {raid.location}
                       </p>
@@ -111,8 +111,8 @@ export default function ForeverDungeonsPage() {
               <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {routes.map((route) => (
                   <div key={route.id} className="panel p-4 text-sm">
-                    <p className="text-parchment">{route.nameZh}</p>
-                    <p className="mt-1 text-xs text-muted">{route.name}</p>
+                    <p className="text-parchment">{route.name}</p>
+                    <p className="mt-1 text-xs text-muted">{route.nameZh}</p>
                   </div>
                 ))}
               </div>

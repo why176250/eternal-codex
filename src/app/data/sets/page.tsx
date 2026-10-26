@@ -31,6 +31,7 @@ export default function SetsPage() {
             Dungeon sets, PvP sets, and Forever-specific sets, grouped the way
             the source groups them. Open a set to see its pieces.
           </p>
+          <p className="mt-3"><span className="badge">Names: EN pending</span></p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs">
             {classNames.map((name) => (
               <a
