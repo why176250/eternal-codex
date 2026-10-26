@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
 
@@ -25,6 +26,26 @@ export default function GuidesPage() {
             everything-pages. Each one states when it was last checked and how
             confident we are in the data.
           </p>
+          <div className="mt-6 flex flex-wrap gap-2 text-xs">
+            <Link
+              href="/guides"
+              className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5 text-gold-soft"
+            >
+              All guides
+            </Link>
+            <Link
+              href="/guides/professions"
+              className="rounded-full border border-line px-3 py-1.5 text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+            >
+              Profession guides
+            </Link>
+            <Link
+              href="/guides/pvp"
+              className="rounded-full border border-line px-3 py-1.5 text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+            >
+              PvP
+            </Link>
+          </div>
         </div>
       </section>
 

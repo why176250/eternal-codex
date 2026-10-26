@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { getGuides } from "@/lib/guides";
 import { bisClasses, classes, dungeons, items } from "@/lib/data";
+import { dataItems, toolItems } from "@/lib/sections";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -15,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${site.url}/zh`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${site.url}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/data`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/guides/professions`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${site.url}/guides/pvp`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
   ];
 
   const guideRoutes: MetadataRoute.Sitemap = getGuides().map((guide) => ({
@@ -52,6 +57,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const toolRoutes: MetadataRoute.Sitemap = toolItems
+    .filter((tool) => tool.status === "planned")
+    .map((tool) => ({
+      url: `${site.url}/tools/${tool.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    }));
+
+  const dataRoutes: MetadataRoute.Sitemap = dataItems
+    .filter((item) => item.status === "planned")
+    .map((item) => ({
+      url: `${site.url}/data/${item.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    }));
+
   return [
     ...staticRoutes,
     ...guideRoutes,
@@ -59,5 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...bisRoutes,
     ...itemRoutes,
     ...dungeonRoutes,
+    ...toolRoutes,
+    ...dataRoutes,
   ];
 }

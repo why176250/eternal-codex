@@ -5,6 +5,7 @@ import { GuideCard } from "@/components/GuideCard";
 import { ClassCard } from "@/components/ClassCard";
 import { qualityColors } from "@/lib/data";
 import { site } from "@/lib/site";
+import { sections } from "@/lib/sections";
 
 const startHere = [
   {
@@ -106,6 +107,44 @@ export default function HomePage() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* Three sections */}
+      <section className="border-t border-line/60">
+        <div className="container-x py-16">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Browse by section</p>
+              <h2 className="display mt-2 text-2xl text-parchment md:text-3xl">
+                Tools, guides, and data
+              </h2>
+            </div>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {sections.map((section) => (
+              <Link
+                key={section.id}
+                href={section.href}
+                className="panel panel-hover flex h-full flex-col p-6"
+              >
+                <p className="eyebrow">{section.label}</p>
+                <h3 className="display mt-3 text-xl text-parchment">
+                  {section.label === "Tools"
+                    ? "Plan it"
+                    : section.label === "Guides"
+                      ? "Learn it"
+                      : "Look it up"}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {section.blurb}
+                </p>
+                <span className="mt-auto pt-5 text-xs text-gold/80">
+                  Open {section.label.toLowerCase()} →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

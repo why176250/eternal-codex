@@ -13,11 +13,9 @@ export const site = {
 };
 
 export const nav = [
+  { href: "/tools", label: "Tools" },
   { href: "/guides", label: "Guides" },
-  { href: "/bis", label: "BiS" },
-  { href: "/classes", label: "Classes" },
-  { href: "/database", label: "Database" },
-  { href: "/dungeons", label: "Dungeons" },
+  { href: "/data", label: "Data" },
   { href: "/about", label: "About" },
 ];
 

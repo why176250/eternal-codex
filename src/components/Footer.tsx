@@ -9,11 +9,9 @@ export function Footer() {
   const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
 
   const zhLabels: Record<string, string> = {
-    "/guides": "指南",
-    "/bis": "BiS 清单",
-    "/classes": "职业",
-    "/database": "数据库",
-    "/dungeons": "副本",
+    "/tools": "工具",
+    "/guides": "攻略",
+    "/data": "数据",
     "/about": "关于",
   };
 
