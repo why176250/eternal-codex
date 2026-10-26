@@ -56,6 +56,28 @@ export const bisClasses: BisClass[] = [
           "Move to Onyxia and Molten Core for the pendant and ring.",
         ],
       },
+      {
+        id: "protection",
+        name: "Protection",
+        role: "Tank",
+        summary:
+          "Tanking gear is the least verified corner of our database. These are the threat and stamina pieces we can defend today; treat the list as a starting point, not a full mitigation set.",
+        picks: [
+          { slot: "Main Hand", itemId: "quel-serar", note: "Tanking sword from the Dire Maul forging quest." },
+          { slot: "Off Hand", itemId: "draconian-deflector", note: "UBRS shield; stamina and block value." },
+          { slot: "Head", itemId: "lionheart-helm", note: "Threat and crit; mitigation comes later." },
+          { slot: "Back", itemId: "cape-of-the-black-baron" },
+          { slot: "Trinket", itemId: "hand-of-justice", note: "Extra attacks generate threat." },
+          { slot: "Trinket", itemId: "blackhands-breadth" },
+          { slot: "Neck", itemId: "onyxia-tooth-pendant" },
+          { slot: "Ring", itemId: "band-of-accaria" },
+        ],
+        farmOrder: [
+          "Finish the Quel'Serrar chain in Dire Maul.",
+          "Farm UBRS for the Draconian Deflector.",
+          "BRD for Hand of Justice, then raid for the pendant and ring.",
+        ],
+      },
     ],
   },
   {
@@ -115,6 +137,27 @@ export const bisClasses: BisClass[] = [
           "Finish the Dire Maul chain for Royal Seal.",
           "Run Molten Core for the mageblade and Choker.",
           "Add BWL for Neltharion's Tear once the raid is stable.",
+        ],
+      },
+      {
+        id: "fire",
+        name: "Fire",
+        role: "DPS",
+        summary:
+          "Fire is the raid spec you level second. The caster gear is the same as Frost; once hit-capped, crit and spell damage are the only upgrades that matter.",
+        picks: [
+          { slot: "Head", itemId: "whitemane-chapeau" },
+          { slot: "Chest", itemId: "robe-of-the-archmage" },
+          { slot: "Main Hand", itemId: "azuresong-mageblade" },
+          { slot: "Neck", itemId: "choker-of-the-fire-lord" },
+          { slot: "Trinket", itemId: "neltharions-tear" },
+          { slot: "Trinket", itemId: "royal-seal" },
+          { slot: "Back", itemId: "cape-of-the-black-baron" },
+        ],
+        farmOrder: [
+          "Craft Robe of the Archmage; it lasts until raid epics.",
+          "MC for Azuresong Mageblade and the Choker.",
+          "BWL for Neltharion's Tear once the raid is stable.",
         ],
       },
     ],
