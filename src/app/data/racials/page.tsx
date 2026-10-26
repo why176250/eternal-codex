@@ -21,7 +21,8 @@ export default function RacialsPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Ten races, active and passive racials, including the two Skyborn
-            options added in Forever.
+            options added in Forever. English ability text is a translation of
+            the source until it is verified in-game.
           </p>
           <div className="mt-6">
             <ForeverSourceNote />
