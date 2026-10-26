@@ -7,6 +7,7 @@ const classEn: Record<string, string> = {
   "全部/通用": "All / General",
   "战士": "Warrior",
   "圣骑士": "Paladin",
+  "骑士": "Paladin",
   "猎人": "Hunter",
   "盗贼": "Rogue",
   "牧师": "Priest",
@@ -31,7 +32,10 @@ export default function SetsPage() {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(set);
   }
-  const classNames = [...groups.keys()].sort((a, b) => a.localeCompare(b));
+  const order = ["全部/通用", "战士", "圣骑士", "骑士", "猎人", "盗贼", "牧师", "萨满", "法师", "术士", "德鲁伊", "死亡骑士"];
+  const classNames = [...groups.keys()].sort(
+    (a, b) => order.indexOf(a) - order.indexOf(b) || a.localeCompare(b),
+  );
 
   return (
     <main>

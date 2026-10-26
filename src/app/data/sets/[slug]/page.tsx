@@ -6,6 +6,21 @@ import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 
 type Params = { slug: string };
 
+const classEn: Record<string, string> = {
+  "全部/通用": "All / General",
+  "战士": "Warrior",
+  "圣骑士": "Paladin",
+  "骑士": "Paladin",
+  "猎人": "Hunter",
+  "盗贼": "Rogue",
+  "牧师": "Priest",
+  "萨满": "Shaman",
+  "法师": "Mage",
+  "术士": "Warlock",
+  "德鲁伊": "Druid",
+  "死亡骑士": "Death Knight",
+};
+
 export function generateStaticParams(): Params[] {
   return foreverSets.map((set) => ({ slug: String(set.id) }));
 }
@@ -46,7 +61,7 @@ export default async function SetPage({
       <section className="container-x pb-20 pt-8">
         <div className="max-w-3xl">
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="badge">{set.class}</span>
+            <span className="badge">{classEn[set.class] ?? set.class}</span>
             <span className="text-muted">{set.itemCount} pieces</span>
           </div>
           <h1 className="display mt-4 text-3xl text-parchment md:text-4xl">
