@@ -54,6 +54,12 @@ export default function DatabasePage() {
             >
               Class overviews →
             </Link>
+            <Link
+              href="/bis"
+              className="rounded-lg border border-line px-3 py-1.5 transition-colors hover:border-gold/40 hover:text-parchment"
+            >
+              BiS checklists →
+            </Link>
           </div>
         </div>
       </section>

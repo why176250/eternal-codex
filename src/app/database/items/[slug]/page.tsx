@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getItem, items, qualityColors } from "@/lib/data";
+import { dungeons, getBisRefsForItem, getClass, getItem, items, qualityColors } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { site } from "@/lib/site";
 
@@ -36,6 +36,8 @@ export default async function ItemPage({
   if (!item) notFound();
 
   const color = qualityColors[item.quality] ?? "#ede7d7";
+  const dungeonSource = dungeons.find((d) => d.name === item.source);
+  const bisRefs = getBisRefsForItem(item.id);
   const related = items
     .filter((i) => i.id !== item.id && (i.source === item.source || i.slot === item.slot))
     .slice(0, 4);
@@ -97,6 +99,17 @@ export default async function ItemPage({
             {item.note}
           </p>
 
+          {dungeonSource && (
+            <p className="mt-3 text-sm">
+              <Link
+                href={`/dungeons/${dungeonSource.id}`}
+                className="text-gold/90 transition-colors hover:text-gold-soft"
+              >
+                More about {dungeonSource.name} →
+              </Link>
+            </p>
+          )}
+
           <div className="panel mt-8 p-5 text-xs leading-relaxed text-muted">
             <p className="font-medium text-parchment">Stats pending verification</p>
             <p className="mt-1">
@@ -140,6 +153,27 @@ export default async function ItemPage({
                     </span>
                   </li>
                 ))}
+              </ul>
+            </div>
+          )}
+
+          {bisRefs.length > 0 && (
+            <div className="mt-10">
+              <h2 className="display text-lg text-parchment">In BiS checklists</h2>
+              <ul className="mt-3 space-y-2 text-sm">
+                {bisRefs.map((ref) => {
+                  const wowClass = getClass(ref.classId);
+                  return wowClass ? (
+                    <li key={`${ref.classId}-${ref.specName}`}>
+                      <Link
+                        href={`/bis/${ref.classId}`}
+                        className="text-muted transition-colors hover:text-gold-soft"
+                      >
+                        {wowClass.name} — {ref.specName} checklist →
+                      </Link>
+                    </li>
+                  ) : null;
+                })}
               </ul>
             </div>
           )}

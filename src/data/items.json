@@ -8,6 +8,7 @@
     "quality": "Legendary",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "The iconic tank sword. Its thunderfury proc is the reason every raid wants one — threat and mitigation in a single weapon."
   },
   {
@@ -19,6 +20,7 @@
     "quality": "Legendary",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "The classic two-hander flex. Whoever wields it owns the raid's melee spotlight."
   },
   {
@@ -30,6 +32,7 @@
     "quality": "Rare",
     "sourceType": "Craft",
     "source": "Blacksmithing",
+    "phase": "Pre-raid",
     "note": "Affordable warrior leveling weapon near 60. Still the best 'done by the time you hit the level cap' craft."
   },
   {
@@ -41,6 +44,7 @@
     "quality": "Rare",
     "sourceType": "Dungeon",
     "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
     "note": "Half of the Dal'Rend set. Strong pre-raid choice for warriors and rogues alike."
   },
   {
@@ -52,6 +56,7 @@
     "quality": "Rare",
     "sourceType": "Dungeon",
     "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
     "note": "The off-hand half of the set. Together they define the Dal'Rend two-sword look."
   },
   {
@@ -63,6 +68,7 @@
     "quality": "Epic",
     "sourceType": "Dungeon",
     "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
     "note": "A fast sword with a bleed proc — a pre-raid staple for melee DPS."
   },
   {
@@ -74,6 +80,7 @@
     "quality": "Epic",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "High-end rogue and warrior DPS sword. When it drops, the loot drama starts."
   },
   {
@@ -85,6 +92,7 @@
     "quality": "Epic",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "Dagger rogue priority. The bleed proc adds real damage on long fights."
   },
   {
@@ -96,6 +104,7 @@
     "quality": "Epic",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "Caster weapon with strong spell power for its slot. A common first raid upgrade for mages and warlocks."
   },
   {
@@ -107,6 +116,7 @@
     "quality": "Epic",
     "sourceType": "Craft",
     "source": "Tailoring",
+    "phase": "Pre-raid",
     "note": "Crafted caster chest and often the first 'real' epic a spellcaster owns."
   },
   {
@@ -118,6 +128,7 @@
     "quality": "Epic",
     "sourceType": "Craft",
     "source": "Blacksmithing",
+    "phase": "Pre-raid",
     "note": "A group-support weapon: its proc increases spell damage taken by the target. One per raid can be huge."
   },
   {
@@ -129,6 +140,7 @@
     "quality": "Rare",
     "sourceType": "Dungeon",
     "source": "Blackrock Depths",
+    "phase": "Pre-raid",
     "note": "Melee trinket that procs extra attacks. Worth more than its rarity suggests."
   },
   {
@@ -140,6 +152,7 @@
     "quality": "Rare",
     "sourceType": "Quest",
     "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
     "note": "Crit trinket from the UBRS quest line. A pre-raid checklist item for most DPS."
   },
   {
@@ -151,6 +164,7 @@
     "quality": "Rare",
     "sourceType": "Quest",
     "source": "Dire Maul",
+    "phase": "Pre-raid",
     "note": "Caster trinket from the Dire Maul quest chain. Useful well into early raiding."
   },
   {
@@ -162,6 +176,7 @@
     "quality": "Epic",
     "sourceType": "Dungeon",
     "source": "Blackrock Depths",
+    "phase": "Pre-raid",
     "note": "Extra-attack proc mace and a famous BRD chase item. Its drop rate is the punchline."
   },
   {
@@ -173,6 +188,7 @@
     "quality": "Epic",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "Caster helm with fire-damage synergy, ideal for early fire spec raiders."
   },
   {
@@ -184,6 +200,7 @@
     "quality": "Epic",
     "sourceType": "Quest",
     "source": "Dire Maul",
+    "phase": "Pre-raid",
     "note": "Tanking sword from the forging quest. Requires a raid drop and a group willing to run the chain."
   },
   {
@@ -195,6 +212,7 @@
     "quality": "Epic",
     "sourceType": "Craft",
     "source": "Blacksmithing",
+    "phase": "Pre-raid",
     "note": "Crit-focused plate helm and a pre-raid best-in-slot for warriors."
   },
   {
@@ -206,6 +224,7 @@
     "quality": "Epic",
     "sourceType": "Craft",
     "source": "Leatherworking",
+    "phase": "Pre-raid",
     "note": "Hit and crit leather gloves from the Devilsaur set. Feral druids and rogues both want them."
   },
   {
@@ -217,6 +236,187 @@
     "quality": "Epic",
     "sourceType": "Raid",
     "source": "Molten Core",
+    "phase": "MC",
     "note": "Spell power neck and an early caster upgrade that lasts through the first raid tier."
+  },
+  {
+    "id": "cape-of-the-black-baron",
+    "name": "Cape of the Black Baron",
+    "slot": "Back",
+    "type": "Cloak",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Dungeon",
+    "source": "Stratholme",
+    "phase": "Pre-raid",
+    "note": "Baron Rivendare's cloak; strong on melee and casters alike."
+  },
+  {
+    "id": "whitemane-chapeau",
+    "name": "Whitemane's Chapeau",
+    "slot": "Head",
+    "type": "Cloth Armor",
+    "level": 40,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Scarlet Monastery",
+    "phase": "Pre-raid",
+    "note": "Caster hat from High Inquisitor Whitemane; a low-level standout."
+  },
+  {
+    "id": "robe-of-the-void",
+    "name": "Robe of the Void",
+    "slot": "Chest",
+    "type": "Cloth Armor",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Craft",
+    "source": "Tailoring",
+    "phase": "Pre-raid",
+    "note": "Warlock tailoring chest built around shadow damage."
+  },
+  {
+    "id": "draconian-deflector",
+    "name": "Draconian Deflector",
+    "slot": "Off Hand",
+    "type": "Shield",
+    "level": 60,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
+    "note": "Tank shield from UBRS; stamina and block value."
+  },
+  {
+    "id": "onyxia-tooth-pendant",
+    "name": "Onyxia Tooth Pendant",
+    "slot": "Neck",
+    "type": "Necklace",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Onyxia's Lair",
+    "phase": "MC",
+    "note": "Hit and crit neck from Onyxia; a melee upgrade that lasts."
+  },
+  {
+    "id": "band-of-accaria",
+    "name": "Band of Accuria",
+    "slot": "Ring",
+    "type": "Ring",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Molten Core",
+    "phase": "MC",
+    "note": "Hit ring from Molten Core; one of the best early raid pickups."
+  },
+  {
+    "id": "ashkandi",
+    "name": "Ashkandi, Greatsword of the Brotherhood",
+    "slot": "Two-Hand Sword",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Nefarian's two-hander. A statement weapon for warriors and paladins."
+  },
+  {
+    "id": "claw-of-chromaggus",
+    "name": "Claw of Chromaggus",
+    "slot": "Dagger",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Fast dagger with spell-power synergy from Chromaggus."
+  },
+  {
+    "id": "staff-of-the-shadow-flame",
+    "name": "Staff of the Shadow Flame",
+    "slot": "Staff",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Caster staff from Nefarian; a top pre-AQ spell damage weapon."
+  },
+  {
+    "id": "neltharions-tear",
+    "name": "Neltharion's Tear",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Spell hit and damage trinket from Nefarian."
+  },
+  {
+    "id": "drake-fang-talisman",
+    "name": "Drake Fang Talisman",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Hit and attack power trinket; melee priority from BWL."
+  },
+  {
+    "id": "rhokdelar",
+    "name": "Rhok'delar, Longbow of the Ancient Keepers",
+    "slot": "Bow",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Quest",
+    "source": "Hunter epic quest",
+    "phase": "Pre-raid",
+    "note": "Reward from the hunter epic quest chain; the classic pre-raid bow."
+  },
+  {
+    "id": "ashjrethul",
+    "name": "Ashjre'thul, Crossbow of Smiting",
+    "slot": "Crossbow",
+    "type": "Weapon",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Chromaggus crossbow; the hunter upgrade after Rhok'delar."
+  },
+  {
+    "id": "blackcrow",
+    "name": "Blackcrow",
+    "slot": "Crossbow",
+    "type": "Weapon",
+    "level": 55,
+    "quality": "Rare",
+    "sourceType": "Dungeon",
+    "source": "Upper Blackrock Spire",
+    "phase": "Pre-raid",
+    "note": "UBRS crossbow; a realistic hunter upgrade while farming Rhok'delar."
+  },
+  {
+    "id": "rejuvenating-gem",
+    "name": "Rejuvenating Gem",
+    "slot": "Trinket",
+    "type": "Trinket",
+    "level": 60,
+    "quality": "Epic",
+    "sourceType": "Raid",
+    "source": "Blackwing Lair",
+    "phase": "BWL",
+    "note": "Healer trinket from BWL with strong mana regeneration."
   }
 ]

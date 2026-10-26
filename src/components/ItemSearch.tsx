@@ -9,6 +9,7 @@ export function ItemSearch({ items }: { items: Item[] }) {
   const [query, setQuery] = useState("");
   const [slot, setSlot] = useState("All");
   const [quality, setQuality] = useState("All");
+  const [phase, setPhase] = useState("All");
 
   const slots = useMemo(
     () => ["All", ...Array.from(new Set(items.map((i) => i.slot))).sort()],
@@ -18,18 +19,23 @@ export function ItemSearch({ items }: { items: Item[] }) {
     () => ["All", ...Array.from(new Set(items.map((i) => i.quality)))],
     [items],
   );
+  const phases = useMemo(
+    () => ["All", ...Array.from(new Set(items.map((i) => i.phase)))],
+    [items],
+  );
 
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return items.filter((item) => {
       if (slot !== "All" && item.slot !== slot) return false;
       if (quality !== "All" && item.quality !== quality) return false;
+      if (phase !== "All" && item.phase !== phase) return false;
       if (!needle) return true;
-      return `${item.name} ${item.source} ${item.type} ${item.note}`
+      return `${item.name} ${item.source} ${item.type} ${item.note} ${item.phase}`
         .toLowerCase()
         .includes(needle);
     });
-  }, [items, query, slot, quality]);
+  }, [items, query, slot, quality, phase]);
 
   return (
     <div>
@@ -55,7 +61,19 @@ export function ItemSearch({ items }: { items: Item[] }) {
           />
         </label>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
+          <select
+            value={phase}
+            onChange={(e) => setPhase(e.target.value)}
+            aria-label="Filter by phase"
+            className="rounded-lg border border-line bg-panel px-3 py-2.5 text-sm text-parchment outline-none focus:border-gold/50"
+          >
+            {phases.map((p) => (
+              <option key={p} value={p}>
+                {p === "All" ? "All phases" : p}
+              </option>
+            ))}
+          </select>
           <select
             value={quality}
             onChange={(e) => setQuality(e.target.value)}
@@ -95,6 +113,7 @@ export function ItemSearch({ items }: { items: Item[] }) {
               <th className="py-2 pr-4 font-medium">Slot</th>
               <th className="py-2 pr-4 font-medium">Lvl</th>
               <th className="py-2 pr-4 font-medium">Source</th>
+              <th className="py-2 pr-4 font-medium">Phase</th>
               <th className="py-2 font-medium">Quality</th>
             </tr>
           </thead>
@@ -116,6 +135,7 @@ export function ItemSearch({ items }: { items: Item[] }) {
                   <span className="text-gold/80">{item.sourceType}</span> ·{" "}
                   {item.source}
                 </td>
+                <td className="py-2.5 pr-4 text-muted">{item.phase}</td>
                 <td
                   className="py-2.5"
                   style={{ color: qualityColors[item.quality] ?? "#93a1b8" }}
@@ -126,7 +146,7 @@ export function ItemSearch({ items }: { items: Item[] }) {
             ))}
             {results.length === 0 && (
               <tr>
-                <td colSpan={5} className="py-8 text-center text-muted">
+                <td colSpan={6} className="py-8 text-center text-muted">
                   No items match those filters. Try a different slot or quality.
                 </td>
               </tr>

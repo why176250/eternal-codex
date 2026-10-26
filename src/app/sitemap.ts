@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { getGuides } from "@/lib/guides";
-import { classes, items } from "@/lib/data";
+import { bisClasses, classes, dungeons, items } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: site.url, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${site.url}/guides`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${site.url}/bis`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/classes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/database`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${site.url}/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
@@ -36,5 +37,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...guideRoutes, ...classRoutes, ...itemRoutes];
+  const bisRoutes: MetadataRoute.Sitemap = bisClasses.map((entry) => ({
+    url: `${site.url}/bis/${entry.classId}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const dungeonRoutes: MetadataRoute.Sitemap = dungeons.map((dungeon) => ({
+    url: `${site.url}/dungeons/${dungeon.id}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...guideRoutes,
+    ...classRoutes,
+    ...bisRoutes,
+    ...itemRoutes,
+    ...dungeonRoutes,
+  ];
 }

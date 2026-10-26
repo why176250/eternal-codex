@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { classes, difficultyLabel, getClass } from "@/lib/data";
+import { classes, difficultyLabel, getBisClass, getClass } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 type Params = { slug: string };
@@ -142,6 +142,18 @@ export default async function ClassPage({
               ))}
             </ul>
           </div>
+
+          {getBisClass(wowClass.id) && (
+            <Link
+              href={`/bis/${wowClass.id}`}
+              className="panel panel-hover block p-5 text-sm"
+            >
+              <p className="eyebrow">BiS checklist</p>
+              <p className="mt-2 text-muted">
+                The upgrades worth farming first for {wowClass.name} →
+              </p>
+            </Link>
+          )}
 
           <div className="panel p-5 text-sm">
             <p className="eyebrow">Related</p>

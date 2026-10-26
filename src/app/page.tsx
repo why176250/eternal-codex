@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getGuides } from "@/lib/guides";
-import { classes, dungeons, items } from "@/lib/data";
+import { bisClasses, classes, dungeons, getClass, items } from "@/lib/data";
 import { GuideCard } from "@/components/GuideCard";
 import { ClassCard } from "@/components/ClassCard";
 import { qualityColors } from "@/lib/data";
@@ -196,6 +196,52 @@ export default function HomePage() {
             {classes.map((wowClass) => (
               <ClassCard key={wowClass.id} wowClass={wowClass} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BiS checklists */}
+      <section className="border-t border-line/60">
+        <div className="container-x py-16">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">BiS checklists</p>
+              <h2 className="display mt-2 text-2xl text-parchment md:text-3xl">
+                The upgrades worth farming first
+              </h2>
+            </div>
+            <Link
+              href="/bis"
+              className="text-sm text-gold/90 transition-colors hover:text-gold-soft"
+            >
+              All checklists →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {bisClasses.map((entry) => {
+              const wowClass = getClass(entry.classId);
+              if (!wowClass) return null;
+              return (
+                <Link
+                  key={entry.classId}
+                  href={`/bis/${entry.classId}`}
+                  className="panel panel-hover flex h-full flex-col p-5"
+                >
+                  <h3 className="display text-lg" style={{ color: wowClass.accent }}>
+                    {wowClass.name}
+                  </h3>
+                  <p className="mt-1 text-xs uppercase tracking-wider text-muted">
+                    {entry.specs.map((spec) => spec.name).join(" · ")}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    Phase 1 starter list with sources and farm order.
+                  </p>
+                  <span className="mt-auto pt-4 text-xs text-gold/80">
+                    Open checklist →
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

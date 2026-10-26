@@ -74,7 +74,11 @@ export default function DungeonsPage() {
               <tbody>
                 {dungeonList.map((dungeon) => (
                   <tr key={dungeon.id} className="border-b border-line/50 last:border-0">
-                    <td className="px-4 py-3 text-parchment">{dungeon.name}</td>
+                    <td className="px-4 py-3 text-parchment">
+                      <Link href={`/dungeons/${dungeon.id}`} className="transition-colors hover:text-gold-soft">
+                        {dungeon.name}
+                      </Link>
+                    </td>
                     <td className="px-4 py-3">
                       <span className="rounded-full border border-line px-2 py-0.5 text-xs text-gold-soft">
                         {dungeon.band}
@@ -99,7 +103,9 @@ export default function DungeonsPage() {
             {raidList.map((raid) => (
               <li key={raid.id} className="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <p className="text-sm text-parchment">{raid.name}</p>
+                  <Link href={`/dungeons/${raid.id}`} className="text-sm text-parchment transition-colors hover:text-gold-soft">
+                    {raid.name}
+                  </Link>
                   <p className="mt-1 text-xs text-muted">{raid.note}</p>
                 </div>
                 <span className="shrink-0 rounded-full border border-line px-2 py-0.5 text-xs text-gold-soft">

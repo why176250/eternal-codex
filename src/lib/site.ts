@@ -14,6 +14,7 @@ export const site = {
 
 export const nav = [
   { href: "/guides", label: "Guides" },
+  { href: "/bis", label: "BiS" },
   { href: "/classes", label: "Classes" },
   { href: "/database", label: "Database" },
   { href: "/dungeons", label: "Dungeons" },
