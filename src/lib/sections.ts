@@ -70,14 +70,10 @@ export const toolItems: SectionItem[] = [
     label: "XP Calculator",
     zh: "经验计算器",
     href: "/tools/xp",
-    status: "planned",
+    status: "live",
     summary:
-      "Estimate time to 60 from your level, playtime, and quest-versus-dungeon mix.",
-    bullets: [
-      "Classic XP-to-level tables with Forever adjustments once verified in-game.",
-      "Quest, mob, and dungeon XP modes.",
-      "A launch-week multiplier for contested zones and queues.",
-    ],
+      "Kills, elite kills, and quests needed to reach the next level, with rested XP and well-fed bonuses.",
+    bullets: [],
   },
   {
     slug: "legacy",
