@@ -32,6 +32,14 @@ export default function SetsPage() {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(set);
   }
+  for (const list of groups.values()) {
+    list.sort(
+      (a, b) =>
+        Number(Boolean(b.nameEn)) - Number(Boolean(a.nameEn)) ||
+        (a.nameEn ?? a.name).localeCompare(b.nameEn ?? b.name),
+    );
+  }
+
   const order = ["全部/通用", "战士", "圣骑士", "骑士", "猎人", "盗贼", "牧师", "萨满", "法师", "术士", "德鲁伊", "死亡骑士"];
   const classNames = [...groups.keys()].sort(
     (a, b) => order.indexOf(a) - order.indexOf(b) || a.localeCompare(b),
