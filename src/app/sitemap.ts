@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { getGuides } from "@/lib/guides";
 import { bisClasses, classes, dungeons, items } from "@/lib/data";
 import { dataItems, toolItems } from "@/lib/sections";
+import { foreverDungeons, foreverGuides, foreverSets } from "@/lib/forever";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -17,10 +18,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${site.url}/zh`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${site.url}/tools/xp`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${site.url}/tools/talents`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/data`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/data/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/data/sets`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/data/racials`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${site.url}/data/vendors`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${site.url}/data/hunter-pets`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${site.url}/data/abilities`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${site.url}/guides/professions`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${site.url}/guides/pvp`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${site.url}/guides/forever`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
   ];
 
   const guideRoutes: MetadataRoute.Sitemap = getGuides().map((guide) => ({
@@ -76,6 +84,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     }));
 
+  const foreverDungeonRoutes: MetadataRoute.Sitemap = foreverDungeons.map((d) => ({
+    url: `${site.url}/data/dungeons/${d.id}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
+  const foreverSetRoutes: MetadataRoute.Sitemap = foreverSets.map((s) => ({
+    url: `${site.url}/data/sets/${s.id}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.4,
+  }));
+
+  const foreverGuideRoutes: MetadataRoute.Sitemap = foreverGuides.map((g) => ({
+    url: `${site.url}/guides/forever/${g.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   return [
     ...staticRoutes,
     ...guideRoutes,
@@ -85,5 +114,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...dungeonRoutes,
     ...toolRoutes,
     ...dataRoutes,
+    ...foreverDungeonRoutes,
+    ...foreverSetRoutes,
+    ...foreverGuideRoutes,
   ];
 }

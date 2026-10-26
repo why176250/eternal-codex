@@ -9,3 +9,6 @@ out/
 
 # deploy keys (kept outside the repo)
 .wow-deploy/
+
+# raw Sargeras import payload (processed copies live in src/data/forever)
+data-import/

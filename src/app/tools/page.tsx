@@ -5,7 +5,7 @@ import { toolItems } from "@/lib/sections";
 export const metadata: Metadata = {
   title: "Tools — talent, BiS, XP, and legacy planners",
   description:
-    "Interactive tools for World of Warcraft: Forever: BiS checklists, a talent calculator, an XP calculator, and a legacy planner. Built in public.",
+    "Interactive tools for World of Warcraft: Forever: BiS checklists, a talent planner, and a legacy planner. Built in public.",
   alternates: { canonical: "/tools" },
 };
 

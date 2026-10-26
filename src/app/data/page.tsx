@@ -19,9 +19,9 @@ export default function DataPage() {
             The reference layer
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            Every dataset the site will carry, grouped by what it answers.
-            Dungeons and the item database are live; the rest are being built
-            from in-game verification, not scraped tables.
+            Every dataset the site carries, grouped by what it answers. The Forever
+            data set (dungeons, sets, racials, vendor recipes, and hunter pets)
+            comes from the Sargeras community project and is imported as-is.
           </p>
         </div>
       </section>

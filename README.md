@@ -43,6 +43,17 @@ confidence: "community"     # verified | community | seed
 
 The item set is deliberately labelled as a **Classic baseline seed** in the UI. Do not present it as live-verified Forever data until stats are checked in-game.
 
+## Data sources
+
+- `src/data/forever/` is imported from the **Sargeras Info Station** community
+  dataset (`https://www.sargerastech.com/api/forever`) via
+  `scripts/import-forever.py` and `scripts/import-guides.py`.
+- The raw payload stays in `data-import/` and is git-ignored.
+- The source is shared for personal, non-commercial reference. Keep the
+  attribution note on every imported data page and do not sell access.
+- `src/data/*.json` (classes, Classic item seed, dungeon ladder) remains the
+  hand-written Classic baseline used by the English guides and BiS pages.
+
 ## Editorial rules (important)
 
 - Every guide carries a confidence level (`verified` / `community` / `seed`) and a `updated` date.

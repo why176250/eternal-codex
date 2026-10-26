@@ -46,14 +46,10 @@ export const toolItems: SectionItem[] = [
     label: "Talent Calculator",
     zh: "天赋模拟",
     href: "/tools/talents",
-    status: "planned",
+    status: "live",
     summary:
-      "Plan builds for all nine classes, compare dual-spec pairs, and share a build with a link.",
-    bullets: [
-      "Classic talent trees per class and spec, with Forever changes folded in as they are confirmed.",
-      "Dual-spec pairing: one solo spec, one group spec, with a shared gear note.",
-      "Shareable build links — no account required.",
-    ],
+      "All nine classes, three trees each. Allocate points and read rank text as you go.",
+    bullets: [],
   },
   {
     slug: "bis",
@@ -63,16 +59,6 @@ export const toolItems: SectionItem[] = [
     status: "live",
     summary:
       "Per-class, per-spec checklists of the upgrades worth farming first, with sources and farm order.",
-    bullets: [],
-  },
-  {
-    slug: "xp",
-    label: "XP Calculator",
-    zh: "经验计算器",
-    href: "/tools/xp",
-    status: "live",
-    summary:
-      "Kills, elite kills, and quests needed to reach the next level, with rested XP and well-fed bonuses.",
     bullets: [],
   },
   {
@@ -96,10 +82,10 @@ export const dataItems: SectionItem[] = [
     slug: "dungeons",
     label: "Dungeon Data",
     zh: "副本资料",
-    href: "/dungeons",
+    href: "/data/dungeons",
     status: "live",
     summary:
-      "Level bands, purpose, and verified drops for all 26 dungeons and raids.",
+      "All 45 Forever dungeons, raids, and travel routes with level bands and locations.",
     bullets: [],
   },
   {
@@ -131,69 +117,49 @@ export const dataItems: SectionItem[] = [
     label: "Set Data",
     zh: "套装资料",
     href: "/data/sets",
-    status: "planned",
+    status: "live",
     summary:
-      "Dungeon sets, tier sets, and set bonuses by class and phase.",
-    bullets: [
-      "Dungeon set pieces and where each piece drops.",
-      "Tier set bonuses, with the breakpoints that matter.",
-      "Which sets are worth chasing before raid gear replaces them.",
-    ],
+      "536 item sets grouped by class, with full piece lists.",
+    bullets: [],
   },
   {
     slug: "abilities",
     label: "Class Abilities",
     zh: "职业技能",
     href: "/data/abilities",
-    status: "planned",
+    status: "live",
     summary:
-      "Every class ability, rank, and trainer level, filterable by class and spec.",
-    bullets: [
-      "Ability ranks, trainer levels, and mana costs.",
-      "Forever-specific changes flagged against the Classic baseline.",
-      "Cross-links to the class overviews and BiS checklists.",
-    ],
+      "Search 12,799 ability names by name and school, loaded on demand.",
+    bullets: [],
   },
   {
     slug: "racials",
     label: "Racial Abilities",
     zh: "种族技能",
     href: "/data/racials",
-    status: "planned",
+    status: "live",
     summary:
-      "Racial abilities by race and faction, with PvE and PvP notes.",
-    bullets: [
-      "Every racial, its cooldown, and the situations it wins.",
-      "Faction and class-combination availability.",
-      "Forever's new race options, added once confirmed in-game.",
-    ],
+      "Ten races, active and passive racials, including the Skyborn options.",
+    bullets: [],
   },
   {
     slug: "vendors",
     label: "Vendor Favor",
     zh: "商人青睐",
     href: "/data/vendors",
-    status: "planned",
+    status: "live",
     summary:
-      "Vendor reputation rewards, faction favor, and what each reputation is actually worth.",
-    bullets: [
-      "Reputation vendors and their reward lists.",
-      "The grind length versus the reward quality.",
-      "Which reputations are worth starting before 60.",
-    ],
+      "320 profession recipes with reagent lists, grouped by profession.",
+    bullets: [],
   },
   {
     slug: "hunter-pets",
     label: "Hunter Pets",
     zh: "猎人宠物",
     href: "/data/hunter-pets",
-    status: "planned",
+    status: "live",
     summary:
-      "Pet families, diets, attack speeds, and where to tame them.",
-    bullets: [
-      "Family-by-family diet and damage profile.",
-      "Rare tame locations and spawn notes.",
-      "Which pets are worth the detour while leveling.",
-    ],
+      "19 pet families and 623 tameable beasts with diets, modifiers, and speeds.",
+    bullets: [],
   },
 ];

@@ -57,6 +57,22 @@ export default function GuidesPage() {
             ))}
           </div>
 
+          <Link
+            href="/guides/forever"
+            className="panel panel-hover mt-10 flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between"
+          >
+            <div>
+              <p className="eyebrow">Imported · Sargeras</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Eight full Forever guides: class quests, crafting speed gear,
+                PvP ranks, and hidden books.
+              </p>
+            </div>
+            <span className="shrink-0 text-xs text-gold/90">
+              Read the imported guides →
+            </span>
+          </Link>
+
           <div className="panel mt-10 flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="eyebrow">Next up</p>
