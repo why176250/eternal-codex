@@ -6,3 +6,6 @@ out/
 .env
 .env.*
 !.env.example
+
+# deploy keys (kept outside the repo)
+.wow-deploy/
