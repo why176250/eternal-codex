@@ -3,11 +3,24 @@
 import { useMemo, useState } from "react";
 import type { ForeverTalentClass } from "@/lib/forever";
 
+const CLASS_ACCENT: Record<string, string> = {
+  Warrior: "#C79C6E",
+  Paladin: "#F58CBA",
+  Hunter: "#ABD473",
+  Rogue: "#FFF569",
+  Priest: "#FFFFFF",
+  Shaman: "#0070DE",
+  Mage: "#69CCF0",
+  Warlock: "#9482C9",
+  Druid: "#FF7D0A",
+};
+
 export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
   const [active, setActive] = useState(0);
   const [points, setPoints] = useState<Record<string, number>>({});
 
   const current = classes[active];
+  const accent = CLASS_ACCENT[current.className] ?? "#e3bd78";
 
   const total = useMemo(
     () => Object.values(points).reduce((sum, value) => sum + value, 0),
@@ -40,31 +53,42 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
 
   return (
     <div>
+      {/* Class tabs */}
       <div className="flex flex-wrap gap-2">
-        {classes.map((cls, index) => (
-          <button
-            key={cls.classId}
-            type="button"
-            onClick={() => {
-              setActive(index);
-              setPoints({});
-            }}
-            className={
-              index === active
-                ? "rounded-md border border-gold/40 bg-gold/10 px-3 py-1.5 text-sm text-gold-soft"
-                : "rounded-md border border-line px-3 py-1.5 text-sm text-muted transition-colors hover:border-gold/40 hover:text-parchment"
-            }
-          >
-            {cls.className}
-            <span className="ml-2 text-[11px] text-muted/70">{cls.nameZh}</span>
-          </button>
-        ))}
+        {classes.map((cls, index) => {
+          const isActive = index === active;
+          return (
+            <button
+              key={cls.classId}
+              type="button"
+              onClick={() => {
+                setActive(index);
+                setPoints({});
+              }}
+              className={
+                "rounded-md border px-3 py-1.5 text-sm transition-colors " +
+                (isActive
+                  ? "border-gold/50 bg-gold/10 text-gold-soft"
+                  : "border-line text-muted hover:border-gold/40 hover:text-parchment")
+              }
+            >
+              {cls.className}
+              <span className="ml-2 text-[11px] text-muted/70">{cls.nameZh}</span>
+            </button>
+          );
+        })}
       </div>
 
-      <div className="mt-4 flex items-center justify-between text-sm">
-        <span className="text-muted">
-          Points spent: <span className="text-parchment">{total}</span> / 51
-        </span>
+      {/* Toolbar */}
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
+        <div className="flex items-center gap-4">
+          <span className="text-muted">
+            Points: <span className="text-parchment">{total}</span> / 51
+          </span>
+          <span className="hidden text-xs text-muted/70 sm:inline">
+            Left click to add · right click to remove
+          </span>
+        </div>
         <button
           type="button"
           onClick={() => setPoints({})}
@@ -74,137 +98,166 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
         </button>
       </div>
 
-      <p className="mt-2 text-xs text-muted">
-        Hover or tap a talent to see its ranks and requirements.
-      </p>
-
-      <div className="mt-5 grid gap-4">
-        {current.trees.map((tree, treeIndex) => (
-          <div key={tree.tabId} className="panel p-3">
-            <div className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
-              <div className="flex items-center gap-2">
-                {tree.icon ? (
-                  <img
-                    src={`/talents/icons/${tree.icon}.jpg`}
-                    alt=""
-                    width={22}
-                    height={22}
-                    className="size-[22px] rounded border border-line"
-                  />
-                ) : null}
-                <p className="text-sm text-parchment">
-                  {tree.nameEn || tree.name}
-                  <span className="ml-2 text-[11px] text-muted">{tree.name}</span>
-                </p>
-              </div>
-              <span className="text-xs text-gold-soft">{treePoints(treeIndex)}</span>
-            </div>
-
-            <div
-              className="mt-3 grid grid-cols-4 gap-2"
-              style={{ gridTemplateRows: `repeat(${maxTier}, minmax(0, auto))` }}
+      {/* Three trees side by side */}
+      <div className="mt-5 grid gap-3 lg:grid-cols-3">
+        {current.trees.map((tree, treeIndex) => {
+          const spent = treePoints(treeIndex);
+          return (
+            <section
+              key={tree.tabId}
+              className="overflow-visible rounded-xl border border-line bg-gradient-to-b from-panel to-deep p-3"
+              style={{ borderTopColor: accent, borderTopWidth: 3 }}
             >
-              {tree.talents.map((talent) => {
-                const value = points[keyFor(treeIndex, talent.id)] ?? 0;
-                const rank =
-                  talent.ranks[Math.min(Math.max(value - 1, 0), talent.ranks.length - 1)];
-                const rankText = rank?.en || rank?.zh || "";
-                const tooltipSide = talent.colIndex >= 2 ? "right-0" : "left-0";
-
-                return (
-                  <div
-                    key={talent.id}
-                    style={{ gridColumn: talent.colIndex + 1, gridRow: talent.tierId }}
-                    className={
-                      "group relative rounded-md border p-1.5 " +
-                      (value > 0
-                        ? "border-gold/50 bg-gold/10"
-                        : "border-line bg-deep/60")
-                    }
+              <header className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
+                <div className="flex min-w-0 items-center gap-2">
+                  <span
+                    className="grid size-9 shrink-0 place-items-center rounded-md border bg-deep"
+                    style={{ borderColor: `${accent}66` }}
                   >
-                    <button
-                      type="button"
-                      onClick={() => change(treeIndex, talent.id, talent.maxRanks, 1)}
-                      aria-label={`Add a point to ${talent.nameEn || talent.name}`}
-                      className="flex w-full flex-col items-center text-center"
+                    {tree.icon ? (
+                      <img
+                        src={`/talents/icons/${tree.icon}.jpg`}
+                        alt=""
+                        width={24}
+                        height={24}
+                        className="size-6 rounded"
+                      />
+                    ) : null}
+                  </span>
+                  <div className="min-w-0">
+                    <p className="truncate text-sm text-parchment">
+                      {tree.nameEn || tree.name}
+                    </p>
+                    <p className="truncate text-[10px] text-muted">{tree.name}</p>
+                  </div>
+                </div>
+                <span
+                  className="shrink-0 rounded-full border px-2 py-0.5 text-[11px]"
+                  style={{ borderColor: `${accent}55`, color: accent }}
+                >
+                  {spent}
+                </span>
+              </header>
+
+              <div
+                className="mt-3 grid grid-cols-4 gap-x-2 gap-y-2"
+                style={{ gridTemplateRows: `repeat(${maxTier}, minmax(0, auto))` }}
+              >
+                {tree.talents.map((talent) => {
+                  const value = points[keyFor(treeIndex, talent.id)] ?? 0;
+                  const rank =
+                    talent.ranks[Math.min(Math.max(value - 1, 0), talent.ranks.length - 1)];
+                  const rankText = rank?.en || rank?.zh || "";
+                  const tooltipSide =
+                    talent.colIndex <= 1
+                      ? "left-0"
+                      : talent.colIndex >= 4
+                        ? "right-0"
+                        : "left-1/2 -translate-x-1/2";
+
+                  return (
+                    <div
+                      key={talent.id}
+                      style={{ gridColumn: talent.colIndex, gridRow: talent.tierId }}
+                      className="group relative flex flex-col items-center"
                     >
-                      {talent.icon ? (
+                      <button
+                        type="button"
+                        onClick={() => change(treeIndex, talent.id, talent.maxRanks, 1)}
+                        onContextMenu={(event) => {
+                          event.preventDefault();
+                          change(treeIndex, talent.id, talent.maxRanks, -1);
+                        }}
+                        aria-label={`${talent.nameEn || talent.name}: add a point`}
+                        className="relative rounded-md transition-transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
+                      >
                         <img
                           src={`/talents/icons/${talent.icon}.jpg`}
                           alt=""
-                          width={36}
-                          height={36}
-                          className="size-9 rounded border border-line/80"
+                          width={40}
+                          height={40}
+                          className={
+                            "size-10 rounded border " +
+                            (value > 0
+                              ? "border-gold/80 shadow-[0_0_10px_rgba(227,189,120,0.25)]"
+                              : "border-line/80 opacity-90")
+                          }
                         />
-                      ) : (
-                        <span className="grid size-9 place-items-center rounded border border-line text-[10px] text-muted">
-                          ?
+                        <span
+                          className={
+                            "absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded px-1 text-[9px] leading-4 " +
+                            (value > 0
+                              ? "bg-gold text-abyss"
+                              : "bg-abyss/90 text-muted")
+                          }
+                        >
+                          {value}/{talent.maxRanks}
                         </span>
-                      )}
-                      <span className="mt-1 line-clamp-2 w-full text-[10px] leading-tight text-parchment">
-                        {talent.nameEn || talent.name}
-                      </span>
-                      <span className="mt-0.5 text-[10px] text-muted">
-                        {value}/{talent.maxRanks}
-                      </span>
-                    </button>
-
-                    <div className="mt-1 flex gap-1">
-                      <button
-                        type="button"
-                        aria-label={`Remove a point from ${talent.nameEn || talent.name}`}
-                        onClick={() => change(treeIndex, talent.id, talent.maxRanks, -1)}
-                        className="flex-1 rounded border border-line text-[10px] text-muted hover:text-parchment"
-                      >
-                        −
+                        {value > 0 ? (
+                          <span
+                            className="absolute -right-1.5 -top-1.5 grid size-4 place-items-center rounded-full border border-line bg-abyss text-[9px] text-muted hover:text-parchment"
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              change(treeIndex, talent.id, talent.maxRanks, -1);
+                            }}
+                            role="button"
+                            aria-label={`Remove a point from ${talent.nameEn || talent.name}`}
+                          >
+                            −
+                          </span>
+                        ) : null}
                       </button>
-                      <button
-                        type="button"
-                        aria-label={`Add a point to ${talent.nameEn || talent.name}`}
-                        onClick={() => change(treeIndex, talent.id, talent.maxRanks, 1)}
-                        className="flex-1 rounded border border-line text-[10px] text-muted hover:text-parchment"
-                      >
-                        +
-                      </button>
-                    </div>
 
-                    <div
-                      className={`pointer-events-none absolute top-full z-40 mt-1 w-64 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
-                    >
-                      <p className="text-xs font-medium text-parchment">
-                        {talent.nameEn || talent.name}
-                      </p>
-                      <p className="text-[11px] text-muted">{talent.name}</p>
-                      <p className="mt-1 text-[11px] text-teal">
-                        Rank {value} / {talent.maxRanks}
-                      </p>
-                      {rankText ? (
-                        <p className="mt-2 text-[11px] leading-relaxed text-muted">
-                          {rankText}
+                      {/* Hover tooltip */}
+                      <div
+                        className={`pointer-events-none absolute top-full z-50 mt-2 w-72 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
+                      >
+                        <div className="flex items-start gap-2">
+                          <img
+                            src={`/talents/icons/${talent.icon}.jpg`}
+                            alt=""
+                            width={32}
+                            height={32}
+                            className="mt-0.5 size-8 shrink-0 rounded border border-line"
+                          />
+                          <div>
+                            <p className="text-xs font-medium text-parchment">
+                              {talent.nameEn || talent.name}
+                            </p>
+                            <p className="text-[11px] text-muted">{talent.name}</p>
+                          </div>
+                        </div>
+                        <p className="mt-2 text-[11px] text-teal">
+                          Rank {value} / {talent.maxRanks}
                         </p>
-                      ) : null}
-                      {rank?.zh && rank.zh !== rankText ? (
-                        <p className="mt-1 text-[10px] leading-relaxed text-muted/70">
-                          {rank.zh}
-                        </p>
-                      ) : null}
-                      {talent.reqText ? (
-                        <p className="mt-2 text-[10px] text-gold/90">
-                          Requires: {talent.reqText}
-                        </p>
-                      ) : null}
-                      {talent.classicStatus && talent.classicStatus !== "unchanged" ? (
-                        <p className="mt-1 text-[10px] uppercase tracking-wider text-gold/70">
-                          {talent.classicStatus}
-                        </p>
-                      ) : null}
+                        {rankText ? (
+                          <p className="mt-1.5 text-[11px] leading-relaxed text-muted">
+                            {rankText}
+                          </p>
+                        ) : null}
+                        {rank?.zh && rank.zh !== rankText ? (
+                          <p className="mt-1 text-[10px] leading-relaxed text-muted/70">
+                            {rank.zh}
+                          </p>
+                        ) : null}
+                        {talent.reqText ? (
+                          <p className="mt-2 text-[10px] text-gold/90">
+                            Requires: {talent.reqText}
+                          </p>
+                        ) : null}
+                        {talent.classicStatus && talent.classicStatus !== "unchanged" ? (
+                          <p className="mt-1 text-[10px] uppercase tracking-wider text-gold/70">
+                            {talent.classicStatus}
+                          </p>
+                        ) : null}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">

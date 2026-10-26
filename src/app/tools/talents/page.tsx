@@ -20,7 +20,7 @@ export default function TalentsPage() {
       </div>
 
       <section className="container-x pb-20 pt-8">
-        <div className="max-w-4xl">
+        <div className="max-w-6xl">
           <div className="flex items-center gap-2 text-xs">
             <span className="badge badge-teal">Live</span>
             <span className="text-muted">天赋模拟</span>
