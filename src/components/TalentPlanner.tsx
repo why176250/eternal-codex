@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ForeverTalentClass } from "@/lib/forever";
 
 const CLASS_ACCENT: Record<string, string> = {
@@ -17,9 +17,13 @@ const CLASS_ACCENT: Record<string, string> = {
 
 const MAX_POINTS = 51;
 
-export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
+type TalentClass = ForeverTalentClass;
+type Talent = TalentClass["trees"][number]["talents"][number];
+
+export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [active, setActive] = useState(0);
   const [points, setPoints] = useState<Record<string, number>>({});
+  const [copied, setCopied] = useState(false);
 
   const current = classes[active];
   const accent = CLASS_ACCENT[current.className] ?? "#e3bd78";
@@ -40,14 +44,11 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
     );
   }
 
-  function findTalent(treeIndex: number, talentId: number) {
+  function findTalent(treeIndex: number, talentId: number): Talent | undefined {
     return current.trees[treeIndex].talents.find((t) => t.id === talentId);
   }
 
-  function requirementFor(
-    treeIndex: number,
-    talent: (typeof current.trees)[number]["talents"][number],
-  ) {
+  function requirementFor(treeIndex: number, talent: Talent) {
     const tierNeed = 5 * (talent.tierId - 1);
     if (spentInTree(treeIndex) < tierNeed) {
       return `Requires ${tierNeed} points in ${
@@ -66,10 +67,7 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
     return null;
   }
 
-  function canAdd(
-    treeIndex: number,
-    talent: (typeof current.trees)[number]["talents"][number],
-  ) {
+  function canAdd(treeIndex: number, talent: Talent) {
     const value = points[keyFor(treeIndex, talent.id)] ?? 0;
     if (value >= talent.maxRanks) return false;
     if (total >= MAX_POINTS) return false;
@@ -114,6 +112,7 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
     if (!talent || !canAdd(treeIndex, talent)) return;
     const key = keyFor(treeIndex, talentId);
     setPoints((prev) => ({ ...prev, [key]: (prev[key] ?? 0) + 1 }));
+    setCopied(false);
   }
 
   function removePoint(treeIndex: number, talentId: number) {
@@ -124,11 +123,62 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
       const next = { ...prev, [key]: value - 1 };
       return sanitize(next);
     });
+    setCopied(false);
+  }
+
+  /** Load a shared build from ?b=<classId>:<talentId>.<rank>,... */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const raw = new URLSearchParams(window.location.search).get("b");
+    if (!raw) return;
+    const [classId, rest] = raw.split(":");
+    const index = classes.findIndex((cls) => String(cls.classId) === classId);
+    if (index < 0 || !rest) return;
+    const next: Record<string, number> = {};
+    for (const pair of rest.split(",")) {
+      const [talentId, rankRaw] = pair.split(".");
+      const rank = Math.max(0, Number(rankRaw) || 0);
+      const treeIndex = classes[index].trees.findIndex((tree) =>
+        tree.talents.some((t) => t.id === Number(talentId)),
+      );
+      if (treeIndex < 0 || rank <= 0) continue;
+      const talent = classes[index].trees[treeIndex].talents.find(
+        (t) => t.id === Number(talentId),
+      );
+      if (!talent) continue;
+      next[`${classId}-${treeIndex}-${talentId}`] = Math.min(rank, talent.maxRanks);
+    }
+    setActive(index);
+    setPoints(next);
+  }, [classes]);
+
+  function shareBuild() {
+    const pairs = Object.entries(points)
+      .filter(([, value]) => value > 0)
+      .map(([key, value]) => {
+        const [, , talentId] = key.split("-");
+        return `${talentId}.${value}`;
+      });
+    const query = `?b=${current.classId}:${pairs.join(",")}`;
+    const url = `${window.location.origin}${window.location.pathname}${query}`;
+    const done = () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    };
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(() => {
+        window.prompt("Copy your build link:", url);
+      });
+    } else {
+      window.prompt("Copy your build link:", url);
+    }
   }
 
   const maxTier = Math.max(
     ...current.trees.flatMap((tree) => tree.talents.map((t) => t.tierId)),
   );
+  const rowH = 100 / maxTier;
+  const colW = 25;
 
   return (
     <div>
@@ -142,6 +192,7 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
               onClick={() => {
                 setActive(index);
                 setPoints({});
+                setCopied(false);
               }}
               className={
                 "rounded-md border px-3 py-1.5 text-sm transition-colors " +
@@ -166,18 +217,49 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
             Left click to add · right click to remove
           </span>
         </div>
-        <button
-          type="button"
-          onClick={() => setPoints({})}
-          className="rounded-md border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
-        >
-          Reset
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={shareBuild}
+            className="rounded-md border border-gold/40 bg-gold/5 px-3 py-1 text-xs text-gold-soft transition-colors hover:bg-gold/10"
+          >
+            {copied ? "Link copied" : "Copy build link"}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setPoints({});
+              setCopied(false);
+            }}
+            className="rounded-md border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+          >
+            Reset
+          </button>
+        </div>
       </div>
 
       <div className="mt-5 grid gap-3 lg:grid-cols-3">
         {current.trees.map((tree, treeIndex) => {
           const spent = spentInTree(treeIndex);
+          const lines = tree.talents
+            .filter((talent) => talent.prereqTalentId)
+            .map((talent) => {
+              const source = tree.talents.find((t) => t.id === talent.prereqTalentId);
+              if (!source) return null;
+              const x1 = (source.colIndex - 0.5) * colW;
+              const x2 = (talent.colIndex - 0.5) * colW;
+              const y1 = (source.tierId - 0.5) * rowH + rowH * 0.32;
+              const y2 = (talent.tierId - 0.5) * rowH - rowH * 0.32;
+              return {
+                key: `${source.id}-${talent.id}`,
+                x1,
+                y1,
+                x2,
+                y2: Math.max(y2, y1 + 0.5),
+              };
+            })
+            .filter(Boolean);
+
           return (
             <section
               key={tree.tabId}
@@ -215,137 +297,165 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                 </span>
               </header>
 
-              <div
-                className="mt-3 grid grid-cols-4 gap-x-2 gap-y-2"
-                style={{ gridTemplateRows: `repeat(${maxTier}, minmax(0, auto))` }}
-              >
-                {tree.talents.map((talent) => {
-                  const value = points[keyFor(treeIndex, talent.id)] ?? 0;
-                  const requirement = requirementFor(treeIndex, talent);
-                  const locked = requirement !== null;
-                  const maxed = value >= talent.maxRanks;
-                  const rank =
-                    talent.ranks[Math.min(Math.max(value - 1, 0), talent.ranks.length - 1)];
-                  const rankText = rank?.en || rank?.zh || "";
-                  const tooltipSide =
-                    talent.colIndex <= 1
-                      ? "left-0"
-                      : talent.colIndex >= 4
-                        ? "right-0"
-                        : "left-1/2 -translate-x-1/2";
-
-                  return (
-                    <div
-                      key={talent.id}
-                      style={{ gridColumn: talent.colIndex, gridRow: talent.tierId }}
-                      className="group relative flex flex-col items-center"
-                    >
-                      <button
-                        type="button"
-                        onClick={() => addPoint(treeIndex, talent.id)}
-                        onContextMenu={(event) => {
-                          event.preventDefault();
-                          removePoint(treeIndex, talent.id);
-                        }}
-                        disabled={locked || maxed}
-                        aria-label={`${talent.nameEn || talent.name}: add a point`}
-                        aria-disabled={locked || maxed}
-                        className={
-                          "relative rounded-md transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70 " +
-                          (locked
-                            ? "cursor-not-allowed opacity-40 grayscale"
-                            : maxed
-                              ? "cursor-default"
-                              : "hover:scale-105")
-                        }
-                      >
-                        <img
-                          src={`/talents/icons/${talent.icon}.jpg`}
-                          alt=""
-                          width={40}
-                          height={40}
-                          className={
-                            "size-10 rounded border " +
-                            (value > 0
-                              ? "border-gold/80 shadow-[0_0_10px_rgba(227,189,120,0.25)]"
-                              : "border-line/80 opacity-90")
-                          }
+              <div className="relative mt-3">
+                {lines.length > 0 ? (
+                  <svg
+                    className="pointer-events-none absolute inset-0 z-0 h-full w-full"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    {lines.map((line) =>
+                      line ? (
+                        <line
+                          key={line.key}
+                          x1={line.x1}
+                          y1={line.y1}
+                          x2={line.x2}
+                          y2={line.y2}
+                          stroke="#e3bd78"
+                          strokeOpacity="0.35"
+                          strokeWidth="1.4"
+                          vectorEffect="non-scaling-stroke"
                         />
-                        <span
+                      ) : null,
+                    )}
+                  </svg>
+                ) : null}
+
+                <div
+                  className="relative z-10 grid grid-cols-4 gap-x-2 gap-y-2"
+                  style={{ gridTemplateRows: `repeat(${maxTier}, minmax(0, auto))` }}
+                >
+                  {tree.talents.map((talent) => {
+                    const value = points[keyFor(treeIndex, talent.id)] ?? 0;
+                    const requirement = requirementFor(treeIndex, talent);
+                    const locked = requirement !== null;
+                    const maxed = value >= talent.maxRanks;
+                    const rank =
+                      talent.ranks[Math.min(Math.max(value - 1, 0), talent.ranks.length - 1)];
+                    const rankText = rank?.en || rank?.zh || "";
+                    const tooltipSide =
+                      talent.colIndex <= 1
+                        ? "left-0"
+                        : talent.colIndex >= 4
+                          ? "right-0"
+                          : "left-1/2 -translate-x-1/2";
+
+                    return (
+                      <div
+                        key={talent.id}
+                        style={{ gridColumn: talent.colIndex, gridRow: talent.tierId }}
+                        className="group relative flex flex-col items-center"
+                      >
+                        <button
+                          type="button"
+                          onClick={() => addPoint(treeIndex, talent.id)}
+                          onContextMenu={(event) => {
+                            event.preventDefault();
+                            removePoint(treeIndex, talent.id);
+                          }}
+                          disabled={locked || maxed}
+                          aria-label={`${talent.nameEn || talent.name}: add a point`}
+                          aria-disabled={locked || maxed}
                           className={
-                            "absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded px-1 text-[9px] leading-4 " +
-                            (value > 0
-                              ? "bg-gold text-abyss"
-                              : "bg-abyss/90 text-muted")
+                            "relative rounded-md transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70 " +
+                            (locked
+                              ? "cursor-not-allowed opacity-40 grayscale"
+                              : maxed
+                                ? "cursor-default"
+                                : "hover:scale-105")
                           }
                         >
-                          {value}/{talent.maxRanks}
-                        </span>
-                        {value > 0 ? (
-                          <span
-                            className="absolute -right-1.5 -top-1.5 grid size-4 place-items-center rounded-full border border-line bg-abyss text-[9px] text-muted hover:text-parchment"
-                            onClick={(event) => {
-                              event.stopPropagation();
-                              removePoint(treeIndex, talent.id);
-                            }}
-                            role="button"
-                            aria-label={`Remove a point from ${talent.nameEn || talent.name}`}
-                          >
-                            −
-                          </span>
-                        ) : null}
-                      </button>
-
-                      <div
-                        className={`pointer-events-none absolute top-full z-50 mt-2 w-72 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
-                      >
-                        <div className="flex items-start gap-2">
                           <img
                             src={`/talents/icons/${talent.icon}.jpg`}
                             alt=""
-                            width={32}
-                            height={32}
-                            className="mt-0.5 size-8 shrink-0 rounded border border-line"
+                            width={40}
+                            height={40}
+                            className={
+                              "size-10 rounded border " +
+                              (value > 0
+                                ? "border-gold/80 shadow-[0_0_10px_rgba(227,189,120,0.25)]"
+                                : "border-line/80 opacity-90")
+                            }
                           />
-                          <div>
-                            <p className="text-xs font-medium text-parchment">
-                              {talent.nameEn || talent.name}
-                            </p>
-                            <p className="text-[11px] text-muted">{talent.name}</p>
+                          <span
+                            className={
+                              "absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded px-1 text-[9px] leading-4 " +
+                              (value > 0
+                                ? "bg-gold text-abyss"
+                                : "bg-abyss/90 text-muted")
+                            }
+                          >
+                            {value}/{talent.maxRanks}
+                          </span>
+                          {value > 0 ? (
+                            <span
+                              className="absolute -right-1.5 -top-1.5 grid size-4 place-items-center rounded-full border border-line bg-abyss text-[9px] text-muted hover:text-parchment"
+                              onClick={(event) => {
+                                event.stopPropagation();
+                                removePoint(treeIndex, talent.id);
+                              }}
+                              role="button"
+                              aria-label={`Remove a point from ${talent.nameEn || talent.name}`}
+                            >
+                              −
+                            </span>
+                          ) : null}
+                        </button>
+
+                        <div
+                          className={`pointer-events-none absolute top-full z-50 mt-2 w-72 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
+                        >
+                          <div className="flex items-start gap-2">
+                            <img
+                              src={`/talents/icons/${talent.icon}.jpg`}
+                              alt=""
+                              width={32}
+                              height={32}
+                              className="mt-0.5 size-8 shrink-0 rounded border border-line"
+                            />
+                            <div>
+                              <p className="text-xs font-medium text-parchment">
+                                {talent.nameEn || talent.name}
+                              </p>
+                              <p className="text-[11px] text-muted">{talent.name}</p>
+                            </div>
                           </div>
+                          <p className="mt-2 text-[11px] text-teal">
+                            Rank {value} / {talent.maxRanks}
+                          </p>
+                          {rankText ? (
+                            <p className="mt-1.5 text-[11px] leading-relaxed text-muted">
+                              {rankText}
+                            </p>
+                          ) : null}
+                          {rank?.zh && rank.zh !== rankText ? (
+                            <p className="mt-1 text-[10px] leading-relaxed text-muted/70">
+                              {rank.zh}
+                            </p>
+                          ) : null}
+                          {requirement ? (
+                            <p className="mt-2 text-[10px] text-red-300/90">
+                              {requirement}
+                            </p>
+                          ) : null}
+                          {talent.reqText ? (
+                            <p className="mt-2 text-[10px] text-gold/90">
+                              Requires: {talent.reqText}
+                            </p>
+                          ) : null}
+                          {talent.classicStatus &&
+                          talent.classicStatus !== "unchanged" ? (
+                            <p className="mt-1 text-[10px] uppercase tracking-wider text-gold/70">
+                              {talent.classicStatus}
+                            </p>
+                          ) : null}
                         </div>
-                        <p className="mt-2 text-[11px] text-teal">
-                          Rank {value} / {talent.maxRanks}
-                        </p>
-                        {rankText ? (
-                          <p className="mt-1.5 text-[11px] leading-relaxed text-muted">
-                            {rankText}
-                          </p>
-                        ) : null}
-                        {rank?.zh && rank.zh !== rankText ? (
-                          <p className="mt-1 text-[10px] leading-relaxed text-muted/70">
-                            {rank.zh}
-                          </p>
-                        ) : null}
-                        {requirement ? (
-                          <p className="mt-2 text-[10px] text-red-300/90">
-                            {requirement}
-                          </p>
-                        ) : null}
-                        {talent.reqText ? (
-                          <p className="mt-2 text-[10px] text-gold/90">
-                            Requires: {talent.reqText}
-                          </p>
-                        ) : null}
-                        {talent.classicStatus && talent.classicStatus !== "unchanged" ? (
-                          <p className="mt-1 text-[10px] uppercase tracking-wider text-gold/70">
-                            {talent.classicStatus}
-                          </p>
-                        ) : null}
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </section>
           );
@@ -353,10 +463,9 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">
-        Tier unlocks follow the 5-point rule: each tier needs 5 points per row
-        spent in that tree. Talents with prerequisites stay locked until their
-        requirement is met. Refunding a point also refunds anything that becomes
-        illegal.
+        Lines connect a talent to its prerequisite. Tier unlocks follow the
+        5-point rule: each tier needs 5 points per row spent in that tree.
+        Refunding a point also refunds anything that becomes illegal.
       </p>
     </div>
   );
