@@ -4,10 +4,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav, site } from "@/lib/site";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const zhLabels: Record<string, string> = {
+    "/guides": "指南",
+    "/bis": "BiS 清单",
+    "/classes": "职业",
+    "/database": "数据库",
+    "/dungeons": "副本",
+    "/about": "关于",
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-abyss/90 backdrop-blur-md">
@@ -63,13 +73,14 @@ export function Header() {
                     : "whitespace-nowrap rounded-md px-3 py-1.5 text-muted transition-colors hover:text-parchment"
                 }
               >
-                {item.label}
+                {isZh ? zhLabels[item.href] ?? item.label : item.label}
               </Link>
             );
           })}
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher className="hidden sm:flex" />
           <Link
             href="/database"
             className="hidden items-center gap-2 rounded-md border border-line bg-panel px-3 py-1.5 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment sm:flex"
@@ -78,7 +89,7 @@ export function Header() {
               <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
               <path d="m16.5 16.5 4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            Search
+            {isZh ? "搜索" : "Search"}
           </Link>
           <button
             type="button"
@@ -116,16 +127,22 @@ export function Header() {
                       : "rounded-md px-3 py-2.5 text-sm text-muted hover:text-parchment"
                   }
                 >
-                  {item.label}
+                  {isZh ? zhLabels[item.href] ?? item.label : item.label}
                 </Link>
               );
             })}
+            <div className="flex items-center justify-between px-3 py-2.5">
+              <span className="text-sm text-muted">
+                {isZh ? "语言" : "Language"}
+              </span>
+              <LanguageSwitcher />
+            </div>
             <Link
               href="/database"
               onClick={() => setOpen(false)}
               className="mt-1 rounded-md px-3 py-2.5 text-sm text-gold/90 hover:text-gold-soft"
             >
-              Search the database →
+              {isZh ? "搜索数据库 →" : "Search the database →"}
             </Link>
           </nav>
         </div>

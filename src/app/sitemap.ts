@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/database`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${site.url}/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${site.url}/zh`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
   ];
 
   const guideRoutes: MetadataRoute.Sitemap = getGuides().map((guide) => ({
