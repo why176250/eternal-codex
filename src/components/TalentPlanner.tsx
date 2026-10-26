@@ -15,6 +15,8 @@ const CLASS_ACCENT: Record<string, string> = {
   Druid: "#FF7D0A",
 };
 
+const MAX_POINTS = 51;
+
 export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
   const [active, setActive] = useState(0);
   const [points, setPoints] = useState<Record<string, number>>({});
@@ -31,20 +33,97 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
     return `${current.classId}-${treeIndex}-${talentId}`;
   }
 
-  function change(treeIndex: number, talentId: number, max: number, delta: number) {
-    const key = keyFor(treeIndex, talentId);
-    setPoints((prev) => {
-      const next = Math.min(max, Math.max(0, (prev[key] ?? 0) + delta));
-      return { ...prev, [key]: next };
-    });
-  }
-
-  function treePoints(treeIndex: number) {
-    const tree = current.trees[treeIndex];
-    return tree.talents.reduce(
+  function spentInTree(treeIndex: number) {
+    return current.trees[treeIndex].talents.reduce(
       (sum, talent) => sum + (points[keyFor(treeIndex, talent.id)] ?? 0),
       0,
     );
+  }
+
+  function findTalent(treeIndex: number, talentId: number) {
+    return current.trees[treeIndex].talents.find((t) => t.id === talentId);
+  }
+
+  function requirementFor(
+    treeIndex: number,
+    talent: (typeof current.trees)[number]["talents"][number],
+  ) {
+    const tierNeed = 5 * (talent.tierId - 1);
+    if (spentInTree(treeIndex) < tierNeed) {
+      return `Requires ${tierNeed} points in ${
+        current.trees[treeIndex].nameEn || current.trees[treeIndex].name
+      }`;
+    }
+    if (talent.prereqTalentId) {
+      const prereq = findTalent(treeIndex, talent.prereqTalentId);
+      const have = points[keyFor(treeIndex, talent.prereqTalentId)] ?? 0;
+      if (have < (talent.prereqRank ?? 0)) {
+        return `Requires ${prereq?.nameEn || prereq?.name} (${have}/${
+          talent.prereqRank
+        })`;
+      }
+    }
+    return null;
+  }
+
+  function canAdd(
+    treeIndex: number,
+    talent: (typeof current.trees)[number]["talents"][number],
+  ) {
+    const value = points[keyFor(treeIndex, talent.id)] ?? 0;
+    if (value >= talent.maxRanks) return false;
+    if (total >= MAX_POINTS) return false;
+    return requirementFor(treeIndex, talent) === null;
+  }
+
+  /** Remove points that are no longer legal after a refund. */
+  function sanitize(next: Record<string, number>) {
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (let treeIndex = 0; treeIndex < current.trees.length; treeIndex++) {
+        const tree = current.trees[treeIndex];
+        let treeTotal = tree.talents.reduce(
+          (sum, talent) => sum + (next[keyFor(treeIndex, talent.id)] ?? 0),
+          0,
+        );
+        for (const talent of tree.talents) {
+          const key = keyFor(treeIndex, talent.id);
+          const value = next[key] ?? 0;
+          if (!value) continue;
+          const tierNeed = 5 * (talent.tierId - 1);
+          let valid = treeTotal >= tierNeed;
+          if (valid && talent.prereqTalentId) {
+            valid =
+              (next[keyFor(treeIndex, talent.prereqTalentId)] ?? 0) >=
+              (talent.prereqRank ?? 0);
+          }
+          if (!valid) {
+            next[key] = 0;
+            treeTotal -= value;
+            changed = true;
+          }
+        }
+      }
+    }
+    return next;
+  }
+
+  function addPoint(treeIndex: number, talentId: number) {
+    const talent = findTalent(treeIndex, talentId);
+    if (!talent || !canAdd(treeIndex, talent)) return;
+    const key = keyFor(treeIndex, talentId);
+    setPoints((prev) => ({ ...prev, [key]: (prev[key] ?? 0) + 1 }));
+  }
+
+  function removePoint(treeIndex: number, talentId: number) {
+    const key = keyFor(treeIndex, talentId);
+    setPoints((prev) => {
+      const value = prev[key] ?? 0;
+      if (value <= 0) return prev;
+      const next = { ...prev, [key]: value - 1 };
+      return sanitize(next);
+    });
   }
 
   const maxTier = Math.max(
@@ -53,7 +132,6 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
 
   return (
     <div>
-      {/* Class tabs */}
       <div className="flex flex-wrap gap-2">
         {classes.map((cls, index) => {
           const isActive = index === active;
@@ -79,11 +157,10 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
         })}
       </div>
 
-      {/* Toolbar */}
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
         <div className="flex items-center gap-4">
           <span className="text-muted">
-            Points: <span className="text-parchment">{total}</span> / 51
+            Points: <span className="text-parchment">{total}</span> / {MAX_POINTS}
           </span>
           <span className="hidden text-xs text-muted/70 sm:inline">
             Left click to add · right click to remove
@@ -98,10 +175,9 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
         </button>
       </div>
 
-      {/* Three trees side by side */}
       <div className="mt-5 grid gap-3 lg:grid-cols-3">
         {current.trees.map((tree, treeIndex) => {
-          const spent = treePoints(treeIndex);
+          const spent = spentInTree(treeIndex);
           return (
             <section
               key={tree.tabId}
@@ -145,6 +221,9 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
               >
                 {tree.talents.map((talent) => {
                   const value = points[keyFor(treeIndex, talent.id)] ?? 0;
+                  const requirement = requirementFor(treeIndex, talent);
+                  const locked = requirement !== null;
+                  const maxed = value >= talent.maxRanks;
                   const rank =
                     talent.ranks[Math.min(Math.max(value - 1, 0), talent.ranks.length - 1)];
                   const rankText = rank?.en || rank?.zh || "";
@@ -163,13 +242,22 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                     >
                       <button
                         type="button"
-                        onClick={() => change(treeIndex, talent.id, talent.maxRanks, 1)}
+                        onClick={() => addPoint(treeIndex, talent.id)}
                         onContextMenu={(event) => {
                           event.preventDefault();
-                          change(treeIndex, talent.id, talent.maxRanks, -1);
+                          removePoint(treeIndex, talent.id);
                         }}
+                        disabled={locked || maxed}
                         aria-label={`${talent.nameEn || talent.name}: add a point`}
-                        className="relative rounded-md transition-transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
+                        aria-disabled={locked || maxed}
+                        className={
+                          "relative rounded-md transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70 " +
+                          (locked
+                            ? "cursor-not-allowed opacity-40 grayscale"
+                            : maxed
+                              ? "cursor-default"
+                              : "hover:scale-105")
+                        }
                       >
                         <img
                           src={`/talents/icons/${talent.icon}.jpg`}
@@ -198,7 +286,7 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                             className="absolute -right-1.5 -top-1.5 grid size-4 place-items-center rounded-full border border-line bg-abyss text-[9px] text-muted hover:text-parchment"
                             onClick={(event) => {
                               event.stopPropagation();
-                              change(treeIndex, talent.id, talent.maxRanks, -1);
+                              removePoint(treeIndex, talent.id);
                             }}
                             role="button"
                             aria-label={`Remove a point from ${talent.nameEn || talent.name}`}
@@ -208,7 +296,6 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                         ) : null}
                       </button>
 
-                      {/* Hover tooltip */}
                       <div
                         className={`pointer-events-none absolute top-full z-50 mt-2 w-72 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
                       >
@@ -240,6 +327,11 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
                             {rank.zh}
                           </p>
                         ) : null}
+                        {requirement ? (
+                          <p className="mt-2 text-[10px] text-red-300/90">
+                            {requirement}
+                          </p>
+                        ) : null}
                         {talent.reqText ? (
                           <p className="mt-2 text-[10px] text-gold/90">
                             Requires: {talent.reqText}
@@ -261,9 +353,10 @@ export function TalentPlanner({ classes }: { classes: ForeverTalentClass[] }) {
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">
-        Planning preview: points are not yet validated against talent
-        prerequisites or tree point requirements. Build sharing and validation
-        come next.
+        Tier unlocks follow the 5-point rule: each tier needs 5 points per row
+        spent in that tree. Talents with prerequisites stay locked until their
+        requirement is met. Refunding a point also refunds anything that becomes
+        illegal.
       </p>
     </div>
   );
