@@ -1,18 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#101c30"/>
       <stop offset="1" stop-color="#060b14"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f8e7bf"/>
+      <stop offset="0" stop-color="#fff0cc"/>
       <stop offset="0.5" stop-color="#e3bd78"/>
-      <stop offset="1" stop-color="#b9823c"/>
+      <stop offset="1" stop-color="#b0772f"/>
     </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#e3bd78" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#e3bd78" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+
+  <rect width="64" height="64" rx="15" fill="url(#tile)"/>
   <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#e3bd78" stroke-opacity="0.4"/>
-  <circle cx="32" cy="32" r="18" fill="none" stroke="#e3bd78" stroke-opacity="0.35" stroke-width="1.2"/>
-  <path d="M32 8.5 35.4 26.4 56 32l-20.6 5.6L32 55.5l-3.4-17.9L8 32l20.6-5.6Z" fill="url(#gold)"/>
-  <circle cx="32" cy="32" r="2.7" fill="#5fd0c0"/>
+  <rect width="64" height="64" rx="15" fill="url(#glow)"/>
+
+  <!-- 6: stem + loop -->
+  <path d="M35 17c-9-3-17 4-17 14" fill="none" stroke="#6b4418" stroke-width="5.4" stroke-linecap="round"/>
+  <path d="M35 17c-9-3-17 4-17 14" fill="none" stroke="url(#gold)" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="26" cy="38" r="9" fill="none" stroke="#6b4418" stroke-width="5.4"/>
+  <circle cx="26" cy="38" r="9" fill="none" stroke="url(#gold)" stroke-width="3.4"/>
+
+  <!-- 0: sits on top of the 6 at the link -->
+  <circle cx="41" cy="32" r="9" fill="none" stroke="#0a1220" stroke-width="7"/>
+  <circle cx="41" cy="32" r="9" fill="none" stroke="url(#gold)" stroke-width="3.4"/>
+
+  <!-- gold stud at the interlock -->
+  <circle cx="32.4" cy="32.4" r="2.5" fill="#2a1a08"/>
+  <circle cx="32.4" cy="32.4" r="2.1" fill="url(#gold)"/>
+  <circle cx="31.7" cy="31.7" r="0.6" fill="#fff6dd" opacity="0.85"/>
 </svg>
