@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="container-x pb-20 pt-12 md:pt-16">
         <Link href="/" className="inline-flex items-center gap-4">
           <img
-            src="/icon.svg"
+            src="/brand/eversixty-mark.svg"
             alt="Eversixty logo"
             width={64}
             height={64}

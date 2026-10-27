@@ -22,7 +22,7 @@ export function Header() {
       <div className="container-x flex h-16 items-center justify-between gap-3">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <img
-            src="/icon.svg"
+            src="/brand/eversixty-mark.svg"
             alt=""
             width={36}
             height={36}

@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "classic plus guide",
   ],
   alternates: { canonical: "/" },
+  icons: {
+    icon: [{ url: "/brand/eversixty-mark.svg", type: "image/svg+xml" }],
+    shortcut: "/brand/eversixty-mark.svg",
+    apple: "/brand/eversixty-mark.svg",
+  },
   openGraph: {
     type: "website",
     siteName: site.name,
