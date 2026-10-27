@@ -1,26 +1,30 @@
 import Link from "next/link";
-import { getGuides } from "@/lib/guides";
-import { GuideCard } from "@/components/GuideCard";
 import { ModuleIcon } from "@/components/ModuleIcon";
 import { modules } from "@/lib/modules";
 
 export default function HomePage() {
-  const latest = getGuides().slice(0, 3);
-
   return (
     <main>
-      <section className="container-x pb-16 pt-10 md:pt-14">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Modules · Forever launch companion</p>
-            <h1 className="display mt-2 text-2xl text-parchment md:text-3xl">
-              Six things players actually open
+      <section className="container-x pb-20 pt-12 md:pt-16">
+        <Link href="/" className="inline-flex items-center gap-4">
+          <img
+            src="/icon.svg"
+            alt="Eternal Codex logo"
+            width={64}
+            height={64}
+            className="size-16 shrink-0 rounded-2xl"
+          />
+          <span>
+            <h1 className="display block text-3xl tracking-wide text-parchment md:text-4xl">
+              Eternal Codex
             </h1>
-          </div>
-          <p className="text-xs text-muted">Pick one · every page starts with an action</p>
-        </div>
+            <span className="mt-1 block text-[11px] uppercase tracking-[0.28em] text-muted">
+              Forever · Classic+
+            </span>
+          </span>
+        </Link>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {modules.map((module) => (
             <Link
               key={module.id}
@@ -33,7 +37,7 @@ export default function HomePage() {
                 </span>
                 <span className="display text-sm text-gold/50">{module.number}</span>
               </div>
-              <h3 className="display mt-5 text-xl text-parchment">{module.title}</h3>
+              <h2 className="display mt-5 text-xl text-parchment">{module.title}</h2>
               <p className="mt-1 text-xs uppercase tracking-wider text-muted/80">
                 {module.zh}
               </p>
@@ -46,30 +50,6 @@ export default function HomePage() {
               </span>
             </Link>
           ))}
-        </div>
-      </section>
-
-      <section className="border-t border-line/60">
-        <div className="container-x py-12">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <p className="eyebrow">Fresh from the guides</p>
-              <h2 className="display mt-2 text-2xl text-parchment md:text-3xl">
-                What changed this week
-              </h2>
-            </div>
-            <Link
-              href="/guides"
-              className="text-sm text-gold/90 transition-colors hover:text-gold-soft"
-            >
-              All guides →
-            </Link>
-          </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {latest.map((guide) => (
-              <GuideCard key={guide.slug} guide={guide} />
-            ))}
-          </div>
         </div>
       </section>
     </main>
