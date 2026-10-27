@@ -21,11 +21,11 @@ export const modules: Module[] = [
   {
     id: "talents",
     number: "02",
-    title: "Talent planner",
-    zh: "天赋模拟",
-    href: "/tools/talents",
-    question: "Where do these 51 points go?",
-    body: "Nine classes, three trees, prerequisites and tier rules, shareable build links.",
+    title: "Build planner",
+    zh: "天赋 · 传承模拟",
+    href: "/tools",
+    question: "Where do these 51 points go — and what comes after?",
+    body: "Talent trees with prerequisites and share links, plus the legacy progression stage in the same block.",
   },
   {
     id: "gear",
