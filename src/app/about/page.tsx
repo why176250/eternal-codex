@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About & editorial standards",
   description:
-    "How Eternal Codex verifies World of Warcraft: Forever guides, what our confidence levels mean, and how to report a correction.",
+    "How Eversixty verifies World of Warcraft: Forever guides, what our confidence levels mean, and how to report a correction.",
   alternates: { canonical: "/about" },
 };
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
             A guide site that shows its work
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            Eternal Codex exists because launch week is the worst time to trust a
+            Eversixty exists because launch week is the worst time to trust a
             guide that does not say where its numbers came from. Every article
             here states its confidence level, its last update, and its sources.
           </p>
@@ -86,10 +86,10 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-sm">
               <a
-                href="mailto:corrections@eternalcodex.example"
+                href="mailto:corrections@eversixty.example"
                 className="text-gold/90 transition-colors hover:text-gold-soft"
               >
-                corrections@eternalcodex.example
+                corrections@eversixty.example
               </a>{" "}
               <span className="text-xs text-muted">
                 (placeholder address — swap in the real inbox before launch)
@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div>
             <h2 className="display text-xl text-parchment">Independence & legal</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              Eternal Codex is an independent, fan-made resource. It is not
+              Eversixty is an independent, fan-made resource. It is not
               affiliated with or endorsed by Blizzard Entertainment. World of
               Warcraft and Blizzard Entertainment are trademarks of Blizzard
               Entertainment, Inc. The site keeps a visible fan-site disclaimer in

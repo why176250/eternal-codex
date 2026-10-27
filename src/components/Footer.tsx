@@ -22,8 +22,8 @@ export function Footer() {
           <p className="display text-lg text-parchment">{site.name}</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted">
             {isZh
-              ? "为国际服玩家整理的开服指南与持续更新的资料库。没有付费墙，也不设门槛。"
-              : "Launch-week guides and a growing reference for World of Warcraft: Forever, written for players on the international realms. No paywalls, no gatekeeping."}
+              ? "为国际服玩家整理的《魔兽世界：Forever》开服工具、攻略与数据。没有付费墙，也不设门槛。"
+              : "Tools, guides, and data for the road to 60 in World of Warcraft: Forever. No paywalls, no gatekeeping."}
           </p>
           <p className="mt-4 text-xs text-muted/80">
             {isZh

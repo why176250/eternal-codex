@@ -9,17 +9,17 @@ export default function HomePage() {
         <Link href="/" className="inline-flex items-center gap-4">
           <img
             src="/icon.svg"
-            alt="Eternal Codex logo"
+            alt="Eversixty logo"
             width={64}
             height={64}
             className="size-16 shrink-0 rounded-2xl"
           />
           <span>
             <h1 className="display block text-3xl tracking-wide text-parchment md:text-4xl">
-              Eternal Codex
+              Eversixty
             </h1>
             <span className="mt-1 block text-[11px] uppercase tracking-[0.28em] text-muted">
-              Forever · Classic+
+              A Forever companion
             </span>
           </span>
         </Link>

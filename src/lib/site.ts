@@ -1,13 +1,13 @@
 export const site = {
-  name: "Eternal Codex",
-  title: "Eternal Codex — Forever launch companion",
+  name: "Eversixty",
+  title: "Eversixty — A Forever launch companion",
   description:
-    "Six task-first modules for World of Warcraft: Forever: start plan, talent builds, gear checklists, dungeons, professions, and an XP calculator. Written for the international realms.",
+    "Tools, guides, and data for the road to 60 in World of Warcraft: Forever. Six task-first modules: start plan, talent builds, gear checklists, dungeons, professions, and an XP calculator.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "https://eternalcodex.example"),
+      : "https://eversixty.example"),
   launchWindow: "November 4, 2026",
   lastSeed: "2026-10-26",
 };

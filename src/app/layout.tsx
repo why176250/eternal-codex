@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Eternal Codex — launch-week guides and database for World of Warcraft: Forever",
+        alt: "Eversixty — tools, guides, and data for World of Warcraft: Forever",
       },
     ],
   },
