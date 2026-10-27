@@ -2,7 +2,7 @@ export const site = {
   name: "Eternal Codex",
   title: "Eternal Codex — Forever launch companion",
   description:
-    "Six task-first modules for World of Warcraft: Forever: start plan, talent builds, gear checklists, dungeons, professions, and addons. Written for the international realms.",
+    "Six task-first modules for World of Warcraft: Forever: start plan, talent builds, gear checklists, dungeons, professions, and an XP calculator. Written for the international realms.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL

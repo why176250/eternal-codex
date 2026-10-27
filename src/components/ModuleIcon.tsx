@@ -51,6 +51,14 @@ export function ModuleIcon({ id, className = "" }: { id: string; className?: str
           <path d="m4 20 3.5-3.5M15 3l2 2M18 6l2 2" />
         </svg>
       );
+    case "xp":
+      return (
+        <svg {...common}>
+          <path d="M4 19V5M4 19h16" />
+          <path d="m7 15 4-4 3 3 5-6" />
+          <path d="M19 8h-4M19 8v4" />
+        </svg>
+      );
     case "addons":
       return (
         <svg {...common}>

@@ -55,12 +55,12 @@ export const modules: Module[] = [
     body: "Pairings, first-week gold, and the recipe data behind the crafts.",
   },
   {
-    id: "addons",
+    id: "xp",
     number: "06",
-    title: "Addons & UI",
-    zh: "插件与界面",
-    href: "/guides/addons-launch-stack",
-    question: "What do I install before launch?",
-    body: "A minimal addon stack, compatibility checks, and the launch-day fallback.",
+    title: "Experience calculator",
+    zh: "经验计算器",
+    href: "/tools/xp",
+    question: "How long until the next level?",
+    body: "Exact 1–60 XP table, kills per mob level, rested XP, and time to 60.",
   },
 ];

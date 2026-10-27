@@ -3,9 +3,9 @@ import Link from "next/link";
 import { toolItems } from "@/lib/sections";
 
 export const metadata: Metadata = {
-  title: "Tools — talent, legacy, and BiS planners",
+  title: "Tools — talent, legacy, BiS, and XP planners",
   description:
-    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, and BiS checklists. Built in public.",
+    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, and an exact 1–60 XP calculator.",
   alternates: { canonical: "/tools" },
 };
 
@@ -21,16 +21,16 @@ export default function ToolsPage() {
             Plan the character before you spend the gold
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            Two progression planners in one block, plus BiS checklists. Talent
-            trees and the legacy tree are both live, with source notes on each
-            page.
+            Two progression planners in one block, plus BiS checklists and an
+            exact 1–60 XP calculator. All four are live; each page states its
+            source and assumptions.
           </p>
         </div>
       </section>
 
       <section>
         <div className="container-x py-12">
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-3">
             {/* Talent + Legacy: one block */}
             <section className="panel flex h-full flex-col p-6">
               <div className="flex flex-wrap items-center gap-2">
@@ -112,6 +112,26 @@ export default function ToolsPage() {
                 </span>
               </Link>
             ) : null}
+
+            <Link
+              href="/tools/xp"
+              className="panel panel-hover flex h-full flex-col p-6"
+            >
+              <div className="flex items-center justify-between">
+                <span className="badge badge-teal">Live</span>
+                <span className="text-[11px] text-muted">经验计算器</span>
+              </div>
+              <h2 className="display mt-4 text-xl text-parchment">
+                Experience calculator
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Exact 1–60 table, remaining XP, kills per mob level, rested XP,
+                quest turn-ins, and time to 60.
+              </p>
+              <span className="mt-auto pt-5 text-xs text-gold/80">
+                Open tool →
+              </span>
+            </Link>
           </div>
 
           <div className="panel mt-10 p-5 text-sm leading-relaxed text-muted">
