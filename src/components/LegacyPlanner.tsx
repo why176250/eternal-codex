@@ -430,6 +430,9 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
                   <p className="text-sm text-parchment">
                     {milestone.name || milestone.nameZh}
                   </p>
+                  {milestone.name ? (
+                    <p className="truncate text-[11px] text-muted">{milestone.nameZh}</p>
+                  ) : null}
                   <p className="mt-0.5 text-[11px] text-muted">
                     {milestone.threshold} points
                   </p>

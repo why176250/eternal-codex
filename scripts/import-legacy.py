@@ -45,13 +45,20 @@ for tree in raw["tree"]["result"]["trees"]:
         "nodes": nodes,
     })
 
+MILESTONE_NAMES = {
+    277714: "Spectral Bear Cub",
+    277717: "Spectral Bear Tabard",
+    277718: "Reins of the Spectral Bear",
+}
+
 track = raw["track"]["result"]
 milestones = []
 for m in track["milestones"]:
     icon = re.sub(r"\.(jpg|png|tga)$", "", m.get("icon", "inv_misc_questionmark"), flags=re.I)
     milestones.append({
+        "itemId": m.get("itemId"),
         "threshold": m.get("threshold"),
-        "name": m.get("name") or "",
+        "name": m.get("name") or MILESTONE_NAMES.get(m.get("itemId"), ""),
         "nameZh": m.get("nameCn") or "",
         "icon": icon,
         "quality": m.get("quality"),
