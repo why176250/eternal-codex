@@ -66,14 +66,10 @@ export const toolItems: SectionItem[] = [
     label: "Legacy Planner",
     zh: "传承模拟",
     href: "/tools/legacy",
-    status: "planned",
+    status: "live",
     summary:
-      "A planner for the legacy progression system, so you can compare upgrade paths before committing.",
-    bullets: [
-      "We are waiting for confirmed in-game values before publishing a simulator.",
-      "Once live: point costs, breakpoints, and a path comparison.",
-      "Until then, the guides cover the decisions we can verify.",
-    ],
+      "Three legacy trees, 65 earnable points, point gates and the 15/25/40/55 reward track.",
+    bullets: [],
   },
 ];
 

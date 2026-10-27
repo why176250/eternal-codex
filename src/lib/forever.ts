@@ -5,6 +5,7 @@ import vendorsJson from "@/data/forever/vendors.json";
 import petsJson from "@/data/forever/pets.json";
 import talentsJson from "@/data/forever/talents.json";
 import guidesJson from "@/data/forever/guides.json";
+import legacyJson from "@/data/forever/legacy.json";
 
 export const foreverDungeons = dungeonsJson;
 export const foreverSets = setsJson;
@@ -13,6 +14,7 @@ export const foreverVendors = vendorsJson;
 export const foreverPets = petsJson;
 export const foreverTalents = talentsJson;
 export const foreverGuides = guidesJson;
+export const foreverLegacy = legacyJson;
 
 export type ForeverDungeon = (typeof foreverDungeons)[number];
 export type ForeverSet = (typeof foreverSets)[number];
@@ -22,6 +24,10 @@ export type ForeverPetFamily = (typeof foreverPets.families)[number];
 export type ForeverBeast = (typeof foreverPets.beasts)[number];
 export type ForeverTalentClass = (typeof foreverTalents)[number];
 export type ForeverGuide = (typeof foreverGuides)[number];
+export type ForeverLegacy = typeof foreverLegacy;
+export type ForeverLegacyTree = (typeof foreverLegacy.trees)[number];
+export type ForeverLegacyNode = ForeverLegacyTree["nodes"][number];
+export type ForeverLegacyMilestone = (typeof foreverLegacy.milestones)[number];
 
 export const professionLabels: Record<string, string> = {
   alchemy: "Alchemy",
