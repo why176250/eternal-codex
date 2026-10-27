@@ -15,18 +15,21 @@ const CLASS_ACCENT: Record<string, string> = {
   Druid: "#FF7D0A",
 };
 
-const MAX_POINTS = 51;
+const MIN_LEVEL = 10;
+const MAX_LEVEL = 60;
 
 type TalentClass = ForeverTalentClass;
 type Talent = TalentClass["trees"][number]["talents"][number];
 
 export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [active, setActive] = useState(0);
+  const [level, setLevel] = useState(MAX_LEVEL);
   const [points, setPoints] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
 
   const current = classes[active];
   const accent = CLASS_ACCENT[current.className] ?? "#e3bd78";
+  const maxPoints = Math.max(1, level - (MIN_LEVEL - 1));
 
   const total = useMemo(
     () => Object.values(points).reduce((sum, value) => sum + value, 0),
@@ -70,11 +73,10 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   function canAdd(treeIndex: number, talent: Talent) {
     const value = points[keyFor(treeIndex, talent.id)] ?? 0;
     if (value >= talent.maxRanks) return false;
-    if (total >= MAX_POINTS) return false;
+    if (total >= maxPoints) return false;
     return requirementFor(treeIndex, talent) === null;
   }
 
-  /** Remove points that are no longer legal after a refund. */
   function sanitize(next: Record<string, number>) {
     let changed = true;
     while (changed) {
@@ -126,30 +128,48 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     setCopied(false);
   }
 
-  /** Load a shared build from ?b=<classId>:<talentId>.<rank>,... */
+  function resetTree(treeIndex: number) {
+    setPoints((prev) => {
+      const next = { ...prev };
+      for (const talent of current.trees[treeIndex].talents) {
+        delete next[keyFor(treeIndex, talent.id)];
+      }
+      return next;
+    });
+    setCopied(false);
+  }
+
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const raw = new URLSearchParams(window.location.search).get("b");
+    const params = new URLSearchParams(window.location.search);
+    const raw = params.get("b");
     if (!raw) return;
     const [classId, rest] = raw.split(":");
     const index = classes.findIndex((cls) => String(cls.classId) === classId);
-    if (index < 0 || !rest) return;
-    const next: Record<string, number> = {};
-    for (const pair of rest.split(",")) {
-      const [talentId, rankRaw] = pair.split(".");
-      const rank = Math.max(0, Number(rankRaw) || 0);
-      const treeIndex = classes[index].trees.findIndex((tree) =>
-        tree.talents.some((t) => t.id === Number(talentId)),
-      );
-      if (treeIndex < 0 || rank <= 0) continue;
-      const talent = classes[index].trees[treeIndex].talents.find(
-        (t) => t.id === Number(talentId),
-      );
-      if (!talent) continue;
-      next[`${classId}-${treeIndex}-${talentId}`] = Math.min(rank, talent.maxRanks);
+    if (index < 0) return;
+    const lvl = Math.min(MAX_LEVEL, Math.max(MIN_LEVEL, Number(params.get("lvl")) || MAX_LEVEL));
+    setLevel(lvl);
+    if (rest) {
+      const next: Record<string, number> = {};
+      for (const pair of rest.split(",")) {
+        const [talentId, rankRaw] = pair.split(".");
+        const rank = Math.max(0, Number(rankRaw) || 0);
+        const treeIndex = classes[index].trees.findIndex((tree) =>
+          tree.talents.some((t) => t.id === Number(talentId)),
+        );
+        if (treeIndex < 0 || rank <= 0) continue;
+        const talent = classes[index].trees[treeIndex].talents.find(
+          (t) => t.id === Number(talentId),
+        );
+        if (!talent) continue;
+        next[`${classId}-${treeIndex}-${talentId}`] = Math.min(rank, talent.maxRanks);
+      }
+      setActive(index);
+      setPoints(next);
+    } else {
+      setActive(index);
+      setPoints({});
     }
-    setActive(index);
-    setPoints(next);
   }, [classes]);
 
   function shareBuild() {
@@ -159,8 +179,9 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
         const [, , talentId] = key.split("-");
         return `${talentId}.${value}`;
       });
-    const query = `?b=${current.classId}:${pairs.join(",")}`;
-    const url = `${window.location.origin}${window.location.pathname}${query}`;
+    const url = `${window.location.origin}${window.location.pathname}?b=${current.classId}:${pairs.join(
+      ",",
+    )}&lvl=${level}`;
     const done = () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
@@ -174,6 +195,12 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     }
   }
 
+  function changeLevel(next: number) {
+    const clamped = Math.min(MAX_LEVEL, Math.max(MIN_LEVEL, next));
+    if (clamped - (MIN_LEVEL - 1) < total) return;
+    setLevel(clamped);
+  }
+
   const maxTier = Math.max(
     ...current.trees.flatMap((tree) => tree.talents.map((t) => t.tierId)),
   );
@@ -182,7 +209,34 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2">
+      {/* Class banner */}
+      <div
+        className="relative overflow-hidden rounded-xl border border-line"
+        style={{
+          background: `radial-gradient(120% 140% at 85% 0%, ${accent}33, transparent 55%), linear-gradient(180deg, #0d1729, #05080f)`,
+        }}
+      >
+        <div className="relative flex flex-wrap items-end justify-between gap-4 px-5 py-5">
+          <div>
+            <p className="eyebrow">Talent calculator</p>
+            <h2 className="display mt-1 text-3xl" style={{ color: accent }}>
+              {current.className}
+            </h2>
+            <p className="text-xs text-muted">
+              {current.nameZh} · {current.trees.length} trees · Level {level}
+            </p>
+          </div>
+          <div className="rounded-lg border border-line/70 bg-abyss/60 px-4 py-2 text-right">
+            <p className="text-[10px] uppercase tracking-wider text-muted">
+              Points left
+            </p>
+            <p className="display text-2xl text-parchment">{maxPoints - total}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Class tabs */}
+      <div className="mt-4 flex flex-wrap gap-2">
         {classes.map((cls, index) => {
           const isActive = index === active;
           return (
@@ -208,10 +262,41 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
         })}
       </div>
 
+      {/* Toolbar */}
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="text-xs text-muted">Level</span>
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => changeLevel(level - 1)}
+              disabled={level <= MIN_LEVEL || maxPoints - 1 < total}
+              className="grid size-8 place-items-center rounded-md border border-line text-sm text-muted transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-40"
+              aria-label="Decrease level"
+            >
+              −
+            </button>
+            <input
+              type="number"
+              min={MIN_LEVEL}
+              max={MAX_LEVEL}
+              value={level}
+              onChange={(event) => changeLevel(Number(event.target.value) || MAX_LEVEL)}
+              className="w-16 rounded-md border border-line bg-deep px-2 py-1 text-center text-sm text-parchment outline-none focus:border-gold/50"
+              aria-label="Character level"
+            />
+            <button
+              type="button"
+              onClick={() => changeLevel(level + 1)}
+              disabled={level >= MAX_LEVEL}
+              className="grid size-8 place-items-center rounded-md border border-line text-sm text-muted transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-40"
+              aria-label="Increase level"
+            >
+              +
+            </button>
+          </div>
           <span className="text-muted">
-            Points: <span className="text-parchment">{total}</span> / {MAX_POINTS}
+            Points: <span className="text-parchment">{total}</span> / {maxPoints}
           </span>
           <span className="hidden text-xs text-muted/70 sm:inline">
             Left click to add · right click to remove
@@ -233,12 +318,13 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
             }}
             className="rounded-md border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
           >
-            Reset
+            Reset all
           </button>
         </div>
       </div>
 
-      <div className="mt-5 grid gap-3 lg:grid-cols-3">
+      {/* Trees */}
+      <div className="mt-5 grid gap-4 lg:grid-cols-3">
         {current.trees.map((tree, treeIndex) => {
           const spent = spentInTree(treeIndex);
           const lines = tree.talents
@@ -263,22 +349,26 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
           return (
             <section
               key={tree.tabId}
-              className="overflow-visible rounded-xl border border-line bg-gradient-to-b from-panel to-deep p-3"
-              style={{ borderTopColor: accent, borderTopWidth: 3 }}
+              className="overflow-visible rounded-xl border border-line p-4"
+              style={{
+                borderTopColor: accent,
+                borderTopWidth: 3,
+                background: `linear-gradient(180deg, ${accent}14, rgba(5,8,15,0.2) 42%), radial-gradient(90% 35% at 50% 0%, ${accent}22, transparent 70%), #0b1424`,
+              }}
             >
               <header className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
                 <div className="flex min-w-0 items-center gap-2">
                   <span
-                    className="grid size-9 shrink-0 place-items-center rounded-md border bg-deep"
+                    className="grid size-10 shrink-0 place-items-center rounded-md border bg-deep"
                     style={{ borderColor: `${accent}66` }}
                   >
                     {tree.icon ? (
                       <img
                         src={`/talents/icons/${tree.icon}.jpg`}
                         alt=""
-                        width={24}
-                        height={24}
-                        className="size-6 rounded"
+                        width={28}
+                        height={28}
+                        className="size-7 rounded"
                       />
                     ) : null}
                   </span>
@@ -289,15 +379,24 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                     <p className="truncate text-[10px] text-muted">{tree.name}</p>
                   </div>
                 </div>
-                <span
-                  className="shrink-0 rounded-full border px-2 py-0.5 text-[11px]"
-                  style={{ borderColor: `${accent}55`, color: accent }}
-                >
-                  {spent}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="shrink-0 rounded-full border px-2 py-0.5 text-[11px]"
+                    style={{ borderColor: `${accent}55`, color: accent }}
+                  >
+                    {spent} / {maxPoints}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => resetTree(treeIndex)}
+                    className="rounded border border-line px-1.5 py-0.5 text-[10px] text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+                  >
+                    Reset
+                  </button>
+                </div>
               </header>
 
-              <div className="relative mt-3">
+              <div className="relative mt-4">
                 {lines.length > 0 ? (
                   <svg
                     className="pointer-events-none absolute inset-0 z-0 h-full w-full"
@@ -313,9 +412,9 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                           y1={line.y1}
                           x2={line.x2}
                           y2={line.y2}
-                          stroke="#e3bd78"
-                          strokeOpacity="0.35"
-                          strokeWidth="1.4"
+                          stroke={accent}
+                          strokeOpacity="0.4"
+                          strokeWidth="1.6"
                           vectorEffect="non-scaling-stroke"
                         />
                       ) : null,
@@ -324,7 +423,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                 ) : null}
 
                 <div
-                  className="relative z-10 grid grid-cols-4 gap-x-2 gap-y-2"
+                  className="relative z-10 grid grid-cols-4 gap-x-2.5 gap-y-3"
                   style={{ gridTemplateRows: `repeat(${maxTier}, minmax(0, auto))` }}
                 >
                   {tree.talents.map((talent) => {
@@ -370,18 +469,18 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                           <img
                             src={`/talents/icons/${talent.icon}.jpg`}
                             alt=""
-                            width={40}
-                            height={40}
+                            width={52}
+                            height={52}
                             className={
-                              "size-10 rounded border " +
+                              "size-[52px] rounded border-2 " +
                               (value > 0
-                                ? "border-gold/80 shadow-[0_0_10px_rgba(227,189,120,0.25)]"
-                                : "border-line/80 opacity-90")
+                                ? "border-gold/90 shadow-[0_0_14px_rgba(227,189,120,0.35)]"
+                                : "border-line/80")
                             }
                           />
                           <span
                             className={
-                              "absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded px-1 text-[9px] leading-4 " +
+                              "absolute -bottom-2 left-1/2 -translate-x-1/2 rounded px-1.5 text-[10px] leading-4 " +
                               (value > 0
                                 ? "bg-gold text-abyss"
                                 : "bg-abyss/90 text-muted")
@@ -391,7 +490,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                           </span>
                           {value > 0 ? (
                             <span
-                              className="absolute -right-1.5 -top-1.5 grid size-4 place-items-center rounded-full border border-line bg-abyss text-[9px] text-muted hover:text-parchment"
+                              className="absolute -right-2 -top-2 grid size-5 place-items-center rounded-full border border-line bg-abyss text-[10px] text-muted hover:text-parchment"
                               onClick={(event) => {
                                 event.stopPropagation();
                                 removePoint(treeIndex, talent.id);
@@ -405,43 +504,43 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                         </button>
 
                         <div
-                          className={`pointer-events-none absolute top-full z-50 mt-2 w-72 ${tooltipSide} rounded-lg border border-line bg-panel p-3 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
+                          className={`pointer-events-none absolute top-full z-50 mt-3 w-80 ${tooltipSide} rounded-lg border border-line bg-panel p-4 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
                         >
-                          <div className="flex items-start gap-2">
+                          <div className="flex items-start gap-3">
                             <img
                               src={`/talents/icons/${talent.icon}.jpg`}
                               alt=""
-                              width={32}
-                              height={32}
-                              className="mt-0.5 size-8 shrink-0 rounded border border-line"
+                              width={40}
+                              height={40}
+                              className="mt-0.5 size-10 shrink-0 rounded border border-line"
                             />
                             <div>
-                              <p className="text-xs font-medium text-parchment">
+                              <p className="text-sm font-medium text-parchment">
                                 {talent.nameEn || talent.name}
                               </p>
-                              <p className="text-[11px] text-muted">{talent.name}</p>
+                              <p className="text-xs text-muted">{talent.name}</p>
                             </div>
                           </div>
-                          <p className="mt-2 text-[11px] text-teal">
+                          <p className="mt-2 text-xs" style={{ color: accent }}>
                             Rank {value} / {talent.maxRanks}
                           </p>
                           {rankText ? (
-                            <p className="mt-1.5 text-[11px] leading-relaxed text-muted">
+                            <p className="mt-2 text-xs leading-relaxed text-muted">
                               {rankText}
                             </p>
                           ) : null}
                           {rank?.zh && rank.zh !== rankText ? (
-                            <p className="mt-1 text-[10px] leading-relaxed text-muted/70">
+                            <p className="mt-1 text-[11px] leading-relaxed text-muted/70">
                               {rank.zh}
                             </p>
                           ) : null}
                           {requirement ? (
-                            <p className="mt-2 text-[10px] text-red-300/90">
+                            <p className="mt-2 text-[11px] text-red-300/90">
                               {requirement}
                             </p>
                           ) : null}
                           {talent.reqText ? (
-                            <p className="mt-2 text-[10px] text-gold/90">
+                            <p className="mt-2 text-[11px] text-gold/90">
                               Requires: {talent.reqText}
                             </p>
                           ) : null}
@@ -464,8 +563,8 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
 
       <p className="mt-4 text-xs leading-relaxed text-muted">
         Lines connect a talent to its prerequisite. Tier unlocks follow the
-        5-point rule: each tier needs 5 points per row spent in that tree.
-        Refunding a point also refunds anything that becomes illegal.
+        5-point rule. Level sets your talent budget (level − 9 points); lowering
+        the level below your spent points is blocked.
       </p>
     </div>
   );

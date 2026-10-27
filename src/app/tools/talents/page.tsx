@@ -19,8 +19,8 @@ export default function TalentsPage() {
         / <span className="text-parchment/80">Talent Planner</span>
       </div>
 
-      <section className="container-x pb-20 pt-8">
-        <div className="max-w-6xl">
+      <section className="mx-auto w-full max-w-[1400px] px-5 pb-20 pt-8 md:px-8">
+        <div>
           <div className="flex items-center gap-2 text-xs">
             <span className="badge badge-teal">Live</span>
             <span className="text-muted">天赋模拟</span>
