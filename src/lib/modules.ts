@@ -24,8 +24,8 @@ export const modules: Module[] = [
     title: "Build planner",
     zh: "天赋 · 传承模拟",
     href: "/tools/build",
-    question: "Where do talent and legacy points go?",
-    body: "Nine talent trees with prerequisites and share links, plus the three legacy trees with gates and reward milestones.",
+    question: "Talent and legacy points, planned.",
+    body: "Nine talent trees, three legacy trees, share links.",
   },
   {
     id: "gear",
