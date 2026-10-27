@@ -2,54 +2,20 @@ import Link from "next/link";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
 import { ModuleIcon } from "@/components/ModuleIcon";
-import { MyPlanCard } from "@/components/MyPlanCard";
 import { modules } from "@/lib/modules";
-import { site } from "@/lib/site";
 
 export default function HomePage() {
   const latest = getGuides().slice(0, 3);
 
   return (
     <main>
-      <section className="border-b border-line/60">
-        <div className="container-x pb-10 pt-12 md:pb-14 md:pt-16">
-          <div className="max-w-3xl">
-            <p className="eyebrow">Forever launch companion</p>
-            <div className="gold-rule mt-4 w-24" />
-            <h1 className="display mt-6 text-4xl leading-[1.05] text-parchment md:text-6xl">
-              What do you need
-              <span className="block text-gold-soft">right now?</span>
-            </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
-              Six modules, no menus to dig through. Pick the job you are doing
-              and the page opens with the decision, not a database.
-            </p>
-            <p className="mt-4 flex flex-wrap items-center gap-2 text-xs text-muted">
-              <span className="size-1.5 rounded-full bg-teal" aria-hidden="true" />
-              Global launch {site.launchWindow}
-              <span className="text-muted/40">·</span>
-              <Link
-                href="/guides/release-day-hub"
-                className="text-gold/90 underline-offset-4 hover:text-gold-soft hover:underline"
-              >
-                Release times
-              </Link>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="container-x pt-8">
-        <MyPlanCard />
-      </div>
-
-      <section className="container-x pb-16 pt-10">
+      <section className="container-x pb-16 pt-10 md:pt-14">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="eyebrow">Modules</p>
-            <h2 className="display mt-2 text-2xl text-parchment md:text-3xl">
+            <p className="eyebrow">Modules · Forever launch companion</p>
+            <h1 className="display mt-2 text-2xl text-parchment md:text-3xl">
               Six things players actually open
-            </h2>
+            </h1>
           </div>
           <p className="text-xs text-muted">Pick one · every page starts with an action</p>
         </div>
