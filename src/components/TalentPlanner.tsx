@@ -353,7 +353,9 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
               style={{
                 borderTopColor: accent,
                 borderTopWidth: 3,
-                background: `linear-gradient(180deg, ${accent}14, rgba(5,8,15,0.2) 42%), radial-gradient(90% 35% at 50% 0%, ${accent}22, transparent 70%), #0b1424`,
+                backgroundImage: `linear-gradient(180deg, ${accent}10, rgba(5,8,15,0.66) 34%, rgba(5,8,15,0.96)), url(/talents/bg/${current.classId}-${treeIndex}.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center top",
               }}
             >
               <header className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
