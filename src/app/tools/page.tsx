@@ -50,7 +50,7 @@ export default function ToolsPage() {
 
               <div className="mt-5 divide-y divide-line/60 border-y border-line/60">
                 <Link
-                  href="/tools/talents"
+                  href="/tools/build?tab=talent"
                   className="group flex items-center justify-between gap-4 py-4 transition-colors hover:text-parchment"
                 >
                   <div>
@@ -68,7 +68,7 @@ export default function ToolsPage() {
                 </Link>
 
                 <Link
-                  href="/tools/legacy"
+                  href="/tools/build?tab=legacy"
                   className="group flex items-center justify-between gap-4 py-4 transition-colors hover:text-parchment"
                 >
                   <div>

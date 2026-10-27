@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/tools/talents`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/tools/xp`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/tools/build`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/data`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/data/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/data/sets`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },

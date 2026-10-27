@@ -23,7 +23,7 @@ export const modules: Module[] = [
     number: "02",
     title: "Build planner",
     zh: "天赋 · 传承模拟",
-    href: "/tools",
+    href: "/tools/build",
     question: "Where do these 51 points go — and what comes after?",
     body: "Talent trees with prerequisites and share links, plus the legacy progression stage in the same block.",
   },
