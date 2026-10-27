@@ -21,29 +21,13 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-line/80 bg-abyss/90 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-3">
         <Link href="/" className="flex min-w-0 items-center gap-3">
-          <span className="grid size-9 shrink-0 place-items-center rounded-lg border border-gold/30 bg-panel">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M5 15c0-3.5 2.5-6 5-6 2 0 3 1.2 4 2.8C15 10.2 16 9 18 9c2.5 0 5 2.5 5 6"
-                stroke="url(#hgold)"
-                strokeWidth="2"
-                strokeLinecap="round"
-                transform="translate(-2 0) scale(.92)"
-              />
-              <defs>
-                <linearGradient id="hgold" x1="0" y1="0" x2="1" y2="0">
-                  <stop stopColor="#f4dca8" />
-                  <stop offset="1" stopColor="#c99a4e" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
+          <img
+            src="/icon.svg"
+            alt=""
+            width={36}
+            height={36}
+            className="size-9 shrink-0 rounded-lg"
+          />
           <span className="min-w-0 leading-tight">
             <span className="display block whitespace-nowrap text-[15px] tracking-wide text-parchment">
               {site.name}
