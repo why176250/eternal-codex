@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     "classic plus guide",
   ],
   alternates: { canonical: "/" },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : undefined,
+  },
   icons: {
     icon: [{ url: "/brand/eversixty-mark.svg", type: "image/svg+xml" }],
     shortcut: "/brand/eversixty-mark.svg",

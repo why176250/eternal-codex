@@ -93,11 +93,18 @@ export function Footer() {
               ? "本站为玩家自制的社区站点，与暴雪娱乐无隶属关系。World of Warcraft 与 Blizzard Entertainment 是暴雪娱乐的商标。"
               : "Fan-made community resource. Not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc."}
           </p>
-          <p>
-            {isZh
-              ? "由 Next.js 构建。无广告、无追踪脚本。"
-              : "Built with Next.js. No ads, no tracking scripts."}
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link href="/privacy" className="transition-colors hover:text-gold-soft">
+              {isZh ? "隐私政策" : "Privacy"}
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-gold-soft">
+              {isZh ? "条款与免责" : "Terms"}
+            </Link>
+            <Link href="/contact" className="transition-colors hover:text-gold-soft">
+              {isZh ? "联系与纠错" : "Contact"}
+            </Link>
+            <span className="text-muted/50">Built with Next.js.</span>
+          </div>
         </div>
       </div>
     </footer>

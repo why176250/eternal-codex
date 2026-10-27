@@ -81,7 +81,7 @@ After the first deploy, submit `https://<domain>/sitemap.xml` to Google Search C
 
 ## Before launch
 
-- [ ] Swap `corrections@eversixty.example` for a real inbox
+- [ ] Swap `corrections@eversixty.com` for a real inbox
 - [ ] Replace the placeholder domain in `src/lib/site.ts` (or set the env var)
 - [ ] Add real verified item stats after the first in-game checks
 - [ ] Add hardcore ruleset content when it opens

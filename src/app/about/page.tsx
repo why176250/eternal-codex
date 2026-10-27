@@ -86,10 +86,10 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-sm">
               <a
-                href="mailto:corrections@eversixty.example"
+                href="mailto:corrections@eversixty.com"
                 className="text-gold/90 transition-colors hover:text-gold-soft"
               >
-                corrections@eversixty.example
+                corrections@eversixty.com
               </a>{" "}
               <span className="text-xs text-muted">
                 (placeholder address — swap in the real inbox before launch)
