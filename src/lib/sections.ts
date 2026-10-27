@@ -22,7 +22,7 @@ export const sections: Section[] = [
     href: "/tools",
     label: "Tools",
     zh: "工具",
-    blurb: "Talent plans, BiS targets, XP math, and legacy planning.",
+    blurb: "Talent plans, BiS targets, and legacy planning.",
   },
   {
     id: "guides",

@@ -13,10 +13,10 @@ export const site = {
 };
 
 export const nav = [
+  { href: "/start", label: "Play" },
   { href: "/tools", label: "Tools" },
-  { href: "/guides", label: "Guides" },
   { href: "/data", label: "Data" },
-  { href: "/about", label: "About" },
+  { href: "/guides", label: "Guides" },
 ];
 
 export const categories = [

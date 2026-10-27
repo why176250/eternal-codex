@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { ForeverTalentClass } from "@/lib/forever";
+import { savePlan } from "@/lib/plan";
 
 const CLASS_ACCENT: Record<string, string> = {
   Warrior: "#C79C6E",
@@ -26,6 +27,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [level, setLevel] = useState(MAX_LEVEL);
   const [points, setPoints] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
+  const [saved, setSaved] = useState(false);
 
   const current = classes[active];
   const accent = CLASS_ACCENT[current.className] ?? "#e3bd78";
@@ -172,16 +174,32 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     }
   }, [classes]);
 
-  function shareBuild() {
+  function buildUrl() {
     const pairs = Object.entries(points)
       .filter(([, value]) => value > 0)
       .map(([key, value]) => {
         const [, , talentId] = key.split("-");
         return `${talentId}.${value}`;
       });
-    const url = `${window.location.origin}${window.location.pathname}?b=${current.classId}:${pairs.join(
+    return `${window.location.origin}${window.location.pathname}?b=${current.classId}:${pairs.join(
       ",",
     )}&lvl=${level}`;
+  }
+
+  function saveMyPlan() {
+    savePlan({
+      url: buildUrl(),
+      className: current.className,
+      level,
+      points: total,
+      savedAt: new Date().toISOString(),
+    });
+    setSaved(true);
+    setTimeout(() => setSaved(false), 2500);
+  }
+
+  function shareBuild() {
+    const url = buildUrl();
     const done = () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
@@ -305,6 +323,13 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
         <div className="flex items-center gap-2">
           <button
             type="button"
+            onClick={saveMyPlan}
+            className="rounded-md border border-teal/40 bg-teal/5 px-3 py-1 text-xs text-teal transition-colors hover:bg-teal/10"
+          >
+            {saved ? "Saved to My plan" : "Save to my plan"}
+          </button>
+          <button
+            type="button"
             onClick={shareBuild}
             className="rounded-md border border-gold/40 bg-gold/5 px-3 py-1 text-xs text-gold-soft transition-colors hover:bg-gold/10"
           >
@@ -353,7 +378,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
               style={{
                 borderTopColor: accent,
                 borderTopWidth: 3,
-                backgroundImage: `linear-gradient(180deg, ${accent}06, rgba(5,8,15,0.12) 26%, rgba(5,8,15,0.55) 70%, rgba(5,8,15,0.82)), url(/talents/bg/${current.classId}-${treeIndex}.jpg)`,
+                backgroundImage: `linear-gradient(180deg, ${accent}0A, rgba(5,8,15,0.25) 26%, rgba(5,8,15,0.62) 68%, rgba(5,8,15,0.86)), url(/talents/bg/${current.classId}-${treeIndex}.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
               }}

@@ -11,10 +11,10 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
   const zhLabels: Record<string, string> = {
+    "/start": "开服规划",
     "/tools": "工具",
-    "/guides": "攻略",
     "/data": "数据",
-    "/about": "关于",
+    "/guides": "攻略",
   };
 
   return (
