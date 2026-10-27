@@ -31,14 +31,17 @@ def shift(c, deg):
 def poly(d, pts, fill): d.polygon(pts, fill=fill)
 
 def motif(theme, d, c, rnd):
-    col = c + (42,)
-    dim = tuple(int(v * 0.55) for v in c) + (60,)
+    col = c + (110,)
+    dim = tuple(int(v * 0.50) for v in c) + (150,)
 
     if theme in ("fire", "volcano", "fel"):
         base_y = H
         for i in range(8):
             x = rnd.randint(0, W); w = rnd.randint(60, 160); h = rnd.randint(120, 340)
             poly(d, [(x, base_y), (x + w, base_y), (x + w * 0.55, base_y - h), (x + w * 0.2, base_y - h * 0.45)], col)
+        for i in range(5):
+            x = rnd.randint(0, W); w = rnd.randint(26, 70); h = rnd.randint(60, 160)
+            poly(d, [(x, H), (x + w, H), (x + w * 0.5, H - h)], shift(c, 18) + (150,))
         if theme == "volcano":
             poly(d, [(0, H), (0, 620), (180, 430), (330, 560), (520, 380), (700, 600), (700, H)], dim)
             for i in range(30):
@@ -48,18 +51,21 @@ def motif(theme, d, c, rnd):
         for i in range(9):
             x = rnd.randint(0, W); h = rnd.randint(120, 320); w = rnd.randint(40, 110)
             poly(d, [(x, H), (x + w, H), (x + w * 0.5, H - h)], shift(c, rnd.choice([-10, 0, 12])) + (46,))
+        for i in range(5):
+            x = rnd.randint(0, W); h = rnd.randint(160, 300); w = rnd.randint(18, 40)
+            poly(d, [(x, H), (x + w, H), (x + w * 0.5, H - h)], (235, 250, 255, 120))
         for i in range(4):
             y = rnd.randint(80, 360)
             d.arc([-100, y, W + 100, y + 180], 200, 340, fill=shift(c, 0) + (26,), width=2)
     elif theme in ("jungle", "wild", "nature", "forest"):
-        trunk = (18, 34, 20, 90) if theme != "forest" else (44, 34, 20, 95)
+        trunk = (18, 34, 20, 160) if theme != "forest" else (44, 34, 20, 160)
         for i in range(5):
             x = rnd.randint(0, W); w = rnd.randint(18, 42)
             poly(d, [(x, H), (x + w, H), (x + w * 0.8, H * 0.35), (x + w * 0.2, H * 0.35)], trunk)
         for i in range(16):
             x, y = rnd.randint(-40, W + 40), rnd.randint(40, int(H * 0.65))
             rx, ry = rnd.randint(50, 150), rnd.randint(30, 90)
-            d.ellipse([x, y, x + rx, y + ry], fill=tuple(int(v * 0.7) for v in c) + (28,))
+            d.ellipse([x, y, x + rx, y + ry], fill=tuple(int(v * 0.85) for v in c) + (55,))
         if theme == "forest":
             for i in range(5):
                 x, y = rnd.randint(0, 300), rnd.randint(500, 820)
@@ -82,14 +88,14 @@ def motif(theme, d, c, rnd):
         cx = W // 2
         for i in range(7):
             spread = 120 + i * 34
-            poly(d, [(cx - 14, 0), (cx + 14, 0), (cx + spread, H), (cx - spread, H)], (255, 236, 190, 14))
+            poly(d, [(cx - 14, 0), (cx + 14, 0), (cx + spread, H), (cx - spread, H)], (255, 236, 190, 34))
         for i in range(5):
             y = 40 + i * 60
             d.ellipse([cx - 220, y, cx + 220, y + 20], outline=(255, 240, 200, 30), width=2)
     elif theme == "shadow":
         for i in range(6):
             y = rnd.randint(220, 760)
-            d.arc([-160, y, W + 160, y + 260], 200, 340, fill=shift(c, 0) + (40,), width=3)
+            d.arc([-160, y, W + 160, y + 260], 200, 340, fill=shift(c, 0) + (90,), width=4)
         for i in range(4):
             x, y = rnd.randint(100, W - 100), rnd.randint(180, 520)
             r = rnd.randint(30, 70)
@@ -104,11 +110,11 @@ def motif(theme, d, c, rnd):
             for s in range(6):
                 x += rnd.randint(-30, 34); y += rnd.randint(24, 46)
                 pts.append((x, y))
-            d.line(pts, fill=(200, 230, 255, 85), width=3)
+            d.line(pts, fill=(220, 240, 255, 170), width=4)
     elif theme == "water":
         for i in range(6):
             y = 520 + i * 70
-            d.arc([-200, y, W + 200, y + 160], 200, 340, fill=shift(c, 0) + (35,), width=2)
+            d.arc([-200, y, W + 200, y + 160], 200, 340, fill=shift(c, 0) + (80,), width=3)
         for i in range(10):
             x, y = rnd.randint(0, W), rnd.randint(200, 700)
             r = rnd.randint(3, 7)
@@ -117,8 +123,8 @@ def motif(theme, d, c, rnd):
         if theme == "shield":
             cx, cy, r = W // 2, 480, 210
             pts = [(cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a))) for a in range(0, 360, 60)]
-            d.polygon(pts, outline=(180, 200, 230, 70))
-            d.polygon(pts, outline=(180, 200, 230, 45))
+            d.polygon(pts, outline=(190, 210, 240, 150))
+            d.polygon(pts, outline=(190, 210, 240, 90))
             for i in range(3):
                 rr = r - 30 - i * 24
                 pts = [(cx + rr * math.cos(math.radians(a)), cy + rr * math.sin(math.radians(a))) for a in range(0, 360, 60)]
@@ -131,7 +137,7 @@ def motif(theme, d, c, rnd):
         else:
             for i in range(4):
                 x, y = rnd.randint(0, W), rnd.randint(200, 620)
-                poly(d, [(x, y), (x + 300, y + 180), (x + 290, y + 200), (x - 8, y + 24)], (200, 205, 214, 34))
+                poly(d, [(x, y), (x + 300, y + 180), (x + 290, y + 200), (x - 8, y + 24)], (210, 215, 225, 90))
     elif theme == "moon":
         d.ellipse([W // 2 - 150, 90, W // 2 + 150, 390], fill=(220, 226, 255, 30))
         d.ellipse([W // 2 - 70, 120, W // 2 + 90, 260], fill=(12, 16, 32, 90))
@@ -160,14 +166,6 @@ def make(c, theme, seed, emblem=None):
     motif(theme, ImageDraw.Draw(overlay), c, rnd)
     overlay = overlay.filter(ImageFilter.GaussianBlur(2))
     base = Image.alpha_composite(base.convert("RGBA"), overlay).convert("RGB")
-
-    if emblem and os.path.exists(emblem):
-        icon = Image.open(emblem).convert("L").resize((420, 420), Image.LANCZOS)
-        tinted = Image.new("RGB", icon.size, c)
-        em = Image.composite(tinted, Image.new("RGB", icon.size, (0, 0, 0)), icon)
-        em = em.filter(ImageFilter.GaussianBlur(7))
-        mask = icon.point(lambda v: int(v * 0.10))
-        base.paste(em, (W // 2 - 210, 60), mask)
 
     noise = Image.effect_noise((W, H), 20).convert("L")
     noise = noise.filter(ImageFilter.GaussianBlur(0.4))

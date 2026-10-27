@@ -353,7 +353,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
               style={{
                 borderTopColor: accent,
                 borderTopWidth: 3,
-                backgroundImage: `linear-gradient(180deg, ${accent}10, rgba(5,8,15,0.66) 34%, rgba(5,8,15,0.96)), url(/talents/bg/${current.classId}-${treeIndex}.jpg)`,
+                backgroundImage: `linear-gradient(180deg, ${accent}06, rgba(5,8,15,0.12) 26%, rgba(5,8,15,0.55) 70%, rgba(5,8,15,0.82)), url(/talents/bg/${current.classId}-${treeIndex}.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
               }}

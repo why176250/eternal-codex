@@ -39,6 +39,11 @@ export default function TalentsPage() {
 
           <div className="mt-8">
             <ForeverSourceNote />
+            <p className="mt-2 text-xs leading-relaxed text-muted/70">
+              Tree background art © Blizzard Entertainment, sourced from
+              Wowhead&apos;s WotLK talent calculator and used on this free,
+              non-commercial fan site.
+            </p>
           </div>
         </div>
       </section>
