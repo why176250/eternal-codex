@@ -12,25 +12,28 @@ icons = set()
 for tree in raw["tree"]["result"]["trees"]:
     nodes = []
     for n in tree["nodes"]:
-        if n.get("nodeKind") == "placeholder":
-            continue
-        icon = re.sub(r"\.(jpg|png|tga)$", "", n.get("icon", "inv_misc_questionmark"), flags=re.I)
+        placeholder = n.get("nodeKind") == "placeholder"
+        icon = "inv_misc_questionmark" if placeholder else re.sub(
+            r"\.(jpg|png|tga)$", "", n.get("icon", "inv_misc_questionmark"), flags=re.I
+        )
         icons.add(icon)
         nodes.append({
             "id": n.get("whNodeId"),
-            "name": n.get("name") or "",
-            "nameZh": n.get("nameCn") or "",
+            "linkId": n.get("linkToWhNodeId"),
+            "placeholder": placeholder,
+            "name": "Unknown" if placeholder else (n.get("name") or ""),
+            "nameZh": "未知" if placeholder else (n.get("nameCn") or ""),
             "icon": icon,
-            "maxRank": n.get("maxRank", 1),
-            "gatePoints": n.get("gatePoints", 0),
+            "maxRank": 1 if placeholder else n.get("maxRank", 1),
+            "gatePoints": 0 if placeholder else n.get("gatePoints", 0),
             "row": n.get("gridRow", 1),
             "col": n.get("gridCol", 1),
-            "descEn": n.get("descEn") or "",
-            "descCn": n.get("descCn") or "",
-            "descEnList": n.get("descEnList") or [],
-            "descCnList": n.get("descCnList") or [],
-            "cdMs": n.get("cdMs", 0),
-            "castMs": n.get("castMs", 0),
+            "descEn": "" if placeholder else (n.get("descEn") or ""),
+            "descCn": "" if placeholder else (n.get("descCn") or ""),
+            "descEnList": [] if placeholder else (n.get("descEnList") or []),
+            "descCnList": [] if placeholder else (n.get("descCnList") or []),
+            "cdMs": 0 if placeholder else n.get("cdMs", 0),
+            "castMs": 0 if placeholder else n.get("castMs", 0),
         })
     nodes.sort(key=lambda x: (x["row"], x["col"]))
     tree_icon = re.sub(r"\.(jpg|png|tga)$", "", tree.get("icon", "inv_misc_questionmark"), flags=re.I)

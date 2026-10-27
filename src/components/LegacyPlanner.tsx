@@ -90,6 +90,17 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
     setCopied(false);
   }
 
+  function resetTree(treeIndex: number) {
+    setPoints((prev) => {
+      const next = { ...prev };
+      for (const node of data.trees[treeIndex].nodes) {
+        delete next[keyFor(treeIndex, node.id)];
+      }
+      return next;
+    });
+    setCopied(false);
+  }
+
   function buildUrl() {
     const parts = Object.entries(points)
       .filter(([, value]) => value > 0)
@@ -227,6 +238,24 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
           const spent = spentInTree(treeIndex);
           const accent = ACCENTS[treeIndex % ACCENTS.length];
           const maxRow = Math.max(...tree.nodes.map((n) => n.row));
+          const maxCol = Math.max(...tree.nodes.map((n) => n.col));
+          const rowH = 100 / maxRow;
+          const colW = 100 / Math.max(maxCol, 4);
+          const links = tree.nodes
+            .filter((node) => node.linkId)
+            .map((node) => {
+              const target = tree.nodes.find((n) => n.id === node.linkId);
+              if (!target) return null;
+              return {
+                key: `${node.id}-${target.id}`,
+                x1: (node.col - 0.5) * colW,
+                y1: (node.row - 0.5) * rowH,
+                x2: (target.col - 0.5) * colW,
+                y2: (target.row - 0.5) * rowH,
+              };
+            })
+            .filter(Boolean);
+          const gates = [...new Set(tree.nodes.filter((n) => !n.placeholder && n.gatePoints > 0).map((n) => n.gatePoints))].sort((a, b) => a - b);
           return (
             <section
               key={tree.ord}
@@ -254,20 +283,60 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
                   <div className="min-w-0">
                     <p className="truncate text-sm text-parchment">{tree.name}</p>
                     <p className="truncate text-[10px] text-muted">{tree.nameZh} · {tree.sub}</p>
+                    {gates.length > 0 ? (
+                      <p className="mt-0.5 text-[9px] uppercase tracking-wider text-muted/70">
+                        {gates.map((gate) => `${gate} PTS`).join(" · ")}
+                      </p>
+                    ) : null}
                   </div>
                 </div>
-                <span
-                  className="shrink-0 rounded-full border px-2 py-0.5 text-[11px]"
-                  style={{ borderColor: `${accent}55`, color: accent }}
-                >
-                  {spent} / {budget}
-                </span>
+                <div className="flex shrink-0 items-center gap-2">
+                  <span
+                    className="rounded-full border px-2 py-0.5 text-[11px]"
+                    style={{ borderColor: `${accent}55`, color: accent }}
+                  >
+                    {spent} / {budget}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => resetTree(treeIndex)}
+                    className="rounded border border-line px-1.5 py-0.5 text-[10px] text-muted hover:border-gold/40 hover:text-parchment"
+                  >
+                    Reset
+                  </button>
+                </div>
               </header>
 
-              <div
-                className="relative mt-4 grid grid-cols-3 gap-x-2.5 gap-y-3"
-                style={{ gridTemplateRows: `repeat(${maxRow}, minmax(0, auto))` }}
-              >
+              <div className="relative mt-4">
+                {links.length > 0 ? (
+                  <svg
+                    className="pointer-events-none absolute inset-0 z-0 h-full w-full"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    {links.map((line) =>
+                      line ? (
+                        <line
+                          key={line.key}
+                          x1={line.x1}
+                          y1={line.y1}
+                          x2={line.x2}
+                          y2={line.y2}
+                          stroke={accent}
+                          strokeOpacity="0.45"
+                          strokeWidth="1.6"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                      ) : null,
+                    )}
+                  </svg>
+                ) : null}
+
+                <div
+                  className="relative z-10 grid grid-cols-4 gap-x-2.5 gap-y-3"
+                  style={{ gridTemplateRows: `repeat(${maxRow}, minmax(0, auto))` }}
+                >
                 {tree.nodes.map((node) => {
                   const value = points[keyFor(treeIndex, node.id)] ?? 0;
                   const requirement = requirementFor(treeIndex, node);
@@ -276,6 +345,25 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
                   const rankEn = node.descEnList[Math.max(value - 1, 0)] || node.descEn;
                   const rankZh = node.descCnList[Math.max(value - 1, 0)] || node.descCn;
                   const active = value > 0;
+
+                  if (node.placeholder) {
+                    return (
+                      <div
+                        key={node.id}
+                        style={{ gridColumn: node.col, gridRow: node.row }}
+                        className="flex flex-col items-center opacity-50"
+                        title="Unknown node — not revealed in the imported dataset"
+                      >
+                        <img
+                          src="/legacy/icons/inv_misc_questionmark.jpg"
+                          alt="Unknown node"
+                          width={52}
+                          height={52}
+                          className="size-[52px] rounded border-2 border-line/60 grayscale"
+                        />
+                      </div>
+                    );
+                  }
 
                   return (
                     <div
@@ -339,7 +427,7 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
 
                       <div
                         className={`pointer-events-none absolute top-full z-50 mt-3 w-80 ${
-                          node.col <= 1 ? "left-0" : node.col >= 3 ? "right-0" : "left-1/2 -translate-x-1/2"
+                          node.col <= 1 ? "left-0" : node.col >= 4 ? "right-0" : "left-1/2 -translate-x-1/2"
                         } rounded-lg border border-line bg-panel p-4 text-left opacity-0 shadow-2xl transition-opacity group-hover:opacity-100 group-focus-within:opacity-100`}
                       >
                         <div className="flex items-start gap-3">
@@ -378,6 +466,7 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
                     </div>
                   );
                 })}
+                </div>
               </div>
             </section>
           );
