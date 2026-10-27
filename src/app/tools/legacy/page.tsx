@@ -44,8 +44,9 @@ export default function LegacyPage() {
           before launch — verify in-game.
         </p>
         <p className="mt-2 text-xs leading-relaxed text-muted/70">
-          Tree icons are served locally from the same dataset. The legacy
-          planner now shares the Tools block with the talent calculator.
+          Tree icons are served locally from the same dataset. Tree background
+          art © Blizzard Entertainment, reused from the talent calculator
+          backgrounds on this non-commercial fan site.
         </p>
       </section>
     </main>

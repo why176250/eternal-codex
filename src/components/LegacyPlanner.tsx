@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { ForeverLegacy, ForeverLegacyNode } from "@/lib/forever";
+import { savePlan } from "@/lib/plan";
 
 const ACCENTS = ["#e3bd78", "#5fd0c0", "#a78bfa"];
 
@@ -11,6 +12,7 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
   const [points, setPoints] = useState<Record<string, number>>({});
   const [budget, setBudget] = useState(data.totalPoints);
   const [copied, setCopied] = useState(false);
+  const [saved, setSaved] = useState(false);
 
   const total = useMemo(
     () => Object.values(points).reduce((sum, value) => sum + value, 0),
@@ -130,6 +132,19 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
     setPoints(next);
   }, [data]);
 
+  function saveMyPlan() {
+    savePlan("legacy", {
+      url: buildUrl(),
+      className: "Legacy",
+      level: 0,
+      points: total,
+      budget,
+      savedAt: new Date().toISOString(),
+    });
+    setSaved(true);
+    setTimeout(() => setSaved(false), 2500);
+  }
+
   function copyBuild() {
     const url = buildUrl();
     const done = () => {
@@ -215,6 +230,13 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
         <div className="flex items-center gap-2">
           <button
             type="button"
+            onClick={saveMyPlan}
+            className="rounded-md border border-teal/40 bg-teal/5 px-3 py-1 text-xs text-teal hover:bg-teal/10"
+          >
+            {saved ? "Saved to My plan" : "Save to my plan"}
+          </button>
+          <button
+            type="button"
             onClick={copyBuild}
             className="rounded-md border border-gold/40 bg-gold/5 px-3 py-1 text-xs text-gold-soft hover:bg-gold/10"
           >
@@ -263,7 +285,9 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
               style={{
                 borderTopColor: accent,
                 borderTopWidth: 3,
-                background: `linear-gradient(180deg, ${accent}14, rgba(5,8,15,0.4) 45%, rgba(5,8,15,0.9))`,
+                backgroundImage: `linear-gradient(180deg, ${accent}12, rgba(5,8,15,0.58) 24%, rgba(5,8,15,0.84) 68%, rgba(5,8,15,0.96)), url(/legacy/bg/${treeIndex}.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center top",
               }}
             >
               <header className="flex items-center justify-between gap-2 border-b border-line/60 pb-2">
@@ -396,7 +420,7 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
                           width={52}
                           height={52}
                           className={
-                            "size-[52px] rounded border-2 " +
+                            "size-[52px] rounded border-2 drop-shadow-[0_0_4px_rgba(0,0,0,0.95)] " +
                             (active
                               ? "border-gold/90 shadow-[0_0_14px_rgba(227,189,120,0.35)]"
                               : "border-line/80")

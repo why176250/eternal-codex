@@ -187,7 +187,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   }
 
   function saveMyPlan() {
-    savePlan({
+    savePlan("talent", {
       url: buildUrl(),
       className: current.className,
       level,
