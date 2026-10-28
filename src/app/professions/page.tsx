@@ -134,6 +134,22 @@ export default async function ProfessionsPage({
                 </p>
               </div>
             </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Link
+                href="/guides/professions"
+                className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+              >
+                Profession guide
+              </Link>
+              {camps.length > 0 ? (
+                <a
+                  href="#camp-items"
+                  className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+                >
+                  Camp benefits
+                </a>
+              ) : null}
+            </div>
             <form action="/professions" className="flex items-center gap-2">
               <input type="hidden" name="p" value={profession.skillLineId} />
               <input
@@ -187,7 +203,7 @@ export default async function ProfessionsPage({
         ) : null}
 
         {camps.length > 0 ? (
-          <section className="mt-12 border-t border-line/60 pt-8">
+          <section id="camp-items" className="mt-12 scroll-mt-24 border-t border-line/60 pt-8">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
                 <p className="eyebrow">Camp items</p>
