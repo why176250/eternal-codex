@@ -2,12 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import campItemsEn from "@/data/camp-items.en.json";
 import {
-  favorCountBySkillLine,
-  favorName,
-  favorOffers,
-  getFavorOffers,
-} from "@/lib/favor";
-import {
   fallbackIcon,
   getCampItems,
   getProfession,
@@ -77,8 +71,6 @@ export default async function ProfessionsPage({
   const currentPage = Math.min(page, pageCount);
   const visible = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
   const camps = getCampItems(profession.skillLineId);
-  const favor = getFavorOffers(profession.skillLineId);
-  const favorCounts = favorCountBySkillLine();
 
   function href(next: { p?: number; q?: string; page?: number }) {
     const search = new URLSearchParams();
@@ -236,93 +228,6 @@ export default async function ProfessionsPage({
             </div>
           </section>
         ) : null}
-
-        <section id="merchants-favor" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
-          <div className="flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <p className="eyebrow">Merchant&apos;s Favor</p>
-              <h2 className="display mt-1 text-2xl text-parchment">
-                Trade camp recipes
-              </h2>
-              <p className="mt-1 max-w-2xl text-xs leading-relaxed text-muted">
-                Bring supply crates to the trade camps and spend favor on these
-                recipes and goods. Counts below are for the current import.
-              </p>
-            </div>
-            <span className="rounded-full border border-line/80 px-3 py-1 text-[11px] text-muted">
-              {favorOffers.length} offers · 7 professions
-            </span>
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2 text-[11px]">
-            {professions
-              .filter((entry) => favorCounts[entry.skillLineId])
-              .map((entry) => (
-                <span
-                  key={entry.skillLineId}
-                  className="rounded-full border border-line/70 px-2.5 py-1 text-muted"
-                >
-                  {professionEnglish[entry.name] ?? entry.name}{" "}
-                  <span className="text-parchment/80">
-                    {favorCounts[entry.skillLineId]}
-                  </span>
-                </span>
-              ))}
-          </div>
-
-          <div className="mt-4">
-            <p className="text-xs text-muted">
-              {professionEnglish[profession.name] ?? profession.name} offers:{" "}
-              <span className="text-parchment">{favor.length}</span>
-            </p>
-            {favor.length > 0 ? (
-              <details className="mt-2">
-                <summary className="cursor-pointer select-none text-xs text-gold/85">
-                  Show current profession offers
-                </summary>
-                <div className="mt-3 overflow-x-auto">
-                  <table className="w-full min-w-[620px] text-left text-xs">
-                    <thead className="border-b border-line text-[10px] uppercase tracking-wider text-muted">
-                      <tr>
-                        <th className="py-2 pr-4 font-normal">Item</th>
-                        <th className="px-3 py-2 font-normal">Favor</th>
-                        <th className="px-3 py-2 font-normal">Gold</th>
-                        <th className="px-3 py-2 font-normal">Requirement</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {favor.map((offer) => (
-                        <tr key={`${offer.itemId}-${offer.entryType}`} className="border-b border-line/40 last:border-0">
-                          <td className="py-2 pr-4">
-                            <span className="flex items-center gap-2 text-parchment">
-                              <img
-                                src={fallbackIcon(offer.icon)}
-                                alt=""
-                                width={24}
-                                height={24}
-                                className="size-6 rounded border border-line/70"
-                              />
-                              {favorName(offer)}
-                            </span>
-                          </td>
-                          <td className="px-3 py-2 text-muted">{offer.favorCost}</td>
-                          <td className="px-3 py-2 text-muted">{offer.goldCost}g</td>
-                          <td className="px-3 py-2 text-muted">
-                            {offer.requireRep ?? "—"}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </details>
-            ) : (
-              <p className="mt-2 text-xs text-muted/60">
-                No favor offers for this profession in the current import.
-              </p>
-            )}
-          </div>
-        </section>
 
         {guideSteps.length > 0 ? (
           <details
