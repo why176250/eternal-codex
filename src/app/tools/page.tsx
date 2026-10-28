@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
-import { classIconPath, popularity } from "@/lib/popularity";
+import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 
 export const metadata: Metadata = {
   title: "Tools — talent, legacy, BiS, XP, and class popularity",
@@ -184,9 +184,9 @@ export default function ToolsPage() {
         >
           <div className="min-w-0">
             <p className="eyebrow">Class popularity</p>
-            <p className="display mt-1 text-xl text-parchment">首发职业热度</p>
+            <p className="display mt-1 text-xl text-parchment">Launch class popularity</p>
             <p className="mt-1 text-xs text-muted">
-              {popularity.totalVotes.toLocaleString("en-US")} 票 · 更新于{" "}
+              {popularity.totalVotes.toLocaleString("en-US")} votes · Updated{" "}
               {popularity.updatedAt}
             </p>
           </div>
@@ -202,7 +202,7 @@ export default function ToolsPage() {
                   className="size-8 rounded border border-line/80"
                 />
                 <span className="min-w-0">
-                  <span className="block truncate text-xs text-parchment">{entry.name}</span>
+                  <span className="block truncate text-xs text-parchment">{classNameEn(entry)}</span>
                   <span className="block text-[10px] text-gold-soft">
                     {entry.percent.toFixed(1)}%
                   </span>

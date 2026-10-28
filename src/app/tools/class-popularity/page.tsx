@@ -25,20 +25,21 @@ export default function ClassPopularityPage() {
       <header className="container-x pb-10 pt-8">
         <p className="eyebrow">Tools / Class popularity</p>
         <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
-          首发职业热度
+          Launch class popularity
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-          {popularity.intro}
+          A launch-intent poll for World of Warcraft: Forever. One vote per
+          player; results were shown after voting. The poll closed at launch.
         </p>
         <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
           <span className="rounded-full border border-line/80 px-3 py-1">
-            {popularity.totalVotes.toLocaleString("en-US")} 票
+            {popularity.totalVotes.toLocaleString("en-US")} votes
           </span>
           <span className="rounded-full border border-line/80 px-3 py-1">
-            更新于 {popularity.updatedAt}
+            Updated {popularity.updatedAt}
           </span>
           <span className="rounded-full border border-line/80 px-3 py-1">
-            投票已截止
+            Poll closed
           </span>
         </div>
       </header>
@@ -49,7 +50,7 @@ export default function ClassPopularityPage() {
           totalVotes={popularity.totalVotes}
         />
         <p className="mt-4 text-[11px] leading-relaxed text-muted/60">
-          百分比为数据源已计算结果，页面不再重新四舍五入。阵营视图只做前端切换。
+          Percentages are calculated by the source; this page does not re-round them. Faction views are client-side tabs over the same static data.
         </p>
       </section>
     </main>

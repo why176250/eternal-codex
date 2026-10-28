@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { classIconPath, factionOrder, type Faction, type PopularityEntry } from "@/lib/popularity";
+import { classNameEn, classIconPath, factionLabels, factionOrder, type Faction, type PopularityEntry } from "@/lib/popularity";
 
 type Props = {
   factions: Record<Faction, PopularityEntry[]>;
@@ -17,14 +17,14 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line/70 p-4">
         <div
           role="tablist"
-          aria-label="阵营筛选"
+          aria-label="Faction filter"
           className="flex flex-wrap gap-2"
         >
           {factionOrder.map((faction) => {
             const selected = active === faction;
             return (
               <button
-                key={faction}
+                key={factionLabels[faction]}
                 type="button"
                 role="tab"
                 aria-selected={selected}
@@ -35,13 +35,13 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
                     : "border-line/70 text-muted hover:border-line hover:text-parchment"
                 }`}
               >
-                {faction}
+                {factionLabels[faction]}
               </button>
             );
           })}
         </div>
         <p className="text-[11px] text-muted">
-          共 {totalVotes.toLocaleString("en-US")} 票
+          {totalVotes.toLocaleString("en-US")} votes
         </p>
       </div>
 
@@ -61,7 +61,7 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
             />
             <div className="min-w-0">
               <div className="flex items-baseline justify-between gap-3">
-                <span className="truncate text-sm text-parchment">{row.name}</span>
+                <span className="truncate text-sm text-parchment">{classNameEn(row)}</span>
                 <span className="shrink-0 text-xs text-gold-soft">
                   {row.percent.toFixed(1)}%
                 </span>
@@ -74,7 +74,7 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
               </div>
             </div>
             <span className="hidden text-right text-xs text-muted sm:block">
-              {row.count.toLocaleString("en-US")} 票
+              {row.count.toLocaleString("en-US")} votes
             </span>
             <span className="text-right text-[10px] text-muted/60 sm:hidden">
               {row.count.toLocaleString("en-US")}
@@ -84,7 +84,7 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
       </ol>
 
       <div className="border-t border-line/70 px-4 py-3 text-[11px] leading-relaxed text-muted/60">
-        数据来自蓝色隐士小程序「首发职业热度」公开投票 · 每人一票 · 仅供个人学习，非商用
+        Source: Blue Hermit mini-program launch class poll · one vote per player · personal, non-commercial use
       </div>
     </div>
   );

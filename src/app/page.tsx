@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
 import { LaunchCountdown } from "@/components/LaunchCountdown";
 import { modules } from "@/lib/modules";
-import { classIconPath, popularity } from "@/lib/popularity";
+import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 
 export default function HomePage() {
   return (
@@ -96,7 +96,7 @@ export default function HomePage() {
         >
           <span className="min-w-0 flex-1">
             <span className="eyebrow">Class popularity</span>
-            <span className="mt-0.5 block text-sm text-parchment">首发职业热度</span>
+            <span className="mt-0.5 block text-sm text-parchment">Launch class popularity</span>
           </span>
           <span className="flex flex-wrap items-center gap-4">
             {popularity.factions["全部"].slice(0, 3).map((entry, index) => (
@@ -110,7 +110,7 @@ export default function HomePage() {
                   className="size-7 rounded border border-line/80"
                 />
                 <span className="text-xs text-muted">
-                  {entry.name}{" "}
+                  {classNameEn(entry)}{" "}
                   <span className="text-gold-soft">{entry.percent.toFixed(1)}%</span>
                 </span>
               </span>
