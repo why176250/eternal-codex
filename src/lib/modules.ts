@@ -58,13 +58,13 @@ export const modules: Module[] = [
   {
     id: "professions",
     number: "05",
-    title: "Professions & gold",
+    title: "Professions",
     zh: "专业与金币",
     href: "/guides/professions",
-    question: "Which professions, and what sells?",
-    body: "Pairings, first-week gold, and the recipe data behind the crafts.",
+    question: "Which professions should you pair?",
+    body: "Pairings, crafting paths, and the recipe data behind the crafts.",
     accent: "#c9a8ff",
-    tagline: "Pairings & gold",
+    tagline: "Pairings & recipes",
   },
   {
     id: "xp",
