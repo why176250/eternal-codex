@@ -66,12 +66,25 @@ export default async function ClassPage({
           {specs.length} spec guides · {wowClass.roles.join(" · ")} ·{" "}
           {difficultyLabel(wowClass.difficulty)} to level
         </p>
-        <h1
-          className="display mt-2 text-4xl md:text-6xl"
-          style={{ color: wowClass.accent }}
-        >
-          {wowClass.name}
-        </h1>
+        <div className="mt-2 flex flex-wrap items-center gap-4">
+          <h1
+            className="display text-4xl md:text-6xl"
+            style={{ color: wowClass.accent }}
+          >
+            {wowClass.name}
+          </h1>
+          <img
+            src={`/classes/icons/${wowClass.id}.jpg`}
+            alt=""
+            width={64}
+            height={64}
+            className="size-14 shrink-0 rounded-xl border object-cover md:size-16"
+            style={{
+              borderColor: `${wowClass.accent}66`,
+              boxShadow: `0 0 32px -18px ${wowClass.accent}`,
+            }}
+          />
+        </div>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
           {wowClass.tagline}
         </p>
