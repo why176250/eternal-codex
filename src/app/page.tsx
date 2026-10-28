@@ -1,38 +1,43 @@
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
+import { LaunchCountdown } from "@/components/LaunchCountdown";
 import { modules } from "@/lib/modules";
 
 export default function HomePage() {
   return (
     <main>
       <section className="container-x pb-20 pt-12 md:pt-16">
-        <Link href="/" className="inline-flex items-center gap-4">
-          <img
-            src="/brand/eversixty-mark.svg"
-            alt="Eversixty logo"
-            width={64}
-            height={64}
-            className="size-16 shrink-0 rounded-2xl"
-          />
-          <span>
-            <h1 className="display block text-3xl tracking-wide text-parchment md:text-4xl">
-              Eversixty
-            </h1>
-            <span className="mt-1 block text-[11px] uppercase tracking-[0.28em] text-muted">
-              A Forever companion
-            </span>
-          </span>
-        </Link>
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <Link href="/" className="inline-flex items-center gap-4">
+              <img
+                src="/brand/eversixty-mark.svg"
+                alt="Eversixty logo"
+                width={64}
+                height={64}
+                className="size-16 shrink-0 rounded-2xl"
+              />
+              <span>
+                <h1 className="display block text-3xl tracking-wide text-parchment md:text-4xl">
+                  Eversixty
+                </h1>
+                <span className="mt-1 block text-[11px] uppercase tracking-[0.28em] text-muted">
+                  A Forever companion
+                </span>
+              </span>
+            </Link>
 
-        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted">
-          <span className="flex items-center gap-2">
-            <span className="size-1.5 rounded-full bg-teal" aria-hidden="true" />
-            Six modules live
-          </span>
-          <span className="hidden text-muted/40 sm:inline">·</span>
-          <span>Launch {new Date("2026-11-04T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</span>
-          <span className="hidden text-muted/40 sm:inline">·</span>
-          <span>No account, no paywall</span>
+            <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted">
+              <span className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-teal" aria-hidden="true" />
+                Six modules live
+              </span>
+              <span className="hidden text-muted/40 sm:inline">·</span>
+              <span>No account, no paywall</span>
+            </div>
+          </div>
+
+          <LaunchCountdown />
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
