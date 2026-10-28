@@ -46,7 +46,7 @@ export default function HomePage() {
               key={module.id}
               href={module.href}
               style={{ "--accent": module.accent } as React.CSSProperties}
-              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-5"
+              className="panel panel-hover group relative flex min-h-[104px] items-center gap-4 overflow-hidden p-4 md:p-5"
             >
               <span
                 className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"
@@ -55,33 +55,36 @@ export default function HomePage() {
                 }}
               />
               <span
-                className="pointer-events-none absolute -right-16 -top-20 size-44 rounded-full opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100"
+                className="pointer-events-none absolute -right-16 -top-24 size-44 rounded-full opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100"
                 style={{ background: module.accent }}
               />
 
-              <div className="relative flex items-start justify-between gap-3">
-                <span className="accent-tile grid size-11 place-items-center rounded-lg border transition-colors">
-                  <ModuleIcon id={module.id} />
+              <span className="accent-tile relative grid size-12 shrink-0 place-items-center rounded-xl border transition-colors">
+                <ModuleIcon id={module.id} />
+              </span>
+
+              <span className="relative min-w-0 flex-1">
+                <span className="flex items-baseline justify-between gap-3">
+                  <span className="display block truncate text-lg text-parchment md:text-xl">
+                    {module.title}
+                  </span>
+                  <span className="display shrink-0 text-xs text-gold/40">
+                    {module.number}
+                  </span>
                 </span>
-                <span className="display text-sm text-gold/45">{module.number}</span>
-              </div>
+                <span className="mt-1 block text-xs text-muted">{module.tagline}</span>
+              </span>
 
-              <h2 className="display relative mt-6 text-xl leading-tight text-parchment">
-                {module.title}
-              </h2>
-
-              <div className="relative mt-auto flex justify-end pt-6">
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                  className="text-gold/70 transition-transform duration-200 group-hover:translate-x-1"
-                >
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                className="relative shrink-0 text-gold/70 transition-transform duration-200 group-hover:translate-x-1"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </Link>
           ))}
         </div>
