@@ -24,33 +24,86 @@ export default function HomePage() {
           </span>
         </Link>
 
+        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted">
+          <span className="flex items-center gap-2">
+            <span className="size-1.5 rounded-full bg-teal" aria-hidden="true" />
+            Six modules live
+          </span>
+          <span className="hidden text-muted/40 sm:inline">·</span>
+          <span>Launch {new Date("2026-11-04T00:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</span>
+          <span className="hidden text-muted/40 sm:inline">·</span>
+          <span>No account, no paywall</span>
+        </div>
+
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {modules.map((module) => (
             <Link
               key={module.id}
               href={module.href}
-              className="panel panel-hover group flex h-full flex-col p-6"
+              style={{ "--accent": module.accent } as React.CSSProperties}
+              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-6"
             >
-              <div className="flex items-start justify-between gap-3">
-                <span className="grid size-11 place-items-center rounded-lg border border-gold/30 bg-gold/5 text-gold-soft transition-colors group-hover:border-gold/60">
+              <span
+                className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${module.accent}80, transparent)`,
+                }}
+              />
+              <span
+                className="pointer-events-none absolute -right-16 -top-20 size-44 rounded-full opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100"
+                style={{ background: module.accent }}
+              />
+
+              <div className="relative flex items-start justify-between gap-3">
+                <span className="accent-tile grid size-12 place-items-center rounded-xl border transition-colors">
                   <ModuleIcon id={module.id} />
                 </span>
-                <span className="display text-sm text-gold/50">{module.number}</span>
+                <div className="flex items-center gap-3">
+                  <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.16em] text-muted/80">
+                    <span
+                      className="size-1.5 rounded-full"
+                      style={{ background: module.accent }}
+                    />
+                    Live
+                  </span>
+                  <span className="display text-sm text-gold/45">{module.number}</span>
+                </div>
               </div>
-              <h2 className="display mt-5 text-xl text-parchment">{module.title}</h2>
-              <p className="mt-1 text-xs uppercase tracking-wider text-muted/80">
+
+              <h2 className="display relative mt-5 text-[1.35rem] leading-tight text-parchment">
+                {module.title}
+              </h2>
+              <p className="relative mt-1 text-[11px] uppercase tracking-[0.16em] text-muted/70">
                 {module.zh}
               </p>
-              <p className="mt-3 text-sm font-medium text-parchment/90">
+
+              <p className="relative mt-4 text-sm font-medium text-parchment/90">
                 {module.question}
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{module.body}</p>
-              <span className="mt-auto pt-6 text-xs text-gold/90">
-                Open module →
-              </span>
+              <p className="relative mt-2 text-sm leading-relaxed text-muted">
+                {module.body}
+              </p>
+
+              <div className="relative mt-auto flex items-center justify-between gap-3 pt-6">
+                <span className="text-xs text-gold/85">Open module</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                  className="text-gold/70 transition-transform duration-200 group-hover:translate-x-1"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
             </Link>
           ))}
         </div>
+
+        <p className="mt-8 text-xs leading-relaxed text-muted/60">
+          Six task-first modules. Every page states its source and what is still being verified.
+        </p>
       </section>
     </main>
   );

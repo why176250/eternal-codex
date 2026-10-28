@@ -165,15 +165,20 @@ export function XpCalculator() {
 
       <section className="grid gap-4 sm:grid-cols-3">
         {[
-          { label: "XP to next level", value: formatNumber(levelXp) },
-          { label: "Remaining this level", value: formatNumber(remaining) },
-          { label: "To level 60", value: formatNumber(toSixty) },
+          { label: "XP to next level", value: formatNumber(levelXp), accent: "#e3bd78" },
+          { label: "Remaining this level", value: formatNumber(remaining), accent: "#6fd5c5" },
+          { label: "To level 60", value: formatNumber(toSixty), accent: "#c9a8ff" },
         ].map((stat) => (
-          <div key={stat.label} className="panel p-4">
-            <p className="text-[11px] uppercase tracking-wider text-muted">
+          <div
+            key={stat.label}
+            className="panel stat-card p-5"
+            style={{ "--accent": stat.accent } as React.CSSProperties}
+          >
+            <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-muted">
+              <span className="size-1.5 rounded-full" style={{ background: stat.accent }} />
               {stat.label}
             </p>
-            <p className="display mt-1 text-2xl text-parchment">{stat.value}</p>
+            <p className="display mt-2 text-3xl text-parchment">{stat.value}</p>
           </div>
         ))}
       </section>
@@ -194,7 +199,7 @@ export function XpCalculator() {
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[34rem] text-left text-sm">
-            <thead className="bg-deep/40 text-[11px] uppercase tracking-wider text-muted">
+            <thead className="bg-deep/80 text-[10px] uppercase tracking-[0.14em] text-muted">
               <tr>
                 <th className="px-5 py-2 font-normal">Mob level</th>
                 <th className="px-3 py-2 text-right font-normal">XP / kill</th>
@@ -203,9 +208,9 @@ export function XpCalculator() {
                 <th className="px-5 py-2 text-right font-normal">Elite kills</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="table-zebra">
               {mobRows.map((row) => (
-                <tr key={row.mobLevel} className="border-t border-line/40">
+                <tr key={row.mobLevel} className="border-t border-line/30">
                   <td className="px-5 py-2 text-parchment">
                     {row.mobLevel}
                     {row.mobLevel === level ? (

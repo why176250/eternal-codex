@@ -6,6 +6,7 @@ export type Module = {
   href: string;
   question: string;
   body: string;
+  accent: string;
 };
 
 export const modules: Module[] = [
@@ -17,6 +18,7 @@ export const modules: Module[] = [
     href: "/start",
     question: "Which ruleset, faction, and first route?",
     body: "Decide the choices you cannot undo, then get a 1–20 route that survives launch week.",
+    accent: "#e3bd78",
   },
   {
     id: "talents",
@@ -26,6 +28,7 @@ export const modules: Module[] = [
     href: "/tools/build",
     question: "Talent and legacy points, planned.",
     body: "Nine talent trees, three legacy trees, share links.",
+    accent: "#6fd5c5",
   },
   {
     id: "gear",
@@ -35,6 +38,7 @@ export const modules: Module[] = [
     href: "/bis",
     question: "What should I farm first?",
     body: "Per-spec checklists with sources and farm order, instead of a 16-slot wall of guesses.",
+    accent: "#9bb7ff",
   },
   {
     id: "dungeons",
@@ -44,6 +48,7 @@ export const modules: Module[] = [
     href: "/dungeons",
     question: "Which instance, and what does it drop?",
     body: "The leveling ladder, level bands, and the loot each stop is actually for.",
+    accent: "#f0a868",
   },
   {
     id: "professions",
@@ -53,6 +58,7 @@ export const modules: Module[] = [
     href: "/guides/professions",
     question: "Which professions, and what sells?",
     body: "Pairings, first-week gold, and the recipe data behind the crafts.",
+    accent: "#c9a8ff",
   },
   {
     id: "xp",
@@ -62,5 +68,6 @@ export const modules: Module[] = [
     href: "/tools/xp",
     question: "How long until the next level?",
     body: "Exact 1–60 XP table, kills per mob level, rested XP, and time to 60.",
+    accent: "#8fe0c0",
   },
 ];
