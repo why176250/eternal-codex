@@ -221,3 +221,18 @@ a {
   html { scroll-behavior: auto; }
   .panel-hover, .accent-tile { transition: none; }
 }
+
+.inline-skill {
+  display: inline;
+  white-space: nowrap;
+}
+
+.inline-skill img {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin: 0 0.28em 0 0;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  vertical-align: -0.18em;
+}

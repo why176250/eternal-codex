@@ -42,7 +42,7 @@ export const modules: Module[] = [
     question: "Which class fits how you actually play?",
     body: "Nine overviews: leveling feel, group demand, and the level-40 second spec.",
     accent: "#e0b477",
-    tagline: "Nine classes",
+    tagline: "28 spec guides",
   },
   {
     id: "dungeons",
