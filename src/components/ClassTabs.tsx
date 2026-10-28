@@ -136,22 +136,33 @@ export function ClassTabs({ wowClass, guide, changes }: Props) {
                   key={`${change.tree}-${change.name}`}
                   className="rounded-xl border border-line/70 bg-deep/40 p-4"
                 >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span
-                      className={`rounded-full border px-2 py-0.5 text-[9px] uppercase tracking-wider ${
-                        change.status === "new"
-                          ? "border-teal/40 bg-teal/10 text-teal"
-                          : "border-gold/30 bg-gold/[0.07] text-gold-soft"
-                      }`}
-                    >
-                      {change.status === "new" ? "New" : "Changed"}
-                    </span>
-                    <span className="text-[10px] uppercase tracking-wider text-muted/70">
-                      {change.tree}
-                    </span>
+                  <div className="flex items-start gap-3">
+                    <img
+                      src={`/talents/icons/${change.icon}.jpg`}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="mt-0.5 size-10 shrink-0 rounded border border-line/80"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span
+                          className={`rounded-full border px-2 py-0.5 text-[9px] uppercase tracking-wider ${
+                            change.status === "new"
+                              ? "border-teal/40 bg-teal/10 text-teal"
+                              : "border-gold/30 bg-gold/[0.07] text-gold-soft"
+                          }`}
+                        >
+                          {change.status === "new" ? "New" : "Changed"}
+                        </span>
+                        <span className="text-[10px] uppercase tracking-wider text-muted/70">
+                          {change.tree}
+                        </span>
+                      </div>
+                      <h3 className="display mt-2 text-base text-parchment">{change.name}</h3>
+                    </div>
                   </div>
-                  <h3 className="display mt-2 text-base text-parchment">{change.name}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted">
+                  <p className="mt-2 text-xs leading-relaxed text-muted">
                     {change.description}
                   </p>
                   <p className="mt-2 text-[10px] uppercase tracking-wider text-muted/60">

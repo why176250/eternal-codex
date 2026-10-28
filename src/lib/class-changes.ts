@@ -6,6 +6,7 @@ export type ClassChange = {
   status: "new" | "changed";
   description: string;
   maxRanks: number;
+  icon: string;
 };
 
 export function getClassChanges(className: string): ClassChange[] {
@@ -25,6 +26,7 @@ export function getClassChanges(className: string): ClassChange[] {
         status: talent.classicStatus,
         description: rank?.en || rank?.zh || "",
         maxRanks: talent.maxRanks,
+        icon: talent.icon,
       });
     }
   }
