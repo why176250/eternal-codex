@@ -1,0 +1,158 @@
+{
+  "279968": {
+    "name": "first aid kit",
+    "effect": "Opening a first aid kit increases the stamina of you and others sitting nearby by 56 points (based on level 60, increasing with levels)."
+  },
+  "279940": {
+    "name": "toxin research",
+    "effect": "Places a Poison Research that contains a healing potion and anti-venom potion and provides all the buffs of a First Aid Kit. Can be placed on a first aid kit to replace it."
+  },
+  "279951": {
+    "name": "Plague doctor laboratory",
+    "effect": "Places a Plague Doctor Laboratory, which contains healing potions and salves and provides all the buffs of a First Aid Kit. Can be placed on a first aid kit to replace it."
+  },
+  "279944": {
+    "name": "whetstone",
+    "effect": "Build a whetstone that increases the strength of you and others sitting nearby by 34 (based on level 60, increasing with levels)."
+  },
+  "279988": {
+    "name": "anvil",
+    "effect": "Places an anvil and provides all the buffs of a whetstone. Can be placed on a whetstone to replace it."
+  },
+  "279955": {
+    "name": "Master Forge",
+    "effect": "Places a Master Forge that can be used in recipes that require it and provides all the buffs of the Whetstone. Can be placed on a whetstone to replace it."
+  },
+  "279978": {
+    "name": "camp tent",
+    "effect": "Set up a tent that increases resting experience for you and others sitting nearby to 5% of a level; it has no effect if resting experience is already above this value."
+  },
+  "279941": {
+    "name": "Tannery rack",
+    "effect": "Places a tanning rack that allows the crafting of specific materials and provides all the buffs of a camp tent. Can be placed on the camp tent to replace it."
+  },
+  "279945": {
+    "name": "sewing machine",
+    "effect": "Places a sewing machine that can be used in recipes that require it and provides all the buffs of a camp tent. Can be placed on the camp tent to replace it."
+  },
+  "279956": {
+    "name": "Well of Mana",
+    "effect": "Creates a mana well that restores 29 mana every 5 seconds to you and others sitting nearby (based on level 60, increasing with levels)."
+  },
+  "279970": {
+    "name": "fermentation barrel",
+    "effect": "Places a fermentation vat that allows the crafting of specific materials and provides all the benefits of the Mana Well. Can be placed on the Well of Mana to replace it."
+  },
+  "279990": {
+    "name": "Alchemy Laboratory",
+    "effect": "Places an Alchemy Laboratory that can be used in recipes that require it and provides all the buffs of the Well of Mana. Can be placed on the Well of Mana to replace it."
+  },
+  "279962": {
+    "name": "scented candle",
+    "effect": "Light a scented candle, increasing the intelligence of you and others sitting nearby by 25 points (based on level 60, increasing with levels)."
+  },
+  "279964": {
+    "name": "greenhouse",
+    "effect": "Place a greenhouse and over time the sown seeds will grow into herbs and provide all the benefits of a scented candle. Can be placed on a scented candle to replace it."
+  },
+  "279947": {
+    "name": "seed hybrid",
+    "effect": "Places a Seed Hybridizer, allowing seeds to be multiplied or combined into rarer levels and providing all the buffs of Scented Candles. Can be placed on a scented candle to replace it."
+  },
+  "279981": {
+    "name": "Basic Campfire Kit",
+    "effect": "Builds a basic campfire that can be used for cooking and allows up to 3 additional camping facilities to be placed. Players who sit or craft items nearby for 1 minute will receive buffs from other camping facilities."
+  },
+  "279957": {
+    "name": "Cookie feast",
+    "effect": "Set out a feast of cookies that include foods that increase stamina."
+  },
+  "279961": {
+    "name": "Intermediate Campfire Kit",
+    "effect": "Builds a mid-level campfire that allows cooking and up to 5 additional camp facilities. Players who sit or craft nearby for 1 minute will receive buffs from other camp facilities."
+  },
+  "279974": {
+    "name": "Premium Campfire Kit",
+    "effect": "Builds an advanced campfire that allows cooking and up to 10 additional camp facilities. Players who sit or craft nearby for 1 minute will receive buffs from other camp facilities."
+  },
+  "279982": {
+    "name": "iron furnace",
+    "effect": "Place an Iron Stove for the most advanced cooking recipes."
+  },
+  "279960": {
+    "name": "magnet",
+    "effect": "Erects a magnet that increases the melee attack power of you and others sitting nearby by 90 (based on level 60, increasing with levels)."
+  },
+  "279948": {
+    "name": "rock garden",
+    "effect": "Placing a rock garden will generate regular mining sites over time and provide all the buffs of lodestone. Can be placed on a magnet to replace it."
+  },
+  "279952": {
+    "name": "Molten Foundry",
+    "effect": "Places a Molten Foundry that can be used in recipes that require it and provides all the buffs of Lodestone. Can be placed on a magnet to replace it."
+  },
+  "279972": {
+    "name": "camp flag",
+    "effect": "Unfurls a flag that increases the spirit of you and other tribe members sitting nearby by 32 (based on level 60, increasing with levels)."
+  },
+  "279973": {
+    "name": "camp flag",
+    "effect": "Unfurls a flag that increases the spirit of you and other alliance members sitting nearby by 32 (based on level 60, increasing with levels)."
+  },
+  "279943": {
+    "name": "spinning wheel",
+    "effect": "Places a spinning wheel that allows the crafting of specific materials and provides all the buffs of the faction flag. Can be placed on a faction flag to replace it."
+  },
+  "279959": {
+    "name": "loom",
+    "effect": "Places a loom that can be used in recipes that require it and provides all the buffs of the faction flag. Can be placed on a faction flag to replace it."
+  },
+  "279950": {
+    "name": "Reagent robot",
+    "effect": "Summons a reagent bot, allowing you and others nearby to purchase materials."
+  },
+  "279949": {
+    "name": "repair robot",
+    "effect": "Summons a repair bot, allowing you and others nearby to purchase materials and repair gear. Can be placed on the reagent robot to replace it."
+  },
+  "279989": {
+    "name": "anarchist workbench",
+    "effect": "Places an Anarchist workbench that can be used for recipes that require it."
+  },
+  "279976": {
+    "name": "Enchanted Lute",
+    "effect": "Summons an enchanted lute, granting you and others sitting nearby 308 points of armor bonus, 13 points of all attributes, and 22 points of all resistances (based on level 60, increasing with level)."
+  },
+  "279985": {
+    "name": "Arcane Recycler",
+    "effect": "Places an Arcane Recycler, which disenchants more efficiently and provides all the benefits of an enchanted lute. Can be placed on an enchanted lute to replace it."
+  },
+  "279987": {
+    "name": "Arcane Forge",
+    "effect": "Places an Arcane Forge that can be used in recipes that require it and provides all the benefits of an enchanted lute. Can be placed on an enchanted lute to replace it."
+  },
+  "279967": {
+    "name": "fish tank",
+    "effect": "Place a small fish tank that increases all attributes of you and others sitting nearby by 8%."
+  },
+  "279965": {
+    "name": "fishing rack",
+    "effect": "Places a fishing stand that enables you to catch excellent fish for 1 hour, provides fishing skill bait, and provides all the buffs of the fish tank. Can be placed on the fish tank to replace it."
+  },
+  "279966": {
+    "name": "fishing hut",
+    "effect": "Place a fishing hut that allows you to catch rare fish for 1 hour, provides fishing skill bait, and provides all the benefits of the fish tank. Can be placed on the fish tank to replace it."
+  },
+  "279979": {
+    "name": "camp chair",
+    "effect": "Assemble a camp chair that increases the critical strike chance of all spells and attacks by 2% for you and others sitting nearby."
+  },
+  "279969": {
+    "name": "field guide",
+    "effect": "Places a Field Guide, allowing the player to read it and gain the Track the Beast skill, and provides all the buffs of the Camp Chair. Can be placed on a camp chair to replace it."
+  },
+  "279938": {
+    "name": "Trapper's Workbench",
+    "effect": "Places a Trapper's Workbench that contains 1 trap and provides all the benefits of the Camp Chair. Can be placed on a camp chair to replace it."
+  }
+}

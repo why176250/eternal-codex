@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import campItemsEn from "@/data/camp-items.en.json";
+import {
+  favorCountBySkillLine,
+  favorName,
+  favorOffers,
+  getFavorOffers,
+} from "@/lib/favor";
 import {
   fallbackIcon,
   getCampItems,
@@ -20,6 +27,8 @@ export const metadata: Metadata = {
 
 type SearchParams = Promise<{ p?: string; q?: string; page?: string }>;
 const PAGE_SIZE = 24;
+const CAMP_TIERS = [20, 140, 300];
+const updated = "2026-10-28";
 
 function reagentCount(recipe: Recipe) {
   return recipe.reagents.reduce((sum, reagent) => sum + reagent.count, 0);
@@ -69,6 +78,17 @@ export default async function ProfessionsPage({
   const currentPage = Math.min(page, pageCount);
   const visible = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
   const camps = getCampItems(profession.skillLineId);
+  const favor = getFavorOffers(profession.skillLineId);
+  const favorCounts = favorCountBySkillLine();
+  const campRows = professions.map((entry) => {
+    const items = getCampItems(entry.skillLineId);
+    return {
+      profession: entry,
+      tiers: CAMP_TIERS.map(
+        (tier) => items.find((item) => item.skillReq === tier) ?? null,
+      ),
+    };
+  });
 
   function href(next: { p?: number; q?: string; page?: number }) {
     const search = new URLSearchParams();
@@ -104,6 +124,9 @@ export default async function ProfessionsPage({
             </span>
             <span className="rounded-full border border-line/80 px-3 py-1">
               Source: Blue Hermit
+            </span>
+            <span className="rounded-full border border-line/80 px-3 py-1">
+              Updated 2026-10-28
             </span>
           </div>
         </div>
@@ -195,7 +218,9 @@ export default async function ProfessionsPage({
               </p>
             </div>
             <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-              {camps.map((item) => (
+              {camps.map((item) => {
+                const en = campItemsEn[String(item.itemId) as keyof typeof campItemsEn];
+                return (
                 <div key={item.itemId} className="panel p-4">
                   <div className="flex items-center gap-3">
                     <img
@@ -206,20 +231,173 @@ export default async function ProfessionsPage({
                       className="size-9 rounded border border-line/80"
                     />
                     <div>
-                      <p className="text-sm text-parchment">{item.nameCn}</p>
+                      <p className="text-sm capitalize text-parchment">{en?.name ?? item.nameCn}</p>
                       <p className="text-[10px] text-muted">
                         Skill {item.skillReq} · iLvl {item.itemLevel}
                       </p>
                     </div>
                   </div>
                   <p className="mt-3 text-xs leading-relaxed text-muted">
-                    {item.effectDescCn}
+                    {en?.effect ?? item.effectDescCn}
                   </p>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </section>
         ) : null}
+
+        <section id="camp-overview" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
+          <details open>
+            <summary className="flex cursor-pointer list-none flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="eyebrow">Camp items at a glance</p>
+                <h2 className="display mt-1 text-2xl text-parchment">
+                  Every profession, three tiers
+                </h2>
+              </div>
+              <p className="text-[11px] text-muted">
+                Skill 20 / 140 / 300 · buffs for everyone at the fire
+              </p>
+            </summary>
+            <div className="mt-4 overflow-x-auto">
+              <table className="w-full min-w-[860px] text-left text-xs">
+                <thead className="border-b border-line text-[10px] uppercase tracking-wider text-muted">
+                  <tr>
+                    <th className="py-2 pr-4 font-normal">Profession</th>
+                    {CAMP_TIERS.map((tier) => (
+                      <th key={tier} className="px-3 py-2 font-normal">
+                        Skill {tier}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {campRows.map(({ profession: entry, tiers }) => (
+                    <tr key={entry.skillLineId} className="border-b border-line/40 align-top last:border-0">
+                      <td className="py-3 pr-4 text-parchment">
+                        {professionEnglish[entry.name] ?? entry.name}
+                      </td>
+                      {tiers.map((item, index) => {
+                        const en = item ? campItemsEn[String(item.itemId) as keyof typeof campItemsEn] : null;
+                        return (
+                          <td key={`${entry.skillLineId}-${index}`} className="px-3 py-3">
+                            {item ? (
+                              <div className="flex gap-2">
+                                <img
+                                  src={fallbackIcon(item.icon)}
+                                  alt=""
+                                  width={28}
+                                  height={28}
+                                  className="size-7 shrink-0 rounded border border-line/70"
+                                />
+                                <div>
+                                  <p className="capitalize text-parchment">{en?.name ?? item.nameCn}</p>
+                                  <p className="mt-0.5 text-[10px] leading-relaxed text-muted">
+                                    {en?.effect ?? item.effectDescCn}
+                                  </p>
+                                </div>
+                              </div>
+                            ) : (
+                              <span className="text-muted/50">—</span>
+                            )}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+
+        <section id="merchants-favor" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="eyebrow">Merchant&apos;s Favor</p>
+              <h2 className="display mt-1 text-2xl text-parchment">
+                Trade camp recipes
+              </h2>
+              <p className="mt-1 max-w-2xl text-xs leading-relaxed text-muted">
+                Bring supply crates to the trade camps and spend favor on these
+                recipes and goods. Counts below are for the current import.
+              </p>
+            </div>
+            <span className="rounded-full border border-line/80 px-3 py-1 text-[11px] text-muted">
+              {favorOffers.length} offers · 7 professions
+            </span>
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-2 text-[11px]">
+            {professions
+              .filter((entry) => favorCounts[entry.skillLineId])
+              .map((entry) => (
+                <span
+                  key={entry.skillLineId}
+                  className="rounded-full border border-line/70 px-2.5 py-1 text-muted"
+                >
+                  {professionEnglish[entry.name] ?? entry.name}{" "}
+                  <span className="text-parchment/80">
+                    {favorCounts[entry.skillLineId]}
+                  </span>
+                </span>
+              ))}
+          </div>
+
+          <div className="mt-4">
+            <p className="text-xs text-muted">
+              {professionEnglish[profession.name] ?? profession.name} offers:{" "}
+              <span className="text-parchment">{favor.length}</span>
+            </p>
+            {favor.length > 0 ? (
+              <details className="mt-2">
+                <summary className="cursor-pointer select-none text-xs text-gold/85">
+                  Show current profession offers
+                </summary>
+                <div className="mt-3 overflow-x-auto">
+                  <table className="w-full min-w-[620px] text-left text-xs">
+                    <thead className="border-b border-line text-[10px] uppercase tracking-wider text-muted">
+                      <tr>
+                        <th className="py-2 pr-4 font-normal">Item</th>
+                        <th className="px-3 py-2 font-normal">Favor</th>
+                        <th className="px-3 py-2 font-normal">Gold</th>
+                        <th className="px-3 py-2 font-normal">Requirement</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {favor.map((offer) => (
+                        <tr key={`${offer.itemId}-${offer.entryType}`} className="border-b border-line/40 last:border-0">
+                          <td className="py-2 pr-4">
+                            <span className="flex items-center gap-2 text-parchment">
+                              <img
+                                src={fallbackIcon(offer.icon)}
+                                alt=""
+                                width={24}
+                                height={24}
+                                className="size-6 rounded border border-line/70"
+                              />
+                              {favorName(offer)}
+                            </span>
+                          </td>
+                          <td className="px-3 py-2 text-muted">{offer.favorCost}</td>
+                          <td className="px-3 py-2 text-muted">{offer.goldCost}g</td>
+                          <td className="px-3 py-2 text-muted">
+                            {offer.requireRep ?? "—"}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            ) : (
+              <p className="mt-2 text-xs text-muted/60">
+                No favor offers for this profession in the current import.
+              </p>
+            )}
+          </div>
+        </section>
 
         {guideSteps.length > 0 ? (
           <details

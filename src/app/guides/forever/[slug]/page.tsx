@@ -48,6 +48,15 @@ export default async function ForeverGuidePage({
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="badge">{guide.category || "Guide"}</span>
           <span className="text-muted">Imported · Sargeras</span>
+          <span className="text-muted/60">
+            Updated{" "}
+            {new Intl.DateTimeFormat("en-US", {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
+              timeZone: "UTC",
+            }).format(new Date(guide.updated))}
+          </span>
         </div>
         <h1 className="display mt-4 text-3xl text-parchment md:text-5xl">
           {guide.title}
