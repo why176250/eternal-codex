@@ -225,8 +225,11 @@ export default function ToolsPage() {
           </span>
         </Link>
 
-        <Link
+        <DataUpdatingLink
           href="/tools/gear"
+          eyebrow="Gear Hall · Data preparing"
+          title="Gear Hall is being prepared"
+          body="Community loadouts are being collected. The hall will open after launch."
           className="panel panel-hover group mt-4 flex flex-wrap items-center justify-between gap-3 p-5"
         >
           <span>
@@ -239,7 +242,7 @@ export default function ToolsPage() {
             Preview the hall
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </span>
-        </Link>
+        </DataUpdatingLink>
 
         <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted">
           <p className="font-medium text-parchment">How the planners behave</p>

@@ -7,9 +7,12 @@ type Props = {
   className?: string;
   style?: CSSProperties;
   children: ReactNode;
+  eyebrow?: string;
+  title?: string;
+  body?: string;
 };
 
-export function DataUpdatingLink({ href, className, style, children }: Props) {
+export function DataUpdatingLink({ href, className, style, children, eyebrow, title, body }: Props) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -45,15 +48,15 @@ export function DataUpdatingLink({ href, className, style, children }: Props) {
           <div
             role="dialog"
             aria-modal="true"
-            aria-label="BiS data updating"
+            aria-label={title ?? "Data updating"}
             className="panel w-full max-w-md p-5"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="eyebrow">BiS · Data updating</p>
+                <p className="eyebrow">{eyebrow ?? "BiS · Data updating"}</p>
                 <h2 className="display mt-2 text-xl text-parchment">
-                  Gear data is still being verified
+                  {title ?? "Gear data is still being verified"}
                 </h2>
               </div>
               <button
@@ -66,8 +69,8 @@ export function DataUpdatingLink({ href, className, style, children }: Props) {
               </button>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted">
-              We are re-checking the BiS lists and farm order against the launch
-              data. The gear planner will open after launch.
+              {body ??
+                "We are re-checking the BiS lists and farm order against the launch data. The gear planner will open after launch."}
             </p>
             <button
               type="button"
