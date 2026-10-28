@@ -4,7 +4,7 @@ import racialsJson from "@/data/forever/racials.json";
 import vendorsJson from "@/data/forever/vendors.json";
 import petsJson from "@/data/forever/pets.json";
 import { foreverTalents } from "@/data/forever/wow-talents";
-import guidesJson from "@/data/forever/guides.json";
+import guidesJson from "@/data/forever/guides.en.json";
 import legacyJson from "@/data/forever/legacy.json";
 
 export const foreverDungeons = dungeonsJson;

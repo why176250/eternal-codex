@@ -17,13 +17,13 @@ export default function ForeverGuidesPage() {
         <div className="container-x py-14 md:py-20">
           <p className="eyebrow">Guides · Forever imports</p>
           <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
-            Eight full Forever guides
+            Forever guides
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Class quests, crafting speed gear, PvP ranks, and hidden books —
-            written by the Sargeras community and imported here in full.
+            written by the Sargeras community, translated into English, with
+            images localized.
           </p>
-          <p className="mt-3"><span className="badge">Chinese text · EN pending</span></p>
           <div className="mt-6">
             <ForeverSourceNote />
           </div>
@@ -45,7 +45,6 @@ export default function ForeverGuidesPage() {
               <h2 className="display mt-4 text-xl text-parchment">
                 {guide.title}
               </h2>
-              <p className="mt-1 text-xs text-muted">{guide.titleEn}</p>
               <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted">
                 {guide.description}
               </p>
