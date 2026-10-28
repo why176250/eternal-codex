@@ -88,6 +88,72 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+
+        <div className="mt-12 border-t border-line/60 pt-8">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Start here</p>
+              <h2 className="display mt-2 text-2xl text-parchment">
+                Your first launch week
+              </h2>
+            </div>
+            <Link
+              href="/start"
+              className="text-xs text-gold/80 underline-offset-4 transition-colors hover:text-gold-soft hover:underline"
+            >
+              Full launch plan →
+            </Link>
+          </div>
+
+          <div className="mt-6 grid gap-3 md:grid-cols-3">
+            {[
+              {
+                n: "01",
+                title: "Pick a class",
+                body: "Nine overviews, no tier-list lies.",
+                href: "/classes",
+              },
+              {
+                n: "02",
+                title: "Set the build",
+                body: "Talents and legacy in one save.",
+                href: "/tools/build",
+              },
+              {
+                n: "03",
+                title: "Pick the route",
+                body: "Ruleset, faction, and the 1–20 path.",
+                href: "/start",
+              },
+            ].map((step) => (
+              <Link
+                key={step.n}
+                href={step.href}
+                className="group flex items-start gap-4 rounded-xl border border-line/70 bg-deep/30 p-4 transition-colors hover:border-gold/40 hover:bg-gold/[0.03]"
+              >
+                <span className="display mt-0.5 text-sm text-gold/45">{step.n}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-medium text-parchment">
+                    {step.title}
+                  </span>
+                  <span className="mt-1 block text-xs leading-relaxed text-muted">
+                    {step.body}
+                  </span>
+                </span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                  className="mt-1 shrink-0 text-gold/60 transition-transform group-hover:translate-x-1"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
     </main>
   );
