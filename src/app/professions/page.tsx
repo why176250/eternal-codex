@@ -21,6 +21,30 @@ export const metadata: Metadata = {
 type SearchParams = Promise<{ p?: string; q?: string; page?: string }>;
 const PAGE_SIZE = 24;
 
+function reagentCount(recipe: Recipe) {
+  return recipe.reagents.reduce((sum, reagent) => sum + reagent.count, 0);
+}
+
+function buildSkillGuide(recipes: Recipe[]) {
+  const steps: { start: number; end: number; recipe: Recipe }[] = [];
+  for (let start = 1; start <= 300; start += 25) {
+    const end = Math.min(300, start + 24);
+    const candidates = recipes.filter(
+      (recipe) =>
+        recipe.minSkillLineRank <= start &&
+        recipe.trivialHigh > start &&
+        recipe.reagents.length > 0,
+    );
+    const recipe =
+      candidates.sort((a, b) => reagentCount(a) - reagentCount(b))[0] ??
+      recipes
+        .filter((entry) => entry.minSkillLineRank > start)
+        .sort((a, b) => a.minSkillLineRank - b.minSkillLineRank)[0];
+    if (recipe) steps.push({ start, end, recipe });
+  }
+  return steps;
+}
+
 export default async function ProfessionsPage({
   searchParams,
 }: {
@@ -33,6 +57,7 @@ export default async function ProfessionsPage({
   const page = Math.max(1, Number(params.page) || 1);
 
   const allRecipes = getRecipes(profession.skillLineId);
+  const guideSteps = buildSkillGuide(allRecipes);
   const filtered = query
     ? allRecipes.filter((recipe) =>
         `${recipe.localesName} ${recipe.reagents.map((r) => r.nameCn).join(" ")}`
@@ -135,12 +160,12 @@ export default async function ProfessionsPage({
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-2">
-              <Link
-                href="/guides/professions"
+              <a
+                href="#profession-guide"
                 className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
               >
-                Profession guide
-              </Link>
+                Skill-up guide
+              </a>
               {camps.length > 0 ? (
                 <a
                   href="#camp-items"
@@ -167,6 +192,57 @@ export default async function ProfessionsPage({
             </form>
           </div>
         </div>
+
+        {guideSteps.length > 0 ? (
+          <section id="profession-guide" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="eyebrow">Skill-up guide</p>
+                <h2 className="display mt-1 text-xl text-parchment">
+                  {professionEnglish[profession.name] ?? profession.name} 1–300
+                </h2>
+              </div>
+              <p className="max-w-md text-[11px] leading-relaxed text-muted">
+                One craftable recipe per 25-skill band, preferring the cheapest
+                reagent list. Check your own material prices before committing.
+              </p>
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+              {guideSteps.map((step) => (
+                <div
+                  key={`${step.start}-${step.recipe.recipeId}`}
+                  className="flex items-start gap-3 rounded-lg border border-line/60 bg-deep/40 p-3"
+                >
+                  <img
+                    src={fallbackIcon(step.recipe.icon)}
+                    alt=""
+                    width={34}
+                    height={34}
+                    className="size-8 shrink-0 rounded border border-line/70"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[10px] uppercase tracking-wider text-muted">
+                      Skill {step.start}–{step.end}
+                    </p>
+                    <p className="mt-0.5 truncate text-xs text-parchment">
+                      {step.recipe.localesName}
+                    </p>
+                    <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">
+                      {step.recipe.reagents
+                        .map((reagent) => `${reagent.nameCn} ×${reagent.count}`)
+                        .join(" · ")}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-[10px] leading-relaxed text-muted/60">
+              Generated from recipe skill requirements. The cheapest recipe is a
+              starting suggestion, not a mandatory route; use cheaper alternatives
+              from the list below when they are available.
+            </p>
+          </section>
+        ) : null}
 
         <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {visible.map((recipe) => (
