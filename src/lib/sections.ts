@@ -71,6 +71,16 @@ export const toolItems: SectionItem[] = [
       "Three legacy trees, 65 earnable points, point gates and the 15/25/40/55 reward track.",
     bullets: [],
   },
+  {
+    slug: "class-popularity",
+    label: "Class Popularity",
+    zh: "职业热度",
+    href: "/tools/class-popularity",
+    status: "live",
+    summary:
+      "41,270 votes from the launch class poll, split by faction and ranked by share.",
+    bullets: [],
+  },
 ];
 
 export const dataItems: SectionItem[] = [

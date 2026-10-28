@@ -1,0 +1,269 @@
+{
+ "title": "无限服开服意愿调查",
+ "intro": "《魔兽世界：无限》开服意愿调查。每人一票，提交后可见当前统计。投票于开服当天截止。",
+ "totalVotes": 41270,
+ "endTime": 1793833200000,
+ "updatedAt": "2026-10-28",
+ "factions": {
+  "部落": [
+   {
+    "classId": 2,
+    "name": "圣骑士",
+    "icon": "class_paladin",
+    "count": 3298,
+    "percent": 15.5
+   },
+   {
+    "classId": 8,
+    "name": "萨满祭司",
+    "icon": "class_shaman",
+    "count": 2734,
+    "percent": 12.8
+   },
+   {
+    "classId": 6,
+    "name": "术士",
+    "icon": "class_warlock",
+    "count": 2592,
+    "percent": 12.1
+   },
+   {
+    "classId": 3,
+    "name": "猎人",
+    "icon": "class_hunter",
+    "count": 2535,
+    "percent": 11.9
+   },
+   {
+    "classId": 1,
+    "name": "战士",
+    "icon": "class_warrior",
+    "count": 2471,
+    "percent": 11.6
+   },
+   {
+    "classId": 9,
+    "name": "德鲁伊",
+    "icon": "class_druid",
+    "count": 2327,
+    "percent": 10.9
+   },
+   {
+    "classId": 4,
+    "name": "法师",
+    "icon": "class_mage",
+    "count": 1959,
+    "percent": 9.2
+   },
+   {
+    "classId": 5,
+    "name": "牧师",
+    "icon": "class_priest",
+    "count": 1752,
+    "percent": 8.2
+   },
+   {
+    "classId": 7,
+    "name": "潜行者",
+    "icon": "class_rogue",
+    "count": 1677,
+    "percent": 7.9
+   }
+  ],
+  "联盟": [
+   {
+    "classId": 2,
+    "name": "圣骑士",
+    "icon": "class_paladin",
+    "count": 2371,
+    "percent": 13.7
+   },
+   {
+    "classId": 3,
+    "name": "猎人",
+    "icon": "class_hunter",
+    "count": 2313,
+    "percent": 13.3
+   },
+   {
+    "classId": 9,
+    "name": "德鲁伊",
+    "icon": "class_druid",
+    "count": 2062,
+    "percent": 11.9
+   },
+   {
+    "classId": 4,
+    "name": "法师",
+    "icon": "class_mage",
+    "count": 2041,
+    "percent": 11.8
+   },
+   {
+    "classId": 6,
+    "name": "术士",
+    "icon": "class_warlock",
+    "count": 1806,
+    "percent": 10.4
+   },
+   {
+    "classId": 1,
+    "name": "战士",
+    "icon": "class_warrior",
+    "count": 1801,
+    "percent": 10.4
+   },
+   {
+    "classId": 8,
+    "name": "萨满祭司",
+    "icon": "class_shaman",
+    "count": 1725,
+    "percent": 9.9
+   },
+   {
+    "classId": 5,
+    "name": "牧师",
+    "icon": "class_priest",
+    "count": 1703,
+    "percent": 9.8
+   },
+   {
+    "classId": 7,
+    "name": "潜行者",
+    "icon": "class_rogue",
+    "count": 1535,
+    "percent": 8.8
+   }
+  ],
+  "其他/未定": [
+   {
+    "classId": 9,
+    "name": "德鲁伊",
+    "icon": "class_druid",
+    "count": 409,
+    "percent": 15.9
+   },
+   {
+    "classId": 6,
+    "name": "术士",
+    "icon": "class_warlock",
+    "count": 347,
+    "percent": 13.5
+   },
+   {
+    "classId": 3,
+    "name": "猎人",
+    "icon": "class_hunter",
+    "count": 316,
+    "percent": 12.3
+   },
+   {
+    "classId": 8,
+    "name": "萨满祭司",
+    "icon": "class_shaman",
+    "count": 265,
+    "percent": 10.3
+   },
+   {
+    "classId": 5,
+    "name": "牧师",
+    "icon": "class_priest",
+    "count": 260,
+    "percent": 10.1
+   },
+   {
+    "classId": 2,
+    "name": "圣骑士",
+    "icon": "class_paladin",
+    "count": 259,
+    "percent": 10.1
+   },
+   {
+    "classId": 4,
+    "name": "法师",
+    "icon": "class_mage",
+    "count": 258,
+    "percent": 10.0
+   },
+   {
+    "classId": 1,
+    "name": "战士",
+    "icon": "class_warrior",
+    "count": 243,
+    "percent": 9.5
+   },
+   {
+    "classId": 7,
+    "name": "潜行者",
+    "icon": "class_rogue",
+    "count": 211,
+    "percent": 8.2
+   }
+  ],
+  "全部": [
+   {
+    "classId": 2,
+    "name": "圣骑士",
+    "icon": "class_paladin",
+    "count": 5928,
+    "percent": 14.4
+   },
+   {
+    "classId": 3,
+    "name": "猎人",
+    "icon": "class_hunter",
+    "count": 5164,
+    "percent": 12.5
+   },
+   {
+    "classId": 9,
+    "name": "德鲁伊",
+    "icon": "class_druid",
+    "count": 4798,
+    "percent": 11.6
+   },
+   {
+    "classId": 6,
+    "name": "术士",
+    "icon": "class_warlock",
+    "count": 4745,
+    "percent": 11.5
+   },
+   {
+    "classId": 8,
+    "name": "萨满祭司",
+    "icon": "class_shaman",
+    "count": 4724,
+    "percent": 11.4
+   },
+   {
+    "classId": 1,
+    "name": "战士",
+    "icon": "class_warrior",
+    "count": 4515,
+    "percent": 10.9
+   },
+   {
+    "classId": 4,
+    "name": "法师",
+    "icon": "class_mage",
+    "count": 4258,
+    "percent": 10.3
+   },
+   {
+    "classId": 5,
+    "name": "牧师",
+    "icon": "class_priest",
+    "count": 3715,
+    "percent": 9.0
+   },
+   {
+    "classId": 7,
+    "name": "潜行者",
+    "icon": "class_rogue",
+    "count": 3423,
+    "percent": 8.3
+   }
+  ]
+ }
+}

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
+import { classIconPath, popularity } from "@/lib/popularity";
 
 export const metadata: Metadata = {
-  title: "Tools — talent, legacy, BiS, and XP planners",
+  title: "Tools — talent, legacy, BiS, XP, and class popularity",
   description:
-    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, and an exact 1–60 XP calculator.",
+    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, an exact 1–60 XP calculator, and the launch class-popularity poll.",
   alternates: { canonical: "/tools" },
 };
 
@@ -26,9 +27,9 @@ export default function ToolsPage() {
             Plan the character before you spend the gold
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            Two progression planners, BiS checklists, and an exact XP
-            calculator. Each tool states its source, its assumptions, and what
-            is still being verified.
+            Two progression planners, BiS checklists, an exact XP calculator,
+            and the launch class-popularity poll. Each tool states its source,
+            its assumptions, and what is still being verified.
           </p>
         </div>
       </section>
@@ -176,6 +177,44 @@ export default function ToolsPage() {
             </Link>
           </div>
         </div>
+
+        <Link
+          href="/tools/class-popularity"
+          className="panel panel-hover group mt-4 flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between"
+        >
+          <div className="min-w-0">
+            <p className="eyebrow">Class popularity</p>
+            <p className="display mt-1 text-xl text-parchment">首发职业热度</p>
+            <p className="mt-1 text-xs text-muted">
+              {popularity.totalVotes.toLocaleString("en-US")} 票 · 更新于{" "}
+              {popularity.updatedAt}
+            </p>
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            {popularity.factions["全部"].slice(0, 3).map((entry, index) => (
+              <div key={entry.classId} className="flex items-center gap-2">
+                <span className="display text-[10px] text-gold/40">0{index + 1}</span>
+                <img
+                  src={classIconPath(entry.icon)}
+                  alt=""
+                  width={32}
+                  height={32}
+                  className="size-8 rounded border border-line/80"
+                />
+                <span className="min-w-0">
+                  <span className="block truncate text-xs text-parchment">{entry.name}</span>
+                  <span className="block text-[10px] text-gold-soft">
+                    {entry.percent.toFixed(1)}%
+                  </span>
+                </span>
+              </div>
+            ))}
+          </div>
+          <span className="flex items-center gap-2 text-xs text-gold/85">
+            Open tool
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </Link>
 
         <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted">
           <p className="font-medium text-parchment">How the planners behave</p>
