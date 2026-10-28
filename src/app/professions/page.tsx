@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { OpenGuideLink } from "@/components/OpenGuideLink";
 import {
   fallbackIcon,
   getCampItems,
@@ -164,12 +165,9 @@ export default async function ProfessionsPage({
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-2">
-              <a
-                href="#profession-guide"
-                className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
-              >
+              <OpenGuideLink className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment">
                 Skill-up guide
-              </a>
+              </OpenGuideLink>
               {camps.length > 0 ? (
                 <a
                   href="#camp-items"
@@ -238,54 +236,68 @@ export default async function ProfessionsPage({
         ) : null}
 
         {guideSteps.length > 0 ? (
-          <section id="profession-guide" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
-            <div className="flex flex-wrap items-end justify-between gap-3">
+          <details
+            id="profession-guide"
+            className="group panel mt-4 scroll-mt-24"
+          >
+            <summary className="flex cursor-pointer list-none flex-wrap items-center justify-between gap-3 p-4 marker:hidden md:p-5 [&::-webkit-details-marker]:hidden">
               <div>
                 <p className="eyebrow">Skill-up guide</p>
                 <h2 className="display mt-1 text-xl text-parchment">
                   {professionEnglish[profession.name] ?? profession.name} 1–300
                 </h2>
               </div>
-              <p className="max-w-md text-[11px] leading-relaxed text-muted">
-                One craftable recipe per 25-skill band, preferring the cheapest
-                reagent list. Check your own material prices before committing.
+              <div className="flex items-center gap-4">
+                <p className="hidden max-w-md text-[11px] leading-relaxed text-muted md:block">
+                  One craftable recipe per 25-skill band, preferring the cheapest
+                  reagent list.
+                </p>
+                <span className="text-[11px] text-gold/80 group-open:hidden">
+                  Open guide +
+                </span>
+                <span className="hidden text-[11px] text-muted group-open:inline">
+                  Close −
+                </span>
+              </div>
+            </summary>
+
+            <div className="px-4 pb-4 md:px-5 md:pb-5">
+              <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                {guideSteps.map((step) => (
+                  <div
+                    key={`${step.start}-${step.recipe.recipeId}`}
+                    className="flex items-start gap-3 rounded-lg border border-line/60 bg-deep/40 p-3"
+                  >
+                    <img
+                      src={fallbackIcon(step.recipe.icon)}
+                      alt=""
+                      width={34}
+                      height={34}
+                      className="size-8 shrink-0 rounded border border-line/70"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <p className="text-[10px] uppercase tracking-wider text-muted">
+                        Skill {step.start}–{step.end}
+                      </p>
+                      <p className="mt-0.5 truncate text-xs text-parchment">
+                        {step.recipe.localesName}
+                      </p>
+                      <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">
+                        {step.recipe.reagents
+                          .map((reagent) => `${reagent.nameCn} ×${reagent.count}`)
+                          .join(" · ")}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-3 text-[10px] leading-relaxed text-muted/60">
+                Generated from recipe skill requirements. The cheapest recipe is a
+                starting suggestion, not a mandatory route; use cheaper alternatives
+                from the list below when they are available.
               </p>
             </div>
-            <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
-              {guideSteps.map((step) => (
-                <div
-                  key={`${step.start}-${step.recipe.recipeId}`}
-                  className="flex items-start gap-3 rounded-lg border border-line/60 bg-deep/40 p-3"
-                >
-                  <img
-                    src={fallbackIcon(step.recipe.icon)}
-                    alt=""
-                    width={34}
-                    height={34}
-                    className="size-8 shrink-0 rounded border border-line/70"
-                  />
-                  <div className="min-w-0 flex-1">
-                    <p className="text-[10px] uppercase tracking-wider text-muted">
-                      Skill {step.start}–{step.end}
-                    </p>
-                    <p className="mt-0.5 truncate text-xs text-parchment">
-                      {step.recipe.localesName}
-                    </p>
-                    <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">
-                      {step.recipe.reagents
-                        .map((reagent) => `${reagent.nameCn} ×${reagent.count}`)
-                        .join(" · ")}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-3 text-[10px] leading-relaxed text-muted/60">
-              Generated from recipe skill requirements. The cheapest recipe is a
-              starting suggestion, not a mandatory route; use cheaper alternatives
-              from the list below when they are available.
-            </p>
-          </section>
+          </details>
         ) : null}
 
         <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
