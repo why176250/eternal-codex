@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { TalentHall, type TalentHallBuild } from "@/components/TalentHall";
 import buildsJson from "@/data/talent-hall/builds.json";
-import rankingJson from "@/data/talent-hall/ranking.json";
-import specRankingJson from "@/data/talent-hall/spec-ranking.json";
 import { isPlannerValid } from "@/lib/talent-build-valid";
 
 export const metadata: Metadata = {
@@ -45,9 +43,6 @@ export default function BuildsPage() {
             {builds.length.toLocaleString("en-US")} builds
           </span>
           <span className="rounded-full border border-line/80 px-3 py-1">
-            {rankingJson.ranking.length} authors
-          </span>
-          <span className="rounded-full border border-line/80 px-3 py-1">
             Source: Sargerastech
           </span>
         </div>
@@ -56,8 +51,6 @@ export default function BuildsPage() {
       <section className="container-x pb-20">
         <TalentHall
           builds={builds}
-          ranking={rankingJson.ranking}
-          specRanking={specRankingJson.specs}
         />
       </section>
     </main>

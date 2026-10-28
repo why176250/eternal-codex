@@ -24,27 +24,8 @@ export type TalentHallBuild = {
   talentSelections?: Record<string, number>;
 };
 
-type RankingRow = {
-  rank: number | null;
-  nickname: string;
-  realm: string;
-  talentIndex: number;
-  buildCount: number;
-};
-
-type SpecRow = {
-  rank: number | null;
-  className: string;
-  classSlug: string;
-  specName: string;
-  specIcon: string;
-  count: number;
-};
-
 type Props = {
   builds: TalentHallBuild[];
-  ranking: RankingRow[];
-  specRanking: SpecRow[];
 };
 
 const CLASS_EN: Record<string, string> = {
@@ -153,7 +134,7 @@ function chipClass(active: boolean) {
   }`;
 }
 
-export function TalentHall({ builds, ranking, specRanking }: Props) {
+export function TalentHall({ builds }: Props) {
   const [activeClass, setActiveClass] = useState("all");
   const [activeSpec, setActiveSpec] = useState("all");
   const [activeMode, setActiveMode] = useState("all");
@@ -360,55 +341,7 @@ export function TalentHall({ builds, ranking, specRanking }: Props) {
         </div>
       ) : null}
 
-      <section className="mt-14 grid gap-8 lg:grid-cols-2">
-        <div>
-          <div className="flex items-baseline justify-between">
-            <h2 className="display text-xl text-parchment">Top authors</h2>
-            <span className="text-[11px] text-muted/60">Ranked by build index</span>
-          </div>
-          <ol className="mt-4 divide-y divide-line/60 text-sm">
-            {ranking.slice(0, 10).map((row) => (
-              <li key={`${row.rank}-${row.nickname}`} className="flex items-center justify-between gap-3 py-2.5">
-                <span className="flex min-w-0 items-center gap-3">
-                  <span className="w-6 shrink-0 text-right text-xs text-muted/60">{row.rank}</span>
-                  <span className="truncate text-parchment/90">{row.nickname}</span>
-                  {row.realm ? <span className="shrink-0 text-[10px] text-muted/50">{row.realm}</span> : null}
-                </span>
-                <span className="shrink-0 text-[11px] text-muted/70">
-                  {row.buildCount} builds · {row.talentIndex} index
-                </span>
-              </li>
-            ))}
-          </ol>
-        </div>
 
-        <div>
-          <div className="flex items-baseline justify-between">
-            <h2 className="display text-xl text-parchment">Spec popularity</h2>
-            <span className="text-[11px] text-muted/60">3,556 builds site-wide</span>
-          </div>
-          <ol className="mt-4 divide-y divide-line/60 text-sm">
-            {specRanking.slice(0, 10).map((row) => (
-              <li key={`${row.classSlug}-${row.specName}`} className="flex items-center justify-between gap-3 py-2.5">
-                <span className="flex min-w-0 items-center gap-3">
-                  <span className="w-6 shrink-0 text-right text-xs text-muted/60">{row.rank}</span>
-                  <img
-                    src={`/classes/icons/${row.classSlug}.jpg`}
-                    alt=""
-                    width={18}
-                    height={18}
-                    className="size-4 rounded border border-line/70"
-                  />
-                  <span className="truncate text-parchment/90">
-                    {classLabel(row.className)} · {specLabel(row.specName)}
-                  </span>
-                </span>
-                <span className="shrink-0 text-[11px] text-muted/70">{row.count} builds</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
 
 
 
