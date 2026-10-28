@@ -38,10 +38,6 @@ export default async function ClassPage({
   const wowClass = getClass(slug);
   if (!wowClass) notFound();
 
-  const classIndex = classes.findIndex((entry) => entry.id === wowClass.id);
-  const prevClass = classes[(classIndex - 1 + classes.length) % classes.length];
-  const nextClass = classes[(classIndex + 1) % classes.length];
-
   const specs = getSpecGuides(wowClass.id).map((spec) => ({
     ...spec,
     sections: spec.sections.map((section) => ({
@@ -160,53 +156,7 @@ export default async function ClassPage({
           </p>
         )}
 
-        <nav
-          aria-label="Class navigation"
-          className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto_1fr]"
-        >
-          <Link
-            href={`/classes/${prevClass.id}`}
-            className="panel panel-hover group flex items-center gap-3 p-4"
-          >
-            <span className="text-lg text-gold/60 transition-transform group-hover:-translate-x-1">←</span>
-            <img
-              src={`/classes/icons/${prevClass.id}.jpg`}
-              alt=""
-              width={36}
-              height={36}
-              className="size-9 rounded-md border border-line/80"
-            />
-            <span className="min-w-0">
-              <span className="block text-[10px] uppercase tracking-wider text-muted">Previous class</span>
-              <span className="block truncate text-sm text-parchment">{prevClass.name}</span>
-            </span>
-          </Link>
 
-          <Link
-            href="/classes"
-            className="flex items-center justify-center rounded-lg px-4 py-2 text-xs text-muted transition-colors hover:text-gold-soft"
-          >
-            All classes
-          </Link>
-
-          <Link
-            href={`/classes/${nextClass.id}`}
-            className="panel panel-hover group flex items-center justify-end gap-3 p-4 text-right"
-          >
-            <span className="min-w-0">
-              <span className="block text-[10px] uppercase tracking-wider text-muted">Next class</span>
-              <span className="block truncate text-sm text-parchment">{nextClass.name}</span>
-            </span>
-            <img
-              src={`/classes/icons/${nextClass.id}.jpg`}
-              alt=""
-              width={36}
-              height={36}
-              className="size-9 rounded-md border border-line/80"
-            />
-            <span className="text-lg text-gold/60 transition-transform group-hover:translate-x-1">→</span>
-          </Link>
-        </nav>
       </section>
     </main>
   );
