@@ -2,7 +2,7 @@ export const site = {
   name: "Eversixty",
   title: "Eversixty — A Forever launch companion",
   description:
-    "Tools, guides, and data for the road to 60 in World of Warcraft: Forever. Six task-first modules: start plan, talent builds, gear checklists, dungeons, professions, and an XP calculator.",
+    "Tools, guides, and data for the road to 60 in World of Warcraft: Forever. Six task-first modules: class guides, talent builds, gear checklists, dungeons, professions, and an XP calculator.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
@@ -13,7 +13,7 @@ export const site = {
 };
 
 export const nav = [
-  { href: "/start", label: "Play" },
+  { href: "/classes", label: "Classes" },
   { href: "/tools", label: "Tools" },
   { href: "/data", label: "Data" },
   { href: "/guides", label: "Guides" },
