@@ -6,7 +6,7 @@ import { modules } from "@/lib/modules";
 export default function HomePage() {
   return (
     <main>
-      <section className="container-x pb-20 pt-12 md:pt-16">
+      <section className="container-x pb-14 pt-10 md:pt-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <Link href="/" className="inline-flex items-center gap-4">
@@ -40,13 +40,13 @@ export default function HomePage() {
           <LaunchCountdown />
         </div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5">
           {modules.map((module) => (
             <Link
               key={module.id}
               href={module.href}
               style={{ "--accent": module.accent } as React.CSSProperties}
-              className="panel panel-hover group relative flex min-h-[104px] items-center gap-4 overflow-hidden p-4 md:p-5"
+              className="panel panel-hover group relative flex min-h-[104px] items-center gap-4 overflow-hidden p-4 md:p-5 2xl:min-h-[136px] 2xl:p-6"
             >
               <span
                 className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"
@@ -59,20 +59,20 @@ export default function HomePage() {
                 style={{ background: module.accent }}
               />
 
-              <span className="accent-tile relative grid size-12 shrink-0 place-items-center rounded-xl border transition-colors">
+              <span className="accent-tile relative grid size-12 shrink-0 place-items-center rounded-xl border transition-colors 2xl:size-14">
                 <ModuleIcon id={module.id} />
               </span>
 
               <span className="relative min-w-0 flex-1">
                 <span className="flex items-baseline justify-between gap-3">
-                  <span className="display block truncate text-lg text-parchment md:text-xl">
+                  <span className="display block text-lg leading-tight text-parchment md:text-xl 2xl:text-2xl">
                     {module.title}
                   </span>
                   <span className="display shrink-0 text-xs text-gold/40">
                     {module.number}
                   </span>
                 </span>
-                <span className="mt-1 block text-xs text-muted">{module.tagline}</span>
+                <span className="mt-1 block text-xs text-muted 2xl:text-sm">{module.tagline}</span>
               </span>
 
               <svg

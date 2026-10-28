@@ -33,7 +33,7 @@ export function LaunchCountdown() {
   const values = diff === null ? null : split(Math.abs(diff));
 
   return (
-    <section className="panel relative w-full overflow-hidden p-5 lg:max-w-[420px]">
+    <section className="panel relative w-full overflow-hidden p-5 lg:max-w-[420px] 2xl:max-w-[460px] 2xl:p-6">
       <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/70 to-transparent" />
       <div className="flex items-start justify-between gap-3">
         <div>
@@ -60,7 +60,7 @@ export function LaunchCountdown() {
             key={label as string}
             className="rounded-lg border border-line/70 bg-deep/60 py-2 text-center"
           >
-            <p className="display text-2xl tabular-nums text-gold-soft md:text-[1.7rem]">
+            <p className="display text-2xl tabular-nums text-gold-soft md:text-[1.7rem] 2xl:text-3xl">
               {value === undefined ? "--" : pad(value as number)}
             </p>
             <p className="mt-0.5 text-[9px] uppercase tracking-[0.14em] text-muted">

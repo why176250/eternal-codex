@@ -68,7 +68,7 @@ export default function RootLayout({
         <LangSync />
         <div className="flex min-h-screen flex-col">
           <Header />
-          <div className="flex-1">{children}</div>
+          <div>{children}</div>
           <Footer />
         </div>
       </body>
