@@ -147,24 +147,13 @@ export default async function ClassPage({
           </div>
         </div>
 
-        {wowClass.id === "hunter" ? (
-          <div className="mb-3">
-            <Link
-              href="/data/hunter-pets"
-              className="inline-flex items-center gap-2 rounded-full border border-line/80 px-3 py-1.5 text-xs text-muted transition-colors hover:border-gold/45 hover:text-gold-soft"
-            >
-              Hunter pets
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        ) : null}
-
         {specs.length > 0 ? (
           <ClassPageTabs
             specs={specs}
             abilities={abilities}
             accent={wowClass.accent}
             className={wowClass.name}
+            hunterPetsHref={wowClass.id === "hunter" ? "/data/hunter-pets" : undefined}
           />
         ) : (
           <p className="panel p-6 text-sm text-muted">

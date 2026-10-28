@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { ClassAbilities } from "@/components/ClassAbilities";
 import { ClassSpecGuide, type SpecView } from "@/components/ClassSpecGuide";
@@ -10,9 +11,10 @@ type Props = {
   abilities: AbilityTab[];
   accent: string;
   className: string;
+  hunterPetsHref?: string;
 };
 
-export function ClassPageTabs({ specs, abilities, accent, className }: Props) {
+export function ClassPageTabs({ specs, abilities, accent, className, hunterPetsHref }: Props) {
   const [tab, setTab] = useState<"specs" | "abilities">("specs");
 
   return (
@@ -40,6 +42,14 @@ export function ClassPageTabs({ specs, abilities, accent, className }: Props) {
         >
           Class abilities
         </button>
+        {hunterPetsHref ? (
+          <Link
+            href={hunterPetsHref}
+            className="rounded-lg border border-line/70 px-4 py-2 text-sm text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+          >
+            Hunter pets →
+          </Link>
+        ) : null}
       </div>
 
       {tab === "specs" ? (
