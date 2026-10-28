@@ -96,7 +96,7 @@ export default async function ClassPage({
       </header>
 
       <section className="container-x pb-20">
-        <div className="mb-4">
+        <div className="mb-4 flex flex-wrap items-center gap-3">
           <Link
             href="/classes"
             className="inline-flex items-center gap-2 rounded-full border border-line/80 px-3 py-1.5 text-xs text-muted transition-colors hover:border-gold/45 hover:text-gold-soft"
@@ -104,6 +104,48 @@ export default async function ClassPage({
             <span aria-hidden="true">←</span>
             All classes
           </Link>
+
+          <div
+            aria-label="Switch class"
+            className="flex gap-1.5 overflow-x-auto pb-1 sm:gap-2"
+          >
+            {classes.map((entry) => {
+              const active = entry.id === wowClass.id;
+              return (
+                <Link
+                  key={entry.id}
+                  href={`/classes/${entry.id}`}
+                  aria-current={active ? "page" : undefined}
+                  aria-label={entry.name}
+                  className={`group flex shrink-0 flex-col items-center gap-1 rounded-lg border p-1.5 transition-colors ${
+                    active
+                      ? "bg-white/[0.04]"
+                      : "border-transparent hover:bg-white/[0.03]"
+                  }`}
+                  style={active ? { borderColor: `${entry.accent}99` } : undefined}
+                >
+                  <img
+                    src={`/classes/icons/${entry.id}.jpg`}
+                    alt=""
+                    width={34}
+                    height={34}
+                    className={`size-8 rounded border border-line/70 transition-all sm:size-9 ${
+                      active
+                        ? "opacity-100"
+                        : "opacity-55 grayscale group-hover:opacity-100 group-hover:grayscale-0"
+                    }`}
+                  />
+                  <span
+                    className={`text-[9px] leading-none ${
+                      active ? "text-parchment" : "text-muted/70"
+                    }`}
+                  >
+                    {entry.name}
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
         </div>
 
         {specs.length > 0 ? (
