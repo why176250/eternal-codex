@@ -236,3 +236,17 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.14);
   vertical-align: -0.18em;
 }
+
+.inline-skill {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(227, 189, 120, 0.25);
+  text-underline-offset: 3px;
+}
+
+.inline-skill:hover,
+.inline-skill:focus-visible {
+  color: var(--color-gold-soft);
+  text-decoration-color: rgba(227, 189, 120, 0.7);
+  outline: none;
+}

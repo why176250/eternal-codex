@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export type SpecSectionView = {
   key: string;
@@ -28,6 +28,64 @@ type Props = {
 export function ClassSpecGuide({ specs, accent, className }: Props) {
   const [specId, setSpecId] = useState(specs[0]?.specId);
   const [sectionKey, setSectionKey] = useState("sec-overview");
+  const [selected, setSelected] = useState<{
+    name: string;
+    icon: string;
+    description: string;
+  } | null>(null);
+  const articleRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const root = articleRef.current;
+    if (!root) return;
+
+    function openSkill(target: HTMLElement) {
+      const name = target.dataset.skill;
+      if (!name) return;
+      let description = "";
+      try {
+        description = decodeURIComponent(target.dataset.skillDesc ?? "");
+      } catch {
+        description = "";
+      }
+      setSelected({
+        name,
+        icon: target.dataset.skillIcon ?? "",
+        description,
+      });
+    }
+
+    function onClick(event: MouseEvent) {
+      const target = (event.target as HTMLElement).closest<HTMLElement>(".inline-skill");
+      if (!target) return;
+      event.preventDefault();
+      openSkill(target);
+    }
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const target = (event.target as HTMLElement).closest<HTMLElement>(".inline-skill");
+      if (!target) return;
+      event.preventDefault();
+      openSkill(target);
+    }
+
+    root.addEventListener("click", onClick);
+    root.addEventListener("keydown", onKeyDown);
+    return () => {
+      root.removeEventListener("click", onClick);
+      root.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!selected) return;
+    function onEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") setSelected(null);
+    }
+    window.addEventListener("keydown", onEscape);
+    return () => window.removeEventListener("keydown", onEscape);
+  }, [selected]);
 
   const activeSpec = specs.find((spec) => spec.specId === specId) ?? specs[0];
   if (!activeSpec) return null;
@@ -110,6 +168,7 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
       </div>
 
       <article
+        ref={articleRef}
         className="prose prose-infinite prose-invert max-w-none px-5 py-6 text-sm md:px-7 md:py-8"
         dangerouslySetInnerHTML={{ __html: activeSection.html }}
       />
@@ -123,6 +182,49 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
           {activeSpec.title}
         </p>
       </div>
+
+      {selected ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          onClick={() => setSelected(null)}
+          role="presentation"
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label={selected.name}
+            className="panel w-full max-w-md p-5"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="flex items-start gap-4">
+              {selected.icon ? (
+                <img
+                  src={selected.icon}
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="size-12 shrink-0 rounded-lg border border-line/80"
+                />
+              ) : null}
+              <div className="min-w-0 flex-1">
+                <p className="eyebrow">Skill detail</p>
+                <h2 className="display mt-1 text-xl text-parchment">{selected.name}</h2>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelected(null)}
+                className="text-muted transition-colors hover:text-parchment"
+                aria-label="Close skill detail"
+              >
+                ✕
+              </button>
+            </div>
+            <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">
+              {selected.description || "暂无详细说明。"}
+            </p>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

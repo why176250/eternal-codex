@@ -5,7 +5,7 @@ import { classes, difficultyLabel, getClass } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ClassSpecGuide } from "@/components/ClassSpecGuide";
 import { getSpecGuides } from "@/lib/spec-guides";
-import { decorateSkillMarkers } from "@/lib/skill-icons";
+import { decorateSkillMarkers } from "@/lib/skill-tooltips";
 
 type Params = { slug: string };
 
