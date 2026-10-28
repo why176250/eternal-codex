@@ -1,5 +1,5 @@
 import rawGuides from "@/data/class-guides.en.json";
-import talentsJson from "@/data/forever/talents.json";
+import { foreverTalents } from "@/data/forever/wow-talents";
 
 export type SpecSection = {
   key: string;
@@ -77,7 +77,7 @@ export const allSpecGuides: SpecGuide[] = (rawGuides as RawGuide[]).map((guide) 
     className: "Unknown",
     role: "DPS" as const,
   };
-  const classTalents = talentsJson.find((entry) => entry.className === m.className);
+  const classTalents = foreverTalents.find((entry) => entry.className === m.className);
   const treeBase = m.en.replace(/ \(.*\)$/, "");
   const tree =
     classTalents?.trees.find((item) => item.nameEn === treeBase) ??

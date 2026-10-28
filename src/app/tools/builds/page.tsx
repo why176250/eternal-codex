@@ -1,18 +1,31 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { BuildHall } from "@/components/BuildHall";
-import buildsJson from "@/data/builds.json";
+import { TalentHall, type TalentHallBuild } from "@/components/TalentHall";
+import buildsJson from "@/data/talent-hall/builds.json";
+import rankingJson from "@/data/talent-hall/ranking.json";
+import specRankingJson from "@/data/talent-hall/spec-ranking.json";
+import { foreverTalents } from "@/lib/forever";
+import { isPlannerValid } from "@/lib/talent-build-valid";
 
 export const metadata: Metadata = {
-  title: "Talent Hall — starter builds",
+  title: "Talent Hall — community builds",
   description:
-    "Starter talent builds for World of Warcraft: Forever. Open a build in the planner, adjust it, and make it your own.",
+    "1,100+ community talent builds for World of Warcraft: Forever, with point distribution, author ranking, and spec popularity. Collected from the Sargerastech community site.",
   alternates: { canonical: "/tools/builds" },
 };
 
 export default function BuildsPage() {
-  const builds = buildsJson as React.ComponentProps<typeof BuildHall>["builds"];
+  const allBuilds = buildsJson.builds as TalentHallBuild[];
+  const builds = allBuilds.filter(
+    (build) =>
+      build.talentSelections &&
+      Object.keys(build.talentSelections).length > 0 &&
+      isPlannerValid(build.classId, build.talentSelections),
+  );
+
+  const treeNames: Record<string, string[]> = Object.fromEntries(
+    foreverTalents.map((cls) => [String(cls.classId), cls.trees.map((tree) => tree.nameEn)]),
+  );
 
   return (
     <main>
@@ -27,36 +40,31 @@ export default function BuildsPage() {
 
       <header className="container-x pb-10 pt-8">
         <p className="eyebrow">Tools / Talent Hall</p>
-        <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
-          Start from a build, then make it yours
-        </h1>
+        <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">Talent Hall</h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-          Starter talent shells for every class we have builds for. Open one in
-          the planner, move points around, and save your own version.
+          Community builds for World of Warcraft: Forever — filter by class, spec, and mode.
+          Each build lists its point spread across talent trees, alongside top authors and spec popularity.
         </p>
         <div className="mt-5 flex flex-wrap items-center gap-3 text-[11px] text-muted">
           <span className="rounded-full border border-line/80 px-3 py-1">
-            {builds.length} starter builds
+            {builds.length.toLocaleString("en-US")} builds
           </span>
           <span className="rounded-full border border-line/80 px-3 py-1">
-            Curated by Eversixty
+            {rankingJson.ranking.length} authors
           </span>
-          <Link
-            href="mailto:corrections@eversixty.com?subject=Talent%20Hall%20build%20submission"
-            className="text-gold/80 underline-offset-4 hover:text-gold-soft hover:underline"
-          >
-            Submit a build →
-          </Link>
+          <span className="rounded-full border border-line/80 px-3 py-1">
+            Source: Sargerastech
+          </span>
         </div>
       </header>
 
       <section className="container-x pb-20">
-        <BuildHall builds={builds} />
-        <p className="mt-6 text-[11px] leading-relaxed text-muted/60">
-          Starter shells are generated from the imported Forever talent trees
-          and are meant as a starting point, not a claim about the strongest
-          build. Community submissions will be added as they are reviewed.
-        </p>
+        <TalentHall
+          builds={builds}
+          ranking={rankingJson.ranking}
+          specRanking={specRankingJson.specs}
+          treeNames={treeNames}
+        />
       </section>
     </main>
   );

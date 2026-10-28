@@ -3,7 +3,7 @@ import path from "node:path";
 import spellbooks from "@/data/scarlet/spellbooks.json";
 import racials from "@/data/scarlet/racials.json";
 import classRacial from "@/data/scarlet/class_racial.json";
-import talents from "@/data/forever/talents.json";
+import { foreverTalents } from "@/data/forever/wow-talents";
 
 export type SkillInfo = {
   name: string;
@@ -69,7 +69,7 @@ walk(spellbooks);
 walk(racials);
 walk(classRacial);
 
-for (const wowClass of talents) {
+for (const wowClass of foreverTalents) {
   for (const tree of wowClass.trees) {
     for (const talent of tree.talents) {
       const lastRankZh = [...(talent.ranks ?? [])]
