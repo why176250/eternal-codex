@@ -94,14 +94,14 @@ export default function HomePage() {
             <div>
               <p className="eyebrow">Start here</p>
               <h2 className="display mt-2 text-2xl text-parchment">
-                Your first launch week
+                Three decisions, in order
               </h2>
             </div>
             <Link
-              href="/start"
+              href="/tools"
               className="text-xs text-gold/80 underline-offset-4 transition-colors hover:text-gold-soft hover:underline"
             >
-              Full launch plan →
+              All tools →
             </Link>
           </div>
 
@@ -110,7 +110,7 @@ export default function HomePage() {
               {
                 n: "01",
                 title: "Pick a class",
-                body: "Nine overviews, no tier-list lies.",
+                body: "Roles, leveling feel, group demand.",
                 href: "/classes",
               },
               {
@@ -121,9 +121,9 @@ export default function HomePage() {
               },
               {
                 n: "03",
-                title: "Pick the route",
-                body: "Ruleset, faction, and the 1–20 path.",
-                href: "/start",
+                title: "Plan the gear",
+                body: "BiS targets and farm order.",
+                href: "/bis",
               },
             ].map((step) => (
               <Link
