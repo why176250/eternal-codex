@@ -60,7 +60,7 @@ export const modules: Module[] = [
     number: "05",
     title: "Professions",
     zh: "专业与金币",
-    href: "/guides/professions",
+    href: "/professions",
     question: "Which professions should you pair?",
     body: "Pairings, crafting paths, and the recipe data behind the crafts.",
     accent: "#c9a8ff",
