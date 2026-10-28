@@ -131,7 +131,7 @@ export default function HomePage() {
             <div>
               <p className="eyebrow">Start here</p>
               <h2 className="display mt-2 text-2xl text-parchment">
-                After you pick a class
+                Three decisions, in order
               </h2>
             </div>
             <Link
@@ -142,16 +142,22 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
+          <div className="mt-6 grid gap-3 md:grid-cols-3">
             {[
               {
                 n: "01",
+                title: "Pick a class",
+                body: "Five questions, one class and race.",
+                href: "/class-finder",
+              },
+              {
+                n: "02",
                 title: "Browse builds",
                 body: "Start from a proven build, then make it yours.",
                 href: "/tools/builds",
               },
               {
-                n: "02",
+                n: "03",
                 title: "Browse gear",
                 body: "See what other players are wearing.",
                 href: "/tools/gear",

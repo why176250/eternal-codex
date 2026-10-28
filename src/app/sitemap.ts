@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/guides`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${site.url}/bis`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/classes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/class-finder`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${site.url}/database`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${site.url}/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },

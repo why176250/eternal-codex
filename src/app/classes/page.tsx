@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { classes } from "@/lib/data";
 import { ClassCard } from "@/components/ClassCard";
 import { allSpecGuides } from "@/lib/spec-guides";
@@ -24,6 +25,16 @@ export default function ClassesPage() {
             overview, what changed, pros and cons, race recommendations, and
             professions.
           </p>
+          <div className="mt-5">
+            <Link
+              href="/class-finder"
+              className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/[0.05] px-3 py-1.5 text-xs text-gold-soft transition-colors hover:border-gold/55"
+            >
+              Not sure? Take the class finder
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+
           <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
             <span className="rounded-full border border-line/80 px-3 py-1">9 classes</span>
             <span className="rounded-full border border-line/80 px-3 py-1">{allSpecGuides.length} specs</span>
