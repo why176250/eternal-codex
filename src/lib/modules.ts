@@ -11,18 +11,8 @@ export type Module = {
 
 export const modules: Module[] = [
   {
-    id: "start",
-    number: "01",
-    title: "Start here",
-    zh: "开服规划",
-    href: "/start",
-    question: "Which ruleset, faction, and first route?",
-    body: "Decide the choices you cannot undo, then get a 1–20 route that survives launch week.",
-    accent: "#e3bd78",
-  },
-  {
     id: "talents",
-    number: "02",
+    number: "01",
     title: "Build planner",
     zh: "天赋 · 传承模拟",
     href: "/tools/build",
@@ -32,13 +22,23 @@ export const modules: Module[] = [
   },
   {
     id: "gear",
-    number: "03",
+    number: "02",
     title: "Gear plan",
     zh: "装备计划",
     href: "/bis",
     question: "What should I farm first?",
     body: "Per-spec checklists with sources and farm order, instead of a 16-slot wall of guesses.",
     accent: "#9bb7ff",
+  },
+  {
+    id: "classes",
+    number: "03",
+    title: "Class guides",
+    zh: "职业攻略",
+    href: "/classes",
+    question: "Which class fits how you actually play?",
+    body: "Nine overviews: leveling feel, group demand, and the level-40 second spec.",
+    accent: "#e0b477",
   },
   {
     id: "dungeons",

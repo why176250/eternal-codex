@@ -36,6 +36,14 @@ export function ModuleIcon({ id, className = "" }: { id: string; className?: str
           <path d="m9 11 2 2 4-4" />
         </svg>
       );
+    case "classes":
+      return (
+        <svg {...common}>
+          <circle cx="8.5" cy="8" r="2.2" />
+          <circle cx="15.5" cy="8" r="2.2" />
+          <path d="M4.5 19c0-3 1.8-5 4-5s4 2 4 5M11.5 19c0-3 1.8-5 4-5s4 2 4 5" />
+        </svg>
+      );
     case "dungeons":
       return (
         <svg {...common}>
