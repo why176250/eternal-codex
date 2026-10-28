@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { marked } from "marked";
 import { classes, difficultyLabel, getClass } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ClassSpecGuide } from "@/components/ClassSpecGuide";
+import { ClassPageTabs } from "@/components/ClassPageTabs";
+import { getClassAbilities } from "@/lib/class-abilities";
 import { getSpecGuides } from "@/lib/spec-guides";
 import { decorateSkillMarkers } from "@/lib/skill-tooltips";
 
@@ -37,6 +38,8 @@ export default async function ClassPage({
   const { slug } = await params;
   const wowClass = getClass(slug);
   if (!wowClass) notFound();
+
+  const abilities = getClassAbilities(wowClass.id);
 
   const specs = getSpecGuides(wowClass.id).map((spec) => ({
     ...spec,
@@ -145,8 +148,9 @@ export default async function ClassPage({
         </div>
 
         {specs.length > 0 ? (
-          <ClassSpecGuide
+          <ClassPageTabs
             specs={specs}
+            abilities={abilities}
             accent={wowClass.accent}
             className={wowClass.name}
           />
