@@ -63,6 +63,13 @@ const meta: Record<
   84: { en: "Restoration", classSlug: "druid", className: "Druid", role: "Healer" },
 };
 
+const iconOverrides: Record<number, string> = {
+  71: "spell_shadow_shadowwordpain", // Shadow Magic
+  78: "spell_nature_lightning", // Elemental Combat
+  82: "ability_druid_catform", // Feral (Cat)
+  83: "ability_racial_bearform", // Feral (Bear)
+};
+
 export const allSpecGuides: SpecGuide[] = (rawGuides as RawGuide[]).map((guide) => {
   const m = meta[guide.specId] ?? {
     en: guide.specName,
@@ -80,7 +87,7 @@ export const allSpecGuides: SpecGuide[] = (rawGuides as RawGuide[]).map((guide) 
     specName: m.en,
     specNameEn: m.en,
     title: `${m.en} guide`,
-    icon: tree?.icon ?? "",
+    icon: iconOverrides[guide.specId] ?? tree?.icon ?? "",
     classSlug: m.classSlug,
     className: m.className,
     role: m.role,

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Artisan Accuracy",
+    "icon": "racial_dwarf_findtreasure",
+    "description": "Improves precision with crafted weapons and tools."
+  },
+  {
+    "name": "Artisan Precision",
+    "icon": "racial_dwarf_findtreasure",
+    "description": "Improves precision with crafted weapons and tools."
+  },
+  {
+    "name": "Command",
+    "icon": "ability_hunter_beastcall",
+    "description": "Increases your pet's damage by 5%."
+  },
+  {
+    "name": "Craftsman Accuracy",
+    "icon": "racial_dwarf_findtreasure",
+    "description": "Improves precision with crafted weapons and tools."
+  },
+  {
+    "name": "Craftsman Box: Nitrogen Thruster",
+    "icon": "inv_misc_enggizmos_03",
+    "description": "Item entry from the Forever database."
+  },
+  {
+    "name": "Craftsman Precision",
+    "icon": "racial_dwarf_findtreasure",
+    "description": "Improves precision with crafted weapons and tools."
+  },
+  {
+    "name": "Craftsman's Accuracy",
+    "icon": "racial_dwarf_findtreasure",
+    "description": "Improves precision with crafted weapons and tools."
+  },
+  {
+    "name": "New Arcanist's Belt",
+    "icon": "inv_belt_43a",
+    "description": "Item entry from the Forever database."
+  },
+  {
+    "name": "Novice Practice Wand",
+    "icon": "inv_weapon_shortblade_09",
+    "description": "Item entry from the Forever database."
+  },
+  {
+    "name": "Polished Driftwood Statue",
+    "icon": "spell_shaman_totemrecall",
+    "description": "Item entry from the Forever database."
+  },
+  {
+    "name": "Rend and Rend",
+    "icon": "ability_druid_swipe",
+    "description": "Increases damage done by your melee abilities on Bleeding targets by 2%.\nIncreases damage done by your melee abilities on Bleeding targets by 4%.\nIncreases damage done by your melee abilities on Bleeding targets by 6%.\nIncreases damage done by your melee abilities on Bleeding targets by 8%.\nIncreases damage done by your melee abilities on Bleeding targets by 10%."
+  },
+  {
+    "name": "Thistle Leaf Tea",
+    "icon": "inv_drink_milk_05",
+    "description": "Item entry from the Forever database."
+  }
+]
