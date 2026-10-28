@@ -110,14 +110,14 @@ export default async function ProfessionsPage({
       </header>
 
       <section className="container-x py-8 md:py-10">
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {professions.map((entry) => {
             const active = entry.skillLineId === profession.skillLineId;
             return (
               <Link
                 key={entry.skillLineId}
                 href={href({ p: entry.skillLineId, q: "", page: 1 })}
-                className={`flex min-h-[62px] items-center gap-3 rounded-lg border px-3 py-2.5 text-xs transition-colors ${
+                className={`flex min-h-[76px] items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
                   active
                     ? "border-gold/50 bg-gold/[0.08] text-gold-soft"
                     : "border-line/70 text-muted hover:border-line hover:text-parchment"
@@ -126,15 +126,15 @@ export default async function ProfessionsPage({
                 <img
                   src={fallbackIcon(entry.icon)}
                   alt=""
-                  width={40}
-                  height={40}
-                  className="size-10 shrink-0 rounded-md border border-line/70"
+                  width={48}
+                  height={48}
+                  className="size-11 shrink-0 rounded-md border border-line/70 2xl:size-12"
                 />
                 <span className="min-w-0">
-                  <span className="block truncate text-[13px] leading-tight">
+                  <span className="block truncate text-sm leading-tight md:text-[15px]">
                     {professionEnglish[entry.name] ?? entry.name}
                   </span>
-                  <span className="mt-1 block text-[10px] text-muted/60">
+                  <span className="mt-1 block text-[11px] text-muted/60">
                     {entry.recipeCount} recipes
                   </span>
                 </span>
