@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { OpenGuideLink } from "@/components/OpenGuideLink";
 import {
   fallbackIcon,
   getCampItems,
@@ -164,19 +163,6 @@ export default async function ProfessionsPage({
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <OpenGuideLink className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment">
-                Skill-up guide
-              </OpenGuideLink>
-              {camps.length > 0 ? (
-                <a
-                  href="#camp-items"
-                  className="rounded-lg border border-line px-3 py-2 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
-                >
-                  Camp benefits
-                </a>
-              ) : null}
-            </div>
             <form action="/professions" className="flex items-center gap-2">
               <input type="hidden" name="p" value={profession.skillLineId} />
               <input
@@ -196,7 +182,7 @@ export default async function ProfessionsPage({
         </div>
 
         {camps.length > 0 ? (
-          <section id="camp-items" className="mt-12 scroll-mt-24 border-t border-line/60 pt-8">
+          <section id="camp-items" className="mt-4 scroll-mt-24">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
                 <p className="eyebrow">Camp items</p>
