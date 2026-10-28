@@ -197,6 +197,46 @@ export default async function ProfessionsPage({
           </div>
         </div>
 
+        {camps.length > 0 ? (
+          <section id="camp-items" className="mt-12 scroll-mt-24 border-t border-line/60 pt-8">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="eyebrow">Camp items</p>
+                <h2 className="display mt-1 text-2xl text-parchment">
+                  {professionEnglish[profession.name] ?? profession.name} camp
+                </h2>
+              </div>
+              <p className="text-[11px] text-muted">
+                {camps.length} items with effects
+              </p>
+            </div>
+            <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {camps.map((item) => (
+                <div key={item.itemId} className="panel p-4">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={fallbackIcon(item.icon)}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-9 rounded border border-line/80"
+                    />
+                    <div>
+                      <p className="text-sm text-parchment">{item.nameCn}</p>
+                      <p className="text-[10px] text-muted">
+                        Skill {item.skillReq} · iLvl {item.itemLevel}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-xs leading-relaxed text-muted">
+                    {item.effectDescCn}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {guideSteps.length > 0 ? (
           <section id="profession-guide" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
             <div className="flex flex-wrap items-end justify-between gap-3">
@@ -282,45 +322,7 @@ export default async function ProfessionsPage({
           </div>
         ) : null}
 
-        {camps.length > 0 ? (
-          <section id="camp-items" className="mt-12 scroll-mt-24 border-t border-line/60 pt-8">
-            <div className="flex flex-wrap items-end justify-between gap-3">
-              <div>
-                <p className="eyebrow">Camp items</p>
-                <h2 className="display mt-1 text-2xl text-parchment">
-                  {professionEnglish[profession.name] ?? profession.name} camp
-                </h2>
-              </div>
-              <p className="text-[11px] text-muted">
-                {camps.length} items with effects
-              </p>
-            </div>
-            <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-              {camps.map((item) => (
-                <div key={item.itemId} className="panel p-4">
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={fallbackIcon(item.icon)}
-                      alt=""
-                      width={36}
-                      height={36}
-                      className="size-9 rounded border border-line/80"
-                    />
-                    <div>
-                      <p className="text-sm text-parchment">{item.nameCn}</p>
-                      <p className="text-[10px] text-muted">
-                        Skill {item.skillReq} · iLvl {item.itemLevel}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="mt-3 text-xs leading-relaxed text-muted">
-                    {item.effectDescCn}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        ) : null}
+
 
         <p className="mt-8 text-[11px] leading-relaxed text-muted/60">
           Recipe data from the Blue Hermit mini-program. Recipe and reagent
