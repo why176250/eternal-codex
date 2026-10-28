@@ -143,7 +143,7 @@ export default function HomePage() {
               {
                 n: "01",
                 title: "Pick a class",
-                body: "Roles, leveling feel, group demand.",
+                body: "Compare all nine before you commit.",
                 href: "/classes",
               },
               {
