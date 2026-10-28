@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { ForeverTalentClass } from "@/lib/forever";
 import { savePlan } from "@/lib/plan";
@@ -28,6 +29,11 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [points, setPoints] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [communityBuild, setCommunityBuild] = useState<{
+    name: string;
+    description: string;
+    author: string;
+  } | null>(null);
 
   const current = classes[active];
   const accent = CLASS_ACCENT[current.className] ?? "#e3bd78";
@@ -144,6 +150,14 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
+    const buildName = params.get("buildName");
+    if (buildName) {
+      setCommunityBuild({
+        name: buildName,
+        description: params.get("buildDesc") ?? "",
+        author: params.get("buildAuthor") ?? "",
+      });
+    }
     const raw = params.get("b");
     if (!raw) return;
     const [classId, rest] = raw.split(":");
@@ -227,6 +241,31 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
 
   return (
     <div>
+      {communityBuild ? (
+        <div className="panel mb-4 p-4 md:p-5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="eyebrow">Community build</p>
+              <h2 className="display mt-1 text-xl text-parchment">{communityBuild.name}</h2>
+              {communityBuild.author ? (
+                <p className="mt-1 text-xs text-muted">by {communityBuild.author}</p>
+              ) : null}
+            </div>
+            <Link
+              href="/tools/builds"
+              className="text-xs text-gold/80 underline-offset-4 transition-colors hover:text-gold-soft hover:underline"
+            >
+              ← Talent Hall
+            </Link>
+          </div>
+          {communityBuild.description ? (
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
+              {communityBuild.description}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
+
       {/* Class banner */}
       <div
         className="relative overflow-hidden rounded-xl border border-line"

@@ -4,7 +4,6 @@ import { TalentHall, type TalentHallBuild } from "@/components/TalentHall";
 import buildsJson from "@/data/talent-hall/builds.json";
 import rankingJson from "@/data/talent-hall/ranking.json";
 import specRankingJson from "@/data/talent-hall/spec-ranking.json";
-import { foreverTalents } from "@/lib/forever";
 import { isPlannerValid } from "@/lib/talent-build-valid";
 
 export const metadata: Metadata = {
@@ -21,10 +20,6 @@ export default function BuildsPage() {
       build.talentSelections &&
       Object.keys(build.talentSelections).length > 0 &&
       isPlannerValid(build.classId, build.talentSelections),
-  );
-
-  const treeNames: Record<string, string[]> = Object.fromEntries(
-    foreverTalents.map((cls) => [String(cls.classId), cls.trees.map((tree) => tree.nameEn)]),
   );
 
   return (
@@ -63,7 +58,6 @@ export default function BuildsPage() {
           builds={builds}
           ranking={rankingJson.ranking}
           specRanking={specRankingJson.specs}
-          treeNames={treeNames}
         />
       </section>
     </main>

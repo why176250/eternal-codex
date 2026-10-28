@@ -45,7 +45,6 @@ type Props = {
   builds: TalentHallBuild[];
   ranking: RankingRow[];
   specRanking: SpecRow[];
-  treeNames: Record<string, string[]>;
 };
 
 const CLASS_EN: Record<string, string> = {
@@ -135,14 +134,15 @@ function buildHref(build: TalentHallBuild) {
   const pairs = Object.entries(build.talentSelections ?? {})
     .map(([talentId, rank]) => `${talentId}.${rank}`)
     .join(",");
-  return `/tools/build?b=${build.classId}:${pairs}&lvl=60`;
-}
-
-function parseSpent(value: string): number[] {
-  return value
-    .split("/")
-    .map((part) => Number(part) || 0)
-    .slice(0, 3);
+  const params = new URLSearchParams({
+    b: `${build.classId}:${pairs}`,
+    lvl: "60",
+    build: String(build.id),
+    buildName: build.nameEn || build.name,
+    buildDesc: build.descriptionEn || build.description || "",
+    buildAuthor: build.owner || "",
+  });
+  return `/tools/build?${params.toString()}`;
 }
 
 function chipClass(active: boolean) {
@@ -153,13 +153,12 @@ function chipClass(active: boolean) {
   }`;
 }
 
-export function TalentHall({ builds, ranking, specRanking, treeNames }: Props) {
+export function TalentHall({ builds, ranking, specRanking }: Props) {
   const [activeClass, setActiveClass] = useState("all");
   const [activeSpec, setActiveSpec] = useState("all");
   const [activeMode, setActiveMode] = useState("all");
   const [sort, setSort] = useState<"likes" | "new">("likes");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  const [selected, setSelected] = useState<TalentHallBuild | null>(null);
 
   const classes = useMemo(() => {
     const map = new Map<string, { slug: string; name: string; count: number }>();
@@ -198,8 +197,6 @@ export function TalentHall({ builds, ranking, specRanking, treeNames }: Props) {
   }, [builds, activeClass, activeSpec, activeMode, sort]);
 
   const visible = filtered.slice(0, visibleCount);
-  const treeLabels = selected ? treeNames[String(selected.classId)] ?? [] : [];
-  const spent = selected ? parseSpent(selected.spentPoints) : [];
 
   function pickClass(slug: string) {
     setActiveClass(slug);
@@ -291,10 +288,9 @@ export function TalentHall({ builds, ranking, specRanking, treeNames }: Props) {
         {visible.map((build) => {
           const accent = classAccent[build.classSlug] ?? "#e3bd78";
           return (
-            <button
+            <Link
               key={build.id}
-              type="button"
-              onClick={() => setSelected(build)}
+              href={buildHref(build)}
               className="panel panel-hover group relative flex flex-col overflow-hidden p-5 text-left"
               style={{ "--accent": accent } as React.CSSProperties}
             >
@@ -347,7 +343,7 @@ export function TalentHall({ builds, ranking, specRanking, treeNames }: Props) {
                   <span className="text-muted/70">♥ {build.likes}</span>
                 </span>
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>
@@ -414,89 +410,9 @@ export function TalentHall({ builds, ranking, specRanking, treeNames }: Props) {
         </div>
       </section>
 
-      {selected ? (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setSelected(null)}
-        >
-          <div
-            className="panel max-h-[85vh] w-full max-w-2xl overflow-y-auto p-6"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.14em] text-muted">
-                  {classLabel(selected.className)} · {specLabel(selected.specName)}
-                  {selected.mode ? ` · ${modeLabel(selected.mode)}` : ""}
-                </p>
-                <h3 className="display mt-2 text-2xl text-parchment">
-                  {selected.nameEn || selected.name}
-                </h3>
-                <p className="mt-1 text-xs text-muted/70">
-                  {selected.owner || "Anonymous"} · updated {formatDate(selected.updatedAt)}
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => setSelected(null)}
-                className="rounded border border-line px-2 py-1 text-xs text-muted hover:text-parchment"
-              >
-                Close
-              </button>
-            </div>
 
-            {selected.descriptionEn || selected.description ? (
-              <p className="mt-5 text-sm leading-relaxed text-muted">
-                {selected.descriptionEn || selected.description}
-              </p>
-            ) : null}
 
-            <div className="mt-5 space-y-3">
-              <p className="text-xs text-muted/70">
-                Point spread · <span className="text-parchment/90">{selected.spentPoints}</span>
-              </p>
-              {(treeLabels.length > 0 ? treeLabels : ["First tree", "Second tree", "Third tree"]).map((label, index) => {
-                const points = spent[index] ?? 0;
-                const width = Math.min(100, Math.round((points / 51) * 100));
-                return (
-                  <div key={label} className="flex items-center gap-3 text-xs">
-                    <span className="w-24 shrink-0 text-muted">{label}</span>
-                    <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-line/40">
-                      <span
-                        className="block h-full rounded-full bg-gold/70"
-                        style={{ width: `${width}%` }}
-                      />
-                    </span>
-                    <span className="w-10 shrink-0 text-right text-parchment/80">{points} pt</span>
-                  </div>
-                );
-              })}
-            </div>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3 text-[11px] text-muted/70">
-              <span className="rounded-full border border-line/70 px-3 py-1">♥ {selected.likes} likes</span>
-              <span className="rounded-full border border-line/70 px-3 py-1">★ {selected.favorites} saves</span>
-              <span className="rounded-full border border-line/70 px-3 py-1">💬 {selected.comments} comments</span>
-            </div>
-
-            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-              <p className="max-w-md text-[11px] leading-relaxed text-muted/50">
-                Point bars show the tree split. Open the planner to inspect every
-                talent with the exact imported points.
-              </p>
-              <Link
-                href={buildHref(selected)}
-                className="inline-flex items-center gap-2 rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft transition-colors hover:border-gold/70"
-              >
-                Open in planner
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      ) : null}
     </div>
   );
 }
