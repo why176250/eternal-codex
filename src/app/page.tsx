@@ -149,7 +149,7 @@ export default function HomePage() {
               {
                 n: "02",
                 title: "Set the build",
-                body: "Talents and legacy in one save.",
+                body: "Plan points before you spend them.",
                 href: "/tools/build",
               },
               {
