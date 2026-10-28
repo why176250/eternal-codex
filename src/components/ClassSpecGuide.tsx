@@ -131,7 +131,7 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
                   <span>
                     <span className="block text-sm text-parchment">{spec.specName}</span>
                     <span className="mt-0.5 block text-[10px] uppercase tracking-wider text-muted">
-                      {spec.specNameEn} · {spec.role}
+                      {spec.role}
                     </span>
                   </span>
                 </span>
@@ -175,8 +175,8 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line/70 px-5 py-4 text-[11px] leading-relaxed text-muted/70 md:px-7">
         <p>
-          内容来源：蓝色隐士小程序「职业攻略（无限服）」· 更新于{" "}
-          {activeSpec.updatedAt} · 仅供个人学习，非商用
+          Source: Blue Hermit mini-program · Class Guides (Forever) · Updated{" "}
+          {activeSpec.updatedAt} · Personal, non-commercial use
         </p>
         <p className="text-muted/50">
           {activeSpec.title}

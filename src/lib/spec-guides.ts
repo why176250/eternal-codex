@@ -1,4 +1,4 @@
-import rawGuides from "@/data/class-guides.json";
+import rawGuides from "@/data/class-guides.en.json";
 import talentsJson from "@/data/forever/talents.json";
 
 export type SpecSection = {
@@ -75,16 +75,11 @@ export const allSpecGuides: SpecGuide[] = (rawGuides as RawGuide[]).map((guide) 
   const tree =
     classTalents?.trees.find((item) => item.nameEn === treeBase) ??
     classTalents?.trees.find((item) => item.nameEn === m.en);
-  const specName =
-    guide.specId === 82
-      ? "野性德鲁伊（猫）"
-      : guide.specId === 83
-        ? "野性德鲁伊（熊）"
-        : guide.specName;
   return {
     ...guide,
-    specName,
+    specName: m.en,
     specNameEn: m.en,
+    title: `${m.en} guide`,
     icon: tree?.icon ?? "",
     classSlug: m.classSlug,
     className: m.className,

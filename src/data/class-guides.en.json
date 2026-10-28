@@ -1,0 +1,911 @@
+[
+  {
+    "specId": 57,
+    "specName": "武器战士",
+    "title": "武器战士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "PvE and PvP both improved: instead of completely redesigning the game, unpopular skills will be strengthened in place. The 【Rend】 system has become the core of the Arms kit. Rend can grow with attack power and can hit critically.\n### Getting Started\n- The former \"punishing\" specialization is now very friendly: built-in basic attack timer, 【Improved Slam】 eliminates 【Slam】 and resets the basic attack penalty\n- Stance dancing: switch to 【Battle Stance】, use 【Overpower】 and immediately switch back to 【Berserker Stance】; when you need to reduce damage in the next dungeon, you can switch to 【Defensive Stance】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Spearing Strike】: dismounts the enemy; additional 80% weapon damage to giants/dragons/mounted targets, exclusive for Arms warriors\n- 【Victory Rush】: Available 20 seconds after killing non-trivial enemies, causing damage and recovering 10% of maximum health (common to all warriors)\n- 【Weaponmaster】: The four series of axe/sword/pole/hammer are combined into one, and the staff is also included; hammers and staffs ignore armor, and weapons can be switched more freely\n- 【Breath of Blood】: Give 【Rend】 a chance to activate 【Overpower】 for 6 seconds. The more points, the higher the probability.\n- 【Improved Slam】: Reduces the casting time of 【Slam】 and no longer interrupts basic attacks.\n### Changes to existing skills\n- 【Slam】: Added 15 seconds cooldown\n- 【Rend】: Grows better with stronger attacks, and can hit critically\n- 【Thunder Clap】: Attack speed reduction effect 10% → 20%\n- 【Deep Wounds】: Can hit critically\n- 【Battle Shout】: Lasts 2 → 3 minutes; 【Demoralizing Shout】: 30 seconds → 45 seconds\n- 【Retaliation】: CD 30 → 15 minutes, no longer shares cooling with 【Shield Wall】, 【Recklessness】\n- 【Shield Wall】: CD 30 → 15 minutes; damage reduction 75% → 60%\n- 【Hamstring】 Probability stun no longer relies on prayer - 【Spearing Strike】 directly knocks the enemy off his horse"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Strong battlefield mobility (【Charge】/interception)\n- Charged Rage + 【Sweeping Strikes】 + Cleave Burst AoE\n- 【Improved Hamstring】 can control enemies easily\n### Disadvantages\n- Easily become angry and lose food when missed/parried\n- Sluggish AoE combat for long periods of time (limited rage generation)\n- Less passive self-healing methods than other specializations"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (all races can be played, with minimal differences)\n- Alliance · Night Elf (PvE first choice): The critical hit initiative and the critical hit bleed are excellently linked - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Alliance · Gnome (PvE/PvP balance): Active buffs can be stacked into bursts; rage limit and control-free are both practical - 【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Human (PvP only): stun relief + anti-invisibility; ruthless critical strikes are also available in PvE——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Dwarves: 【Craftsman Precision】 【Big Game Hunter】【Stoneform】【Find Treasure】\n- Horde · Orcs (Best): Suitable for both PvE/PvP (Burst + Control Reduction/Counter) - 【Bloodrage】 【Command】 【Hardiness】【Shatter Curse】\n- Horde · Troll (second choice): 【Berserk】【Beast Slaying】【Regeneration】【Rapid Regeneration】\n- Horde · Tauren: low damage but solid tankiness and control, good leveling experience——【War Stomp】【Endurance】【Plainsrunning】【Cultivation】\n- Horde · Undead (weaker): Will overlaps with the fear immunity that comes with the warrior——【Will of the Forsaken】【Cannibalize】【Water Breathing】【Touch of the Grave】\n- Tianyi: A more leveling experience, but a weak ending——【Walk on Air】【Skysight】【Elemental Insight】【Wind Blessed】【Read Ley Line】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: The best in end-game PvE/PvP (devices and bombs). The value during the leveling period is limited. It is recommended to change after reaching the full level.\n- Mining: node increase + smelting 1-300 replenishing skills; campfire gain (to be tested) very suitable for warriors (does not stack with 【Blessing of Might】)\n- Blacksmithing: New formulas can be leveled up to create stronger equipment, which can be sold to recoup the cost; campfire gain (to be tested) is also of high quality (not superimposed with 【Strength of Earth Totem】)\n- Recommended route: leveling mining + forging, change to engineering after reaching full level; engineering bonfire benefits are limited (to be tested), engineering is not recommended during the leveling period."
+      }
+    ]
+  },
+  {
+    "specId": 58,
+    "specName": "狂怒战士",
+    "title": "狂怒战士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The cycle and talents generally continue to be classic, but the underlying situation has changed a lot: anger is normalized (a fixed formula gives anger and no longer grows with equipment/crits), world buffs are removed, and boss armor is increased - the damage of the team is under pressure, and team configuration (such as 【Windfury Totem】, 【Leader of the Pack】) is more important than ever.\n### Getting Started\n- Deep anger management\n- Single player leveling is weak, more suitable for team content"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### Core mechanism changes\n- Rage normalization: Attacks give a fixed range of anger, critical hits no longer give extra anger; the more damage you take, the more anger you can get.\n- The armor breaking of 【Faerie Fire】 and 【Curse of Recklessness】 no longer stacks - the purely physical 【Fury】 battle is further limited\n### New talents\n- 【Rage Attack】: 【Whirlwind】 hits with two weapons at the same time, the off-hand participates in AoE, and the off-hand choice is wider\n- 【Victory Rush】: Level 20 skill, available after kill, medium damage + small amount of blood recovery\n- 【Tactical Mastery】: Retain a small amount of anger when changing posture (basic skill)\n### Changes to existing skills\n- 【Bloodthirst】: Damage coefficient 45% → 35% attack power, a small amount of fixed damage added\n- 【Fury】: Triggered by any direct damage, no longer requires critical hit\n- 【Dual Wield Specialization】: Off-hand +10% hit (to compensate for the removal of the \"next attack\" miss penalty)\n- Enhanced 【Battle Shout】 talent is removed, team assistance is reduced; 【Recklessness】 is still 30 minutes CD (compared to 3 minutes of 【Berserk】)"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Low target cleave unparalleled: The combination of 【Cleave】 and 【Whirlwind】 is extremely powerful\n- Explosion at critical moments CD: 【Death Wish】\n- Plate armor has high HP and excellent survivability\n### Disadvantages\n- High dependence on equipment, requiring a large amount of equipment to meet the standards\n- 【Recklessness】 30-minute large CD limits burst frequency"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Night Elf (Domination Level): Powerful critical strike active + movement speed——【Elune's Light】【Quickness】【Wisp Spirit】\n- Alliance · Gnome (Solid): Damage initiative can be stacked into Death Wish's burst; control control is the icing on the cake - 【Eureka!】【Escape Artist】【Expansive Mind】\n- Alliance · Human/Celestial (Holy Order): niche choice; dwarves are relatively weak - 【Will to Survive】【Perception】【Ruthless】/【Walk on Air】【Wind Blessed】\n- Horde · Orc (Best): Burst Active + Stun Reduction + Strong Magic Resistance——【Bloodrage】 【Command】 【Hardiness】【Shatter Curse】\n- Horde · Troll/Undead: The strength is usable, the adaptability is slightly lower, but each has its own strengths; Skyborn are valuable in fighting elemental bosses; Tauren prefer to survive——【Berserk】【Beast Slaying】【Rapid Regeneration】【Touch of the Grave】【Will of the Forsaken】【Cannibalize】【Endurance】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: It is expected to still be a strong major in Fury Battle - powerful props and explosives complement the burst and maneuverability, especially in single brushing.\n- Alchemy: The duration and strength of mixtures/potions are increased, and the attribute gains are considerable"
+      }
+    ]
+  },
+  {
+    "specId": 59,
+    "specName": "防护战士",
+    "title": "防护战士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The first choice tank with the most comprehensive tools in the classic era, the changes in the unlimited server are minimal but enough to change the gameplay: the threat coefficient is directly added to the talent (【Defiance】), 【Revenge】 adds attack strength - the pain point of the \"violent tank\" in the classic era is solved head-on, and the sword and shield gameplay returns.\n### Getting Started\n- 【Thunder Clap】 【Defensive Stance】 is available + 【Charge】 can also be used after being gifted - it can be an effective tank even if you don't know how to dance.\n- Don’t use 【Heroic Strike】 when you are not angry enough (it takes up basic attack); give priority to the damage/threat of 【Sunder Armor】 and 【Revenge】\n- Multi-target threat management is still the focus of learning; being hit/absorbing damage will generate anger, and you will no longer be in a hurry when tanking multiple monsters.\n### Exclusive mechanism\n- Source of anger: basic attack, attack, 【Charge】, 【Bloodrage】; block/dodge/parry by 【Shield Specialization】 and 【Master of Defense】 to generate anger - anger distribution is the core of playing a good warrior\n- 【Battle Stance】: Threat -20%; key skills 【Retaliation】, 【Overpower】, 【Execute】, 【Charge】\n- 【Berserker Stance】: critical hit +3%, damage +10%; key skills 【Recklessness】, 【Whirlwind】, 【Intercept】, 【Execute】\n- 【Defensive Stance】: Injury -10%, damage -10%, threat +30% (protection base posture); key skills 【Shield Wall】, 【Shield Block】, 【Disarm】\n- There are many posture macros entering and exiting scenes; 【Tactical Mastery】 is basic to make posture switching easier, and the weapon tree 【Improved Tactical Mastery】 can further retain anger."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Victory Rush】: 10% blood recovery after killing (battery life badly needed for leveling)\n- 【Vanguard】: Defense stance available 【Charge】\n- 【Fortified City】: All damage +10% when holding a shield\n- 【Master of Defense】: Dodge/parry generates 5 rage while holding a shield\n- 【Focus of Fury】: Offensive skills cost -3\n- The protection talent tree has been completely reworked, with much wider methods than the classic one.\n### Changes to existing skills\n- 【Thunder Clap】: Defensive posture available; attack speed reduced by 10% → 20%; CD 4 seconds → 6 seconds - with 【Cleave】 under abundant anger, the multi-target tank experience will be qualitatively changed\n- 【Shield Block】: Block +75% for 7 seconds, can be blocked 2 times (original 5 seconds/1 time)\n- 【Shield Wall】: Total damage -60% for 12 seconds, CD 30 → 15 minutes and can be further reduced by talents\n- 【Tactical Mastery】: Basic skills (retain 10 anger regardless of posture)\n- 【Precision】: 100% generate 5 Fury when blocking (original 1 Fury)\n- 【Anticipation】: Defense skill +10 → +20\n- 【Improved Bloodrage】: 【Bloodrage】 anger generation +50%\n- 【Improved Revenge】: changed to 【Revenge】 damage +60% (original 15% chance of stun)\n- 【Defiance】: When holding a shield, all threats in defensive posture will be increased by 15%\n- 【Improved Disarm】: Disarm CD -20 seconds; 【Improved Shield Wall】: 【Shield Wall】 CD -11 minutes"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Comprehensive skills: single/multi-target threats, damage reduction, and control relief.\n- After 【Thunder Clap】 enters a defensive posture, the pressure of multi-target monster pulling and hatred is greatly relieved.\n### Disadvantages\n- The means of breaking threats is still weaker than that of legal tanks (remote pulling of monsters relies on engineering props)\n- Anger management is still a threshold in high-pressure situations"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (all races are available, each with its own strengths)\n- Alliance · Humanity: After the critical hit rolling bleed became a feasible talent, the benefit of Ruthless 1% critical hit was amplified——【Ruthless】【Will to Survive】\n- Alliance · Dwarves: Craftsman's Accuracy +1% hit is not on the same axis as human critical hit, but the bleeding (cannot be dispelled) scene is very strong - 【Craftsman's Accuracy】 【Stoneform】【Big Game Hunter】\n- Alliance · Gnome (PvP only): Active buffs can be stacked into Death Wish; control relief comes with short-term immunity (like Free Blessing) - 【Eureka!】【Escape Artist】\n- Alliance · Night Elf: The conflict between critical strike initiative and reckless 100% critical strike, don’t open them both——【Elune's Light】【Quickness】【Wisp Spirit】\n- Horde · Orcs (the most comprehensive): No need to choose a partner for an explosion; magic reduction/curse removal and control reduction are all hard defenses - 【Command】 【Bloodrage】【Shatter Curse】【Hardiness】\n- Horde · Tauren (stronger defense): solid health bonus; easy to use for group stun leveling/dungeon——【Endurance】【War Stomp】【Plainsrunning】\n- Horde · Troll: It is very practical to recover blood after active self-healing and fear-based skills——【Rapid Regeneration】【Beast Slaying】【Berserk】\n- Horde · Undead: blood-sucking triggers frequently; willpower is practical at both ends——【Touch of the Grave】【Will of the Forsaken】【Cannibalize】\n- Tianyi (plain): Increases damage to elements in scenes; Haste has always been low in protection - 【Elemental Insight】【Walk on Air】【Wind Blessed】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: has always been a strong profession for tanks - the remote grenade can deal with threats and solve the problem of the distance between tanks and monsters.\n- The other majors each have attribute bonuses, and which one is better remains to be tested; it is recommended to start with mining + forging (or mining + engineering)"
+      }
+    ]
+  },
+  {
+    "specId": 60,
+    "specName": "神圣圣骑士",
+    "title": "神圣圣骑士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "New group healing methods, holy seals and blessings have been added to make it easier to manage. Damage skills have been added during the leveling period - the skills are more complete and focus is put back on the operation itself.\n### Getting Started\n- The core is simple, with sufficient self-healing, excellent defense, acceptable damage, and very smooth leveling\n- The only threshold: There are many types of blessings/halos/sacred seals, and it takes time to familiarize yourself with which one to use in each scene.\n### Exclusive mechanism: Seal and Judgment\n- Only one holy seal can be activated at the same time; the effect of 【Judgement】 changes with the current holy seal (light = the attacker returns blood, wisdom = the attacker returns mana, crusade = the target receives increased holy damage, justice = attack brings holy damage)\n- The 【Judgement】 effect on the target will be refreshed by your basic attack; the target's judgment does not have to be consistent with the current holy seal - for example: turn on 【Seal of Light】 Judgment Boss to let the whole team attack to restore health, and then switch to 【Seal of Wisdom】 to restore mana to your own basic attack and refresh the light judgment on the target.\n- When dealing damage, you can use 【Judgement】 with 【Seal of the Crusader】 and then use 【Seal of Righteousness】 to eat Crusaders to increase damage."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills\n- 【Light's Vigil】: The new pinnacle of the sacred tree, the core of group healing - imposes a 30-second watch on the target. Next time 【Holy Shock】 triggers the whole team to heal each other (causing sacred damage to the enemy) and returns 75% of the mana consumption; limited to one per team\n- 【Holy Strike】: Instant strike, 40% weapon damage + holy damage (leveling damage supplement)\n- 【Voice of Truth】: 6 seconds immune to silence and interruption\n### Existing changes\n- Blessing duration 5 minutes → 1 hour (【Blessing of Wisdom】, etc.) - The era of 5 minutes for the whole team to receive blessings is over\n- 【Judgement】: No longer consumes the currently activated Holy Seal"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Humans (recommended)/Dwarves: Humans have ruthless 1% critical hit, dwarf craftsman precision +1% hit (humans have another spiritual passive); dwarves have strong removal methods, but knights have their own means of removal - 【Ruthless】【The Human Spirit】/【Craftsman Precision】 【Stoneform】\n- Horde · Undead (only optional): 【Touch of the Grave】【Will of the Forsaken】【Cannibalize】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Blacksmithing (self-made equipment) + engineering (functional props); both consume ores - if you don’t plan to buy all the ores, just choose one to match with mining"
+      }
+    ]
+  },
+  {
+    "specId": 61,
+    "specName": "防护圣骑士",
+    "title": "防护圣骑士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "A tank with comprehensive skills, the only shortcoming is that it does not have a taunting skill like 【Taunt】 - now there is: 【Judgement】 of 【Seal of Fury】 can taunt the target for 4 seconds. The problem of recovering mana during battle has also been solved by talent, and the experience has been transformed.\n### Getting Started\n- One of the simplest tanks; focus on familiarizing yourself with the linkage between each holy seal and 【Judgement】, and make good use of 【Holy Strike】, 【Consecration】, and level 40 【Holy Shield】\n### Exclusive mechanism: Mana and Holy Seal\n- The Knight is the only tank that uses blue: there will be no shortage of resources at the beginning, but in the protracted battle, it is necessary to control the blue. After a wave, you often need to sit down and return to blue before pulling the next wave.\n- 【Seal of Wisdom】: Normal attack returns mana; after trial, the team attacks the target and returns mana\n- 【Seal of Light】: Basic attacks restore blood; after the trial, the whole team attacks the target to restore blood.\n- 【Seal of the Crusader】: Acceleration and attack power (reduces click damage); Judgment increases the target's holy damage\n- 【Seal of Justice】: probability of dizziness; trial to prevent escape\n- 【Seal of Fury】: Damage + Absorption Shield; Judgment Taunt\n- 【Seal of Righteousness】: Each hit causes Holy damage; Judgment direct damage\n- Cutting the holy seal according to the scene and coordinating the judgment effect on the target with the team are the homework of anti-riding"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Seal of Fury】: Basic attack adds sacred damage, and when holding a shield, each attack will gain an equal amount of 50% absorbed shield; Judgment Taunt for 4 seconds\n- (To be tested): Absorption shield = 100% maximum health, lasting 8 seconds (self-discipline 1 minute); the only percentage damage reduction CD of anti-riding relies on it\n- 【Holy Strike】: 42% weapon damage + holy damage instant strike\n- (To be tested): Stamina +4%, Holy Shield/Holy Protection/Temple Barrier CD -60 seconds\n- (To be tested): When the Seal of Wrath absorption shield is full, 60 mana will be returned.\n- (To be tested): End the trial CD immediately, and the next trial will be free of mana.\n- (To be tested): 【Holy Strike】 threat +30%; additional -15% damage for 6 seconds under Righteous Wrath\n### Existing changes\n- 【Consecration】: The damage is greatly reduced, but the first 4 targets in the circle are additionally damaged - the AoE tanking ability is in line with the target limit of the warrior/wild druid.\n- 【Holy Shield】: Block +30% → +20%, damage back 130 → 221\n- 【Redoubt】: Triggered by violence → 10% probability of triggering by melee damage\n- 【Anticipation】: Defense skill +10 → +20\n- 【Precision】: Hit +1% → Hit +1% (the value remains unchanged, only the description caliber is modified)\n- 【Improved Righteous Fury】: 【Righteous Fury】 Threat +50% → Injury -6%\n- 【Shield Specialization】: Shield absorption +30% remains unchanged, blocking 100% returns 6% of maximum mana (once within 3 seconds)\n- 【One-Handed Weapon Specialization】: One-handed weapon damage +6% → +10%\n- 【Reckoning】: Extra attack when hit → 40% block when hit / 100% extra attack when hit by non-periodic critical hit"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Humanity (preferred): After the spell can critically hit, the 1% critical hit benefit of Ruthless is amplified; stun is removed every 3 minutes, double-ended utility - 【Ruthless】【Will to Survive】\n- Alliance · Dwarves (can be overtaken in scenes): Craftsman Accuracy +1%, the hit is not on the same axis as human critical strike, but the bleeding relief (cannot be dispelled) is very strong in certain scenes - 【Craftsman Accuracy】 【Stoneform】【Big Game Hunter】\n- Horde · Undead (unique): blood-stealing triggers frequently, and willpower is practical at both ends; corpse-eating brings back mana, which is good news for knights——【Touch of the Grave】【Will of the Forsaken】【Cannibalize】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: Since the classics, the knight's long-range monster pulling problem has been solved by engineering grenades, which will probably still be strong.\n- The other majors each have attribute bonuses, which one remains to be seen; it is recommended to start with mining + forging (or mining + engineering)"
+      }
+    ]
+  },
+  {
+    "specId": 62,
+    "specName": "惩戒圣骑士",
+    "title": "惩戒圣骑士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The Punisher Cavalry, which has been weak and lacks recognition for a long time, has received a comprehensive overhaul: a reworked talent tree, new skills, and substantial enhancements to existing skills. Positioning = mid-to-high damage + powerful support (blessing/halo/functional spell), can be a tank/treater when necessary.\n### Exclusive mechanism: Holy Light Twist\n- A simplified version of the classic master's \"Sacred Seal Twist\": no need to adjust the rhythm of the basic attack, just cut the holy seal to get the echo - 【Twist of Light】 makes each basic attack stable with double holy seals\n- The official built-in basic attack timer assists this gameplay; players have different opinions on its de-rhythmization, and the strength needs to be measured in practice."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Holy Strike】: Instant holy damage main attack skill, similar to Crusader Strike\n- 【Twist of Light】: The new pinnacle of the Punishment Tree - \"Twist Seal\": When switching Seals, the old Seal turns into \"Echo\", and the next basic attack will have the effects of both old and new Seals at the same time (one basic attack with two Seals)\n- 【Seal of Fury】: Tank Seal, 【Judgement】 can taunt for 4 seconds (shared with anti-riders)\n### Existing changes\n- 【Blessing of Wisdom】, 【Blessing of Might】, 【Blessing of Kings】: Blessing duration is 1 hour; the king can be obtained by training instead\n- 【Lay on Hands】: No longer interrupts mana recovery\n- 【Consecration】: Extra damage to the first 4 targets; available through training instead\n- 【Holy Wrath】: Stun undead/demon for 2 seconds\n- 【Righteous Fury】: Threat +60% → +90%\n- 【Shadow Resistance Aura】, 【Frost Resistance Aura】, 【Fire Resistance Aura】: The resistance aura extends from the team to the entire group\n- 【Judgement】: No longer consumes holy seals"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Average single target damage, solid AoE\n- The auxiliary ability of blessing/halo/function spell is the core value\n- Good mobility (Cleaning Technique + 【Blessing of Freedom】)\n- 【Lay on Hands】 and 【Blessing of Protection】 came back at the critical moment\n### Disadvantages\n- Missing a big damage CD\n- The blue pool is small and easy to bottom out\n-Eat equipment: very dependent on stacking spell power\n- Cut talents to be effective in tanking/healing"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Human (recommended): The overall racial strength exceeds that of the dwarves——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Dwarves: 【Stoneform】【Find Treasure】 【Craftsman Precision】 【Big Game Hunter】\n- Horde · Undead (only): 【Touch of the Grave】【Water Breathing】【Cannibalize】【Will of the Forsaken】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Current consensus: Mining + Blacksmithing is a strong choice for the Punishment Cavalry"
+      }
+    ]
+  },
+  {
+    "specId": 63,
+    "specName": "野兽控制猎人",
+    "title": "野兽控制猎人Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The main body has not changed much, and the focus is entirely on pets: pets will grow with the hunter's attributes, and each pet will gain new skills. The new skill 【Summon Hawk】 is a \"pseudo second pet\".\n### Getting Started\n- The three series are the easiest to use; the key is to keep the two layers of 【Summon Hawk】 from falling and not refresh prematurely\n- Hunters have a high ceiling: melee combat, trap and spike control, pet and environment control are all worth practicing."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Summon Hawk】: The eagle dive bombs the target and continues to attack for 18 seconds, up to 2; shared CD with 【Arcane Shot】\n- 【Focused Fire】: When the pet is activated, all damage done by you and your pet +2%\n### Body and pet changes\n- 【Auto Shot】: Removed hidden 0.5 second cast time and can continue during other skill casts - stronger kiting ability\n- 【Aimed Shot】 and 【Multi-Shot】 share cooldown; 【Aimed Shot】 is changed to a basic skill\n- 【Endurance Training】: Pet health and armor +15%\n- 【Improved Aspect of the Monkey】: 【Aspect of the Monkey】 dodge +6%, and pets gain 50% effect\n- 【Intimidation】: Next attack will stun for 3 seconds and 100% critical hit, high threat\n- 【Bestial Discipline】: Pet focus recovery +20%; 50% mana recovery retained when casting\n-Pet growth: 2 life/1 stamina, armor 30%, attack power 10%, critical hit 100% inheritance; new avoidance, no longer eats other people's gains; each pet family has at least one exclusive skill (【Dust Cloud】 PvE armor breaking, 【Dismember】 PvP healing interruption, 【It's mine!】 Counter stalker opening, etc.)"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- 【Bestial Wrath】 window period burst high\n- Strong kiting ability (both PvE/PvP)\n- Pets have various functions and can be switched as needed\n### Disadvantages\n- Does not bring any team benefits, relies on hard damage to make money\n- 8-yard blind zone: you can’t hit anyone at close range"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Tian Yi: If there are elemental monsters on the field, you will reach the top; the rapid passive is scarce in the classic period, and the income may be higher——【Elemental Insight】【Wind Blessed】【Walk on Air】【Skysight】【Read Ley Line】\n- Alliance · Night Elf (Strong): Critical hits are automatically combined with Rapid Fire/Wild Fury into the burst window. The shorter the battle, the higher the benefits; pets also receive critical hits - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Alliance · Humanity: Ruthless 1% critical hit is not limited to weapons, and can also be taken from long range (pets also benefit); stun removal is equivalent to built-in PvP accessories - 【Ruthless】【Will to Survive】【Perception】【The Human Spirit】\n- Alliance · Dwarves: The only highlight of PvE is fighting beasts; if you want to specialize in stalkers, you can choose - 【Big Game Hunter】【Stoneform】 【Craftsman Precision】 【Find Treasure】\n- Horde · Orcs (Best): Pets that attack strong bursts also benefit; commands increase pet damage by 5%; PvP control reduction/countermeasures are complete - 【Bloodrage】【Hardiness】【Shatter Curse】 【Command】\n- Horde · Troll: The increased damage to beasts is the same as that of dwarves; the attack speed is no longer based on the blood loss meter, and is weaker than the classic one——【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Horde · Tauren: The blood volume bonus is solid; displacement can save the cheetah guard to fight the eagle; the group stun is still strong——【Endurance】【Plainsrunning】【War Stomp】【Cultivation】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Leatherworking: Pick up a large number of new recipes that are bound to each other. The equipment at the current level is extremely powerful, so it is basically a must-select.\n- Engineering: firearms/hoods + grenades and mine consumables, there may be more new content in the future"
+      }
+    ]
+  },
+  {
+    "specId": 64,
+    "specName": "射击猎人",
+    "title": "射击猎人Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The official enhancement of the \"Lone Marksman\" fantasy: Talent 【Lonely】 increases all damage by 20% when you don't bring a pet - there is a high probability of fighting without a pet in dungeons and raids.\n### Getting Started\n- The three series are the most difficult to play well (the reading bar is easily interrupted), but it is not difficult in team content; the three series of melee penetration/trap/spiking ceiling are common"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Sniper Shot】: Shooting at the top of the tree, high damage 【Sniper Shot】 with 4 seconds cast/15 seconds CD\n- 【Alone】: All damage +20% when there is no pet\n- 【Rapid Recuperation】: Casting within 15 seconds after the snake sting hits will retain 50% of the mana recovery (100% for quick kill)\n- 【Precise Aiming】: Attack power +100% intelligence - the equipment ideas will change accordingly\n- 【Improved Stings】: Snake sting damage +20%; 【Viper Sting】 CD -6 seconds; Scorpion sting duration +45 seconds\n### Existing changes\n- 【Auto Shot】: Remove hidden 0.5 second cast time (same model as Beastmaster)\n- 【Aimed Shot】: Basic Skills, shared CD with 【Multi-Shot】\n- 【Trueshot Aura】: The team's long-range attack power +50 is retained, but no longer adds melee attack power - significantly weakened\n- 【Improved Tracking】: When tracking humanoids/beasts/elements, etc., damage +5% to them"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Long reading bar with high burst (especially 【Sniper Shot】)\n- Strong kiting ability (PvE/PvP)\n### Disadvantages\n- No team gain (【Trueshot Aura】 reduces melee attack power + no pets) - if the damage is not high enough, no one will want it\n- The 8-yard blind zone is the most punishing for hunting."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Tian Yi: If there are elemental monsters on the field, you will reach the top; the rapid passive is scarce in the classic period, and the income may be higher——【Elemental Insight】【Wind Blessed】【Walk on Air】【Skysight】【Read Ley Line】\n- Alliance · Night Elf (Strong): Critical hits are automatically combined with Rapid Fire/Wild Fury into the burst window. The shorter the battle, the higher the benefits; pets also receive critical hits - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Alliance · Humanity: Ruthless 1% critical hit is not limited to weapons, and can also be taken from long range (pets also benefit); stun removal is equivalent to built-in PvP accessories - 【Ruthless】【Will to Survive】【Perception】【The Human Spirit】\n- Alliance · Dwarves: The only highlight of PvE is fighting beasts; if you want to specialize in stalkers, you can choose - 【Big Game Hunter】【Stoneform】 【Craftsman Precision】 【Find Treasure】\n- Horde · Orcs (Best): Pets that attack strong bursts also benefit; commands increase pet damage by 5%; PvP control reduction/countermeasures are complete - 【Bloodrage】【Hardiness】【Shatter Curse】 【Command】\n- Horde · Troll: The increased damage to beasts is the same as that of dwarves; the attack speed is no longer based on the blood loss meter, and is weaker than the classic one——【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Horde · Tauren: The blood volume bonus is solid; displacement can save the cheetah guard to fight the eagle; the group stun is still strong——【Endurance】【Plainsrunning】【War Stomp】【Cultivation】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Leatherworking: Pick up and bind a new recipe. The equipment is very powerful at the same level and is basically a must-select.\n- Engineering: Firearms/Hood + Grenade and Mine Consumables"
+      }
+    ]
+  },
+  {
+    "specId": 65,
+    "specName": "生存猎人",
+    "title": "生存猎人Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "In the infinite server, the positioning of survival hunting has been changed from \"harassment\" to a mixed output of \"melee + trap\": a batch of melee-oriented talents have been added to the second half of the talent tree, and two old talents have been merged into one. Pets have also been changed to inherit part of the hunter's attribute growth, and more pet families have become available due to new skills.\n### Getting Started\n- Easy to get started: Survival in the three series is equally easy to get started, but due to the limitation of talent points, it does not become effective until about level 32.\n- Pets are optional: you can play with or without pets.\n- High ceiling: The full set of long-range and melee skills are very difficult to deal with once you are familiar with them; the control of traps and spikes is your strength in PvP, and the control of pets and environment allows you to do things alone that other professions cannot do - this is common to all three systems.\n### Ammunition and Arrows\nThe ammunition system has not changed substantially: it still requires a quiver or ammunition pouch, so it has one less backpack slot than other professions.\n### Pets\nAll pet families now have at least one unique skill, some are PvE-focused, and some are strong in PvP; pets will also inherit some attributes of hunters:\n- Stamina: The player gives the pet 2 points of life for every 1 point of stamina.\n- Armor: Inherit 30% of the player's armor\n- Attack Power: Inherits 10% of the player's highest attack power source\n- Critical hit: Inherits the player’s critical hit rate in full\nThese values are visible in the Pets tab of the character panel. Pets now have avoidance, but no longer enjoy the benefits of other professions."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Strider Kick】: Melee kick that deals 100% melee damage and increases movement speed for 3 seconds, 8 second cooldown - does not interrupt casting.\n- 【Predator's Edge】: Melee critical hit damage +30%, off-hand weapon damage +50% - the off-hand bonus is very strong compared to other dual-wielding professions.\n- 【Expose Prey】: There is a 10% chance to activate 【Mongoose Bite】 for 5 seconds when attacking a target with the Hunter's Mark - with this, 【Mongoose Bite】 can enter the loop without relying on dodge.\n- 【Easy】: The mana consumption of traps and melee skills is -60%, and critical hits have a chance to increase mana recovery for 30 seconds - the core talent to maintain the blue bar.\n- 【Survival Expert's Discipline】: The cooldown of traps and \"intimidation\" is -40% - simple and effective; the basic cooldown of traps in the infinite server has been extended to 30 seconds.\n- 【Male Strike】: The pinnacle talent of survival, which makes the target hit by 【Mongoose Bite】 continue to bleed for a long time.\n### Changes to existing skills and talents\n- 【Mongoose Bite】: Changed to calculate based on weapon damage (including fixed bonus), no longer a fixed damage; unless 【Expose Prey】 is clicked, you still need to dodge before using it.\n- 【Improved Tracking】: Monster tracking and human tracking are combined into one talent. The damage to tracking type targets is +5% at full level, and it is effective for all tracking skills of hunters.\n- 【Entrapment】: When the trap is triggered, the affected target will be immobilized for up to 5 seconds at full level.\n- 【Survival Tactics】: The two classic talents of \"Trap Hit\" and \"Fake Death Hit\" are merged into one.\n- 【Counterattack】: Can be used after parrying the opponent's attack; it will grow with the weapon damage instead of fixed damage."
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "The goal of Unlimited Server is to make every spec available. Survival Hunter does not have any team benefits, and relies on 【Dust Cloud】 to provide a little armor penetration at most, so whether it can be ranked depends entirely on the damage itself.\nIn terms of PvP, as long as the pet is not killed, it will be interesting - some pet families have obtained strong PvP skills; the movement speed increase that comes with 【Strider Kick】 is particularly useful, and the trap talents have also become stronger overall.\n### Advantages\n- Excellent continuous damage: You can almost always press the skill. In the classic version, the \"no empty window\" itself is strength.\n- Strong kiting ability: Kite can be flown in both PvE and PvP, as long as the opponent does not have remote control or dash means.\n- Pet belt function: New pet skills give each family room to play - 【Dust Cloud】 is strong in PvE, 【Dismember】 is powerful in PvP healing, 【It's mine! 】 Can counterattack when the Rogue strikes first.\n### Disadvantages\n- No team benefits: There are no benefits that are useful to the team. In the competitive environment, you have to rely on high basic damage to gain position.\n- Competition for equipment is fierce: weapons must be competed with warriors, rogues (and possibly paladins)."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "The talents of each race have been overhauled to achieve balance; currently some are better for general use, while others are only suitable for specific gameplay. In the infinite server, humans can be hunters, and there is also a new race, Skyborn.\n### Tianyi\nWhen there are elemental monsters on the field, Tianyi ranks first with its 【Elemental Insight】 passive (the official has never given up on racial skills based on monster types); another one that does improve damage is the passive 【Wind Blessed】. Classic versions are rapidly becoming scarce, and actual returns may be higher than they appear.\n### Alliance\n- Night Elf (Strong): Critical hits are automatically combined with Rapid Fire/Wild Fury into the burst window. The shorter the battle, the higher the benefits; pets also receive critical hits - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Humans: Ruthless 1% critical hit is not limited to weapons, it can also be taken from long range (pets also benefit); stun removal is equivalent to built-in PvP accessories - 【Ruthless】【Will to Survive】【Perception】【The Human Spirit】\n- Dwarves: The only highlight of PvE is fighting beasts; if you want to specialize in stalkers, you can choose - 【Big Game Hunter】【Stoneform】 【Craftsman Precision】 【Find Treasure】\n### Horde\n- Orcs (Best): Pets that attack strong bursts also benefit; commands increase pet damage by 5%; PvP control reduction/countermeasures are complete - 【Bloodrage】【Hardiness】【Shatter Curse】 【Command】\n- Troll: The increased damage to beasts is the same as that of dwarves; the attack speed is no longer based on the blood loss meter, and is weaker than the classic one - 【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Tauren: solid health bonus; displacement can save the cheetah guard to fight the eagle; group stun is still strong - 【Endurance】【Plainsrunning】【War Stomp】【Cultivation】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "### Leatherworking\nAfter the change, leatherworking is basically the standard equipment for hunters: many recipes have been changed or added as pickup bindings, and these equipment are often very strong at the same level. If you still maintain this strength after reaching full level, choosing leather crafting is almost inevitable.\n### Engineering\nEngineering provides hunters with firearms and eye protection equipment, as well as powerful consumables such as grenades and landmines. The subsequent entry is unclear, but it is not surprising that there will be additions such as craftsman devices."
+      }
+    ]
+  },
+  {
+    "specId": 66,
+    "specName": "奥术法师",
+    "title": "奥术法师Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "It is no longer just an auxiliary positioning to provide gains to the other two series - 【Arcane Blast】 + missile burst makes Arcana a truly independent output specialization, and the core of the gameplay is mana management.\n### Exclusive mechanism\n- Number of Arcane Shock layers: +10% other spell damage/+175% mana consumption per layer, cleared with other spells - the standard cycle is to stack 4 layers and then use 【Missile Burst】 to clear the layer with enhanced missiles\n- Mana management: Treat mana as a resource that needs to be \"squeezed to the bottom\"; at low levels, clearing the 2-3 layers saves mana, and in the later stage, the 【missile burst】 triggers after 4 layers."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Arcane Blast】: 2.5 seconds to cast, each layer increases the damage of other spells by 10% (up to 4 layers), and each layer consumes mana +175% - use other spells to clear the layer after stacking\n- 【Missile Burst】: The core alongside Arcane Impact - the mana-free 【Arcane Missiles】, is the main means of gaining stacks.\n- 【Arcane Subtlety】: Arcane threat reduction + spell penetration, AoE more free\n- 【Magic Coordination】: Arcane range +6 yards, often used as a passing point\n### Existing changes\n- 【Arcane Meditation】: Retain mana regeneration when casting 15% → 50% (top level)\n- 【Arcane Mind】: Added to the old effect - Arcane spell critical damage +100%\n- 【Arcane Concentration】: 2% hit per point → 1% (the hit mechanism is redone, the 17% cap no longer has a forced 1% miss)\n- 【Flamestrike】: 【Flamestrike】 ground effects of different levels no longer stack.\n- 【Incinerate】: Now also provides critical hit chance for 【Arcane Blast】 and Ice Gun"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Great explosive potential (【Arcane Power】 + explosive damage talent)\n- The layer-clearing cycle feels smooth, and mana management itself is an expression of operation.\n### Disadvantages\n- The experience of empty blue is very poor, and it will be very uncomfortable if the mana management is not good.\n- Weak in leveling (skills cost a lot of mana and often rely on magic wands)\n- Performance is strongly bound to combat duration/team DPS"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (human/dwarf/celestial being, holy order alliance; orc/undead/troll tribe)\n- Alliance · Gnome: Active damage comes with mana saving (not much), passive mana fits high-coverage play style - 【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Humanity: Ruthless critical strike is practical; the spirit is equipped with mage armor/meditation, and it also recovers mana during battle——【Will to Survive】【Ruthless】【The Human Spirit】【Perception】\n- Alliance · Celestial (Holy Order): The mana recovery active is useful in high-coverage situations where mana is tight, and overall it is not as good as the dwarf's mana passive; the rapid passive is the most interesting - 【Read Ley Line】【Wind Blessed】【Elemental Insight】【Walk on Air】\n- Horde · Undead: Will is the strongest racial skill in Mage PvP (save one accessory slot); zombies bring back mana and reduce the task burden——【Will of the Forsaken】【Cannibalize】【Water Breathing】【Touch of the Grave】\n- Horde · Troll: fixed rapidity is good; beast damage increase is pure scene; self-healing initiative is a rare life-saving method for mages——【Berserk】【Rapid Regeneration】【Regeneration】【Beast Slaying】\n- Horde · Orcs: The magic power is good to take the initiative; removing the curse and dispelling it are repeated (the accompanying magic reduction is still valuable) - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Project: Added nitro thruster type goggle device - movement speed burst = extra coverage = damage; bombs are always valuable in group play/PvP, and are most likely to be graduation equipment\n- Tailoring: If the cloak embroidery is a trigger-type magic power, it is excellent for short combat/with arcane enhancement; if it is a fixed magic power, it will be treated in the same level as alchemy/enchantment/leatherworking.\n- Alchemy/Enchanting/Leatherworking: It depends on the comparison of the final attribute bonus, to be followed up."
+      }
+    ]
+  },
+  {
+    "specId": 67,
+    "specName": "火焰法师",
+    "title": "火焰法师Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "There are not many new skills acquired by Fire Mage, but the key is: 【Fire Combo】, which really puts 【Pyroblast】 into the cycle. Overall, it is still a high-growth specialization that \"eats equipment, takes critical hits, and depends on luck.\"\n### Exclusive mechanism\n- Ignite: 40% of critical hits converted to 4 seconds DoT, fully passive when customized\n- 【Fire Combo】: The fire spell is triggered immediately by a critical hit (no need to do it twice in a row). After stacking 3 layers, a rapid pyrotechnic explosion is the key to the cycle.\n- 【Improved Scorch】: Personal debuff, fire damage +15%, highest level - cannot be lost in Boss battle\n### Getting Started\n- Easy to get started with the cycle: 3 layers of fireballs stacked in a fiery combo → one pyroblast, long battle to maintain the enhanced 【Scorch】 debuff\n- Leveling cycle: 【Aftermath of Fire】 Start with high-explosive fire and impact to kill → Pre-read the next monster with pyro-blast → Finish with fire; Wand lasts for mana\n- Equipment during the leveling period is very important - the basic damage has been reduced and requires mana strength to bring it back; it is better to equip it with the arcane tree 【Wand Specialization】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Fire Combo】: The non-periodic spell stacks one layer for every two critical strikes (up to 3 layers), each layer 【Pyroblast】 cast time -25% (note: no longer instant pyrotechnic blast)\n- 【Fire Aftermath】: 【Fire Blast】 CD -2 seconds; after killing a monster of a similar level, the next fire charge +50% critical hit - leveling artifact\n- 【Frostfire Bolt】: Frostfire damage + slowdown + DoT, the actual value of fire spell will be verified by subsequent linkage\n### Existing changes\n- 【Ignite】: Critical hit 【Ignite】 40%/4 seconds, completely personalized, no longer \"rolling and igniting\" with other mages\n- 【Improved Scorch】: Changed from group debuff to personal fire damage +15%\n- 【Conflagrate】: +10% critical hit rate for each fire spell hit, reset after 4 critical hits\n- 【Flamestrike】: Landing damage + 8 seconds ground DoT"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- High growth ceiling: Critical hit-dependent types usually have the highest damage when equipped with graduated equipment.\n- If you are lucky, the fire will explode continuously, and the experience will be unparalleled\n### Disadvantages\n- It depends on luck: the output peak depends on the randomness of critical hits\n- The loop is awkward: the new version of Fiery Combo only reduces the casting time and is no longer instant, losing the smoothness since WLK.\n- Obviously falling behind when the equipment is not ready/fitted properly"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (same as ice magic: 6 choices, there is still the best solution according to the boss scene)\n- Alliance · Gnome: Active damage can be equipped with burning to raise and ignite; passive mana is suitable for high-consumption play - 【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Human: Ruthless critical strike is practical; the spirit is equipped with mage armor, and it also recovers mana during battle——【Will to Survive】【Ruthless】【The Human Spirit】【Perception】\n- Alliance · Celestial (Holy Order): The mana recovery active is useful when mana is tight, but overall it is not as good as the dwarf; the rapid passive is the most interesting - 【Read Ley Line】【Wind Blessed】【Elemental Insight】【Walk on Air】\n- Horde · Orcs: The ability to take the initiative in magic power is good; removing the curse and dispelling it are repeated (the accompanying magic reduction is still valuable) - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Horde · Troll: fixed rapidity is good; beast damage increase is purely scene-based; active self-healing is a rare life-saving method for mages——【Berserk】【Rapid Regeneration】【Regeneration】【Beast Slaying】\n- Horde · Undead: Will is the strongest racial skill in Mage PvP (save one accessory slot); zombies bring back mana and reduce the task burden——【Cannibalize】【Water Breathing】【Will of the Forsaken】【Touch of the Grave】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: First choice for combat selectivity and diversity\n- Tailoring + Enchanting: equipment and wands gain significant benefits during the leveling period"
+      }
+    ]
+  },
+  {
+    "specId": 68,
+    "specName": "冰霜法师",
+    "title": "冰霜法师Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Ice spells are no longer just 【Frostbolt】: Ice Lance returns (TBC version mechanism), and combined with the \"Ice Fingers\" from WLK, it forms a trigger cycle of \"Start with Ice Arrow → End with Ice Spear\", and gain a moving window.\n### Getting Started\n- The loop is likely to be very simple, but the trigger reaction requires quick hands; players who want \"not complicated but always have something to do\" will be very comfortable\n### Exclusive mechanism: Scroll\n- New system for mages in the unlimited server: Only mages can use \"Scrolls of Comprehension\" to unlock additional benefits for dropped scrolls; the function of researching and making homemade scrolls has been removed after the appearance of Beta, to be confirmed"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills\n- 【Ice Lance】: +300% damage to frozen targets, the main reaction point in the cycle, using the freezing effect to create bursts\n- Ice Finger: The cold effect has a 15% probability of triggering. The next cast will treat the target as frozen - the main trigger in PvE. The boss cannot be frozen and can also receive the ice gun buff.\n### Existing changes\n- 【Blizzard】 slowdown is greatly weakened: 15/25/40% (original 30/50/65%) - the AOE monster spawning routine in the classic era is affected\n- Rearrangement of the frost talent tree: 2 more hit talent points, 3 points for shattered ice, 【Cold Snap】 moved down, etc.\n- The fire/arcane tree has also been greatly changed, with signs of arcane barrage missiles and frost fireball styles appearing."
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Remote deceleration master + the most durable magic system in the game: double insurance of ice shield/ice cube, no pressure output from the kite\n- Rapid cooling allows double use of Frost Nova/Ice Cube, making the team highly functional\n- The moving window is filled with ice gun instantaneous, and the output is constantly interrupted; a strong competitor for the king of AoE\n### Disadvantages\n- Self-healing is weak under continuous corrosive damage, and there is no serious means of recovering blood during combat.\n- This tree lacks burst CD (no 【Arcane Power】/burning type)\n- Most of the talents of ice immunity/ice resistance to enemies are invalid and need to be cut into frost fireball or other schools."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (6 choices: Human/Dwarf/Celestial, Holy Order Alliance, Orc/Undead/Troll Horde)\n- Tian Yi (excellent in leveling): The mana recovery interaction is permanently triggered in the birthplace, and the drinking time is greatly reduced - 【Read Ley Line】【Wind Blessed】【Elemental Insight】【Walk on Air】\n- Horde · Undead: The will does not overlap with the flash, and actually saves a refrigerator——【Will of the Forsaken】【Cannibalize】【Water Breathing】【Touch of the Grave】\n- Horde · Troll: Active + passive blood recovery makes up for shortcomings, but active blood recovery requires not being hit, so it is difficult to activate at critical moments - 【Berserk】【Rapid Regeneration】【Regeneration】【Beast Slaying】\n- Horde · Orcs: Stun relief and flash are repeated, magic reduction and stun reduction are still valuable - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Alliance · Humanity: The stun removal and flashing are repeated, the anti-hide function is of little use, and the overall situation is redundant——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Gnome: Control control and flash are repeated, and engineering is beneficial to prevent backlash——【Eureka!】【Escape Artist】【Expansive Mind】【Engineering Specialization】\n- The increased damage of each race to specific monster species means the scene selection of \"select the race according to the boss\"; the throughput level will be looked at after it is online."
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Engineering: Choice and variety in combat remain the same\n- Tailoring + Enchanting: Equipment gains are significant during the leveling period, and the wand is currently performing very well."
+      }
+    ]
+  },
+  {
+    "specId": 69,
+    "specName": "戒律牧师",
+    "title": "戒律牧师Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The talent tree has been completely reworked: the late-stage specialization feature of \"absorbing damage instead of healing damage\" has been strengthened (【Power Word: Shield】 and 【Divine Aegis】); 【Penance】 makes it feasible to level up. After the value is adjusted, it will become a rigid requirement for the group.\n### Getting Started\n- Friendly for newbies: It’s tough enough for a single player, and it’s easy to join the treatment team; early leveling relies on the magic wand; there are emergency controls like 【Psychic Scream】 when in danger (fearful monsters may attract more, remember to run)\n### Exclusive mechanism: Priest racial spells\n- Level 10 and level 20 each get a race-specific spell - human 【Divine Grace】 / 【Feedback】; dwarf 【Desperate Prayer】 / 【Smite】; night 【Starshards】 / 【Elune's Grace】; dwarf 【Confounding Flash】 / 【Contingency Plan】; undead 【Touch of Weakness】 / 【Dark Sacrifice】; Troll 【Hex of Weakness】/【Shadowguard】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Penance】: 2 seconds of guidance, can heal and output; greatly shortens the duration of weak souls, combined with 【Power Word: Shield】 to form a single-point burst treatment; it is also easy to use for leveling output\n- 【Holy Asylum】: Critical hit treatment adds an absorption shield to the target - a key piece of the absorption puzzle (the current value is conservative)\n- 【Fear Ward】: Available to all priests\n- 【Devouring Plague】: Basic, CD 3 minutes → 1 minute (originally exclusive to the undead)\n- 【Meditation】: Top-level spell recovery mana 15% → 50%\n- New racial spells (to be tested): Undead 【Dark Sacrifice】 (blood turns blue); Dwarf 【Contingency Plan】 (Guardian + low blood triggers absorption treatment)"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Strong absorption in the whole game: 【Power Word: Shield】 + 【Holy Asylum】 with low CD, which may suppress and dominate the team after taking shape.\n- Almost unkillable by a single player: means of survival + good damage, elite monsters are not afraid either\n- Essential functions: 【Prayer of Spirit】, 【Prayer of Fortitude】, 【Fear Ward】, 【Power Infusion】\n### Disadvantages\n- Compete with the Holy: The Holy Point Shield talent can also gain most of the advantages, and the Deep Discipline talent is not necessary\n- AoE treatment is weak: new things are strengthening single points"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Gnome (Leader): The best combination of basic racial skills and priest-specific racial spells (saving mana initiative + saving lives at critical moments) - 【Eureka!】【Contingency Plan】【Expansive Mind】【Escape Artist】\n- Alliance · Night Elf (Honorable Mention): Critical hits with active divine protection are a very strong burst healing window (note that 【Power Word: Shield】 cannot critically hit) - 【Elune's Light】\n- Horde · Undead (recommended): save time on leveling + recover mana during battle + top PvP racial skills + free damage, healing specialization also benefits - 【Cannibalize】【Dark Sacrifice】【Will of the Forsaken】【Touch of the Grave】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Enchanting: Homemade wands are the main source of damage during the leveling period - being able to create higher-level wands is a great advantage; campfire gain (to be tested)\n- Tailor: the only source of cloth armor, multiple powerful pick-up bindings (such as 【New Arcanist's Belt】); campfire buff (to be tested)"
+      }
+    ]
+  },
+  {
+    "specId": 70,
+    "specName": "神圣牧师",
+    "title": "神圣牧师Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The classic group brushing skeleton (healing/【Greater Heal】/quick healing/restoration/prayer of healing) is retained, and new blood-removing methods and mana return rewards for hand-changing spells are added; the old talent/race thresholds are removed (【Fear Ward】 for all priests, 【Divine Spirit】 for training).\n### Getting Started\n- Friendly to newcomers: good early survival, solid output, and can be beaten in the leveling dungeon.\n### Exclusive mechanism: Priest racial spells\n- Same commandments: one for each level 10/20 - human 【Divine Grace】 / 【Feedback】; dwarf 【Desperate Prayer】 / 【Smite】; dark night 【Starshards】 / 【Elune's Grace】; dwarf 【Confounding Flash】 / 【Contingency Plan】; undead 【Touch of Weakness】 / 【Dark Sacrifice】; Troll 【Hex of Weakness】/【Shadowguard】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Binding Heal】: New holy talent - 1.5 seconds to heal friendly targets and yourself at the same time, low threat\n- 【Prayer of Mending】: Apex of the Sacred Tree - When the target is injured or receives non-periodic treatment, it will trigger healing and jump to teammates within 20 yards, up to 5 times, limited to one per person\n- 【Divine Grace】: New racial spell for humans - Instantly heals allies below 50% health and removes weak souls (cannot target self, 10 minute CD; humans no longer have 【Desperate Prayer】)\n- 【Contingency Plan】: New dwarf racial spell - 30-second guard, absorb + continuous treatment when the target falls below 35% health (10-minute CD)\n### Existing changes\n- 【Fear Ward】: Level 20 all-priest training (originally exclusive for dwarves); CD/duration are 3 minutes each\n- 【Divine Spirit】: Available through level 30 training, no longer locked to discipline talent; top level lasts for 1 hour\n- 【Spirit of Redemption】: Duration 10 → 15 seconds\n- 【Prayer of Healing】: Range 30 → 40 yards\n- 【Power Word: Fortitude】: Top lasts 30 minutes → 1 hour\n- Removed: Healing Focus/Enhanced 【Prayer of Healing】/Well of Light; Added: Linked Healing/Prayer of Healing/Prayer of Light"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Comprehensive treatment methods: direct treatment/restoration/shield/group brushing + blood removal combined treatment and 【Prayer of Mending】\n- Strong team gain: 【Power Word: Fortitude】 and 【Divine Spirit】 are both available for training and are 1 hour long\n- Dispelling and functions: Exorcism/Disease abolition/All races 【Fear Ward】/After death 【Spirit of Redemption】\n### Disadvantages\n- Cloth armor has low HP and is a target in melee combat.\n- Poor mobility: Most treatments require standing, and only recovery and shielding are available while moving.\n- Eat mana: Prayer of Light will return mana when changing spells, but mana will still be lost after repeating a single spell."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Gnome (Solid): Excellent combination of basic racial skills, and priest-specific racial spells - PvE/PvP dual cultivation - 【Eureka!】【Expansive Mind】【Escape Artist】【Confounding Flash】【Contingency Plan】\n- Alliance · Humanity (Honorable Mention): One more external instant heal and dispel——【Divine Grace】\n- Alliance · Dwarves: Prayer of Despair retains and adds Smite; Protective Fear Barrier is no longer exclusive——【Desperate Prayer】【Smite】【Fear Ward】\n- Alliance · Night Elf: 【Wisp Spirit】【Shadowmeld】【Elune's Grace】【Starshards】\n- Horde · Undead (recommended): full coverage of leveling/raid/PvP——【Cannibalize】【Touch of the Grave】【Dark Sacrifice】【Will of the Forsaken】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Enchantment: Self-made wands cause the most damage during the leveling period (with 【Wand Specialization】, 【Novice Practice Wand】 has surpassed most starting weapons); Bonfire (to be tested)\n- Tailoring: Cloth armor equipment (the rare items such as 【New Arcanist's Belt】 are especially powerful when picked up and bound); bonfire (to be tested)"
+      }
+    ]
+  },
+  {
+    "specId": 71,
+    "specName": "暗影牧师",
+    "title": "暗影牧师Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "One of the biggest beneficiaries of the development team's philosophy of \"promoting unpopular specs\": a batch of changes that directly address the usability of the raid, while retaining Shadow's core identity. In the classic era, the positioning of \"bringing a shadow priest means working for a warlock\" has been rewritten.\n### Getting Started\n- Friendly to newbies (same as Discipline/Holy): good for survival during leveling, has healing and output capabilities, and can be farmed and beaten in the dungeon\n### Exclusive mechanism: Priest racial spells\n-Same precepts: one for level 10/20 - human 【Divine Grace】/【Feedback】; dwarf 【Desperate Prayer】/【Smite】; dark night 【Starshards】/【Elune's Grace】; dwarf 【Confounding Flash】/【Contingency Plan】; undead 【Touch of Weakness】/ 【Dark Sacrifice】; Troll 【Hex of Weakness】/【Shadowguard】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Shadow Word: Death】: Level 32 basic skill, a weapon for killing low-health enemies - triggers 【Spirit Tap】 to restore mana; equipped with 2 points 【early death】 to become a strong execution cycle skill with a CD of 15 seconds\n- 【Dark Sacrifice】: Undead priest racial spell, blood to blue similar to 【Life Tap】 (15 seconds, 10 minutes CD) - a natural fit with the skill set of the shadow priest\n- 【Contingency Plan】: Dwarf priest racial spell, which can be used for external defense (whether it can be used under 【Shadowform】 needs to be confirmed)\n### Existing changes\n- 【Devouring Plague】: Basic, CD 3 minutes → 1 minute (originally exclusive to the undead)\n- 【Shadowform】: Major changes - Shadow damage +15% → +10%, but shadow spells cost -50% mana, and shadow critical damage +100%; only healing spells are prohibited, and the shadow form can be used for sacred damage/functional spells without losing the form; physical damage taken -15% unchanged\n- 【Vampiric Embrace】: 1 minute CD lasting 30 seconds; triggered when the affected enemy dies 【Spirit Tap】 - a stable offload trigger method in team situations\n- 【Shadow Wave】: No longer increases the target's shadow damage, but instead increases the caster's own shadow damage - the old positioning of \"bringing a shadow priest to the whole group\" is retired and returns to personal output."
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Single-player PvP methods are still strong and this will not change\n- The new mana recovery method directly addresses the mana consumption pain point of shadow priests.\n- New positioning of execution damage: 【Shadow Word: Death】 + 【Early death】 Quickly kill enemies with less than 20% health\n### Disadvantages\n- The usability of the group book is still to be tested: the old team value is replaced by individual output, and the quality is unknown\n- Healing spells cannot be cast in shadow form, and there is no way to protect teammates during the disadvantage period.\n- Shadow recognition comes late in the leveling period: 【Mind Flay】 is only available at level 20, and shadow form is only available at level 40."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Gnome (Solid): Excellent combination of basic racial skills, equipped with priest-specific racial spells - PvE/PvP dual cultivation - 【Eureka!】【Expansive Mind】【Escape Artist】【Confounding Flash】【Contingency Plan】\n- Alliance Night Elf (Honorable Mention): 【Wisp Spirit】【Shadowmeld】【Elune's Light】\n- Horde · Undead (recommended): full coverage of leveling/raid/PvP (Will no longer comes with an immunity window) - 【Cannibalize】【Touch of the Grave】【Dark Sacrifice】【Will of the Forsaken】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Enchantment: Wand (【Novice Practice Wand】 is already strong at the beginning, and can be upgraded to a high-level wand later, equipped with 【Wand Specialization】); campfire (to be tested)\n- Tailor: cloth armor and 【New Arcanist's Belt】 and other rare items that can be picked up and bound; bonfire (to be tested)"
+      }
+    ]
+  },
+  {
+    "specId": 72,
+    "specName": "痛苦术士",
+    "title": "痛苦术士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "DoT can now crit! Learn the first new skill 【Immolate】 and you can feel it as soon as you get started: the damage curse is split into a new category \"disaster\"; the 31-point peak 【Wrack】 gives the pain spell a powerful filling and absorption skill for the first time. When applied, the shadow DoT damage +10% - it is no longer the tool of 【Shadow Mastery】 with 【Shadow Bolt】.\n### Exclusive mechanism\n- Up DoT + Drain Fill; Core Talent 【Enhanced Drain Life】 According to the number of pain effects on the target (curse/disaster/【Corruption】, etc.), the maximum +36% is to strengthen 【Drain Life】, 【Drain Soul】 and 【Wrack】 - the main target has at least 3 pain effects permanently."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Malediction】, 【Soul Harvesting】, 【Soul Siphon】, 【Disease】, 【Viciousness】, 【Wrack】 - six new skills/talents (see in-game description for details)\n### Existing changes\n- 【Suppression】: All-class skill hit + threat reduction - a key talent for most PvE systems\n- The damage curse and the function curse are separated: 【Bane of Agony】 and 【Bane of Doom】 no longer choose one from the other; 【Curse of the Elements】 now affects the entire school (including arcane/natural/holy)!\n- 【Life Tap】: Grows with the spirit; 【Curse of Recklessness】: No longer increases the damage caused by the target; 【Improved Corruption】: Increases damage at the same time; 【Drain Soul】: Jump damage also has a probability to generate soul fragments; 【Improved Bane of Agony】: 【Bane of Agony】 damage +10%; 【Fel Concentration】 and 【Curse of Exhaustion】 are also adjusted"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Top-level multi-target cleave (DoT spread, don't worry about monsters scattering)\n- Long battles/more than two targets are the home field, and the periodic damage will be fully realized\n### Disadvantages\n- No burst: the damage must be accumulated hop by hop, and you cannot grab the heads of monsters with low health.\n- Short battles suffer: DoT takes time\n- Haste has no effect on DoT/Guide (【Soul Fire】, 【Incinerate】 are matters of other systems)\n### Availability\n- The group base is in a good situation: Curse and disaster are not mutually exclusive, 【Improved Shadow Bolt】 is no longer consumed by other casters; self-healing enhancement makes the \"Soul Link/Life Siphon\" gameplay of 【Siphon Life】 + 【Soul Link】 stronger"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (5 choices: Human/Dwarf Alliance, Orc/Undead/Troll Horde; the difference is still early, just choose according to your preference)\n- Alliance · Gnome: In addition to the damage-based initiative, it also saves mana; the deceleration is used in almost every battle in PvP——【Eureka!】【Escape Artist】【Expansive Mind】【Engineering Specialization】\n- Alliance · Humanity: Undo stun partial PvP; Spirit has little benefit to warlocks (only slightly strengthens 【Life Tap】) - 【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Horde · Orcs: The spellcasting burst is good; the curse/disaster removal is a PvP countermeasure (also comes with magic reduction); the command increases pet damage by 5% - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Horde · Troll (newly added): The spellcasting acceleration is finally the turn of the Warlock, but DoT and Guidance do not eat haste, and the income is discounted; the Beast Boss has the highest upper limit - 【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Horde Undead: One of the strongest races in PvP (will equals a free accessory slot); underwater breathing is repeated with its own skills - 【Cannibalize】【Water Breathing】【Will of the Forsaken】【Touch of the Grave】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- In the early stage of Beta, the recipe list has not yet been released and everything is to be determined; each profession has added permanent benefits (such as magic resistance/life)\n- Suspected combination with the highest damage: Engineering (bomb) + Tailor (cloth armor embroidery)"
+      }
+    ]
+  },
+  {
+    "specId": 73,
+    "specName": "恶魔学识术士",
+    "title": "恶魔学识术士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The 31-point peak 【Demonic Pact】 allows you to \"sacrifice a demon + summon another one\" and enjoy 【Demonic Sacrifice】 at the same time; pets grow with the player's attributes (details can be seen in the character panel); 【Kill】 is fast without fragments 【Soul Fire】; 【Demon Mark】 may make Voidwalker tanks possible; the pet command adds \"Move to\".\n### Exclusive mechanism\n- 【Demonic Sacrifice】 gains the \"opposite\" of the devil: sacrificing an imp to summon a succubus ≈ +30% shadow damage (1.15×1.03×1.10, including 【Master Demonologist】, 【Soul Link】); conversely ≈ +30% fire damage\n- 【Kill】: Below 35% HP, use 【Soul Fire】 short CD, no fragmentation burst\n### Getting Started\n- Strong pets + high survival, leveling and PvP friendly; PvE requires keeping pets well (hide mechanism); cycle: DoT constant roll → 【Searing Pain】 maintain 【Demon Mark】 → 【Shadow Bolt】 fill → 【kill】 【Soul Fire】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Demonic Aegis】, 【Demonic Energies】, 【Kill】, 【Devil's Mark】, 【Improved Felhunter】, 【Demonic Knowledge】, 【Demonic Pact】, 【Portal of Summoning】 - eight new contents (see in-game description for details)\n### Existing changes\n- 【Suppression】: All professional skills hit + reduce threat; curse is split into disaster (【Bane of Agony】 and 【Curse of the Elements】 no longer choose one over the other)\n- 【Unholy Power】: 20% → 10%, but the talent position has moved forward significantly\n- 【Demonic Sacrifice】: Lasts 2 hours; buff correspondence changed - Imp: Shadow damage / Succubus: Fire damage / Hellhound: Life regeneration / Voidwalker: Mana regeneration\n- 【Master Demonologist】: Imp is changed to increase fire damage (originally reduced threat); hellhound is changed to reduce magic damage (original total resistance)\n- 【Create Firestone】 and 【Create Spellstone】: both changed to weapon oil; 【Improved Health Funnel】, 【Improved Imp】, 【Demonic Embrace】, 【Evil Vitality】 have also been adjusted"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Theoretically the highest single-target DPS in the entire game: multiple damage enhancements + strengthened demons\n- Execution damage: 【Kill】 Let the damage increase as the battle ends\n- Survival thick: 【Soul Link】 + 【Demonic Embrace】 ≈ +64% effective life (the core of soul link/life siphon gameplay is 【Siphon Life】)\n### Disadvantages\n- Pet dependence: A large piece of damage will cause it to run around with long legs - AoE and misalignment in the raid will kill it."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (5 choices: Human/Dwarf Alliance, Orc/Undead/Troll Horde; the difference is still early, just choose according to your preference)\n- Alliance · Gnome: In addition to the damage-based initiative, it also saves mana; the deceleration is used in almost every battle in PvP——【Eureka!】【Escape Artist】【Expansive Mind】【Engineering Specialization】\n- Alliance · Humanity: Undo stun partial PvP; Spirit has little benefit to warlocks (only slightly strengthens 【Life Tap】) - 【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Horde · Orcs: The spellcasting burst is good; the curse/disaster removal is a PvP countermeasure (also comes with magic reduction); the command increases pet damage by 5% - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Horde · Troll (newly added): The spellcasting acceleration is finally the turn of the Warlock, but DoT and Guidance do not eat haste, and the income is discounted; the Beast Boss has the highest upper limit - 【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Horde Undead: One of the strongest races in PvP (will equals a free accessory slot); underwater breathing is repeated with its own skills - 【Cannibalize】【Water Breathing】【Will of the Forsaken】【Touch of the Grave】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Everything is to be determined in the early stage of Beta; each major has permanent income\n- Suspected combination with the highest damage: Engineering (bomb) + Tailor (cloth armor embroidery)"
+      }
+    ]
+  },
+  {
+    "specId": 74,
+    "specName": "毁灭术士",
+    "title": "毁灭术士Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Say goodbye to the era of \"【Shadow Bolt】 + just take 【Destruction】 and run away\": go deep into your own tree to strengthen the fire damage and unlock the new filling 【Incinerate】; 【Bane of Havoc】 gives a little cleave to the single tree; 【Shadow and Flame】 opens up the shadow/fire linkage.\n### Exclusive mechanism\n- 【Conflagrate】: The target needs to have 【Immolate】 and consume it (5/5 【Shadow and Flame】 does not consume it); it makes 【Shadowburn】 not consume soul fragments and strengthens fire damage (【Shadow and Flame】 also benefits from shadow damage)\n- 【Bane of Havoc】: Transfer 15% of the damage taken by the primary target to the secondary target\n### Getting Started\n- The loop is simple and very novice-friendly: DoT rolls often → 【Shadowburn】 / 【Conflagrate】 is ready to play → 【Incinerate】 or 【Shadow Bolt】 fills"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Molten Skin】, 【Bane of Havoc】, 【Brimstone Fire】, 【Shadow and Flame】, 【Incinerate】 - five new contents (see in-game description for details)\n### Existing changes\n- 【Destructive Reach】: affects all damage spells (not only 【Destruction】 series)\n- 【Improved Shadow Bolt】: No longer consumes layers; only strengthens own shadow damage to the target\n- 【Reckoning】: Increase the direct damage of 【Immolate】 and give 【Conflagrate】 acceleration and deceleration\n- 【Destruction】: Requires 5 talent points (originally 1 point); 【Flame of Pain】: Originally only increased the critical hit rate of 【Searing Pain】, but now also increases the damage of destruction spells; 【Cataclysm】 and 【Intensity】 have also been adjusted"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Explosive Foot: 【Shadowburn】 and 【Conflagrate】\n- Strong AoE: 【Hellfire】 and 【Rain of Fire】 are both destruction types and require talents.\n### Disadvantages\n- Cleave is weaker than Pain (DoT damage increase is in Pain Tree, 【Bane of Havoc】 partially compensates)"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (5 choices: Human/Dwarf Alliance, Orc/Undead/Troll Horde; the difference is still early, just choose according to your preference)\n- Alliance · Gnome: In addition to the damage-based initiative, it also saves mana; the deceleration is used in almost every battle in PvP——【Eureka!】【Escape Artist】【Expansive Mind】【Engineering Specialization】\n- Alliance · Humanity: Undo stun partial PvP; Spirit has little benefit to warlocks (only slightly strengthens 【Life Tap】) - 【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Horde · Orcs: The spellcasting burst is good; the curse/disaster removal is a PvP countermeasure (also comes with magic reduction); the command increases pet damage by 5% - 【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Horde · Troll (newly added): The spellcasting acceleration is finally the turn of the Warlock, but DoT and Guidance do not eat haste, and the income is discounted; the Beast Boss has the highest upper limit - 【Berserk】【Beast Slaying】【Rapid Regeneration】【Regeneration】\n- Horde Undead: One of the strongest races in PvP (will equals a free accessory slot); underwater breathing is repeated with its own skills - 【Cannibalize】【Water Breathing】【Will of the Forsaken】【Touch of the Grave】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Everything is to be determined in the early stage of Beta; each major has permanent income\n- Suspected combination with the highest damage: Engineering (bomb) + Tailor (cloth armor embroidery)"
+      }
+    ]
+  },
+  {
+    "specId": 75,
+    "specName": "奇袭潜行者",
+    "title": "奇袭潜行者Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The new skills 【Mutilate】 and 【Venom】 complete the puzzle of the 【Mutilate】 flow; the poison is fully strengthened, and the best performance is expected under high-armor targets.\n### Getting Started\n- The \"accumulate-consumption\" cycle is simple; the difficulty is to maintain high coverage of 【Slice and Dice】 and 【Venom】, and the poison layers are never exhausted"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills\n- 【Mutilate】: Exclusive high-quality accumulated skills, +20% damage to poisoned targets - encouraged to apply 【Deadly Poison】 on at least one weapon\n- 【Venom】: New finishing move - poison damage +30%, application probability +10%; equivalent to the second 【Slice and Dice】 to manage, lacking the damage component of the later version\n### Talent changes\n- 【Malice】: Poison can also hit critically; 【Cold Blood】: It also takes effect on 【Mutilate】\n- 【Remorseless Attacks】, 【Lethality】: Damage increase is extended to damage (the latter is 6% → 4% per point)\n- 【Conspiracy】: +2% damage per point (original 1%); no longer effective against beasts/dragons\n- 【Improved Expose Armor】: Reworked - each point of shaving 【Expose Armor】 consumes 5 energy, and returns 2 stars for a 5-star cast.\n- 【Improved Kidney Shot】: Only increases damage to targets targeted by 【Kidney Shot】\n- 【Vigor】: Talent position moved up, 2 points are the same as the upper limit\n- 【Improved Poisons】: 50% probability of poison not consuming layers"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Poison damage ignores armor; 【Expose Armor】 is the lowest requirement (【Expose Armor】 is the lowest cost when needed)\n- Complete survival skills: 【Evasion】, 【Vanish】, 【Feint】\n### Disadvantages\n- No team gain (【Sunder Armor】 has tied with 【Expose Armor】) - can only rely on damage and kicks to change pit positions\n- Directly scrapped when encountering natural immunity/poison immunity\n- Slow energy recovery (common problem in all three systems)"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Tauren cannot play as thieves)\n- Alliance · Night Elf/Gnome (Tendency): Active skills are stronger than other alliance options, burst can be stacked with other actives/triggers; the energy limit of gnomes makes drinking 【Thistle Leaf Tea】 less overflowing - 【Elune's Light】ZXQSK ILL0001【Quickness】【Wisp Spirit】｜【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Humanity: The active skills are not as good as the above two, and ruthless critical strikes and stun relief are still practical items——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Dwarves: 【Stoneform】【Find Treasure】 【Craftsman Precision】 【Big Game Hunter】\n- Horde · Orcs (Tendency): The iconic active burst can be stacked with other skills to form a powerful wave - 【Bloodrage】【Shatter Curse】 【Command】 【Hardiness】\n- Horde · Undead (Tendency): The triggering frequency of the blood-stealing passive depends on the attack speed, and thieves are the profession that benefits the most; will is the hard currency in PvP——【Touch of the Grave】【Will of the Forsaken】【Cannibalize】【Water Breathing】\n- Horde · Troll: Attack speed initiative and beast damage increase partial scene——【Berserk】【Rapid Regeneration】【Beast Slaying】【Regeneration】\n- Tianyi (new, low evaluation): The two camps have limited value to thieves proactively - 【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- In the early stage of Beta, there is still little recipe data, and it will be added in the future.\n- Engineering: Various props and craftsman devices provide a lot of flexibility and assistance, still a strong professional\n- Skinning + Leathermaking: A large number of new recipes have been added, making it easier to create your own equipment at least in the early stage."
+      }
+    ]
+  },
+  {
+    "specId": 76,
+    "specName": "战斗潜行者",
+    "title": "战斗潜行者Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The most complete specialization in classic PvE with the least changes: it does not rely on poison/bleeding - it is not weak when encountering immune monsters. 【Blade Flurry】's cleave makes it continue to be the most practical rogue. A must-have series for everyone in the era of dual talents.\n### Getting Started\n- The easiest to use: just focus on one 【Slice and Dice】 and score all combo points into 【Eviscerate】"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Puncturing Wounds】: Replaces the old enhanced backstab - 【Backstab】 has a 45% probability of gaining 1 more star, and increases the critical hit rate of 【Mutilate】\n- 【Perfect Execution】: 【Eviscerate】 Energy consumption -10\n### Talent changes\n- 【Cleave】: All weapon specializations are combined into one - axe/sword 5% extra attack, dagger/glove +5% critical hit, hammer ignores 15% armor; you don’t need to change your talents when changing weapons, and you can finally use an axe!\n- 【Precision】: 5 points 5% hit → 3 points 3% hit\n- 【Endurance】: 【Sprint】 and 【Evasion】 CD -30%/60% (double)\n- 【Dual Wield Specialization】: 10% of off-hand damage → 5% (the cost of poison increasing with attack power)\n- 【Aggression】: damage increase extended to 【Backstab】\n- 【Weapon Expertise】: No more weapon skills, instead the probability of being dodged/parried is -1% per point\n- Part of the energy will be returned if the skill misses (later version mechanism)"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Does not rely on poison/bleeding, and will not be immune to suppression in any situation\n- The only rogue type with considerable cleave (【Blade Flurry】)\n- The outbreak can be expected: 【Blade Flurry】 + 【Adrenaline Rush】 + racial active skills; survival skills 【Evasion】【Vanish】【Feint】\n### Disadvantages\n- No team gain (【Sunder Armor】 tied 【Expose Armor】)\n- Slow energy recovery (common problem in all three systems)"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Tauren cannot play as thieves)\n- Alliance · Night Elf/Gnome (Tendency): Active skills are stronger than other alliance options, burst can be stacked with other actives/triggers; the energy limit of gnomes makes drinking 【Thistle Leaf Tea】 less overflowing - 【Elune's Light】ZXQSK ILL0001【Quickness】【Wisp Spirit】｜【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Humanity: The active skills are not as good as the above two, and ruthless critical strikes and stun relief are still practical items——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Dwarves: 【Stoneform】【Find Treasure】 【Craftsman Precision】 【Big Game Hunter】\n- Horde · Orcs (Tendency): The iconic active burst can be stacked with other skills to form a powerful wave - 【Bloodrage】【Shatter Curse】 【Command】 【Hardiness】\n- Horde · Undead (Tendency): The triggering frequency of the blood-stealing passive depends on the attack speed, and thieves are the profession that benefits the most; will is the hard currency in PvP——【Touch of the Grave】【Will of the Forsaken】【Cannibalize】【Water Breathing】\n- Horde · Troll: Attack speed initiative and beast damage increase partial scene——【Berserk】【Rapid Regeneration】【Beast Slaying】【Regeneration】\n- Tianyi (new, low evaluation): The two camps have limited value to thieves proactively - 【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- In the early stage of Beta, there is still little recipe data, and it will be added in the future.\n- Engineering: Various props and craftsman devices provide a lot of flexibility and assistance, still a strong professional\n- Skinning + Leathermaking: A large number of new recipes have been added, making it easier to create your own equipment at least in the early stage."
+      }
+    ]
+  },
+  {
+    "specId": 77,
+    "specName": "敏锐潜行者",
+    "title": "敏锐潜行者Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The most changed talent trees: 【Thousand Cuts】 and 【Quietus】 allow Acumen to get rid of the old impression of \"PvP exclusive\", and the single target damage is expected to compete with the other two series (Beta level cap is 30, output to be tested).\n### Getting Started\n- The three series have the highest ceiling: DoT dynamic update requires maintaining high coverage of 【Hemorrhage】, 【Rupture】, and 【Slice and Dice】 at the same time, and replenishing 【Garrote】 after disappearing"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Thousand Cuts】: Vertex - 【Rupture】 Each jump makes the next 【Hemorrhage】 or 【Backstab】 consume -3 within 10 seconds, and can be stacked up to 5 layers (【Rupture】 full coverage ≈ 1.5 energy per second)\n- 【Quietus】: 【Sinister Strike】, 【Hemorrhage】, 【Ghostly Strike】 deal +10% damage to targets below 35% HP - Encountering Corrupted Valastraz, the benefits are huge in situations like this where the full execution window is available\n- 【Evil Strategy】: 【Sap】 and blinding energy consumption -25% per point (2 points)\n- 【Cutthroat】: 【Backstab】 has a 3%/point probability of making the next ambush without sneaking.\n### Talent changes\n- 【Premeditation】: No need to sneak, overlay window 10 → 20 seconds\n- 【Camouflage】: Sneak CD at first point -1 second\n- 【Opportunity】: 20% at 5 points → 10% at 2 points\n- 【Enhanced Sap】: removed (Sap no longer breaks stealth)\n- 【Setup】: Talent position moved up; 100% bonus for dodge/all-resistance to spells (original 45%)\n- 【Initiative】: 75% → 100% Starred\n- 【Ghostly Strike】: The damage of holding a dagger is increased; 【Serrated Blades】: 【Expose Armor】 is changed to a fixed percentage\n- 【Hemorrhage】: The damage of holding a dagger is increased; the damage of teammates is removed and changed to 【Rupture】 damage +15%\n- 【Dirty Deeds】: Garrote no longer requires position"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- The bleeding damage system (【Rupture】 + 【Thousand Cuts】) has the smallest penalty on the output window\n- Complete survival skills: 【Evasion】, 【Vanish】, 【Feint】\n### Disadvantages\n- No team gain (【Sunder Armor】 tied with 【Expose Armor】)\n- In case of bleeding, immunity will be directly scrapped.\n- Slow energy recovery (common problem in all three systems)"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Tauren cannot play as thieves)\n- Alliance · Night Elf/Gnome (Tendency): Active skills are stronger than other alliance options, burst can be stacked with other actives/triggers; the energy limit of gnomes makes drinking 【Thistle Leaf Tea】 less overflowing - 【Elune's Light】ZXQSK ILL0001【Quickness】【Wisp Spirit】｜【Eureka!】【Expansive Mind】【Escape Artist】【Engineering Specialization】\n- Alliance · Humanity: The active skills are not as good as the above two, and ruthless critical strikes and stun relief are still practical items——【Will to Survive】【Perception】【Ruthless】【The Human Spirit】\n- Alliance · Dwarves: 【Stoneform】【Find Treasure】 【Craftsman Precision】 【Big Game Hunter】\n- Horde · Orcs (Tendency): The iconic active burst can be stacked with other skills to form a powerful wave - 【Bloodrage】【Shatter Curse】 【Command】 【Hardiness】\n- Horde · Undead (Tendency): The triggering frequency of the blood-stealing passive depends on the attack speed, and thieves are the profession that benefits the most; will is the hard currency in PvP——【Touch of the Grave】【Will of the Forsaken】【Cannibalize】【Water Breathing】\n- Horde · Troll: Attack speed initiative and beast damage increase partial scene——【Berserk】【Rapid Regeneration】【Beast Slaying】【Regeneration】\n- Tianyi (new, low evaluation): The two camps have limited value to thieves proactively - 【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- In the early stage of Beta, there is still little recipe data, and it will be added in the future.\n- Engineering: Various props and craftsman devices provide a lot of flexibility and assistance, still a strong professional\n- Skinning + Leathermaking: A large number of new recipes have been added, making it easier to create your own equipment at least in the early stage."
+      }
+    ]
+  },
+  {
+    "specId": 78,
+    "specName": "元素萨满",
+    "title": "元素萨满Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "There are not many changes, the main TBC/WLK popular skills return (【Lightning Overload】, 【Lava Burst】). The single target damage is still weak, but the AoE is extremely strong due to 【Fire Nova】; the mana consumption problem is alleviated by the 【Full Concentration】 of the recovery tree.\n### Getting Started\n- The gameplay is simple and suitable for newcomers, but it is not recommended to use elemental leveling before 【Elemental Alacrity】 is clicked at the end of level 30 - it is more difficult when there is a lack of magic in the early stage."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Lightning Overload】: Lightning Bolt/【Chain Lightning】 3/6/10% probability of casting similar spells with half damage and no threat for free (the probability is much lower than that of later versions, weaker)\n- 【Lava Burst】: Damage +20% when the target is hit by fire shock (crit hit is no longer guaranteed to avoid the problem of critical hit growth difference)\n- 【Full Concentration】: Retain 17/33/50% mana recovery when casting (solve the problem of passive mana recovery in the classic period)\n- 【Elemental Fury】: Changed from 1 point 100% to 5 points up to 100% and the position becomes shallower - nerfed but also made the enhancement available\n- 【Eye of the Storm】: Protection when casting is interrupted 23/46/70% (no longer required to be triggered by violence, practical in all scenarios)\n### Totem quality improvement\n- 【Fire Nova】: replaces 【Fire Nova】 totem - a flame nova centered on the current fire totem, with extremely high damage\n- 【Call of the Elements】 / 【Call of the Ancestors】 / 【Call of the Spirits】 (Level 20/30/40): Four totems can be inserted with one click; this version has a long reading bar and is cumbersome to use.\n- 【Totemic Recall】: Return 25% of mana consumption to prevent misdirecting monsters\n- 【Totemic Projection】: 1 minute CD moves the active totem to the specified location within 30 yards"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Dwarves (unique): Artisan Accuracy +1% hit (not on the same axis as Horde's critical hit) - 【Artisan Accuracy】\n- Horde · Orcs (slightly better): Bloody Fury's spell power burst is a stable income - 【Bloodrage】 【Command】\n- Horde · Troll: Active haste is relatively weak; dual self-healing is extremely strong against leveling/single brushing——【Berserk】【Rapid Regeneration】【Regeneration】【Beast Slaying】\n- Horde · Tauren: solid health bonus, practical group stun/displacement——【Endurance】【Plainsrunning】【War Stomp】\n- Horde · Celestial (Windshaper): Rapid passive has always been valuable for elemental magic; its strengths are displacement and running map - 【Wind Blessed】, 【Elemental Insight】【Skysight】, 【Walk on Air】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Leatherworking: Many new formulas are equipped with excellent equipment - the official saying is \"Graduation equipment is harder to obtain\", handmade equipment is valuable in leveling and the final game\n- Enchanting: Weapon oil (【Reincarnation】, etc.) is stronger, and the enchanter can also make totems (such as 【Polished Driftwood Statue】); it is already a high-quality option"
+      }
+    ]
+  },
+  {
+    "specId": 79,
+    "specName": "增强萨满",
+    "title": "增强萨满Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Major changes: Enhanced Shaman has been changed to be exclusive to \"two-handed weapons\", and dual-wielding is no longer supported - some people are happy and some are worried, but except for the high-damage strike of 【Windfury Weapon】, it has little impact on daily gameplay. The other core is 【Maelstrom Weapon】, the return of WLK.\n### Getting Started\n- All the old awkward systems have been cleaned up; the two most important things are totem position management and mana management; the main output relies on basic attacks, so there is a lot of time to think.\n- Use 【Lightning Bolt】 immediately after reaching 5 layers of 【Maelstrom Weapon】 to avoid layer overflow - lessons learned from past generations to enhance the Shaman\n### Availability Outlook\n- The current version is extremely powerful in leveling (weapons attack mainly, not much mana consumption); each melee group needs a shaman supply 【Windfury Totem】 - the highest demand among all professions; AoE performance is excellent, single target competitiveness remains to be seen"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Maelstrom Weapon】: After stacking 5 layers, it can be cast instantly. 【Lightning Bolt】 (no mana consumption) - the core of the cycle of enhanced shamans in the past.\n- 【Rage of the Farseer】: 3 minutes CD, attack speed/casting speed +30% within 25 seconds\n### Existing changes\n- 【Improved Ghost Wolf】: 【Ghost Wolf】 available indoors; level 2 instant\n- 【Mental Agility】: From attack power to magic power → From intelligence to magic power\n- 【Improved Stormstrike】: Level 2 - 100% mana regeneration retained after cast (ignores 5 second rule); 100% reset 【Stormstrike】's CD when dodging/parrying\n- 【Spirit Weapons】: Parryable; Threat -30% (+30% when using 【Rockbiter Weapon】)\n- 【Stormstrike】: CD 12 → 8 seconds\n- 【Windfury Totem】: No longer pulse weapon buff, changed to group-wide permanent buff (can be stacked with weapon enchantment)\n- 【Flametongue Totem】: Pulse short gain strengthens the main hand attack of the whole group (can be superimposed with enchantment)\n- 【Windfury Weapon】 can be superimposed with 【Flametongue Totem】; 【Flametongue Weapon】 can be superimposed with 【Windfury Totem】\n### Totem quality improvement\n- 【Fire Nova】: Changed to a flame nova centered on the current fire totem (no longer an independent totem)\n- 【Totemic Projection】: 1 minute CD shifts active totem 30 yards\n- 【Call of the Elements】 / 【Call of the Ancestors】 / 【Call of the Spirits】: Four totems, one click and 3 seconds to read the bar."
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Mobility: Instant-cast Ghost Wolf indoors, easy to use in the wild and in groups.\n- AoE potential: 【Fire Nova】, short CD, high damage, with 【Totemic Projection】, easy to deploy AoE pull\n- Totem empowers and protects the whole group - its functional value is stable\n### Disadvantages\n- Lack of personal recognition: the totem remains unchanged. If other systems have stronger DPS, the team may change systems at any time."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Dwarf (only): The PvE race is weak, but it is the only one in the Alliance——【Big Game Hunter】 【Craftsman Precision】 【Stoneform】\n- Horde · Orcs (Gold Standard): The strongest in PvE/PvP at both ends, bursting without side effects——【Bloodrage】【Shatter Curse】【Hardiness】 【Command】\n- Horde · Troll: 【Berserk】【Beast Slaying】【Regeneration】【Rapid Regeneration】\n- Horde · Tauren: 【War Stomp】【Endurance】【Plainsrunning】【Cultivation】\n- Horde · Celestial (Wind Shaper): The elemental damage increase and rapid passive are the least picky. The strength is displacement——【Elemental Insight】【Wind Blessed】【Skysight】【Walk on Air】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Leatherworking: 【Leatherworking】 Upgrades during training are easy to obtain and have excellent attributes - early weapon upgrades are especially powerful\n- Blacksmithing: 【Blacksmithing】 can fill the equipment vacancies (the value will be slightly reduced after there are dungeon rewards)\n- Alchemy: 【Alchemy】 has many powerful gains during the leveling period and good continuity in the end game."
+      }
+    ]
+  },
+  {
+    "specId": 80,
+    "specName": "恢复萨满",
+    "title": "恢复萨满Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "There are not many changes, but they are all about experience optimization and the return of popular skills: 【Water Shield】 and 【Riptide】; the recovery tree's 【Full Focus】 greatly improves the weak mana economy in the classic period. 【Chain Heal】 is stronger with 【Riptide】, and 【Healing Wave】 is supported by powerful talents - the set and specific bosses have solid basic skills beforehand.\n### Getting Started\n- The simplest gameplay in history (Illustration Teng + 【Chain Heal】) is still the same; Riptide and permanent stronger healing waves make the specialization more comprehensive without losing simplicity - an area healer, a single main healer, and a short CD HoT, all elements of the restoration Shaman\n- When leveling up, it is only recommended to \"always team up\" as a healer; the endgame potential is very strong"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Fire Nova】: Baseline 【Fire Nova】 (Fire Totem Center)\n- 【Riptide】: Direct treatment + 15 seconds strong HoT; +25% effect on target 【Chain Heal】\n- 【Full Concentration】: Casting retains 17/33/50% mana recovery - the value of spirit to the shaman is greatly increased\n- 【Healing Way】: Changed from \"casting 3 layers\" to directly strengthening 【Healing Wave】 - from a scene skill to a permanent powerful skill\n- 【Enhanced Resurrection】: In addition to the increase in CD and 【Reincarnation】's resurrection blood volume, permanent maximum health +4%\n- 【Tidal Concentration】: Added hit +5% in addition to mana saving\n### Totem quality improvement\n- 【Fire Nova】: Changed to a flame nova centered on the current fire totem (no longer an independent totem)\n- 【Totemic Projection】: 1 minute CD shifts active totem 30 yards\n- 【Call of the Elements】 / 【Call of the Ancestors】 / 【Call of the Spirits】: Four totems, one click and 3 seconds to read the bar.\n- 【Totemic Recall】: Refund 25% mana consumption"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection\n- Alliance · Dwarves (unique): Orcs’ bloody rage (magic power burst) is still more practical, while dwarves are relatively weak - 【Artisan Precision】\n- Horde · Orcs (slightly better): Save the outbreak until the moment when treatment is most needed - 【Bloodrage】 【Command】\n- Horde · Troll: Racial skills have limited therapeutic value——【Berserk】【Beast Slaying】【Rapid Regeneration】\n- Horde · Tauren: solid health bonus——【Endurance】【Plainsrunning】【War Stomp】\n- Horde · Celestial (Windshaper): Haste passive is always strong for restoring Shaman; movement speed skills are useful at critical moments——【Wind Blessed】【Skysight】【Walk on Air】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Leatherworking: The new formula is excellent and has value in leveling and the final game.\n- Enchanting: Weapon oil (【Reincarnation】, etc.) is stronger, and the enchanter can make totems (【Polished Driftwood Statue】) - already a high-quality option"
+      }
+    ]
+  },
+  {
+    "specId": 81,
+    "specName": "平衡德鲁伊",
+    "title": "平衡德鲁伊Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Remote spell output. The team is highly functional, and the output bottleneck is mana rather than talent; the status of the dungeon needs to be tested, and the deep balance of PvP makes it more powerful.\n### Getting Started\n- The leveling process is safe and you can get started by cycling it for one night; lure one monster at a time and sit on the ground to drink water between battles.\n- Approaching enemies remain 【Entangling Roots】\n- Weapons have magic damage starting from level 10, priority is given to upgrading weapons\n### Exclusive mechanism\n- Go straight to the full balance tree, the core goal is 【Moonkin Form】\n- Prioritize damage/range/casting speed talents\n- 【Omen of Clarity】 is now a basic skill; both mana life and damage have been substantially improved"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【Eclipse of the Sun and Moon】: core mechanism, alternately cast between 【Wrath】 and 【Starfire】\n- 【Nature's Splendor】: Extended duration effect - 【Moonfire】 +3 seconds, 【Insect Swarm】 +2 seconds, 【Regrowth】 +6 seconds, 【Rejuvenation】 +3 seconds\n- 【Omen of Clarity】: becomes a basic skill, and can be used with 【Moonkin Form】 to gain higher profits\n### Changes to existing skills\n- The overall basic damage is reduced, and the equipment provides more spell power compensation.\n- 【Improved Wrath】: Also reduces the mana cost of 【Wrath】\n- 【Entangling Roots】: can be cast indoors; combined with 【Lush】 and 【Improved Entangling Roots】, it can hit multiple targets\n- 【Insect Swarm】: Moved into balanced talent tree\n- 【Moonglow】: Talent position moved forward, higher income"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Flexible emergency treatment\n- Provide buffs and debuffs to teammates\n- Can control multiple targets\n### Disadvantages\n- No interruption skills\n-Mana recovery requires a lot of talent investment"
+      },
+      {
+        "key": "sec-rotation",
+        "title": "Rotation",
+        "markdown": "### Single priority\n- Before the battle: Try to pre-read 【Wrath】\n- Maintenance: Keep 【Moonfire】 and 【Insect Swarm】 on the target\n- Main cycle: Under 【Eclipse of the Sun and Moon】, alternately cast 【Starfire】 and 【Wrath】, with 【Starfire】 as the main one.\n- 【Nature's Grace】 When triggered: read immediately 【Starfire】\n- On the Move: Fill with Downgrade 【Moonfire】 or 【Insect Swarm】 Instant\n### Multiple targets\n- 2-4 Target: Keep the dual targets 【Moonfire】 and 【Insect Swarm】, the rest remain as usual\n- 5 targets and above: 【Hurricane】 for AoE\n### Attribute priority\n- Spell damage: first priority; weapon spell strength is especially critical, upgrade weapons at any time\n- Hit: 16% meets the standard (the boss has a natural resistance of 17%, which can be suppressed to 1%)\n- Critical hit: Linked with 【Revenge】 to amplify damage, high value\n- Rapidity: Source includes set bonus, 【Nature's Grace】 and Tianyi race\n- Intelligence: Secondary - Small amount of critical hits + mana pool\n-Spirit: Only meaningful when using 【Innervate】 to restore mana to yourself"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "The alliance recommends night elves, and the tribe recommends tauren; the new race \"Skyborn\" is available in both camps, the tribe is \"Skyborn (Windshaper)\", and the alliance is \"Skyborn (Holy Order)\". There are very few differences among the various races, just choose according to your preference.\n### Night Elf (Alliance)\n- Alliance Night Elf: more solid output (active critical strike + passive movement speed/dodge) - 【Quickness】【Elune's Light】【Shadowmeld】【Wisp Spirit】\n### Tauren (Horde)\n- Horde · Tauren: A little extra survival + rare stun in human form——【Endurance】【War Stomp】【Plainsrunning】【Cultivation】\n### Tianyi (newly added, two camps)\n- Skyborn (both camps): The alliance version has slightly better mana regeneration life, and the tribal version has an openable movement speed; the elemental damage increase and passive haste are common to both camps - 【Elemental Insight】【Wind Blessed】【Read Ley Line】【Skysight】【Walk on Air】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Recommended combination: Skinning + Leatherworking (the most direct way to upgrade leatherworking equipment)\n- Tailor: Can make small-sized pieces without having to reprint.\n- Enchanting/Alchemy: It is recommended to purchase the proceeds directly from the auction house\n- How to intercept the supply box: you can get powerful early equipment\n- Not learning a major at all will obviously result in loss of damage and experience; both routes of dual collection or self-production are acceptable"
+      }
+    ]
+  },
+  {
+    "specId": 82,
+    "specName": "野性德鲁伊",
+    "title": "野性德鲁伊Guide",
+    "updatedAt": "2026-10-27",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Existing talents and skills are updated, and the damage of 【Cat Form】 finally grows with the weapon! The biggest gameplay change is that 【Furor】 has been completely redone - the \"Transformation and Rage Washing\" from the classic era has been withdrawn from the stage of history, and the compensation is the new talent 【King of the Jungle】. The current output of wild DPS is weak, and it will most likely change in the future, and the guide will continue to be updated.\n### Getting Started\n- The most friendly version of wild DPS for new players; however, there are many forms of druids, so novices are easily confused. The outside world's expectations for wild druid are usually high - in many cases it is assumed that you can tank at any time.\n### Exclusive mechanism: Transformation\n- Try to stay in 【Cat Form】 as long as possible; but a good wild druid will use all forms - the tank will fall down instantly and 【Bear Form】 will pick up the monster defense and destruction group; when additional treatment is needed, take off the form to brush blood/raise blood for the whole team"
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New talents\n- 【King of the Jungle】: Use 【Tiger's Fury】 to gain 20/40/60 energy immediately\n- 【Berserk】: Skills that generate combo points have +100% critical hit rate for 15 seconds and are immune to fear - big CD in place\n- 【Rend and Rend】: Melee damage to bleeding targets +10% (5 points)\n- 【Predatory Instinct】: Melee critical hit damage +20%\n- 【Genesis】: periodic damage and treatment +5% (one level of balance tree, picked up for free)\n- 【Nature's Reach】: Hit +4%; 【Naturalist】: All damage +5%\n- 【Revive】: Resurrection from combat (basic skill)\n### Existing changes\n- 【Furor】: Transforming into a cheetah no longer gives fixed energy, but instead restores the energy when leaving the cheetah.\n- 【Tiger's Fury】: changed to damage +15% (original fixed damage)\n- 【Omen of Clarity】: Level 20 basic passive\n- 【Feral Charge】: Incorporated into 【Feral Charge】 Cheetah version (get behind the enemy; both share CD)\n- 【Primal Fury】: Cheetah's star-generating skill's non-periodic critical hit has a 50% chance of an additional +1 star.\n- 【Nature's Majesty】: Spell and melee critical strike +4%\n- 【Nature's Grasp】: Level 10 basic skills\n- 【Leader of the Pack】: mutually exclusive gain with 【Moonkin Form】"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- First choice for off-tank: the only specialization that can both tank and fight\n- Mobility: 【Leopard's Swiftness】 + 【Feral Charge】 + 【Dash】 - one of the most mobile professions\n- Battle resurrection: 【Reincarnation】 kills the group.\n### Disadvantages\n- Waiting for energy: you can only wait during the window period\n- No AoE/cleave (except for multi-target 【Rake】)\n- Anticipated guest appearance: Tanks/functions all have to help"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Night Elf/Tauren/Skyborn)\n- Alliance · Night Elf (clearly preferred by the Alliance): Critical hit cooldown can be stacked with other active/triggered burst windows - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Horde · Tauren (Horde is slightly better): solid health bonus; many monsters in the group will avoid stuns, but group stuns often fail - 【War Stomp】【Endurance】【Plainsrunning】【Cultivation】\n- Tianyi (newly added): The two active ones are almost useless against wild output, and the passive haste is still valuable - 【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Beta has just started in the early stage; engineering is firmly at the top (【Craftsman Box: Nitrogen Thruster】 and other devices), the camp system adds color to all professions, more information will be updated"
+      }
+    ]
+  },
+  {
+    "specId": 83,
+    "specName": "野性德鲁伊",
+    "title": "野性德鲁伊Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "The innate shackles of the Wild Druid are the form-limited equipment growth, which has been supported by players for decades. The modern version of the Unlimited Server: consumables can be used during transformation, transformation skills grow with weapon damage, and the 【Furor】 redesign basically eliminates the \"Transformation Washing Wrath\" - a more modern Wild is coming.\n### Getting Started\n- Druid is a good starting point for newcomers as a whole: it is easy to join a group with mixed attributes; you are not afraid to go alone - healers/stealth/tanks are always on call.\n- The number of buttons for feral tanks is limited in each situation, and the learning curve is gentle."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Berserk】: Burst big CD with Feral DPS page (immune to fear for 15 seconds)\n### Existing changes\n- 【Bear Form】 / 【Cat Form】: consumables available during transformation; form combat skills grow with weapon damage - the value of equipment is greatly increased, and the traditional restrictions on transformation combat are greatly lifted\n- 【Furor】: The cheetah direction function is redone (the bear direction retains the original effect)\n- 【Leader of the Pack】: Available at 21 points, and affects both melee and spell abilities\n- 【Entangling Roots】: Available indoors; 【Nature's Grasp】: Can be cast during transformation; 【Barkskin】: Can be cast during transformation (unconfirmed)"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Jack of all trades: switch forms to quickly adapt to any combat situation\n- Easy to use: mixed attributes + simple baseline loop\n### Disadvantages\n- Everything has everything: different attribute requirements, the optimal equipment often sacrifices versatility, and is still not as good as a dedicated class\n- Difficult to master: There are few skills available in a single form, and top operations rely on various tricks."
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Night Elf/Tauren/Skyborn)\n- Alliance · Night Elf: The critical strike cooldown is perfectly synchronized with the ultimate move, very attractive to tanks - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Horde · Tauren: The combination of tankiness and control is reliable (durable passive + stable group stun), and the displacement passive is comfortable for leveling - 【War Stomp】【Endurance】【Plainsrunning】【Cultivation】\n- Tianyi (new): damage to passive + unique maneuverable displacement——【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- Beta's early majors have been significantly reworked, with limited information; engineering benefits are now available without limit (including the extremely powerful 【Craftsman Box: Nitrogen Thruster】), and the regular benefits are also there; more observations later"
+      }
+    ]
+  },
+  {
+    "specId": 84,
+    "specName": "恢复德鲁伊",
+    "title": "恢复德鲁伊Guide",
+    "updatedAt": "2026-10-04",
+    "sections": [
+      {
+        "key": "sec-overview",
+        "title": "Overview",
+        "markdown": "Popular treatment methods gain new angles, opening up a variety of gameplay to cope with all treatment scenarios. Note that there are \"no\" Life Bloom, Nourishment, Rejuvenation Bloom (effective flower) and tree form in the current skills - the impact of this blank space on full-level healing remains to be seen.\n### Getting Started\n- Not the most straightforward novice treatment: the core is to lay out HoT in advance - you need to predict the damage rhythm of each battle and who to kill when there is no blood loss.\n- If you are used to the reactive gameplay of \"see the blood loss and then press the skill\", you will not adapt; the recovery druid also has direct healing skills, but what is really special is relying on HoT to save most of the group at the same time\n- To put it another way, it is a treatment method that is both versatile and fun. It is worth spending time to master the HoT technique."
+      },
+      {
+        "key": "sec-changes",
+        "title": "What changed",
+        "markdown": "### New skills and talents\n- 【Wild Growth】: The famous multiplayer HoT returns but with changes - locks on the target's squad (no longer spreads nearby), 【Prayer of Healing】 who is closer to the priest\n- 【Revive】: Resurrection from combat - Good news for dungeon healers, the exciting gameplay of \"【Reincarnation】 with one knife in 30 minutes\" comes to an end\n- 【Gift of the Earthmother】: The public cooldown of 【Rejuvenation】, 【Wild Growth】, and 【Swiftmend】 is reduced to 1 second - fast HoT group building + supplement 【Wild Growth】's gameplay of catching blood loss is formed\n- 【Genesis】: HoT +5% (one level of balance tree, picked up for free); 【Nature's Majesty】: Healing critical hit +4% - all HoT can now critical hit\n- 【Nature's Splendor】: Extend the duration of 【Rejuvenation】 and 【Regrowth】 - strongly linked with 【Swiftmend】 (heal according to the total duration of HoT)\n### Existing changes\n- 【Thorns】: Retaliation damage grows with the caster's spell power\n- 【Regrowth】: significantly cheaper, the HoT part can critical hit\n- 【Omen of Clarity】: Basic and can be triggered by spell casting - focus on the gain to maximize 【Wild Growth】 / 【Healing Touch】 / 【Regrowth】 Extremely Blue\n- 【Natural Concentration】: Restores one level of tree; affects all natural/arcane school spells - milk/output mixed or bird virtue points are valuable\n- 【Subtlety】: Moved up one level, affecting all natural/arcane systems; 5 points 20% → 3 points 30% threat reduction\n- 【Reflection】: Casting mana recovery 15% → 50% - the positioning of the mana recovery attribute will be re-examined\n- 【Gift of Nature】: Moved up to the third floor, no more points required 【Insect Swarm】 - Unlock the powerful healing area in advance\n- 【Improved Rejuvenation】: Now used to unlock 【Improved Regrowth】 (presumed to be the overall multiplication zone of 【Rejuvenation】 rather than the base value)\n- 【Swiftmend】: The talent position has been greatly moved forward; the target is healed for the full duration of HoT and no longer consumes HoT by default - excellent linkage with the HoT delay effect\n- 【Living Spirit】: TBC return talent, total mental multiplication area (presumably can be stacked with 【Blessing of Kings】 type gain) - a strong support for mana recovery in battle\n- 【Improved Tranquility】: At the top level, the CD of 【Tranquility】 is reduced to 2 minutes - a powerful talent in the copy, non-threatening and life-saving treatment for the whole team\n- 【Heart of the Wild】: Moved from the depths of the wild tree to one level, with a small investment to greatly enhance intelligence\n- 【Moonglow】: Only retain the mana cost of damage reduction spells - the classic build core is no longer worth the points for recovery\n- 【Nature's Grace】: Changed to 3 seconds of 10% rapidity + global cooldown reduction; forms a darning rapid style with 【Improved Regrowth】 (【Regrowth】 is woven between 【Rejuvenation】 / 【Swiftmend】), but if you click it, you will give up 【Wild Growth】 - the choice depends on the value of the group book"
+      },
+      {
+        "key": "sec-proscons",
+        "title": "Pros & cons",
+        "markdown": "### Advantages\n- Single target throughput: 【Healing Touch】, 【Swiftmend】, 【Regrowth】 are all strong single target treatments\n- Group brushing HoT: 【Rejuvenation】, 【Swiftmend】, 【Wild Growth】 all have 1 second public cooldown, full coverage\n- Blue efficiency: 【Reflection】, 【Living Spirit】, 【Omen of Clarity】 three-piece set back to blue online\n- Dispersion coverage: 【Abolish Poison】 detoxification + 【Remove Curse】 - the two key pieces of the group's dispersion puzzle\n- Function guarantee: 【Reincarnation】 and 【Innervate】 stabilize the team in adversity\n### Disadvantages\n- No magic/disease dispelling - a rare dispersal gap in the game\n- HoT gameplay requires prediction, and it is easy for other healers to steal the treatment amount.\n- Lack of offensive functions: all druids can only maintain 【Faerie Fire】\n- Regulars on the group layoff list"
+      },
+      {
+        "key": "sec-races",
+        "title": "Races",
+        "markdown": "### Race selection (Night Elf/Tauren/Skyborn)\n- Alliance Night Elf (one of the two strongest healers): After all HoTs can critically hit, the value of critical hit cooldown is amplified - 【Elune's Light】【Shadowmeld】【Quickness】【Wisp Spirit】\n- Horde · Tauren: Limited direct help for recovery treatment - 【War Stomp】【Endurance】【Plainsrunning】【Cultivation】\n- Skyborn (newly added): Together with the night elves, they are considered the two strongest healers. The mana recovery initiative is more suitable for healers - 【Walk on Air】【Skysight】【Read Ley Line】【Wind Blessed】【Elemental Insight】"
+      },
+      {
+        "key": "sec-professions",
+        "title": "Professions",
+        "markdown": "- The impact of early Beta majors on gameplay has just begun (the camp system adds color to all majors); engineering remains the first choice (including 【Craftsman Box: Nitrogen Thruster】 and other devices); more information will be updated later"
+      }
+    ]
+  }
+]
