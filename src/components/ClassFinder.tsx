@@ -13,6 +13,25 @@ import {
   type Role,
 } from "@/lib/class-finder";
 
+const optionIcons: Record<string, string> = {
+  Tank: "inv_shield_04",
+  Healer: "spell_holy_heal",
+  DPS: "inv_sword_01",
+  Flexible: "ability_druid_balanceofpower",
+  "Fast solo": "ability_hunter_pet_cat",
+  "Dungeon groups": "ability_warrior_savageblow",
+  "Slow and steady": "inv_misc_book_08",
+  Simple: "inv_misc_book_08",
+  Medium: "inv_scroll_03",
+  High: "spell_nature_starfall",
+  Survivability: "inv_shield_04",
+  "Group utility": "spell_holy_holybolt",
+  Damage: "ability_rogue_eviscerate",
+  Alliance: "spell_holy_holybolt",
+  Horde: "ability_warrior_savageblow",
+  "No preference": "ability_druid_balanceofpower",
+};
+
 const questions: {
   key: keyof QuizAnswers;
   title: string;
@@ -182,10 +201,21 @@ export function ClassFinder() {
             key={option.value}
             type="button"
             onClick={() => choose(option.value)}
-            className="rounded-xl border border-line/70 bg-deep/40 p-5 text-left transition-colors hover:border-gold/45 hover:bg-gold/[0.04]"
+            className="flex items-start gap-3 rounded-xl border border-line/70 bg-deep/40 p-4 text-left transition-colors hover:border-gold/45 hover:bg-gold/[0.04] md:p-5"
           >
-            <span className="block text-base text-parchment">{option.label}</span>
-            <span className="mt-1 block text-sm leading-relaxed text-muted">{option.note}</span>
+            <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-line/70 bg-abyss/60">
+              <img
+                src={`/talents/icons/${optionIcons[option.value] ?? "inv_misc_questionmark"}.jpg`}
+                alt=""
+                width={32}
+                height={32}
+                className="size-8 rounded"
+              />
+            </span>
+            <span className="min-w-0 pt-0.5">
+              <span className="block text-base text-parchment">{option.label}</span>
+              <span className="mt-1 block text-sm leading-relaxed text-muted">{option.note}</span>
+            </span>
           </button>
         ))}
       </div>
