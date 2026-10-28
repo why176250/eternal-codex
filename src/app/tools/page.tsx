@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
+import { DataUpdatingLink } from "@/components/DataUpdatingLink";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 
 export const metadata: Metadata = {
@@ -128,7 +129,7 @@ export default function ToolsPage() {
 
           {/* Right column: BiS + XP */}
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            <Link
+            <DataUpdatingLink
               href="/bis"
               style={{ "--accent": "#9bb7ff" } as React.CSSProperties}
               className="panel panel-hover group relative flex flex-col overflow-hidden p-6"
@@ -138,7 +139,7 @@ export default function ToolsPage() {
                 <span className="accent-tile grid size-11 place-items-center rounded-xl border">
                   <ModuleIcon id="gear" />
                 </span>
-                <span className="badge badge-teal">Live</span>
+                <span className="badge">Updating</span>
               </div>
               <h2 className="display mt-4 text-xl text-parchment">BiS Planner</h2>
               <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">BiS 配装</p>
@@ -154,7 +155,7 @@ export default function ToolsPage() {
                 Open tool
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </span>
-            </Link>
+            </DataUpdatingLink>
 
             <Link
               href="/tools/xp"

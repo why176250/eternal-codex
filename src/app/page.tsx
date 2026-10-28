@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
 import { LaunchCountdown } from "@/components/LaunchCountdown";
+import { DataUpdatingLink } from "@/components/DataUpdatingLink";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 
@@ -42,8 +43,10 @@ export default function HomePage() {
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5">
-          {modules.map((module) => (
-            <Link
+          {modules.map((module) => {
+            const Card = module.id === "gear" ? DataUpdatingLink : Link;
+            return (
+            <Card
               key={module.id}
               href={module.href}
               style={{ "--accent": module.accent } as React.CSSProperties}
@@ -86,8 +89,9 @@ export default function HomePage() {
               >
                 <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </Link>
-          ))}
+            </Card>
+            );
+          })}
         </div>
 
         <Link
@@ -158,8 +162,10 @@ export default function HomePage() {
                 body: "BiS targets and farm order.",
                 href: "/bis",
               },
-            ].map((step) => (
-              <Link
+            ].map((step) => {
+              const Card = step.href === "/bis" ? DataUpdatingLink : Link;
+              return (
+              <Card
                 key={step.n}
                 href={step.href}
                 className="group flex items-start gap-4 rounded-xl border border-line/70 bg-deep/30 p-4 transition-colors hover:border-gold/40 hover:bg-gold/[0.03]"
@@ -183,8 +189,9 @@ export default function HomePage() {
                 >
                   <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </Link>
-            ))}
+              </Card>
+              );
+            })}
           </div>
         </div>
       </section>
