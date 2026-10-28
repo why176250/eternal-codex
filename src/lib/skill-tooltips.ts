@@ -72,16 +72,19 @@ walk(classRacial);
 for (const wowClass of talents) {
   for (const tree of wowClass.trees) {
     for (const talent of tree.talents) {
-      const ranksZh = (talent.ranks ?? [])
-        .map((rank) => rank.zh || rank.en)
-        .filter(Boolean)
-        .join("\n");
-      const ranksEn = (talent.ranks ?? [])
-        .map((rank) => rank.en || rank.zh)
-        .filter(Boolean)
-        .join("\n");
-      add(talent.name, talent.icon, ranksZh);
-      add(talent.nameEn, talent.icon, ranksEn, true);
+      const lastRankZh = [...(talent.ranks ?? [])]
+        .reverse()
+        .find((rank) => rank.zh || rank.en);
+      const lastRankEn = [...(talent.ranks ?? [])]
+        .reverse()
+        .find((rank) => rank.en || rank.zh);
+      add(talent.name, talent.icon, lastRankZh?.zh || lastRankZh?.en);
+      add(
+        talent.nameEn,
+        talent.icon,
+        lastRankEn?.en || lastRankEn?.zh,
+        true,
+      );
     }
   }
 }
