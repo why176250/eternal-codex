@@ -46,7 +46,7 @@ export default function HomePage() {
               key={module.id}
               href={module.href}
               style={{ "--accent": module.accent } as React.CSSProperties}
-              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-6"
+              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-5"
             >
               <span
                 className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"
@@ -60,40 +60,20 @@ export default function HomePage() {
               />
 
               <div className="relative flex items-start justify-between gap-3">
-                <span className="accent-tile grid size-12 place-items-center rounded-xl border transition-colors">
+                <span className="accent-tile grid size-11 place-items-center rounded-lg border transition-colors">
                   <ModuleIcon id={module.id} />
                 </span>
-                <div className="flex items-center gap-3">
-                  <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.16em] text-muted/80">
-                    <span
-                      className="size-1.5 rounded-full"
-                      style={{ background: module.accent }}
-                    />
-                    Live
-                  </span>
-                  <span className="display text-sm text-gold/45">{module.number}</span>
-                </div>
+                <span className="display text-sm text-gold/45">{module.number}</span>
               </div>
 
-              <h2 className="display relative mt-5 text-[1.35rem] leading-tight text-parchment">
+              <h2 className="display relative mt-6 text-xl leading-tight text-parchment">
                 {module.title}
               </h2>
-              <p className="relative mt-1 text-[11px] uppercase tracking-[0.16em] text-muted/70">
-                {module.zh}
-              </p>
 
-              <p className="relative mt-4 text-sm font-medium text-parchment/90">
-                {module.question}
-              </p>
-              <p className="relative mt-2 text-sm leading-relaxed text-muted">
-                {module.body}
-              </p>
-
-              <div className="relative mt-auto flex items-center justify-between gap-3 pt-6">
-                <span className="text-xs text-gold/85">Open module</span>
+              <div className="relative mt-auto flex justify-end pt-6">
                 <svg
-                  width="14"
-                  height="14"
+                  width="15"
+                  height="15"
                   viewBox="0 0 24 24"
                   fill="none"
                   aria-hidden="true"
@@ -105,10 +85,6 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-
-        <p className="mt-8 text-xs leading-relaxed text-muted/60">
-          Six task-first modules. Every page states its source and what is still being verified.
-        </p>
       </section>
     </main>
   );
