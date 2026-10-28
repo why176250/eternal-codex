@@ -110,14 +110,14 @@ export default async function ProfessionsPage({
       </header>
 
       <section className="container-x py-8 md:py-10">
-        <div className="flex gap-2 overflow-x-auto pb-1">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           {professions.map((entry) => {
             const active = entry.skillLineId === profession.skillLineId;
             return (
               <Link
                 key={entry.skillLineId}
                 href={href({ p: entry.skillLineId, q: "", page: 1 })}
-                className={`flex shrink-0 items-center gap-2 rounded-lg border px-3 py-2 text-xs transition-colors ${
+                className={`flex min-h-[62px] items-center gap-3 rounded-lg border px-3 py-2.5 text-xs transition-colors ${
                   active
                     ? "border-gold/50 bg-gold/[0.08] text-gold-soft"
                     : "border-line/70 text-muted hover:border-line hover:text-parchment"
@@ -126,13 +126,17 @@ export default async function ProfessionsPage({
                 <img
                   src={fallbackIcon(entry.icon)}
                   alt=""
-                  width={24}
-                  height={24}
-                  className="size-6 rounded border border-line/70"
+                  width={40}
+                  height={40}
+                  className="size-10 shrink-0 rounded-md border border-line/70"
                 />
-                <span>
-                  <span className="block">{professionEnglish[entry.name] ?? entry.name}</span>
-                  <span className="block text-[9px] text-muted/60">{entry.recipeCount} recipes</span>
+                <span className="min-w-0">
+                  <span className="block truncate text-[13px] leading-tight">
+                    {professionEnglish[entry.name] ?? entry.name}
+                  </span>
+                  <span className="mt-1 block text-[10px] text-muted/60">
+                    {entry.recipeCount} recipes
+                  </span>
                 </span>
               </Link>
             );
