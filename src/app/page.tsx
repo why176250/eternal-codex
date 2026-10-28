@@ -158,9 +158,9 @@ export default function HomePage() {
               },
               {
                 n: "03",
-                title: "Plan the gear",
-                body: "BiS targets and farm order.",
-                href: "/bis",
+                title: "Browse gear",
+                body: "See what other players are wearing.",
+                href: "/tools/gear",
               },
             ].map((step) => {
               const Card = step.href === "/bis" ? DataUpdatingLink : Link;

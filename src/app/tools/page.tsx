@@ -225,6 +225,22 @@ export default function ToolsPage() {
           </span>
         </Link>
 
+        <Link
+          href="/tools/gear"
+          className="panel panel-hover group mt-4 flex flex-wrap items-center justify-between gap-3 p-5"
+        >
+          <span>
+            <span className="eyebrow">Gear Hall</span>
+            <span className="mt-1 block text-sm text-parchment">
+              Community loadouts open after launch
+            </span>
+          </span>
+          <span className="flex items-center gap-2 text-xs text-gold/80">
+            Preview the hall
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </Link>
+
         <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted">
           <p className="font-medium text-parchment">How the planners behave</p>
           <p className="mt-1">
