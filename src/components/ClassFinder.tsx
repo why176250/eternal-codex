@@ -27,8 +27,8 @@ const optionIcons: Record<string, string> = {
   Survivability: "inv_shield_04",
   "Group utility": "spell_holy_prayerofhealing",
   Damage: "ability_rogue_eviscerate",
-  Alliance: "spell_holy_greaterblessingofkings",
-  Horde: "ability_warrior_savageblow",
+  Alliance: "achievement_pvp_a_14",
+  Horde: "achievement_pvp_h_14",
   "No preference": "ability_druid_balanceofpower",
 };
 
