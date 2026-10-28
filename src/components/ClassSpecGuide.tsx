@@ -220,7 +220,7 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
               </button>
             </div>
             <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">
-              {selected.description || "暂无详细说明。"}
+              {selected.description || "No detail available for this entry yet."}
             </p>
           </div>
         </div>
