@@ -9,13 +9,16 @@ export function ClassCard({ wowClass }: { wowClass: WoWClass }) {
       className="panel panel-hover group flex h-full flex-col p-5"
     >
       <div className="flex items-start justify-between">
-        <span
-          className="size-9 rounded-md"
+        <img
+          src={`/classes/icons/${wowClass.id}.jpg`}
+          alt=""
+          width={48}
+          height={48}
+          className="size-12 rounded-lg border object-cover"
           style={{
-            background: `linear-gradient(135deg, ${wowClass.accent}55, ${wowClass.accent}18)`,
-            border: `1px solid ${wowClass.accent}66`,
+            borderColor: `${wowClass.accent}66`,
+            boxShadow: `0 0 24px -14px ${wowClass.accent}`,
           }}
-          aria-hidden="true"
         />
         <span className="text-[11px] uppercase tracking-wider text-muted">
           {difficultyLabel(wowClass.difficulty)}
