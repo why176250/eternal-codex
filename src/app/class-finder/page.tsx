@@ -41,9 +41,10 @@ export default function ClassFinderPage() {
         </p>
         <Link
           href="/classes"
-          className="mt-6 inline-block text-sm text-gold/90 hover:text-gold-soft"
+          className="mt-6 inline-flex items-center gap-2 rounded-lg border border-gold/40 bg-gold/[0.06] px-5 py-3 text-sm text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.1]"
         >
-          Browse all class guides →
+          Browse all class guides
+          <span aria-hidden="true">→</span>
         </Link>
       </section>
     </main>

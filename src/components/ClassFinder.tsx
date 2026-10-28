@@ -182,10 +182,10 @@ export function ClassFinder() {
             key={option.value}
             type="button"
             onClick={() => choose(option.value)}
-            className="rounded-xl border border-line/70 bg-deep/40 p-4 text-left transition-colors hover:border-gold/45 hover:bg-gold/[0.04]"
+            className="rounded-xl border border-line/70 bg-deep/40 p-5 text-left transition-colors hover:border-gold/45 hover:bg-gold/[0.04]"
           >
-            <span className="block text-sm text-parchment">{option.label}</span>
-            <span className="mt-1 block text-xs leading-relaxed text-muted">{option.note}</span>
+            <span className="block text-base text-parchment">{option.label}</span>
+            <span className="mt-1 block text-sm leading-relaxed text-muted">{option.note}</span>
           </button>
         ))}
       </div>
