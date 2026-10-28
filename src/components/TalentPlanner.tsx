@@ -280,7 +280,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
               {current.className}
             </h2>
             <p className="text-xs text-muted">
-              {current.nameZh} · {current.trees.length} trees · Level {level}
+              {current.trees.length} trees · Level {level}
             </p>
           </div>
           <div className="rounded-lg border border-line/70 bg-abyss/60 px-4 py-2 text-right">
@@ -306,14 +306,20 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
                 setCopied(false);
               }}
               className={
-                "rounded-md border px-3 py-1.5 text-sm transition-colors " +
+                "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition-colors " +
                 (isActive
                   ? "border-gold/50 bg-gold/10 text-gold-soft"
                   : "border-line text-muted hover:border-gold/40 hover:text-parchment")
               }
             >
+              <img
+                src={`/classes/icons/${cls.classSlug}.jpg`}
+                alt=""
+                width={28}
+                height={28}
+                className="size-7 rounded border border-line/70"
+              />
               {cls.className}
-              <span className="ml-2 text-[11px] text-muted/70">{cls.nameZh}</span>
             </button>
           );
         })}
