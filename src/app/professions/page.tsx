@@ -27,7 +27,6 @@ export const metadata: Metadata = {
 
 type SearchParams = Promise<{ p?: string; q?: string; page?: string }>;
 const PAGE_SIZE = 24;
-const CAMP_TIERS = [20, 140, 300];
 const updated = "2026-10-28";
 
 function reagentCount(recipe: Recipe) {
@@ -80,15 +79,6 @@ export default async function ProfessionsPage({
   const camps = getCampItems(profession.skillLineId);
   const favor = getFavorOffers(profession.skillLineId);
   const favorCounts = favorCountBySkillLine();
-  const campRows = professions.map((entry) => {
-    const items = getCampItems(entry.skillLineId);
-    return {
-      profession: entry,
-      tiers: CAMP_TIERS.map(
-        (tier) => items.find((item) => item.skillReq === tier) ?? null,
-      ),
-    };
-  });
 
   function href(next: { p?: number; q?: string; page?: number }) {
     const search = new URLSearchParams();
@@ -246,71 +236,6 @@ export default async function ProfessionsPage({
             </div>
           </section>
         ) : null}
-
-        <section id="camp-overview" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
-          <details open>
-            <summary className="flex cursor-pointer list-none flex-wrap items-end justify-between gap-3">
-              <div>
-                <p className="eyebrow">Camp items at a glance</p>
-                <h2 className="display mt-1 text-2xl text-parchment">
-                  Every profession, three tiers
-                </h2>
-              </div>
-              <p className="text-[11px] text-muted">
-                Skill 20 / 140 / 300 · buffs for everyone at the fire
-              </p>
-            </summary>
-            <div className="mt-4 overflow-x-auto">
-              <table className="w-full min-w-[860px] text-left text-xs">
-                <thead className="border-b border-line text-[10px] uppercase tracking-wider text-muted">
-                  <tr>
-                    <th className="py-2 pr-4 font-normal">Profession</th>
-                    {CAMP_TIERS.map((tier) => (
-                      <th key={tier} className="px-3 py-2 font-normal">
-                        Skill {tier}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {campRows.map(({ profession: entry, tiers }) => (
-                    <tr key={entry.skillLineId} className="border-b border-line/40 align-top last:border-0">
-                      <td className="py-3 pr-4 text-parchment">
-                        {professionEnglish[entry.name] ?? entry.name}
-                      </td>
-                      {tiers.map((item, index) => {
-                        const en = item ? campItemsEn[String(item.itemId) as keyof typeof campItemsEn] : null;
-                        return (
-                          <td key={`${entry.skillLineId}-${index}`} className="px-3 py-3">
-                            {item ? (
-                              <div className="flex gap-2">
-                                <img
-                                  src={fallbackIcon(item.icon)}
-                                  alt=""
-                                  width={28}
-                                  height={28}
-                                  className="size-7 shrink-0 rounded border border-line/70"
-                                />
-                                <div>
-                                  <p className="capitalize text-parchment">{en?.name ?? item.nameCn}</p>
-                                  <p className="mt-0.5 text-[10px] leading-relaxed text-muted">
-                                    {en?.effect ?? item.effectDescCn}
-                                  </p>
-                                </div>
-                              </div>
-                            ) : (
-                              <span className="text-muted/50">—</span>
-                            )}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
-        </section>
 
         <section id="merchants-favor" className="panel mt-4 scroll-mt-24 p-4 md:p-5">
           <div className="flex flex-wrap items-end justify-between gap-3">
