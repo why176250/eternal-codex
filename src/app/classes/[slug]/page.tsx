@@ -3,6 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { classes, difficultyLabel, getBisClass, getClass } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ClassTabs } from "@/components/ClassTabs";
+import { classGuides } from "@/data/class-guides";
+import { getClassChanges } from "@/lib/class-changes";
 
 type Params = { slug: string };
 
@@ -66,44 +69,12 @@ export default async function ClassPage({
       </header>
 
       <section className="container-x grid gap-10 pb-20 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="min-w-0 space-y-10">
-          <div>
-            <h2 className="display text-xl text-parchment">Why play it</h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
-              {wowClass.summary}
-            </p>
-          </div>
-
-          <div className="panel p-6">
-            <h2 className="display text-lg text-parchment">Leveling reality check</h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              {wowClass.leveling}
-            </p>
-          </div>
-
-          <div className="panel p-6">
-            <h2 className="display text-lg text-parchment">
-              Dual spec at 40
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              {wowClass.dualSpec}
-            </p>
-            <p className="mt-3 text-xs text-muted/80">
-              Dual-spec rules are community-tracked from the beta. Confirm costs
-              and switching rules with the trainer at 40.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="display text-xl text-parchment">Group value</h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
-              {wowClass.roles.includes("Tank")
-                ? "Tank classes set the pace of every dungeon. You will never wait for a group, but you are also the first person blamed when a pull goes wrong."
-                : wowClass.roles.includes("Healer")
-                  ? "Healer classes are always in demand. Groups form around you, and the skill floor is higher than it looks — mana management wins fights."
-                  : "Pure damage classes trade group flexibility for raw output. Your value shows up in cleave, control, or utility rather than in the group finder."}
-            </p>
-          </div>
+        <div className="min-w-0">
+          <ClassTabs
+            wowClass={wowClass}
+            guide={classGuides[wowClass.id] ?? { pros: [], cons: [], races: [], professions: [] }}
+            changes={getClassChanges(wowClass.name)}
+          />
         </div>
 
         <aside className="space-y-6">
