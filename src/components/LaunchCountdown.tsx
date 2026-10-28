@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 /** 2026-11-04 15:00 PST = 23:00 UTC. */
@@ -48,12 +47,6 @@ export function LaunchCountdown() {
               : "Nov 4 · 3 PM PT · Nov 5 · 07:00 CST"}
           </p>
         </div>
-        <Link
-          href="/guides/release-day-hub"
-          className="shrink-0 text-[11px] text-gold/80 underline-offset-4 transition-colors hover:text-gold-soft hover:underline"
-        >
-          Release hub →
-        </Link>
       </div>
 
       <div className="mt-4 grid grid-cols-4 gap-2">
