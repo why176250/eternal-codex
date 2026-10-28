@@ -148,9 +148,9 @@ export default function HomePage() {
               },
               {
                 n: "02",
-                title: "Set the build",
-                body: "Plan points before you spend them.",
-                href: "/tools/build",
+                title: "Browse builds",
+                body: "Start from a proven build, then make it yours.",
+                href: "/tools/builds",
               },
               {
                 n: "03",

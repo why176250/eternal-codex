@@ -52,6 +52,16 @@ export const toolItems: SectionItem[] = [
     bullets: [],
   },
   {
+    slug: "builds",
+    label: "Talent Hall",
+    zh: "天赋大厅",
+    href: "/tools/builds",
+    status: "live",
+    summary:
+      "Starter talent builds you can open in the planner and adjust to your group.",
+    bullets: [],
+  },
+  {
     slug: "bis",
     label: "BiS Planner",
     zh: "BiS 配装",

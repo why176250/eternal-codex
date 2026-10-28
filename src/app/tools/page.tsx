@@ -108,13 +108,21 @@ export default function ToolsPage() {
               <p className="text-xs leading-relaxed text-muted">
                 Prerequisites, tier gates and refund cascade are enforced.
               </p>
-              <Link
-                href="/tools/build"
-                className="inline-flex items-center gap-1.5 text-xs text-gold/90 transition-colors hover:text-gold-soft"
-              >
-                Open build planner
-                <span>→</span>
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link
+                  href="/tools/builds"
+                  className="text-xs text-muted transition-colors hover:text-gold-soft"
+                >
+                  Talent Hall →
+                </Link>
+                <Link
+                  href="/tools/build"
+                  className="inline-flex items-center gap-1.5 text-xs text-gold/90 transition-colors hover:text-gold-soft"
+                >
+                  Open build planner
+                  <span>→</span>
+                </Link>
+              </div>
             </div>
           </section>
 
