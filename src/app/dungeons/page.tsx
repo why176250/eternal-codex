@@ -4,6 +4,7 @@ import { foreverDungeons } from "@/lib/forever";
 import loot from "@/data/dungeon-loot.json";
 import dungeonImages from "@/data/dungeon-images.json";
 import { timelineAxis, timelineLanes } from "@/lib/dungeon-timeline";
+import { TimelineBars } from "@/components/TimelineBars";
 import { DungeonPicker } from "@/components/DungeonPicker";
 
 export const metadata: Metadata = {
@@ -63,10 +64,10 @@ export default function DungeonsPage() {
       </section>
 
       <section className="container-x py-8">
-        <div className="panel overflow-hidden p-4 md:p-6">
+        <div className="panel overflow-visible p-4 md:p-6">
           <div className="border-b border-line/60 pb-4">
             <p className="eyebrow">By level</p>
-            <h2 className="display mt-1 text-2xl text-parchment md:text-3xl">按等级排列的地下城</h2>
+            <h2 className="display mt-1 text-2xl text-parchment md:text-3xl">Dungeons by level</h2>
             <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted">
               Click a dungeon bar to open its page. New Forever level bands are shown
               above; Classic dungeons follow the Classic dungeon-finder ranges.
@@ -86,41 +87,7 @@ export default function DungeonsPage() {
               ))}
             </div>
 
-            {timelineLanes.map((lane) => {
-              const rows = Math.max(...lane.dungeons.map((dungeon) => dungeon.row), 0) + 1;
-              return (
-                <div key={lane.name} className="border-t border-line/40 py-3 first:border-0">
-                  <div className="mb-2 flex items-baseline gap-2 text-[10px] uppercase tracking-[0.18em] text-muted">
-                    <span>{lane.name}</span>
-                    <span className="text-muted/60">{lane.count}</span>
-                  </div>
-                  <div className="relative" style={{ height: `${rows * 38}px` }}>
-                    {lane.dungeons.map((dungeon) => (
-                      <Link
-                        key={dungeon.name}
-                        href={`/dungeons/${dungeon.id}`}
-                        title={`${dungeon.name} · ${dungeon.levelMin}–${dungeon.levelMax}`}
-                        className="group absolute flex h-8 items-center overflow-hidden rounded border text-[10px] shadow-sm transition-all hover:z-20 hover:scale-[1.015] hover:border-gold/70"
-                        style={{
-                          left: `${dungeon.left}%`,
-                          width: `${dungeon.width}%`,
-                          top: `${dungeon.row * 36}px`,
-                          borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
-                          backgroundColor: "#08111f",
-                        }}
-                      >
-                        <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined }} />
-                        <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.86), rgba(4,14,24,.2))" : "linear-gradient(90deg, rgba(18,13,8,.86), rgba(18,13,8,.2))" }} />
-                        <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-1.5 text-parchment">
-                          <span className="truncate text-[10px] leading-none">{dungeon.name}</span>
-                          <span className="text-[9px] leading-none text-muted">{dungeon.levelMin}-{dungeon.levelMax}</span>
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+            <TimelineBars lanes={timelineLanes} />
           </div>
         </div>
 

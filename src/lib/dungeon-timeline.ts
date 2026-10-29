@@ -1,5 +1,6 @@
 import raw from "@/data/dungeons-timeline.json";
 import dungeonImages from "@/data/dungeon-images.json";
+import { foreverDungeons } from "@/lib/forever";
 
 type RawDungeon = {
   name: string;
@@ -48,14 +49,18 @@ const idByName: Record<string, string> = {
   黑石塔上层: "ubrs",
 };
 
+const englishById = new Map((foreverDungeons as { id: string; name: string }[]).map((dungeon) => [dungeon.id, dungeon.name]));
+
 export type TimelineEntry = RawDungeon & {
   id: string;
+  nameEn: string;
   image: string | null;
   row: number;
 };
 
 export type TimelineLane = {
   name: string;
+  nameEn: string;
   count: number;
   dungeons: TimelineEntry[];
 };
@@ -75,6 +80,7 @@ function layout(entries: RawDungeon[]): TimelineEntry[] {
     return {
       ...entry,
       id,
+      nameEn: englishById.get(id) ?? entry.name,
       image: dungeonImages[id as keyof typeof dungeonImages] ?? null,
       row,
     };
@@ -89,5 +95,6 @@ const data = raw as {
 export const timelineAxis = data.axis;
 export const timelineLanes: TimelineLane[] = data.lanes.map((lane) => ({
   ...lane,
+  nameEn: lane.name.includes("Forever") || lane.name.includes("新增") ? "Forever new" : "From Classic",
   dungeons: layout(lane.dungeons),
 }));
