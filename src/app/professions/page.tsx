@@ -99,7 +99,8 @@ function recipeName(recipe: Recipe) {
 }
 
 function reagentName(itemId: number, nameCn: string) {
-  return itemNames[String(itemId) as keyof typeof itemNames] ?? getDbItem(itemId)?.name ?? professionNames[nameCn as keyof typeof professionNames] ?? nameCn;
+  const value = itemNames[String(itemId) as keyof typeof itemNames] ?? getDbItem(itemId)?.name ?? professionNames[nameCn as keyof typeof professionNames] ?? nameCn;
+  return String(value).replace(/\s+/g, " ").trim();
 }
 
 function RecipeName({ recipe }: { recipe: Recipe }) {
@@ -252,7 +253,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
                     <div className="min-w-0 flex-1">
                       <p className="text-[10px] uppercase tracking-wider text-muted">Skill {step.start}–{step.end}</p>
                       <p className="mt-0.5 truncate text-xs text-parchment">{item ? <Link href={`/items/${item.id}`} className="hover:text-gold-soft">{recipeName(step.recipe)}</Link> : recipeName(step.recipe)}</p>
-                      <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">{step.recipe.reagents.map((reagent) => `${reagent.nameCn} ×${reagent.count}`).join(" · ")}</p>
+                      <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">{step.recipe.reagents.map((reagent) => `${reagentName(reagent.itemId, reagent.nameCn)} ×${reagent.count}`).join(" · ")}</p>
                     </div>
                   </div>
                 );
@@ -310,7 +311,7 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
         </div>
       </div>
       <div className="mt-3 flex flex-wrap gap-2">
-        {recipe.reagents.map((reagent) => { const db = getDbItem(reagent.itemId); return <span key={`${recipe.recipeId}-${reagent.itemId}`} className="flex items-center gap-1.5 rounded border border-line/60 bg-deep/40 px-2 py-1.5 text-xs text-muted"><img src={fallbackIcon(reagent.icon)} alt="" width={18} height={18} className="size-4 rounded border border-line/60" />{db ? <Link href={`/items/${db.id}`} className="hover:text-gold-soft">{db.name}</Link> : reagent.nameCn} ×{reagent.count}</span>; })}
+        {recipe.reagents.map((reagent) => { const db = getDbItem(reagent.itemId); return <span key={`${recipe.recipeId}-${reagent.itemId}`} className="flex items-center gap-1.5 rounded border border-line/60 bg-deep/40 px-2 py-1.5 text-xs capitalize text-muted"><img src={fallbackIcon(reagent.icon)} alt="" width={18} height={18} className="size-4 rounded border border-line/60" />{db ? <Link href={`/items/${db.id}`} className="hover:text-gold-soft">{reagentName(reagent.itemId, reagent.nameCn)}</Link> : reagentName(reagent.itemId, reagent.nameCn)} ×{reagent.count}</span>; })}
       </div>
     </article>
   );
