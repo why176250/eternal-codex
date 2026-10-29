@@ -40,7 +40,7 @@ export function ClassAbilities({ tabs, accent }: Props) {
         {active.skills.map((skill) => (
           <div key={`${active.nameEn}-${skill.id}`} className="relative">
             <Link
-              href={`/spells/${skill.id}`}
+              href={`/spells/ability/${skill.id}`}
               className="flex items-start gap-3 rounded-lg border border-line/70 bg-deep/40 p-3 pr-9 text-left transition-colors hover:border-gold/35 hover:bg-white/[0.03]"
             >
               <img
@@ -126,7 +126,7 @@ export function ClassAbilities({ tabs, accent }: Props) {
             {selected.cost ? (
               <p className="mt-3 text-xs text-gold/80">{selected.cost}</p>
             ) : null}
-            <Link href={`/spells/${selected.id}`} className="mt-3 inline-block text-xs text-gold/85 hover:text-gold-soft">
+            <Link href={`/spells/ability/${selected.id}`} className="mt-3 inline-block text-xs text-gold/85 hover:text-gold-soft">
               Open full spell page →
             </Link>
 
