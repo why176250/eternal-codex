@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/professions" },
 };
 
-type SearchParams = Promise<{ p?: string; q?: string; page?: string; tab?: string }>;
+type SearchParams = Promise<{ p?: string; q?: string; page?: string; tab?: string; c?: string }>;
 const PAGE_SIZE = 24;
 const TABS = [
   ["recipes", "Recipes"],
@@ -30,6 +30,22 @@ const TABS = [
   ["camp", "Camp items"],
 ] as const;
 type Tab = (typeof TABS)[number][0];
+
+const categoryLabels: Record<string, string> = {
+  药剂: "Elixirs", 药水: "Potions", 合剂: "Flasks", 转化: "Transmutes", 油类与装置: "Oils & devices",
+  绷带: "Bandages", 食物与饮料: "Food & drink", 营地物品: "Camp items", 其他材料: "Other materials",
+  元素材料: "Elemental materials", 金属与矿石: "Metal & ore", 工程零件: "Engineering parts", 皮革: "Leather",
+  任务物品: "Quest items", 饰品: "Trinkets", 其他护甲: "Other armor",
+};
+
+function categoryMatch(recipe: Recipe, label: string): boolean {
+  if (label === "营地物品") return false;
+  if (label === "药剂" || label === "药水" || label === "合剂" || label === "转化") return recipe.localesName.includes(label);
+  if (label === "油类与装置") return recipe.localesName.includes("油");
+  if (label === "绷带") return recipe.localesName.includes("绷带");
+  if (label === "食物与饮料") return !recipe.localesName.includes("油");
+  return false;
+}
 
 const professionDescriptions: Record<string, string> = {
   Alchemy: "Potions, elixirs, flasks, and transmutes.",
@@ -75,13 +91,26 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
   const selectedId = Number(params.p) || professions[0]?.skillLineId || 165;
   const profession = getProfession(selectedId) ?? professions[0];
   const tab = (TABS.some(([key]) => key === params.tab) ? params.tab : "recipes") as Tab;
+  const selectedCategory = params.c ?? "";
   const query = (params.q ?? "").trim();
   const page = Math.max(1, Number(params.page) || 1);
   const allRecipes = getRecipes(profession.skillLineId);
   const guideSteps = buildSkillGuide(allRecipes);
-  const filtered = query
+  const baseFiltered = query
     ? allRecipes.filter((recipe) => `${recipe.localesName} ${recipe.reagents.map((r) => r.nameCn).join(" ")}`.toLowerCase().includes(query.toLowerCase()))
     : allRecipes;
+  const categoryOptions = (profession ? ((await import("@/data/professions.json")).categories as Record<string, { label: string; inventoryType: number }[]>)[String(profession.skillLineId)] ?? [] : [])
+    .map((category) => ({
+      label: category.label,
+      labelEn: categoryLabels[category.label] ?? category.label,
+      count: allRecipes.filter((recipe) => category.inventoryType ? recipe.inventoryType === category.inventoryType : categoryMatch(recipe, category.label)).length,
+      category,
+    }))
+    .filter((entry) => entry.count > 0);
+  const category = categoryOptions.find((entry) => entry.label === selectedCategory);
+  const filtered = category
+    ? baseFiltered.filter((recipe) => category.category.inventoryType ? recipe.inventoryType === category.category.inventoryType : categoryMatch(recipe, category.label))
+    : baseFiltered;
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const currentPage = Math.min(page, pageCount);
   const visible = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
@@ -91,7 +120,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
   const englishName = professionEnglish[profession.name] ?? profession.name;
   const description = professionDescriptions[englishName] ?? "Recipes, materials, and skill requirements.";
 
-  function href(next: { p?: number; q?: string; page?: number; tab?: Tab }) {
+  function href(next: { p?: number; q?: string; page?: number; tab?: Tab; c?: string }) {
     const search = new URLSearchParams();
     const professionId = next.p ?? profession.skillLineId;
     if (professionId !== (professions[0]?.skillLineId ?? 165)) search.set("p", String(professionId));
@@ -99,6 +128,8 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
     if (nextQuery) search.set("q", nextQuery);
     const nextTab = next.tab ?? tab;
     if (nextTab !== "recipes") search.set("tab", nextTab);
+    const nextCategory = next.c ?? selectedCategory;
+    if (nextTab === "recipes" && nextCategory) search.set("c", nextCategory);
     if ((next.page ?? 1) > 1) search.set("page", String(next.page));
     return search.toString() ? `/professions?${search.toString()}` : "/professions";
   }
@@ -149,14 +180,29 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
           <div className="mt-5">
             <form method="get" className="panel flex flex-wrap items-center gap-2 p-4">
               <input type="hidden" name="p" value={profession.skillLineId} />
+              {selectedCategory ? <input type="hidden" name="c" value={selectedCategory} /> : null}
               <input name="q" defaultValue={query} placeholder="Search recipes or reagents" className="min-w-56 flex-1 rounded-lg border border-line bg-deep px-3 py-2 text-sm text-parchment placeholder:text-muted/50 focus:border-gold/50 focus:outline-none" />
               <button className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-sm text-gold-soft">Search</button>
             </form>
-            <p className="mt-3 text-xs text-muted">{filtered.length} recipes</p>
-            <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-              {visible.map((recipe) => (
-                <RecipeCard key={recipe.recipeId} recipe={recipe} />
-              ))}
+            <div className="mt-4 grid gap-4 lg:grid-cols-[14rem_minmax(0,1fr)]">
+              <aside className="panel h-fit p-2">
+                <Link href={href({ c: "", page: 1 })} className={`flex items-center justify-between rounded-lg px-3 py-2 text-xs ${!selectedCategory ? "bg-gold/10 text-gold-soft" : "text-muted hover:text-parchment"}`}>
+                  <span>All recipes</span><span>{allRecipes.length}</span>
+                </Link>
+                {categoryOptions.map((entry) => (
+                  <Link key={entry.label} href={href({ c: entry.label, page: 1 })} className={`mt-1 flex items-center justify-between rounded-lg px-3 py-2 text-xs ${selectedCategory === entry.label ? "bg-gold/10 text-gold-soft" : "text-muted hover:text-parchment"}`}>
+                    <span>{entry.labelEn}</span><span className="text-[10px] text-muted/60">{entry.count}</span>
+                  </Link>
+                ))}
+              </aside>
+              <div>
+                <p className="text-xs text-muted">{filtered.length} recipes</p>
+                <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {visible.map((recipe) => (
+              <RecipeCard key={recipe.recipeId} recipe={recipe} />
+            ))}
+                </div>
+              </div>
             </div>
             {filtered.length === 0 ? <p className="panel mt-4 p-6 text-sm text-muted">No recipes match that search.</p> : null}
             {pageCount > 1 ? (

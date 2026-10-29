@@ -7,6 +7,7 @@ export type Recipe = {
   localesName: string;
   icon: string;
   itemLevel: number;
+  inventoryType: number;
   quality: number;
   minSkillLineRank: number;
   proColors: string;
@@ -30,6 +31,7 @@ export type CampItem = {
   nameCn: string;
   icon: string;
   itemLevel: number;
+  inventoryType: number;
   quality: number;
   skillLineId: number;
   skillReq: number;
@@ -43,7 +45,7 @@ type Raw = {
   campItems: CampItem[];
 };
 
-const data = raw as Raw;
+const data = raw as unknown as Raw;
 
 export const professionEnglish: Record<string, string> = {
   制皮: "Leatherworking",
