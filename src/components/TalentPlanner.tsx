@@ -20,6 +20,16 @@ const CLASS_ACCENT: Record<string, string> = {
 const MIN_LEVEL = 10;
 const MAX_LEVEL = 60;
 
+type SavedBuild = {
+  id: string;
+  name: string;
+  url: string;
+  className: string;
+  level: number;
+  points: number;
+  savedAt: string;
+};
+
 type TalentClass = ForeverTalentClass;
 type Talent = TalentClass["trees"][number]["talents"][number];
 
@@ -29,6 +39,11 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [points, setPoints] = useState<Record<string, number>>({});
   const [copied, setCopied] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [buildName, setBuildName] = useState("");
+  const [savedBuilds, setSavedBuilds] = useState<SavedBuild[]>([]);
+  const [linkCopied, setLinkCopied] = useState(false);
+  const [textCopied, setTextCopied] = useState(false);
+  const [buildLink, setBuildLink] = useState("");
   const [communityBuild, setCommunityBuild] = useState<{
     name: string;
     description: string;
@@ -149,6 +164,16 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    try {
+      const raw = window.localStorage.getItem("eversixty:talent-builds:v1");
+      if (raw) setSavedBuilds(JSON.parse(raw) as SavedBuild[]);
+    } catch {
+      // Ignore malformed local storage.
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
     const buildName = params.get("buildName");
     if (buildName) {
@@ -188,6 +213,10 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     }
   }, [classes]);
 
+  useEffect(() => {
+    setBuildLink(buildUrl());
+  }, [points, level, active]);
+
   function buildUrl() {
     const pairs = Object.entries(points)
       .filter(([, value]) => value > 0)
@@ -195,7 +224,9 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
         const [, , talentId] = key.split("-");
         return `${talentId}.${value}`;
       });
-    return `${window.location.origin}${window.location.pathname}?b=${current.classId}:${pairs.join(
+    const origin = typeof window === "undefined" ? "https://www.eversixty.com" : window.location.origin;
+    const pathname = typeof window === "undefined" ? "/tools/build" : window.location.pathname;
+    return `${origin}${pathname}?b=${current.classId}:${pairs.join(
       ",",
     )}&lvl=${level}`;
   }
@@ -224,6 +255,65 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       });
     } else {
       window.prompt("Copy your build link:", url);
+    }
+  }
+
+  function saveBuild() {
+    const url = buildUrl();
+    const entry: SavedBuild = {
+      id: typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `${Date.now()}`,
+      name: buildName.trim() || `${current.className} ${new Date().toLocaleDateString("en-US")}`,
+      url,
+      className: current.className,
+      level,
+      points: total,
+      savedAt: new Date().toISOString(),
+    };
+    const next = [entry, ...savedBuilds].slice(0, 30);
+    setSavedBuilds(next);
+    try {
+      window.localStorage.setItem("eversixty:talent-builds:v1", JSON.stringify(next));
+    } catch {
+      // Local storage can be unavailable in private modes.
+    }
+    setBuildName("");
+    setSaved(true);
+    setTimeout(() => setSaved(false), 2500);
+  }
+
+  function deleteBuild(id: string) {
+    const next = savedBuilds.filter((build) => build.id !== id);
+    setSavedBuilds(next);
+    try {
+      window.localStorage.setItem("eversixty:talent-builds:v1", JSON.stringify(next));
+    } catch {
+      // Ignore storage errors.
+    }
+  }
+
+  function copyBuildUrl() {
+    const url = buildUrl();
+    const done = () => {
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2500);
+    };
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(() => window.prompt("Copy your build link:", url));
+    } else {
+      window.prompt("Copy your build link:", url);
+    }
+  }
+
+  function copyBuildText() {
+    const text = `${buildName.trim() || `${current.className} build`}\n${buildUrl()}`;
+    const done = () => {
+      setTextCopied(true);
+      setTimeout(() => setTextCopied(false), 2500);
+    };
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(() => window.prompt("Copy your build:", text));
+    } else {
+      window.prompt("Copy your build:", text);
     }
   }
 
@@ -632,6 +722,72 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
           );
         })}
       </div>
+
+      <section className="panel mt-5 p-4 md:p-5">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <p className="eyebrow">Your talent builds</p>
+            <h2 className="display mt-1 text-xl text-parchment">Save and share this build</h2>
+          </div>
+          <span className="text-[11px] text-muted">Stored in this browser</span>
+        </div>
+
+        <div className="mt-4 grid gap-2 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1.3fr)_auto]">
+          <input
+            value={buildName}
+            onChange={(event) => setBuildName(event.target.value)}
+            placeholder="Name this build"
+            className="rounded-lg border border-line bg-deep px-3 py-2 text-sm text-parchment placeholder:text-muted/50 focus:border-gold/50 focus:outline-none"
+          />
+          <button
+            type="button"
+            onClick={saveBuild}
+            className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-sm text-gold-soft transition-colors hover:bg-gold/[0.1]"
+          >
+            Save build
+          </button>
+          <input
+            readOnly
+            value={buildLink}
+            aria-label="Build link"
+            className="min-w-0 rounded-lg border border-line bg-deep px-3 py-2 text-xs text-muted"
+          />
+          <button
+            type="button"
+            onClick={copyBuildUrl}
+            className="rounded-lg border border-line px-4 py-2 text-sm text-muted transition-colors hover:border-gold/40 hover:text-parchment"
+          >
+            {linkCopied ? "Copied" : "Copy link"}
+          </button>
+        </div>
+
+        <button type="button" onClick={copyBuildText} className="mt-2 text-[11px] text-muted underline-offset-4 hover:text-parchment hover:underline">
+          {textCopied ? "Copied as text" : "Copy as text"}
+        </button>
+
+        <div className="mt-5 flex items-center justify-between gap-3">
+          <p className="text-sm text-parchment">Saved builds <span className="text-muted">{savedBuilds.length}</span></p>
+          {savedBuilds.length > 0 ? <button type="button" onClick={() => { setSavedBuilds([]); window.localStorage.removeItem("eversixty:talent-builds:v1"); }} className="text-[11px] text-muted hover:text-parchment">Clear all</button> : null}
+        </div>
+        {savedBuilds.length === 0 ? (
+          <p className="mt-3 rounded-lg border border-dashed border-line/70 p-4 text-xs text-muted">No saved builds yet. Name a build and hit Save build.</p>
+        ) : (
+          <div className="mt-3 divide-y divide-line/50">
+            {savedBuilds.map((build) => (
+              <div key={build.id} className="flex flex-wrap items-center justify-between gap-3 py-3">
+                <div className="min-w-0">
+                  <p className="truncate text-sm text-parchment">{build.name}</p>
+                  <p className="mt-0.5 text-[10px] text-muted">{build.className} · Level {build.level} · {build.points} points · {new Date(build.savedAt).toLocaleDateString("en-US")}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Link href={build.url} className="text-xs text-gold/85 hover:text-gold-soft">Open</Link>
+                  <button type="button" onClick={() => deleteBuild(build.id)} className="text-xs text-muted hover:text-red-300">Delete</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">
         Lines connect a talent to its prerequisite. Tier unlocks follow the
