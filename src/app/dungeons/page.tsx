@@ -3,6 +3,7 @@ import Link from "next/link";
 import { foreverDungeons } from "@/lib/forever";
 import loot from "@/data/dungeon-loot.json";
 import { DungeonPicker } from "@/components/DungeonPicker";
+import dungeonImages from "@/data/dungeon-images.json";
 
 export const metadata: Metadata = {
   title: "Dungeons — the Forever leveling ladder",
@@ -26,8 +27,13 @@ function layout(list: typeof ACTUAL) {
   return list.map((dungeon) => {
     const start = Math.max(MIN, dungeon.min || MIN);
     const end = Math.min(MAX, Math.max(start + 5, dungeon.max || start + 5));
-    const visualEnd = Math.min(MAX, Math.max(end, start + 7));
-    let lane = lanes.findIndex((lastEnd) => start > lastEnd + 1);
+    let visualStart = start;
+    let visualEnd = Math.min(MAX, Math.max(end, start + 7));
+    if (visualEnd - visualStart < 7) {
+      visualEnd = MAX;
+      visualStart = Math.max(MIN, MAX - 7);
+    }
+    let lane = lanes.findIndex((lastEnd) => visualStart > lastEnd + 1);
     if (lane < 0) {
       lane = lanes.length;
       lanes.push(visualEnd);
@@ -39,8 +45,8 @@ function layout(list: typeof ACTUAL) {
       start,
       end: visualEnd,
       lane,
-      left: ((start - MIN) / (MAX - MIN)) * 100,
-      width: ((visualEnd - start) / (MAX - MIN)) * 100,
+      left: ((visualStart - MIN) / (MAX - MIN)) * 100,
+      width: ((visualEnd - visualStart) / (MAX - MIN)) * 100,
     };
   });
 }
@@ -76,10 +82,13 @@ function TimelineRow({
             className="absolute flex h-11 items-center justify-between gap-2 overflow-hidden rounded border px-2.5 text-[11px] transition-colors hover:brightness-125"
             style={{
               left: `${left}%`,
-              width: `${Math.max(width, 12)}%`,
+              width: `${Math.max(width, 7)}%`,
               top: `${lane * 48}px`,
               borderColor: `${accent}88`,
-              background: `linear-gradient(90deg, ${accent}28, rgba(8,13,22,.88))`,
+              backgroundImage: `linear-gradient(90deg, rgba(8,13,22,.45), rgba(8,13,22,.82)), url(${dungeonImages[dungeon.id as keyof typeof dungeonImages] ?? ""})`,
+              backgroundColor: `${accent}20`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
               color: "#ede7d7",
             }}
           >
@@ -122,8 +131,8 @@ export default function DungeonsPage() {
       </section>
 
       <section className="container-x py-8">
-        <div className="panel overflow-x-auto p-4 md:p-6">
-          <div className="min-w-[1100px]">
+        <div className="panel overflow-hidden p-4 md:p-6">
+          <div className="w-full">
             <div className="relative mb-3 ml-0 h-5 border-b border-line/40">
               {AXIS.map((level) => (
                 <span key={level} className="absolute -translate-x-1/2 text-[10px] text-muted/70" style={{ left: `${((level - MIN) / (MAX - MIN)) * 100}%` }}>
