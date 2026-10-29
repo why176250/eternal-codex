@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export type SpecSectionView = {
@@ -222,6 +223,13 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
             <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">
               {selected.description || "No detail available for this entry yet."}
             </p>
+            <Link
+              href={`/spells?q=${encodeURIComponent(selected.name)}`}
+              className="mt-3 inline-block text-xs text-gold/85 hover:text-gold-soft"
+              onClick={() => setSelected(null)}
+            >
+              Search the spellbook →
+            </Link>
           </div>
         </div>
       ) : null}

@@ -76,6 +76,27 @@ export default async function ForeverGuidePage({
           dangerouslySetInnerHTML={{ __html: guide.html }}
         />
 
+        {guide.items && guide.items.length > 0 ? (
+          <section className="mt-10">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h2 className="display text-lg text-parchment">Items in this guide</h2>
+              <span className="text-[11px] text-muted">{guide.items.length} links</span>
+            </div>
+            <p className="mt-1 text-xs text-muted">Open any item for its database page.</p>
+            <div className="mt-3 grid max-h-96 gap-2 overflow-y-auto sm:grid-cols-2">
+              {guide.items.map((item) => (
+                <Link key={item.id} href={`/items/${item.id}`} className="panel flex items-center gap-2 p-2.5 transition-colors hover:border-gold/40">
+                  {item.icon ? <img src={item.icon} alt="" width={28} height={28} className="size-7 rounded border border-line/70" /> : null}
+                  <span className="min-w-0">
+                    <span className="block truncate text-xs text-parchment">{item.name_en || item.name}</span>
+                    <span className="block text-[10px] text-muted">iLvl {item.item_level} · Item #{item.id}</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <div className="mt-10">
           <ForeverSourceNote />
         </div>

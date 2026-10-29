@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDbItem } from "@/lib/items-db";
+import { getGuideItem } from "@/lib/guide-items";
 
 type Params = { id: string };
 const qualityColor: Record<string, string> = {
@@ -11,7 +12,11 @@ const qualityColor: Record<string, string> = {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { id } = await params;
   const item = getDbItem(id);
-  if (!item) return { title: "Item not found" };
+  if (!item) {
+    const guideItem = getGuideItem(id);
+    if (!guideItem) return { title: "Item not found" };
+    return { title: `${guideItem.name_en || guideItem.name} — guide item`, description: `An item referenced in a Forever guide.` };
+  }
   return {
     title: `${item.name} — ${item.qualityLabel} item`,
     description: `${item.name}: item level ${item.ilvl}, ${item.qualityLabel} ${item.slotName} ${item.className}.`,
@@ -22,7 +27,22 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 export default async function ItemPage({ params }: { params: Promise<Params> }) {
   const { id } = await params;
   const item = getDbItem(id);
-  if (!item) notFound();
+  if (!item) {
+    const guideItem = getGuideItem(id);
+    if (!guideItem) notFound();
+    return (
+      <main>
+        <div className="container-x pt-8 text-xs text-muted"><Link href="/items" className="hover:text-gold-soft">Items</Link> / <span className="text-parchment/80">{guideItem.name_en || guideItem.name}</span></div>
+        <section className="container-x max-w-3xl pb-20 pt-8">
+          <div className="flex items-start gap-4">
+            {guideItem.icon ? <img src={guideItem.icon} alt="" width={72} height={72} className="size-20 shrink-0 rounded-lg border border-line/80" /> : null}
+            <div><p className="eyebrow">Guide item</p><h1 className="display mt-2 text-3xl text-parchment md:text-4xl">{guideItem.name_en || guideItem.name}</h1><p className="mt-1 text-sm text-muted">Item level {guideItem.item_level} · Quality {guideItem.quality}</p></div>
+          </div>
+          <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted"><p>This item is referenced by an imported guide but has no full database record yet.</p><p className="mt-2 text-xs text-muted/60">Item ID {guideItem.id}</p></div>
+        </section>
+      </main>
+    );
+  }
   return (
     <main>
       <div className="container-x pt-8 text-xs text-muted">

@@ -57,3 +57,13 @@ export function getClassAbilities(classSlug: string): AbilityTab[] {
   const entry = data.classes.find((item) => item.classId === classId);
   return entry?.tabs ?? [];
 }
+
+export function findClassAbility(id: string | number): { ability: ClassAbility; className: string } | undefined {
+  for (const entry of data.classes) {
+    for (const tab of entry.tabs) {
+      const ability = tab.skills.find((skill) => String(skill.id) === String(id));
+      if (ability) return { ability, className: entry.className };
+    }
+  }
+  return undefined;
+}

@@ -9,7 +9,297 @@
     "icon": "inv_sword_05",
     "color": "#69CCF0",
     "html": "<p>In \"World of Warcraft: Infinite\", mages have an exclusive skill: understanding. You decipher scrolls that many monsters drop, which give you buffs, familiars, and weapon charges. One of the sword scrolls transforms Shadowfang Keep's Blade of Sylvallain into the Cold Flame Saber: a mage sword that burns and freezes targets in melee combat. Players call the mage who fights with it a battle mage.</p><p>You can craft the sword in the beta, but you can't equip it yet: it requires level 21, and the beta level cap is 20, until Blizzard raises the cap to 30.</p><h2>Cold Flame Saber</h2><p><strong>sword scroll</strong>— Keep deciphering untranslated scrolls until one of them gives you a sword scroll. It most likely comes from a scroll that requires understanding (15), but no one has confirmed it yet. Some test server players got it on the 119th scroll.</p><p><strong>Baron Silvaline</strong>— Kill Baron Silvaline in Shadowfang Keep repeatedly until he drops the Blade of Silvaline. Teams with test server players played 12 times.</p><p><strong>Cold Flame Saber</strong>— Use a scroll on the blade: it will transform into a Cold Flame Saber.</p><blockquote><p>Both the scroll and the blade are bound after being picked up: the mage who deciphers the scroll also has to pick up the blade himself, so remember to ask your teammates to give it to you.</p></blockquote><blockquote><p>At level 20 you can pick up blades and craft sabers, but neither can be equipped: they both require level 21.</p></blockquote><dl><dt>to frozen target</dt><dd>Each melee attack hitting a frozen target will cause an additional 98 points of fire damage (frost burn). The client does not list it scaling with spell power. In the video recorded by test server players, some players said that it will increase with spell power; we have not verified it yet.</dd><dt>How to freeze a target</dt><dd>While the sword is in hand, you can freeze the target with Frost Nova, or with Frostbite: it gives your cold effect a 15% chance to freeze the target for up to 5 seconds. Fingers of Ice makes your subsequent spells work as if the target is frozen; no one has tested whether it also triggers Frost Burn.</dd><dt>Spark Infused Scroll</dt><dd>The Cold Flame Saber is a sword, so the Spark Infusion Scroll works on it: when an enemy hits you with a melee attack, your Fire Blast cooldown has a chance to reset. The description says \"Fire Blast\", but it resets the cooldown of Fire Blast.</dd><dt>Ice Blade Infusion Scroll</dt><dd>The Ice Blade Infused Scroll also freezes a target on hit, but it is infused with a dagger, and mages cannot equip both a dagger and a sword at the same time. It cannot be paired with a sword.</dd></dl><h2>second blade</h2><p>The second scroll has the same effect on a level 57 dagger. Neither is available in the beta.</p><p><strong>Scroll of Wit</strong>— Keep deciphering until you get the Wit Scroll. It most likely comes from a scroll that requires understanding (175).</p><p><strong>Dark Dean Gading</strong>— Dark Dean Gardin drops the Witchblade in Scholomance: approximately once every eight kills in Classic.</p><p><strong>unknown weapon</strong>— The weapons it makes are not yet in the beta client: they don’t have names, they don’t have stats, and we haven’t seen them anywhere.</p><h2>understand</h2><dl><dt>learn</dt><dd>Mage trainers teach you how to understand scrolls starting at 6th level. It's a standalone skill, like the profession, and Deciphering Scrolls will take it all the way up to 300.</dd><dt>untranslated scroll</dt><dd>They have meaningless names, such as \"Scroll: KWYJIBO,\" and can only be read by mages. Many monsters will drop it: for the first type alone, Wowhead lists 200 monsters, each with a drop rate between 0.2% and 4%.</dd><dt>learn</dt><dd>Learned once an hour, consuming a Light Feather, giving you a bundle containing several scrolls. You Need a Library: Players find one in the inner ring of the Undercity's magical district. They learn to \"learn\" by giving a book to Garion Wendell in Stormwind or Owen Thadd in Undercity; see our library book guide for where the book is.</dd><dt>library bookshelf</dt><dd>Depending on the client, the Library Shelf can turn your camp into a library: you'll want to place it next to your campfire. Don't know how to obtain it yet.</dd></dl><h2>Improve skills</h2><p>There are four types of untranslated scrolls, each requiring a higher level of Comprehension skill. Once a scroll turns gray, it no longer improves the skill: it is replaced with the next one before the skill reaches the level at which it turns gray.</p><table><thead><tr><th>untranslated scroll</th><th>can be deciphered in</th><th>turn gray to</th><th>Reel level</th></tr></thead><tbody><tr><td>KWYJIBO, CWAL, CHAP BALK WELLES, LOWER PING WHOMEVER</td><td>1</td><td>30</td><td>5</td></tr><tr><td>WUBBA WUBBA, VOCE WELL, OMIT KESA, STHENIC LUNATE</td><td>15</td><td>75</td><td>16</td></tr><tr><td>UPDOG, UJDUHAZUIIK, ASAOJIIUMHO, SHOOBEEDOOP, NHMEIESJNA</td><td>50</td><td>200</td><td>25</td></tr><tr><td>It hurts! Curse! Nailed thorns, spiritual food, strong body and brain, kimchi coffee, the aircraft carrier has arrived</td><td>175</td><td>300</td><td>46</td></tr></tbody></table><h2>bundle of scrolls</h2><p>There were several scrolls in the bundle at the same time. Out of the 17 bundles opened on Wowhead, the proportion of each reel appearing:</p><p><strong>Secondary Awakening Scroll</strong> — 88%</p><p><strong>Lesser Flame Infused Scroll</strong> — 53%</p><p><strong>Ice Knife Infused Scroll</strong> — 47%</p><p><strong>Mouse familiar scroll</strong> — 35%</p><p><strong>understanding scrolls</strong> — 29%</p><h2>all reels</h2><p>Which untranslated scroll becomes which scroll is determined by the server. The client gives each scroll a level, of which there are four levels, one for each type of untranslated scroll; a bundle of scrolls confirms the first. It is also possible to decipher a scroll that can be used by all professions.</p><h2>Comprehension (1): Level 5 Scroll</h2><p><strong>Lesser Flame Infused Scroll</strong></p><p><strong>Ice Knife Infused Scroll</strong></p><p><strong>Mouse familiar scroll</strong></p><h2>Comprehension (15): Level 16 Scroll</h2><p><strong>sword scroll</strong></p><p><strong>Spark Infused Scroll</strong></p><p><strong>Ice Blade Infusion Scroll</strong></p><p><strong>Frost Infused Scroll</strong></p><p><strong>Strike Infusion Scroll</strong></p><p><strong>Calamitous Flame Infused Scroll</strong></p><p><strong>Frog familiar scroll</strong></p><p><strong>Confused Beast Scroll</strong></p><h2>Understanding (50): Level 25 Scroll</h2><p><strong>Mana Blade Infused Scroll</strong></p><p><strong>Precision injection scroll</strong></p><p><strong>Accelerate Infusion Scroll</strong></p><p><strong>Calamity Frost Infused Scroll</strong></p><p><strong>Flame Infused Scroll</strong></p><p><strong>Scroll of Rebuke Elemental</strong></p><p><strong>Khadgar's Lockpicking Scroll</strong></p><p><strong>Cat familiar scroll</strong></p><h2>Understanding (175): Level 46 Scroll</h2><p><strong> Scroll of wit </strong></p><p><strong> Scroll of powerful frost blast </strong></p><p><strong> Scroll of powerful flame injection </strong></p><p> <strong> Powerful frost injection scroll </strong></p><p><strong> Precision injection scroll </strong></p><p><strong> Magic breaking injection scroll </strong></p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 13964,
+        "name": "女巫之刃",
+        "name_en": "Witchblade",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_shortblade_25.png",
+        "item_level": 62,
+        "quality": 3
+      },
+      {
+        "id": 17056,
+        "name": "轻羽毛",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_feather_04.png",
+        "item_level": 1,
+        "quality": 1
+      },
+      {
+        "id": 213564,
+        "name": "次级唤醒卷轴",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_10_inscription2_repcontracts_scroll_02_uprez_color3.png",
+        "item_level": 15,
+        "quality": 1
+      },
+      {
+        "id": 215257,
+        "name": "理解卷轴",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_10_inscription2_repcontracts_scroll_02_uprez_color3.png",
+        "item_level": 15,
+        "quality": 1
+      },
+      {
+        "id": 273637,
+        "name": "席瓦莱恩之刃",
+        "name_en": "Blade of Silverlaine",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_sword_05.png",
+        "item_level": 26,
+        "quality": 3
+      },
+      {
+        "id": 274947,
+        "name": "次级烈焰注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 15,
+        "quality": 2
+      },
+      {
+        "id": 275067,
+        "name": "寒冰小刀注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 15,
+        "quality": 2
+      },
+      {
+        "id": 275069,
+        "name": "老鼠魔宠卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 15,
+        "quality": 1
+      },
+      {
+        "id": 276631,
+        "name": "冷焰佩剑",
+        "name_en": "Coldflame Saber",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_sword_05.png",
+        "item_level": 29,
+        "quality": 3
+      },
+      {
+        "id": 277483,
+        "name": "青蛙魔宠卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 1
+      },
+      {
+        "id": 277484,
+        "name": "困惑野兽卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 1
+      },
+      {
+        "id": 277485,
+        "name": "冰霜注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 2
+      },
+      {
+        "id": 277486,
+        "name": "打击注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 2
+      },
+      {
+        "id": 277487,
+        "name": "灾厄烈焰注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 2
+      },
+      {
+        "id": 277488,
+        "name": "寒冰之刃注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 2
+      },
+      {
+        "id": 277489,
+        "name": "火花注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 2
+      },
+      {
+        "id": 277490,
+        "name": "佩剑卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 3
+      },
+      {
+        "id": 277491,
+        "name": "斥责元素卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 1
+      },
+      {
+        "id": 277492,
+        "name": "卡德加开锁术卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 1
+      },
+      {
+        "id": 277493,
+        "name": "猫魔宠卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 1
+      },
+      {
+        "id": 277494,
+        "name": "精准注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 2
+      },
+      {
+        "id": 277495,
+        "name": "加速注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 2
+      },
+      {
+        "id": 277496,
+        "name": "灾厄冰霜注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 2
+      },
+      {
+        "id": 277497,
+        "name": "烈焰注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 2
+      },
+      {
+        "id": 277498,
+        "name": "法力之刃注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 2
+      },
+      {
+        "id": 277499,
+        "name": "强效霜爆术卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 1
+      },
+      {
+        "id": 277500,
+        "name": "强效烈焰注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 2
+      },
+      {
+        "id": 277501,
+        "name": "强效冰霜注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 2
+      },
+      {
+        "id": 277502,
+        "name": "精确注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 2
+      },
+      {
+        "id": 277503,
+        "name": "破法注入卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 2
+      },
+      {
+        "id": 277504,
+        "name": "机智卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 55,
+        "quality": 3
+      },
+      {
+        "id": 277651,
+        "name": "一捆卷轴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 15,
+        "quality": 1
+      }
+    ]
   },
   {
     "slug": "cozy-sleeping-bag",
@@ -21,7 +311,153 @@
     "icon": "inv_misc_bag_10",
     "color": "#a335ee",
     "html": "The <p> comfortable sleeping bag returns in World of Warcraft: Infinite. Spread it anywhere, lie in it and rest: 1% more experience after one minute, up to 3% more after three minutes. The bonus lasts for two hours. </p><p> It follows the quest chain of the Season of Exploration, with no real quest giver: you have to find and click on a series of hidden objects across Azeroth, from Westfall and the Barrens all the way to Thoradin's Wall. </p><p>14 level can start this quest chain, both Alliance and Horde can. Along the way, you'll also pick up two 12-slot backpacks and a ranged weapon of your choice. This guide details each step, with map locations and rewards. </p><p><img alt=\"A player sleeps in a comfortable sleeping bag with the sleeping bag's item description above.\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-1.svg\"/></p><h2> Task chain </h2><p> This task chain will span two continents: the routes of ships and airships are on the world map. The numbers on each picture correspond to the steps below. </p><h2>Western Wilds and Barrens</h2><p>Each camp starts on its own continent and ends on another. The charred remains were the charred body of a traveler, with a nailed wooden board standing next to it. </p><h2> Alliance</h2><p><img alt=\"Western wilderness viewed from world map\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-2.svg\"/></p><p><strong> Scorched Wreck</strong> — In Westfall, click 37.4, 50.6 Scorched Wreck, located in the burned fields of Alexton's farm. This will begin... the note you found. </p><p><strong>Scorched Wreck</strong> — Go to the Burnt Tower in the Barrens 46.4, 73.9, in the Giant Wilderness south of Camp Taurajo. Click on the charred wreckage or the studded planks to turn in the quest. </p><p><strong> Nailed plank </strong> — Take the stepping stone from the nailed plank. </p><h2> Horde</h2><p><img alt=\"Barrens viewed from world map\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-3.svg\"/></p><p><strong> Scorched Wreck</strong> — In the Barrens, click on the Scorched Wreck at 46.4, 73.9, next to the Burnt Tower in Giant's Field. This will begin... the note you found. </p><p><strong>Scorched remains</strong> — To the burned fields of Alexton's farm in Westfall, 37.4, 50.6. Click on the charred wreckage or the studded planks to turn in the quest. </p><p><strong> Nailed Wooden Boards </strong> — Take the stepping stone from the Nailed Wooden Boards. </p><h2>...The reward for the note you find</h2><p><strong>Potion of Swiftness</strong></p><p><strong>Lesser Troll Blood Potion</strong></p><h2> Stonetalon Mountains</h2><p><img alt=\"Stonetalon Mountains viewed from world map\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-4.svg\"/></p><p><strong>Garbage Bag</strong> — The path leads to an abandoned campsite at 40.7 and 52.4. Click on the trash bag on the box next to the tent: hand over the stepping stone and start climbing over the mountain. </p><p><strong>A pile of dirt</strong> — Climb up the hill to the north of the camp. There is a pile of dirt at 39.6, 49.9, and there is a gap to jump over. Click on it: Hand over the mountains and get down to the dirty work. </p><blockquote><p>Optional: The fire pit in the center of the camp will begin to reignite. Use the Stepping Stone to light a fire with your regular firewood and flint and tinder, which will be returned to you. The task chain does not require this step. </p></blockquote><blockquote><p> Burning Sun Stone House is the stronghold of the tribe: Alliance players will pass near the guard. </p></blockquote><h2> Stepping Stone Rewards </h2><p> Select one: </p><p><strong> Miner's Hoe ZXTA G0088</strong></p><p><strong>Farmer's shovel</strong></p><p>Also: </p><p>ZXTA G0097 sturdy lunch box </p><p><strong> old tool box </strong></p><p><strong> ordinary firewood </strong></p><p><strong>Flint and tinder</strong></p><h2>The reward of crossing the mountains</h2>ZXTAG01 14Select one: <p><strong>Silver Star</strong></p><p><strong>Night Vision Rifle</strong>ZXTAG 0123<p><strong> Bow of Precision </strong></p><p> Also: </p><p><strong> Arrow of Fire ZX TAG0132</strong></p><p><strong> Explosive ammunition </strong></p><p><strong> Mixed dried fruit </strong>ZXT AG0141<h2> Loch Modan, Stone Dam </h2><p><img alt=\"Loch Modan viewed from the world map\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-5.svg\"/></p><p><strong> Carved Statue</strong> — Walk out along the dam, facing the wetlands to the north, and jump to the dwarf head carved below the top of the dam. The carved statue was placed there. </p><p><strong>Dirty Job</strong> — Click on it: Hand over the dirty work and begin Eagle Fist. </p><blockquote><p>The dam is guarded by the Alliance: Horde players should be careful. </p></blockquote><h2>Reward for dirty work</h2><p><strong>Mahogany tube</strong></p><p><strong>Bright beauty Flavored Rum</strong></p><h2>Thoradin's Wall</h2><p><img alt=\"Hillsbrad hills viewed from world map\" loading=\"lazy\" src=\"/guides/forever/cozy-sleeping-bag/placeholder-6.svg\"/></p><p><strong>Messenger's Bag </strong> — Go through the walled room and look outside on the right: the Messenger's Bag hangs there, 22.4, 24.2 (Arathi Highlands). Click on it: Hand over the Eagle Fist and start right here. </p><p><strong> Hastily put away package</strong> — Click on the hastily put away package directly below. The quest chain ends here, and the cozy sleeping bag is yours. </p><h2>That’s the bonus here</h2><p><strong>Comfortable sleeping bag</strong></p><p><strong>Mix Adjust the effect of dry fruit </strong></p><h2> Sleeping bag </h2><dl><dt> Roll out the sleeping bag </dt><dd> You need to stand still for 15 seconds. The sleeping bag will be left on the ground for 20 minutes and can be laid out again after an hour. </dd><dt> Bonus</dt><dd> Every time you lie down for a minute, you will get a stack of full energy: 1% more experience points from kills and missions, up to 3 stacks. Energetic lasts two hours, twice the cooldown of a sleeping bag, so you can always maintain 3%: spread out your sleeping bag every one to two hours and lie down for three minutes. </dd><dt>Two hours, not one hour</dt><dd>Other strategies say the bonus lasts for one hour. In the Beta client it lasts two hours (7200 seconds), the same as Season of Exploration: one hour is the sleeping bag's cooldown. </dd><dt> Resting state </dt><dd> Some players said that lying in a sleeping bag is considered a resting state, just like being in a hotel. We haven't verified it yet. </dd></dl><dl><dt> Mixed dried fruits</dt><dd> Dry food on the road, not a rest experience. During the exploration season, eating it will also give rest experience. This effect is no longer available in the Beta client of \"World of Warcraft: Infinite\": now eating a handful will instantly restore 500 points of health, and then restore 1050 points within 12 seconds, and restore 900 points of mana, 50 points of rage or 100 points of energy. You can eat once every 5 minutes, and you can stack up to 30 pieces. Over the Mountain and the last mission will both give you some. </dd></dl></p></p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 1652,
+        "name": "结实的饭盒",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_box_01.png",
+        "item_level": 35,
+        "quality": 1
+      },
+      {
+        "id": 2459,
+        "name": "迅捷药水",
+        "name_en": "Swiftness Potion",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_potion_95.png",
+        "item_level": 15,
+        "quality": 1
+      },
+      {
+        "id": 2901,
+        "name": "矿工锄",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 4,
+        "quality": 1
+      },
+      {
+        "id": 3388,
+        "name": "次级巨魔之血药剂",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 25,
+        "quality": 1
+      },
+      {
+        "id": 3463,
+        "name": "银星",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 37,
+        "quality": 2
+      },
+      {
+        "id": 3464,
+        "name": "火焰之箭",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 35,
+        "quality": 2
+      },
+      {
+        "id": 3465,
+        "name": "爆破弹药",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 36,
+        "quality": 2
+      },
+      {
+        "id": 4470,
+        "name": "普通木柴",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_tradeskillitem_01.png",
+        "item_level": 5,
+        "quality": 1
+      },
+      {
+        "id": 4471,
+        "name": "燧石和火绒",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_stone_11.png",
+        "item_level": 5,
+        "quality": 1
+      },
+      {
+        "id": 5432,
+        "name": "桃木管",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_pipe_01.png",
+        "item_level": 1,
+        "quality": 0
+      },
+      {
+        "id": 20709,
+        "name": "光明美味朗姆酒",
+        "name_en": null,
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_drink_08.png",
+        "item_level": 1,
+        "quality": 1
+      },
+      {
+        "id": 211527,
+        "name": "舒适的睡袋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 3
+      },
+      {
+        "id": 216619,
+        "name": "混调干果",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 2
+      },
+      {
+        "id": 217314,
+        "name": "夜视步枪",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 27,
+        "quality": 2
+      },
+      {
+        "id": 217315,
+        "name": "精准之弓",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 27,
+        "quality": 2
+      },
+      {
+        "id": 221498,
+        "name": "旧工具箱",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 35,
+        "quality": 1
+      }
+    ]
   },
   {
     "slug": "crafting-speed-gear",
@@ -33,7 +469,36 @@
     "icon": "inv_hammer_20",
     "color": "#b8863a",
     "html": "<p> \"World of Warcraft: Infinite\" adds many new tricks to professional skills, including a type of special equipment: wearing it can speed up smelting or cooking, and there is even a throwing weapon that is a blacksmith's hammer itself, which can save you a backpack slot. </p><p> They may not be able to improve much combat effectiveness, but they are the horizontal collection advocated by the unlimited server. Three are known so far, all listed below. </p><h2> Equipment list </h2><p> Source: Death Mine, dropped by Goblin boss Kilnig (about 55%), wearable at level 16. </p><p> Early mining benefits: After equipped, the manufacturing time of smelting copper ingots, tin ingots, bronze and silver ingots is reduced by 25%. Just put it on when crouching in the furnace and charging forward with skills. </p><p> Source: Cookie drop from the final boss of Dead Mine (about 35%), available at level 17. </p><p> The cooking artifact of the magic wand profession: after equipped, the cooking speed is increased by 25%, and it can be used from leveling up to full level without any problem. </p><p> Source: Forged, requires blueprint: Arcanite blacksmith hammer (forging 270, available at level 49). </p><p>It is a thrown weapon that may stun the target for 1 second on hit and \"can be used as a blacksmith's hammer.\" After making it, the regular blacksmith's hammer that occupies the backpack slot can be thrown away. </p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 5198,
+        "name": "曲奇的搅汤棒",
+        "name_en": "Cookie's Stirring Rod",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_staff_02.png",
+        "item_level": 22,
+        "quality": 3
+      },
+      {
+        "id": 5199,
+        "name": "铁匠短裤",
+        "name_en": "Smelting Pants",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_pants_02.png",
+        "item_level": 21,
+        "quality": 3
+      },
+      {
+        "id": 285281,
+        "name": "奥金铁匠锤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 54,
+        "quality": 3
+      }
+    ]
   },
   {
     "slug": "druid-cat-form",
@@ -45,7 +510,8 @@
     "icon": "ability_druid_catform",
     "color": "#FF7C0A",
     "html": "<p> In \"World of Warcraft: Infinite\", the druid must complete a quest chain at level 20 to learn the cheetah form. The trainer will send you to Moonglade, where the Spirit of the Giant Leopard wants you to retrieve the three holy objects hidden in the Stormrage Lair. When you come back, the trainer will teach you cheetah form, stealth, claw attack, and tear all at once. </p><p> Night elves, tauren and skyborn elves each have a set of quest chains, with the same process and location. When you arrive at the Stormrage Lair, it is recommended to form a team with other druids on site: a holy object can be picked up by the entire team. </p><h2>Task chain</h2><p><img alt=\"Moonglade view from world map\" loading=\"lazy\" src=\"/guides/forever/druid-cat-form/placeholder-1.svg\"/></p><h2>Task names of various races</h2><table><thead><tr>ZXTAG001 4 steps<th>Night Elf</th><th>Tauren</th><th>Skyborn Elf</th><th>Experience Value</th></tr></thead>ZX TAG0026<tr><td>1</td><td>The Spirit of the Giant Leopard</td><td>The Spirit of the Giant Leopard</td><td>The Spirit of the Giant Leopard issued by your camp’s main city</td><td> 390</td></tr><tr><td>2</td><td> The Spirit of the Giant Leopard </td><td> The Spirit of the Giant Leopard </td><td> The Spirit of the Giant Leopard </td>Z XTAG0048780</tr><tr><td>3</td><td> The Spirit of the Giant Leopard </td><td> The Spirit of the Giant Leopard </td><td> The Spirit of the Giant Leopard ZX TAG0059<td>780</td></td></tr><tr><td>4</td><td>The Blessing of the Giant Leopard Spirit</td><td>The Blessing of the Giant Leopard Spirit</td>ZXT AG0070 Blessing of the wind-riding giant leopard spirit <td>780</td></tr><tr><td>5</td><td> Return to Darnassus </td><td> Return to Thunder Tingya </td><td> Return to the main city of your camp</td><td>155</td></tr></table><blockquote><p>The entire task chain has a total of 2,885 experience points. Skyborn elves who join the High Order begin and end in Darnassus, and Windshaper Skyborn are in Thunder Bluff. Moonglade quests also reward Cenarion Circle reputation. </p></blockquote><h2> Stormrage Den </h2><p><img alt=\"The entrance to Stormrage Den, with a tower-shaped lantern beside the door\" loading=\"lazy\" src=\"/guides/forever/druid-cat-form/placeholder-2.svg\"/></p><p>The entrance to the Stormrage Den is to the east of Moonglade Lake (71.2, 61.5). </p><blockquote><p> Before entering the door, click on the statue at the door to obtain the \"Leopard's Blessing of Silent Shadow\": it allows you to sneak for five minutes and will not reveal itself as long as you are not in combat. </p></blockquote><blockquote><p>The souls in the beast's lair guard the sacred objects and will attack you if they see you. Once a soul sees through the stealth, immediately transform into bear form and kill it. </p></blockquote><p><img alt=\"White leopard statue with still shadow relic at its feet\" loading=\"lazy\" src=\"/guides/forever/druid-cat-form/placeholder-3.svg\"/></p><p> The three sacred objects are the fang sacred object, the claw sacred object and the silent shadow sacred object, which are only a few steps away from each other. </p><blockquote><p> Team up with the surrounding druids: the holy objects are picked up for the team. When the holy objects are refreshed, each member of the team can get one. A group of five druids only has to wait for one refresh instead of five. </p></blockquote><blockquote><p> Click the holy object continuously until you start casting: the holy object will not be yours until the casting bar is full. </p></blockquote><h2>What you will learn</h2><p>When you hand in the last mission, the trainer will teach you the following four skills for free. </p><dl><dt> Cheetah form (transformation) </dt><dd>55% base mana, instant. Transform into cheetah form, increase attack strength by 12 points, and additionally increase attack strength equivalent to agility value; at the same time, it is immune to the effect of transformation, and can use various cheetah skills. The moment of transformation will also remove the deformation and movement restriction effects. </dd><dt>Stealth (Level 1)</dt><dd>Instant cast, 10 seconds cooldown. Enters stealth state, but movement speed is reduced by 40%. The effect lasts until canceled. </dd><dt> Claw Strike (Level 1) </dt><dd>45 Energy, melee range, instant. Claws the enemy, causing 110% normal damage, plus 27 points of damage, and rewards 1 combo point. </dd><dt> Tear (Level 1) </dt><dd>30 Energy, melee range, instant. The finishing move causes the target to suffer continuous damage for a period of time. The damage is determined by the combo points and attack strength: 1 point - 44 points within 12 seconds; 2 points - 71 points within 12 seconds; 3 points - 97 points within 12 seconds; 4 points - 124 points within 12 seconds; 5 points - 150 points within 12 seconds. </dd></dl><h2> After the mission </h2><p>, the appearance of the cheetah can be changed: after wearing the five-piece fang suit dropped from the Wailing Cave, the cheetah will turn into a snake; the barber shop can also change the appearance of other cheetahs according to race. </p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": []
   },
   {
     "slug": "druid-snake-form",
@@ -57,7 +523,54 @@
     "icon": "inv_belt_30",
     "color": "#6ab04c",
     "html": "After <p> wears all five pieces of the \"Serpent's Embrace\" leather armor set dropped from the Wailing Cave, the cheetah's form will transform into a snake - this is not mentioned at all in the set description. </p><p> Other forms of the druid also have a new appearance in the barber shop: a variety of colors are provided according to race, and the Skyborn elves also have exclusive elemental style forms. </p><h2> Snake form </h2><p> Snake form replaces the appearance of the cheetah form. The cheetah form requires the druid to complete the task chain at level 20 to learn it. </p><h2> Five-piece fang set </h2><blockquote><p> Bind all five pieces after picking them up. Each druid must enter this brush by himself. The drop rate is classic old world data, which may have been adjusted in \"World of Warcraft: Infinite\". </p></blockquote><blockquote><p> This set is leather armor, and stalkers will also need it for the effect of the set. If there are Rogues in the party, agree on the assignment before fighting the first boss. </p></blockquote><h2> Set effect </h2><h2> Performance of snake form </h2><blockquote><p> Only the cheetah form will turn into a snake, while other forms such as bear form remain the same. </p></blockquote><blockquote><p> The coma of Dream Venom can interrupt the enemy's reading bar. According to actual tests, it can be triggered continuously. It seems that there is no cooling time. </p></blockquote><blockquote><p> When sneaking, the snake will slide close to the ground, but the sound will still be the meow and roar of a cat. </p></blockquote><blockquote><p> also maintains the appearance of a snake when swimming. </p></blockquote><blockquote><p> The snake form is implemented on the server side: it cannot be found in the set spells and barber shop data of the Beta client. The official may adjust it at any time without releasing a patch. </p></blockquote><h2>Other Appearances</h2>ZXTAG004 There has never been an item in the 460-level version that can change the appearance of the druid form. This is the first time for the snake form, and there may be other sets in the future. The barbershop offers multiple looks for each form by race, and bears and cheetahs can also retain their classic old-world looks. As of October 1st, barbers will be available at barbershops in Darnassus and Thunder Bluff. </p><ul><li> Night Elf · Bear form (level 10): brown, black, blue, white, purple </li><li> Night Elf · Aquatic form (level 16): Sea lion</li><li> Night Elf · Cheetah Form (Level 20): Purple, Black, Violet, Purple, Blue, White </li><li> Night Elf · Travel Form (Level 30): Cheetah </li><li> Night Elf · Moonkin Form (Talent): Purple, Black, Blue, Brown, Crow, Red </li><li> Tauren · Bear form (level 10): brown, black, silver, yellow, brown, white </li><li> tauren · Aquatic form (level 16): sea lion </li><li> tauren · Cheetah form (level 20): brown, black, white, brown, red, yellow </li><li> tauren · Travel form (level 30): Cheetah </li><li> Tauren · Moonkin form (talent): Moonkin </li><li> Skyborn elf · Bear form (level 10): blue, gray, green, white </li><li> Skyborn elf · Aquatic form (level 16): sea lion </li><li> skyborn elf · Cheetah form (level 20): blue, gray, green, white </li><li> skyborn elf · Travel form (level 30): cheetah, blue, gray, green, white </li><li> skyborn elf · Moonkin form (talent): Moonkin form </li></ul>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 6473,
+        "name": "尖牙铠甲",
+        "name_en": "Armor of the Fang",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_shirt_16.png",
+        "item_level": 23,
+        "quality": 3
+      },
+      {
+        "id": 10410,
+        "name": "尖牙护腿",
+        "name_en": "Leggings of the Fang",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_pants_11.png",
+        "item_level": 22,
+        "quality": 3
+      },
+      {
+        "id": 10411,
+        "name": "尖牙足垫",
+        "name_en": "Footpads of the Fang",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_boots_04.png",
+        "item_level": 22,
+        "quality": 3
+      },
+      {
+        "id": 10412,
+        "name": "尖牙腰带",
+        "name_en": "Belt of the Fang",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_belt_30.png",
+        "item_level": 21,
+        "quality": 3
+      },
+      {
+        "id": 10413,
+        "name": "尖牙手套",
+        "name_en": "Gloves of the Fang",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_gauntlets_18.png",
+        "item_level": 19,
+        "quality": 3
+      }
+    ]
   },
   {
     "slug": "library-books",
@@ -69,7 +582,72 @@
     "icon": "inv_misc_book_12",
     "color": "#8b6e36",
     "html": "<p>Season of Exploration library books return to World of Warcraft: Infinite, along with new gear rewards. Collect different books from across Azeroth and bring them to the librarian in Stormwind or Undercity.</p><p>Hand over 10 different books in exchange for necklaces, a total of 20 books in exchange for rings, and 25 books to choose one of three pieces of equipment. There are only 16 books in the first set, so to get to 20, you need at least 4 books from higher level areas.</p><p><img alt=\"A shiny library book sits on the table in the game.\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-1.svg\"/></p><h2>reward</h2><p><strong>Search books</strong>— Search for books These books are not dropped by monsters. Each one is picked up from a fixed object in the world: a bookshelf, a stack of scrolls, a book on the table, etc. There are 16 different books in the first set. Locations are listed below, with additional notes noted if the location comes from player feedback or still needs to be confirmed in World of Warcraft: Infinite.</p><p><strong>Leave it to your librarian</strong>— Give your librarian a Charm of Understanding for each book you turn in. The following coordinates are used on the city map: Garion Wendell, Stormwind City, Mage District (37.6, 80.8), Owen Thadd, Undercity, Magic District (73.4, 33.0)</p><h2>10 Books: Choose Your Necklace</h2><p>Choose one of these two rewards. Both necklaces have no level or class restrictions.</p><p><strong>Scholar's Pendant</strong>— Scholar's Pendant Item Level 25</p><p><strong>Loremaster's Talisman</strong>— Loremaster's Amulet item level 25</p><h2>20 books in total: Choose your ring</h2><p>Choose a ring. The field researcher's ring is limited to rogues, and the great philanthropist's ring has no occupation restrictions.</p><p><strong>The Ring of the Great Philanthropist</strong>— Great Philanthropist’s Ring item level 35</p><p><strong>Field Researcher Ring</strong>— Field Researcher Ring item level 35</p><p>The first 10 books also count towards the ring: you need 20 different books in total, not 30.</p><h2>25 books in total: choose one from three</h2><p>Continue to hand in books and collect a total of 25 different books. You can choose one more piece of equipment from the following three pieces.</p><p><strong>Truth Seeker's Bow</strong>— Truth Seeker's Bow item level 45</p><p><strong>clarify emblem</strong>— Clarification of emblem item level 45</p><p><strong>Researcher's night light</strong>— Researcher's Night Light item level 45</p><h2>books of the eastern kingdoms</h2><p>All books with confirmed locations are listed below by region. It takes 10 copies to exchange for a necklace, 20 copies for a ring, and 25 copies to choose another piece of equipment. Books are grouped by area, and each map marks the book's location.</p><p>There are 24 books in the Eastern Kingdom. Each map marks the location of a book; links next to the books open interactive map markers.</p><h2>Elwynn Forest</h2><p><img alt=\"Elwynn forest map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-2.svg\"/></p><p><strong>Research Journal of Archmage Theocritus</strong>— Research Journal of Archmage Theocritus Tower of Azura's Library Collection, 65.4, 70.1 Research notes from Tower of Azura on the map. Any library would love to have it.</p><h2>Ironforge</h2><p><img alt=\"Ironforge map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-3.svg\"/></p><p><strong>Archmage Antonidas: The Unabridged Autobiography</strong>— Archmage Antonidas: The Unabridged Autobiography Library Collection, 75.7, 10.5 A slightly boastful one on the map, but one that any library would love to have.</p><h2>westfall</h2><p><img alt=\"Wild west map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-4.svg\"/></p><p><strong>\"Bewitchment and Charm\"</strong>— \"Bewitchment and Charm\" Moonbrook's spellbook, 45.4, 70.4 Spells for manipulation and deception on the map. Any library would love to have this.</p><p><strong>Rumi of Gnomeregan: The Complete Works</strong>— Rumi of Gnomeregan: The Complete Gnomish Tome of Sentinel Hill, 52.7, 53.8 The work of a well-known gnome wizard on the map. Any library would love to have it. Loch Modan also has it, 35.6, 48.9 Same book: only counts once. Once you take it in one place, you cannot take it again in another place.</p><h2>twilight forest</h2><p><img alt=\"Dusk Forest map in the game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-5.svg\"/></p><p><strong>\"Crime Against the Human Body\"</strong>— \"Crime Against the Human Body\" Spell Book of Dark River Beach, 16.6, 28.5 Written by Professor Kastinov on the map. Any library would think twice before stocking this book.</p><h2>Loch Modan</h2><p><img alt=\"Loch Modan map in the game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-6.svg\"/></p><p><strong>Runes of the Witch King</strong>— Runes of the Witch-King Scrolls of Mogrosh Fortress, 77.4, 14.0 A relic of Draenor's powerful ogre empire on the map. Any library would love to have this.</p><p><strong>Rumi of Gnomeregan: The Complete Works</strong>— Rumi of Gnomeregan: The Complete Gnome of Thelsama, 35.6, 48.9 The work of a well-known gnome wizard on the map. Any library would love to have it. Westfall also has, 52.7, 53.8 same book: only counts once. Once you take it in one place, you cannot take it again in another place.</p><h2>wetland</h2><p><img alt=\"In-game wetland map\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-7.svg\"/></p><p><strong>Scroll of Goaz</strong>—Goaz Scrolls Scrolls from the Vergar Excavation Site, 33.6, 47.9 Text written in Lost Titan on the map, but any library would still like to have it.</p><h2>silver pine forest</h2><p><img alt=\"Silverpine forest map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-8.svg\"/></p><p><strong>\"Dalaran Digest\" Volume 23</strong>— Dalaran Digest Volume 23 Ambermere's Dalaran Digest, 63.5, 63.1 Arcane Research of the Kirin Tor on the map. Any library would love to have this.</p><h2>Tirisfal Glades</h2><p><img alt=\"Tirisfal Glades map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-9.svg\"/></p><p><strong>The Pharmacist's Supernatural Reader</strong>— Apothecary's Paranormal Readings Briar's Apothecary's Guild Primer, 59.4, 52.3 Fundamental notes on arcane theory and spell study on the map, compiled by Archmage Rottencore of the Royal Apothecary's Guild. Any library would love to have it.</p><h2>Stranglethorn Vale</h2><p><img alt=\"The in-game map of Stranglethorn Vale\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-10.svg\"/></p><p><strong>\"Lizard: Why be afraid of petrification?\" 》</strong>— \"Lizard: Why be afraid of petrification?\" 》Crystal Mine Research Notes, 41.4, 50.9 are on the wooden platform on the right side of the mine entrance on the map, so there is no need to enter the mine at all. Unfinished research literature on the use of lizard body parts as materials. Any library would love to have it.</p><h2>Alterac Mountains</h2><p><img alt=\"Alterac Mountains map in the game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-11.svg\"/></p><p><strong>\"Basic Basics of Defensive Magic\"</strong>— Fundamentals of Defensive Magic, The Gallows' Handbook, 48.4, 57.6 The first tower encountered on the map when entering the Ogre Keep from Tarren Mill or Stannblad.The manual is inside. An introductory guide to defensive magic and barriers that any library will want to have.</p><h2>Arathi Highlands</h2><p><img alt=\"Arathi Highlands Map\" loading=\"lazy\" src=\"/guides/forever/library-books/45.jpg\"/></p><p><strong>\"A Web of Lies: The True Face of Myths and Legends\"</strong>— \"A Web of Lies: The True Face of Myths and Legends\" The Spell Book of Deadwood Village, 73.0, 65.0</p><h2>Swamp of Sorrows</h2><p><img alt=\"Swamp of Sorrows Map\" loading=\"lazy\" src=\"/guides/forever/library-books/8.jpg\"/></p><p><strong>\"The Old Guard's Guide to Care for Demonic Pets\"</strong>— The Old Keeper's Guide to Care for Demonic Pets, Farmland Shelter Book, 61.4, 22.4</p><p><strong>\"The Red Curse\"</strong>— \"The Red Curse\" Book of the Pool of Tears, 70.0, 51.0</p><h2>barren land</h2><p><img alt=\"Badlands map\" loading=\"lazy\" src=\"/guides/forever/library-books/3.jpg\"/></p><p><strong>The Mummy: A Guide to the Annoying Dead</strong>— \"The Mummy: A Guide to the Annoying Dead\" Scrolls in the Tomb, 57.0, 39.0</p><h2>Searing Gorge</h2><p><img alt=\"Searing Gorge Map\" loading=\"lazy\" src=\"/guides/forever/library-books/51.jpg\"/></p><p><strong>\"Metal Thoughts\"</strong>— \"Thinking of Metal\" The Melting Pot Book, 37.8, 49.3</p><h2>hinterland</h2><p><img alt=\"hinterlands map\" loading=\"lazy\" src=\"/guides/forever/library-books/47.jpg\"/></p><p><strong>\"Toxic Journey\"</strong>— The Toxic Journey, Shadraro's Scroll, 36.0, 72.8</p><h2>black rock mountain</h2><p><strong>\"Boulder Design Record\"</strong>— Book of Megalithic Designs of the Central Tomb, 48.6, 64.2</p><p><strong>\"Magma or Lava?\" 》</strong>— \"Magma or Lava?\" 》Book inside Blackstone Mountain, 48.4, 63.6Z XTAG0221<h2>The Cursed Land</h2><p><img alt=\"Cursed Land Map\" loading=\"lazy\" src=\"/guides/forever/library-books/4.jpg\"/></p><p><strong>The Conjurer's Grimoire</strong> — The Conjurer's GrimoireThe Book of the Cursed Land, 55.4, 32.2</p><h2> Eastern Plaguelands</h2><p><img alt=\"Eastern Plaguelands Map\" loading=\"lazy\" src=\"/guides/forever/library-books/139.jpg\"/></p><p><strong> \"Knights and Ladies\" </strong> — \"Knights and Ladies\" Eastern Plaguelands book, 47.3, 42.3</p><p><strong> \"Catastrophe: Is the Undead a Threat or Misunderstood?\" 》</strong> — “Catastrophe: Is the Undead a Threat or Misunderstood? \"Book of the Eastern Plaguelands, 26.5, 15.0</p><p><strong> \"Research of the Holy Light\" </strong> — \"Research of the Holy Light\" Book of the Holy Light's Hope Chapel, 71.8, 48.2</p><h2>Western Plaguelands</h2><p><img alt=\"Western Plaguelands Map\" loading=\"lazy\" src=\"/guides/forever/library-books/28.jpg\"/></p><p><strong> \"Undead Potatoes\" </strong> — \"Undead Potatoes\" Firestone Farm Book, 38.3, 54.6</p><p><strong> \"A Basic Introduction to Spiritism\" </strong> - \"A Basic Introduction to Spiritism\" Keldaron's book, 69.4, 72.8</p><h2> Kalimdor's book </h2><p> Kalimdor has 18 books. Each map marks the location of a book; links next to the books open interactive map markers. </p><h2>Dark Coast</h2><p><img alt=\"Darkshore map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-20.svg\"/></p><p><strong> \"Annals of Narthalas\" Volume 74 </strong> — \"Annals of Narthalas\" Volume 74 Scrolls of the Ruins of Masestra, 59.6, 22.2 Ancient Quel'dorei arcane research on the map. Any library would love to have this. </p><h2>The Barrens</h2><p><img alt=\"In-game map of the Barrens\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-21.svg\"/></p><p><strong> \"Arcane System Manual\" </strong> — \"Arcane System Manual\" Silt Swamp Manual, 56.3, 8.8 The troubleshooting tips for Goblin Tech on the map are not organized very well. Any library would love to have this. </p><p><strong> \"Beckstein: On Destructive Magic\" </strong> — \"Beckstein: On Destructive Magic\" The Goblin Tome of Ratchet, 62.7, 36.3 The work of a well-known goblin mage on the map. Any library would love to have it. </p><p><strong> \"The Secret of the Dreamer\" </strong> — \"The Secret of the Dreamer\" Cave entrance: Barrens, 46.0, 36.5 The location on the map and the \"Scroll\" object were confirmed by two players on September 22, 2026. Enter the cave from the Sweetwater Oasis in the Barrens (46.0, 36.5) and head to the Mist Cavern, near the entrance to the Wailing Caverns instance. Find \"Scroll\" at 52.8 and 54.7 on the cave map. Going to the Wailing Caves too? View bosses and drops → Observations and insights into the Emerald Dream. Any library would love to have this. </p><h2> Stonetalon Mountains</h2><p><img alt=\"Stonetalon Mountains map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-22.svg\"/></p><p><strong> \"Earth's Fury\" </strong> — \"Earth's Fury\" Grimtotem Outpost Scroll, 74.4, 85.7 The secrets of the Grimtotem clan's shamanic rituals on the map are closely guarded. Any library would love to have this. </p><h2>Orgrimmar</h2><p><img alt=\"Orgrimmar map in the game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-23.svg\"/></p><p><strong>Tazo's Lessons</strong> — Tazo's LessonsOn Tazo's mural, 38.7, 78.4 The location on the map was confirmed by a player on September 22, 2026. An inscription written by a great giant wizard. Any library would love to have it. </p><h2>Thousand Needles Stone Forest</h2><p><img alt=\"Thousand Needles map in the game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-24.svg\"/></p><p><strong> \"Geodivination: Real Stone Facts\" </strong> — \"Geodivination: Real Stone Facts\" Scroll of Black Cloud Peak, 34.4, 40.1 The lowest level among the eight areas on the map, the road to the summit starts at 31.0, 37.0. The scroll is in the largest hut. A theory about the origins and uses of elemental magic that any library would love to have. </p><h2>Dustwallow Marsh</h2><p><img alt=\"Dustwallow Marsh map in game\" loading=\"lazy\" src=\"/guides/forever/library-books/placeholder-25.svg\"/></p><p><strong> \"RwlRwlRwlRwl! \"</strong> — \"RwlRwlRwlRwl! 》The Waterlogged Book of Witch Ridge, 57.2, 20.8 On the map on the ground on the eastern edge of the Murloc Camp: you can walk over and out again. The handwriting on these strange chapters is blurred, and although it was damaged by water, it is still legible. Any library would love to have it. </p><h2> Desolace</h2><p><img alt=\"Desolation Map\" loading=\"lazy\" src=\"/guides/forever/library-books/405.jpg\"/></p><p><strong> \"The Devil and You\" </strong> — \"The Devil and You\" Thunderaxe Fortress Book, 55.1, 26.2</p><h2> Feralas</h2><p><img alt=\"Ferras map\" loading=\"lazy\" src=\"/guides/forever/library-books/357.jpg\"/></p><p><strong> \"Thresholds and Arcana\" </strong> — \"Thresholds and Arcana\" Books South of Emerald Lake, 50.6, 15.7</p><h2> Tanaris</h2><p><img alt=\"Tanaris Map\" loading=\"lazy\" src=\"/guides/forever/library-books/440.jpg\"/></p><p><strong> \"Legend of the Tideseer\" </strong> — \"Legend of the Tideseer\" Scroll of Falling Sail Bay, 72.7, 47.8</p><h2> Azshara</h2><p><img alt=\"Azshara map\" loading=\"lazy\" src=\"/guides/forever/library-books/16.jpg\"/></p><p><strong> \"Everyday Etiquette\" </strong> - \"Everyday Etiquette\" Book of Hadar Camp, 20.7, 62.0</p><h2>Winter Spring Valley</h2><p><img alt=\"Winterspring map\" loading=\"lazy\" src=\"/guides/forever/library-books/618.jpg\"/></p><p><strong> \"Blow him to pieces!\" \"</strong> — \"Blow him to pieces! \"The Book of Everlook, 60.7, 37.7</p><h2>Felwood</h2><p><img alt=\"Felwood Map\" loading=\"lazy\" src=\"/guides/forever/library-books/361.jpg\"/></p><p><strong>\"Northern Kalimdor—The Comprehensive Guide\"</strong> — \"Northern Kalimdor - The Complete Guide\" The book of Timbermaw Keep, 65.2, 3.3</p><h2>Source and verification</h2><p>Task lists of two librarians, book items, objects containing books and their spawn points, from Wowhead's \"World of Warcraft: Infinite\" database (confirmed on September 22, 2026) and Zockify Guidelines (confirmed October 3, 2026). The </p><p> name and description come directly from the Beta client, version 1.60.1.69913. </p><p> We also used the plug-in to query the Beta server for all 21 tasks in this series of tasks. The server returned data for 18 of them, confirming that this questline is enabled in World of Warcraft: Infinite and is not just old data left over from the Exploration Season. </p><p>How many books are required for each reward, which is not written in the client. A player on r/wowforever submitted a book in Beta and posted two quest windows: 10 necklaces and 20 rings. </p><p> Different location or error found? Please include the title of the book, area, coordinates and the map you used when giving feedback. </p><h2> More \"World of Warcraft: Infinite\" character tools </h2><p>ForeverChanges Compares \"World of Warcraft: Infinite\" and the classic old world, sorting out career changes, talent planning and equipment sources. </p></p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 277203,
+        "name": "学者坠饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_jewelry_necklace_11.png",
+        "item_level": 23,
+        "quality": 2
+      },
+      {
+        "id": 277204,
+        "name": "博学者护符",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_jewelry_necklace_01.png",
+        "item_level": 23,
+        "quality": 2
+      },
+      {
+        "id": 277254,
+        "name": "求真者之弓",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 45,
+        "quality": 3
+      },
+      {
+        "id": 277258,
+        "name": "阐明徽记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_holy_powerwordshield.png",
+        "item_level": 45,
+        "quality": 3
+      },
+      {
+        "id": 277260,
+        "name": "研究员的小夜灯",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_torch_lit.png",
+        "item_level": 45,
+        "quality": 3
+      },
+      {
+        "id": 281634,
+        "name": "野外研究员指环",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_jewelry_ring_02.png",
+        "item_level": 35,
+        "quality": 3
+      },
+      {
+        "id": 281635,
+        "name": "大慈善家的戒指",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_jewelry_ring_14.png",
+        "item_level": 35,
+        "quality": 3
+      }
+    ]
   },
   {
     "slug": "pvp-ranks",
@@ -81,7 +659,3699 @@
     "icon": "achievement_pvp_a_14",
     "color": "#C41E2F",
     "html": "<p> The 14 PvP military ranks of the original Warcraft have returned to the unlimited server. The alliance ranges from private to generalissimo, and the tribe ranges from scout to high-level warlord. Battlefields and PvP missions will give you two things: honors used to purchase PvP equipment, and military rank points used to upgrade PvP military ranks. Each new rank unlocks rewards that can be purchased. </p><p>You can't climb as fast as you want: the game will increase the highest military rank you can reach every week, and military rank 14 will not be available until the tenth week of the season at the earliest. In 2004, your PvP rank was determined by how many fights you played compared to other players on the server. In the infinite server, every player needs the same number of points. </p><p>The following will talk about: what is required for each military rank, what is unlocked, how to use honor to purchase PvP sets, and what level 30 can already do in the beta (the new 15 vs. 15 battlefield Darkspear Islands has been opened). </p><dl><dt> Honor and rank points </dt><dd> Both battlefield and PvP missions are given. Honor is used to purchase PvP equipment and can be held up to 25,000 points. Military rank points are used to upgrade PvP military ranks and will not be consumed. </dd><dt> It takes 24,750 military rank points to reach military rank 14</dt><dd> in ten weeks. The game will increase the highest military rank you can reach each week: in week 1 it is military rank 3, in week 5 it is military rank 8, and in week 10 it is military rank 14. </dd><dt> Each military rank has rewards </dt><dd> Military rank 1 has a jersey, military rank 2 has PvP accessories, military rank 11 has a black war mount, and military rank 14 has weapons. </dd><dt> Blue first, then epic </dt><dd> Blue PvP set can be purchased with honor, starting from level 55. At level 60, Mark of Fear can upgrade every piece of equipment to an epic version. The marks are different according to the parts, and are available for purchase from military ranks 8 to 13. </dd></dl><h2>Military rank</h2><table><thead><tr><th>Military rank</th><th> Alliance</th>ZXT AG0033 tribe </th><th> points </th><th> cumulative </th><th> earliest </th></tr></thead><tbody>ZXTAG 0044<td>1</td><td> Private</td><td> Scout</td><td>750</td><td>750</td>ZX TAG0055 Week 1</td></tr><tr><td>2</td><td> Corporal </td><td> Infantryman </td><td>900Z XTAG0066<td>1,650</td><td>Week 1</td></tr><tr><td>3</td><td>SergeantZXTAG007 6<td> Sergeant</td><td>1,050</td><td>2,700</td><td> Week 1</td></tr><tr>ZXT AG00874</td><td>Sergeant Major</td><td> Senior Sergeant</td><td>1,200</td><td>3,900</td>ZXTA G0097 Week 2</td></tr><tr><td>5</td><td> Master Sergeant </td><td> Master Sergeant First Class </td><td>1, 350</td><td>5,250</td><td> Week 2</td></tr><tr><td>6</td><td>Knight ZXTA G0118<td> Stone Guard</td><td>1,500</td><td>6,750</td><td> Week 3</td></tr>ZXTAG0 128<td>7</td><td> Knight Lieutenant </td><td> Blood Guard </td><td>1,650</td><td>8,400ZXTAG01 38<td> Week 4</td></tr><tr><td>8</td><td>Knight Captain</td><td>Legion Soldier</td>ZXTAG 01491,800</td><td>10,200</td><td> Week 5</td></tr><tr><td>9</td>ZXTAG015 9 Guard Knight </td><td> Centurion </td><td>1, 950</td><td>12, 150</td><td> Week 6</td>ZXTAG0 169<tr><td>10</td><td> Major</td><td> Warrior</td><td>2,100</td><td>14,25 0</td><td> Week 7</td></tr><tr><td>11</td><td>Commander</td><td>Lieutenant General</td> <td>2,350</td><td>16,600</td><td> Week 7</td></tr><tr><td>12</td>ZX TAG0201 Commander </td><td> General </td><td>2,500</td><td>19,100</td><td> Week 8</td>ZXT AG0211<tr><td>13</td><td> Marshal </td><td> Warlord </td><td>2,650</td><td>2 1,750</td><td>Week 9</td></tr><tr><td>14</td><td>Generalissimo</td><td>High Warlord ZX TAG0232<td>3,000</td><td>24,750</td><td> Week 10</td></tr></tbody></table>ZXTAG 0242 Weekly upper limit </h2><table><thead><tr><th> Weekly </th><th> Military rank upper limit </th><th> Total </th>ZXTA G0253 Increment </th></tr></thead><tbody><tr><td> Week 1</td><td>3</td><td>2700ZXTA G0264<td>+2700</td></tr><tr><td>Week 2</td><td>5</td><td>5250</td>Z XTAG0275+2550</td></tr><tr><td>Week 3</td><td>6</td><td>6750</td>ZXTAG0 285+1500</td></tr><tr><td>Week 4</td><td>7</td><td>8400</td><td>+16 50</td></tr><tr><td>Week 5</td><td>8</td><td>10200</td><td>+1800ZXT AG0306</tr><tr><td> Week 6</td><td>9</td><td>12150</td><td>+1950ZXTAG031 6</tr><tr><td>Week 7</td><td>11</td><td>16600</td><td>+4450</td>ZX TAG0327<tr><td> Week 8</td><td>12</td><td>19100</td><td>+2500</td>ZXTAG0 337<tr><td>Week 9</td><td>13</td><td>21750</td><td>+2650</td></tr>Z XTAG0348<td> Week 10</td><td>14</td><td>24750</td><td>+3000</td></tr>ZXTA G0358</table><h2> Honor and Set </h2><h2> Honor </h2><p> Honor comes from killing players of the enemy camp, battlefields and PvP missions, and will go directly to your currency page. Can hold up to 25,000 points: Blizzard raised the cap from 15,000 on October 1, while also increasing most PvP prices by about 50%. The new price has not yet been announced. </p><p>Now each battlefield takes the same time to get similar honors, so Alterac Valley is no longer the only efficient battlefield. The inheritance expertise \"Supreme Glory\" can be increased by up to 10%. </p><h2> First blue, then epic </h2><p> Each set has a blue version that can be purchased with honor. Item level is 60 and can be purchased starting from level 55. PvP military rank is not required. The epic version is item level 65 and requires level 60: bring blue equipment and the fearless mark on the corresponding part, and each mark must reach the corresponding PvP military rank before it can be purchased. </p><table><thead><tr><th> Part </th><th>Open military rank</th> </tr></thead><tbody><tr><td> wrist</td><td>8</td>ZXT AG0387<tr><td> waist</td><td>8</td></tr><tr>ZXTAG0 395 feet </td><td>9</td></tr><tr><td> hand </td>ZXTAG040 310</td></tr><tr><td> Leg</td><td>12</td>ZXTAG041 1<tr><td> Shoulder</td><td>12</td></tr><tr><td> Chest Head</td><td>13</td></tr><tr><td>Head</td><td>1 3</td></tr></tbody></table><h2> Sets for each profession </h2><p> Each camp has fifteen sets. Shamans and druids each have three sets, Paladins and Priests have two sets each, so healers and magicians also have their own sets. The Horde Paladin and Alliance Shaman, which did not have sets in 2004, also have them this time. </p><table><thead><tr><th> Professional </th><th> Specialization </th><th> Blue Suit </th><th> Epic Suit ZX TAG0446</tr></thead><tbody><tr><td>Warrior</td><td>All specializations</td><td>Major's Armor</td>ZXTAG 0457 Marshal's Armor </td></tr><tr><td> Paladin </td><td> Holy </td><td> Major's Asylum </td><td> Marshal's Asylum Protection</td></tr><tr><td> Paladin</td><td> Punishment</td><td> Major's Defense</td><td> Marshal's DefenseZXTAG047 8</tr><tr><td>Hunter</td><td>All specializations</td><td>Major's hunting attire</td><td>Marshal's hunting attire</td>ZXTAG0 489<tr><td> Rogue</td><td> All specializations</td><td> Major's uniform</td><td> Marshal's uniform</td></tr>ZXT AG0500<td> Priest </td><td> Shadow </td><td> Major's Divine Clothing </td><td> Marshal's Divine Clothing </td></tr><tr>ZXT AG0511 Priest</td><td>Holiness and commandment</td><td>The vocation of the major</td><td>The vocation of the marshal</td></tr><tr><td>Sa Full Priest </td><td> Enhancement </td><td> Major's Shock </td><td> Marshal's Shock </td></tr><tr><td> Shaman ZXTA G0532<td> Restoration </td><td> Major's Tide of War </td><td> Marshal's Tide of War </td></tr><tr><td> Shaman ZXTAG05 42<td> Element </td><td> Major's Thunder Fist </td><td> Marshal's Thunder Fist </td></tr><tr><td> Mage </td>ZXT AG0553 All specializations </td><td> Major's vestments </td><td> Marshal's vestments </td></tr><tr><td> Warlock </td><td> All Specialization </td><td> Major's Magic Equipment </td><td> Marshal's Magic Equipment </td></tr><tr><td> Druid </td><td> Wild Combat ZXTA G0574<td> Major's Holy Costume </td><td> Marshal's Holy Costume </td></tr><tr><td> Druid </td><td> Restoration </td>ZXTA G0585 Major's Asylum </td><td> Marshal's Asylum </td></tr><tr><td> Druid </td><td> Balance </td><td> Major's Wild Skin </td><td> Marshal's Wild Skin </td></tr></tbody></table><h2> Points to obtain </h2><p> Rank points come from the battlefield and missions released in Gadgetzan. Honor also comes from these places, and every honor kill is also given. Players from all server types will mix together on the battlefield, except for Hardcore mode. </p><table><thead><tr><th>Battlefield</th><th>Military rank</th><th>Number of people</th><th> Call to Arms</th></tr></thead><tbody><tr><td> Warsong Canyon</td><td>10–60</td><td>10 Yes 10</td><td> is </td></tr><tr><td> Arathi Basin</td><td>20–60</td><td>15 Yes 15</td><td> is </td></tr><tr><td> Darkspear Islands (new) </td><td>30–60</td><td>15 pair 15</td><td> is </td></tr><tr><td>Alterac Valley</td><td>51–60</td><td>40 pair 40</td><td> No </td></tr></tbody></table><p> Each week, one of the first three battlefields will take turns to become the \"Call to Battle\" battlefield, in order: Darkspear Islands, Arathi Basin, and Warsong Canyon. It will give more honor and rank points that week. </p><h2>Land of Honor series of tasks</h2><p>There are ten weekly tasks in each season, which will give honor and military rank points. Weeks 4, 7 and 10 will also give 1 inheritance point each, and these three will continue to be available in subsequent seasons. The content of the mission has not been released yet, but there are already these goals in the game: </p><h2>12 inheritance points </h2><p> Among the inheritance points a character can obtain, 12 points come from PvP, 1 point each: </p><ul><li>Military rank 3, 7, 10, 13, 14</li><li>Achieve exalted reputation in each battlefield camp</li><li>Honorable Land Week 4, 7, 10</li></ul><h2>Darkspear Islands</h2><p>This is a new battlefield, and it is also the only battlefield that can be queued by Beta. It can be queued starting from level 30. Fifteen versus fifteen, located on an island off the coast of Kalimdor: there are four strongholds to defend, and a flag in the middle to take back to your own stronghold. The first team to score 2,000 points wins. Don't go in the water: there are sharks. Don't go in the water: there are sharks. </p><p></p><h3>Respect</h3><ul><li>Theramore Emblem Ring </li><li> Belligerent Ring </li><li> Expeditionary Force Seal </li><li> Expeditionary Force Plate Wind </li><li> Rebel Ring </li><li> Ring of Darkspear Emblem </li><li> Darkspear Protection Pendant </li><li> Darkspear Raider's Cloak ZXTAG07 04</ul><h3> Reverence</h3><ul><li>The Rough Reaper of the Rebels</li><li>The Spellblade of the Intelligent Expedition</li><li>Rebellion Rebel's Manifesto </li><li> Guerrilla's Saw Hammer </li><li> Darkspear Raider's Reaper </li><li> Darkspear Rebel's Spellblade </li><li> Darkspear Prophecy Code </li><li> Darkspear Skirmisher's Mallet </li></ul><p> Military rank points seem to have not started counting on Beta: players who have already earned 2,000 points of honor still display 0 on the PvP tab. /750. </p><p> For other level 30 gear, our Graduation Equipment List (BIS) has a PvP list for each class, and the Duel Tournament Guide covers the level 30 Horde Tournament on October 17th and 18th. </p><h2>FAQ</h2><dl><dt>Will PvP military rank decrease? </dt><dd>Blizzard doesn't mention decay, and there's nothing in the game that deducts points: your rank is a progress bar that only grows. Classic itself also canceled decay in December 2023. </dd><dt>Will my PvP military rank be reset every season? </dt><dd>Blizzard hasn’t said anything yet. The PvP tab will show the season and end countdown, and the lead designer said that military rank 14 can be reached \"in a season or a version cycle\", and the roadmap plans to have a PvP season update in the spring of 2027 and the summer of 2027. </dd><dt>When does the first season start? </dt><dd> has no date yet. The unlimited server launches on November 4th, and Blizzard has not said whether the first PvP season will start on the same day. </dd><dt>Do we have to fight Alterac Valley? </dt><dd> is not required. Blizzard has evened out the honors given by each battlefield. Alterac Valley cannot be opened until level 51, and it is not included in the \"Call to Arms\" rotation. However, it is still counted in the kill mission in the Land of Honor, and its camp reputation can also earn inheritance points. </dd><dt>Does PvP in the wild count? </dt><dd> will give honors for honorable kills anywhere. According to the game itself, military rank points come from battlefields and missions released in Gadgetzan. </dd><dt>What will happen if the rank points exceed the weekly limit? </dt><dd>Blizzard hasn’t said yet whether they will wait until the cap is raised next week before counting it in, or whether they will just void it. </dd><dt>Do I need a PvP military rank to buy a blue suit? </dt><dd>Not required. Blue equipment only requires level 55 and honor, nothing else is needed. PvP military ranks are limited to marks, military rank rewards and weapons. </dd><dt>Is there an arena or rated battlefield? </dt><dd> has not been announced yet. There are two arenas in the beta, Hyjal Crater and Glory Duel Arena, as well as a Battle of Gilneas map that Blizzard has not mentioned. </dd></dl><p> Source: Blizzard's official article on PvP progress (October 7), Darkspear Islands and inheritance system (September 23), the honor cap and price are from the Beta development notes on October 1; the rank points, weekly cap, rewards, marks, sets and battlefield data for each military rank are from the Beta client (version 1.60.1.70338). </p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 18241,
+        "name": "黑色战驹缰绳",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18242,
+        "name": "黑色战豹缰绳",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18243,
+        "name": "黑色作战机械陆行鸟",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18244,
+        "name": "黑色战羊",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18245,
+        "name": "黑色战狼号角",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18246,
+        "name": "黑色战斗迅猛龙之哨",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18247,
+        "name": "黑色作战科多兽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18248,
+        "name": "红色骷髅战马",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 4
+      },
+      {
+        "id": 18606,
+        "name": "联盟军旗",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 1,
+        "quality": 1
+      },
+      {
+        "id": 18607,
+        "name": "部落军旗",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 1,
+        "quality": 1
+      },
+      {
+        "id": 18839,
+        "name": "作战治疗药水",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 45,
+        "quality": 1
+      },
+      {
+        "id": 18841,
+        "name": "作战法力药水",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 51,
+        "quality": 1
+      },
+      {
+        "id": 271911,
+        "name": "塞拉摩徽记之戒",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271916,
+        "name": "好战者戒指",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271920,
+        "name": "远征军的印章",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271923,
+        "name": "远征军披风",
+        "name_en": "Expeditionary's Cape",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_cape_20.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271927,
+        "name": "叛军的粗糙收割者",
+        "name_en": "Rebels' Rugged Reaper",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_axe_18.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271931,
+        "name": "聪明远征军的法术之刃",
+        "name_en": "Clever Expeditionary's Spellblade",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_shortblade_18.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271935,
+        "name": "叛乱分子的宣言",
+        "name_en": "Insurgent's Manifesto",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_book_06.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 271939,
+        "name": "游击队的锯齿战锤",
+        "name_en": "Guerilla's Jagged Mace",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_hammer_05.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272067,
+        "name": "叛军指环",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272071,
+        "name": "暗矛徽记之戒",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272075,
+        "name": "暗矛防护坠饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272078,
+        "name": "暗矛袭击者的披风",
+        "name_en": "Darkspear Raider's Cloak",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_cape_20.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272082,
+        "name": "暗矛袭击者的收割者",
+        "name_en": "Darkspear Raider's Reaper",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_axe_18.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272086,
+        "name": "暗矛叛军的法术之刃",
+        "name_en": "Darkspear Insurgent's Spellblade",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_shortblade_18.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272090,
+        "name": "暗矛预言法典",
+        "name_en": "Tome of the Darkspear Prophecy",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_book_06.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272094,
+        "name": "暗矛散兵的木槌",
+        "name_en": "Darkspear Skirmisher's Bludgeon",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_hammer_05.png",
+        "item_level": 33,
+        "quality": 3
+      },
+      {
+        "id": 272449,
+        "name": "斥候的徽章",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 20,
+        "quality": 1
+      },
+      {
+        "id": 272450,
+        "name": "石守卫的纹章",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 1
+      },
+      {
+        "id": 272452,
+        "name": "精锐高阶督军之剑",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272453,
+        "name": "精锐魔导师裹足",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272455,
+        "name": "精锐魔导师手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272457,
+        "name": "精锐魔导师兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272458,
+        "name": "精锐魔导师短裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272459,
+        "name": "精锐魔导师法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272462,
+        "name": "精锐龙皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272464,
+        "name": "精锐科多兽皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272467,
+        "name": "精锐暗皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272469,
+        "name": "精锐龙皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272470,
+        "name": "精锐龙皮长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272471,
+        "name": "精锐龙皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272472,
+        "name": "精锐龙皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272473,
+        "name": "精锐暗皮外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272474,
+        "name": "精锐暗皮护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272475,
+        "name": "精锐暗皮衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272476,
+        "name": "精锐暗皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272477,
+        "name": "精锐迫击板甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272478,
+        "name": "精锐迫击板甲手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272479,
+        "name": "精锐迫击板甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272480,
+        "name": "精锐迫击板甲护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272481,
+        "name": "精锐迫击板甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272484,
+        "name": "精锐锁甲便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272485,
+        "name": "精锐锁链护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272486,
+        "name": "精锐锁甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272487,
+        "name": "精锐锁甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272488,
+        "name": "精锐锁链护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272489,
+        "name": "精锐锁链护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272490,
+        "name": "精锐链甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272491,
+        "name": "精锐链甲护头",
+        "name_en": "Premier Chain Headguard",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_helmet_03.png",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272492,
+        "name": "精锐链甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272495,
+        "name": "精锐链甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272496,
+        "name": "精锐链甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272498,
+        "name": "精锐督军的魔导师兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272499,
+        "name": "精锐将军的魔导师长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272500,
+        "name": "精锐督军的魔导师外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272501,
+        "name": "精锐将军的魔导师衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272504,
+        "name": "精锐百夫长的魔导师战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272505,
+        "name": "精锐勇士的魔导师护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272506,
+        "name": "精锐督军的迫击板甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272507,
+        "name": "精锐督军的迫击板甲头饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272508,
+        "name": "精锐将军的迫击板甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272509,
+        "name": "精锐将军的迫击板甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272510,
+        "name": "精锐百夫长的迫击板甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272513,
+        "name": "精锐勇士的迫击板甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272514,
+        "name": "精锐督军的龙皮锁甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272515,
+        "name": "精锐督军的龙皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272516,
+        "name": "精锐将军的龙皮肩垫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272517,
+        "name": "精锐将军的龙皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272519,
+        "name": "精锐百夫长的龙皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272520,
+        "name": "精锐勇士的龙皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272523,
+        "name": "精锐百夫长的暗皮踏靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272525,
+        "name": "精锐勇士的暗皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272526,
+        "name": "精锐督军的暗皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272527,
+        "name": "精锐将军的暗皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272528,
+        "name": "精锐督军的暗皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272529,
+        "name": "精锐将军的暗皮腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272530,
+        "name": "精锐督军的链甲护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272531,
+        "name": "精锐督军的链甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272532,
+        "name": "精锐将军的链甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272533,
+        "name": "精锐将军的链甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272534,
+        "name": "精锐百夫长的链甲马靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272536,
+        "name": "精锐勇士的链甲手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272538,
+        "name": "精锐百夫长的锁链战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272539,
+        "name": "精锐勇士的锁链护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272542,
+        "name": "精锐督军的锁链护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272543,
+        "name": "精锐督军的锁链头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272544,
+        "name": "精锐将军的锁链护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272545,
+        "name": "精锐将军的锁链护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272548,
+        "name": "精锐邪纹法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272549,
+        "name": "精锐邪纹护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272552,
+        "name": "精锐邪纹战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272553,
+        "name": "精锐邪纹手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272554,
+        "name": "精锐百夫长的邪纹战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272556,
+        "name": "精锐勇士的邪纹手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272558,
+        "name": "精锐将军的邪纹衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272559,
+        "name": "精锐督军的邪纹兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272560,
+        "name": "精锐督军的邪纹法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272561,
+        "name": "精锐将军的邪纹短裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272562,
+        "name": "精锐绸缎兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272563,
+        "name": "精锐绸缎长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272564,
+        "name": "精锐绸缎法衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272565,
+        "name": "精锐绸缎护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272568,
+        "name": "精锐绸缎战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272569,
+        "name": "精锐绸缎手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272570,
+        "name": "精锐百夫长的绸缎战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272572,
+        "name": "精锐勇士的绸缎手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272574,
+        "name": "精锐将军的绸缎衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272575,
+        "name": "精锐督军的绸缎兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272576,
+        "name": "精锐督军的绸缎法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272577,
+        "name": "精锐将军的绸缎护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272578,
+        "name": "精锐中士的披风",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272589,
+        "name": "精锐中士的斗篷",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272606,
+        "name": "精锐科多兽皮踏靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272608,
+        "name": "精锐暗皮便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272609,
+        "name": "精锐锁链护胫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272611,
+        "name": "精锐柔丝便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272614,
+        "name": "精锐龙皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272617,
+        "name": "精锐锁甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272619,
+        "name": "精锐柔丝护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272625,
+        "name": "精锐锁链外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272626,
+        "name": "精锐科多兽皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272627,
+        "name": "精锐科多兽皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272630,
+        "name": "精锐邪纹腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272634,
+        "name": "精锐柔丝外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272636,
+        "name": "精锐锁甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272637,
+        "name": "精锐迫击板甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272640,
+        "name": "精锐链甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272641,
+        "name": "精锐科多兽皮护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272642,
+        "name": "精锐科多兽皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272643,
+        "name": "精锐邪纹兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272647,
+        "name": "精锐锁链护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272648,
+        "name": "精锐锁甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272649,
+        "name": "精锐柔丝兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272650,
+        "name": "精锐柔丝衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272656,
+        "name": "精锐月皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272657,
+        "name": "精锐鬼纹腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272663,
+        "name": "精锐柔丝腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272669,
+        "name": "精锐月皮护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272670,
+        "name": "精锐月皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272671,
+        "name": "精锐鬼纹兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272677,
+        "name": "精锐月布兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272678,
+        "name": "精锐月布衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272680,
+        "name": "精锐魔导师衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272693,
+        "name": "精锐大元帅的长剑",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272694,
+        "name": "列兵徽章",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 20,
+        "quality": 1
+      },
+      {
+        "id": 272695,
+        "name": "骑士彩带",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 40,
+        "quality": 1
+      },
+      {
+        "id": 272698,
+        "name": "精锐中士的披风",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272699,
+        "name": "精锐中士的斗篷",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272701,
+        "name": "精锐丝质战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272703,
+        "name": "精锐丝质手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272704,
+        "name": "精锐皮甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272705,
+        "name": "精锐兽皮裹足",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272708,
+        "name": "精锐皮甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272709,
+        "name": "精锐兽皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272713,
+        "name": "精锐链锁战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272715,
+        "name": "精锐链锁护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272716,
+        "name": "精锐板甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272717,
+        "name": "精锐板甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272718,
+        "name": "精锐骑士马靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272719,
+        "name": "精锐骑士护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272722,
+        "name": "精锐丝质外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272723,
+        "name": "精锐丝质护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272724,
+        "name": "精锐丝质护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272725,
+        "name": "精锐丝质桂冠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272726,
+        "name": "精锐皮甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272727,
+        "name": "精锐皮甲面纱",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272728,
+        "name": "精锐皮甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272729,
+        "name": "精锐皮甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272730,
+        "name": "精锐兽皮外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272731,
+        "name": "精锐兽皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272732,
+        "name": "精锐兽皮肩垫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272733,
+        "name": "精锐兽皮裹布",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272734,
+        "name": "精锐链锁外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272735,
+        "name": "精锐链锁护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272736,
+        "name": "精锐链锁肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272737,
+        "name": "精锐链锁头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272738,
+        "name": "精锐板甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272739,
+        "name": "精锐板甲护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272740,
+        "name": "精锐板甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272741,
+        "name": "精锐板甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272742,
+        "name": "精锐骑士胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272743,
+        "name": "精锐骑士护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272744,
+        "name": "精锐骑士护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272745,
+        "name": "精锐骑士护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272746,
+        "name": "精锐护卫骑士的丝质裹足",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272749,
+        "name": "精锐少校的丝质手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272750,
+        "name": "精锐元帅的丝质头冠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272751,
+        "name": "精锐统帅的丝质护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272752,
+        "name": "精锐元帅的丝质外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272753,
+        "name": "精锐统帅的丝质肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272755,
+        "name": "精锐护卫骑士的皮甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272757,
+        "name": "精锐少校的兽皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272758,
+        "name": "精锐统帅的兽皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272759,
+        "name": "精锐统帅的兽皮腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272760,
+        "name": "精锐元帅的兽皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272761,
+        "name": "精锐元帅的兽皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272762,
+        "name": "精锐元帅的皮甲护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272763,
+        "name": "精锐少校的皮甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272764,
+        "name": "精锐元帅的皮甲面具",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272765,
+        "name": "精锐统帅的皮甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272766,
+        "name": "精锐统帅的皮甲肩饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272768,
+        "name": "精锐护卫骑士的兽皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272771,
+        "name": "精锐护卫骑士的链甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272772,
+        "name": "精锐少校的链甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272774,
+        "name": "精锐元帅的链甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272775,
+        "name": "精锐元帅的链甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272776,
+        "name": "精锐统帅的链甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272777,
+        "name": "精锐统帅的链甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272780,
+        "name": "精锐少校的骑士手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272781,
+        "name": "精锐护卫骑士的骑士战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272782,
+        "name": "精锐元帅的骑士胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272783,
+        "name": "精锐元帅的骑士护面",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272784,
+        "name": "精锐统帅的骑士腿铠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272785,
+        "name": "精锐统帅的骑士肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272786,
+        "name": "精锐元帅的板甲护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272787,
+        "name": "精锐元帅的板甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272788,
+        "name": "精锐统帅的板甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272789,
+        "name": "精锐统帅的板甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272792,
+        "name": "精锐护卫骑士的板甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272793,
+        "name": "精锐少校的板甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272794,
+        "name": "精锐鬼纹战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272796,
+        "name": "精锐鬼纹手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272800,
+        "name": "精锐鬼纹法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272801,
+        "name": "精锐鬼纹衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272802,
+        "name": "精锐元帅的鬼纹头冠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272803,
+        "name": "精锐统帅的鬼纹护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272804,
+        "name": "精锐统帅的鬼纹护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272805,
+        "name": "精锐元帅的鬼纹长袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272807,
+        "name": "精锐护卫骑士的鬼纹战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272808,
+        "name": "精锐少校的鬼纹手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272810,
+        "name": "精锐虚空布战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272812,
+        "name": "精锐虚空布手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272814,
+        "name": "精锐虚空布头冠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272815,
+        "name": "精锐虚空布护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272816,
+        "name": "精锐虚空布法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272817,
+        "name": "精锐虚空布衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272818,
+        "name": "精锐元帅的虚空布头饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272819,
+        "name": "精锐统帅的虚空布长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272820,
+        "name": "精锐统帅的虚空布衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272821,
+        "name": "精锐元帅的虚空布法衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272823,
+        "name": "精锐护卫骑士的虚空布凉鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272824,
+        "name": "精锐少校的虚空布手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 272852,
+        "name": "精锐发光胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272853,
+        "name": "精锐发光护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272854,
+        "name": "精锐发光护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 272855,
+        "name": "精锐发光护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273329,
+        "name": "精锐少校的发光手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273330,
+        "name": "精锐护卫骑士的发光战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273331,
+        "name": "精锐元帅的发光胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273332,
+        "name": "精锐元帅的发光护面",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273333,
+        "name": "精锐统帅的发光腿铠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273334,
+        "name": "精锐统帅的发光肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273336,
+        "name": "精锐百夫长的锁甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273337,
+        "name": "精锐勇士的锁甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273340,
+        "name": "精锐督军的锁甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273341,
+        "name": "精锐督军的锁甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273342,
+        "name": "精锐将军的锁甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273343,
+        "name": "精锐将军的锁甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273344,
+        "name": "精锐百夫长的环甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273345,
+        "name": "精锐勇士的环甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273348,
+        "name": "精锐督军的环甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273349,
+        "name": "精锐督军的环甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273350,
+        "name": "精锐将军的环甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273351,
+        "name": "精锐将军的环甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273355,
+        "name": "精锐环甲便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273356,
+        "name": "精锐环甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273357,
+        "name": "精锐环甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273358,
+        "name": "精锐环甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273359,
+        "name": "精锐环甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273360,
+        "name": "精锐环甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273363,
+        "name": "精锐发光护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273365,
+        "name": "精锐发光马靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273368,
+        "name": "精锐月皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273370,
+        "name": "精锐月皮裹足",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273371,
+        "name": "精锐月皮外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273373,
+        "name": "精锐梦皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273374,
+        "name": "精锐梦皮护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273375,
+        "name": "精锐梦皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273377,
+        "name": "精锐梦皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273379,
+        "name": "精锐梦皮裹足",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273380,
+        "name": "精锐梦皮外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273382,
+        "name": "精锐飞龙皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273383,
+        "name": "精锐飞龙皮踏靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273384,
+        "name": "精锐飞龙皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273385,
+        "name": "精锐飞龙皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273386,
+        "name": "精锐飞龙皮护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273387,
+        "name": "精锐飞龙皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273391,
+        "name": "精锐少校的月皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273392,
+        "name": "精锐统帅的月皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273393,
+        "name": "精锐统帅的月皮腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273394,
+        "name": "精锐元帅的月皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273395,
+        "name": "精锐元帅的月皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273396,
+        "name": "精锐护卫骑士的月皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273399,
+        "name": "精锐少校的梦皮护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273400,
+        "name": "精锐统帅的梦皮护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273401,
+        "name": "精锐统帅的梦皮腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273402,
+        "name": "精锐元帅的梦皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273403,
+        "name": "精锐元帅的梦皮胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273404,
+        "name": "精锐护卫骑士的梦皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273405,
+        "name": "精锐督军的飞龙皮锁甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273406,
+        "name": "精锐督军的飞龙皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273407,
+        "name": "精锐将军的飞龙皮肩垫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273408,
+        "name": "精锐将军的飞龙皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273410,
+        "name": "精锐百夫长的飞龙皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273411,
+        "name": "精锐勇士的飞龙皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273413,
+        "name": "精锐督军的科多皮锁甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273414,
+        "name": "精锐督军的科多皮头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273415,
+        "name": "精锐将军的科多兽皮肩垫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273416,
+        "name": "精锐将军的科多皮护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273418,
+        "name": "精锐百夫长的科多兽皮战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273419,
+        "name": "精锐勇士的科多兽皮手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273421,
+        "name": "精锐元帅的月布头饰",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273422,
+        "name": "精锐统帅的月布长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273423,
+        "name": "精锐统帅的月布衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273424,
+        "name": "精锐元帅的月布法衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273426,
+        "name": "精锐护卫骑士的月布凉鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273427,
+        "name": "精锐少校的月布手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273429,
+        "name": "精锐百夫长的柔丝战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273431,
+        "name": "精锐勇士的柔丝手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273433,
+        "name": "精锐将军的柔丝衬肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273434,
+        "name": "精锐督军的柔丝兜帽",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273435,
+        "name": "精锐督军的柔丝法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273436,
+        "name": "精锐将军的柔丝长裤",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 273443,
+        "name": "精锐月布战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273445,
+        "name": "精锐月布手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273447,
+        "name": "精锐月布护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 273448,
+        "name": "精锐月布法袍",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274176,
+        "name": "精锐鳞甲便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274177,
+        "name": "精锐平甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274178,
+        "name": "精锐鳞甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274179,
+        "name": "精锐鳞甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274180,
+        "name": "精锐平甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274181,
+        "name": "精锐平甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274183,
+        "name": "精锐护卫骑士的平甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274184,
+        "name": "精锐少校的平甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274187,
+        "name": "精锐元帅的平甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274188,
+        "name": "精锐元帅的平甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274189,
+        "name": "精锐统帅的平甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274190,
+        "name": "精锐统帅的平甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274192,
+        "name": "精锐平甲护胫",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274193,
+        "name": "精锐鳞甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274194,
+        "name": "精锐平甲外衣",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274195,
+        "name": "精锐鳞甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274196,
+        "name": "精锐平甲护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274197,
+        "name": "精锐鳞甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274198,
+        "name": "精锐护卫骑士的鳞甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274199,
+        "name": "精锐少校的鳞甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274202,
+        "name": "精锐元帅的鳞甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274203,
+        "name": "精锐元帅的鳞甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274204,
+        "name": "精锐统帅的鳞甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274205,
+        "name": "精锐统帅的鳞甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274206,
+        "name": "精锐护卫骑士的连环甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274207,
+        "name": "精锐少校的连环甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274210,
+        "name": "精锐元帅的连环甲护甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274211,
+        "name": "精锐元帅的连环甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274212,
+        "name": "精锐统帅的连环甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274213,
+        "name": "精锐统帅的环甲肩铠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274217,
+        "name": "精锐连环甲便鞋",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274218,
+        "name": "精锐连环甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274219,
+        "name": "精锐连环甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274220,
+        "name": "精锐连环甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274221,
+        "name": "精锐连环甲腿甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274222,
+        "name": "精锐连环甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274226,
+        "name": "精锐缀鳞马靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274227,
+        "name": "精锐缀鳞护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274230,
+        "name": "精锐缀鳞胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274231,
+        "name": "精锐缀鳞护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274232,
+        "name": "精锐缀鳞护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274233,
+        "name": "精锐缀鳞护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274236,
+        "name": "精锐勇士的缀鳞手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274237,
+        "name": "精锐百夫长的缀鳞战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274238,
+        "name": "精锐督军的缀鳞护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274239,
+        "name": "精锐督军的缀鳞头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274240,
+        "name": "精锐将军的缀鳞腿铠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274241,
+        "name": "精锐将军的缀鳞肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274244,
+        "name": "精锐板鳞甲胸甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274245,
+        "name": "精锐板鳞甲护腿",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274246,
+        "name": "精锐板鳞甲护头",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274247,
+        "name": "精锐板鳞甲护肩",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274250,
+        "name": "精锐勇士的板鳞甲手套",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274251,
+        "name": "精锐百夫长的板鳞甲战靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274252,
+        "name": "精锐督军的板鳞甲护胸",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274253,
+        "name": "精锐督军的板鳞甲头盔",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274254,
+        "name": "精锐将军的板鳞甲腿铠",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274255,
+        "name": "精锐将军的板鳞甲肩甲",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 274256,
+        "name": "精锐板鳞甲护手",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274258,
+        "name": "精锐板鳞甲马靴",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274444,
+        "name": "强效部落徽记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 1,
+        "quality": 3
+      },
+      {
+        "id": 274445,
+        "name": "强效联盟徽记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 1,
+        "quality": 3
+      },
+      {
+        "id": 274968,
+        "name": "精锐中士徽记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 274969,
+        "name": "精锐军士长的徽记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 60,
+        "quality": 3
+      },
+      {
+        "id": 275229,
+        "name": "精锐无畏肩部印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275238,
+        "name": "精锐无畏胸部印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275239,
+        "name": "精锐无畏手套印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275240,
+        "name": "精锐无畏护腕印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275241,
+        "name": "精锐无畏头部印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275242,
+        "name": "精锐无畏腿部印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275243,
+        "name": "精锐无畏脚部印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      },
+      {
+        "id": 275244,
+        "name": "精锐无畏腰带印记",
+        "name_en": "",
+        "nameCn": null,
+        "icon": "",
+        "item_level": 65,
+        "quality": 4
+      }
+    ]
   },
   {
     "slug": "shaman-weapons",
@@ -93,6 +4363,44 @@
     "icon": "inv_weapon_hand_09",
     "color": "#0070DE",
     "html": "<p> Shaman has an exclusive quest chain at level 30. After completing it, you can choose one of three powerful weapons: Lightning Grip, Tidecaller's Claw or Storm Fury, and you can also get the Elementalist's Bracer. This quest chain is automatically opened after completing the Wind Totem quest. </p><p> The mission chain is divided into four steps: Elemental Aid → Storm, Earth and Fire → Heed My Call → Weapons of the Storm. You need to travel through many areas of Azeroth, and finally go to the Alterac Mountains to find Basra the Windcatcher to hand in the task. </p><h2>Rewards</h2><p>After completing \"Weapons of the Storm\", choose one of the following three weapons and obtain the Elementalist's Bracer. </p><p> Elemental Shaman's first choice: +6 intelligence, increase spell damage and healing by 46 points, lightning bolt critical strike +1%. </p><p> Healing Shaman's first choice: +5 endurance, healing effect +86, healing wave and secondary healing wave critical strike +2%. </p><p> Enhanced Shaman's first choice: two-handed hammer, +15 endurance +12 intelligence, storm strike damage increased by 10%. </p><p> Additional bonus shield: 1078 armor, 20 block, +9 stamina, +6 intelligence, and restores 2 mana every 5 seconds. </p><h2> Task chain </h2><p> This task chain is automatically opened after completing the Wind Totem task, with a total of four steps. </p><h2>Step One: Elemental Aid</h2><p>Go to Razorfen, kill the final boss Calgar Thornrib, and pick up the quest items. </p><p>Razorfen is located in the southernmost part of the Barrens, and the entrance to the instance is near 52, 89. Calgar Thornrib is the final boss of the dungeon and is level 27+. It is recommended to go as a team. </p><h2>Step Two: Storm, Earth and Fire</h2><p>Collect 20 elemental totems across Azeroth, distributed in the following areas:</p><p><strong>Dustwallow Marsh</strong> — Collect the Great Land Totem </p><p><strong> The Desolate Land </strong> — Collect the Fire Totem </p><p><strong> Swamp of Sorrows </strong> — Collect water totems </p><p><strong>Desolate land</strong> - Collect air totems</p><p>These totems come from elemental monsters and specific creatures in various areas. You can pick them up after killing them. Requires 5 of each type of totem, 20 in total. </p><h2>Step Three: Listen to my call</h2><p>Go to Thousand Needles Stone Forest and defeat the summoned level 40 elite elemental creature. </p><p> Mission summons multiple waves of elemental and quilboar enemies, culminating in a level 40 elite. It is recommended to complete it as a team at level 30, or try it alone after level 35. </p><h2>Step 4: Weapons of the Storm</h2><p> Take the collected totems to the Alterac Mountains and find Basra the Wind Catcher to hand in the task. </p><p>Basra the Windcatcher is located in the Alterac Mountains/way 80.4 66.8. He is the NPC who gave the Warrior the Whirlwind Ax. After completing the mission, you can choose one of the three weapons and obtain the elementalist's bracers. </p><h2>Practical Tips</h2><p><strong>Team Formation Suggestions</strong> — Both Razorfen Dungeon and Thousand Needles Elites recommend teaming up. Level 30 is difficult to complete alone. </p><p><strong>Weapon selection</strong>—Elemental sarc choose Lightning Grasp, heal sarc choose Tidecaller's Claw, enhance sarc choose Fury of the Storm. All three items are for the main hand/both hands, and you cannot hold two items at the same time. </p><p><strong> Bracers Universal </strong> - The elementalist's bracers are an additional reward, do not occupy the weapon selection quota, and are applicable to any specialization. </p>",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "items": [
+      {
+        "id": 280604,
+        "name": "风暴之怒",
+        "name_en": "Rage of the Storm",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_mace_42.png",
+        "item_level": 40,
+        "quality": 3
+      },
+      {
+        "id": 280605,
+        "name": "招潮者之爪",
+        "name_en": "Tidebringer's Claw",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_hand_15.png",
+        "item_level": 40,
+        "quality": 3
+      },
+      {
+        "id": 280607,
+        "name": "闪电之握",
+        "name_en": "Lightning's Grasp",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_hand_09.png",
+        "item_level": 40,
+        "quality": 3
+      },
+      {
+        "id": 280696,
+        "name": "元素师的护腕",
+        "name_en": "Elementalist's Guard",
+        "nameCn": null,
+        "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_shield_09.png",
+        "item_level": 40,
+        "quality": 3
+      }
+    ]
   }
 ]

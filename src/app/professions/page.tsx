@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getDbItem } from "@/lib/items-db";
 import campItemsEn from "@/data/camp-items.en.json";
 import {
   fallbackIcon,
@@ -274,7 +275,10 @@ export default async function ProfessionsPage({
                         Skill {step.start}–{step.end}
                       </p>
                       <p className="mt-0.5 truncate text-xs text-parchment">
-                        {step.recipe.localesName}
+                        {(() => {
+                          const db = getDbItem(step.recipe.itemId);
+                          return db ? <Link href={`/items/${db.id}`} className="hover:text-gold-soft">{db.name}</Link> : step.recipe.localesName;
+                        })()}
                       </p>
                       <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">
                         {step.recipe.reagents
@@ -342,6 +346,7 @@ export default async function ProfessionsPage({
 
 function RecipeCard({ recipe }: { recipe: Recipe }) {
   const color = qualityColor(recipe.quality);
+  const product = getDbItem(recipe.itemId);
   return (
     <article className="panel p-4">
       <div className="flex items-start gap-3">
@@ -356,7 +361,7 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-sm leading-snug text-parchment" style={{ color }}>
-              {recipe.localesName}
+              {product ? <Link href={`/items/${product.id}`} className="hover:underline hover:underline-offset-2">{product.name}</Link> : recipe.localesName}
             </h3>
             {recipe.itemLevel > 0 ? (
               <span className="shrink-0 text-[10px] text-muted/70">iLvl {recipe.itemLevel}</span>
@@ -369,21 +374,24 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
       </div>
 
       <div className="mt-3 flex flex-wrap gap-2">
-        {recipe.reagents.map((reagent) => (
-          <span
-            key={`${recipe.recipeId}-${reagent.itemId}`}
-            className="flex items-center gap-1 rounded border border-line/60 bg-deep/40 px-1.5 py-1 text-[10px] text-muted"
-          >
-            <img
-              src={fallbackIcon(reagent.icon)}
-              alt=""
-              width={18}
-              height={18}
-              className="size-4 rounded border border-line/60"
-            />
-            {reagent.nameCn} ×{reagent.count}
-          </span>
-        ))}
+        {recipe.reagents.map((reagent) => {
+          const dbReagent = getDbItem(reagent.itemId);
+          return (
+            <span
+              key={`${recipe.recipeId}-${reagent.itemId}`}
+              className="flex items-center gap-1 rounded border border-line/60 bg-deep/40 px-1.5 py-1 text-[10px] text-muted"
+            >
+              <img
+                src={fallbackIcon(reagent.icon)}
+                alt=""
+                width={18}
+                height={18}
+                className="size-4 rounded border border-line/60"
+              />
+              {dbReagent ? <Link href={`/items/${dbReagent.id}`} className="hover:text-gold-soft">{dbReagent.name}</Link> : reagent.nameCn} ×{reagent.count}
+            </span>
+          );
+        })}
       </div>
     </article>
   );
