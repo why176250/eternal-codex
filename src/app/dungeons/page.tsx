@@ -3,6 +3,7 @@ import Link from "next/link";
 import { foreverDungeons } from "@/lib/forever";
 import loot from "@/data/dungeon-loot.json";
 import dungeonImages from "@/data/dungeon-images.json";
+import { DungeonPicker } from "@/components/DungeonPicker";
 
 export const metadata: Metadata = {
   title: "Dungeons — the Forever leveling ladder",
@@ -92,20 +93,49 @@ function TimelineRow({ label, entries }: { label: string; entries: ReturnType<ty
 
 export default function DungeonsPage() {
   return (
-    <main className="container-x py-10 md:py-14">
-      <div className="panel p-4 md:p-6">
+    <main>
+      <section className="relative overflow-hidden border-b border-line/60">
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: `url(${dungeonImages["hot"] ?? ""})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/90 to-abyss/50" />
+        <div className="container-x relative py-10 md:py-14">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+            <div>
+              <div className="flex items-start gap-4">
+                <img src={dungeonImages["hot"] ?? ""} alt="" width={64} height={64} className="size-16 shrink-0 rounded-lg border border-line/80 object-cover" />
+                <div>
+                  <p className="eyebrow">Dungeons</p>
+                  <h1 className="display mt-1 text-3xl text-parchment md:text-5xl">Dungeons in Forever</h1>
+                </div>
+              </div>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted">
+                Nine new Forever dungeons and 26 Classic dungeons, arranged by level.
+                Open a dungeon to see its bosses, loot, and location notes.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-cyan-300">{NEW.length}</span> new dungeons</span>
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-gold-soft">{CLASSIC.length}</span> from Classic</span>
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-parchment">{BOSSES}</span> recorded bosses</span>
+              </div>
+            </div>
+            <div className="panel p-4">
+              <p className="eyebrow">Bosses & loot</p>
+              <p className="mt-2 text-sm font-medium text-parchment">Open a dungeon</p>
+              <p className="mt-1 text-xs leading-relaxed text-muted">Jump straight to its bosses and loot table.</p>
+              <DungeonPicker options={ACTUAL.map(({ id, name, band, isNew }) => ({ id, name, band, isNew }))} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-x py-8">
+        <div className="panel p-4 md:p-6">
         <div className="border-b border-line/60 pb-4">
-          <p className="eyebrow">Dungeons</p>
-          <h1 className="display mt-1 text-2xl text-parchment md:text-3xl">Dungeons by level</h1>
+          <p className="eyebrow">By level</p>
+          <h2 className="display mt-1 text-2xl text-parchment md:text-3xl">Dungeons by level</h2>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted">
             Click a dungeon to see its bosses and loot. New Forever level bands are
             shown above; Classic dungeons follow the Classic dungeon-finder ranges.
           </p>
-          <div className="mt-3 flex flex-wrap gap-2 text-[10px] text-muted">
-            <span className="rounded-full border border-line/70 px-2.5 py-1">{NEW.length} new in Forever</span>
-            <span className="rounded-full border border-line/70 px-2.5 py-1">{CLASSIC.length} from Classic</span>
-            <span className="rounded-full border border-line/70 px-2.5 py-1">{BOSSES} recorded bosses</span>
-          </div>
         </div>
 
         <div className="mt-5 w-full">
@@ -119,8 +149,10 @@ export default function DungeonsPage() {
           <TimelineRow label={`Forever new ${NEW.length}`} entries={newLayout} />
           <TimelineRow label={`From Classic ${CLASSIC.length}`} entries={classicLayout} />
         </div>
-      </div>
+        </div>
+      </section>
 
+      <section className="container-x pb-14">
       <p className="mt-3 text-[10px] leading-relaxed text-muted/60">
         Dungeon level ranges are approximate; verify entry requirements in game.
         Open a dungeon for its bosses, loot table, and source notes.
@@ -129,6 +161,7 @@ export default function DungeonsPage() {
         <Link href="/data/dungeons" className="rounded-lg border border-line px-3 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">Full dungeon data →</Link>
         <Link href="/database" className="rounded-lg border border-line px-3 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">Search loot →</Link>
       </div>
+      </section>
     </main>
   );
 }
