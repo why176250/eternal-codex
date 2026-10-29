@@ -348,7 +348,8 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       </div>
 
       {/* Class tabs */}
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap gap-2">
         {classes.map((cls, index) => {
           const isActive = index === active;
           return (
@@ -377,6 +378,14 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
             </button>
           );
         })}
+        </div>
+        <Link
+          href="/tools/builds"
+          className="inline-flex items-center gap-1.5 rounded-lg border border-gold/35 bg-gold/[0.06] px-3 py-2 text-xs text-gold-soft transition-colors hover:border-gold/60 hover:bg-gold/[0.1]"
+        >
+          See how others build
+          <span aria-hidden="true">→</span>
+        </Link>
       </div>
 
       {/* Toolbar */}
