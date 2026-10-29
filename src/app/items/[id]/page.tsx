@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDbItem } from "@/lib/items-db";
 import { getGuideItem } from "@/lib/guide-items";
+import { getProfessionItem } from "@/lib/profession-items";
 
 type Params = { id: string };
 const qualityColor: Record<string, string> = {
@@ -14,8 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const item = getDbItem(id);
   if (!item) {
     const guideItem = getGuideItem(id);
-    if (!guideItem) return { title: "Item not found" };
-    return { title: `${guideItem.name_en || guideItem.name} — guide item`, description: `An item referenced in a Forever guide.` };
+    if (guideItem) return { title: `${guideItem.name_en || guideItem.name} — guide item`, description: "An item referenced in a Forever guide." };
+    const professionItem = getProfessionItem(id);
+    if (professionItem) return { title: `${professionItem.name} — profession item`, description: "A crafted item or reagent from a Forever profession." };
+    return { title: "Item not found" };
   }
   return {
     title: `${item.name} — ${item.qualityLabel} item`,
@@ -29,7 +32,22 @@ export default async function ItemPage({ params }: { params: Promise<Params> }) 
   const item = getDbItem(id);
   if (!item) {
     const guideItem = getGuideItem(id);
-    if (!guideItem) notFound();
+    if (!guideItem) {
+      const professionItem = getProfessionItem(id);
+      if (!professionItem) notFound();
+      return (
+        <main>
+          <div className="container-x pt-8 text-xs text-muted"><Link href="/items" className="hover:text-gold-soft">Items</Link> / <span className="text-parchment/80">{professionItem.name}</span></div>
+          <section className="container-x max-w-3xl pb-20 pt-8">
+            <div className="flex items-start gap-4">
+              <img src={professionItem.icon} alt="" width={72} height={72} className="size-20 shrink-0 rounded-lg border border-line/80" />
+              <div><p className="eyebrow">{professionItem.kind === "crafted" ? "Crafted item" : "Profession reagent"}</p><h1 className="display mt-2 text-3xl text-parchment md:text-4xl">{professionItem.name}</h1><p className="mt-1 text-sm text-muted">{professionItem.itemLevel ? `Item level ${professionItem.itemLevel}` : "Material"}</p></div>
+            </div>
+            <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted"><p>This item is part of the profession database but has no full item record yet.</p><p className="mt-2 text-xs text-muted/60">Item ID {professionItem.id}</p></div>
+          </section>
+        </main>
+      );
+    }
     return (
       <main>
         <div className="container-x pt-8 text-xs text-muted"><Link href="/items" className="hover:text-gold-soft">Items</Link> / <span className="text-parchment/80">{guideItem.name_en || guideItem.name}</span></div>
