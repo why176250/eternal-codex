@@ -223,10 +223,10 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
             </form>
             <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
               <span className="text-muted">Quality</span>
-              <div className="inline-flex overflow-hidden rounded-md border border-line/80 divide-x divide-line/70">
-                <Link href={href({ quality: -1, page: 1 })} className={`px-3 py-1.5 transition-colors ${selectedQuality < 0 ? "bg-gold/10 text-gold-soft" : "text-muted hover:bg-white/[0.03] hover:text-parchment"}`}>All</Link>
+              <div className="flex flex-wrap gap-2">
+                <Link href={href({ quality: -1, page: 1 })} className={`rounded-full border px-3 py-1 transition-colors ${selectedQuality < 0 ? "border-gold/50 bg-gold/10 text-gold-soft" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}>All</Link>
                 {qualityOptions.map(([value, label]) => (
-                  <Link key={value} href={href({ quality: value, page: 1 })} className={`px-3 py-1.5 transition-colors ${selectedQuality === value ? "bg-white/[0.08]" : "hover:bg-white/[0.03]"}`} style={{ color: qualityColor(value) }}>
+                  <Link key={value} href={href({ quality: value, page: 1 })} className={`rounded-full border px-3 py-1 transition-colors ${selectedQuality === value ? "border-gold/50 bg-gold/10" : "border-line/70 hover:border-gold/40"}`} style={{ color: qualityColor(value) }}>
                     {label}
                   </Link>
                 ))}
