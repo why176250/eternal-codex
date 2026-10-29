@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/tools/builds`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/tools/gear`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/tools/class-popularity`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/tools/tier-list`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${site.url}/data`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/data/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/data/sets`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },

@@ -52,6 +52,15 @@ export const toolItems: SectionItem[] = [
     bullets: [],
   },
   {
+    slug: "tier-list",
+    label: "Tier List Maker",
+    zh: "梯度榜",
+    href: "/tools/tier-list",
+    status: "live",
+    summary: "Rank specs, classes, races, and race + class pairs with drag, tap, or keyboard shortcuts.",
+    bullets: [],
+  },
+  {
     slug: "builds",
     label: "Talent Hall",
     zh: "天赋大厅",

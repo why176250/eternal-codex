@@ -188,6 +188,18 @@ export default function ToolsPage() {
         </div>
 
         <Link
+          href="/tools/tier-list"
+          className="panel panel-hover group mt-4 flex flex-col gap-3 p-5 md:flex-row md:items-center md:justify-between"
+        >
+          <div className="min-w-0">
+            <p className="eyebrow">Tier list</p>
+            <p className="display mt-1 text-xl text-parchment">Build your own tier list</p>
+            <p className="mt-1 text-xs text-muted">Specs, classes, races, and race + class pairs — drag, tap, or use S–F.</p>
+          </div>
+          <span className="flex items-center gap-2 text-xs text-gold/85">Open maker <span className="transition-transform group-hover:translate-x-1">→</span></span>
+        </Link>
+
+        <Link
           href="/tools/class-popularity"
           className="panel panel-hover group mt-4 flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between"
         >
