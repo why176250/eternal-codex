@@ -102,9 +102,6 @@ export function ClassWheel() {
       ctx.textBaseline = "middle";
       ctx.font = "600 13px Georgia, serif";
       ctx.fillText(entry.en, outer * 0.84, 0);
-      ctx.font = "10px sans-serif";
-      ctx.fillStyle = "rgba(5,8,15,.62)";
-      ctx.fillText(entry.zh, outer * 0.84, 13);
       ctx.restore();
     });
 
@@ -165,7 +162,7 @@ export function ClassWheel() {
   return (
     <div className="panel p-4 md:p-6">
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_16rem] md:items-center">
-        <div className="flex justify-center">
+        <div className="relative mx-auto aspect-square w-full max-w-[560px]">
           <canvas
             ref={canvasRef}
             onClick={spin}
@@ -178,8 +175,16 @@ export function ClassWheel() {
               }
             }}
             aria-label="Spin the class wheel"
-            className="aspect-square w-full max-w-[560px] cursor-pointer rounded-full"
+            className="h-full w-full cursor-pointer rounded-full"
           />
+          <button
+            type="button"
+            onClick={spin}
+            disabled={spinning}
+            className="absolute left-1/2 top-1/2 grid size-28 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-gold/55 bg-abyss text-sm font-semibold tracking-wider text-gold-soft shadow-[0_0_30px_-10px_rgba(227,189,120,.8)] transition-colors hover:border-gold/80 hover:bg-deep disabled:cursor-wait disabled:opacity-70"
+          >
+            {spinning ? "..." : "SPIN"}
+          </button>
         </div>
         <div>
           <p className="eyebrow">Random pick</p>
@@ -190,8 +195,8 @@ export function ClassWheel() {
             <div className="mt-3 flex items-center gap-3">
               <img src={`/classes/icons/${classes[winner!][0].toLowerCase()}.jpg`} alt="" width={44} height={44} className="size-11 rounded-lg border border-line/80" />
               <div>
-                <p className="text-sm text-parchment">{result.zh}</p>
-                <p className="text-[10px] text-muted">Your class is {result.en}</p>
+                <p className="text-sm text-parchment">{result.en}</p>
+                <p className="text-[10px] text-muted">Your class</p>
               </div>
             </div>
           ) : (
