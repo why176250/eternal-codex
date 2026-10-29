@@ -1,0 +1,916 @@
+[
+ {
+  "faction": "Alliance",
+  "factionZh": "联盟",
+  "raceId": 1,
+  "key": "human",
+  "raceZh": "人类",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_human.png",
+  "classIds": [
+   1,
+   3,
+   8,
+   4,
+   5,
+   9,
+   2
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "生存意志",
+    "sid": 1259718,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_charm.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却",
+    "desc": "立即移除所有昏迷效果。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "感知",
+    "sid": 20600,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_sleep.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 20秒",
+    "desc": "提高潜行侦测能力，持续20秒。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "无情",
+    "sid": 20597,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_rogue_eviscerate.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "使你的所有法术和攻击造成爆击的几率提高2%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "人类精魂",
+    "sid": 20598,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_enchant_shardbrilliantsmall.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "精神提高5%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "神圣恩典",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_priest_savinggrace.png",
+    "type": "active",
+    "info": "瞬发 | 40码",
+    "desc": "立即为一名生命值低于50%的友方目标恢复131到167点生命值，并移除该目标身上的虚弱灵魂效果。不能对自己施放。",
+    "ranks": [
+     {
+      "id": 1277370,
+      "level": 10
+     },
+     {
+      "id": 1277371,
+      "level": 18
+     },
+     {
+      "id": 1277372,
+      "level": 26
+     },
+     {
+      "id": 1277374,
+      "level": 34
+     },
+     {
+      "id": 1277376,
+      "level": 42
+     },
+     {
+      "id": 1277377,
+      "level": 50
+     },
+     {
+      "id": 1277378,
+      "level": 58
+     }
+    ],
+    "activeRankId": 1277370
+   }
+  ]
+ },
+ {
+  "faction": "Alliance",
+  "factionZh": "联盟",
+  "raceId": 3,
+  "key": "dwarf",
+  "raceZh": "矮人",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_dwarf.png",
+  "classIds": [
+   1,
+   3,
+   4,
+   5,
+   2,
+   7
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "石像形态",
+    "sid": 20594,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_unholystrength.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 8秒",
+    "desc": "立即移除并免疫所有流血、中毒和疾病效果，并使受到的所有物理伤害降低10%，持续8秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "寻找财宝",
+    "sid": 2481,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/racial_dwarf_findtreasure.png",
+    "activeKind": "",
+    "info": "瞬发",
+    "desc": "使矮人可以感知附近宝藏的位置，并将其显示在微缩地图上，持续。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "大地之怒",
+    "sid": 1259719,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shaman_unleashweapon_earth.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "使你的爆击伤害和治疗加成提高2%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "王牌猎人",
+    "sid": 1259721,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_weapon_rifle_05.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "对野兽造成的伤害提高5%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "责罚",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_holy_chastise.png",
+    "type": "active",
+    "info": "225法力值 | 瞬发 | 20码 | 持续 2秒",
+    "desc": "无法行动。",
+    "ranks": [
+     {
+      "id": 585,
+      "level": 1
+     },
+     {
+      "id": 591,
+      "level": 6
+     },
+     {
+      "id": 598,
+      "level": 14
+     },
+     {
+      "id": 1277331,
+      "level": 20
+     },
+     {
+      "id": 984,
+      "level": 22
+     },
+     {
+      "id": 1004,
+      "level": 30
+     },
+     {
+      "id": 1277332,
+      "level": 30
+     },
+     {
+      "id": 6060,
+      "level": 38
+     },
+     {
+      "id": 1277333,
+      "level": 40
+     },
+     {
+      "id": 10933,
+      "level": 46
+     },
+     {
+      "id": 1277334,
+      "level": 50
+     },
+     {
+      "id": 10934,
+      "level": 54
+     },
+     {
+      "id": 1277335,
+      "level": 60
+     }
+    ],
+    "activeRankId": 1277335
+   },
+   {
+    "name": "绝望祷言",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_holy_restoration.png",
+    "type": "active",
+    "info": "瞬发",
+    "desc": "立即为施法者回复1269到1497点生命值。",
+    "ranks": [
+     {
+      "id": 13908,
+      "level": 10
+     },
+     {
+      "id": 19236,
+      "level": 18
+     },
+     {
+      "id": 19238,
+      "level": 26
+     },
+     {
+      "id": 19240,
+      "level": 34
+     },
+     {
+      "id": 19241,
+      "level": 42
+     },
+     {
+      "id": 19242,
+      "level": 50
+     },
+     {
+      "id": 19243,
+      "level": 58
+     }
+    ],
+    "activeRankId": 19243
+   }
+  ]
+ },
+ {
+  "faction": "Alliance",
+  "factionZh": "联盟",
+  "raceId": 4,
+  "key": "nightelf",
+  "raceZh": "暗夜精灵",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_nightelf.png",
+  "classIds": [
+   1,
+   3,
+   4,
+   5,
+   11
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "艾露恩之光",
+    "sid": 1259799,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_moonglow.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 15秒",
+    "desc": "使你的所有法术和攻击的爆击几率提高10%，持续15秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "影遁",
+    "sid": 20580,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_ambush.png",
+    "activeKind": "",
+    "info": "瞬发",
+    "desc": "激活后潜入暗影之中，降低敌人发现你的几率。持续直到取消或移动。在战斗中使用此技能会降低敌人攻击你的意愿，但冷却时间延长至2分钟。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "迅捷",
+    "sid": 20582,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_racial_shadowmeld.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "躲闪几率提高1%，移动速度提高2%。暗夜精灵潜行者和德鲁伊在潜行时更难被发现，效果相当于潜行等级提高1级。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "精灵之魂",
+    "sid": 20585,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_wispsplode.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "死后变成小精灵，移动速度提高75%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "艾露恩的赐福",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_holy_elunesgrace.png",
+    "type": "active",
+    "info": "3%法力值 | 瞬发 | 持续 15秒",
+    "desc": "使你被近战和远程攻击命中的几率降低50%，持续15秒，或直到被未命中3次为止。",
+    "ranks": [],
+    "activeRankId": 2651
+   },
+   {
+    "name": "星辰碎片",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_arcane_starfire.png",
+    "type": "active",
+    "info": "350法力值 | 瞬发 | 30码 | 持续 6秒",
+    "desc": "召唤群星的碎片攻击敌人，在6秒内对其造成1800点奥术伤害。",
+    "ranks": [
+     {
+      "id": 10797,
+      "level": 10
+     },
+     {
+      "id": 19296,
+      "level": 18
+     },
+     {
+      "id": 19299,
+      "level": 26
+     },
+     {
+      "id": 19302,
+      "level": 34
+     },
+     {
+      "id": 19303,
+      "level": 42
+     },
+     {
+      "id": 19304,
+      "level": 50
+     },
+     {
+      "id": 19305,
+      "level": 58
+     }
+    ],
+    "activeRankId": 19305
+   }
+  ]
+ },
+ {
+  "faction": "Alliance",
+  "factionZh": "联盟",
+  "raceId": 7,
+  "key": "gnome",
+  "raceZh": "侏儒",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_gnome.png",
+  "classIds": [
+   1,
+   8,
+   4,
+   5,
+   9
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "逃命专家",
+    "sid": 20589,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_rogue_trip.png",
+    "activeKind": "",
+    "info": "瞬发 | 2分钟冷却 | 持续 3秒",
+    "desc": "立即摆脱任何限制移动效果的影响，并对这些效果免疫，持续3秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "我知道了！",
+    "sid": 1259817,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_gnometoy.png",
+    "activeKind": "",
+    "info": "瞬发 | 2分钟冷却 | 持续 15秒",
+    "desc": "潜行者：你的非周期性伤害技能消耗的能量减少10%，造成的伤害提高10%。\n术士：你的非周期性伤害技能消耗的法力值减少10%，造成的伤害提高10%。\n牧师：你的非周期性伤害技能消耗的法力值减少10%，造成的伤害提高10%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "开阔思维",
+    "sid": 20591,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_enchant_essenceeternallarge.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "牧师、法师、术士：最大法力值提高5%。\n潜行者：最大能量值提高5%。\n战士：最大怒气值提高5%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "工程学专精",
+    "sid": 20593,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_gear_01.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "你的侏儒才智使你在使用工程学装置时出现故障或发生反冲的几率降低20%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "迷惑闪光",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_paladin_blindinglight2.png",
+    "type": "active",
+    "info": "3%法力值 | 0.5秒 | 2分钟冷却 | 持续 3秒",
+    "desc": "迷惑8码内的最多5个敌人，持续3秒。任何伤害都会打断此效果。",
+    "ranks": [],
+    "activeRankId": 1277455
+   },
+   {
+    "name": "应急方案",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_priest_soulwarding.png",
+    "type": "active",
+    "info": "瞬发 | 30码 | 持续 30秒",
+    "desc": "为一名盟友施加神圣结界，持续30秒。下一次该盟友受到使其生命值降至35%以下的伤害时，将获得一个可吸收155点伤害的护盾，并在15秒内恢复125点生命值。同一目标只能受到一个应急方案的影响。",
+    "ranks": [
+     {
+      "id": 1277462,
+      "level": 20
+     },
+     {
+      "id": 1277634,
+      "level": 30
+     },
+     {
+      "id": 1277638,
+      "level": 40
+     },
+     {
+      "id": 1277639,
+      "level": 50
+     },
+     {
+      "id": 1277640,
+      "level": 60
+     }
+    ],
+    "activeRankId": 1277462
+   }
+  ]
+ },
+ {
+  "faction": "Alliance",
+  "factionZh": "联盟",
+  "raceId": 95,
+  "key": "skyborne-high",
+  "raceZh": "天裔（圣序）",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_bannerpvp_02.png",
+  "classIds": [
+   1,
+   3,
+   8,
+   4,
+   11
+  ],
+  "abilities": [
+   {
+    "type": "passive",
+    "name": "踏空而行",
+    "sid": 1259416,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_elemental_primal_air.png",
+    "activeKind": "",
+    "info": "2分钟冷却 | 持续 10秒",
+    "desc": "在半空中滑翔下降，持续10秒，并可控制移动方向。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "阅读魔网",
+    "sid": 1259705,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_mage_incantersabsorbtion.png",
+    "activeKind": "",
+    "info": "2秒 | 2分钟冷却",
+    "desc": "尝试引动附近魔网的力量，使生命与法力恢复速度提高100%。若附近没有魔网，持续15秒；若有，则持续15分钟。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "风灵护佑",
+    "sid": 1259710,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_volatileair.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "法术、近战和远程急速提高3%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "元素洞察",
+    "sid": 1259707,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/achievement_raidprimalist_windelemental.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "对元素生物造成的伤害提高5%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": []
+ },
+ {
+  "faction": "Horde",
+  "factionZh": "部落",
+  "raceId": 2,
+  "key": "orc",
+  "raceZh": "兽人",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_orc.png",
+  "classIds": [
+   1,
+   3,
+   8,
+   4,
+   9,
+   7
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "血性狂暴",
+    "sid": 20572,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/racial_orc_berserkerstrength.png",
+    "activeKind": "",
+    "info": "瞬发 | 2分钟冷却 | 持续 15秒",
+    "desc": "攻击强度和法术强度提高10%，持续15秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "粉碎诅咒",
+    "sid": 1299026,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_removecurse.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 8秒",
+    "desc": "立即移除并免疫所有诅咒和灾祸效果，受到的所有魔法伤害降低5%，持续8秒。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "残暴",
+    "sid": 20574,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_axe_02.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "使你的所有法术和技能造成爆击的几率提高1%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "坚韧",
+    "sid": 20573,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_helmet_23.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "使你受到的昏迷效果持续时间缩短20%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": []
+ },
+ {
+  "faction": "Horde",
+  "factionZh": "部落",
+  "raceId": 5,
+  "key": "undead",
+  "raceZh": "亡灵",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_scourge.png",
+  "classIds": [
+   1,
+   8,
+   4,
+   5,
+   9,
+   2
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "被遗忘者的意志",
+    "sid": 7744,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_raisedead.png",
+    "activeKind": "",
+    "info": "瞬发 | 2分钟冷却",
+    "desc": "立即移除所有魅惑、恐惧和催眠效果。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "食尸",
+    "sid": 20577,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_racial_cannibalize.png",
+    "activeKind": "",
+    "info": "瞬发 | 5码 | 2分钟冷却",
+    "desc": "激活之后，每2秒回复总生命值的7%和总法力值的7%，持续10秒。只能对半径5码范围内的人型生物或亡灵的尸体使用。在食尸时进行移动、做出任何动作或受到任何伤害都会中断效果。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "水下呼吸",
+    "sid": 5227,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_demonbreath.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "在水下呼吸的时间延长300%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "哀伤之触",
+    "sid": 1260189,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_fingerofdeath.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "战士、圣骑士、潜行者：你的法术和攻击有20%的几率吸取目标生命值，最多相当于你最大生命值的5%。\n牧师、法师、术士：你的法术和攻击有30%的几率吸取目标生命值，最多相当于你最大生命值的5%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "黑暗献祭",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_holy_powerinfusion_shadow.png",
+    "type": "active",
+    "info": "瞬发 | 持续 15秒",
+    "desc": "每3秒将80点生命值转化为80点法力值。",
+    "ranks": [
+     {
+      "id": 1277324,
+      "level": 20
+     },
+     {
+      "id": 1277325,
+      "level": 30
+     },
+     {
+      "id": 1277326,
+      "level": 40
+     },
+     {
+      "id": 1277327,
+      "level": 50
+     },
+     {
+      "id": 1277328,
+      "level": 60
+     }
+    ],
+    "activeRankId": 1277324
+   }
+  ]
+ },
+ {
+  "faction": "Horde",
+  "factionZh": "部落",
+  "raceId": 6,
+  "key": "tauren",
+  "raceZh": "牛头人",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_tauren.png",
+  "classIds": [
+   1,
+   3,
+   11,
+   7
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "战争践踏",
+    "sid": 20549,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_warstomp.png",
+    "activeKind": "",
+    "info": "0.5秒 | 2分钟冷却 | 持续 2秒",
+    "desc": "使身边半径8码范围内的最多5个敌人昏迷，持续2秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "栽培",
+    "sid": 20552,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_flower_01.png",
+    "activeKind": "",
+    "info": "瞬发",
+    "desc": "栽培附近的一株草药，生长出一株无需草药学技能即可采集的复制品。每株草药只能栽培一次。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "原野疾驰",
+    "sid": 1259918,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/achievement_zone_barrens_01.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "移动时每5秒使移动速度提高1%，最高可提高30%。受到伤害或站立不动会降低此效果。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "耐久",
+    "sid": 20550,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_unyeildingstamina.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "总生命值提高5%，爆击伤害和治疗加成提高2%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": []
+ },
+ {
+  "faction": "Horde",
+  "factionZh": "部落",
+  "raceId": 8,
+  "key": "troll",
+  "raceZh": "巨魔",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_tournaments_banner_troll.png",
+  "classIds": [
+   1,
+   3,
+   8,
+   4,
+   5,
+   9,
+   7
+  ],
+  "abilities": [
+   {
+    "type": "active",
+    "name": "狂暴",
+    "sid": 20554,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/racial_troll_berserk.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 10秒",
+    "desc": "使你的施法和攻击速度提高10%，持续10秒。",
+    "variants": []
+   },
+   {
+    "type": "active",
+    "name": "极速再生",
+    "sid": 1260270,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_racial_regeneratin.png",
+    "activeKind": "",
+    "info": "瞬发 | 3分钟冷却 | 持续 6秒",
+    "desc": "在6秒内恢复最大生命值的50%。任何移动、动作或受到伤害都会取消该效果。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "野兽杀手",
+    "sid": 20557,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_pelt_bear_ruin_02.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "对野兽的伤害提高5%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "再生",
+    "sid": 20555,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_regenerate.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "生命值回复速度提高20%，在战斗中仍可保持20%的生命值回复速度。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": [
+   {
+    "name": "虚弱妖术",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_shadow_fingerofdeath.png",
+    "type": "active",
+    "info": "240法力值 | 瞬发 | 30码 | 持续 2分钟",
+    "desc": "削弱目标敌人，使其近战攻击强度降低204点，并使其受到的任何治疗效果降低20%。持续2分钟。",
+    "ranks": [
+     {
+      "id": 9035,
+      "level": 10
+     },
+     {
+      "id": 19281,
+      "level": 20
+     },
+     {
+      "id": 19282,
+      "level": 30
+     },
+     {
+      "id": 19283,
+      "level": 40
+     },
+     {
+      "id": 19284,
+      "level": 50
+     },
+     {
+      "id": 19285,
+      "level": 60
+     }
+    ],
+    "activeRankId": 19285
+   },
+   {
+    "name": "暗影守卫",
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/spell_nature_lightningshield.png",
+    "type": "active",
+    "info": "250法力值 | 瞬发 | 持续 10分钟",
+    "desc": "施法者被暗影笼罩。如果施法者受到了法术、近战或远程伤害，则攻击者会受到96点暗影伤害。一个攻击者在短期内只会受到一次反噬伤害。这种伤害不会造成威胁值。可使用3次，持续10分钟。",
+    "ranks": [
+     {
+      "id": 18137,
+      "level": 20
+     },
+     {
+      "id": 19308,
+      "level": 28
+     },
+     {
+      "id": 19309,
+      "level": 36
+     },
+     {
+      "id": 19310,
+      "level": 44
+     },
+     {
+      "id": 19311,
+      "level": 52
+     },
+     {
+      "id": 19312,
+      "level": 60
+     }
+    ],
+    "activeRankId": 19312
+   }
+  ]
+ },
+ {
+  "faction": "Horde",
+  "factionZh": "部落",
+  "raceId": 96,
+  "key": "skyborne-wind",
+  "raceZh": "天裔（塑风者）",
+  "raceIcon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_bannerpvp_01.png",
+  "classIds": [
+   1,
+   3,
+   4,
+   11,
+   7
+  ],
+  "abilities": [
+   {
+    "type": "passive",
+    "name": "踏空而行",
+    "sid": 1259416,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_elemental_primal_air.png",
+    "activeKind": "",
+    "info": "2分钟冷却 | 持续 10秒",
+    "desc": "在半空中滑翔下降，持续10秒，并可控制移动方向。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "天穹视界",
+    "sid": 1259686,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/ability_skyreach_lens_flare.png",
+    "activeKind": "",
+    "info": "0.5秒 | 2分钟冷却",
+    "desc": "尝试汲取元素交汇处的力量以获取祝福，使移动速度和骑乘速度提高10%。若附近没有元素交汇处，持续30秒；若有，则持续15分钟。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "风灵护佑",
+    "sid": 1259710,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/inv_misc_volatileair.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "法术、近战和远程急速提高3%。",
+    "variants": []
+   },
+   {
+    "type": "passive",
+    "name": "元素洞察",
+    "sid": 1259707,
+    "icon": "https://wowtian-1433885333.cos.ap-guangzhou.myqcloud.com/images/interface/icons/achievement_raidprimalist_windelemental.png",
+    "activeKind": "",
+    "info": "",
+    "desc": "对元素生物造成的伤害提高5%。",
+    "variants": []
+   }
+  ],
+  "priestAbilities": []
+ }
+]

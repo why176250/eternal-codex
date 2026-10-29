@@ -107,19 +107,49 @@ export const dataItems: SectionItem[] = [
   {
     slug: "items",
     label: "Item Database",
-    zh: "装备数据",
-    href: "/database",
+    zh: "物品库",
+    href: "/items",
     status: "live",
     summary:
-      "35 pre-raid and early-raid items with slot, quality, source, and phase filters.",
+      "7,823 English-named Forever items with quality, item level, type, and slot filters.",
+    bullets: [],
+  },
+  {
+    slug: "spells",
+    label: "Spellbook",
+    zh: "法术书",
+    href: "/spells",
+    status: "live",
+    summary:
+      "31,928 spells and abilities, searchable by name and school.",
+    bullets: [],
+  },
+  {
+    slug: "races",
+    label: "Races",
+    zh: "种族",
+    href: "/races",
+    status: "live",
+    summary:
+      "Ten races, factions, and active/passive racial abilities.",
+    bullets: [],
+  },
+  {
+    slug: "quests",
+    label: "Quest Database",
+    zh: "任务库",
+    href: "/quests",
+    status: "live",
+    summary:
+      "401 quests with level, giver, zone, and side filters.",
     bullets: [],
   },
   {
     slug: "professions",
     label: "Profession Data",
     zh: "专业资料",
-    href: "/data/professions",
-    status: "planned",
+    href: "/professions",
+    status: "live",
     summary:
       "Recipe database, trainer locations, skill-up paths, and profit per craft.",
     bullets: [
