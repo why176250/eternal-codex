@@ -4,6 +4,20 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { TimelineEntry, TimelineLane } from "@/lib/dungeon-timeline";
 
+const abbreviations: Record<string, string> = {
+  Scholomance: "Scholo",
+  "Stratholme: Crusaders' Square": "Strat Live",
+  "Stratholme: Main Gate": "Strat Live",
+  "Stratholme: The Unforgiven": "Strat UD",
+  "Stratholme: Service Gate": "Strat UD",
+  "Upper Blackrock Spire": "UBRS",
+  "Shaper's Terrace": "Shaper's",
+};
+
+function shortName(name: string) {
+  return abbreviations[name] ?? name;
+}
+
 function overlaps(a: TimelineEntry, b: TimelineEntry) {
   const pad = 6;
   return a.left < b.left + b.width + pad && a.left + a.width > b.left - pad;
@@ -59,6 +73,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                   >
                     <Link
                       href={`/dungeons/${dungeon.id}`}
+                      title={`${dungeon.nameEn} · ${dungeon.levelMin}-${dungeon.levelMax}`}
                       className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
                         borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
@@ -67,17 +82,15 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     >
                       <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
                       <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.58), rgba(4,14,24,.12))" : "linear-gradient(90deg, rgba(18,13,8,.62), rgba(18,13,8,.12))" }} />
-                      <span className={`relative z-10 flex h-full min-w-0 flex-1 flex-col ${narrow ? "justify-end" : "justify-center gap-0.5"} px-2.5 py-1.5`}>
-                        {!narrow ? <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span> : null}
+                      <span className={`relative z-10 flex h-full min-w-0 flex-1 flex-col ${narrow ? "justify-center gap-0.5" : "justify-center gap-0.5"} px-2.5 py-1.5`}>
+                        {narrow ? (
+                          <span className="whitespace-nowrap text-[10px] font-bold leading-tight text-white">{shortName(dungeon.nameEn)}</span>
+                        ) : (
+                          <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
+                        )}
                         <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
                       </span>
                     </Link>
-                    {narrow ? (
-                      <span className="absolute left-0 top-full mt-0.5 w-40 whitespace-normal text-[10px] leading-tight text-parchment line-clamp-2">
-                        {dungeon.nameEn}
-                      </span>
-                    ) : null}
-
                     {active ? (
                       <div className={`absolute bottom-full z-50 mb-2 w-72 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>
                         <div className="relative h-24 overflow-hidden bg-deep">
