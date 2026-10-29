@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/classes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/class-finder`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${site.url}/database`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${site.url}/search`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    { url: `${site.url}/npcs`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/items`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${site.url}/spells`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${site.url}/races`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

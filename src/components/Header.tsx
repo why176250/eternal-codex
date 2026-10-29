@@ -63,7 +63,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:flex" />
           <Link
-            href="/database"
+            href="/search"
             className="hidden items-center gap-2 rounded-md border border-line bg-panel px-3 py-1.5 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment sm:flex"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -119,7 +119,7 @@ export function Header() {
               <LanguageSwitcher />
             </div>
             <Link
-              href="/database"
+              href="/search"
               onClick={() => setOpen(false)}
               className="mt-1 rounded-md px-3 py-2.5 text-sm text-gold/90 hover:text-gold-soft"
             >
