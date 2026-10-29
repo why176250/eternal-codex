@@ -50,7 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/data/hunter-pets`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${site.url}/data/abilities`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${site.url}/guides/professions`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/professions/forever`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${site.url}/guides/pvp`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${site.url}/guides/forever`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
   ];
