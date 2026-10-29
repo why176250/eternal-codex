@@ -32,10 +32,10 @@ function layout(list: typeof ACTUAL) {
     const start = Math.max(MIN, dungeon.min || MIN);
     const end = Math.min(MAX, Math.max(start + 5, dungeon.max || start + 5));
     let visualStart = start;
-    let visualEnd = Math.min(MAX, Math.max(end, start + 8));
-    if (visualEnd - visualStart < 8) {
+    let visualEnd = Math.min(MAX, Math.max(end, start + 10));
+    if (visualEnd - visualStart < 10) {
       visualEnd = MAX;
-      visualStart = Math.max(MIN, MAX - 8);
+      visualStart = Math.max(MIN, MAX - 10);
     }
     let lane = lanes.findIndex((lastEnd) => visualStart > lastEnd + 1);
     if (lane < 0) {

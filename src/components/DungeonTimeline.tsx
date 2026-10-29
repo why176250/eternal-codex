@@ -40,7 +40,7 @@ function Row({
   return (
     <div className="border-t border-line/50 py-3 first:border-0">
       <div className="mb-2 text-[10px] uppercase tracking-[0.18em] text-muted">{label}</div>
-      <div className="relative" style={{ height: `${laneCount * 48}px` }}>
+      <div className="relative" style={{ height: `${laneCount * 64}px` }}>
         {entries.map((entry) => {
           const { dungeon, lane, left, width, start, end } = entry;
           const isHovered = hovered === dungeon.id;
@@ -50,11 +50,11 @@ function Row({
           return (
             <div
               key={dungeon.id}
-              className="absolute z-10 h-10 transition-[opacity,filter] duration-200 hover:z-40"
+              className="absolute z-10 h-14 transition-[opacity,filter] duration-200 hover:z-40"
               style={{
                 left: `${left}%`,
-                width: `${Math.max(width, 7)}%`,
-                top: `${lane * 44}px`,
+                width: `${Math.max(width, 10)}%`,
+                top: `${lane * 60}px`,
                 opacity: dimmed ? 0.25 : 1,
                 filter: dimmed ? "grayscale(1)" : undefined,
               }}
@@ -63,7 +63,7 @@ function Row({
             >
               <Link
                 href={`/dungeons/${dungeon.id}`}
-                className="relative flex h-full w-full items-center overflow-hidden rounded border text-[11px] shadow-lg"
+                className="relative flex h-full w-full items-center overflow-hidden rounded-md border text-xs shadow-lg"
                 style={{
                   borderColor: dungeon.isNew ? "#4ea8d888" : "#a9884c88",
                   backgroundColor: "#08111f",
@@ -82,13 +82,13 @@ function Row({
                   }}
                 />
                 <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-between px-2 py-1.5 text-parchment">
-                  <span className="truncate text-[11px] leading-tight">{dungeon.name}</span>
-                  <span className="text-[9px] leading-none text-muted">{dungeon.band}</span>
+                  <span className="truncate text-xs font-medium leading-tight md:text-sm">{dungeon.name}</span>
+                  <span className="text-[10px] leading-none text-muted">{dungeon.band}</span>
                 </span>
               </Link>
 
               {isHovered ? (
-                <div className={`absolute bottom-full z-50 mb-2 w-72 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>
+                <div className={`absolute bottom-full z-50 mb-2 w-80 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>
                   <div className="relative h-24 overflow-hidden bg-deep">
                     <span
                       className="absolute inset-0 bg-cover bg-center"
