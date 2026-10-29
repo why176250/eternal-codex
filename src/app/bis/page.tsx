@@ -28,6 +28,10 @@ export default function BisPage() {
 
       <section>
         <div className="container-x py-12">
+          <div className="mb-5 flex flex-wrap gap-2">
+            <Link href="/bis/builds" className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft">Browse all 64 imported BiS builds →</Link>
+          </div>
+
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {bisClasses.map((entry) => {
               const wowClass = getClass(entry.classId);
