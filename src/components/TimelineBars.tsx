@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { TimelineEntry, TimelineLane } from "@/lib/dungeon-timeline";
 
 function overlaps(a: TimelineEntry, b: TimelineEntry) {
@@ -11,9 +11,21 @@ function overlaps(a: TimelineEntry, b: TimelineEntry) {
 
 export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
   const [hovered, setHovered] = useState<TimelineEntry | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  useEffect(() => {
+    const node = containerRef.current;
+    if (!node) return;
+    const update = () => setContainerWidth(node.getBoundingClientRect().width);
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div>
+    <div ref={containerRef}>
       {lanes.map((lane) => {
         const rows = Math.max(...lane.dungeons.map((dungeon) => dungeon.row), 0) + 1;
         return (
@@ -24,6 +36,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
             </div>
             <div className="relative" style={{ height: `${rows * 54}px` }}>
               {lane.dungeons.map((dungeon) => {
+                const narrow = containerWidth > 0 && (dungeon.width / 100) * containerWidth < 60;
                 const active = hovered?.id === dungeon.id;
                 const nearby = !hovered || active || overlaps(dungeon, hovered);
                 const dimmed = Boolean(hovered && !nearby);
@@ -54,11 +67,16 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     >
                       <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
                       <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.58), rgba(4,14,24,.12))" : "linear-gradient(90deg, rgba(18,13,8,.62), rgba(18,13,8,.12))" }} />
-                      <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
-                        <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
+                      <span className={`relative z-10 flex h-full min-w-0 flex-1 flex-col ${narrow ? "justify-end" : "justify-center gap-0.5"} px-2.5 py-1.5`}>
+                        {!narrow ? <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span> : null}
                         <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
                       </span>
                     </Link>
+                    {narrow ? (
+                      <span className="absolute left-0 top-full mt-0.5 w-40 whitespace-normal text-[10px] leading-tight text-parchment line-clamp-2">
+                        {dungeon.nameEn}
+                      </span>
+                    ) : null}
 
                     {active ? (
                       <div className={`absolute bottom-full z-50 mb-2 w-72 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>
