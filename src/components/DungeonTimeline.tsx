@@ -53,7 +53,7 @@ function Row({
               className="absolute z-10 h-14 transition-[opacity,filter] duration-200 hover:z-40"
               style={{
                 left: `${left}%`,
-                width: `${Math.max(width, 10)}%`,
+                width: `${Math.max(width, 14)}%`,
                 top: `${lane * 60}px`,
                 opacity: dimmed ? 0.25 : 1,
                 filter: dimmed ? "grayscale(1)" : undefined,
