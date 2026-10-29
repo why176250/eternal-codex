@@ -193,8 +193,8 @@ export default function ToolsPage() {
         >
           <div className="min-w-0">
             <p className="eyebrow">Tier list</p>
-            <p className="display mt-1 text-xl text-parchment">Build your own tier list</p>
-            <p className="mt-1 text-xs text-muted">Specs, classes, races, and race + class pairs — drag, tap, or use S–F.</p>
+            <p className="display mt-1 text-xl text-parchment">Tier List · spec strength</p>
+            <p className="mt-1 text-xs text-muted">DPS, tank, and healer rankings plus a drag-and-drop maker for specs, classes, and races.</p>
           </div>
           <span className="flex items-center gap-2 text-xs text-gold/85">Open maker <span className="transition-transform group-hover:translate-x-1">→</span></span>
         </Link>

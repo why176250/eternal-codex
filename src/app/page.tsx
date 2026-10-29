@@ -4,6 +4,7 @@ import { LaunchCountdown } from "@/components/LaunchCountdown";
 import { DataUpdatingLink } from "@/components/DataUpdatingLink";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
+import { SpecTierBoard } from "@/components/SpecTierBoard";
 
 export default function HomePage() {
   return (
@@ -150,6 +151,8 @@ export default function HomePage() {
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </span>
         </Link>
+
+        <SpecTierBoard compact />
 
         <div className="mt-12 border-t border-line/60 pt-8">
           <div className="flex flex-wrap items-end justify-between gap-4">

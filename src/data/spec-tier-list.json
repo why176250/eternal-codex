@@ -1,0 +1,179 @@
+{
+ "levelCap": 30,
+ "updatedAt": "2026-10-14",
+ "roles": {
+  "dps": {
+   "total": 20,
+   "tiers": {
+    "A": [
+     {
+      "specId": 1,
+      "name": "武器战士",
+      "rank": 1
+     },
+     {
+      "specId": 2,
+      "name": "狂怒战士",
+      "rank": 1
+     },
+     {
+      "specId": 6,
+      "name": "惩戒圣骑士",
+      "rank": 1
+     },
+     {
+      "specId": 10,
+      "name": "奥术法师",
+      "rank": 1
+     },
+     {
+      "specId": 11,
+      "name": "火焰法师",
+      "rank": 1
+     },
+     {
+      "specId": 12,
+      "name": "冰霜法师",
+      "rank": 1
+     },
+     {
+      "specId": 19,
+      "name": "奇袭潜行者",
+      "rank": 1
+     },
+     {
+      "specId": 20,
+      "name": "战斗潜行者",
+      "rank": 1
+     },
+     {
+      "specId": 21,
+      "name": "敏锐潜行者",
+      "rank": 1
+     }
+    ],
+    "B": [
+     {
+      "specId": 22,
+      "name": "元素萨满",
+      "rank": 2
+     },
+     {
+      "specId": 33,
+      "name": "野性战斗德鲁伊",
+      "rank": 2
+     }
+    ],
+    "C": [
+     {
+      "specId": 15,
+      "name": "暗影牧师",
+      "rank": 3
+     },
+     {
+      "specId": 25,
+      "name": "平衡德鲁伊",
+      "rank": 3
+     }
+    ],
+    "S": [
+     {
+      "specId": 7,
+      "name": "野兽控制猎人",
+      "rank": 0
+     },
+     {
+      "specId": 8,
+      "name": "射击猎人",
+      "rank": 0
+     },
+     {
+      "specId": 9,
+      "name": "生存猎人",
+      "rank": 0
+     },
+     {
+      "specId": 16,
+      "name": "痛苦术士",
+      "rank": 0
+     },
+     {
+      "specId": 17,
+      "name": "恶魔学识术士",
+      "rank": 0
+     },
+     {
+      "specId": 18,
+      "name": "毁灭术士",
+      "rank": 0
+     },
+     {
+      "specId": 23,
+      "name": "增强萨满",
+      "rank": 0
+     }
+    ]
+   }
+  },
+  "tank": {
+   "total": 3,
+   "tiers": {
+    "A": [
+     {
+      "specId": 3,
+      "name": "防护战士",
+      "rank": 1
+     },
+     {
+      "specId": 33,
+      "name": "野性战斗德鲁伊",
+      "rank": 1
+     }
+    ],
+    "S": [
+     {
+      "specId": 5,
+      "name": "防护圣骑士",
+      "rank": 0
+     }
+    ]
+   }
+  },
+  "healer": {
+   "total": 5,
+   "tiers": {
+    "A": [
+     {
+      "specId": 24,
+      "name": "恢复萨满",
+      "rank": 1
+     },
+     {
+      "specId": 28,
+      "name": "恢复德鲁伊",
+      "rank": 1
+     }
+    ],
+    "B": [
+     {
+      "specId": 4,
+      "name": "神圣圣骑士",
+      "rank": 2
+     }
+    ],
+    "S": [
+     {
+      "specId": 13,
+      "name": "戒律牧师",
+      "rank": 0
+     },
+     {
+      "specId": 14,
+      "name": "神圣牧师",
+      "rank": 0
+     }
+    ]
+   }
+  }
+ }
+}

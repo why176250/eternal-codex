@@ -3,6 +3,7 @@ import { allSpecGuides } from "@/lib/spec-guides";
 import { classes } from "@/lib/data";
 import races from "@/data/racials-db.json";
 import { TierListMaker, type TierItem, type TierMode } from "@/components/TierListMaker";
+import { SpecTierBoard } from "@/components/SpecTierBoard";
 
 export const metadata: Metadata = {
   title: "Tier list maker — Forever specs, classes, races",
@@ -78,7 +79,8 @@ export default function TierListPage() {
           </p>
         </div>
       </section>
-      <section className="container-x py-8">
+      <section className="container-x space-y-6 py-8">
+        <SpecTierBoard />
         <TierListMaker data={data} />
       </section>
     </main>
