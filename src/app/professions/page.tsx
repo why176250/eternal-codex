@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/professions" },
 };
 
-type SearchParams = Promise<{ p?: string; q?: string; page?: string; tab?: string; c?: string }>;
+type SearchParams = Promise<{ p?: string; q?: string; page?: string; tab?: string; c?: string; quality?: string }>;
 const PAGE_SIZE = 24;
 const TABS = [
   ["recipes", "Recipes"],
@@ -114,13 +114,23 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
   const profession = getProfession(selectedId) ?? professions[0];
   const tab = (TABS.some(([key]) => key === params.tab) ? params.tab : "recipes") as Tab;
   const selectedCategory = params.c ?? "";
+  const selectedQuality = Number(params.quality) || 0;
+  const qualityOptions = [
+    [1, "Common"],
+    [2, "Uncommon"],
+    [3, "Rare"],
+    [4, "Epic"],
+  ] as const;
   const query = (params.q ?? "").trim();
   const page = Math.max(1, Number(params.page) || 1);
   const allRecipes = getRecipes(profession.skillLineId);
   const guideSteps = buildSkillGuide(allRecipes);
-  const baseFiltered = query
+  const queryFiltered = query
     ? allRecipes.filter((recipe) => `${recipe.localesName} ${recipe.reagents.map((r) => r.nameCn).join(" ")}`.toLowerCase().includes(query.toLowerCase()))
     : allRecipes;
+  const baseFiltered = selectedQuality
+    ? queryFiltered.filter((recipe) => recipe.quality === selectedQuality)
+    : queryFiltered;
   const categoryOptions = (profession ? ((await import("@/data/professions.json")).categories as Record<string, { label: string; inventoryType: number }[]>)[String(profession.skillLineId)] ?? [] : [])
     .map((category) => ({
       label: category.label,
@@ -142,7 +152,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
   const englishName = professionEnglish[profession.name] ?? profession.name;
   const description = professionDescriptions[englishName] ?? "Recipes, materials, and skill requirements.";
 
-  function href(next: { p?: number; q?: string; page?: number; tab?: Tab; c?: string }) {
+  function href(next: { p?: number; q?: string; page?: number; tab?: Tab; c?: string; quality?: number }) {
     const search = new URLSearchParams();
     const professionId = next.p ?? profession.skillLineId;
     if (professionId !== (professions[0]?.skillLineId ?? 165)) search.set("p", String(professionId));
@@ -152,6 +162,8 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
     if (nextTab !== "recipes") search.set("tab", nextTab);
     const nextCategory = next.c ?? selectedCategory;
     if (nextTab === "recipes" && nextCategory) search.set("c", nextCategory);
+    const nextQuality = next.quality ?? selectedQuality;
+    if (nextTab === "recipes" && nextQuality) search.set("quality", String(nextQuality));
     if ((next.page ?? 1) > 1) search.set("page", String(next.page));
     return search.toString() ? `/professions?${search.toString()}` : "/professions";
   }
@@ -182,7 +194,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
           {professions.map((entry) => {
             const active = entry.skillLineId === profession.skillLineId;
             return (
-              <Link key={entry.skillLineId} href={href({ p: entry.skillLineId, q: "", page: 1, tab, c: "" })} className={`flex items-center gap-2 rounded-lg border px-3 py-2.5 transition-colors ${active ? "border-gold/50 bg-gold/[0.08] text-gold-soft" : "border-line/70 text-muted hover:border-line hover:text-parchment"}`}>
+              <Link key={entry.skillLineId} href={href({ p: entry.skillLineId, q: "", page: 1, tab, c: "", quality: 0 })} className={`flex items-center gap-2 rounded-lg border px-3 py-2.5 transition-colors ${active ? "border-gold/50 bg-gold/[0.08] text-gold-soft" : "border-line/70 text-muted hover:border-line hover:text-parchment"}`}>
                 <img src={fallbackIcon(entry.icon)} alt="" width={36} height={36} className="size-9 shrink-0 rounded border border-line/70" />
                 <span className="min-w-0"><span className="block truncate text-xs">{professionEnglish[entry.name] ?? entry.name}</span><span className="block text-[10px] text-muted/60">{entry.recipeCount}</span></span>
               </Link>
@@ -192,7 +204,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
 
         <div className="mt-6 flex overflow-x-auto border-b border-line/70">
           {TABS.map(([key, label]) => (
-            <Link key={key} href={href({ tab: key, q: "", page: 1, c: "" })} className={`shrink-0 border-b-2 px-4 py-3 text-sm transition-colors ${tab === key ? "border-gold text-parchment" : "border-transparent text-muted hover:text-gold-soft"}`}>
+            <Link key={key} href={href({ tab: key, q: "", page: 1, c: "", quality: 0 })} className={`shrink-0 border-b-2 px-4 py-3 text-sm transition-colors ${tab === key ? "border-gold text-parchment" : "border-transparent text-muted hover:text-gold-soft"}`}>
               {label}{key === "favor" && favor.length ? <span className="ml-1.5 text-[10px] text-muted">{favor.length}</span> : null}
             </Link>
           ))}
@@ -203,9 +215,20 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
             <form method="get" className="panel flex flex-wrap items-center gap-2 p-4">
               <input type="hidden" name="p" value={profession.skillLineId} />
               {selectedCategory ? <input type="hidden" name="c" value={selectedCategory} /> : null}
+              {selectedQuality ? <input type="hidden" name="quality" value={selectedQuality} /> : null}
               <input name="q" defaultValue={query} placeholder="Search recipes or reagents" className="min-w-56 flex-1 rounded-lg border border-line bg-deep px-3 py-2 text-sm text-parchment placeholder:text-muted/50 focus:border-gold/50 focus:outline-none" />
               <button className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-sm text-gold-soft">Search</button>
             </form>
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+              <span className="text-muted">Quality</span>
+              <Link href={href({ quality: 0, page: 1 })} className={`rounded-full border px-3 py-1 transition-colors ${!selectedQuality ? "border-gold/50 bg-gold/10 text-gold-soft" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}>All</Link>
+              {qualityOptions.map(([value, label]) => (
+                <Link key={value} href={href({ quality: value, page: 1 })} className={`rounded-full border px-3 py-1 transition-colors ${selectedQuality === value ? "border-gold/50 bg-gold/10" : "border-line/70 hover:border-gold/40"}`} style={{ color: qualityColor(value) }}>
+                  {label}
+                </Link>
+              ))}
+            </div>
+
             <div className="mt-4 grid gap-4 lg:grid-cols-[14rem_minmax(0,1fr)]">
               <aside className="panel h-fit p-2">
                 <Link href={href({ c: "", page: 1 })} className={`flex items-center justify-between rounded-lg px-3 py-2 text-sm ${!category ? "bg-gold/10 text-gold-soft" : "text-muted hover:text-parchment"}`}>
