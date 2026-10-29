@@ -116,7 +116,7 @@ export const dataItems: SectionItem[] = [
     slug: "dungeons",
     label: "Dungeon Data",
     zh: "副本资料",
-    href: "/data/dungeons",
+    href: "/dungeons",
     status: "live",
     summary:
       "All 45 Forever dungeons, raids, and travel routes with level bands and locations.",
