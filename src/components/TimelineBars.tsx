@@ -22,7 +22,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
               <span>{lane.nameEn}</span>
               <span className="text-muted/60">{lane.count}</span>
             </div>
-            <div className="relative" style={{ height: `${rows * 38}px` }}>
+            <div className="relative" style={{ height: `${rows * 54}px` }}>
               {lane.dungeons.map((dungeon) => {
                 const active = hovered?.id === dungeon.id;
                 const nearby = !hovered || active || overlaps(dungeon, hovered);
@@ -31,11 +31,11 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                 return (
                   <div
                     key={dungeon.name}
-                    className="absolute z-10 h-8 transition-[opacity,filter] duration-200 hover:z-40"
+                    className="absolute z-10 h-[46px] transition-[opacity,filter] duration-200 hover:z-40"
                     style={{
                       left: `${dungeon.left}%`,
                       width: `${dungeon.width}%`,
-                      top: `${dungeon.row * 36}px`,
+                      top: `${dungeon.row * 52}px`,
                       opacity: dimmed ? 0.22 : 1,
                       filter: dimmed ? "grayscale(1)" : undefined,
                     }}
@@ -46,17 +46,17 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                   >
                     <Link
                       href={`/dungeons/${dungeon.id}`}
-                      className="relative flex h-full w-full items-center overflow-hidden rounded border text-[10px] shadow-sm"
+                      className="relative flex h-full w-full items-center overflow-hidden rounded-lg border shadow-sm"
                       style={{
                         borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
                         backgroundColor: "#08111f",
                       }}
                     >
                       <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined }} />
-                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.86), rgba(4,14,24,.2))" : "linear-gradient(90deg, rgba(18,13,8,.86), rgba(18,13,8,.2))" }} />
-                      <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-1.5 text-parchment">
-                        <span className="truncate text-[10px] leading-none">{dungeon.nameEn}</span>
-                        <span className="text-[9px] leading-none text-muted">{dungeon.levelMin}-{dungeon.levelMax}</span>
+                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.78), rgba(4,14,24,.18))" : "linear-gradient(90deg, rgba(18,13,8,.8), rgba(18,13,8,.18))" }} />
+                      <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
+                        <span className="truncate text-sm leading-tight text-white">{dungeon.nameEn}</span>
+                        <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
                       </span>
                     </Link>
 
