@@ -42,6 +42,36 @@ const english: Record<string, string> = {
   恢复德鲁伊: "Restoration Druid",
 };
 
+const specIcons: Record<string, string> = {
+  "Arms Warrior": "ability_warrior_savageblow",
+  "Fury Warrior": "ability_warrior_innerrage",
+  "Protection Warrior": "ability_warrior_defensivestance",
+  "Holy Paladin": "spell_holy_holybolt",
+  "Protection Paladin": "spell_holy_devotionaura",
+  "Retribution Paladin": "spell_holy_auraoflight",
+  "Beast Mastery Hunter": "ability_hunter_beasttaming",
+  "Marksmanship Hunter": "ability_marksmanship",
+  "Survival Hunter": "ability_hunter_swiftstrike",
+  "Arcane Mage": "spell_holy_magicalsentry",
+  "Fire Mage": "spell_fire_firebolt02",
+  "Frost Mage": "spell_frost_frostbolt02",
+  "Discipline Priest": "spell_holy_wordfortitude",
+  "Holy Priest": "spell_holy_guardianspirit",
+  "Shadow Priest": "spell_shadow_shadowwordpain",
+  "Affliction Warlock": "spell_shadow_deathcoil",
+  "Demonology Warlock": "spell_shadow_metamorphosis",
+  "Destruction Warlock": "spell_shadow_rainoffire",
+  "Assassination Rogue": "ability_rogue_eviscerate",
+  "Combat Rogue": "ability_backstab",
+  "Subtlety Rogue": "ability_stealth",
+  "Elemental Shaman": "spell_nature_lightning",
+  "Enhancement Shaman": "spell_nature_lightningshield",
+  "Restoration Shaman": "spell_nature_magicimmunity",
+  "Balance Druid": "spell_nature_starfall",
+  "Feral Druid": "ability_druid_catform",
+  "Restoration Druid": "spell_nature_healingtouch",
+};
+
 const classRules: [string, string, string][] = [
   ["战士", "warrior", "Warrior"],
   ["圣骑士", "paladin", "Paladin"],
@@ -81,7 +111,7 @@ for (const role of Object.keys(data.roles) as SpecTierRole[]) {
         tier,
         classSlug,
         className: matchedClass?.[2] ?? "Warrior",
-        icon: `/classes/icons/${classSlug}.jpg`,
+        icon: `/talents/icons/${item.name === "野性战斗德鲁伊" && role === "tank" ? "ability_racial_bearform" : specIcons[english[item.name] ?? item.name] ?? "ability_druid_catform"}.jpg`,
       });
     }
   }
