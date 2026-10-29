@@ -1,22 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import type { TimelineEntry, TimelineLane } from "@/lib/dungeon-timeline";
-
-const abbreviations: Record<string, string> = {
-  Scholomance: "Scholo",
-  "Stratholme: Crusaders' Square": "Strat Live",
-  "Stratholme: Main Gate": "Strat Live",
-  "Stratholme: The Unforgiven": "Strat UD",
-  "Stratholme: Service Gate": "Strat UD",
-  "Upper Blackrock Spire": "UBRS",
-  "Shaper's Terrace": "Shaper's",
-};
-
-function shortName(name: string) {
-  return abbreviations[name] ?? name;
-}
 
 function overlaps(a: TimelineEntry, b: TimelineEntry) {
   const pad = 6;
@@ -25,21 +11,9 @@ function overlaps(a: TimelineEntry, b: TimelineEntry) {
 
 export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
   const [hovered, setHovered] = useState<TimelineEntry | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [containerWidth, setContainerWidth] = useState(0);
-
-  useEffect(() => {
-    const node = containerRef.current;
-    if (!node) return;
-    const update = () => setContainerWidth(node.getBoundingClientRect().width);
-    update();
-    const observer = new ResizeObserver(update);
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
 
   return (
-    <div ref={containerRef}>
+    <div>
       {lanes.map((lane) => {
         const rows = Math.max(...lane.dungeons.map((dungeon) => dungeon.row), 0) + 1;
         return (
@@ -50,7 +24,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
             </div>
             <div className="relative" style={{ height: `${rows * 54}px` }}>
               {lane.dungeons.map((dungeon) => {
-                const narrow = containerWidth > 0 && (dungeon.width / 100) * containerWidth < 60;
+                const nearRight = dungeon.left + dungeon.width >= 98;
                 const active = hovered?.id === dungeon.id;
                 const nearby = !hovered || active || overlaps(dungeon, hovered);
                 const dimmed = Boolean(hovered && !nearby);
@@ -60,8 +34,9 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     key={dungeon.name}
                     className="absolute z-10 h-[46px] transition-[opacity,filter] duration-200 hover:z-40"
                     style={{
-                      left: `${dungeon.left}%`,
-                      width: `${dungeon.width}%`,
+                      ...(nearRight ? { right: 0 } : { left: `${dungeon.left}%` }),
+                      width: `max(${dungeon.width}%, 90px)`,
+                      minWidth: "90px",
                       top: `${dungeon.row * 52}px`,
                       opacity: dimmed ? 0.22 : 1,
                       filter: dimmed ? "grayscale(1)" : undefined,
@@ -82,12 +57,8 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     >
                       <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
                       <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.58), rgba(4,14,24,.12))" : "linear-gradient(90deg, rgba(18,13,8,.62), rgba(18,13,8,.12))" }} />
-                      <span className={`relative z-10 flex h-full min-w-0 flex-1 flex-col ${narrow ? "justify-center gap-0.5" : "justify-center gap-0.5"} px-2.5 py-1.5`}>
-                        {narrow ? (
-                          <span className="whitespace-nowrap text-[10px] font-bold leading-tight text-white">{shortName(dungeon.nameEn)}</span>
-                        ) : (
-                          <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
-                        )}
+                      <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
+                        <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
                         <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
                       </span>
                     </Link>
