@@ -13,6 +13,8 @@ import {
 import { getDbItem } from "@/lib/items-db";
 import campItemsEn from "@/data/camp-items.en.json";
 import categoryNames from "@/data/profession-categories.en.json";
+import itemNames from "@/data/item-names.en.json";
+import professionNames from "@/data/profession-names.en.json";
 import { favorCountBySkillLine, favorName, favorOffers, getFavorOffers } from "@/lib/favor";
 
 export const metadata: Metadata = {
@@ -92,9 +94,18 @@ function buildSkillGuide(recipes: Recipe[]) {
   return steps;
 }
 
+function recipeName(recipe: Recipe) {
+  return itemNames[String(recipe.itemId) as keyof typeof itemNames] ?? getDbItem(recipe.itemId)?.name ?? professionNames[recipe.localesName as keyof typeof professionNames] ?? recipe.localesName;
+}
+
+function reagentName(itemId: number, nameCn: string) {
+  return itemNames[String(itemId) as keyof typeof itemNames] ?? getDbItem(itemId)?.name ?? professionNames[nameCn as keyof typeof professionNames] ?? nameCn;
+}
+
 function RecipeName({ recipe }: { recipe: Recipe }) {
   const item = getDbItem(recipe.itemId);
-  return item ? <Link href={`/items/${item.id}`} className="hover:underline hover:underline-offset-2">{item.name}</Link> : <>{recipe.localesName}</>;
+  const name = recipeName(recipe);
+  return item ? <Link href={`/items/${item.id}`} className="hover:underline hover:underline-offset-2">{name}</Link> : <>{name}</>;
 }
 
 export default async function ProfessionsPage({ searchParams }: { searchParams: SearchParams }) {
@@ -240,7 +251,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
                     <img src={fallbackIcon(step.recipe.icon)} alt="" width={34} height={34} className="size-8 shrink-0 rounded border border-line/70" />
                     <div className="min-w-0 flex-1">
                       <p className="text-[10px] uppercase tracking-wider text-muted">Skill {step.start}–{step.end}</p>
-                      <p className="mt-0.5 truncate text-xs text-parchment">{item ? <Link href={`/items/${item.id}`} className="hover:text-gold-soft">{item.name}</Link> : step.recipe.localesName}</p>
+                      <p className="mt-0.5 truncate text-xs text-parchment">{item ? <Link href={`/items/${item.id}`} className="hover:text-gold-soft">{recipeName(step.recipe)}</Link> : recipeName(step.recipe)}</p>
                       <p className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-muted">{step.recipe.reagents.map((reagent) => `${reagent.nameCn} ×${reagent.count}`).join(" · ")}</p>
                     </div>
                   </div>
@@ -294,7 +305,7 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
       <div className="flex items-start gap-3">
         <img src={fallbackIcon(recipe.icon)} alt="" width={44} height={44} className="size-11 rounded-lg border" style={{ borderColor: `${color}66` }} />
         <div className="min-w-0 flex-1">
-          <div className="flex items-start justify-between gap-2"><h3 className="text-base leading-snug text-parchment" style={{ color }}><RecipeName recipe={recipe} /></h3>{recipe.itemLevel > 0 ? <span className="shrink-0 text-[10px] text-muted/70">iLvl {recipe.itemLevel}</span> : null}</div>
+          <div className="flex items-start justify-between gap-2"><h3 className="text-base capitalize leading-snug text-parchment" style={{ color }}><RecipeName recipe={recipe} /></h3>{recipe.itemLevel > 0 ? <span className="shrink-0 text-[10px] text-muted/70">iLvl {recipe.itemLevel}</span> : null}</div>
           <p className="mt-1 text-xs text-muted">Skill {recipe.minSkillLineRank} · trivial {recipe.trivialHigh}</p>
         </div>
       </div>
