@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { ForeverTalentClass } from "@/lib/forever";
-import { savePlan } from "@/lib/plan";
 
 const CLASS_ACCENT: Record<string, string> = {
   Warrior: "#C79C6E",
@@ -37,8 +36,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
   const [active, setActive] = useState(0);
   const [level, setLevel] = useState(MAX_LEVEL);
   const [points, setPoints] = useState<Record<string, number>>({});
-  const [copied, setCopied] = useState(false);
-  const [saved, setSaved] = useState(false);
   const [buildName, setBuildName] = useState("");
   const [savedBuilds, setSavedBuilds] = useState<SavedBuild[]>([]);
   const [linkCopied, setLinkCopied] = useState(false);
@@ -137,7 +134,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     if (!talent || !canAdd(treeIndex, talent)) return;
     const key = keyFor(treeIndex, talentId);
     setPoints((prev) => ({ ...prev, [key]: (prev[key] ?? 0) + 1 }));
-    setCopied(false);
   }
 
   function removePoint(treeIndex: number, talentId: number) {
@@ -148,7 +144,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       const next = { ...prev, [key]: value - 1 };
       return sanitize(next);
     });
-    setCopied(false);
   }
 
   function resetTree(treeIndex: number) {
@@ -159,7 +154,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       }
       return next;
     });
-    setCopied(false);
   }
 
   useEffect(() => {
@@ -231,33 +225,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
     )}&lvl=${level}`;
   }
 
-  function saveMyPlan() {
-    savePlan("talent", {
-      url: buildUrl(),
-      className: current.className,
-      level,
-      points: total,
-      savedAt: new Date().toISOString(),
-    });
-    setSaved(true);
-    setTimeout(() => setSaved(false), 2500);
-  }
-
-  function shareBuild() {
-    const url = buildUrl();
-    const done = () => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    };
-    if (navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(url).then(done).catch(() => {
-        window.prompt("Copy your build link:", url);
-      });
-    } else {
-      window.prompt("Copy your build link:", url);
-    }
-  }
-
   function saveBuild() {
     const url = buildUrl();
     const entry: SavedBuild = {
@@ -277,8 +244,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       // Local storage can be unavailable in private modes.
     }
     setBuildName("");
-    setSaved(true);
-    setTimeout(() => setSaved(false), 2500);
   }
 
   function deleteBuild(id: string) {
@@ -393,8 +358,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
               onClick={() => {
                 setActive(index);
                 setPoints({});
-                setCopied(false);
-              }}
+                          }}
               className={
                 "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition-colors " +
                 (isActive
@@ -416,7 +380,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
       </div>
 
       {/* Toolbar */}
-      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
+      <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-xs text-muted">Level</span>
           <div className="flex items-center gap-1">
@@ -454,32 +418,6 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
           <span className="hidden text-xs text-muted/70 sm:inline">
             Left click to add · right click to remove
           </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={saveMyPlan}
-            className="rounded-md border border-teal/40 bg-teal/5 px-3 py-1 text-xs text-teal transition-colors hover:bg-teal/10"
-          >
-            {saved ? "Saved to My plan" : "Save to my plan"}
-          </button>
-          <button
-            type="button"
-            onClick={shareBuild}
-            className="rounded-md border border-gold/40 bg-gold/5 px-3 py-1 text-xs text-gold-soft transition-colors hover:bg-gold/10"
-          >
-            {copied ? "Link copied" : "Copy build link"}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setPoints({});
-              setCopied(false);
-            }}
-            className="rounded-md border border-line px-3 py-1 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment"
-          >
-            Reset all
-          </button>
         </div>
       </div>
 
