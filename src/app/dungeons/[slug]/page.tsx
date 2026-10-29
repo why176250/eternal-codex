@@ -2,13 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { dungeons, getDungeon, getItemsBySource, qualityColors } from "@/lib/data";
+import { foreverDungeons } from "@/lib/forever";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { site } from "@/lib/site";
+import { getDungeonStats } from "@/lib/dungeon-stats";
 
 type Params = { slug: string };
 
 export function generateStaticParams(): Params[] {
-  return dungeons.map((d) => ({ slug: d.id }));
+  return Array.from(new Set([...dungeons.map((d) => d.id), ...foreverDungeons.map((d) => d.id)])).map((slug) => ({ slug }));
+}
+
+function resolveDungeon(slug: string) {
+  return foreverDungeons.find((d) => d.id === slug) ?? getDungeon(slug);
 }
 
 export async function generateMetadata({
@@ -17,7 +23,7 @@ export async function generateMetadata({
   params: Promise<Params>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const dungeon = getDungeon(slug);
+  const dungeon = resolveDungeon(slug);
   if (!dungeon) return { title: "Dungeon not found" };
   return {
     title: `${dungeon.name} — loot, level band, and purpose`,
@@ -32,10 +38,11 @@ export default async function DungeonPage({
   params: Promise<Params>;
 }) {
   const { slug } = await params;
-  const dungeon = getDungeon(slug);
+  const dungeon = resolveDungeon(slug);
   if (!dungeon) notFound();
 
   const drops = getItemsBySource(dungeon.name);
+  const foreverStats = getDungeonStats(dungeon.id);
   const isRaid = dungeon.type === "Raid";
 
   return (
@@ -66,6 +73,13 @@ export default async function DungeonPage({
           </p>
 
           <div className="gold-rule my-8" />
+
+          {foreverStats ? (
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {foreverStats.bossCount != null ? <div className="panel p-4"><p className="text-xs uppercase tracking-wider text-muted">Bosses</p><p className="mt-1 text-sm text-parchment">{foreverStats.bossCount}</p></div> : null}
+              {foreverStats.questCount != null ? <div className="panel p-4"><p className="text-xs uppercase tracking-wider text-muted">Quests</p><p className="mt-1 text-sm text-parchment">{foreverStats.questCount}</p></div> : null}
+            </div>
+          ) : null}
 
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="panel p-4">

@@ -319,6 +319,10 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
           </div>
         ) : null}
 
+        <div className="mt-6 flex flex-wrap gap-3 text-xs">
+          <Link href="/professions/forever" className="rounded-lg border border-line px-3 py-2 text-muted hover:border-gold/40 hover:text-parchment">ForeverChanges English recipe index →</Link>
+        </div>
+
         <p className="mt-8 text-[11px] leading-relaxed text-muted/60">Recipe data from the Blue Hermit mini-program. Recipe and reagent names are shown as imported; personal, non-commercial use.</p>
       </section>
     </main>

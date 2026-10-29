@@ -29,7 +29,8 @@ export default function BisPage() {
       <section>
         <div className="container-x py-12">
           <div className="mb-5 flex flex-wrap gap-2">
-            <Link href="/bis/builds" className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft">Browse all 64 imported BiS builds →</Link>
+            <Link href="/bis/builds" className="rounded-lg border border-line px-4 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">Scarlet build browser →</Link>
+            <Link href="/bis/forever" className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft">65 Forever BIS lists · level 20 / 30 →</Link>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

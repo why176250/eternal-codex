@@ -1,0 +1,2992 @@
+{
+ "total": 11,
+ "professions": [
+  {
+   "slug": "alchemy",
+   "name": "Alchemy",
+   "recipeCount": 178,
+   "newCount": 69,
+   "categories": [
+    {
+     "name": "Merchant's Favor",
+     "count": 30
+    },
+    {
+     "name": "Potions",
+     "count": 69
+    },
+    {
+     "name": "Elixirs",
+     "count": 68
+    },
+    {
+     "name": "Flasks",
+     "count": 9
+    },
+    {
+     "name": "Transmutes",
+     "count": 13
+    },
+    {
+     "name": "Oils and other",
+     "count": 16
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Minor Mana Potion",
+     "level": 25
+    },
+    {
+     "name": "Minor Rejuvenation Potion",
+     "level": 2
+    },
+    {
+     "name": "Minor Discolored Healing Potion",
+     "level": 50
+    },
+    {
+     "name": "Rage Potion",
+     "level": 60
+    },
+    {
+     "name": "Swiftness Potion",
+     "level": 60
+    },
+    {
+     "name": "Holy Protection Potion",
+     "level": 100
+    },
+    {
+     "name": "Swim Speed Potion",
+     "level": 100
+    },
+    {
+     "name": "Minor Magic Resistance Potion",
+     "level": 3
+    },
+    {
+     "name": "Lesser Mana Potion",
+     "level": 120
+    },
+    {
+     "name": "Potion of Poison Cleansing",
+     "level": 120
+    },
+    {
+     "name": "Shadow Protection Potion",
+     "level": 135
+    },
+    {
+     "name": "Free Action Potion",
+     "level": 2
+    },
+    {
+     "name": "Mana Potion",
+     "level": 160
+    },
+    {
+     "name": "Fire Protection Potion",
+     "level": 165
+    },
+    {
+     "name": "Lesser Invisibility Potion",
+     "level": 165
+    },
+    {
+     "name": "Great Rage Potion",
+     "level": 175
+    },
+    {
+     "name": "Frost Protection Potion",
+     "level": 190
+    },
+    {
+     "name": "Nature Protection Potion",
+     "level": 190
+    },
+    {
+     "name": "Greater Mana Potion",
+     "level": 205
+    },
+    {
+     "name": "Magic Resistance Potion",
+     "level": 210
+    },
+    {
+     "name": "Restorative Potion",
+     "level": 210
+    },
+    {
+     "name": "Lesser Stoneshield Potion",
+     "level": 215
+    },
+    {
+     "name": "Wildvine Potion",
+     "level": 225
+    },
+    {
+     "name": "Dreamless Sleep Potion",
+     "level": 3
+    },
+    {
+     "name": "Invisibility Potion",
+     "level": 235
+    },
+    {
+     "name": "Limited Invulnerability Potion",
+     "level": 2
+    },
+    {
+     "name": "Potion of Demon Slaying",
+     "level": 250
+    },
+    {
+     "name": "Mighty Rage Potion",
+     "level": 3
+    },
+    {
+     "name": "Superior Mana Potion",
+     "level": 2
+    },
+    {
+     "name": "Greater Dreamless Sleep Potion",
+     "level": 2
+    },
+    {
+     "name": "Greater Stoneshield Potion",
+     "level": 3
+    },
+    {
+     "name": "Living Action Potion",
+     "level": 2
+    },
+    {
+     "name": "Purification Potion",
+     "level": 2
+    },
+    {
+     "name": "Greater Arcane Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Greater Fire Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Greater Frost Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Greater Holy Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Greater Nature Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Greater Shadow Protection Potion",
+     "level": 290
+    },
+    {
+     "name": "Major Mana Potion",
+     "level": 3
+    },
+    {
+     "name": "Major Rejuvenation Potion",
+     "level": 4
+    },
+    {
+     "name": "Empty Vial",
+     "level": 202
+    },
+    {
+     "name": "Leaded Vial",
+     "level": 72
+    },
+    {
+     "name": "Silverleaf",
+     "level": 65
+    },
+    {
+     "name": "Peacebloom",
+     "level": 86
+    },
+    {
+     "name": "Mageroyal",
+     "level": 25
+    },
+    {
+     "name": "Oily Blackmouth",
+     "level": 62
+    },
+    {
+     "name": "Briarthorn",
+     "level": 8
+    },
+    {
+     "name": "Swiftthistle",
+     "level": 30
+    },
+    {
+     "name": "Firefin Snapper",
+     "level": 102
+    },
+    {
+     "name": "Kingsblood",
+     "level": 52
+    },
+    {
+     "name": "Murloc Eye",
+     "level": 19
+    },
+    {
+     "name": "Large Fang",
+     "level": 22
+    },
+    {
+     "name": "Liferoot",
+     "level": 20
+    },
+    {
+     "name": "Stranglekelp",
+     "level": 20
+    },
+    {
+     "name": "Blackmouth Oil",
+     "level": 30
+    },
+    {
+     "name": "Fire Oil",
+     "level": 22
+    },
+    {
+     "name": "Elixir of Lesser Spirit",
+     "level": 65
+    },
+    {
+     "name": "Lesser Mageblood Elixir",
+     "level": 75
+    },
+    {
+     "name": "Elixir of Lesser Intellect",
+     "level": 95
+    },
+    {
+     "name": "Lesser Cleric's Elixir",
+     "level": 95
+    },
+    {
+     "name": "Lesser Arcane Elixir",
+     "level": 120
+    },
+    {
+     "name": "Mender's Potion",
+     "level": 130
+    },
+    {
+     "name": "Spellblasting Potion",
+     "level": 135
+    },
+    {
+     "name": "Frenzy Potion",
+     "level": 140
+    },
+    {
+     "name": "Elixir of Greater Spirit",
+     "level": 165
+    },
+    {
+     "name": "Greater Mageblood Elixir",
+     "level": 175
+    },
+    {
+     "name": "Alchemy Certification",
+     "level": 180
+    },
+    {
+     "name": "Greater Cleric's Elixir",
+     "level": 195
+    },
+    {
+     "name": "Elixir of Greater Fortitude",
+     "level": 200
+    },
+    {
+     "name": "Dragonfire Potion",
+     "level": 245
+    },
+    {
+     "name": "Elixir of the Phalanx",
+     "level": 250
+    },
+    {
+     "name": "Caustic Smog Potion",
+     "level": 265
+    },
+    {
+     "name": "Elixir of Cunning",
+     "level": 275
+    },
+    {
+     "name": "Elixir of Ferocity",
+     "level": 275
+    },
+    {
+     "name": "Elixir of Sages",
+     "level": 275
+    },
+    {
+     "name": "Elixir of the Whale",
+     "level": 275
+    },
+    {
+     "name": "Potion of Venomous Blood",
+     "level": 275
+    },
+    {
+     "name": "Elixir of the Owl",
+     "level": 280
+    },
+    {
+     "name": "Major Mender's Potion",
+     "level": 280
+    },
+    {
+     "name": "Potion of Elemental Purging",
+     "level": 280
+    },
+    {
+     "name": "Elixir of Nature Power",
+     "level": 285
+    },
+    {
+     "name": "Elixir of Wicked Regeneration",
+     "level": 285
+    },
+    {
+     "name": "Major Spellblasting Potion",
+     "level": 285
+    },
+    {
+     "name": "Major Frenzy Potion",
+     "level": 290
+    },
+    {
+     "name": "Elixir of the Grizzly",
+     "level": 300
+    },
+    {
+     "name": "Alchemy Certification",
+     "level": 300
+    }
+   ]
+  },
+  {
+   "slug": "blacksmithing",
+   "name": "Blacksmithing",
+   "recipeCount": 437,
+   "newCount": 197,
+   "categories": [
+    {
+     "name": "Bracers",
+     "count": 20
+    },
+    {
+     "name": "Gloves",
+     "count": 50
+    },
+    {
+     "name": "Belts",
+     "count": 29
+    },
+    {
+     "name": "Legs",
+     "count": 43
+    },
+    {
+     "name": "Boots",
+     "count": 47
+    },
+    {
+     "name": "Sharpening, weight and grinding stones",
+     "count": 16
+    },
+    {
+     "name": "Shield spikes, chain and spurs",
+     "count": 7
+    },
+    {
+     "name": "Keys, rods and tools",
+     "count": 13
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Copper Mace",
+     "level": 6
+    },
+    {
+     "name": "Copper Axe",
+     "level": 6
+    },
+    {
+     "name": "Copper Dagger",
+     "level": 6
+    },
+    {
+     "name": "Copper Shortsword",
+     "level": 6
+    },
+    {
+     "name": "Thick War Axe",
+     "level": 10
+    },
+    {
+     "name": "Big Bronze Knife",
+     "level": 6
+    },
+    {
+     "name": "Bronze Mace",
+     "level": 6
+    },
+    {
+     "name": "Pearl-handled Dagger",
+     "level": 6
+    },
+    {
+     "name": "Bronze Axe",
+     "level": 7
+    },
+    {
+     "name": "Bronze Shortsword",
+     "level": 5
+    },
+    {
+     "name": "Deadly Bronze Poniard",
+     "level": 4
+    },
+    {
+     "name": "Heavy Bronze Mace",
+     "level": 8
+    },
+    {
+     "name": "Iridescent Hammer",
+     "level": 10
+    },
+    {
+     "name": "Mighty Iron Hammer",
+     "level": 6
+    },
+    {
+     "name": "Hardened Iron Shortsword",
+     "level": 6
+    },
+    {
+     "name": "Jade Serpentblade",
+     "level": 8
+    },
+    {
+     "name": "Glinting Steel Dagger",
+     "level": 10
+    },
+    {
+     "name": "Edge of Winter",
+     "level": 10
+    },
+    {
+     "name": "Searing Golden Blade",
+     "level": 10
+    },
+    {
+     "name": "Heavy Mithril Axe",
+     "level": 12
+    },
+    {
+     "name": "Blue Glittering Axe",
+     "level": 16
+    },
+    {
+     "name": "Wicked Mithril Blade",
+     "level": 14
+    },
+    {
+     "name": "Big Black Mace",
+     "level": 16
+    },
+    {
+     "name": "The Shatterer",
+     "level": 24
+    },
+    {
+     "name": "Dazzling Mithril Rapier",
+     "level": 14
+    },
+    {
+     "name": "Phantom Blade",
+     "level": 28
+    },
+    {
+     "name": "Runed Mithril Hammer",
+     "level": 18
+    },
+    {
+     "name": "Ebon Shiv",
+     "level": 12
+    },
+    {
+     "name": "Dawn's Edge",
+     "level": 30
+    },
+    {
+     "name": "Ornate Thorium Handaxe",
+     "level": 20
+    },
+    {
+     "name": "Blazing Rapier",
+     "level": 10
+    },
+    {
+     "name": "Serenity",
+     "level": 6
+    },
+    {
+     "name": "Volcanic Hammer",
+     "level": 30
+    },
+    {
+     "name": "Annihilator",
+     "level": 40
+    },
+    {
+     "name": "Black Amnesty",
+     "level": 3
+    },
+    {
+     "name": "Blackguard",
+     "level": 6
+    },
+    {
+     "name": "Blood Talon",
+     "level": 10
+    },
+    {
+     "name": "Dark Iron Destroyer",
+     "level": 18
+    },
+    {
+     "name": "Dark Iron Reaver",
+     "level": 16
+    },
+    {
+     "name": "Ebon Hand",
+     "level": 4
+    },
+    {
+     "name": "Frostguard",
+     "level": 18
+    },
+    {
+     "name": "Heartseeker",
+     "level": 10
+    },
+    {
+     "name": "Masterwork Stormhammer",
+     "level": 20
+    },
+    {
+     "name": "Persuader",
+     "level": 15
+    },
+    {
+     "name": "Sageblade",
+     "level": 12
+    },
+    {
+     "name": "Strong Flux",
+     "level": 9
+    },
+    {
+     "name": "Green Dye",
+     "level": 16
+    },
+    {
+     "name": "Rough Stone",
+     "level": 174
+    },
+    {
+     "name": "Copper Bar",
+     "level": 264
+    },
+    {
+     "name": "Heavy Stone",
+     "level": 101
+    },
+    {
+     "name": "Coarse Stone",
+     "level": 196
+    },
+    {
+     "name": "Silver Bar",
+     "level": 21
+    },
+    {
+     "name": "Medium Leather",
+     "level": 9
+    },
+    {
+     "name": "Iron Bar",
+     "level": 96
+    },
+    {
+     "name": "Solid Stone",
+     "level": 62
+    },
+    {
+     "name": "Steel Bar",
+     "level": 192
+    },
+    {
+     "name": "Mithril Bar",
+     "level": 180
+    },
+    {
+     "name": "Mageweave Cloth",
+     "level": 112
+    },
+    {
+     "name": "Rough Grinding Stone",
+     "level": 54
+    },
+    {
+     "name": "Coarse Grinding Stone",
+     "level": 98
+    },
+    {
+     "name": "Heavy Grinding Stone",
+     "level": 32
+    },
+    {
+     "name": "Solid Grinding Stone",
+     "level": 8
+    },
+    {
+     "name": "Guard's Chain Belt",
+     "level": 45
+    },
+    {
+     "name": "Crusader's Chain Belt",
+     "level": 45
+    },
+    {
+     "name": "Acolyte's Chain Belt",
+     "level": 45
+    },
+    {
+     "name": "Protector's Chain Belt",
+     "level": 45
+    },
+    {
+     "name": "Veteran's Chain Belt",
+     "level": 45
+    },
+    {
+     "name": "Protector's Boots",
+     "level": 85
+    },
+    {
+     "name": "Guard's Boots",
+     "level": 85
+    },
+    {
+     "name": "Crusader's Boots",
+     "level": 85
+    },
+    {
+     "name": "Acolyte's Boots",
+     "level": 85
+    },
+    {
+     "name": "Veteran's Boots",
+     "level": 85
+    },
+    {
+     "name": "Guard's Gloves",
+     "level": 80
+    },
+    {
+     "name": "Crusader's Gloves",
+     "level": 80
+    },
+    {
+     "name": "Acolyte's Gloves",
+     "level": 80
+    },
+    {
+     "name": "Protector's Gloves",
+     "level": 80
+    },
+    {
+     "name": "Veteran's Gloves",
+     "level": 80
+    },
+    {
+     "name": "Veteran's Silvered Chain Leggings",
+     "level": 125
+    },
+    {
+     "name": "Protector's Silvered Chain Leggings",
+     "level": 125
+    },
+    {
+     "name": "Guard's Silvered Chain Leggings",
+     "level": 125
+    },
+    {
+     "name": "Crusader's Silvered Chain Leggings",
+     "level": 125
+    },
+    {
+     "name": "Acolyte's Silvered Chain Leggings",
+     "level": 125
+    },
+    {
+     "name": "Veteran's Silvered Chain Shirt",
+     "level": 110
+    },
+    {
+     "name": "Protector's Silvered Chain Shirt",
+     "level": 110
+    },
+    {
+     "name": "Guard's Silvered Chain Shirt",
+     "level": 110
+    },
+    {
+     "name": "Crusader's Silvered Chain Shirt",
+     "level": 110
+    },
+    {
+     "name": "Acolyte's Silvered Chain Shirt",
+     "level": 110
+    },
+    {
+     "name": "Veteran's Silvered Chain Helm",
+     "level": 95
+    },
+    {
+     "name": "Protector's Silvered Chain Helm",
+     "level": 95
+    },
+    {
+     "name": "Guard's Silvered Chain Helm",
+     "level": 95
+    },
+    {
+     "name": "Crusader's Silvered Chain Helm",
+     "level": 95
+    },
+    {
+     "name": "Acolyte's Silvered Chain Helm",
+     "level": 95
+    },
+    {
+     "name": "Justicar's Gauntlet",
+     "level": 175
+    },
+    {
+     "name": "Officer's Gauntlet",
+     "level": 175
+    },
+    {
+     "name": "Prefect's Gauntlet",
+     "level": 175
+    },
+    {
+     "name": "Sentinel's Gauntlet",
+     "level": 175
+    },
+    {
+     "name": "Warder's Gauntlet",
+     "level": 175
+    },
+    {
+     "name": "Justicar's Pauldrons",
+     "level": 210
+    },
+    {
+     "name": "Officer's Pauldrons",
+     "level": 210
+    },
+    {
+     "name": "Prefect's Pauldrons",
+     "level": 210
+    },
+    {
+     "name": "Sentinel's Pauldrons",
+     "level": 210
+    },
+    {
+     "name": "Warder's Pauldrons",
+     "level": 210
+    },
+    {
+     "name": "Justicar's Wristguards",
+     "level": 225
+    },
+    {
+     "name": "Prefect's Wristguards",
+     "level": 225
+    },
+    {
+     "name": "Warder's Wristguards",
+     "level": 225
+    },
+    {
+     "name": "Sentinel's Wristguards",
+     "level": 225
+    },
+    {
+     "name": "Officer's Wristguards",
+     "level": 225
+    },
+    {
+     "name": "Warder's Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Justicar's Sabatons",
+     "level": 240
+    },
+    {
+     "name": "Officer's Sabatons",
+     "level": 240
+    },
+    {
+     "name": "Prefect's Sabatons",
+     "level": 240
+    },
+    {
+     "name": "Sentinel's Sabatons",
+     "level": 240
+    },
+    {
+     "name": "Warder's Sabatons",
+     "level": 240
+    },
+    {
+     "name": "Justicar's Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Officer's Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Blacksmithing Certification",
+     "level": 250
+    },
+    {
+     "name": "Sentinel's Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Thorium Cestus",
+     "level": 250
+    },
+    {
+     "name": "Thorium Greatmace",
+     "level": 250
+    },
+    {
+     "name": "Enriched Thorium Breastplate",
+     "level": 300
+    },
+    {
+     "name": "Enriched Thorium Helm",
+     "level": 300
+    },
+    {
+     "name": "Enriched Thorium Leggings",
+     "level": 300
+    },
+    {
+     "name": "Legionite Glaive",
+     "level": 300
+    },
+    {
+     "name": "Blacksmithing Certification",
+     "level": 300
+    }
+   ]
+  },
+  {
+   "slug": "cooking",
+   "name": "Cooking",
+   "recipeCount": 123,
+   "newCount": 42,
+   "categories": [
+    {
+     "name": "Stamina",
+     "count": 22
+    },
+    {
+     "name": "Strength and Attack Power",
+     "count": 22
+    },
+    {
+     "name": "Agility",
+     "count": 14
+    },
+    {
+     "name": "Intellect, spell power and mana",
+     "count": 31
+    },
+    {
+     "name": "Spirit",
+     "count": 6
+    },
+    {
+     "name": "Other buffs",
+     "count": 16
+    },
+    {
+     "name": "Health and mana only",
+     "count": 7
+    },
+    {
+     "name": "Camp objects",
+     "count": 5
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Gingerbread Cookie",
+     "level": 1
+    },
+    {
+     "name": "Herb Baked Egg",
+     "level": 1
+    },
+    {
+     "name": "Kaldorei Spider Kabob",
+     "level": 10
+    },
+    {
+     "name": "Egg Nog",
+     "level": 35
+    },
+    {
+     "name": "Murloc Fin Soup",
+     "level": 2
+    },
+    {
+     "name": "Gooey Spider Cake",
+     "level": 2
+    },
+    {
+     "name": "Goblin Deviled Clams",
+     "level": 125
+    },
+    {
+     "name": "Curiously Tasty Omelet",
+     "level": 130
+    },
+    {
+     "name": "Carrion Surprise",
+     "level": 175
+    },
+    {
+     "name": "Giant Clam Scorcho",
+     "level": 175
+    },
+    {
+     "name": "Mystery Stew",
+     "level": 175
+    },
+    {
+     "name": "Soothing Turtle Bisque",
+     "level": 175
+    },
+    {
+     "name": "Spider Sausage",
+     "level": 2
+    },
+    {
+     "name": "Monster Omelet",
+     "level": 2
+    },
+    {
+     "name": "Mild Spices",
+     "level": 20
+    },
+    {
+     "name": "Chunk of Boar Meat",
+     "level": 50
+    },
+    {
+     "name": "Raw Longjaw Mud Snapper",
+     "level": 52
+    },
+    {
+     "name": "Raw Bristle Whisker Catfish",
+     "level": 63
+    },
+    {
+     "name": "Lean Wolf Flank",
+     "level": 20
+    },
+    {
+     "name": "Raw Mithril Head Trout",
+     "level": 52
+    },
+    {
+     "name": "Venomous Smoothie",
+     "level": 25
+    },
+    {
+     "name": "Slimy Smoothie",
+     "level": 100
+    },
+    {
+     "name": "Mrrggl Smrrthle",
+     "level": 125
+    },
+    {
+     "name": "Calcified Smoothie",
+     "level": 180
+    },
+    {
+     "name": "Spicy Smoothie",
+     "level": 200
+    },
+    {
+     "name": "Wicked Smoothie",
+     "level": 250
+    }
+   ]
+  },
+  {
+   "slug": "enchanting",
+   "name": "Enchanting",
+   "recipeCount": null,
+   "newCount": 33,
+   "categories": [],
+   "recipes": [
+    {
+     "name": "Enchants",
+     "level": 33
+    },
+    {
+     "name": "Enchants",
+     "level": 165
+    },
+    {
+     "name": "Other recipes",
+     "level": 54
+    },
+    {
+     "name": "Weapon",
+     "level": 24
+    },
+    {
+     "name": "Two-hand",
+     "level": 16
+    },
+    {
+     "name": "Shield",
+     "level": 11
+    },
+    {
+     "name": "Off-hand",
+     "level": 1
+    },
+    {
+     "name": "Chest",
+     "level": 19
+    },
+    {
+     "name": "Cloak",
+     "level": 19
+    },
+    {
+     "name": "Bracers",
+     "level": 35
+    },
+    {
+     "name": "Gloves",
+     "level": 24
+    },
+    {
+     "name": "Boots",
+     "level": 11
+    },
+    {
+     "name": "Neck",
+     "level": 5
+    },
+    {
+     "name": "Minor Beastslayer",
+     "level": 2
+    },
+    {
+     "name": "Minor Striking",
+     "level": 90
+    },
+    {
+     "name": "Lesser Striking",
+     "level": 140
+    },
+    {
+     "name": "Lesser Beastslayer",
+     "level": 175
+    },
+    {
+     "name": "Lesser Elemental Slayer",
+     "level": 175
+    },
+    {
+     "name": "Winter's Might",
+     "level": 190
+    },
+    {
+     "name": "Striking",
+     "level": 195
+    },
+    {
+     "name": "Demonslaying",
+     "level": 230
+    },
+    {
+     "name": "Greater Striking",
+     "level": 245
+    },
+    {
+     "name": "Fiery Weapon",
+     "level": 2
+    },
+    {
+     "name": "Icy Chill",
+     "level": 4
+    },
+    {
+     "name": "Agility",
+     "level": 6
+    },
+    {
+     "name": "Strength",
+     "level": 6
+    },
+    {
+     "name": "Unholy Weapon",
+     "level": 4
+    },
+    {
+     "name": "Crusader",
+     "level": 4
+    },
+    {
+     "name": "Healing Power",
+     "level": 4
+    },
+    {
+     "name": "Lifestealing",
+     "level": 6
+    },
+    {
+     "name": "Mighty Intellect",
+     "level": 15
+    },
+    {
+     "name": "Mighty Spirit",
+     "level": 10
+    },
+    {
+     "name": "Spell Power",
+     "level": 4
+    },
+    {
+     "name": "Superior Striking",
+     "level": 2
+    },
+    {
+     "name": "Copper Rod",
+     "level": 1
+    },
+    {
+     "name": "Strange Dust",
+     "level": 176
+    },
+    {
+     "name": "Lesser Astral Essence",
+     "level": 9
+    },
+    {
+     "name": "Silver Rod",
+     "level": 1
+    },
+    {
+     "name": "Lesser Magic Essence",
+     "level": 4
+    },
+    {
+     "name": "Shadowgem",
+     "level": 1
+    },
+    {
+     "name": "Soul Dust",
+     "level": 74
+    },
+    {
+     "name": "Golden Rod",
+     "level": 1
+    },
+    {
+     "name": "Iridescent Pearl",
+     "level": 1
+    },
+    {
+     "name": "Greater Astral Essence",
+     "level": 1
+    },
+    {
+     "name": "Vision Dust",
+     "level": 38
+    },
+    {
+     "name": "Truesilver Rod",
+     "level": 1
+    },
+    {
+     "name": "Black Pearl",
+     "level": 1
+    },
+    {
+     "name": "Greater Mystic Essence",
+     "level": 1
+    },
+    {
+     "name": "Mote of Magic",
+     "level": 32
+    },
+    {
+     "name": "Lesser Magic Wand",
+     "level": 75
+    },
+    {
+     "name": "Greater Magic Wand",
+     "level": 110
+    },
+    {
+     "name": "Lesser Mystic Wand",
+     "level": 175
+    },
+    {
+     "name": "Smoking Heart of the Mountain",
+     "level": 265
+    },
+    {
+     "name": "Minor Wizard Oil",
+     "level": 5
+    },
+    {
+     "name": "Minor Mana Oil",
+     "level": 150
+    },
+    {
+     "name": "Lesser Wizard Oil",
+     "level": 200
+    },
+    {
+     "name": "Lesser Mana Oil",
+     "level": 250
+    },
+    {
+     "name": "Wizard Oil",
+     "level": 275
+    },
+    {
+     "name": "Brilliant Mana Oil",
+     "level": 300
+    },
+    {
+     "name": "Brilliant Wizard Oil",
+     "level": 300
+    },
+    {
+     "name": "Runed Copper Rod",
+     "level": 5
+    },
+    {
+     "name": "Runed Silver Rod",
+     "level": 130
+    },
+    {
+     "name": "Runed Golden Rod",
+     "level": 175
+    },
+    {
+     "name": "Runed Truesilver Rod",
+     "level": 220
+    },
+    {
+     "name": "Enchanted Leather",
+     "level": 250
+    },
+    {
+     "name": "Enchanted Thorium Bar",
+     "level": 250
+    },
+    {
+     "name": "Runed Arcanite Rod",
+     "level": 290
+    },
+    {
+     "name": "Tenets of the Silver Hand",
+     "level": 130
+    },
+    {
+     "name": "Polished Driftwood Icon",
+     "level": 130
+    },
+    {
+     "name": "Mystic Mushroom",
+     "level": 130
+    },
+    {
+     "name": "Soulstaff",
+     "level": 140
+    },
+    {
+     "name": "Orb of Souls",
+     "level": 140
+    },
+    {
+     "name": "Orb of Mystic Insight",
+     "level": 140
+    },
+    {
+     "name": "Glimmering Staff",
+     "level": 140
+    },
+    {
+     "name": "Weapon - Insight",
+     "level": 140
+    },
+    {
+     "name": "Weapon - Recovery",
+     "level": 140
+    },
+    {
+     "name": "Weapon - Revelation",
+     "level": 140
+    },
+    {
+     "name": "Dreamstaff",
+     "level": 220
+    },
+    {
+     "name": "Totem of Ancestral Protection",
+     "level": 210
+    },
+    {
+     "name": "Talons of Wrath",
+     "level": 210
+    },
+    {
+     "name": "Libram of Invocation",
+     "level": 210
+    },
+    {
+     "name": "Necklace - Strength",
+     "level": 210
+    },
+    {
+     "name": "Necklace - Spell Power",
+     "level": 210
+    },
+    {
+     "name": "Necklace - Healing Power",
+     "level": 210
+    },
+    {
+     "name": "Necklace - Agility",
+     "level": 210
+    },
+    {
+     "name": "Necklace - Deflection",
+     "level": 210
+    },
+    {
+     "name": "Twisting Essence Jar",
+     "level": 220
+    },
+    {
+     "name": "Truesilver Conduit",
+     "level": 220
+    },
+    {
+     "name": "Radiant Staff",
+     "level": 220
+    },
+    {
+     "name": "Chest - Absorption",
+     "level": 220
+    },
+    {
+     "name": "Brilliant Wand",
+     "level": 275
+    },
+    {
+     "name": "Gloves - Holy Power",
+     "level": 300
+    },
+    {
+     "name": "Gloves - Arcane Power",
+     "level": 300
+    },
+    {
+     "name": "Bracer - Superior Intellect",
+     "level": 300
+    },
+    {
+     "name": "Bracer - Superior Deflection",
+     "level": 300
+    },
+    {
+     "name": "Off-Hand - Wisdom",
+     "level": 300
+    },
+    {
+     "name": "Gloves - Superior Strength",
+     "level": 300
+    },
+    {
+     "name": "Cloak - Agility",
+     "level": 300
+    },
+    {
+     "name": "Bracer - Greater Spellpower",
+     "level": 300
+    },
+    {
+     "name": "Gloves - Natural Power",
+     "level": 300
+    },
+    {
+     "name": "Idol of the Dream",
+     "level": 300
+    },
+    {
+     "name": "Libram of Holy Alacrity",
+     "level": 300
+    },
+    {
+     "name": "Totem of Thunder",
+     "level": 300
+    },
+    {
+     "name": "Enchanting Certification",
+     "level": 300
+    }
+   ]
+  },
+  {
+   "slug": "engineering",
+   "name": "Engineering",
+   "recipeCount": 241,
+   "newCount": 76,
+   "categories": [
+    {
+     "name": "Goggles and helms",
+     "count": 24
+    },
+    {
+     "name": "Other gear",
+     "count": 12
+    },
+    {
+     "name": "Guns and scopes",
+     "count": 16
+    },
+    {
+     "name": "Ammunition",
+     "count": 9
+    },
+    {
+     "name": "Fireworks and toys",
+     "count": 31
+    },
+    {
+     "name": "Pets and mounts",
+     "count": 4
+    },
+    {
+     "name": "Parts",
+     "count": 35
+    },
+    {
+     "name": "Other",
+     "count": 11
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Small Seaforium Charge",
+     "level": 2
+    },
+    {
+     "name": "Explosive Sheep",
+     "level": 2
+    },
+    {
+     "name": "Flash Bomb",
+     "level": 185
+    },
+    {
+     "name": "Goblin Land Mine",
+     "level": 3
+    },
+    {
+     "name": "Ez-Thro Dynamite II",
+     "level": 200
+    },
+    {
+     "name": "Large Seaforium Charge",
+     "level": 2
+    },
+    {
+     "name": "Goblin Sapper Charge",
+     "level": 3
+    },
+    {
+     "name": "Powerful Seaforium Charge",
+     "level": 2
+    },
+    {
+     "name": "Weak Flux",
+     "level": 26
+    },
+    {
+     "name": "Nightcrawlers",
+     "level": 14
+    },
+    {
+     "name": "Blank Parchment",
+     "level": 5
+    },
+    {
+     "name": "Engineer's Ink",
+     "level": 5
+    },
+    {
+     "name": "Rough Stone",
+     "level": 33
+    },
+    {
+     "name": "Copper Bar",
+     "level": 120
+    },
+    {
+     "name": "Coarse Stone",
+     "level": 46
+    },
+    {
+     "name": "Linen Cloth",
+     "level": 28
+    },
+    {
+     "name": "Silver Bar",
+     "level": 5
+    },
+    {
+     "name": "Bronze Bar",
+     "level": 80
+    },
+    {
+     "name": "Heavy Stone",
+     "level": 14
+    },
+    {
+     "name": "Wool Cloth",
+     "level": 21
+    },
+    {
+     "name": "Medium Leather",
+     "level": 5
+    },
+    {
+     "name": "Frost Oil",
+     "level": 15
+    },
+    {
+     "name": "Solid Stone",
+     "level": 144
+    },
+    {
+     "name": "Iron Bar",
+     "level": 12
+    },
+    {
+     "name": "Silk Cloth",
+     "level": 12
+    },
+    {
+     "name": "Mithril Bar",
+     "level": 26
+    },
+    {
+     "name": "Mageweave Cloth",
+     "level": 7
+    },
+    {
+     "name": "Handful of Copper Bolts",
+     "level": 48
+    },
+    {
+     "name": "Coarse Blasting Powder",
+     "level": 46
+    },
+    {
+     "name": "Silver Contact",
+     "level": 8
+    },
+    {
+     "name": "Whirring Bronze Gizmo",
+     "level": 15
+    },
+    {
+     "name": "Heavy Blasting Powder",
+     "level": 12
+    },
+    {
+     "name": "Solid Blasting Powder",
+     "level": 26
+    },
+    {
+     "name": "SAF-T Copper Bomb",
+     "level": 55
+    },
+    {
+     "name": "SAF-T Tabs",
+     "level": 25
+    },
+    {
+     "name": "SAF-T Dynamite",
+     "level": 25
+    },
+    {
+     "name": "EZ-Thro Wrap",
+     "level": 100
+    },
+    {
+     "name": "No Slip SAF-T Padding",
+     "level": 145
+    },
+    {
+     "name": "EZ-Thro Copper Bomb XL",
+     "level": 130
+    },
+    {
+     "name": "Satchel of Copper Bombs",
+     "level": 85
+    },
+    {
+     "name": "Whimsical Waistwrap",
+     "level": 175
+    },
+    {
+     "name": "Gizmo Girdle",
+     "level": 175
+    },
+    {
+     "name": "Clanking Cord",
+     "level": 175
+    },
+    {
+     "name": "Floppy Goggles",
+     "level": 200
+    },
+    {
+     "name": "EZ-Thro Fireproof Fuse",
+     "level": 190
+    },
+    {
+     "name": "Stuckbutton Goggles",
+     "level": 200
+    },
+    {
+     "name": "Dented Goggles",
+     "level": 200
+    },
+    {
+     "name": "SAF-T Bell",
+     "level": 175
+    },
+    {
+     "name": "Bent Goggles",
+     "level": 200
+    },
+    {
+     "name": "Satchel of Bronze Bombs",
+     "level": 165
+    },
+    {
+     "name": "Emergency Field Cloak",
+     "level": 225
+    },
+    {
+     "name": "Compact Critter Carrier",
+     "level": 225
+    },
+    {
+     "name": "Gnomish Army Knife",
+     "level": 250
+    },
+    {
+     "name": "SAF-T Disposable Parachute",
+     "level": 250
+    },
+    {
+     "name": "Loot-A-Rang",
+     "level": 275
+    },
+    {
+     "name": "Satchel of Iron Bombs",
+     "level": 230
+    },
+    {
+     "name": "Satchel of Dark Iron Bombs",
+     "level": 285
+    },
+    {
+     "name": "Gnomish Poultryizer",
+     "level": 300
+    },
+    {
+     "name": "Ultrasafe Rechargeable Battery",
+     "level": 300
+    },
+    {
+     "name": "Ultralight Goblin Glider",
+     "level": 300
+    },
+    {
+     "name": "Stealthman 52",
+     "level": 300
+    },
+    {
+     "name": "Engineering Certification",
+     "level": 300
+    }
+   ]
+  },
+  {
+   "slug": "first-aid",
+   "name": "First Aid",
+   "recipeCount": 31,
+   "newCount": 17,
+   "categories": [
+    {
+     "name": "Every bandage, anti-venom and potion First Aid makes in the Forever beta client, with its reagents, the skill and where the manual comes from; then the way from 1 to 300.",
+     "count": 31
+    },
+    {
+     "name": "Recipes",
+     "count": 17
+    },
+    {
+     "name": "Recipes",
+     "count": 31
+    },
+    {
+     "name": "Bandages",
+     "count": 11
+    },
+    {
+     "name": "Anti-venoms and potions",
+     "count": 17
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Linen Bandage",
+     "level": 1
+    },
+    {
+     "name": "Heavy Linen Bandage",
+     "level": 2
+    },
+    {
+     "name": "Wool Bandage",
+     "level": 80
+    },
+    {
+     "name": "Heavy Wool Bandage",
+     "level": 2
+    },
+    {
+     "name": "Silk Bandage",
+     "level": 150
+    },
+    {
+     "name": "Heavy Silk Bandage",
+     "level": 2
+    },
+    {
+     "name": "Mageweave Bandage",
+     "level": 210
+    },
+    {
+     "name": "Heavy Mageweave Bandage",
+     "level": 2
+    },
+    {
+     "name": "Runecloth Bandage",
+     "level": 260
+    },
+    {
+     "name": "Heavy Runecloth Bandage",
+     "level": 2
+    },
+    {
+     "name": "Empty Vial",
+     "level": 46
+    },
+    {
+     "name": "Mild Spices",
+     "level": 111
+    },
+    {
+     "name": "Bottle of Dalaran Noir",
+     "level": 59
+    },
+    {
+     "name": "Leaded Vial",
+     "level": 19
+    },
+    {
+     "name": "Hot Spices",
+     "level": 19
+    },
+    {
+     "name": "Linen Cloth",
+     "level": 73
+    },
+    {
+     "name": "Peacebloom",
+     "level": 40
+    },
+    {
+     "name": "Wool Cloth",
+     "level": 20
+    },
+    {
+     "name": "Briarthorn",
+     "level": 6
+    },
+    {
+     "name": "Spider Ichor",
+     "level": 59
+    },
+    {
+     "name": "Bruiseweed",
+     "level": 19
+    },
+    {
+     "name": "Silk Cloth",
+     "level": 126
+    },
+    {
+     "name": "Mageweave Cloth",
+     "level": 18
+    }
+   ]
+  },
+  {
+   "slug": "herbalism",
+   "name": "Herbalism",
+   "recipeCount": null,
+   "newCount": null,
+   "categories": [],
+   "recipes": [
+    {
+     "name": "Herbs",
+     "level": 3
+    },
+    {
+     "name": "Herbs by skill",
+     "level": 28
+    },
+    {
+     "name": "Most in Alterac Mountains",
+     "level": 195
+    },
+    {
+     "name": "Most in Swamp of Sorrows and Un'Goro Crater",
+     "level": 235
+    },
+    {
+     "name": "Most in The Hinterlands and Desolace",
+     "level": 245
+    },
+    {
+     "name": "Most in Felwood and Desolace",
+     "level": 250
+    },
+    {
+     "name": "Most in Winterspring",
+     "level": 290
+    }
+   ]
+  },
+  {
+   "slug": "leatherworking",
+   "name": "Leatherworking",
+   "recipeCount": 511,
+   "newCount": 270,
+   "categories": [
+    {
+     "name": "Gloves",
+     "count": 79
+    },
+    {
+     "name": "Belts",
+     "count": 57
+    },
+    {
+     "name": "Legs",
+     "count": 60
+    },
+    {
+     "name": "Boots",
+     "count": 70
+    },
+    {
+     "name": "Armor kits",
+     "count": 15
+    },
+    {
+     "name": "Bags",
+     "count": 8
+    },
+    {
+     "name": "Cured leather",
+     "count": 10
+    },
+    {
+     "name": "Other",
+     "count": 2
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Comfortable Leather Hat",
+     "level": 12
+    },
+    {
+     "name": "Nightscape Headband",
+     "level": 5
+    },
+    {
+     "name": "Big Voodoo Mask",
+     "level": 8
+    },
+    {
+     "name": "Wild Leather Helmet",
+     "level": 10
+    },
+    {
+     "name": "Wolfshead Helm",
+     "level": 18
+    },
+    {
+     "name": "Turtle Scale Helm",
+     "level": 14
+    },
+    {
+     "name": "Helm of Fire",
+     "level": 40
+    },
+    {
+     "name": "Tough Scorpid Helm",
+     "level": 10
+    },
+    {
+     "name": "Wicked Leather Headband",
+     "level": 12
+    },
+    {
+     "name": "Runic Leather Headband",
+     "level": 14
+    },
+    {
+     "name": "Heavy Scorpid Helm",
+     "level": 8
+    },
+    {
+     "name": "Helm of the Great Chief",
+     "level": 40
+    },
+    {
+     "name": "Bramblewood Helm",
+     "level": 12
+    },
+    {
+     "name": "Molten Helm",
+     "level": 15
+    },
+    {
+     "name": "Coarse Thread",
+     "level": 130
+    },
+    {
+     "name": "Fine Thread",
+     "level": 60
+    },
+    {
+     "name": "Salt",
+     "level": 180
+    },
+    {
+     "name": "Green Dye",
+     "level": 16
+    },
+    {
+     "name": "Silken Thread",
+     "level": 164
+    },
+    {
+     "name": "Ruined Leather Scraps",
+     "level": 150
+    },
+    {
+     "name": "Elixir of Minor Agility",
+     "level": 20
+    },
+    {
+     "name": "Medium Leather",
+     "level": 174
+    },
+    {
+     "name": "Heavy Hide",
+     "level": 60
+    },
+    {
+     "name": "Heavy Leather",
+     "level": 238
+    },
+    {
+     "name": "Iron Buckle",
+     "level": 10
+    },
+    {
+     "name": "Thick Leather",
+     "level": 250
+    },
+    {
+     "name": "Elixir of Defense",
+     "level": 13
+    },
+    {
+     "name": "Thick Hide",
+     "level": 13
+    },
+    {
+     "name": "Deeprock Salt",
+     "level": 13
+    },
+    {
+     "name": "Light Leather",
+     "level": 50
+    },
+    {
+     "name": "Medium Leather",
+     "level": 30
+    },
+    {
+     "name": "Cured Heavy Hide",
+     "level": 60
+    },
+    {
+     "name": "Cured Thick Hide",
+     "level": 13
+    },
+    {
+     "name": "Wisdom's Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Defender's Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Brawler's Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Totemic Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Trapper's Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Stormrider's Leather Belt",
+     "level": 60
+    },
+    {
+     "name": "Stormrider's Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Trapper's Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Defender's Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Brawler's Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Totemic Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Wisdom's Leather Tunic",
+     "level": 110
+    },
+    {
+     "name": "Wisdom's Leather Leggings",
+     "level": 125
+    },
+    {
+     "name": "Trapper's Leather Legguards",
+     "level": 125
+    },
+    {
+     "name": "Brawler's Leather Legguards",
+     "level": 125
+    },
+    {
+     "name": "Totemic Leather Leggings",
+     "level": 125
+    },
+    {
+     "name": "Defender's Leather Kilt",
+     "level": 125
+    },
+    {
+     "name": "Stormrider's Leather Kilt",
+     "level": 125
+    },
+    {
+     "name": "Wisdom's Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Trapper's Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Wisdom's Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Defender's Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Totemic Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Stormrider's Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Brawler's Leather Gloves",
+     "level": 75
+    },
+    {
+     "name": "Defender's Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Wisdom's Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Totemic Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Stormrider's Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Brawler's Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Trapper's Leather Boots",
+     "level": 85
+    },
+    {
+     "name": "Trapper's Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Brawler's Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Totemic Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Stormrider's Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Defender's Leather Hood",
+     "level": 100
+    },
+    {
+     "name": "Prowler's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Skycaller's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Stalker's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Mender's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Forceful Thick Armor Kit",
+     "level": 185
+    },
+    {
+     "name": "Warden's Leather Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Skycaller's Mail Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Mender's Mail Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Prowler's Leather Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Skulker's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Skirmisher's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Warden's Leather Gloves",
+     "level": 175
+    },
+    {
+     "name": "Stalker's Mail Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Skulker's Leather Shoulder",
+     "level": 210
+    },
+    {
+     "name": "Skirmisher's Mail Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Mender's Leather Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Skycaller's Leather Shoulders",
+     "level": 210
+    },
+    {
+     "name": "Skycaller's Mail Bracers",
+     "level": 225
+    },
+    {
+     "name": "Skulker's Leather Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Mender's Leather Bracers",
+     "level": 225
+    },
+    {
+     "name": "Stalker's Mail Bracers",
+     "level": 225
+    },
+    {
+     "name": "Skulker's Leather Bracers",
+     "level": 225
+    },
+    {
+     "name": "Skirmisher's Mail Bracers",
+     "level": 225
+    },
+    {
+     "name": "Skycaller's Leather Bracers",
+     "level": 225
+    },
+    {
+     "name": "Warden's Leather Bracers",
+     "level": 225
+    },
+    {
+     "name": "Mender's Mail Bracers",
+     "level": 225
+    },
+    {
+     "name": "Skycaller's Leather Boots",
+     "level": 235
+    },
+    {
+     "name": "Mender's Leather Boots",
+     "level": 235
+    },
+    {
+     "name": "Skirmisher's Mail Sabatons",
+     "level": 235
+    },
+    {
+     "name": "Mender's Mail Sabatons",
+     "level": 235
+    },
+    {
+     "name": "Skycaller's Mail Sabatons",
+     "level": 235
+    },
+    {
+     "name": "Prowler's Leather Boots",
+     "level": 235
+    },
+    {
+     "name": "Warden's Leather Boots",
+     "level": 235
+    },
+    {
+     "name": "Skulker's Leather Boots",
+     "level": 235
+    },
+    {
+     "name": "Stalker's Mail Sabatons",
+     "level": 235
+    },
+    {
+     "name": "Mystic Rugged Armor Kit",
+     "level": 235
+    },
+    {
+     "name": "Prowler's Leather Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Skycaller's Leather Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Stalker's Mail Belt",
+     "level": 250
+    },
+    {
+     "name": "Skycaller's Mail Belt",
+     "level": 250
+    },
+    {
+     "name": "Mender's Mail Belt",
+     "level": 250
+    },
+    {
+     "name": "Warden's Leather Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Mender's Leather Waistguard",
+     "level": 250
+    },
+    {
+     "name": "Skirmisher's Mail Belt",
+     "level": 250
+    },
+    {
+     "name": "Prowler's Leather Bracers",
+     "level": 225
+    },
+    {
+     "name": "Leatherworking Certification",
+     "level": 300
+    }
+   ]
+  },
+  {
+   "slug": "mining",
+   "name": "Mining",
+   "recipeCount": null,
+   "newCount": null,
+   "categories": [
+    {
+     "name": "Smelting",
+     "count": 14
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Copper Bar",
+     "level": 1
+    },
+    {
+     "name": "Tin Bar",
+     "level": 65
+    },
+    {
+     "name": "Silver Bar",
+     "level": 75
+    },
+    {
+     "name": "Iron Bar",
+     "level": 125
+    },
+    {
+     "name": "Gold Bar",
+     "level": 155
+    },
+    {
+     "name": "Steel Bar",
+     "level": 165
+    },
+    {
+     "name": "Mithril Bar",
+     "level": 175
+    },
+    {
+     "name": "Dark Iron Bar",
+     "level": 8
+    },
+    {
+     "name": "Truesilver Bar",
+     "level": 230
+    },
+    {
+     "name": "Thorium Bar",
+     "level": 250
+    },
+    {
+     "name": "Elementium Bar",
+     "level": 10
+    }
+   ]
+  },
+  {
+   "slug": "skinning",
+   "name": "Skinning",
+   "recipeCount": null,
+   "newCount": null,
+   "categories": [],
+   "recipes": [
+    {
+     "name": "Level bands",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "slug": "tailoring",
+   "name": "Tailoring",
+   "recipeCount": 414,
+   "newCount": 180,
+   "categories": [
+    {
+     "name": "Gloves",
+     "count": 52
+    },
+    {
+     "name": "Belts",
+     "count": 38
+    },
+    {
+     "name": "Legs",
+     "count": 45
+    },
+    {
+     "name": "Boots",
+     "count": 49
+    },
+    {
+     "name": "Shirts and robes for show",
+     "count": 26
+    },
+    {
+     "name": "Bags",
+     "count": 29
+    },
+    {
+     "name": "Bolts of cloth",
+     "count": 6
+    },
+    {
+     "name": "Other",
+     "count": 2
+    },
+    {
+     "name": "Camp objects",
+     "count": 3
+    }
+   ],
+   "recipes": [
+    {
+     "name": "Azure Silk Hood",
+     "level": 2
+    },
+    {
+     "name": "Silk Headband",
+     "level": 3
+    },
+    {
+     "name": "Enchanter's Cowl",
+     "level": 3
+    },
+    {
+     "name": "Shadow Hood",
+     "level": 4
+    },
+    {
+     "name": "White Bandit Mask",
+     "level": 180
+    },
+    {
+     "name": "Black Mageweave Headband",
+     "level": 3
+    },
+    {
+     "name": "Admiral's Hat",
+     "level": 3
+    },
+    {
+     "name": "Red Mageweave Headband",
+     "level": 4
+    },
+    {
+     "name": "Shadoweave Mask",
+     "level": 2
+    },
+    {
+     "name": "Stormcloth Headband",
+     "level": 4
+    },
+    {
+     "name": "Dreamweave Circlet",
+     "level": 8
+    },
+    {
+     "name": "Felcloth Hood",
+     "level": 5
+    },
+    {
+     "name": "Runecloth Headband",
+     "level": 4
+    },
+    {
+     "name": "Wizardweave Turban",
+     "level": 6
+    },
+    {
+     "name": "Mooncloth Circlet",
+     "level": 4
+    },
+    {
+     "name": "Sylvan Crown",
+     "level": 4
+    },
+    {
+     "name": "Coarse Thread",
+     "level": 24
+    },
+    {
+     "name": "Fine Thread",
+     "level": 152
+    },
+    {
+     "name": "Blue Dye",
+     "level": 40
+    },
+    {
+     "name": "Red Dye",
+     "level": 26
+    },
+    {
+     "name": "Silken Thread",
+     "level": 16
+    },
+    {
+     "name": "Orange Dye",
+     "level": 14
+    },
+    {
+     "name": "Heavy Silken Thread",
+     "level": 46
+    },
+    {
+     "name": "Rune Thread",
+     "level": 10
+    },
+    {
+     "name": "Linen Cloth",
+     "level": 66
+    },
+    {
+     "name": "Elixir of Wisdom",
+     "level": 22
+    },
+    {
+     "name": "Mageweave Cloth",
+     "level": 230
+    },
+    {
+     "name": "Runecloth",
+     "level": 150
+    },
+    {
+     "name": "Bolt of Linen Cloth",
+     "level": 24
+    },
+    {
+     "name": "Bolt of Woolen Cloth",
+     "level": 130
+    },
+    {
+     "name": "Bolt of Silk Cloth",
+     "level": 112
+    },
+    {
+     "name": "Bolt of Mageweave",
+     "level": 46
+    },
+    {
+     "name": "Bolt of Runecloth",
+     "level": 30
+    },
+    {
+     "name": "Shining Boots",
+     "level": 60
+    },
+    {
+     "name": "Shadow Boots",
+     "level": 60
+    },
+    {
+     "name": "Pristine Boots",
+     "level": 60
+    },
+    {
+     "name": "Pearly Boots",
+     "level": 60
+    },
+    {
+     "name": "Flame Boots",
+     "level": 60
+    },
+    {
+     "name": "Silky Boots",
+     "level": 60
+    },
+    {
+     "name": "Shining Gown",
+     "level": 110
+    },
+    {
+     "name": "Shadow Gown",
+     "level": 110
+    },
+    {
+     "name": "Pristine Gown",
+     "level": 110
+    },
+    {
+     "name": "Pearly Gown",
+     "level": 110
+    },
+    {
+     "name": "Flame Gown",
+     "level": 110
+    },
+    {
+     "name": "Silky Gown",
+     "level": 110
+    },
+    {
+     "name": "Shining Circlet",
+     "level": 100
+    },
+    {
+     "name": "Shadow Circlet",
+     "level": 100
+    },
+    {
+     "name": "Pristine Circlet",
+     "level": 100
+    },
+    {
+     "name": "Pearly Circlet",
+     "level": 100
+    },
+    {
+     "name": "Flame Circlet",
+     "level": 100
+    },
+    {
+     "name": "Silky Circlet",
+     "level": 100
+    },
+    {
+     "name": "Shining Sash",
+     "level": 85
+    },
+    {
+     "name": "Shadow Sash",
+     "level": 85
+    },
+    {
+     "name": "Pristine Sash",
+     "level": 85
+    },
+    {
+     "name": "Pearly Sash",
+     "level": 85
+    },
+    {
+     "name": "Flame Sash",
+     "level": 85
+    },
+    {
+     "name": "Silky Sash",
+     "level": 85
+    },
+    {
+     "name": "Shining Gloves",
+     "level": 75
+    },
+    {
+     "name": "Shadow Gloves",
+     "level": 75
+    },
+    {
+     "name": "Pristine Gloves",
+     "level": 75
+    },
+    {
+     "name": "Pearly Gloves",
+     "level": 75
+    },
+    {
+     "name": "Flame Gloves",
+     "level": 75
+    },
+    {
+     "name": "Silky Gloves",
+     "level": 75
+    },
+    {
+     "name": "Flame Leggings",
+     "level": 125
+    },
+    {
+     "name": "Pearly Leggings",
+     "level": 125
+    },
+    {
+     "name": "Pristine Leggings",
+     "level": 125
+    },
+    {
+     "name": "Shadow Leggings",
+     "level": 125
+    },
+    {
+     "name": "Shining Leggings",
+     "level": 125
+    },
+    {
+     "name": "Silky Leggings",
+     "level": 125
+    },
+    {
+     "name": "Netherfroth Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Netherflame Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Radiant Handwraps",
+     "level": 165
+    },
+    {
+     "name": "Golden Handwraps",
+     "level": 165
+    },
+    {
+     "name": "Frothing Handwraps",
+     "level": 165
+    },
+    {
+     "name": "Fiery Handwraps",
+     "level": 165
+    },
+    {
+     "name": "Black Handwraps",
+     "level": 165
+    },
+    {
+     "name": "Mageweave Reagent Bag",
+     "level": 190
+    },
+    {
+     "name": "Netherpearl Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Nethershine Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Netherflame Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Netherfroth Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Nethergeld Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Netherlight Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Netherpearl Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Nethershine Cuffs",
+     "level": 205
+    },
+    {
+     "name": "Black Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Fiery Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Frothing Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Gilded Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Golden Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Radiant Waistcord",
+     "level": 215
+    },
+    {
+     "name": "Netherlight Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Nethergeld Shoulders",
+     "level": 195
+    },
+    {
+     "name": "Runecloth Reagent Bag",
+     "level": 215
+    },
+    {
+     "name": "Gilded Sandals",
+     "level": 235
+    },
+    {
+     "name": "Frothing Sandals",
+     "level": 235
+    },
+    {
+     "name": "Black Sandals",
+     "level": 235
+    },
+    {
+     "name": "Fiery Sandals",
+     "level": 235
+    },
+    {
+     "name": "Golden Sandals",
+     "level": 235
+    },
+    {
+     "name": "Radiant Sandals",
+     "level": 235
+    },
+    {
+     "name": "Tailoring Certification",
+     "level": 300
+    }
+   ]
+  }
+ ]
+}
