@@ -46,16 +46,16 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                   >
                     <Link
                       href={`/dungeons/${dungeon.id}`}
-                      className="relative flex h-full w-full items-center overflow-hidden rounded-lg border shadow-sm"
+                      className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
                         borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
                         backgroundColor: "#08111f",
                       }}
                     >
-                      <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined }} />
-                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.78), rgba(4,14,24,.18))" : "linear-gradient(90deg, rgba(18,13,8,.8), rgba(18,13,8,.18))" }} />
+                      <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
+                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.58), rgba(4,14,24,.12))" : "linear-gradient(90deg, rgba(18,13,8,.62), rgba(18,13,8,.12))" }} />
                       <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
-                        <span className="truncate text-sm leading-tight text-white">{dungeon.nameEn}</span>
+                        <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
                         <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
                       </span>
                     </Link>
@@ -63,7 +63,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     {active ? (
                       <div className={`absolute bottom-full z-50 mb-2 w-72 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>
                         <div className="relative h-24 overflow-hidden bg-deep">
-                          <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined }} />
+                          <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
                           <span className="absolute inset-0 bg-gradient-to-t from-panel via-panel/20 to-transparent" />
                         </div>
                         <div className="p-3">
