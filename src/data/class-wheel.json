@@ -1,0 +1,56 @@
+{
+ "Warrior": {
+  "zh": "战士",
+  "en": "Warrior",
+  "color": "#C79C6E",
+  "icon": "class_warrior"
+ },
+ "Paladin": {
+  "zh": "圣骑士",
+  "en": "Paladin",
+  "color": "#F58CBA",
+  "icon": "class_paladin"
+ },
+ "Hunter": {
+  "zh": "猎人",
+  "en": "Hunter",
+  "color": "#ABD473",
+  "icon": "class_hunter"
+ },
+ "Rogue": {
+  "zh": "潜行者",
+  "en": "Rogue",
+  "color": "#FFF569",
+  "icon": "class_rogue"
+ },
+ "Priest": {
+  "zh": "牧师",
+  "en": "Priest",
+  "color": "#FFFFFF",
+  "icon": "class_priest"
+ },
+ "Shaman": {
+  "zh": "萨满祭司",
+  "en": "Shaman",
+  "color": "#0070DE",
+  "icon": "class_shaman"
+ },
+ "Mage": {
+  "zh": "法师",
+  "en": "Mage",
+  "color": "#69CCF0",
+  "icon": "class_mage"
+ },
+ "Warlock": {
+  "zh": "术士",
+  "en": "Warlock",
+  "color": "#9482C9",
+  "icon": "class_warlock"
+ },
+ "Druid": {
+  "zh": "德鲁伊",
+  "en": "Druid",
+  "color": "#FF7D0A",
+  "icon": "class_druid"
+ }
+}

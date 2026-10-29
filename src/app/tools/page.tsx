@@ -200,6 +200,18 @@ export default function ToolsPage() {
         </Link>
 
         <Link
+          href="/tools/class-wheel"
+          className="panel panel-hover group mt-4 flex flex-col gap-3 p-5 md:flex-row md:items-center md:justify-between"
+        >
+          <div className="min-w-0">
+            <p className="eyebrow">Class wheel</p>
+            <p className="display mt-1 text-xl text-parchment">Let the wheel decide</p>
+            <p className="mt-1 text-xs text-muted">Nine classes, one random pick. Just for fun.</p>
+          </div>
+          <span className="flex items-center gap-2 text-xs text-gold/85">Spin →</span>
+        </Link>
+
+        <Link
           href="/tools/class-popularity"
           className="panel panel-hover group mt-4 flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between"
         >

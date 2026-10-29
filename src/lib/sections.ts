@@ -61,6 +61,15 @@ export const toolItems: SectionItem[] = [
     bullets: [],
   },
   {
+    slug: "class-wheel",
+    label: "Class Wheel",
+    zh: "职业转盘",
+    href: "/tools/class-wheel",
+    status: "live",
+    summary: "Spin a nine-class wheel and let it pick your next class. Local-only fun.",
+    bullets: [],
+  },
+  {
     slug: "builds",
     label: "Talent Hall",
     zh: "天赋大厅",
