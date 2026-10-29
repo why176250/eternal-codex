@@ -1,0 +1,350 @@
+{
+ "total": 35,
+ "levelGroups": [
+  {
+   "group": "L13-18",
+   "dungeons": [
+    {
+     "slug": "hall-of-thanes",
+     "name": "Hall of Thanes",
+     "levelMin": 13,
+     "levelMax": 18
+    },
+    {
+     "slug": "ragefire-chasm",
+     "name": "Ragefire Chasm",
+     "levelMin": 13,
+     "levelMax": 18
+    }
+   ]
+  },
+  {
+   "group": "L15-20",
+   "dungeons": [
+    {
+     "slug": "ruins-of-lordaeron",
+     "name": "Ruins of Lordaeron",
+     "levelMin": 15,
+     "levelMax": 20
+    }
+   ]
+  },
+  {
+   "group": "L17-24",
+   "dungeons": [
+    {
+     "slug": "wailing-caverns",
+     "name": "Wailing Caverns",
+     "levelMin": 17,
+     "levelMax": 24
+    }
+   ]
+  },
+  {
+   "group": "L17-26",
+   "dungeons": [
+    {
+     "slug": "the-deadmines",
+     "name": "The Deadmines",
+     "levelMin": 17,
+     "levelMax": 26
+    }
+   ]
+  },
+  {
+   "group": "L22-30",
+   "dungeons": [
+    {
+     "slug": "shadowfang-keep",
+     "name": "Shadowfang Keep",
+     "levelMin": 22,
+     "levelMax": 30
+    }
+   ]
+  },
+  {
+   "group": "L24-32",
+   "dungeons": [
+    {
+     "slug": "blackfathom-deeps",
+     "name": "Blackfathom Deeps",
+     "levelMin": 24,
+     "levelMax": 32
+    },
+    {
+     "slug": "the-stockade",
+     "name": "The Stockade",
+     "levelMin": 24,
+     "levelMax": 32
+    }
+   ]
+  },
+  {
+   "group": "L26-31",
+   "dungeons": [
+    {
+     "slug": "excavation-site",
+     "name": "Excavation Site",
+     "levelMin": 26,
+     "levelMax": 31
+    }
+   ]
+  },
+  {
+   "group": "L28-33",
+   "dungeons": [
+    {
+     "slug": "city-of-dalaran",
+     "name": "City of Dalaran",
+     "levelMin": 28,
+     "levelMax": 33
+    }
+   ]
+  },
+  {
+   "group": "L29-38",
+   "dungeons": [
+    {
+     "slug": "gnomeregan",
+     "name": "Gnomeregan",
+     "levelMin": 29,
+     "levelMax": 38
+    },
+    {
+     "slug": "razorfen-kraul",
+     "name": "Razorfen Kraul",
+     "levelMin": 29,
+     "levelMax": 38
+    }
+   ]
+  },
+  {
+   "group": "L30-38",
+   "dungeons": [
+    {
+     "slug": "scarlet-monastery-graveyard",
+     "name": "Scarlet Monastery Graveyard",
+     "levelMin": 30,
+     "levelMax": 38
+    }
+   ]
+  },
+  {
+   "group": "L33-41",
+   "dungeons": [
+    {
+     "slug": "scarlet-monastery-library",
+     "name": "Scarlet Monastery Library",
+     "levelMin": 33,
+     "levelMax": 41
+    }
+   ]
+  },
+  {
+   "group": "L35-40",
+   "dungeons": [
+    {
+     "slug": "the-drowned-city",
+     "name": "The Drowned City",
+     "levelMin": 35,
+     "levelMax": 40
+    }
+   ]
+  },
+  {
+   "group": "L36-44",
+   "dungeons": [
+    {
+     "slug": "scarlet-monastery-armory",
+     "name": "Scarlet Monastery Armory",
+     "levelMin": 36,
+     "levelMax": 44
+    }
+   ]
+  },
+  {
+   "group": "L37-46",
+   "dungeons": [
+    {
+     "slug": "razorfen-downs",
+     "name": "Razorfen Downs",
+     "levelMin": 37,
+     "levelMax": 46
+    }
+   ]
+  },
+  {
+   "group": "L38-46",
+   "dungeons": [
+    {
+     "slug": "scarlet-monastery-cathedral",
+     "name": "Scarlet Monastery Cathedral",
+     "levelMin": 38,
+     "levelMax": 46
+    }
+   ]
+  },
+  {
+   "group": "L40-45",
+   "dungeons": [
+    {
+     "slug": "kroldok-stronghold",
+     "name": "Kroldok Stronghold",
+     "levelMin": 40,
+     "levelMax": 45
+    }
+   ]
+  },
+  {
+   "group": "L41-51",
+   "dungeons": [
+    {
+     "slug": "uldaman",
+     "name": "Uldaman",
+     "levelMin": 41,
+     "levelMax": 51
+    }
+   ]
+  },
+  {
+   "group": "L44-54",
+   "dungeons": [
+    {
+     "slug": "zulfarrak",
+     "name": "Zulfarrak",
+     "levelMin": 44,
+     "levelMax": 54
+    }
+   ]
+  },
+  {
+   "group": "L46-55",
+   "dungeons": [
+    {
+     "slug": "maraudon",
+     "name": "Maraudon",
+     "levelMin": 46,
+     "levelMax": 55
+    }
+   ]
+  },
+  {
+   "group": "L48-53",
+   "dungeons": [
+    {
+     "slug": "alcaz-prison",
+     "name": "Alcaz Prison",
+     "levelMin": 48,
+     "levelMax": 53
+    }
+   ]
+  },
+  {
+   "group": "L50-60",
+   "dungeons": [
+    {
+     "slug": "sunken-temple",
+     "name": "Sunken Temple",
+     "levelMin": 50,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L52-60",
+   "dungeons": [
+    {
+     "slug": "blackrock-depths",
+     "name": "Blackrock Depths",
+     "levelMin": 52,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L54-60",
+   "dungeons": [
+    {
+     "slug": "dire-maul-east",
+     "name": "Dire Maul East",
+     "levelMin": 54,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L55-60",
+   "dungeons": [
+    {
+     "slug": "blackmaw-hold",
+     "name": "Blackmaw Hold",
+     "levelMin": 55,
+     "levelMax": 60
+    },
+    {
+     "slug": "lower-blackrock-spire",
+     "name": "Lower Blackrock Spire",
+     "levelMin": 55,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L56-60",
+   "dungeons": [
+    {
+     "slug": "dire-maul-north",
+     "name": "Dire Maul North",
+     "levelMin": 56,
+     "levelMax": 60
+    },
+    {
+     "slug": "dire-maul-west",
+     "name": "Dire Maul West",
+     "levelMin": 56,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L58-60",
+   "dungeons": [
+    {
+     "slug": "scholomance",
+     "name": "Scholomance",
+     "levelMin": 58,
+     "levelMax": 60
+    },
+    {
+     "slug": "shapers-terrace",
+     "name": "Shapers Terrace",
+     "levelMin": 58,
+     "levelMax": 60
+    },
+    {
+     "slug": "stratholme-main-gate",
+     "name": "Stratholme Main Gate",
+     "levelMin": 58,
+     "levelMax": 60
+    },
+    {
+     "slug": "stratholme-service-gate",
+     "name": "Stratholme Service Gate",
+     "levelMin": 58,
+     "levelMax": 60
+    }
+   ]
+  },
+  {
+   "group": "L59-60",
+   "dungeons": [
+    {
+     "slug": "upper-blackrock-spire",
+     "name": "Upper Blackrock Spire",
+     "levelMin": 59,
+     "levelMax": 60
+    }
+   ]
+  }
+ ]
+}
