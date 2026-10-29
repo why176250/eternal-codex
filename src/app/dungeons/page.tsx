@@ -1,119 +1,153 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { dungeons } from "@/lib/data";
+import { foreverDungeons } from "@/lib/forever";
+import loot from "@/data/dungeon-loot.json";
+import { DungeonPicker } from "@/components/DungeonPicker";
 
 export const metadata: Metadata = {
-  title: "Dungeons & raids — the leveling ladder to Naxxramas",
+  title: "Dungeons — the Forever leveling ladder",
   description:
-    "Level bands for every dungeon and raid in World of Warcraft: Forever, from Ragefire Chasm to Naxxramas, with notes on what each one is actually for.",
+    "Nine new Forever dungeons and 26 Classic dungeons arranged by level, with boss counts and links to loot.",
   alternates: { canonical: "/dungeons" },
 };
 
-const bands = [
-  { label: "1–20", hint: "Starter dungeons" },
-  { label: "20–40", hint: "Mid-level wings" },
-  { label: "40–55", hint: "Pre-raid climb" },
-  { label: "55–60", hint: "The pre-raid wall" },
-  { label: "60", hint: "Raids" },
-];
+const ACTUAL = foreverDungeons.filter(
+  (dungeon) => dungeon.type === "Dungeon" && !dungeon.id.startsWith("route-") && !dungeon.id.startsWith("zone-"),
+);
+const NEW = ACTUAL.filter((dungeon) => dungeon.isNew).sort((a, b) => a.min - b.min);
+const CLASSIC = ACTUAL.filter((dungeon) => !dungeon.isNew).sort((a, b) => a.min - b.min);
+const lootDungeons = (loot as { result: { dungeons: { bosses?: unknown[] }[] } }).result.dungeons;
+const BOSSES = lootDungeons.reduce((sum, dungeon) => sum + (dungeon.bosses?.length ?? 0), 0);
+const MIN = 10;
+const MAX = 60;
+
+function layout(list: typeof ACTUAL) {
+  const lanes: number[] = [];
+  return list.map((dungeon) => {
+    const start = Math.max(MIN, dungeon.min || MIN);
+    const end = Math.min(MAX, Math.max(start + 5, dungeon.max || start + 5));
+    const visualEnd = Math.min(MAX, Math.max(end, start + 7));
+    let lane = lanes.findIndex((lastEnd) => start > lastEnd + 1);
+    if (lane < 0) {
+      lane = lanes.length;
+      lanes.push(visualEnd);
+    } else {
+      lanes[lane] = visualEnd;
+    }
+    return {
+      dungeon,
+      start,
+      end: visualEnd,
+      lane,
+      left: ((start - MIN) / (MAX - MIN)) * 100,
+      width: ((visualEnd - start) / (MAX - MIN)) * 100,
+    };
+  });
+}
+
+const newLayout = layout(NEW);
+const classicLayout = layout(CLASSIC);
+const AXIS = Array.from({ length: 11 }, (_, index) => MIN + index * 5);
+
+function TimelineRow({
+  title,
+  count,
+  accent,
+  entries,
+}: {
+  title: string;
+  count: number;
+  accent: string;
+  entries: ReturnType<typeof layout>;
+}) {
+  const laneCount = Math.max(...entries.map((entry) => entry.lane), 0) + 1;
+  return (
+    <div className="border-t border-line/60 py-4 first:border-0">
+      <div className="mb-2 flex items-baseline gap-2">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-muted">{title}</span>
+        <span className="text-[10px] text-muted/60">{count}</span>
+      </div>
+      <div className="relative min-h-0" style={{ height: `${laneCount * 52}px` }}>
+        {entries.map(({ dungeon, left, width, lane }) => (
+          <Link
+            key={dungeon.id}
+            href={`/dungeons/${dungeon.id}`}
+            title={`${dungeon.name} · ${dungeon.band}`}
+            className="absolute flex h-11 items-center justify-between gap-2 overflow-hidden rounded border px-2.5 text-[11px] transition-colors hover:brightness-125"
+            style={{
+              left: `${left}%`,
+              width: `${Math.max(width, 12)}%`,
+              top: `${lane * 48}px`,
+              borderColor: `${accent}88`,
+              background: `linear-gradient(90deg, ${accent}28, rgba(8,13,22,.88))`,
+              color: "#ede7d7",
+            }}
+          >
+            <span className="truncate">{dungeon.name}</span>
+            <span className="shrink-0 text-[9px] text-muted">{dungeon.band}</span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function DungeonsPage() {
-  const dungeonList = dungeons.filter((d) => d.type === "Dungeon");
-  const raidList = dungeons.filter((d) => d.type === "Raid");
-
   return (
     <main>
       <section className="border-b border-line/60">
-        <div className="container-x py-14 md:py-20">
-          <p className="eyebrow">Dungeons & raids</p>
-          <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
-            The ladder from Ragefire to Naxxramas
-          </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            Level bands and a one-line purpose for every dungeon and raid. Bands
-            follow the Classic baseline; confirm exact requirements in-game once
-            the realms open.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            {bands.map((band) => (
-              <span
-                key={band.label}
-                className="rounded-full border border-line bg-panel px-3 py-1 text-[11px] text-muted"
-              >
-                <span className="text-gold-soft">{band.label}</span> · {band.hint}
-              </span>
-            ))}
+        <div className="container-x py-10 md:py-14">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+            <div>
+              <p className="eyebrow">Dungeons</p>
+              <h1 className="display mt-2 text-3xl text-parchment md:text-5xl">Dungeons in Forever</h1>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                Nine new Forever dungeons and 26 Classic dungeons, arranged by
+                level. Open any entry for bosses, loot, and location notes.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-cyan-300">{NEW.length}</span> new dungeons</span>
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-gold-soft">{CLASSIC.length}</span> from Classic</span>
+                <span className="rounded-full border border-line/80 px-3 py-1"><span className="text-parchment">{BOSSES}</span> recorded bosses</span>
+              </div>
+            </div>
+            <div className="panel p-4">
+              <p className="eyebrow">Bosses & loot</p>
+              <p className="mt-2 text-sm font-medium text-parchment">Open a dungeon</p>
+              <p className="mt-1 text-xs leading-relaxed text-muted">Jump straight to its bosses and loot table.</p>
+              <DungeonPicker options={ACTUAL.map(({ id, name, band, isNew }) => ({ id, name, band, isNew }))} />
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div className="container-x py-12">
-          <div className="flex items-end justify-between gap-4">
-            <div>
-              <p className="eyebrow">5-player</p>
-              <h2 className="display mt-2 text-2xl text-parchment">Dungeons</h2>
-            </div>
-            <Link
-              href="/database"
-              className="text-sm text-gold/90 transition-colors hover:text-gold-soft"
-            >
-              Search loot →
-            </Link>
-          </div>
-
-          <div className="mt-6 overflow-hidden rounded-xl border border-line">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-line bg-panel text-left text-[11px] uppercase tracking-wider text-muted">
-                  <th className="px-4 py-3 font-medium">Dungeon</th>
-                  <th className="px-4 py-3 font-medium">Level band</th>
-                  <th className="px-4 py-3 font-medium">What it is for</th>
-                </tr>
-              </thead>
-              <tbody>
-                {dungeonList.map((dungeon) => (
-                  <tr key={dungeon.id} className="border-b border-line/50 last:border-0">
-                    <td className="px-4 py-3 text-parchment">
-                      <Link href={`/dungeons/${dungeon.id}`} className="transition-colors hover:text-gold-soft">
-                        {dungeon.name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3">
-                      <span className="rounded-full border border-line px-2 py-0.5 text-xs text-gold-soft">
-                        {dungeon.band}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-muted">{dungeon.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-12 flex items-end justify-between gap-4">
-            <div>
-              <p className="eyebrow">40-player (and 20-player)</p>
-              <h2 className="display mt-2 text-2xl text-parchment">Raids</h2>
-            </div>
-            <span className="text-xs text-muted">Tier order, Classic baseline</span>
-          </div>
-
-          <ul className="mt-6 divide-y divide-line/60">
-            {raidList.map((raid) => (
-              <li key={raid.id} className="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <Link href={`/dungeons/${raid.id}`} className="text-sm text-parchment transition-colors hover:text-gold-soft">
-                    {raid.name}
-                  </Link>
-                  <p className="mt-1 text-xs text-muted">{raid.note}</p>
-                </div>
-                <span className="shrink-0 rounded-full border border-line px-2 py-0.5 text-xs text-gold-soft">
-                  {raid.band}
+      <section className="container-x py-8">
+        <div className="panel overflow-x-auto p-4 md:p-6">
+          <div className="min-w-[1100px]">
+            <div className="relative mb-3 ml-0 h-5 border-b border-line/40">
+              {AXIS.map((level) => (
+                <span key={level} className="absolute -translate-x-1/2 text-[10px] text-muted/70" style={{ left: `${((level - MIN) / (MAX - MIN)) * 100}%` }}>
+                  {level}
                 </span>
-              </li>
-            ))}
-          </ul>
+              ))}
+            </div>
+            <div className="flex gap-4">
+              <div className="w-24 shrink-0 pt-1 text-[10px] uppercase tracking-wider text-muted">Forever</div>
+              <div className="min-w-0 flex-1"><TimelineRow title="New in Forever" count={NEW.length} accent="#63c7d8" entries={newLayout} /></div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-24 shrink-0 pt-1 text-[10px] uppercase tracking-wider text-muted">Classic</div>
+              <div className="min-w-0 flex-1"><TimelineRow title="Classic baseline" count={CLASSIC.length} accent="#e3bd78" entries={classicLayout} /></div>
+            </div>
+          </div>
+        </div>
+        <p className="mt-4 text-[11px] leading-relaxed text-muted/60">
+          Bands are positioned by their minimum level. New Forever level bands come
+          from the current dataset; Classic bands follow the Classic dungeon finder.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link href="/data/dungeons" className="rounded-lg border border-line px-3 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">Full dungeon data →</Link>
+          <Link href="/database" className="rounded-lg border border-line px-3 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">Search loot →</Link>
         </div>
       </section>
     </main>
