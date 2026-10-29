@@ -1,0 +1,313 @@
+{
+ "axis": {
+  "min": 13,
+  "max": 60,
+  "ticks": [
+   13,
+   15,
+   20,
+   25,
+   30,
+   35,
+   40,
+   45,
+   50,
+   55,
+   60
+  ]
+ },
+ "lanes": [
+  {
+   "name": "Forever 新增",
+   "count": 9,
+   "dungeons": [
+    {
+     "name": "领主大厅",
+     "levelMin": 13,
+     "levelMax": 18,
+     "category": "new",
+     "left": 0.0,
+     "width": 10.64
+    },
+    {
+     "name": "洛丹伦废墟",
+     "levelMin": 15,
+     "levelMax": 20,
+     "category": "new",
+     "left": 4.26,
+     "width": 10.64
+    },
+    {
+     "name": "挖掘场：湿地",
+     "levelMin": 26,
+     "levelMax": 31,
+     "category": "new",
+     "left": 27.66,
+     "width": 10.64
+    },
+    {
+     "name": "达拉然城",
+     "levelMin": 28,
+     "levelMax": 33,
+     "category": "new",
+     "left": 31.91,
+     "width": 10.64
+    },
+    {
+     "name": "沉没之城",
+     "levelMin": 35,
+     "levelMax": 40,
+     "category": "new",
+     "left": 46.81,
+     "width": 10.64
+    },
+    {
+     "name": "Krol'dok Stronghold",
+     "levelMin": 40,
+     "levelMax": 45,
+     "category": "new",
+     "left": 57.45,
+     "width": 10.64
+    },
+    {
+     "name": "Alcaz Prison",
+     "levelMin": 48,
+     "levelMax": 53,
+     "category": "new",
+     "left": 74.47,
+     "width": 10.64
+    },
+    {
+     "name": "黑喉要塞",
+     "levelMin": 55,
+     "levelMax": 60,
+     "category": "new",
+     "left": 89.36,
+     "width": 10.64
+    },
+    {
+     "name": "Shaper's Terrace",
+     "levelMin": 58,
+     "levelMax": 60,
+     "category": "new",
+     "left": 95.74,
+     "width": 4.26
+    }
+   ]
+  },
+  {
+   "name": "来自经典旧世",
+   "count": 26,
+   "dungeons": [
+    {
+     "name": "怒焰裂谷",
+     "levelMin": 13,
+     "levelMax": 18,
+     "category": "classic",
+     "left": 0.0,
+     "width": 10.64
+    },
+    {
+     "name": "哀嚎洞穴",
+     "levelMin": 17,
+     "levelMax": 24,
+     "category": "classic",
+     "left": 8.51,
+     "width": 14.89
+    },
+    {
+     "name": "死亡矿井",
+     "levelMin": 17,
+     "levelMax": 26,
+     "category": "classic",
+     "left": 8.51,
+     "width": 19.15
+    },
+    {
+     "name": "影牙城堡",
+     "levelMin": 22,
+     "levelMax": 30,
+     "category": "classic",
+     "left": 19.15,
+     "width": 17.02
+    },
+    {
+     "name": "黑暗深渊",
+     "levelMin": 24,
+     "levelMax": 32,
+     "category": "classic",
+     "left": 23.4,
+     "width": 17.02
+    },
+    {
+     "name": "暴风城监狱",
+     "levelMin": 24,
+     "levelMax": 32,
+     "category": "classic",
+     "left": 23.4,
+     "width": 17.02
+    },
+    {
+     "name": "诺莫瑞根",
+     "levelMin": 29,
+     "levelMax": 38,
+     "category": "classic",
+     "left": 34.04,
+     "width": 19.15
+    },
+    {
+     "name": "剃刀沼泽",
+     "levelMin": 29,
+     "levelMax": 38,
+     "category": "classic",
+     "left": 34.04,
+     "width": 19.15
+    },
+    {
+     "name": "血色修道院 - 墓地",
+     "levelMin": 30,
+     "levelMax": 38,
+     "category": "classic",
+     "left": 36.17,
+     "width": 17.02
+    },
+    {
+     "name": "血色修道院 - 图书馆",
+     "levelMin": 33,
+     "levelMax": 41,
+     "category": "classic",
+     "left": 42.55,
+     "width": 17.02
+    },
+    {
+     "name": "血色修道院 - 军械库",
+     "levelMin": 36,
+     "levelMax": 44,
+     "category": "classic",
+     "left": 48.94,
+     "width": 17.02
+    },
+    {
+     "name": "剃刀高地",
+     "levelMin": 37,
+     "levelMax": 46,
+     "category": "classic",
+     "left": 51.06,
+     "width": 19.15
+    },
+    {
+     "name": "血色修道院 - 大教堂",
+     "levelMin": 38,
+     "levelMax": 46,
+     "category": "classic",
+     "left": 53.19,
+     "width": 17.02
+    },
+    {
+     "name": "奥达曼",
+     "levelMin": 41,
+     "levelMax": 51,
+     "category": "classic",
+     "left": 59.57,
+     "width": 21.28
+    },
+    {
+     "name": "祖尔法拉克",
+     "levelMin": 44,
+     "levelMax": 54,
+     "category": "classic",
+     "left": 65.96,
+     "width": 21.28
+    },
+    {
+     "name": "玛拉顿",
+     "levelMin": 46,
+     "levelMax": 55,
+     "category": "classic",
+     "left": 70.21,
+     "width": 19.15
+    },
+    {
+     "name": "沉没的神庙",
+     "levelMin": 50,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 78.72,
+     "width": 21.28
+    },
+    {
+     "name": "黑石深渊",
+     "levelMin": 52,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 82.98,
+     "width": 17.02
+    },
+    {
+     "name": "厄运之槌 - 东",
+     "levelMin": 54,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 87.23,
+     "width": 12.77
+    },
+    {
+     "name": "黑石塔下层",
+     "levelMin": 55,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 89.36,
+     "width": 10.64
+    },
+    {
+     "name": "厄运之槌 - 北",
+     "levelMin": 56,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 91.49,
+     "width": 8.51
+    },
+    {
+     "name": "厄运之槌 - 西",
+     "levelMin": 56,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 91.49,
+     "width": 8.51
+    },
+    {
+     "name": "通灵学院",
+     "levelMin": 58,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 95.74,
+     "width": 4.26
+    },
+    {
+     "name": "斯坦索姆（主门）",
+     "levelMin": 58,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 95.74,
+     "width": 4.26
+    },
+    {
+     "name": "斯坦索姆（后门）",
+     "levelMin": 58,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 95.74,
+     "width": 4.26
+    },
+    {
+     "name": "黑石塔上层",
+     "levelMin": 59,
+     "levelMax": 60,
+     "category": "classic",
+     "left": 97.87,
+     "width": 2.13
+    }
+   ]
+  }
+ ]
+}
