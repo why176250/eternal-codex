@@ -381,7 +381,7 @@ export function TalentPlanner({ classes }: { classes: TalentClass[] }) {
         </div>
         <Link
           href="/tools/builds"
-          className="inline-flex items-center gap-1.5 rounded-lg border border-gold/35 bg-gold/[0.06] px-3 py-2 text-xs text-gold-soft transition-colors hover:border-gold/60 hover:bg-gold/[0.1]"
+          className="inline-flex items-center gap-2 rounded-lg border border-gold/55 bg-gold/[0.12] px-4 py-2.5 text-sm font-medium text-gold-soft shadow-[0_0_24px_-10px_rgba(227,189,120,0.65)] transition-colors hover:border-gold/80 hover:bg-gold/[0.18]"
         >
           See how others build
           <span aria-hidden="true">→</span>
