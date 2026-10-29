@@ -1,0 +1,5 @@
+[
+  { "date": "2026-10-29", "title": "Database expansion", "items": ["Items, spells, races, quests, map, and transmog indexes", "Item and set detail pages"] },
+  { "date": "2026-10-28", "title": "Class and guide tooling", "items": ["Class abilities tab", "Class finder", "Hunter pet browser", "English guide translations"] },
+  { "date": "2026-10-27", "title": "Profession and build tools", "items": ["Profession recipe search and skill-up guide", "Talent Hall build browser"] }
+]

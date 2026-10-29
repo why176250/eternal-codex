@@ -95,6 +95,24 @@ export const toolItems: SectionItem[] = [
 
 export const dataItems: SectionItem[] = [
   {
+    slug: "map",
+    label: "Map",
+    zh: "地图",
+    href: "/map",
+    status: "live",
+    summary: "901 places and 3,395 points of interest with coordinates.",
+    bullets: [],
+  },
+  {
+    slug: "transmog",
+    label: "Transmog",
+    zh: "幻化",
+    href: "/transmog",
+    status: "live",
+    summary: "536 item sets with every piece linked to the item database.",
+    bullets: [],
+  },
+  {
     slug: "dungeons",
     label: "Dungeon Data",
     zh: "副本资料",
@@ -196,6 +214,24 @@ export const dataItems: SectionItem[] = [
     status: "live",
     summary:
       "320 profession recipes with reagent lists, grouped by profession.",
+    bullets: [],
+  },
+  {
+    slug: "patch-notes",
+    label: "Patch Notes",
+    zh: "更新日志",
+    href: "/patch-notes",
+    status: "live",
+    summary: "Eversixty release notes and module updates.",
+    bullets: [],
+  },
+  {
+    slug: "server-status",
+    label: "Server Status",
+    zh: "服务器状态",
+    href: "/server-status",
+    status: "live",
+    summary: "Site and dataset coverage; realm uptime feed is not connected.",
     bullets: [],
   },
   {

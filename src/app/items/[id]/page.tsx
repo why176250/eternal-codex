@@ -35,7 +35,7 @@ export default async function ItemPage({ params }: { params: Promise<Params> }) 
           <span className="text-muted">iLvl {item.ilvl}</span>
         </div>
         <div className="mt-5 flex items-start gap-4">
-          <img src={item.icon} alt="" width={72} height={72} className="size-18 shrink-0 rounded-lg border border-line/80" />
+          <img src={item.icon} alt="" width={72} height={72} className="size-20 shrink-0 rounded-lg border border-line/80" />
           <div>
             <h1 className="display text-3xl md:text-4xl" style={{ color: qualityColor[item.qualityLabel] ?? "#ede7d7" }}>{item.name}</h1>
             <p className="mt-1 text-sm text-muted">{item.qualityLabel} · {item.slotName} · Item level {item.ilvl}</p>
