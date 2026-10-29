@@ -4,6 +4,7 @@ import { foreverDungeons } from "@/lib/forever";
 import loot from "@/data/dungeon-loot.json";
 import dungeonImages from "@/data/dungeon-images.json";
 import { DungeonPicker } from "@/components/DungeonPicker";
+import { DungeonTimeline, type TimelineEntry } from "@/components/DungeonTimeline";
 
 export const metadata: Metadata = {
   title: "Dungeons — the Forever leveling ladder",
@@ -45,6 +46,8 @@ function layout(list: typeof ACTUAL) {
     }
     return {
       dungeon,
+      start: visualStart,
+      end: visualEnd,
       lane,
       left: ((visualStart - MIN) / (MAX - MIN)) * 100,
       width: ((visualEnd - visualStart) / (MAX - MIN)) * 100,
@@ -54,42 +57,6 @@ function layout(list: typeof ACTUAL) {
 
 const newLayout = layout(NEW);
 const classicLayout = layout(CLASSIC);
-
-function TimelineRow({ label, entries }: { label: string; entries: ReturnType<typeof layout> }) {
-  const laneCount = Math.max(...entries.map((entry) => entry.lane), 0) + 1;
-  return (
-    <div className="border-t border-line/50 py-3 first:border-0">
-      <div className="mb-2 text-[10px] uppercase tracking-[0.18em] text-muted">{label}</div>
-      <div className="relative" style={{ height: `${laneCount * 48}px` }}>
-        {entries.map(({ dungeon, lane, left, width }) => (
-          <Link
-            key={dungeon.id}
-            href={`/dungeons/${dungeon.id}`}
-            title={`${dungeon.name} · ${dungeon.band}`}
-            className="absolute flex h-10 items-center overflow-hidden rounded border text-[11px] shadow-lg transition-transform hover:z-20 hover:scale-[1.02]"
-            style={{
-              left: `${left}%`,
-              width: `${Math.max(width, 7)}%`,
-              top: `${lane * 44}px`,
-              borderColor: dungeon.isNew ? "#4ea8d888" : "#a9884c88",
-              backgroundColor: "#08111f",
-            }}
-          >
-            <span
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${dungeonImages[dungeon.id as keyof typeof dungeonImages] ?? ""})` }}
-            />
-            <span className="absolute inset-0" style={{ background: dungeon.isNew ? "linear-gradient(90deg, rgba(4,14,24,.82), rgba(4,14,24,.18))" : "linear-gradient(90deg, rgba(18,13,8,.84), rgba(18,13,8,.18))" }} />
-            <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-between px-2 py-1.5 text-parchment">
-              <span className="truncate text-[11px] leading-tight">{dungeon.name}</span>
-              <span className="text-[9px] leading-none text-muted">{dungeon.band}</span>
-            </span>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export default function DungeonsPage() {
   return (
@@ -146,8 +113,7 @@ export default function DungeonsPage() {
               </span>
             ))}
           </div>
-          <TimelineRow label={`Forever new ${NEW.length}`} entries={newLayout} />
-          <TimelineRow label={`From Classic ${CLASSIC.length}`} entries={classicLayout} />
+          <DungeonTimeline newEntries={newLayout as TimelineEntry[]} classicEntries={classicLayout as TimelineEntry[]} />
         </div>
         </div>
       </section>
