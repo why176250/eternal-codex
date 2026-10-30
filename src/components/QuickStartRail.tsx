@@ -25,9 +25,9 @@ export function QuickStartRail() {
             <span className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-gold/60 via-gold/20 to-transparent opacity-70" />
             <span className="accent-tile grid size-9 shrink-0 place-items-center rounded-lg border" style={{ "--accent": "#e3bd78" } as React.CSSProperties}><StepIcon name={step.icon} /></span>
             <span className="min-w-0 flex-1">
-              <span className="flex items-center justify-between gap-2"><span className="text-xs font-medium text-parchment">{step.title}</span><span className="display text-[9px] text-gold/35">{step.n}</span></span>
-              <span className="mt-1 block text-[10px] leading-relaxed text-muted">{step.body}</span>
-              <span className="mt-2 flex items-center gap-1.5 text-[9px] uppercase tracking-[0.12em] text-gold/70">Open <span className="transition-transform group-hover:translate-x-0.5">→</span></span>
+              <span className="flex items-center justify-between gap-2"><span className="text-sm font-medium text-parchment">{step.title}</span><span className="display text-[10px] text-gold/40">{step.n}</span></span>
+              <span className="mt-1 block text-xs leading-relaxed text-muted">{step.body}</span>
+              <span className="mt-2 flex items-center gap-1.5 text-[10px] uppercase tracking-[0.12em] text-gold/75">Open <span className="transition-transform group-hover:translate-x-0.5">→</span></span>
             </span>
           </Link>
         ))}
