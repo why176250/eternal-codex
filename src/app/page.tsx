@@ -156,7 +156,7 @@ export default function HomePage() {
 
         <SpecTierBoard compact />
 
-        <div className="mt-12 border-t border-line/60 pt-8">
+        <div className="mt-5 border-t border-line/60 pt-4">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="eyebrow">Start here</p>
