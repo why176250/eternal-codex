@@ -66,20 +66,29 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                       className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
                         borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
-                        backgroundColor: "#0b1422",
+                        backgroundColor: dungeon.image ? "#0b1422" : "#1a1a2e",
                       }}
                     >
-                      {dungeon.image ? <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${dungeon.image})`, filter: "brightness(1.15)" }} /> : null}
-                      <span className="absolute inset-0 bg-black/60" />
-                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.28), rgba(4,14,24,.05))" : "linear-gradient(90deg, rgba(18,13,8,.32), rgba(18,13,8,.05))" }} />
-                      <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
-                        {dungeon.levelMin >= 58 ? (
-                          <span className="whitespace-nowrap text-[10px] font-bold leading-tight text-white">{shortName(dungeon.nameEn)}</span>
-                        ) : (
-                          <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
-                        )}
-                        <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
-                      </span>
+                      {dungeon.image ? (
+                        <>
+                          <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${dungeon.image})`, filter: "brightness(1.15)" }} />
+                          <span className="absolute inset-0 bg-black/60" />
+                          <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.28), rgba(4,14,24,.05))" : "linear-gradient(90deg, rgba(18,13,8,.32), rgba(18,13,8,.05))" }} />
+                          <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
+                            {dungeon.levelMin >= 58 ? (
+                              <span className="whitespace-nowrap text-[10px] font-bold leading-tight text-white">{shortName(dungeon.nameEn)}</span>
+                            ) : (
+                              <span className="whitespace-nowrap text-[11px] leading-tight text-white">{dungeon.nameEn}</span>
+                            )}
+                            <span className="text-[11px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
+                          </span>
+                        </>
+                      ) : (
+                        <span className="relative z-10 grid h-full w-full place-items-center px-2 text-center">
+                          <span className="max-w-full truncate text-[11px] font-medium leading-tight text-white">{dungeon.levelMin >= 58 ? shortName(dungeon.nameEn) : dungeon.nameEn}</span>
+                          <span className="text-[10px] leading-none text-neutral-400">{dungeon.levelMin}-{dungeon.levelMax}</span>
+                        </span>
+                      )}
                     </Link>
                     {active ? (
                       <div className={`absolute bottom-full z-50 mb-2 w-72 ${align} overflow-hidden rounded-lg border border-gold/35 bg-panel shadow-2xl`}>

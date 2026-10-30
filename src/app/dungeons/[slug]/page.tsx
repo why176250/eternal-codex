@@ -115,6 +115,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
             </section>
           ) : null}
 
+          {bossLoot.length > 0 ? (
           <section className="mt-10">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div><h2 className="display text-xl text-parchment">Boss drops</h2><p className="mt-1 text-xs text-muted">Bosses, first-boss drops, and attributed items.</p></div>
@@ -138,6 +139,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
               ))}
             </div>
           </section>
+          ) : null}
 
           {lootDetail.length > 0 ? (
             <section className="mt-10">
