@@ -130,12 +130,31 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
 
           {detail.quests ? (
             <section id="quests" className="mt-10">
-              <h2 className="display text-xl text-parchment">{detail.quests.heading}</h2>
-              <p className="mt-1 text-xs text-muted">{detail.quests.sub}</p>
+              <div className="flex flex-wrap items-end justify-between gap-3"><div><h2 className="display text-xl text-parchment">{detail.quests.heading}</h2><p className="mt-1 text-xs text-muted">{detail.quests.sub}</p></div><span className="text-[10px] text-muted/60">Quest rewards are not part of the boss drop table</span></div>
               <div className="panel mt-3 overflow-x-auto">
-                <table className="w-full min-w-[560px] text-sm"><thead className="bg-deep/60 text-[10px] uppercase tracking-wider text-muted"><tr><th className="px-3 py-2 text-left font-normal">Faction</th><th className="px-3 py-2 text-left font-normal">Quests</th><th className="px-3 py-2 text-left font-normal">Beta XP</th><th className="px-3 py-2 text-left font-normal">Classic</th><th className="px-3 py-2 text-left font-normal">Worth</th></tr></thead><tbody>{detail.quests.xpTable.map((row) => <tr key={row.faction} className="border-t border-line/40"><td className="px-3 py-2 text-parchment">{row.faction}</td><td className="px-3 py-2 text-muted">{row.quests}</td><td className="px-3 py-2 text-muted">{row.experienceBeta}</td><td className="px-3 py-2 text-muted">{row.inClassic}</td><td className="px-3 py-2 text-muted">{row.worth}</td></tr>)}</tbody></table>
+                <table className="w-full min-w-[980px] text-left text-xs">
+                  <thead className="bg-deep/60 text-[10px] uppercase tracking-wider text-muted"><tr><th className="px-3 py-2 font-normal">Quest</th><th className="px-3 py-2 font-normal">Level</th><th className="px-3 py-2 font-normal">Side</th><th className="px-3 py-2 font-normal">Effort</th><th className="px-3 py-2 font-normal">Share?</th><th className="px-3 py-2 font-normal">Starts</th><th className="px-3 py-2 font-normal">Rewards</th></tr></thead>
+                  <tbody>
+                    {detail.quests.groups.flatMap((group) => group.quests.map((quest) => {
+                      const level = quest.levelLine?.match(/Level (\d+)/)?.[1] ?? "—";
+                      const starts = quest.objectives.find((objective) => objective.key === "Starts")?.value ?? "—";
+                      return (
+                        <tr key={quest.id} id={quest.id} className="border-t border-line/40 align-top">
+                          <td className="px-3 py-3"><Link href={`/quests/${quest.id}`} className="flex items-start gap-1.5 text-parchment hover:text-gold-soft"><span className="mt-0.5 text-gold/80">!</span><span className="max-w-56">{quest.name}</span></Link></td>
+                          <td className="px-3 py-3 text-muted">{level}</td>
+                          <td className="px-3 py-3 text-muted">{group.faction === "Both factions" ? "Both" : group.faction}</td>
+                          <td className="px-3 py-3 text-muted">—</td>
+                          <td className="px-3 py-3 text-muted">—</td>
+                          <td className="max-w-64 px-3 py-3 leading-relaxed text-muted">{starts}</td>
+                          <td className="px-3 py-3">
+                            {quest.rewards?.items?.length ? <div className="space-y-1.5">{quest.rewards.items.map((item) => <div key={item.name} className="flex items-center gap-2">{item.icon ? <img src={`https://foreverchanges.pro${item.icon}`} alt="" width={20} height={20} className="size-5 rounded border border-line/70 object-cover" /> : null}<span style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span></div>)}</div> : <span className="text-muted">—</span>}
+                          </td>
+                        </tr>
+                      );
+                    }))}
+                  </tbody>
+                </table>
               </div>
-              <div className="mt-4 space-y-4">{detail.quests.groups.map((group) => <div key={group.faction}><p className="text-xs uppercase tracking-wider text-muted">{group.faction} · {group.count}</p><div className="mt-2 grid gap-2 md:grid-cols-2">{group.quests.map((quest) => <article key={quest.id} id={quest.id} className="panel p-3"><Link href={`/quests/${quest.id}`} className="text-sm text-parchment hover:text-gold-soft">{quest.name}</Link><p className="mt-0.5 text-[10px] text-muted">{quest.levelLine}</p><p className="mt-2 text-xs leading-relaxed text-muted">{quest.text}</p>{quest.rewards?.items?.length ? <p className="mt-2 text-[10px] text-gold/80">Choose one of: {quest.rewards.items.map((item) => item.name).join(", ")}</p> : null}</article>)}</div></div>)}</div>
             </section>
           ) : null}
 
