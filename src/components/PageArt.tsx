@@ -19,7 +19,7 @@ const arts: { route: string; src: string; pos?: string }[] = [
   { route: "/npcs", src: "/page-art/classic-small/WoW_Classic_Barrens_3840x2160.webp", pos: "center 45%" },
   { route: "/spells", src: "/page-art/classic-small/ClassicDungeon_4k.webp", pos: "center 45%" },
   { route: "/races", src: "/page-art/classic-small/Onyxia_Key_Art.webp", pos: "center 40%" },
-  { route: "/data", src: "/page-art/classic-small/WOW_Classic.webp", pos: "center 45%" },
+  { route: "/data", src: "/page-art/classic-small/ClassicLaunch_WoW_Andorhal_3840x2160.webp", pos: "center 45%" },
   { route: "/database", src: "/page-art/classic-small/Toast_Thumbnail_Options_TS03.webp", pos: "center 40%" },
   { route: "/class-finder", src: "/page-art/classic-small/WoW_ClassicLaunchPressKit_UngoroHunter_3840x2160.webp", pos: "center 45%" },
   { route: "/server-status", src: "/legacy/bg/2.jpg", pos: "center 35%" },

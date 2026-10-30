@@ -2,6 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { dataItems } from "@/lib/sections";
 
+const cardArt: Record<string, string> = {
+  map: "/page-art/classic-small/ClassicLaunch_WoW_STV_3840x2160.webp",
+  transmog: "/page-art/classic-small/ClassicStormwind_4k.webp",
+  dungeons: "/page-art/classic-small/ClassicDungeon_4k.webp",
+  items: "/page-art/classic-small/ClassicOrgrimmar_4k.webp",
+  spells: "/page-art/yunhai-zhong.webp",
+  races: "/page-art/classic-small/Onyxia_Key_Art.webp",
+  quests: "/page-art/classic-small/WoW_Classic_Westfall_3840x2160.webp",
+  professions: "/page-art/tielu-dadian.webp",
+  sets: "/page-art/classic-small/ClassicLaunch_WoW_Onyxia_3840x2160.webp",
+  abilities: "/page-art/classic-small/WoW_Classic_Molten_Core_3840x2160.webp",
+  racials: "/page-art/classic-small/WoW_Classic_Barrens_3840x2160.webp",
+  vendors: "/page-art/classic-small/WoW_ClassicLaunchPressKit_ThousandNeedles_3840x2160.webp",
+  "patch-notes": "/patch-notes/wcl-hero.webp",
+  "server-status": "/legacy/bg/2.jpg",
+  "hunter-pets": "/page-art/classic-small/WoW_ClassicLaunchPressKit_UngoroHunter_3840x2160.webp",
+};
+
 export const metadata: Metadata = {
   title: "Data — dungeons, items, sets, abilities, racials, vendors, pets",
   description:
@@ -34,27 +52,31 @@ export default function DataPage() {
               <Link
                 key={item.slug}
                 href={item.href}
-                className="panel panel-hover flex h-full flex-col p-5"
+                className="panel panel-hover group relative flex min-h-[184px] flex-col overflow-hidden p-5"
               >
-                <div className="flex items-center justify-between">
-                  <span
-                    className={
-                      item.status === "live" ? "badge badge-teal" : "badge"
-                    }
-                  >
-                    {item.status === "live" ? "Live" : "Planned"}
+                <img src={cardArt[item.slug]} alt="" className="absolute inset-0 h-full w-full object-cover opacity-60 brightness-105 saturate-[0.9] transition-transform duration-500 group-hover:scale-[1.04]" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/80 to-abyss/25" />
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="flex items-center justify-between">
+                    <span
+                      className={
+                        item.status === "live" ? "badge badge-teal" : "badge"
+                      }
+                    >
+                      {item.status === "live" ? "Live" : "Planned"}
+                    </span>
+                    <span className="text-[11px] text-muted">{item.zh}</span>
+                  </div>
+                  <h2 className="display mt-4 text-lg text-parchment">
+                    {item.label}
+                  </h2>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {item.summary}
+                  </p>
+                  <span className="mt-auto pt-4 text-xs text-gold/80">
+                    {item.status === "live" ? "Browse →" : "What's planned →"}
                   </span>
-                  <span className="text-[11px] text-muted">{item.zh}</span>
                 </div>
-                <h2 className="display mt-4 text-lg text-parchment">
-                  {item.label}
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {item.summary}
-                </p>
-                <span className="mt-auto pt-4 text-xs text-gold/80">
-                  {item.status === "live" ? "Browse →" : "What's planned →"}
-                </span>
               </Link>
             ))}
           </div>
