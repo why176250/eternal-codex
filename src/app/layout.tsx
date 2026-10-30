@@ -66,8 +66,17 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const requestHeaders = await headers();
   const lang = requestHeaders.get("x-eversixty-locale") === "zh-Hans" ? "zh-Hans" : "en";
+  const pathname = requestHeaders.get("x-eversixty-pathname") ?? "/";
+  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const enPath = isZh ? (pathname.replace(/^\/zh/, "") || "/") : pathname;
+  const zhPath = isZh ? pathname : pathname === "/" ? "/zh" : `/zh${pathname}`;
   return (
     <html lang={lang}>
+      <head>
+        <link rel="alternate" hrefLang="en" href={`${site.url}${enPath}`} />
+        <link rel="alternate" hrefLang="zh-Hans" href={`${site.url}${zhPath}`} />
+        <link rel="alternate" hrefLang="x-default" href={`${site.url}${enPath}`} />
+      </head>
       <body>
         <LangSync />
         <div className="flex min-h-screen flex-col">

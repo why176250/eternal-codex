@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "面向《魔兽世界：无限》国际服玩家的开服指南、职业与专精 BiS 清单、副本等级表，以及可搜索的装备数据库。",
   alternates: {
     canonical: "/zh",
-    languages: { en: "/", "zh-Hans": "/zh", "x-default": "/" },
   },
 };
 

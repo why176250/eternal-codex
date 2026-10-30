@@ -135,7 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [
+  const allRoutes = [
     ...staticRoutes,
     ...guideRoutes,
     ...classRoutes,
@@ -148,4 +148,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...foreverSetRoutes,
     ...foreverGuideRoutes,
   ];
+
+  const zhRoutes: MetadataRoute.Sitemap = allRoutes
+    .filter((entry) => !entry.url.includes(`${site.url}/zh`))
+    .map((entry) => ({
+      ...entry,
+      url: entry.url === site.url ? `${site.url}/zh` : entry.url.replace(`${site.url}/`, `${site.url}/zh/`),
+      priority: Math.min(entry.priority ?? 0.5, 0.6),
+    }));
+
+  return [...allRoutes, ...zhRoutes];
 }
