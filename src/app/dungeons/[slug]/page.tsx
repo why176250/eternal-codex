@@ -139,10 +139,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
             </section>
           ) : null}
 
-          <section id="drops" className="mt-10">
-            <div className="flex flex-wrap items-end justify-between gap-3"><div><h2 className="display text-xl text-parchment">Full drop table</h2><p className="mt-1 text-xs text-muted">{drops.length} unique drops from boss sections.</p></div><span className="text-[10px] text-muted/60">ForeverChanges</span></div>
-            <div className="mt-3 grid gap-2 sm:grid-cols-2">{drops.map((item) => <div key={`${item.name}-${item.href}`} className="rounded-lg border border-line/60 bg-deep/30 p-2"><ItemRow item={item} size={38} /></div>)}</div>
-          </section>
+
 
           <p className="mt-10 text-[10px] leading-relaxed text-muted/60">Bosses, maps, loot, and quest data from ForeverChanges. Level ranges are approximate; verify requirements in game.</p>
         </div>
