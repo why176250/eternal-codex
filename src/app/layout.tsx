@@ -3,6 +3,8 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageArt } from "@/components/PageArt";
+import { LangSync } from "@/components/LangSync";
+import { headers } from "next/headers";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -60,12 +62,15 @@ export const metadata: Metadata = {
 };
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const requestHeaders = await headers();
+  const lang = requestHeaders.get("x-eversixty-locale") === "zh-Hans" ? "zh-Hans" : "en";
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body>
+        <LangSync />
         <div className="flex min-h-screen flex-col">
           <Header />
           <div className="relative">

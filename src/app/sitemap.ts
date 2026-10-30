@@ -141,5 +141,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...foreverGuideRoutes,
   ];
 
-  return allRoutes;
+  const zhRoutes: MetadataRoute.Sitemap = [
+    { url: `${site.url}/zh`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    ...allRoutes
+      .filter((entry) => !entry.url.includes(`${site.url}/zh`))
+      .map((entry) => ({ ...entry, url: entry.url.replace(`${site.url}/`, `${site.url}/zh/`), priority: Math.min(entry.priority ?? 0.5, 0.6) })),
+  ];
+  return [...allRoutes, ...zhRoutes];
 }
