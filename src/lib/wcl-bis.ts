@@ -84,17 +84,17 @@ const specData: Record<string, BisData> = {
   "druid-tank": druidTank as unknown as BisData,
 };
 
-export type BisSpecOption = { key: string; name: string; data?: string; fallback?: boolean };
+export type BisSpecOption = { key: string; name: string; data?: string; fallback?: boolean; icon: string };
 export const bisSpecOptions: Record<string, BisSpecOption[]> = {
-  warrior: [{ key: "arms", name: "Arms" }, { key: "fury", name: "Fury", fallback: true }, { key: "protection", name: "Protection", data: "warrior-tank" }],
-  paladin: [{ key: "holy", name: "Holy", data: "paladin-holy" }, { key: "protection", name: "Protection", data: "paladin-tank" }, { key: "retribution", name: "Retribution" }],
-  hunter: [{ key: "beastmastery", name: "Beast Mastery" }, { key: "marksmanship", name: "Marksmanship", fallback: true }, { key: "survival", name: "Survival", fallback: true }],
-  rogue: [{ key: "assassination", name: "Assassination", data: "rogue-assassination" }, { key: "combat", name: "Combat" }, { key: "subtlety", name: "Subtlety", fallback: true }],
-  priest: [{ key: "discipline", name: "Discipline", data: "priest-discipline" }, { key: "holy", name: "Holy", data: "priest-holy" }, { key: "shadow", name: "Shadow" }],
-  shaman: [{ key: "elemental", name: "Elemental" }, { key: "enhancement", name: "Enhancement", data: "shaman-enhancement" }, { key: "restoration", name: "Restoration", data: "shaman-restoration" }],
-  mage: [{ key: "arcane", name: "Arcane", data: "mage-arcane" }, { key: "fire", name: "Fire", data: "mage-fire" }, { key: "frost", name: "Frost" }],
-  warlock: [{ key: "affliction", name: "Affliction" }, { key: "demonology", name: "Demonology", fallback: true }, { key: "destruction", name: "Destruction", fallback: true }],
-  druid: [{ key: "balance", name: "Balance", data: "druid-balance" }, { key: "feral", name: "Feral" }, { key: "restoration", name: "Restoration", data: "druid-restoration" }],
+  warrior: [{ key: "arms", name: "Arms", icon: "ability_warrior_savageblow" }, { key: "fury", name: "Fury", fallback: true, icon: "ability_warrior_innerrage" }, { key: "protection", name: "Protection", data: "warrior-tank", icon: "ability_warrior_defensivestance" }],
+  paladin: [{ key: "holy", name: "Holy", data: "paladin-holy", icon: "spell_holy_holybolt" }, { key: "protection", name: "Protection", data: "paladin-tank", icon: "spell_holy_devotionaura" }, { key: "retribution", name: "Retribution", icon: "spell_holy_auraoflight" }],
+  hunter: [{ key: "beastmastery", name: "Beast Mastery", icon: "ability_hunter_beasttaming" }, { key: "marksmanship", name: "Marksmanship", fallback: true, icon: "ability_marksmanship" }, { key: "survival", name: "Survival", fallback: true, icon: "ability_hunter_swiftstrike" }],
+  rogue: [{ key: "assassination", name: "Assassination", data: "rogue-assassination", icon: "ability_rogue_eviscerate" }, { key: "combat", name: "Combat", icon: "ability_backstab" }, { key: "subtlety", name: "Subtlety", fallback: true, icon: "ability_stealth" }],
+  priest: [{ key: "discipline", name: "Discipline", data: "priest-discipline", icon: "spell_holy_wordfortitude" }, { key: "holy", name: "Holy", data: "priest-holy", icon: "spell_holy_guardianspirit" }, { key: "shadow", name: "Shadow", icon: "spell_shadow_shadowwordpain" }],
+  shaman: [{ key: "elemental", name: "Elemental", icon: "spell_nature_lightning" }, { key: "enhancement", name: "Enhancement", data: "shaman-enhancement", icon: "spell_nature_lightningshield" }, { key: "restoration", name: "Restoration", data: "shaman-restoration", icon: "spell_nature_magicimmunity" }],
+  mage: [{ key: "arcane", name: "Arcane", data: "mage-arcane", icon: "spell_holy_magicalsentry" }, { key: "fire", name: "Fire", data: "mage-fire", icon: "spell_fire_firebolt02" }, { key: "frost", name: "Frost", icon: "spell_frost_frostbolt02" }],
+  warlock: [{ key: "affliction", name: "Affliction", icon: "spell_shadow_deathcoil" }, { key: "demonology", name: "Demonology", fallback: true, icon: "spell_shadow_metamorphosis" }, { key: "destruction", name: "Destruction", fallback: true, icon: "spell_shadow_rainoffire" }],
+  druid: [{ key: "balance", name: "Balance", data: "druid-balance", icon: "spell_nature_starfall" }, { key: "feral", name: "Feral", icon: "ability_racial_bearform" }, { key: "restoration", name: "Restoration", data: "druid-restoration", icon: "spell_nature_healingtouch" }],
 };
 
 export function getBisClass(slug: string) {
