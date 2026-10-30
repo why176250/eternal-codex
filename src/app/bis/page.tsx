@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { bisClasses, getBisClass } from "@/lib/wcl-bis";
+import { bisClasses, bisSpecOptions, getBisClass, getBisSpec } from "@/lib/wcl-bis";
 
 export const metadata: Metadata = {
   title: "BiS gear — WoW Forever level 30",
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/bis" },
 };
 
-type SearchParams = Promise<{ class?: string; side?: string }>;
+type SearchParams = Promise<{ class?: string; side?: string; spec?: string }>;
 const qualityColors: Record<number, string> = { 0: "#9d9d9d", 1: "#ffffff", 2: "#1eff00", 3: "#0070dd", 4: "#a335ee", 5: "#ff8000", 6: "#e6cc80" };
 
 function iconUrl(icon: string) {
@@ -19,9 +19,13 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
   const params = await searchParams;
   const selected = bisClasses.some((entry) => entry.slug === params.class) ? params.class! : "warrior";
   const side = params.side === "h" ? "h" : "a";
+  const options = bisSpecOptions[selected] ?? [];
+  const specKey = options.some((option) => option.key === params.spec) ? params.spec! : options[0]?.key;
+  const spec = specKey ? getBisSpec(selected, specKey) : undefined;
   const entry = getBisClass(selected);
-  if (!entry) return null;
-  const { data, meta } = entry;
+  if (!entry || !spec) return null;
+  const { data, option: specOption } = spec;
+  const { meta } = entry;
   const equipment = data.equipment[side] ?? data.equipment.a ?? [];
   const stats = data.statGroups[side] ?? data.statGroups.a ?? [];
   const gear = equipment.filter((item) => item.name);
@@ -34,21 +38,30 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
     return `/bis?${p.toString()}`;
   }
 
+  function specHref(key: string) {
+    const p = new URLSearchParams({ class: selected, spec: key });
+    if (side === "h") p.set("side", "h");
+    return `/bis?${p.toString()}`;
+  }
+
   return (
     <main>
       <section className="border-b border-line/60">
         <div className="container-x py-9 md:py-12">
           <p className="eyebrow">BiS gear · Level 30</p>
           <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
-            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p></div>
+            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} {specOption.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} {specOption.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p>{specOption.fallback ? <p className="mt-2 text-[11px] text-muted/70">No dedicated WCL set for this tree yet — showing the base {meta.name} set.</p> : null}</div>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             {bisClasses.map((cls) => <Link key={cls.slug} href={classHref(cls.slug)} className={`flex items-center gap-2 rounded-lg border px-2.5 py-2 text-xs transition-colors ${cls.slug === selected ? "border-gold/55 bg-gold/10 text-parchment" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}><img src={cls.icon} alt="" width={22} height={22} className="size-5 rounded border border-line/70 object-cover" /><span>{cls.name}</span></Link>)}
           </div>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            {options.map((option) => <Link key={option.key} href={specHref(option.key)} className={`rounded-lg border px-3 py-1.5 text-xs ${option.key === specOption.key ? "border-gold/55 bg-gold/10 text-gold-soft" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}>{option.name}</Link>)}
+          </div>
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px]">
             <span className="text-muted">Faction:</span>
-            <Link href={`/bis?class=${selected}${side === "h" ? "&side=a" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "a" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Alliance</Link>
-            <Link href={`/bis?class=${selected}${side === "a" ? "&side=h" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "h" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Horde</Link>
+            <Link href={`/bis?class=${selected}&spec=${specOption.key}${side === "h" ? "&side=a" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "a" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Alliance</Link>
+            <Link href={`/bis?class=${selected}&spec=${specOption.key}${side === "a" ? "&side=h" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "h" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Horde</Link>
             <span className="ml-2 text-muted/60">PvE · Level 30 · Build 1.60.1.70685</span>
           </div>
         </div>
@@ -78,7 +91,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
             <div className="panel p-4 text-[11px] leading-relaxed text-muted/70">Calculated from the first item in each slot, two rings and the listed enchants, using level 30 class and racial base stats. Excludes buffs and talents.</div>
           </aside>
         </div>
-        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href="https://wowforever.wclbox.com/en/peizhuang/warrior" target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
+        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href={`https://wowforever.wclbox.com/en/peizhuang/${selected}`} target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
       </section>
     </main>
   );
