@@ -78,7 +78,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
             <div className="panel p-4 text-[11px] leading-relaxed text-muted/70">Calculated from the first item in each slot, two rings and the listed enchants, using level 30 class and racial base stats. Excludes buffs and talents.</div>
           </aside>
         </div>
-        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/forever" className="text-gold/85 hover:text-gold-soft">65 Forever BIS lists →</Link><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href="https://wowforever.wclbox.com/en/peizhuang/warrior" target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
+        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href="https://wowforever.wclbox.com/en/peizhuang/warrior" target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
       </section>
     </main>
   );
