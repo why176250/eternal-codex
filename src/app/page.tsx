@@ -11,7 +11,7 @@ export default function HomePage() {
     <main>
       <LatestChangesFloat />
       <section className="container-x pb-12 pt-5 md:pt-8">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <Link href="/" className="inline-flex items-center gap-4">
               <img
@@ -22,7 +22,7 @@ export default function HomePage() {
                 className="size-16 shrink-0 rounded-2xl"
               />
               <span>
-                <h1 className="display block text-3xl tracking-wide text-parchment md:text-4xl">
+                <h1 className="hero-title display block text-3xl tracking-wide md:text-4xl">
                   Eversixty
                 </h1>
                 <span className="mt-1 block text-[11px] uppercase tracking-[0.28em] text-muted">
@@ -52,7 +52,7 @@ export default function HomePage() {
               key={module.id}
               href={module.href}
               style={{ "--accent": module.accent } as React.CSSProperties}
-              className="panel panel-hover group relative flex min-h-[104px] items-center gap-4 overflow-hidden p-4 md:p-5 2xl:min-h-[136px] 2xl:p-6"
+              className="module-card panel panel-hover group relative flex min-h-[104px] items-center gap-4 overflow-hidden p-4 md:p-5 2xl:min-h-[136px] 2xl:p-6"
             >
               <span
                 className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"

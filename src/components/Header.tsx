@@ -17,7 +17,7 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/80 bg-abyss/90 backdrop-blur-md">
+    <header className="site-header sticky top-0 z-50 border-b border-line/80 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-3">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <img
