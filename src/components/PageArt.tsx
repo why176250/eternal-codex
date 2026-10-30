@@ -15,9 +15,9 @@ export function PageArt() {
   if (!art) return null;
   return (
     <div aria-hidden="true" className="page-art pointer-events-none absolute inset-x-0 top-0 h-[24rem] overflow-hidden">
-      <img src={art.src} alt="" className="absolute right-0 top-0 h-full w-[68%] object-cover opacity-[0.16]" style={{ objectPosition: art.pos }} loading="lazy" />
-      <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/80 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss" />
+      <img src={art.src} alt="" className="absolute right-0 top-0 h-full w-[64%] object-cover opacity-[0.52] saturate-[0.9] brightness-[1.3]" style={{ objectPosition: art.pos }} loading="lazy" />
+      <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/75 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss/95" />
     </div>
   );
 }
