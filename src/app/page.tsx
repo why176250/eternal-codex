@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <main>
       <LatestChangesFloat />
-      <section className="container-x pb-14 pt-10 md:pt-14">
+      <section className="container-x pb-12 pt-5 md:pt-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <Link href="/" className="inline-flex items-center gap-4">
@@ -45,7 +45,7 @@ export default function HomePage() {
           <LaunchCountdown />
         </div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5">
+        <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5 md:mt-8">
           {modules.map((module) => {
             const Card = module.id === "gear" ? DataUpdatingLink : Link;
             return (

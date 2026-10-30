@@ -31,7 +31,7 @@ export function LatestChangesFloat() {
       <button
         type="button"
         onClick={toggle}
-        className="latest-float fixed left-4 top-32 z-30 hidden rounded-full border border-line bg-panel/95 px-2 py-3 text-[10px] uppercase tracking-[0.2em] text-gold-soft shadow-xl backdrop-blur min-[1800px]:block"
+        className="latest-float fixed left-4 top-28 z-30 hidden rounded-full border border-line bg-panel/95 px-2 py-3 text-[10px] uppercase tracking-[0.2em] text-gold-soft shadow-xl backdrop-blur min-[1800px]:block"
         aria-label="Open latest changes"
       >
         Latest
@@ -40,7 +40,7 @@ export function LatestChangesFloat() {
   }
 
   return (
-    <aside className="latest-float fixed top-32 z-30 hidden min-[1800px]:block">
+    <aside className="latest-float fixed top-28 z-30 hidden min-[1800px]:block">
       <div className="panel relative p-4 shadow-2xl">
         <button
           type="button"
