@@ -4,6 +4,13 @@ import { LaunchCountdown } from "@/components/LaunchCountdown";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 import { SpecTierBoard } from "@/components/SpecTierBoard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "魔兽世界：无限（Forever）— 中文攻略与数据库",
+  description: "《魔兽世界：无限》中文首页：职业攻略、天赋模拟器、装备计划、副本掉落、专业资料与数据库。",
+  alternates: { canonical: "/zh", languages: { en: "/", "zh-Hans": "/zh", "x-default": "/" } },
+};
 
 const zhModule: Record<string, { title: string; tagline: string }> = {
   talents: { title: "天赋模拟器", tagline: "天赋 + 传承" },
