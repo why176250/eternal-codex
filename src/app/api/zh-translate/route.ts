@@ -17,6 +17,11 @@ function postProcess(value: string) {
   for (const [re, text] of fixes) out = out.replace(re, text);
   out = out
     .replace(/高难度升级难度/g, "升级难度高")
+    .replace(/暴风雪/g, "暴雪")
+    .replace(/武器和天赋/g, "法术和天赋")
+    .replace(/类别/g, "职业")
+    .replace(/覆盖/g, "涵盖")
+    .replace(/构建/g, "版本")
     .replace(/设置数据/g, "套装数据")
     .replace(/魔法/g, "法术")
     .replace(/姓名/g, "名称")
