@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LangSync } from "@/components/LangSync";
+import { PageArt } from "@/components/PageArt";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -68,7 +69,10 @@ export default function RootLayout({
         <LangSync />
         <div className="flex min-h-screen flex-col">
           <Header />
-          <div>{children}</div>
+          <div className="relative">
+            <PageArt />
+            <div className="relative z-10">{children}</div>
+          </div>
           <Footer />
         </div>
       </body>
