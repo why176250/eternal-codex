@@ -57,6 +57,7 @@ export function LatestChangesFloat() {
         <div className="mt-3 space-y-1.5 text-[11px]">
           <p className="flex items-center gap-1.5 text-[#6fcf97]"><span aria-hidden="true">↑</span>{balance.buffs} buffs</p>
           <p className="flex items-center gap-1.5 text-[#ff6b6b]"><span aria-hidden="true">↓</span>{balance.nerfs} nerfs</p>
+          <p className="text-gold-soft">{balance.otherChanges} other changes</p>
           <p className="text-parchment/85">{balance.talentTreeChanges} talent tree changes</p>
           <p className="text-parchment/85">{balance.newItems} new items</p>
           <p className="text-parchment/85">{balance.changedItems} changed items</p>

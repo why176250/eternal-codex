@@ -12,6 +12,7 @@ export default function BalancePage() {
   const rows = [
     { label: "Buffs", value: balance.buffs, color: "#6fcf97", arrow: "↑" },
     { label: "Nerfs", value: balance.nerfs, color: "#ff6b6b", arrow: "↓" },
+    { label: "Other changes", value: balance.otherChanges, color: "#e3bd78" },
     { label: "Talent tree changes", value: balance.talentTreeChanges, color: "#ede7d7" },
     { label: "New items", value: balance.newItems, color: "#ede7d7" },
     { label: "Changed items", value: balance.changedItems, color: "#ede7d7" },

@@ -240,7 +240,7 @@ export const dataItems: SectionItem[] = [
     zh: "更新日志",
     href: "/patch-notes",
     status: "live",
-    summary: "Official Blizzard blue posts about WoW Forever, plus Eversixty updates.",
+    summary: "Every WoW Forever beta build: buffs, nerfs, class changes, and Blizzard posts.",
     bullets: [],
   },
   {
