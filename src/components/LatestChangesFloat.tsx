@@ -2,10 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import updates from "@/data/site-updates.json";
-
-type Update = { date: string; title: string; items: string[] };
-const latest = (updates as Update[]).slice(0, 2);
+import balance from "@/data/balance-latest.json";
 const STORAGE_KEY = "eversixty:latest-float-collapsed";
 
 export function LatestChangesFloat() {
@@ -54,22 +51,21 @@ export function LatestChangesFloat() {
         >
           ×
         </button>
-        <p className="eyebrow">Latest changes</p>
-        <div className="mt-3 space-y-3">
-          {latest.map((update) => (
-            <article key={`${update.date}-${update.title}`}>
-              <div className="flex items-baseline justify-between gap-2">
-                <p className="text-xs text-parchment">{update.title}</p>
-                <span className="shrink-0 text-[9px] text-muted/70">{update.date.slice(5)}</span>
-              </div>
-              {update.items[0] ? <p className="mt-1 text-[10px] leading-relaxed text-muted">{update.items[0]}</p> : null}
-            </article>
-          ))}
+        <p className="text-sm font-semibold text-[#f0c96a]">Latest balance changes</p>
+        <p className="mt-1 text-xs text-[#6fcf97]">{balance.displayDate}</p>
+        <p className="mt-1 text-[9px] text-muted/60">Build {balance.build}</p>
+        <div className="mt-3 space-y-1.5 text-[11px]">
+          <p className="flex items-center gap-1.5 text-[#6fcf97]"><span aria-hidden="true">↑</span>{balance.buffs} buffs</p>
+          <p className="flex items-center gap-1.5 text-[#ff6b6b]"><span aria-hidden="true">↓</span>{balance.nerfs} nerfs</p>
+          <p className="text-parchment/85">{balance.talentTreeChanges} talent tree changes</p>
+          <p className="text-parchment/85">{balance.newItems} new items</p>
+          <p className="text-parchment/85">{balance.changedItems} changed items</p>
         </div>
-        <Link href="/patch-notes" className="mt-4 inline-flex items-center gap-1.5 text-[10px] text-gold/85 transition-colors hover:text-gold-soft">
-          All changes <span aria-hidden="true">→</span>
+        <Link href="/patch-notes/balance" className="mt-4 block rounded-md border border-gold/40 bg-gold/[0.08] px-2.5 py-2 text-center text-[10px] text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.14]">
+          View details
         </Link>
       </div>
     </aside>
+
   );
 }
