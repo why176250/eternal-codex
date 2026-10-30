@@ -15,7 +15,7 @@ const tierColors: Record<string, string> = {
   S: "#ff6b5e", A: "#ff9f43", B: "#f6d365", C: "#6fcf97",
 };
 
-export function SpecTierBoard({ compact = false, zh = false }: { compact?: boolean; zh?: boolean }) {
+export function SpecTierBoard({ compact = false, zh = false, basePath = "" }: { compact?: boolean; zh?: boolean; basePath?: string }) {
   const [role, setRole] = useState<SpecTierRole>("dps");
   const items = specTierData[role];
 
@@ -44,7 +44,7 @@ export function SpecTierBoard({ compact = false, zh = false }: { compact?: boole
               <div className="flex w-9 shrink-0 items-center justify-center text-base font-bold" style={{ color: tierColors[tier], background: `${tierColors[tier]}18` }}>{tier}</div>
               <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 bg-deep/30 px-1.5 py-1">
                 {tierItems.map((item) => (
-                  <Link key={`${tier}-${item.specId}-${item.name}`} href={`/classes/${item.classSlug}`} title={zh ? item.name : item.nameEn} className={`flex items-center gap-1 rounded border border-line/50 bg-abyss/40 px-1 py-0.5 transition-colors hover:border-gold/40 ${compact ? "max-w-[9rem]" : ""}`}>
+                  <Link key={`${tier}-${item.specId}-${item.name}`} href={`${basePath}/classes/${item.classSlug}`} title={zh ? item.name : item.nameEn} className={`flex items-center gap-1 rounded border border-line/50 bg-abyss/40 px-1 py-0.5 transition-colors hover:border-gold/40 ${compact ? "max-w-[9rem]" : ""}`}>
                     <img src={item.icon} alt="" width={compact ? 24 : 24} height={compact ? 24 : 24} className="shrink-0 rounded-sm object-cover size-6" />
                     <span className={`truncate ${compact ? "text-[10px]" : "text-xs"} text-parchment`}>{zh ? item.name : item.nameEn}</span>
                   </Link>

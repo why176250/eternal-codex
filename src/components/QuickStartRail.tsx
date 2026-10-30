@@ -12,7 +12,7 @@ function StepIcon({ name }: { name: string }) {
   return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5c0 4.6-3.2 8.4-8 10-4.8-1.6-8-5.4-8-10V6l8-3Z" stroke="currentColor" strokeWidth="1.6" /><path d="m8.5 12 2.3 2.3 4.7-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
-export function QuickStartRail({ zh = false }: { zh?: boolean }) {
+export function QuickStartRail({ zh = false, basePath = "" }: { zh?: boolean; basePath?: string }) {
   return (
     <aside className="quick-start-rail fixed hidden min-[1800px]:block">
       <div className="mb-2 flex items-baseline justify-between gap-2">
@@ -21,7 +21,7 @@ export function QuickStartRail({ zh = false }: { zh?: boolean }) {
       </div>
       <div className="space-y-2">
         {steps.map((step) => (
-          <Link key={step.n} href={step.href} className="panel panel-hover group relative flex items-start gap-3 overflow-hidden p-4">
+          <Link key={step.n} href={`${basePath}${step.href}`} className="panel panel-hover group relative flex items-start gap-3 overflow-hidden p-4">
             <span className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-gold/60 via-gold/20 to-transparent opacity-70" />
             <span className="accent-tile grid size-9 shrink-0 place-items-center rounded-lg border" style={{ "--accent": "#e3bd78" } as React.CSSProperties}><StepIcon name={step.icon} /></span>
             <span className="min-w-0 flex-1">

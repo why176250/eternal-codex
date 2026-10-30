@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import balance from "@/data/balance-latest.json";
 const STORAGE_KEY = "eversixty:latest-float-collapsed";
 
-export function LatestChangesFloat({ zh = false }: { zh?: boolean }) {
+export function LatestChangesFloat({ zh = false, basePath = "" }: { zh?: boolean; basePath?: string }) {
   const [collapsed, setCollapsed] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -62,7 +62,7 @@ export function LatestChangesFloat({ zh = false }: { zh?: boolean }) {
           <p className="text-parchment/85">{balance.newItems} {zh ? "件新物品" : "new items"}</p>
           <p className="text-parchment/85">{balance.changedItems} {zh ? "件改动物品" : "changed items"}</p>
         </div>
-        <Link href="/patch-notes/balance" className="mt-4 block rounded-md border border-gold/40 bg-gold/[0.08] px-3 py-2.5 text-center text-xs text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.14]">
+        <Link href={`${basePath}/patch-notes/balance`} className="mt-4 block rounded-md border border-gold/40 bg-gold/[0.08] px-3 py-2.5 text-center text-xs text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.14]">
           {zh ? "查看详情" : "View details"}
         </Link>
       </div>
