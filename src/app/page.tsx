@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
 import { LaunchCountdown } from "@/components/LaunchCountdown";
-import { DataUpdatingLink } from "@/components/DataUpdatingLink";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 import { SpecTierBoard } from "@/components/SpecTierBoard";
@@ -47,7 +46,7 @@ export default function HomePage() {
 
         <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5 md:mt-8">
           {modules.map((module) => {
-            const Card = module.id === "gear" ? DataUpdatingLink : Link;
+            const Card = Link;
             return (
             <Card
               key={module.id}
@@ -193,7 +192,7 @@ export default function HomePage() {
                 href: "/tools/gear",
               },
             ].map((step) => {
-              const Card = step.href === "/bis" ? DataUpdatingLink : Link;
+              const Card = Link;
               return (
               <Card
                 key={step.n}

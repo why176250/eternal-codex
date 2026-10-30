@@ -129,7 +129,7 @@ export default function ToolsPage() {
 
           {/* Right column: BiS + XP */}
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            <DataUpdatingLink
+            <Link
               href="/bis"
               style={{ "--accent": "#9bb7ff" } as React.CSSProperties}
               className="panel panel-hover group relative flex flex-col overflow-hidden p-6"
@@ -139,23 +139,23 @@ export default function ToolsPage() {
                 <span className="accent-tile grid size-11 place-items-center rounded-xl border">
                   <ModuleIcon id="gear" />
                 </span>
-                <span className="badge">Updating</span>
+                <span className="badge badge-teal">Live</span>
               </div>
               <h2 className="display mt-4 text-xl text-parchment">BiS Planner</h2>
               <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">BiS 配装</p>
               <p className="mt-3 text-sm leading-relaxed text-muted">
-                Per-class, per-spec checklists of the upgrades worth farming
-                first, with sources and farm order.
+                Level 30 best-in-slot gear for all nine classes, with enchants,
+                stats, alternatives, and sources.
               </p>
               <div className="mt-4 space-y-1.5 text-xs text-muted/80">
-                <p>· 10 classes · 2 specs average</p>
-                <p>· Pre-raid and early-raid targets</p>
+                <p>· 9 classes · Level 30</p>
+                <p>· Alliance and Horde sets</p>
               </div>
               <span className="mt-auto flex items-center justify-between pt-5 text-xs text-gold/85">
                 Open tool
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </span>
-            </DataUpdatingLink>
+            </Link>
 
             <Link
               href="/tools/xp"
