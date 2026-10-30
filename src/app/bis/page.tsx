@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/bis" },
 };
 
-type SearchParams = Promise<{ class?: string; side?: string; spec?: string }>;
+type SearchParams = Promise<{ class?: string; side?: string; spec?: string; level?: string }>;
 const qualityColors: Record<number, string> = { 0: "#9d9d9d", 1: "#ffffff", 2: "#1eff00", 3: "#0070dd", 4: "#a335ee", 5: "#ff8000", 6: "#e6cc80" };
 
 function iconUrl(icon: string) {
@@ -19,6 +19,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
   const params = await searchParams;
   const selected = bisClasses.some((entry) => entry.slug === params.class) ? params.class! : "warrior";
   const side = params.side === "h" ? "h" : "a";
+  const level = params.level === "60" ? "60" : "30";
   const options = bisSpecOptions[selected] ?? [];
   const specKey = options.some((option) => option.key === params.spec) ? params.spec! : options[0]?.key;
   const spec = specKey ? getBisSpec(selected, specKey) : undefined;
@@ -35,12 +36,21 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
     const p = new URLSearchParams();
     p.set("class", slug);
     if (side === "h") p.set("side", "h");
+    if (level === "60") p.set("level", "60");
     return `/bis?${p.toString()}`;
   }
 
   function specHref(key: string) {
     const p = new URLSearchParams({ class: selected, spec: key });
     if (side === "h") p.set("side", "h");
+    if (level === "60") p.set("level", "60");
+    return `/bis?${p.toString()}`;
+  }
+
+  function levelHref(next: string) {
+    const p = new URLSearchParams({ class: selected, spec: specOption.key });
+    if (side === "h") p.set("side", "h");
+    if (next === "60") p.set("level", "60");
     return `/bis?${p.toString()}`;
   }
 
@@ -48,9 +58,9 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
     <main>
       <section className="border-b border-line/60">
         <div className="container-x py-9 md:py-12">
-          <p className="eyebrow">BiS gear · Level 30</p>
+          <p className="eyebrow">BiS gear · Level {level}</p>
           <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
-            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} {specOption.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} {specOption.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p></div>
+            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} {specOption.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level {level} {meta.name} {specOption.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p></div>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             {bisClasses.map((cls) => <Link key={cls.slug} href={classHref(cls.slug)} className={`flex items-center gap-2.5 rounded-lg border px-3 py-2.5 text-sm transition-colors ${cls.slug === selected ? "border-gold/55 bg-gold/10 text-parchment" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}><img src={cls.icon} alt="" width={32} height={32} className="size-8 rounded-md border border-line/70 object-cover" /><span>{cls.name}</span></Link>)}
@@ -62,13 +72,16 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
             <span className="text-muted">Faction:</span>
             <Link href={`/bis?class=${selected}&spec=${specOption.key}${side === "h" ? "&side=a" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "a" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Alliance</Link>
             <Link href={`/bis?class=${selected}&spec=${specOption.key}${side === "a" ? "&side=h" : ""}`} className={`rounded-full border px-2.5 py-1 ${side === "h" ? "border-gold/55 text-gold-soft" : "border-line/60 text-muted"}`}>Horde</Link>
-            <span className="ml-2 text-muted/60">PvE · Level 30 · Build 1.60.1.70685</span>
+            <span className="ml-2 flex items-center gap-1.5">
+              <Link href={levelHref("30")} className={`rounded border px-2.5 py-1 ${level === "30" ? "border-gold/55 bg-gold/10 text-gold-soft" : "border-line/60 text-muted hover:border-gold/40 hover:text-parchment"}`}>Level 30</Link>
+              <Link href={levelHref("60")} className={`rounded border px-2.5 py-1 ${level === "60" ? "border-gold/55 bg-gold/10 text-gold-soft" : "border-line/60 text-muted hover:border-gold/40 hover:text-parchment"}`}>Level 60</Link>
+            </span>
           </div>
         </div>
       </section>
 
       <section className="container-x py-7">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
+        {level === "60" ? <div className="panel p-6"><p className="eyebrow">Level 60 BiS</p><h2 className="display mt-2 text-2xl text-parchment">Level 60 sets open after launch</h2><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">The current WCLBox import only contains level 30 beta sets. Level 60 BiS will be added once the launch data is available.</p><Link href={levelHref("30")} className="mt-4 inline-block rounded-md border border-gold/40 px-3 py-2 text-xs text-gold-soft">Back to Level 30 →</Link></div> : <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
           <div>
             <div className="panel p-4">
               <div className="flex flex-wrap items-end justify-between gap-2"><div><p className="eyebrow">Character equipment</p><h2 className="display mt-1 text-xl text-parchment">{side === "a" ? "Alliance" : "Horde"} setup</h2></div><span className="text-[10px] text-muted/60">{gear.length} slots</span></div>
@@ -90,7 +103,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
             <div className="panel p-4"><p className="eyebrow">Overview</p><div className="mt-3 space-y-3">{stats.map((group) => <div key={group.name}><p className="text-[10px] uppercase tracking-wider text-muted">{group.name}</p><div className="mt-1 space-y-0.5">{group.values.map((stat) => <p key={stat.name} className="flex justify-between gap-2 text-[11px]"><span className="text-muted">{stat.name}</span><span className={stat.up ? "text-[#6fcf97]" : "text-parchment/80"}>{stat.value}</span></p>)}</div></div>)}</div></div>
             <div className="panel p-4 text-[11px] leading-relaxed text-muted/70">Calculated from the first item in each slot, two rings and the listed enchants, using level 30 class and racial base stats. Excludes buffs and talents.</div>
           </aside>
-        </div>
+        </div>}
         <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href={`https://wowforever.wclbox.com/en/peizhuang/${selected}`} target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
       </section>
     </main>
