@@ -240,7 +240,7 @@ export const dataItems: SectionItem[] = [
     zh: "更新日志",
     href: "/patch-notes",
     status: "live",
-    summary: "Eversixty release notes and module updates.",
+    summary: "Official Blizzard blue posts from the WoW forums, plus Eversixty updates.",
     bullets: [],
   },
   {
