@@ -13,6 +13,7 @@ const zhDungeons = new Set(["hall-of-thanes","ragefire-chasm","blackfathom-deeps
 const zhCore = new Set([
   "/zh", "/zh/dungeons", "/zh/classes", "/zh/bis",
   "/zh/professions", "/zh/data", "/zh/tools", "/zh/guides",
+  "/zh/spells", "/zh/races", "/zh/quests", "/zh/transmog",
 ]);
 
 export function middleware(request: NextRequest) {

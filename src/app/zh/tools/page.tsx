@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
-import Page from "@/app/tools/page";
-export const metadata: Metadata = { title: "工具 — 魔兽世界：无限", alternates: { canonical: "/zh/tools", languages: { en: "/tools", "zh-Hans": "/zh/tools", "x-default": "/tools" } } };
-export default function ZhToolsPage() { return <Page />; }
+import Link from "next/link";
+const tools=[{h:"/tools/build",t:"天赋模拟器",d:"九职业三系天赋与传承"},{h:"/zh/bis",t:"BiS 配装",d:"全职业 Level 30 最佳装备"},{h:"/tools/xp",t:"经验计算器",d:"1–60 经验与击杀数"},{h:"/tools/class-popularity",t:"职业热度",d:"开服职业人气"},{h:"/tools/tier-list",t:"职业强度榜",d:"S/A/B/C 档位"},{h:"/tools/class-wheel",t:"职业转盘",d:"随机选职业"}];
+export const metadata: Metadata = { title:"工具 — 魔兽世界：无限", alternates:{canonical:"/zh/tools",languages:{en:"/tools","zh-Hans":"/zh/tools","x-default":"/tools"}} };
+export default function ZhTools(){return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">工具</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">规划你的角色</h1><p className="mt-3 text-sm text-muted">天赋、装备、经验与职业选择工具。</p></section><section className="container-x grid gap-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">{tools.map(t=><Link key={t.h} href={t.h} className="panel panel-hover p-5"><h2 className="display text-xl text-parchment">{t.t}</h2><p className="mt-2 text-sm text-muted">{t.d}</p><span className="mt-4 inline-block text-xs text-gold/80">打开 →</span></Link>)}</section></main>}

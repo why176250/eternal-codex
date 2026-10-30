@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import sets from "@/data/sets-zh.json";
+type S={id:number;name:string;localesName:string;itemsCount:number;levelRange:string;reqClassText:string;subClassText:string};
+export const metadata:Metadata={title:"幻化 — 魔兽世界：无限",alternates:{canonical:"/zh/transmog",languages:{en:"/transmog","zh-Hans":"/zh/transmog","x-default":"/transmog"}}};
+export default function ZhTransmog(){return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">幻化</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">中文套装</h1><p className="mt-3 text-sm text-muted">{(sets as S[]).length} 套装备，中文套装名与部位。</p></section><section className="container-x grid gap-3 pb-20 sm:grid-cols-2 lg:grid-cols-3">{(sets as S[]).map(s=><div key={s.id} className="panel p-4"><p className="text-sm text-parchment">{s.localesName||s.name}</p><p className="mt-1 text-[10px] text-muted">{s.itemsCount} 件 · {s.levelRange} · {s.reqClassText}</p><p className="mt-1 text-[10px] text-muted/60">{s.subClassText}</p></div>)}</section></main>}

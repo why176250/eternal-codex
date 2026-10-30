@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
-import Page from "@/app/bis/page";
-export const metadata: Metadata = { title: "BiS 配装 — 魔兽世界：无限", alternates: { canonical: "/zh/bis", languages: { en: "/bis", "zh-Hans": "/zh/bis", "x-default": "/bis" } } };
-export default function ZhBisPage() { return <Page searchParams={Promise.resolve({})} />; }
+import Link from "next/link";
+const classes=[{slug:"warrior",name:"战士",color:"#C79C6E"},{slug:"paladin",name:"圣骑士",color:"#F58CBA"},{slug:"hunter",name:"猎人",color:"#ABD473"},{slug:"rogue",name:"潜行者",color:"#FFF569"},{slug:"priest",name:"牧师",color:"#FFFFFF"},{slug:"shaman",name:"萨满祭司",color:"#0070DE"},{slug:"mage",name:"法师",color:"#69CCF0"},{slug:"warlock",name:"术士",color:"#9482C9"},{slug:"druid",name:"德鲁伊",color:"#FF7D0A"}];
+export const metadata: Metadata = { title:"BiS 配装 — 魔兽世界：无限", alternates:{canonical:"/zh/bis",languages:{en:"/bis","zh-Hans":"/zh/bis","x-default":"/bis"}} };
+export default function ZhBis(){return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">BiS 配装</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">各职业最佳装备</h1><p className="mt-3 text-sm text-muted">中文装备名、部位、附魔与来源，按专精切换。</p></section><section className="container-x grid gap-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">{classes.map(c=><Link key={c.slug} href={`/zh/bis/${c.slug}`} className="panel panel-hover flex items-center gap-4 p-5"><img src={`/classes/icons/${c.slug}.jpg`} alt="" width={48} height={48} className="size-12 rounded-lg border border-line/70 object-cover"/><span><span className="display block text-2xl" style={{color:c.color}}>{c.name}</span><span className="mt-1 block text-xs text-muted">查看中文 BiS →</span></span></Link>)}</section></main>}

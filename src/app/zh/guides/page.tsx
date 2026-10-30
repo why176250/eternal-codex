@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
-import Page from "@/app/guides/page";
-export const metadata: Metadata = { title: "攻略 — 魔兽世界：无限", alternates: { canonical: "/zh/guides", languages: { en: "/guides", "zh-Hans": "/zh/guides", "x-default": "/guides" } } };
-export default function ZhGuidesPage() { return <Page />; }
+import Link from "next/link";
+import guides from "@/data/guides-zh.json";
+const slugs:Record<string,string>={"德鲁伊猎豹形态任务":"druid-cat-form","战斗法师":"battle-mage","图书馆书籍位置与奖励":"library-books","舒适的睡袋":"cozy-sleeping-bag","稀有怪出现位置与掉落物品":"rares","美味奇想鳍鱼":"whimsyfin"};
+export const metadata: Metadata = { title:"攻略 — 魔兽世界：无限", alternates:{canonical:"/zh/guides",languages:{en:"/guides","zh-Hans":"/zh/guides","x-default":"/guides"}} };
+export default function ZhGuides(){return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">攻略</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">中文攻略</h1><p className="mt-3 text-sm text-muted">蓝色隐士中文攻略，持续补充。</p></section><section className="container-x grid gap-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">{guides.map(g=><Link key={g.id} href={`/zh/guides/${slugs[g.titleCn]??"battle-mage"}`} className="panel panel-hover p-5"><span className="badge">{g.groupCn}</span><h2 className="display mt-3 text-xl text-parchment">{g.titleCn}</h2><p className="mt-2 line-clamp-3 text-sm text-muted">{g.summaryCn}</p><span className="mt-4 inline-block text-xs text-gold/80">阅读 →</span></Link>)}</section></main>}

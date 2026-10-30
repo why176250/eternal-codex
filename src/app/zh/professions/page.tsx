@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
-import Page from "@/app/professions/page";
-export const metadata: Metadata = { title: "专业资料 — 魔兽世界：无限", alternates: { canonical: "/zh/professions", languages: { en: "/professions", "zh-Hans": "/zh/professions", "x-default": "/professions" } } };
-export default function ZhProfessionsPage() { return <Page searchParams={Promise.resolve({})} />; }
+import Link from "next/link";
+import data from "@/data/professions-zh.json";
+const map:Record<string,string>={"制皮":"leatherworking","锻造":"blacksmithing","裁缝":"tailoring","工程学":"engineering","附魔":"enchanting","炼金术":"alchemy","烹饪":"cooking","急救":"first-aid","采矿":"mining","草药学":"herbalism","钓鱼":"fishing","剥皮":"skinning"};
+export const metadata: Metadata = { title:"专业资料 — 魔兽世界：无限", alternates:{canonical:"/zh/professions",languages:{en:"/professions","zh-Hans":"/zh/professions","x-default":"/professions"}} };
+export default function ZhProfessions(){return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">专业资料</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">专业与配方</h1><p className="mt-3 text-sm text-muted">中文配方名、材料与技能等级，数据来源蓝色隐士。</p></section><section className="container-x grid gap-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">{data.professions.map(p=><Link key={p.name} href={`/zh/professions/${map[p.name]}`} className="panel panel-hover flex items-center gap-4 p-5"><img src={`https://wowforever.wclbox.com/tubiao/${p.icon}`} alt="" width={48} height={48} className="size-12 rounded-lg border border-line/70 object-cover"/><span><span className="display block text-xl text-parchment">{p.name}</span><span className="text-xs text-muted">{p.recipeCount} 个配方</span></span></Link>)}</section></main>}
