@@ -51,10 +51,10 @@ export function LatestChangesFloat() {
         >
           ×
         </button>
-        <p className="text-sm font-semibold text-[#f0c96a]">Latest balance changes</p>
-        <p className="mt-1 text-xs text-[#6fcf97]">{balance.displayDate}</p>
-        <p className="mt-1 text-[9px] text-muted/60">Build {balance.build}</p>
-        <div className="mt-3 space-y-1.5 text-[11px]">
+        <p className="text-base font-semibold text-[#f0c96a]">Latest balance changes</p>
+        <p className="mt-1 text-sm text-[#6fcf97]">{balance.displayDate}</p>
+        <p className="mt-1 text-[10px] text-muted/60">Build {balance.build}</p>
+        <div className="mt-3 space-y-1.5 text-xs">
           <p className="flex items-center gap-1.5 text-[#6fcf97]"><span aria-hidden="true">↑</span>{balance.buffs} buffs</p>
           <p className="flex items-center gap-1.5 text-[#ff6b6b]"><span aria-hidden="true">↓</span>{balance.nerfs} nerfs</p>
           <p className="text-gold-soft">{balance.otherChanges} other changes</p>
@@ -62,7 +62,7 @@ export function LatestChangesFloat() {
           <p className="text-parchment/85">{balance.newItems} new items</p>
           <p className="text-parchment/85">{balance.changedItems} changed items</p>
         </div>
-        <Link href="/patch-notes/balance" className="mt-4 block rounded-md border border-gold/40 bg-gold/[0.08] px-2.5 py-2 text-center text-[10px] text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.14]">
+        <Link href="/patch-notes/balance" className="mt-4 block rounded-md border border-gold/40 bg-gold/[0.08] px-3 py-2.5 text-center text-xs text-gold-soft transition-colors hover:border-gold/70 hover:bg-gold/[0.14]">
           View details
         </Link>
       </div>

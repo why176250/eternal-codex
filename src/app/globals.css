@@ -421,7 +421,7 @@ a {
 /* Wide-screen left rail: balance card above, three quick-start cards below. */
 .quick-start-rail {
   left: max(1rem, calc((100vw - 85.625rem) / 2 - 23rem));
-  top: 25rem;
+  top: 27rem;
   width: min(22rem, calc((100vw - 85.625rem) / 2 - 2rem));
   z-index: 30;
 }
