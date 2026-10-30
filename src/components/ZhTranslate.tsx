@@ -40,6 +40,7 @@ const exact: Record<string, string> = {
   "pages": "页面", "items": "物品", "spells": "法术", "sets": "套装", "votes": "票", "specs": "专精",
   "Overview": "概述", "Changes": "变化", "Pros & cons": "优劣势", "Races": "种族",
   "Abilities": "技能", "BiS": "BiS", "Dungeons": "副本", "Classes": "职业",
+  "FOREVER · CLASSIC+": "FOREVER · CLASSIC+",
   "Every spec, one page": "每个专精，一页看完",
   "Home": "首页", "Item details": "物品详情", "Sells for": "出售价格", "Requires level": "需要等级",
   "Rare": "稀有", "Uncommon": "优秀", "Epic": "史诗", "Legendary": "传说", "Neck": "颈部", "Finger": "手指", "Trinket": "饰品", "Back": "背部", "Chest": "胸部", "Waist": "腰部", "Legs": "腿部", "Feet": "脚", "Wrist": "手腕", "Hands": "手", "Head": "头部", "Shoulder": "肩部", "Shield": "盾牌", "Off-hand": "副手", "One-Hand": "单手", "Two-Hand": "双手", "Ranged": "远程",
@@ -85,6 +86,7 @@ const phrase: [RegExp, string][] = [
   [/(\d[\d,]*)\s+pages/gi, "$1 页面"], [/(\d[\d,]*)\s+items/gi, "$1 物品"], [/(\d[\d,]*)\s+spells/gi, "$1 法术"], [/(\d[\d,]*)\s+sets/gi, "$1 套装"],
   [/(\d[\d,]*)\s+votes/gi, "$1 票"],
   [/new dungeons/gi, "个新副本"], [/from Classic/gi, "个经典副本"], [/recorded bosses/gi, "个已记录首领"],
+  [/\bpages\b/gi, "页面"], [/\bitems\b/gi, "物品"], [/\bspells\b/gi, "法术"], [/\bsets\b/gi, "套装"],
   [/TANK/gi, "坦克"], [/HEALER/gi, "治疗"],
   [/^Search ([\d,+]+) entries.*$/i, "搜索 $1+ 条目"],
 ];
