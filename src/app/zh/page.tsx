@@ -4,6 +4,8 @@ import { LaunchCountdown } from "@/components/LaunchCountdown";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 import { SpecTierBoard } from "@/components/SpecTierBoard";
+import { LatestChangesFloat } from "@/components/LatestChangesFloat";
+import { QuickStartRail } from "@/components/QuickStartRail";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,6 +32,8 @@ const steps = [
 export default function ZhHomePage() {
   return (
     <main>
+      <LatestChangesFloat zh />
+      <QuickStartRail zh />
       <section className="container-x pb-10 pt-3 md:pt-4">
         <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-start lg:justify-between">
           <div>

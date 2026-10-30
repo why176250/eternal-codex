@@ -95,7 +95,6 @@ export default async function RootLayout({
         <LangSync />
         <HreflangSync />
         <div className="flex min-h-screen flex-col">
-          {lang === "zh-Hans" ? <div className="border-b border-gold/15 bg-gold/[0.035]"><div className="container-x flex items-center justify-between gap-3 py-2 text-[10px] text-muted"><span><span className="text-gold-soft">中文版</span> · 优先使用蓝色隐士中文数据</span><a href="/" className="text-gold/80 hover:text-gold-soft">English →</a></div></div> : null}
           <Header />
           <div className="relative">
             <PageArt />
