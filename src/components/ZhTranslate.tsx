@@ -80,6 +80,7 @@ export function ZhTranslate() {
     if (!(pathname === "/zh" || pathname.startsWith("/zh/"))) return;
     let names: Record<string, string> = {};
     let active = true;
+    const original = new Map<Text, string>();
     const run = () => {
       if (!active) return;
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -92,8 +93,12 @@ export function ZhTranslate() {
       });
       let node: Text | null;
       while ((node = walker.nextNode() as Text | null)) {
-        const translated = translate(node.nodeValue ?? "", names);
-        if (translated !== node.nodeValue) node.nodeValue = translated;
+        const current = node.nodeValue ?? "";
+        const translated = translate(current, names);
+        if (translated !== current) {
+          if (!original.has(node)) original.set(node, current);
+          node.nodeValue = translated;
+        }
       }
       document.querySelectorAll("input[placeholder]").forEach((input) => {
         const el = input as HTMLInputElement; const p = el.placeholder; const t = translate(p, names); if (t !== p) el.placeholder = t;
@@ -103,7 +108,12 @@ export function ZhTranslate() {
     run();
     const obs = new MutationObserver(() => { run(); });
     obs.observe(document.body, { childList: true, subtree: true });
-    return () => { active = false; obs.disconnect(); };
+    return () => {
+      active = false;
+      obs.disconnect();
+      for (const [node, value] of original) if (node.isConnected) node.nodeValue = value;
+      original.clear();
+    };
   }, [pathname]);
   return null;
 }
