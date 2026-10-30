@@ -15,7 +15,8 @@ export function middleware(request: NextRequest) {
     else if (rest === "/data/items") url.pathname = "/items";
     else if (rest === "/data/spells") url.pathname = "/spells";
     else if (rest === "/data/npcs") url.pathname = "/npcs";
-    else if (rest.startsWith("/guides/") && !rest.startsWith("/guides/forever/")) url.pathname = `/guides/forever/${rest.slice("/guides/".length)}`;
+    else if (rest === "/guides/battle-mage") url.pathname = "/guides/forever/battle-mage";
+    else if (rest === "/data/dungeons") url.pathname = "/dungeons";
     else url.pathname = rest || "/";
     return NextResponse.rewrite(url, { request: { headers } });
   }
