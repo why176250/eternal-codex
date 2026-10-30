@@ -29,9 +29,9 @@ export const modules: Module[] = [
     zh: "装备计划",
     href: "/bis",
     question: "What should I farm first?",
-    body: "Per-spec checklists with sources and farm order, instead of a 16-slot wall of guesses.",
+    body: "Level 30 best-in-slot gear for all nine classes, with enchants, stats, and alternatives.",
     accent: "#9bb7ff",
-    tagline: "BiS checklist",
+    tagline: "All-class BiS",
   },
   {
     id: "classes",
