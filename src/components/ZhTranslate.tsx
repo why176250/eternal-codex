@@ -174,7 +174,10 @@ export function ZhTranslate() {
           const parent = node.parentElement;
           if (!parent || SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
           const value = (node.nodeValue ?? "").trim();
-          if (value.length < 2 || !/[A-Za-z]/.test(value) || /[\u4e00-\u9fff]/.test(value) || original.has(node as Text)) return NodeFilter.FILTER_REJECT;
+          if (value.length < 2 || !/[A-Za-z]/.test(value)) return NodeFilter.FILTER_REJECT;
+          const englishWords = value.match(/[A-Za-z][A-Za-z'’-]+/g)?.length ?? 0;
+          const chineseChars = value.match(/[\u4e00-\u9fff]/g)?.length ?? 0;
+          if (englishWords < 2 && chineseChars > 0) return NodeFilter.FILTER_REJECT;
           return NodeFilter.FILTER_ACCEPT;
         },
       });
