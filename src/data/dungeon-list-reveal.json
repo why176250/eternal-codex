@@ -1,0 +1,361 @@
+{
+ "_meta": {
+  "source": "foreverchanges.pro/dungeons",
+  "section": "点条形图展开的面板",
+  "locale": "en-US",
+  "generatedAt": "2026-10-30T10:35:49+08:00",
+  "note": "bossLootCount=原站掉落件数(=详情页 #loot 的 'N drops')；questRewardsCount=任务奖励件数；两者之和≈loot_detail.json 的件数，即我们的掉落表多出来的部分"
+ },
+ "dungeons": {
+  "hall-of-thanes": {
+   "name": "Hall of Thanes",
+   "levelBand": "13–18",
+   "group": "New in Forever",
+   "bossLootCount": 13,
+   "questRewardsCount": 9,
+   "fullLootCount": 13,
+   "guideHref": "/dungeons/hall-of-thanes",
+   "labelRaw": "Hall of Thanes, level 13–18, New in Forever"
+  },
+  "ruins-of-lordaeron": {
+   "name": "Ruins of Lordaeron",
+   "levelBand": "15–20",
+   "group": "New in Forever",
+   "bossLootCount": 25,
+   "questRewardsCount": 15,
+   "fullLootCount": 25,
+   "guideHref": "/dungeons/ruins-of-lordaeron",
+   "labelRaw": "Ruins of Lordaeron, level 15–20, New in Forever"
+  },
+  "excavation-site": {
+   "name": "Excavation Site: Wetlands",
+   "levelBand": "26–31",
+   "group": "New in Forever",
+   "bossLootCount": 15,
+   "questRewardsCount": 11,
+   "fullLootCount": 15,
+   "guideHref": "/dungeons/excavation-site",
+   "labelRaw": "Excavation Site: Wetlands, level 26–31, New in Forever"
+  },
+  "city-of-dalaran": {
+   "name": "City of Dalaran",
+   "levelBand": "28–33",
+   "group": "New in Forever",
+   "bossLootCount": 35,
+   "questRewardsCount": 18,
+   "fullLootCount": 35,
+   "guideHref": "/dungeons/city-of-dalaran",
+   "labelRaw": "City of Dalaran, level 28–33, New in Forever"
+  },
+  "the-drowned-city": {
+   "name": "The Drowned City",
+   "levelBand": "35–40",
+   "group": "New in Forever",
+   "bossLootCount": 0,
+   "questRewardsCount": 0,
+   "fullLootCount": null,
+   "guideHref": "/dungeons/the-drowned-city",
+   "labelRaw": "The Drowned City, level 35–40, New in Forever"
+  },
+  "kroldok-stronghold": {
+   "name": "Krol'dok Stronghold",
+   "levelBand": "40–45",
+   "group": "New in Forever",
+   "bossLootCount": null,
+   "questRewardsCount": null,
+   "fullLootCount": null,
+   "guideHref": "/dungeons/kroldok-stronghold",
+   "labelRaw": "Krol'dok Stronghold, level 40–45, New in Forever"
+  },
+  "alcaz-prison": {
+   "name": "Alcaz Prison",
+   "levelBand": "48–53",
+   "group": "New in Forever",
+   "bossLootCount": null,
+   "questRewardsCount": null,
+   "fullLootCount": null,
+   "guideHref": null,
+   "labelRaw": "Alcaz Prison, level 48–53, New in Forever"
+  },
+  "blackmaw-hold": {
+   "name": "Blackmaw Hold",
+   "levelBand": "55–60",
+   "group": "New in Forever",
+   "bossLootCount": null,
+   "questRewardsCount": null,
+   "fullLootCount": null,
+   "guideHref": null,
+   "labelRaw": "Blackmaw Hold, level 55–60, New in Forever"
+  },
+  "shapers-terrace": {
+   "name": "Shaper's Terrace",
+   "levelBand": "58–60",
+   "group": "New in Forever",
+   "bossLootCount": null,
+   "questRewardsCount": null,
+   "fullLootCount": null,
+   "guideHref": null,
+   "labelRaw": "Shaper's Terrace, level 58–60, New in Forever"
+  },
+  "ragefire-chasm": {
+   "name": "Ragefire Chasm",
+   "levelBand": "13–18",
+   "group": "From Classic",
+   "bossLootCount": 12,
+   "questRewardsCount": 6,
+   "fullLootCount": 12,
+   "guideHref": "/dungeons/ragefire-chasm",
+   "labelRaw": "Ragefire Chasm, level 13–18, From Classic"
+  },
+  "wailing-caverns": {
+   "name": "Wailing Caverns",
+   "levelBand": "17–24",
+   "group": "From Classic",
+   "bossLootCount": 36,
+   "questRewardsCount": 11,
+   "fullLootCount": 36,
+   "guideHref": "/dungeons/wailing-caverns",
+   "labelRaw": "Wailing Caverns, level 17–24, From Classic"
+  },
+  "the-deadmines": {
+   "name": "The Deadmines",
+   "levelBand": "17–26",
+   "group": "From Classic",
+   "bossLootCount": 49,
+   "questRewardsCount": 17,
+   "fullLootCount": 49,
+   "guideHref": "/dungeons/the-deadmines",
+   "labelRaw": "The Deadmines, level 17–26, From Classic"
+  },
+  "shadowfang-keep": {
+   "name": "Shadowfang Keep",
+   "levelBand": "22–30",
+   "group": "From Classic",
+   "bossLootCount": 44,
+   "questRewardsCount": 7,
+   "fullLootCount": 44,
+   "guideHref": "/dungeons/shadowfang-keep",
+   "labelRaw": "Shadowfang Keep, level 22–30, From Classic"
+  },
+  "blackfathom-deeps": {
+   "name": "Blackfathom Deeps",
+   "levelBand": "24–32",
+   "group": "From Classic",
+   "bossLootCount": 44,
+   "questRewardsCount": 13,
+   "fullLootCount": 44,
+   "guideHref": "/dungeons/blackfathom-deeps",
+   "labelRaw": "Blackfathom Deeps, level 24–32, From Classic"
+  },
+  "the-stockade": {
+   "name": "The Stockade",
+   "levelBand": "24–32",
+   "group": "From Classic",
+   "bossLootCount": 29,
+   "questRewardsCount": 9,
+   "fullLootCount": 29,
+   "guideHref": "/dungeons/the-stockade",
+   "labelRaw": "The Stockade, level 24–32, From Classic"
+  },
+  "gnomeregan": {
+   "name": "Gnomeregan",
+   "levelBand": "29–38",
+   "group": "From Classic",
+   "bossLootCount": 49,
+   "questRewardsCount": 13,
+   "fullLootCount": 49,
+   "guideHref": "/dungeons/gnomeregan",
+   "labelRaw": "Gnomeregan, level 29–38, From Classic"
+  },
+  "razorfen-kraul": {
+   "name": "Razorfen Kraul",
+   "levelBand": "29–38",
+   "group": "From Classic",
+   "bossLootCount": 45,
+   "questRewardsCount": 12,
+   "fullLootCount": 45,
+   "guideHref": "/dungeons/razorfen-kraul",
+   "labelRaw": "Razorfen Kraul, level 29–38, From Classic"
+  },
+  "scarlet-monastery-graveyard": {
+   "name": "Scarlet Monastery Graveyard",
+   "levelBand": "30–38",
+   "group": "From Classic",
+   "bossLootCount": 50,
+   "questRewardsCount": 7,
+   "fullLootCount": 50,
+   "guideHref": "/dungeons/scarlet-monastery-graveyard",
+   "labelRaw": "Scarlet Monastery Graveyard, level 30–38, From Classic"
+  },
+  "scarlet-monastery-library": {
+   "name": "Scarlet Monastery Library",
+   "levelBand": "33–41",
+   "group": "From Classic",
+   "bossLootCount": 40,
+   "questRewardsCount": 16,
+   "fullLootCount": 40,
+   "guideHref": "/dungeons/scarlet-monastery-library",
+   "labelRaw": "Scarlet Monastery Library, level 33–41, From Classic"
+  },
+  "scarlet-monastery-armory": {
+   "name": "Scarlet Monastery Armory",
+   "levelBand": "36–44",
+   "group": "From Classic",
+   "bossLootCount": 32,
+   "questRewardsCount": 14,
+   "fullLootCount": 32,
+   "guideHref": "/dungeons/scarlet-monastery-armory",
+   "labelRaw": "Scarlet Monastery Armory, level 36–44, From Classic"
+  },
+  "razorfen-downs": {
+   "name": "Razorfen Downs",
+   "levelBand": "37–46",
+   "group": "From Classic",
+   "bossLootCount": 31,
+   "questRewardsCount": 7,
+   "fullLootCount": 31,
+   "guideHref": "/dungeons/razorfen-downs",
+   "labelRaw": "Razorfen Downs, level 37–46, From Classic"
+  },
+  "scarlet-monastery-cathedral": {
+   "name": "Scarlet Monastery Cathedral",
+   "levelBand": "38–46",
+   "group": "From Classic",
+   "bossLootCount": 37,
+   "questRewardsCount": 14,
+   "fullLootCount": 37,
+   "guideHref": "/dungeons/scarlet-monastery-cathedral",
+   "labelRaw": "Scarlet Monastery Cathedral, level 38–46, From Classic"
+  },
+  "uldaman": {
+   "name": "Uldaman",
+   "levelBand": "41–51",
+   "group": "From Classic",
+   "bossLootCount": 64,
+   "questRewardsCount": 16,
+   "fullLootCount": 64,
+   "guideHref": "/dungeons/uldaman",
+   "labelRaw": "Uldaman, level 41–51, From Classic"
+  },
+  "zulfarrak": {
+   "name": "Zul'Farrak",
+   "levelBand": "44–54",
+   "group": "From Classic",
+   "bossLootCount": 38,
+   "questRewardsCount": 5,
+   "fullLootCount": 38,
+   "guideHref": "/dungeons/zulfarrak",
+   "labelRaw": "Zul'Farrak, level 44–54, From Classic"
+  },
+  "maraudon": {
+   "name": "Maraudon",
+   "levelBand": "46–55",
+   "group": "From Classic",
+   "bossLootCount": 40,
+   "questRewardsCount": 14,
+   "fullLootCount": 40,
+   "guideHref": "/dungeons/maraudon",
+   "labelRaw": "Maraudon, level 46–55, From Classic"
+  },
+  "sunken-temple": {
+   "name": "Sunken Temple",
+   "levelBand": "50–60",
+   "group": "From Classic",
+   "bossLootCount": 60,
+   "questRewardsCount": 8,
+   "fullLootCount": 60,
+   "guideHref": "/dungeons/sunken-temple",
+   "labelRaw": "Sunken Temple, level 50–60, From Classic"
+  },
+  "blackrock-depths": {
+   "name": "Blackrock Depths",
+   "levelBand": "52–60",
+   "group": "From Classic",
+   "bossLootCount": 168,
+   "questRewardsCount": 36,
+   "fullLootCount": 168,
+   "guideHref": "/dungeons/blackrock-depths",
+   "labelRaw": "Blackrock Depths, level 52–60, From Classic"
+  },
+  "dire-maul-east": {
+   "name": "Dire Maul East",
+   "levelBand": "54–60",
+   "group": "From Classic",
+   "bossLootCount": 56,
+   "questRewardsCount": 23,
+   "fullLootCount": 56,
+   "guideHref": "/dungeons/dire-maul-east",
+   "labelRaw": "Dire Maul East, level 54–60, From Classic"
+  },
+  "lower-blackrock-spire": {
+   "name": "Lower Blackrock Spire",
+   "levelBand": "55–60",
+   "group": "From Classic",
+   "bossLootCount": 93,
+   "questRewardsCount": 21,
+   "fullLootCount": 93,
+   "guideHref": "/dungeons/lower-blackrock-spire",
+   "labelRaw": "Lower Blackrock Spire, level 55–60, From Classic"
+  },
+  "dire-maul-north": {
+   "name": "Dire Maul North",
+   "levelBand": "56–60",
+   "group": "From Classic",
+   "bossLootCount": 89,
+   "questRewardsCount": 21,
+   "fullLootCount": 89,
+   "guideHref": "/dungeons/dire-maul-north",
+   "labelRaw": "Dire Maul North, level 56–60, From Classic"
+  },
+  "dire-maul-west": {
+   "name": "Dire Maul West",
+   "levelBand": "56–60",
+   "group": "From Classic",
+   "bossLootCount": 69,
+   "questRewardsCount": 20,
+   "fullLootCount": 69,
+   "guideHref": "/dungeons/dire-maul-west",
+   "labelRaw": "Dire Maul West, level 56–60, From Classic"
+  },
+  "scholomance": {
+   "name": "Scholomance",
+   "levelBand": "58–60",
+   "group": "From Classic",
+   "bossLootCount": 124,
+   "questRewardsCount": 9,
+   "fullLootCount": 124,
+   "guideHref": "/dungeons/scholomance",
+   "labelRaw": "Scholomance, level 58–60, From Classic"
+  },
+  "stratholme-main-gate": {
+   "name": "Stratholme Main Gate",
+   "levelBand": "58–60",
+   "group": "From Classic",
+   "bossLootCount": 95,
+   "questRewardsCount": 11,
+   "fullLootCount": 95,
+   "guideHref": "/dungeons/stratholme-main-gate",
+   "labelRaw": "Stratholme Main Gate, level 58–60, From Classic"
+  },
+  "stratholme-service-gate": {
+   "name": "Stratholme Service Gate",
+   "levelBand": "58–60",
+   "group": "From Classic",
+   "bossLootCount": 112,
+   "questRewardsCount": 13,
+   "fullLootCount": 112,
+   "guideHref": "/dungeons/stratholme-service-gate",
+   "labelRaw": "Stratholme Service Gate, level 58–60, From Classic"
+  },
+  "upper-blackrock-spire": {
+   "name": "Upper Blackrock Spire",
+   "levelBand": "59–60",
+   "group": "From Classic",
+   "bossLootCount": 89,
+   "questRewardsCount": 16,
+   "fullLootCount": 89,
+   "guideHref": "/dungeons/upper-blackrock-spire",
+   "labelRaw": "Upper Blackrock Spire, level 59–60, From Classic"
+  }
+ }
+}

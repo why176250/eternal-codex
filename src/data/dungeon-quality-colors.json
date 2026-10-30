@@ -1,0 +1,32 @@
+{
+ "_meta": {
+  "method": "CDP getComputedStyle 于 /dungeons/hall-of-thanes、/dungeons/maraudon、/dungeons/city-of-dalaran 抽 q0~q4",
+  "measuredAt": "2026-10-30T10:35:49+08:00"
+ },
+ "colors": {
+  "0": "#9d9d9d",
+  "1": "#ffffff",
+  "2": "#1eff00",
+  "3": "#4aa3ff",
+  "4": "#a335ee"
+ },
+ "rgb": {
+  "0": "rgb(157, 157, 157)",
+  "1": "rgb(255, 255, 255)",
+  "2": "rgb(30, 255, 0)",
+  "3": "rgb(74, 163, 255)",
+  "4": "rgb(163, 53, 238)"
+ },
+ "ourCurrent": {
+  "1": "#9d9d9d",
+  "2": "#1eff00",
+  "3": "#0070dd",
+  "4": "#a335ee",
+  "5": "#ff8000"
+ },
+ "diff": {
+  "q0": "原站 #9d9d9d，我们落到兜底 #ede7d7",
+  "q1": "原站 #ffffff，我们 #9d9d9d（影响 134 件）",
+  "q3": "原站 #4aa3ff，我们 #0070dd（影响 1555 件）"
+ }
+}

@@ -24,7 +24,7 @@ export type FcDungeon = {
 export type MapPin = { name: string; nameCn: string; npcId: number | null; x: number; y: number; display: number };
 export type MapData = { image: string; width?: number; height?: number; pins?: MapPin[] };
 
-const idBySlug: Record<string, string> = {
+export const idBySlug: Record<string, string> = {
   "hall-of-thanes": "hot",
   "ragefire-chasm": "rfc",
   "blackfathom-deeps": "bfd",
@@ -65,14 +65,15 @@ const idBySlug: Record<string, string> = {
 
 const fc = (raw as { dungeons: FcDungeon[] }).dungeons;
 const byId = new Map(fc.map((dungeon) => [idBySlug[dungeon.slug], dungeon]));
-const pinsById = new Map(Object.entries(pins as unknown as Record<string, MapData>).map(([slug, value]) => [idBySlug[slug], value]));
+const pinsBySlug = new Map(Object.entries(pins as unknown as Record<string, MapData>));
+const pinsById = new Map(Array.from(pinsBySlug.entries()).map(([slug, value]) => [idBySlug[slug], value]));
 
 export function getFcDungeon(id: string): FcDungeon | undefined {
   return byId.get(id);
 }
 
 export function getDungeonMap(id: string): MapData | undefined {
-  return pinsById.get(id);
+  return pinsById.get(id) ?? pinsBySlug.get(id);
 }
 
 export function getDungeonImagePath(map: string | null): string | null {
@@ -84,3 +85,18 @@ export const fcLootCount = fc.reduce((sum, dungeon) => sum + (dungeon.lootCount 
 
 // Keep the compiler honest about the mapping above.
 export const knownDungeonIds = new Set(foreverDungeons.map((dungeon) => dungeon.id));
+
+export const fcSlugById: Record<string, string> = Object.fromEntries(
+  Object.entries(idBySlug).map(([slug, id]) => [id, slug]),
+);
+
+export function resolveFcSlug(param: string): string | undefined {
+  if (idBySlug[param]) return param;
+  const candidate = Object.entries(idBySlug).find(([, id]) => id === param)?.[0];
+  if (candidate) return candidate;
+  return undefined;
+}
+
+export function getFcDungeonBySlug(slug: string): FcDungeon | undefined {
+  return fc.find((dungeon) => dungeon.slug === slug);
+}

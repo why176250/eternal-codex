@@ -1,0 +1,326 @@
+{
+ "_meta": {
+  "source": "foreverchanges.pro/dungeons",
+  "section": "Bosses and loot",
+  "locale": "en-US",
+  "generatedAt": "2026-10-30T10:35:49+08:00",
+  "note": "stat 原文示例：'4 bosses, 13 items' / '6 bosses, 1 rare spawn, 25 items' / '3 bosses' / 'no boss named yet'"
+ },
+ "dungeons": {
+  "hall-of-thanes": {
+   "name": "Hall of Thanes",
+   "levelBand": "13–18",
+   "bosses": 4,
+   "rareSpawns": 0,
+   "items": 13,
+   "noBossNamedYet": false,
+   "statRaw": "4 bosses, 13 items"
+  },
+  "ragefire-chasm": {
+   "name": "Ragefire Chasm",
+   "levelBand": "13–18",
+   "bosses": 4,
+   "rareSpawns": 0,
+   "items": 12,
+   "noBossNamedYet": false,
+   "statRaw": "4 bosses, 12 items"
+  },
+  "ruins-of-lordaeron": {
+   "name": "Ruins of Lordaeron",
+   "levelBand": "15–20",
+   "bosses": 6,
+   "rareSpawns": 1,
+   "items": 25,
+   "noBossNamedYet": false,
+   "statRaw": "6 bosses, 1 rare spawn, 25 items"
+  },
+  "wailing-caverns": {
+   "name": "Wailing Caverns",
+   "levelBand": "17–24",
+   "bosses": 8,
+   "rareSpawns": 1,
+   "items": 36,
+   "noBossNamedYet": false,
+   "statRaw": "8 bosses, 1 rare spawn, 36 items"
+  },
+  "the-deadmines": {
+   "name": "The Deadmines",
+   "levelBand": "17–26",
+   "bosses": 8,
+   "rareSpawns": 1,
+   "items": 49,
+   "noBossNamedYet": false,
+   "statRaw": "8 bosses, 1 rare spawn, 49 items"
+  },
+  "shadowfang-keep": {
+   "name": "Shadowfang Keep",
+   "levelBand": "22–30",
+   "bosses": 10,
+   "rareSpawns": 1,
+   "items": 44,
+   "noBossNamedYet": false,
+   "statRaw": "10 bosses, 1 rare spawn, 44 items"
+  },
+  "blackfathom-deeps": {
+   "name": "Blackfathom Deeps",
+   "levelBand": "24–32",
+   "bosses": 8,
+   "rareSpawns": 0,
+   "items": 44,
+   "noBossNamedYet": false,
+   "statRaw": "8 bosses, 44 items"
+  },
+  "the-stockade": {
+   "name": "The Stockade",
+   "levelBand": "24–32",
+   "bosses": 5,
+   "rareSpawns": 1,
+   "items": 29,
+   "noBossNamedYet": false,
+   "statRaw": "5 bosses, 1 rare spawn, 29 items"
+  },
+  "excavation-site": {
+   "name": "Excavation Site: Wetlands",
+   "levelBand": "26–31",
+   "bosses": 4,
+   "rareSpawns": 0,
+   "items": 15,
+   "noBossNamedYet": false,
+   "statRaw": "4 bosses, 15 items"
+  },
+  "city-of-dalaran": {
+   "name": "City of Dalaran",
+   "levelBand": "28–33",
+   "bosses": 8,
+   "rareSpawns": 0,
+   "items": 35,
+   "noBossNamedYet": false,
+   "statRaw": "8 bosses, 35 items"
+  },
+  "gnomeregan": {
+   "name": "Gnomeregan",
+   "levelBand": "29–38",
+   "bosses": 6,
+   "rareSpawns": 1,
+   "items": 49,
+   "noBossNamedYet": false,
+   "statRaw": "6 bosses, 1 rare spawn, 49 items"
+  },
+  "razorfen-kraul": {
+   "name": "Razorfen Kraul",
+   "levelBand": "29–38",
+   "bosses": 7,
+   "rareSpawns": 2,
+   "items": 45,
+   "noBossNamedYet": false,
+   "statRaw": "7 bosses, 2 rare spawns, 45 items"
+  },
+  "scarlet-monastery-graveyard": {
+   "name": "Scarlet Monastery Graveyard",
+   "levelBand": "30–38",
+   "bosses": 2,
+   "rareSpawns": 3,
+   "items": 50,
+   "noBossNamedYet": false,
+   "statRaw": "2 bosses, 3 rare spawns, 50 items"
+  },
+  "scarlet-monastery-library": {
+   "name": "Scarlet Monastery Library",
+   "levelBand": "33–41",
+   "bosses": 2,
+   "rareSpawns": 0,
+   "items": 40,
+   "noBossNamedYet": false,
+   "statRaw": "2 bosses, 40 items"
+  },
+  "the-drowned-city": {
+   "name": "The Drowned City",
+   "levelBand": "35–40",
+   "bosses": 3,
+   "rareSpawns": 0,
+   "items": null,
+   "noBossNamedYet": false,
+   "statRaw": "3 bosses"
+  },
+  "scarlet-monastery-armory": {
+   "name": "Scarlet Monastery Armory",
+   "levelBand": "36–44",
+   "bosses": 1,
+   "rareSpawns": 0,
+   "items": 32,
+   "noBossNamedYet": false,
+   "statRaw": "1 boss, 32 items"
+  },
+  "razorfen-downs": {
+   "name": "Razorfen Downs",
+   "levelBand": "37–46",
+   "bosses": 5,
+   "rareSpawns": 1,
+   "items": 31,
+   "noBossNamedYet": false,
+   "statRaw": "5 bosses, 1 rare spawn, 31 items"
+  },
+  "scarlet-monastery-cathedral": {
+   "name": "Scarlet Monastery Cathedral",
+   "levelBand": "38–46",
+   "bosses": 3,
+   "rareSpawns": 0,
+   "items": 37,
+   "noBossNamedYet": false,
+   "statRaw": "3 bosses, 37 items"
+  },
+  "kroldok-stronghold": {
+   "name": "Krol'dok Stronghold",
+   "levelBand": "40–45",
+   "bosses": null,
+   "rareSpawns": null,
+   "items": null,
+   "noBossNamedYet": true,
+   "statRaw": "no boss named yet"
+  },
+  "uldaman": {
+   "name": "Uldaman",
+   "levelBand": "41–51",
+   "bosses": 10,
+   "rareSpawns": 0,
+   "items": 64,
+   "noBossNamedYet": false,
+   "statRaw": "10 bosses, 64 items"
+  },
+  "zulfarrak": {
+   "name": "Zul'Farrak",
+   "levelBand": "44–54",
+   "bosses": 6,
+   "rareSpawns": 3,
+   "items": 38,
+   "noBossNamedYet": false,
+   "statRaw": "6 bosses, 3 rare spawns, 38 items"
+  },
+  "maraudon": {
+   "name": "Maraudon",
+   "levelBand": "46–55",
+   "bosses": 8,
+   "rareSpawns": 1,
+   "items": 40,
+   "noBossNamedYet": false,
+   "statRaw": "8 bosses, 1 rare spawn, 40 items"
+  },
+  "alcaz-prison": {
+   "name": "Alcaz Prison",
+   "levelBand": "48–53",
+   "bosses": null,
+   "rareSpawns": null,
+   "items": null,
+   "noBossNamedYet": true,
+   "statRaw": "no boss named yet"
+  },
+  "sunken-temple": {
+   "name": "Sunken Temple",
+   "levelBand": "50–60",
+   "bosses": 11,
+   "rareSpawns": 0,
+   "items": 60,
+   "noBossNamedYet": false,
+   "statRaw": "11 bosses, 60 items"
+  },
+  "blackrock-depths": {
+   "name": "Blackrock Depths",
+   "levelBand": "52–60",
+   "bosses": 25,
+   "rareSpawns": 2,
+   "items": 168,
+   "noBossNamedYet": false,
+   "statRaw": "25 bosses, 2 rare spawns, 168 items"
+  },
+  "dire-maul-east": {
+   "name": "Dire Maul East",
+   "levelBand": "54–60",
+   "bosses": 5,
+   "rareSpawns": 0,
+   "items": 56,
+   "noBossNamedYet": false,
+   "statRaw": "5 bosses, 56 items"
+  },
+  "blackmaw-hold": {
+   "name": "Blackmaw Hold",
+   "levelBand": "55–60",
+   "bosses": null,
+   "rareSpawns": null,
+   "items": null,
+   "noBossNamedYet": true,
+   "statRaw": "no boss named yet"
+  },
+  "lower-blackrock-spire": {
+   "name": "Lower Blackrock Spire",
+   "levelBand": "55–60",
+   "bosses": 9,
+   "rareSpawns": 7,
+   "items": 93,
+   "noBossNamedYet": false,
+   "statRaw": "9 bosses, 7 rare spawns, 93 items"
+  },
+  "dire-maul-north": {
+   "name": "Dire Maul North",
+   "levelBand": "56–60",
+   "bosses": 7,
+   "rareSpawns": 0,
+   "items": 89,
+   "noBossNamedYet": false,
+   "statRaw": "7 bosses, 89 items"
+  },
+  "dire-maul-west": {
+   "name": "Dire Maul West",
+   "levelBand": "56–60",
+   "bosses": 5,
+   "rareSpawns": 1,
+   "items": 69,
+   "noBossNamedYet": false,
+   "statRaw": "5 bosses, 1 rare spawn, 69 items"
+  },
+  "scholomance": {
+   "name": "Scholomance",
+   "levelBand": "58–60",
+   "bosses": 15,
+   "rareSpawns": 0,
+   "items": 124,
+   "noBossNamedYet": false,
+   "statRaw": "15 bosses, 124 items"
+  },
+  "shapers-terrace": {
+   "name": "Shaper's Terrace",
+   "levelBand": "58–60",
+   "bosses": null,
+   "rareSpawns": null,
+   "items": null,
+   "noBossNamedYet": true,
+   "statRaw": "no boss named yet"
+  },
+  "stratholme-main-gate": {
+   "name": "Stratholme Main Gate",
+   "levelBand": "58–60",
+   "bosses": 9,
+   "rareSpawns": 2,
+   "items": 95,
+   "noBossNamedYet": false,
+   "statRaw": "9 bosses, 2 rare spawns, 95 items"
+  },
+  "stratholme-service-gate": {
+   "name": "Stratholme Service Gate",
+   "levelBand": "58–60",
+   "bosses": 7,
+   "rareSpawns": 1,
+   "items": 112,
+   "noBossNamedYet": false,
+   "statRaw": "7 bosses, 1 rare spawn, 112 items"
+  },
+  "upper-blackrock-spire": {
+   "name": "Upper Blackrock Spire",
+   "levelBand": "59–60",
+   "bosses": 7,
+   "rareSpawns": 1,
+   "items": 89,
+   "noBossNamedYet": false,
+   "statRaw": "7 bosses, 1 rare spawn, 89 items"
+  }
+ }
+}

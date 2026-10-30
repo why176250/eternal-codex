@@ -1,0 +1,156 @@
+{
+ "_meta": {
+  "purpose": "副本 2D 图的真实像素尺寸——用于修 M3（容器写死 16:9 导致 object-cover 上下裁剪约 15%）",
+  "generatedAt": "2026-10-30T10:39:22+08:00",
+  "note": "CSS 里请用 width/height 或 aspect-ratio: W / H，不要写 16 / 9"
+ },
+ "dungeons": {
+  "hall-of-thanes": {
+   "mapFile": "maps/hall-of-thanes.webp",
+   "src": "maps/hall-of-thanes.webp",
+   "width": 2100,
+   "height": 1400,
+   "aspectRatio": "2100 / 1400"
+  },
+  "ragefire-chasm": {
+   "mapFile": "maps/ragefire-chasm.webp",
+   "src": "maps/ragefire-chasm.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "blackfathom-deeps": {
+   "mapFile": "maps/blackfathom-deeps.jpg",
+   "src": "maps/blackfathom-deeps.jpg",
+   "width": 1524,
+   "height": 899,
+   "aspectRatio": "1524 / 899"
+  },
+  "excavation-site": {
+   "mapFile": "maps/excavation-site.webp",
+   "src": "maps/excavation-site.webp",
+   "width": 2100,
+   "height": 1400,
+   "aspectRatio": "2100 / 1400"
+  },
+  "scarlet-monastery-library": {
+   "mapFile": "maps/scarlet-monastery-library.webp",
+   "src": "maps/scarlet-monastery-library.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "scarlet-monastery-cathedral": {
+   "mapFile": "maps/scarlet-monastery-cathedral.webp",
+   "src": "maps/scarlet-monastery-cathedral.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "uldaman": {
+   "mapFile": "maps/uldaman.jpg",
+   "src": "maps/uldaman.jpg",
+   "width": 1437,
+   "height": 884,
+   "aspectRatio": "1437 / 884"
+  },
+  "blackrock-depths": {
+   "mapFile": "maps/blackrock-depths.jpg",
+   "src": "maps/blackrock-depths.jpg",
+   "width": 1535,
+   "height": 902,
+   "aspectRatio": "1535 / 902"
+  },
+  "lower-blackrock-spire": {
+   "mapFile": "maps/blackrock-spire-b.jpg",
+   "src": "maps/blackrock-spire-b.jpg",
+   "width": 1533,
+   "height": 901,
+   "aspectRatio": "1533 / 901"
+  },
+  "maraudon": {
+   "mapFile": "maps/maraudon.jpg",
+   "src": "maps/maraudon.jpg",
+   "width": 1505,
+   "height": 903,
+   "aspectRatio": "1505 / 903"
+  },
+  "razorfen-downs": {
+   "mapFile": "maps/razorfen-downs.jpg",
+   "src": "maps/razorfen-downs.jpg",
+   "width": 1504,
+   "height": 889,
+   "aspectRatio": "1504 / 889"
+  },
+  "razorfen-kraul": {
+   "mapFile": "maps/razorfen-kraul.webp",
+   "src": "maps/razorfen-kraul.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "ruins-of-lordaeron": {
+   "mapFile": "maps/ruins-of-lordaeron.webp",
+   "src": "maps/ruins-of-lordaeron.webp",
+   "width": 2100,
+   "height": 1400,
+   "aspectRatio": "2100 / 1400"
+  },
+  "scarlet-monastery-armory": {
+   "mapFile": "maps/scarlet-monastery-armory.webp",
+   "src": "maps/scarlet-monastery-armory.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "scarlet-monastery-graveyard": {
+   "mapFile": "maps/scarlet-monastery-graveyard.webp",
+   "src": "maps/scarlet-monastery-graveyard.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "stratholme-main-gate": {
+   "mapFile": "maps/stratholme-main-gate.jpg",
+   "src": "maps/stratholme-main-gate.jpg",
+   "width": 1537,
+   "height": 903,
+   "aspectRatio": "1537 / 903"
+  },
+  "stratholme-service-gate": {
+   "mapFile": "maps/stratholme-service-gate.jpg",
+   "src": "maps/stratholme-service-gate.jpg",
+   "width": 1527,
+   "height": 903,
+   "aspectRatio": "1527 / 903"
+  },
+  "the-stockade": {
+   "mapFile": "maps/the-stockade.webp",
+   "src": "maps/the-stockade.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "upper-blackrock-spire": {
+   "mapFile": "maps/blackrock-spire-d.jpg",
+   "src": "maps/blackrock-spire-d.jpg",
+   "width": 1525,
+   "height": 900,
+   "aspectRatio": "1525 / 900"
+  },
+  "wailing-caverns": {
+   "mapFile": "maps/wailing-caverns.webp",
+   "src": "maps/wailing-caverns.webp",
+   "width": 1002,
+   "height": 668,
+   "aspectRatio": "1002 / 668"
+  },
+  "zulfarrak": {
+   "mapFile": "maps/zulfarrak.jpg",
+   "src": "maps/zulfarrak.jpg",
+   "width": 1490,
+   "height": 897,
+   "aspectRatio": "1490 / 897"
+  }
+ }
+}

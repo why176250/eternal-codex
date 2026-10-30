@@ -1,6 +1,6 @@
 import raw from "@/data/dungeons-timeline.json";
 import { foreverDungeons } from "@/lib/forever";
-import { getDungeonImagePath, getFcDungeon } from "@/lib/dungeon-fc";
+import { fcSlugById, getDungeonImagePath, getFcDungeon } from "@/lib/dungeon-fc";
 
 type RawDungeon = {
   name: string;
@@ -53,6 +53,7 @@ const englishById = new Map((foreverDungeons as { id: string; name: string }[]).
 
 export type TimelineEntry = RawDungeon & {
   id: string;
+  slug: string;
   nameEn: string;
   image: string | null;
   row: number;
@@ -82,6 +83,7 @@ function layout(entries: RawDungeon[]): TimelineEntry[] {
     return {
       ...entry,
       id,
+      slug: fcSlugById[id] ?? id,
       nameEn: englishById.get(id) ?? entry.name,
       image: fcMap ?? null,
       row,

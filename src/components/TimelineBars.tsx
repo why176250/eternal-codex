@@ -61,7 +61,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                     onBlur={() => setHovered(null)}
                   >
                     <Link
-                      href={`/dungeons/${dungeon.id}`}
+                      href={`/dungeons/${dungeon.slug}`}
                       title={`${dungeon.nameEn} · ${dungeon.levelMin}-${dungeon.levelMax}`}
                       className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
@@ -103,7 +103,7 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                           </div>
                           {dungeon.category === "new" ? <span className="mt-1 inline-block rounded border border-gold/35 px-1 py-0.5 text-[9px] text-gold-soft">New in Forever</span> : null}
                           <p className="mt-2 text-[11px] leading-relaxed text-muted">Open the dungeon page for bosses, loot, and location notes.</p>
-                          <Link href={`/dungeons/${dungeon.id}`} className="mt-2 inline-block text-[11px] text-gold/85 hover:text-gold-soft">Open dungeon →</Link>
+                          <Link href={`/dungeons/${dungeon.slug}`} className="mt-2 inline-block text-[11px] text-gold/85 hover:text-gold-soft">Open dungeon →</Link>
                         </div>
                       </div>
                     ) : null}

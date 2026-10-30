@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { foreverDungeons } from "@/lib/forever";
-import loot from "@/data/dungeon-loot.json";
 import dungeonImages from "@/data/dungeon-images.json";
 import { timelineAxis, timelineLanes } from "@/lib/dungeon-timeline";
 import { TimelineBars } from "@/components/TimelineBars";
 import { DungeonPicker } from "@/components/DungeonPicker";
+import { fcSlugById } from "@/lib/dungeon-fc";
+import { directoryBossTotal } from "@/lib/dungeon-details";
 
 export const metadata: Metadata = {
   title: "Dungeons — the Forever leveling ladder",
@@ -14,10 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/dungeons" },
 };
 
-const BOSSES = (loot as { result: { dungeons: { bosses?: unknown[] }[] } }).result.dungeons.reduce(
-  (sum, dungeon) => sum + (dungeon.bosses?.length ?? 0),
-  0,
-);
+const BOSSES = directoryBossTotal;
 const ACTUAL = foreverDungeons.filter(
   (dungeon) => dungeon.type === "Dungeon" && !dungeon.id.startsWith("route-") && !dungeon.id.startsWith("zone-"),
 );
