@@ -12,6 +12,7 @@ export type FcDungeon = {
   questCount: number | null;
   dropCount: number | null;
   bosses: string[];
+  firstBossLoot?: string[];
   lootFull: string[];
   lootCount: number | null;
   map: string | null;
