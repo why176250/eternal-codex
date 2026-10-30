@@ -18,9 +18,9 @@ const strip = (html) => html
   .replace(/&quot;/g, '"')
   .replace(/&#39;|&apos;/g, "'")
   .replace(/&nbsp;/g, ' ')
-  .replace(/^\[[^\]]+\]\s*/, '')
   .replace(/\s+/g, ' ')
-  .trim();
+  .trim()
+  .replace(/^\[[^\]]+\]\s*/, '');
 const posts = parsed.posts.map((post) => ({
   id: post.id,
   topicId: post.topic_id,
