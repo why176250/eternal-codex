@@ -169,7 +169,7 @@ export function ZhTranslate() {
           const parent = node.parentElement;
           if (!parent || SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
           const value = (node.nodeValue ?? "").trim();
-          if (value.length < 5 || !/[A-Za-z]/.test(value) || /[\u4e00-\u9fff]/.test(value) || original.has(node as Text)) return NodeFilter.FILTER_REJECT;
+          if (value.length < 2 || !/[A-Za-z]/.test(value) || /[\u4e00-\u9fff]/.test(value) || original.has(node as Text)) return NodeFilter.FILTER_REJECT;
           return NodeFilter.FILTER_ACCEPT;
         },
       });
@@ -179,7 +179,7 @@ export function ZhTranslate() {
         if (!candidates.has(value)) candidates.set(value, []);
         candidates.get(value)!.push(node);
       }
-      const values = [...candidates.keys()].slice(0, 60);
+      const values = [...candidates.keys()].slice(0, 160);
       for (let i = 0; i < values.length; i += 12) {
         const batch = values.slice(i, i + 12);
         const result = await translateApi(batch);
@@ -196,11 +196,13 @@ export function ZhTranslate() {
       }
     }
 
+    const delayed = window.setTimeout(() => { void translateRemaining(); }, 2500);
     const obs = new MutationObserver(() => { run(); });
     obs.observe(document.body, { childList: true, subtree: true });
     return () => {
       active = false;
       obs.disconnect();
+      window.clearTimeout(delayed);
       for (const [node, value] of original) if (node.isConnected) node.nodeValue = value;
       original.clear();
     };
