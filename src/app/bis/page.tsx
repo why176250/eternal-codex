@@ -50,7 +50,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
         <div className="container-x py-9 md:py-12">
           <p className="eyebrow">BiS gear · Level 30</p>
           <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
-            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} {specOption.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} {specOption.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p>{specOption.fallback ? <p className="mt-2 text-[11px] text-muted/70">No dedicated WCL set for this tree yet — showing the base {meta.name} set.</p> : null}</div>
+            <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} {specOption.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} {specOption.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p></div>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             {bisClasses.map((cls) => <Link key={cls.slug} href={classHref(cls.slug)} className={`flex items-center gap-2.5 rounded-lg border px-3 py-2.5 text-sm transition-colors ${cls.slug === selected ? "border-gold/55 bg-gold/10 text-parchment" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}><img src={cls.icon} alt="" width={32} height={32} className="size-8 rounded-md border border-line/70 object-cover" /><span>{cls.name}</span></Link>)}
