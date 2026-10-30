@@ -17,6 +17,14 @@ function postProcess(value: string) {
   for (const [re, text] of fixes) out = out.replace(re, text);
   out = out
     .replace(/高难度升级难度/g, "升级难度高")
+    .replace(/设置数据/g, "套装数据")
+    .replace(/魔法/g, "法术")
+    .replace(/姓名/g, "名称")
+    .replace(/学校/g, "法术学派")
+    .replace(/槽位/g, "部位")
+    .replace(/质量/g, "品质")
+    .replace(/给予者/g, "任务给予者")
+    .replace(/天生选项/g, "种族天赋")
     .replace(/Eversixty额外/g, "其他")
     .replace(/(\d+)专精攻略/g, "$1 篇专精攻略")
     .replace(/(\d+)个首领/g, "$1 个首领")
@@ -32,7 +40,7 @@ function postProcess(value: string) {
 }
 
 const cache = new Map<string, string>();
-const PROTECTED = ["Eversixty", "Wowhead", "Icy Veins", "World of Warcraft", "Warcraft", "Blizzard", "Forever", "Classic+", "Next.js", "WoW", "DPS", "NPC", "BiS"];
+const PROTECTED = ["Eversixty", "Wowhead", "Icy Veins", "World of Warcraft", "Warcraft", "Blizzard", "Forever", "FOREVER", "Classic+", "CLASSIC+", "Next.js", "WoW", "DPS", "NPC", "BiS"];
 
 function protect(text: string) {
   let value = text;
