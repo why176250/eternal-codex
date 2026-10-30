@@ -41,6 +41,8 @@ const exact: Record<string, string> = {
   "Overview": "概述", "Changes": "变化", "Pros & cons": "优劣势", "Races": "种族",
   "Abilities": "技能", "BiS": "BiS", "Dungeons": "副本", "Classes": "职业",
   "FOREVER · CLASSIC+": "FOREVER · CLASSIC+",
+  "滴": "掉落", "邮件": "锁甲", "皮革": "皮甲", "布料": "布甲", "Arms": "武器", "Arms套件": "武器",
+  "高难度升级难度": "升级难度高",
   "Every spec, one page": "每个专精，一页看完",
   "Home": "首页", "Item details": "物品详情", "Sells for": "出售价格", "Requires level": "需要等级",
   "Rare": "稀有", "Uncommon": "优秀", "Epic": "史诗", "Legendary": "传说", "Neck": "颈部", "Finger": "手指", "Trinket": "饰品", "Back": "背部", "Chest": "胸部", "Waist": "腰部", "Legs": "腿部", "Feet": "脚", "Wrist": "手腕", "Hands": "手", "Head": "头部", "Shoulder": "肩部", "Shield": "盾牌", "Off-hand": "副手", "One-Hand": "单手", "Two-Hand": "双手", "Ranged": "远程",
