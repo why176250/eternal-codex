@@ -23,7 +23,11 @@ function postProcess(value: string) {
     .replace(/(\d+)掉落/g, "$1 件掉落")
     .replace(/走之前/g, "出发前")
     .replace(/Forever更改地图/g, "Forever 地图改动")
-    .replace(/地图\s*可用的/g, "地图可用");
+    .replace(/地图\s*可用的/g, "地图可用")
+    .replace(/锁甲盔甲/g, "锁甲护甲")
+    .replace(/皮甲盔甲/g, "皮甲护甲")
+    .replace(/布甲盔甲/g, "布甲护甲")
+    .replace(/([\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])/g, "$1");
   return out;
 }
 
