@@ -3,14 +3,16 @@
 import { usePathname } from "next/navigation";
 
 const arts: { route: string; src: string; pos?: string }[] = [
-  { route: "/dungeons", src: "/page-art/tielu-dadian.webp", pos: "center 45%" },
+  { route: "/dungeons", src: "/page-art/classic-small/ClassicDungeon_4k.webp", pos: "center 45%" },
   { route: "/map", src: "/page-art/classic-small/ClassicLaunch_WoW_STV_3840x2160.webp", pos: "center 50%" },
   { route: "/items", src: "/page-art/classic-small/ClassicStormwind_4k.webp", pos: "center 42%" },
   { route: "/search", src: "/page-art/classic-small/ClassicOrgrimmar_4k.webp", pos: "center 42%" },
   { route: "/bis", src: "/page-art/classic-small/ClassicLaunch_WoW_Onyxia_3840x2160.webp", pos: "center 45%" },
-  { route: "/professions", src: "/page-art/yunhai.webp", pos: "center 45%" },
+  { route: "/professions", src: "/patch-notes/wcl-hero.webp", pos: "center 42%" },
   { route: "/transmog", src: "/page-art/yunhai-zhong.webp", pos: "center 50%" },
   { route: "/tools", src: "/legacy/bg/1.jpg", pos: "center 35%" },
+  { route: "/tools/build", src: "/legacy/bg/0.jpg", pos: "center 35%" },
+  { route: "/tools/xp", src: "/page-art/classic-small/ClassicLaunch_WoW_Andorhal_3840x2160.webp", pos: "center 45%" },
   { route: "/guides", src: "/legacy/bg/0.jpg", pos: "center 35%" },
   { route: "/classes", src: "/page-art/classic-small/WoW_Classic_Molten_Core_3840x2160.webp", pos: "center 45%" },
   { route: "/quests", src: "/page-art/classic-small/WoW_Classic_Westfall_3840x2160.webp", pos: "center 48%" },
@@ -27,8 +29,6 @@ const arts: { route: string; src: string; pos?: string }[] = [
 
 export function PageArt() {
   const pathname = usePathname();
-  const segments = pathname.split("/").filter(Boolean);
-  if (segments.length !== 1) return null;
   if (pathname === "/" || pathname === "/patch-notes") return null;
   const art = arts.find((entry) => entry.route === pathname);
   if (!art) return null;
