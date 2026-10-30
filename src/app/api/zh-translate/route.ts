@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import glossary from "@/data/zh-glossary.json";
 
 function postProcess(value: string) {
   const fixes: [RegExp, string][] = [
@@ -8,6 +9,7 @@ function postProcess(value: string) {
     [/战利品/g, "掉落"], [/地牢/g, "副本"], [/达到水平/g, "升级难度"], [/额外来源/g, "其他来源"],
     [/大满贯/g, "猛击"], [/压倒/g, "压制"], [/防守姿态/g, "防御姿态"], [/攻击力/g, "攻击强度"],
     [/(\d+)\s*滴/g, "$1 件掉落"], [/\b bosses\b/gi, "首领"], [/\b boss\b/gi, "首领"], [/\bbosses\b/gi, "首领"], [/\bboss\b/gi, "首领"], [/\b loot\b/gi, "掉落"],
+    [/\b Strength\b/gi, "力量"], [/\b Agility\b/gi, "敏捷"], [/\b Stamina\b/gi, "耐力"], [/\b Intellect\b/gi, "智力"], [/\b Spirit\b/gi, "精神"], [/\b Attack Power\b/gi, "攻击强度"], [/\b Spell Power\b/gi, "法术强度"], [/\b Critical Strike\b/gi, "爆击"], [/\b Hit\b/gi, "命中"], [/\b Haste\b/gi, "急速"], [/\b Defense\b/gi, "防御"], [/\b Dodge\b/gi, "闪避"], [/\b Parry\b/gi, "招架"], [/\b Block\b/gi, "格挡"],
     [/\b Waist\b/gi, "腰部"], [/\b Wrist\b/gi, "手腕"], [/\b Hands\b/gi, "手"], [/\b Feet\b/gi, "脚"], [/\b Legs\b/gi, "腿部"], [/\b Chest\b/gi, "胸部"], [/\b Head\b/gi, "头部"], [/\b Shoulder\b/gi, "肩部"],
     [/\b Cloth\b/gi, "布甲"], [/\b Leather\b/gi, "皮甲"], [/\b Mail\b/gi, "锁甲"], [/\b Plate\b/gi, "板甲"],
   ];
@@ -31,11 +33,16 @@ const PROTECTED = ["Eversixty", "Wowhead", "Icy Veins", "World of Warcraft", "Wa
 function protect(text: string) {
   let value = text;
   const tokens: string[] = [];
-  for (const term of PROTECTED) {
+  const terms: [string, string][] = [
+    ...Object.entries(glossary as Record<string, string>),
+    ...PROTECTED.map((term) => [term, term] as [string, string]),
+  ].sort((a, b) => b[0].length - a[0].length);
+  for (const [term, chinese] of terms) {
+    if (!value.includes(term)) continue;
     const pattern = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
     value = value.replace(pattern, () => {
       const index = tokens.length;
-      tokens.push(term);
+      tokens.push(chinese);
       return `[[[${index}]]]`;
     });
   }
