@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Racial abilities — all ten races",
   description:
     "Racial abilities for every Forever race, including the new Skyborn races, with cooldowns and effect text.",
-  alternates: { canonical: "/data/racials" },
+  alternates: { canonical: "/data/racials", languages: { en: "/data/racials", "zh-Hans": "/zh/data/racials", "x-default": "/data/racials" } },
 };
 
 export default function RacialsPage() {

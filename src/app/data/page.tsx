@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "Data — dungeons, items, sets, abilities, racials, vendors, pets",
   description:
     "Reference data for World of Warcraft: Forever: dungeon and raid bands, item database, sets, class abilities, racials, vendor favor, and hunter pets.",
-  alternates: { canonical: "/data" },
+  alternates: { canonical: "/data", languages: { en: "/data", "zh-Hans": "/zh/data", "x-default": "/data" } },
 };
 
 export default function DataPage() {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Tier list maker — Forever specs, classes, races",
   description:
     "Build your own World of Warcraft: Forever tier list for DPS, tanks, healers, all specs, classes, races, or race and class pairs. Drag, tap, or use keyboard shortcuts.",
-  alternates: { canonical: "/tools/tier-list" },
+  alternates: { canonical: "/tools/tier-list", languages: { en: "/tools/tier-list", "zh-Hans": "/zh/tools/tier-list", "x-default": "/tools/tier-list" } },
 };
 
 type Race = { key: string; raceZh: string; raceIcon: string; classIds: number[] };

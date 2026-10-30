@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Gear Hall — community loadouts",
   description:
     "Community gear loadouts for World of Warcraft: Forever. Full item sets from real players, class and spec filters, and sources. Opening after launch.",
-  alternates: { canonical: "/tools/gear" },
+  alternates: { canonical: "/tools/gear", languages: { en: "/tools/gear", "zh-Hans": "/zh/tools/gear", "x-default": "/tools/gear" } },
 };
 
 export default function GearHallPage() {

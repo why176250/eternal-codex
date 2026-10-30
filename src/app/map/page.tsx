@@ -5,7 +5,7 @@ import { mapNodeCount, mapPlaces, poiCategories, searchPlaces, searchPois } from
 export const metadata: Metadata = {
   title: "Map — zones, places, and points of interest",
   description: "Search Forever map places and points of interest, with coordinates and resource-node counts.",
-  alternates: { canonical: "/map" },
+  alternates: { canonical: "/map", languages: { en: "/map", "zh-Hans": "/zh/map", "x-default": "/map" } },
 };
 
 type SearchParams = Promise<{ q?: string; c?: string }>;

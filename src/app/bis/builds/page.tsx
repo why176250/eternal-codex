@@ -5,7 +5,7 @@ import { bisBuilds } from "@/lib/bis-db";
 export const metadata: Metadata = {
   title: "Full BiS tables — Forever",
   description: "64 imported Forever BiS builds across classes, specs, phases, and PvE/PvP.",
-  alternates: { canonical: "/bis/builds" },
+  alternates: { canonical: "/bis/builds", languages: { en: "/bis/builds", "zh-Hans": "/zh/bis/builds", "x-default": "/bis/builds" } },
 };
 
 export default function BisBuildsPage() {

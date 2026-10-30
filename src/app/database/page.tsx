@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Database — items, dungeons, and gearing reference",
   description:
     "Searchable item database for World of Warcraft: Forever. Filter pre-raid gear by slot and quality, and work through the dungeon ladder from Ragefire Chasm to Naxxramas.",
-  alternates: { canonical: "/database" },
+  alternates: { canonical: "/database", languages: { en: "/database", "zh-Hans": "/zh/database", "x-default": "/database" } },
 };
 
 export default function DatabasePage() {

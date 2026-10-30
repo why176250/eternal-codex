@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Contact & corrections",
   description:
     "Report a data error, request a correction, or contact Eversixty about the site.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact", languages: { en: "/contact", "zh-Hans": "/zh/contact", "x-default": "/contact" } },
 };
 
 export default function ContactPage() {

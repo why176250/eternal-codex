@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Guides",
   description:
     "Eight full World of Warcraft: Forever guides: class quests, crafting speed gear, PvP ranks, hidden books, and more.",
-  alternates: { canonical: "/guides" },
+  alternates: { canonical: "/guides", languages: { en: "/guides", "zh-Hans": "/zh/guides", "x-default": "/guides" } },
 };
 
 function updatedLabel(value: string) {

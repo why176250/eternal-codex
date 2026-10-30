@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy policy",
   description:
     "How Eversixty handles data: local browser storage, hosting logs, and the analytics and advertising choices that may apply.",
-  alternates: { canonical: "/privacy" },
+  alternates: { canonical: "/privacy", languages: { en: "/privacy", "zh-Hans": "/zh/privacy", "x-default": "/privacy" } },
 };
 
 export default function PrivacyPage() {

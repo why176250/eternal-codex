@@ -5,7 +5,7 @@ import { itemCounts, itemQualityColors, itemQualityLabels, itemSlots, itemStatus
 export const metadata: Metadata = {
   title: "Item database — WoW Forever",
   description: "Every WoW Forever beta item compared with Classic: new, changed, unchanged, and absent items.",
-  alternates: { canonical: "/search" },
+  alternates: { canonical: "/search", languages: { en: "/search", "zh-Hans": "/zh/search", "x-default": "/search" } },
 };
 
 type SearchParams = Promise<{ q?: string; status?: string; quality?: string; slot?: string; type?: string; page?: string }>;

@@ -6,7 +6,7 @@ import { WclBluePosts } from "@/components/WclBluePosts";
 export const metadata: Metadata = {
   title: "Patch Notes — WoW Forever beta builds",
   description: "Every WoW Forever beta build, class buffs and nerfs, talent tree changes, item changes, and official Blizzard posts.",
-  alternates: { canonical: "/patch-notes" },
+  alternates: { canonical: "/patch-notes", languages: { en: "/patch-notes", "zh-Hans": "/zh/patch-notes", "x-default": "/patch-notes" } },
 };
 
 type LatestItem = { cls: string; text: string };

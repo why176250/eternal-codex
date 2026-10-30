@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Build planner — talent and legacy",
   description:
     "One page for both Forever progression planners: the talent calculator and the legacy path. Switch tabs without leaving the build workflow.",
-  alternates: { canonical: "/tools/build" },
+  alternates: { canonical: "/tools/build", languages: { en: "/tools/build", "zh-Hans": "/zh/tools/build", "x-default": "/tools/build" } },
 };
 
 export default function BuildPage() {

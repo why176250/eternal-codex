@@ -5,7 +5,7 @@ import balance from "@/data/balance-latest.json";
 export const metadata: Metadata = {
   title: "Latest balance changes — WoW Forever",
   description: "Latest WoW Forever balance update summary: buffs, nerfs, talent tree changes, and item changes.",
-  alternates: { canonical: "/patch-notes/balance" },
+  alternates: { canonical: "/patch-notes/balance", languages: { en: "/patch-notes/balance", "zh-Hans": "/zh/patch-notes/balance", "x-default": "/patch-notes/balance" } },
 };
 
 export default function BalancePage() {

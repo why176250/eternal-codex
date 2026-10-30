@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Set data — Forever item sets",
   description:
     "All 536 Forever item sets, grouped by class, with piece lists. Imported from the Sargeras community dataset.",
-  alternates: { canonical: "/data/sets" },
+  alternates: { canonical: "/data/sets", languages: { en: "/data/sets", "zh-Hans": "/zh/data/sets", "x-default": "/data/sets" } },
 };
 
 export default function SetsPage() {

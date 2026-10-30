@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Start here — ruleset, faction, class, and launch route",
   description:
     "The four decisions that shape launch week in World of Warcraft: Forever: ruleset, faction, class, and route. Start with the choice you cannot undo.",
-  alternates: { canonical: "/start" },
+  alternates: { canonical: "/start", languages: { en: "/start", "zh-Hans": "/zh/start", "x-default": "/start" } },
 };
 
 const primary = [

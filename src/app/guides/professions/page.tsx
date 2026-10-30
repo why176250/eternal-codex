@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Profession guides — leveling, pairing, and gold",
   description:
     "Profession guides for World of Warcraft: Forever: which pairings to level first, what sells in week one, and how to avoid wasting gold.",
-  alternates: { canonical: "/guides/professions" },
+  alternates: { canonical: "/guides/professions", languages: { en: "/guides/professions", "zh-Hans": "/zh/guides/professions", "x-default": "/guides/professions" } },
 };
 
 export default function ProfessionGuidesPage() {

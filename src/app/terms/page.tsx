@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Terms & disclaimer",
   description:
     "Eversixty is an unofficial World of Warcraft: Forever fan site. Read the terms, accuracy disclaimer, and content-use rules.",
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: "/terms", languages: { en: "/terms", "zh-Hans": "/zh/terms", "x-default": "/terms" } },
 };
 
 export default function TermsPage() {

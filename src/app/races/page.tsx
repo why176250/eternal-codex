@@ -4,7 +4,7 @@ import { races } from "@/lib/races-db";
 export const metadata: Metadata = {
   title: "Races — Forever racial abilities",
   description: "All ten Forever races, their factions, and active/passive racial abilities.",
-  alternates: { canonical: "/races" },
+  alternates: { canonical: "/races", languages: { en: "/races", "zh-Hans": "/zh/races", "x-default": "/races" } },
 };
 
 const raceEnglish: Record<string, string> = {

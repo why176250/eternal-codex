@@ -5,7 +5,7 @@ import { quests, searchQuests } from "@/lib/quests-db";
 export const metadata: Metadata = {
   title: "Quests — Forever quest database",
   description: "Search Forever quests by title, giver, and zone. Includes dungeon quest chains and side quests.",
-  alternates: { canonical: "/quests" },
+  alternates: { canonical: "/quests", languages: { en: "/quests", "zh-Hans": "/zh/quests", "x-default": "/quests" } },
 };
 
 type SearchParams = Promise<{ q?: string; side?: string }>;

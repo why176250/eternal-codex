@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Items — Forever item database",
   description:
     "Search World of Warcraft: Forever items by name, type, and slot. Browse 23,000+ items with quality, item level, and source details.",
-  alternates: { canonical: "/items" },
+  alternates: { canonical: "/items", languages: { en: "/items", "zh-Hans": "/zh/items", "x-default": "/items" } },
 };
 
 const PAGE_SIZE = 48;

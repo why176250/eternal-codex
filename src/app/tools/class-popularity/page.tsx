@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Launch class popularity",
   description:
     "Which class is the most popular pick for World of Warcraft: Forever? 41,270 votes from the launch poll, split by faction.",
-  alternates: { canonical: "/tools/class-popularity" },
+  alternates: { canonical: "/tools/class-popularity", languages: { en: "/tools/class-popularity", "zh-Hans": "/zh/tools/class-popularity", "x-default": "/tools/class-popularity" } },
 };
 
 export default function ClassPopularityPage() {

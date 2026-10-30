@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Class abilities — Forever spell index",
   description:
     "Search 12,799 Forever abilities and spells by name and school. Imported from the Sargeras community dataset.",
-  alternates: { canonical: "/data/abilities" },
+  alternates: { canonical: "/data/abilities", languages: { en: "/data/abilities", "zh-Hans": "/zh/data/abilities", "x-default": "/data/abilities" } },
 };
 
 export default function AbilitiesPage() {

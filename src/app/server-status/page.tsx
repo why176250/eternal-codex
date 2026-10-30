@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Server status — Forever",
   description: "Eversixty server-status page and current data coverage.",
-  alternates: { canonical: "/server-status" },
+  alternates: { canonical: "/server-status", languages: { en: "/server-status", "zh-Hans": "/zh/server-status", "x-default": "/server-status" } },
 };
 
 const modules = [

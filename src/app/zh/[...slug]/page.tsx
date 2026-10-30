@@ -6,7 +6,9 @@ type Params = { slug: string[] };
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
   const path = slug.join("/");
-  return { title: "中文版 — 建设中", alternates: { canonical: `/zh/${path}` } };
+  const en = `/${path}`;
+  const zh = `/zh/${path}`;
+  return { title: "中文版 — 建设中", alternates: { canonical: zh, languages: { en, "zh-Hans": zh, "x-default": en } } };
 }
 
 export default async function ZhFallbackPage({ params }: { params: Promise<Params> }) {
