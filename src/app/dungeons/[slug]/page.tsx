@@ -13,6 +13,14 @@ function cleanItemName(name: string) {
   return name.replace(SLOT_SUFFIX, "").trim();
 }
 
+const qualityColors: Record<string, string> = {
+  "1": "#9d9d9d", "2": "#1eff00", "3": "#0070dd", "4": "#a335ee", "5": "#ff8000",
+};
+
+function itemId(href: string) {
+  return href.match(/\/item\/(\d+)/)?.[1] ?? "";
+}
+
 export function generateStaticParams(): Params[] {
   return foreverDungeons.map((dungeon) => ({ slug: dungeon.id }));
 }
@@ -34,6 +42,9 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
   if (!dungeon) notFound();
   const map = getDungeonMap(slug);
   const mapImage = getDungeonImagePath(dungeon.map);
+  const lootDetail = dungeon.lootDetail?.length
+    ? dungeon.lootDetail
+    : dungeon.lootFull.map((name) => ({ href: "", icon: "", name: cleanItemName(name), type: "", quality: "1" }));
   const bossLoot = dungeon.bosses.map((boss, index) => ({
     boss,
     items: (index === 0 && dungeon.firstBossLoot?.length
@@ -105,16 +116,26 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
             </div>
           </section>
 
-          {dungeon.lootFull.length > 0 ? (
+          {lootDetail.length > 0 ? (
             <section className="mt-10">
               <div className="flex flex-wrap items-end justify-between gap-3">
-                <div><h2 className="display text-xl text-parchment">Full drop table</h2><p className="mt-1 text-xs text-muted">{dungeon.lootFull.length} items from the expanded “See all drops” list.</p></div>
+                <div><h2 className="display text-xl text-parchment">Full drop table</h2><p className="mt-1 text-xs text-muted">{lootDetail.length} items from the expanded “See all drops” list.</p></div>
                 <span className="text-[10px] text-muted/60">ForeverChanges</span>
               </div>
-              <div className="panel mt-3 max-h-96 overflow-y-auto p-4">
-                <div className="grid gap-x-6 gap-y-1 text-xs leading-relaxed text-muted sm:grid-cols-2">
-                  {dungeon.lootFull.map((item: string, index: number) => <p key={`${item}-${index}`}>{cleanItemName(item)}</p>)}
-                </div>
+              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                {lootDetail.map((item, index) => {
+                  const id = itemId(item.href);
+                  const content = (
+                    <>
+                      {item.icon ? <img src={`https://foreverchanges.pro${item.icon}`} alt="" width={38} height={38} className="size-[38px] shrink-0 rounded border border-line/70 object-cover" loading="lazy" /> : <span className="grid size-[38px] shrink-0 place-items-center rounded border border-line/70 bg-deep text-[10px] text-muted">?</span>}
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-sm" style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span>
+                        {item.type ? <span className="mt-0.5 block text-[10px] text-muted">{item.type}</span> : null}
+                      </span>
+                    </>
+                  );
+                  return id ? <Link key={`${item.name}-${index}`} href={`/item/${id}`} className="flex items-center gap-3 rounded-lg border border-line/60 bg-deep/30 p-2.5 transition-colors hover:border-gold/40">{content}</Link> : <div key={`${item.name}-${index}`} className="flex items-center gap-3 rounded-lg border border-line/60 bg-deep/30 p-2.5">{content}</div>;
+                })}
               </div>
             </section>
           ) : null}

@@ -13,6 +13,8 @@ export type FcDungeon = {
   dropCount: number | null;
   bosses: string[];
   firstBossLoot?: string[];
+  lootDetail?: { href: string; icon: string; name: string; type: string; quality: string }[];
+  lootDetailCount?: number | null;
   lootFull: string[];
   lootCount: number | null;
   map: string | null;
