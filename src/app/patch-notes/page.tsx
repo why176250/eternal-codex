@@ -16,8 +16,20 @@ type BluePost = { id: string; dateLabel: string; author: string; title: string; 
 const { latest, builds, bluePosts } = data as unknown as { latest: { items: LatestItem[] }; builds: Build[]; bluePosts: BluePost[] };
 const currentBuild = builds.find((build) => build.isCurrent) ?? builds.find((build) => build.build === "Build 1.60.1.70685") ?? builds[1];
 
-function classIcon(name: string) {
-  return `/classes/icons/${name.toLowerCase().replace(/[^a-z]/g, "")}.jpg`;
+const raceIcons: Record<string, string> = {
+  Human: "/patch-notes/icons/race_human_male.jpg",
+  Dwarf: "/patch-notes/icons/race_dwarf_male.jpg",
+  Tauren: "/patch-notes/icons/race_tauren_male.jpg",
+  Orc: "/patch-notes/icons/race_orc_male.jpg",
+  Troll: "/patch-notes/icons/race_troll_male.jpg",
+  Undead: "/patch-notes/icons/race_scourge_male.jpg",
+  Gnomes: "/patch-notes/icons/race_gnome_male.jpg",
+  "Skyborne (High Order)": "/patch-notes/icons/inv_misc_head_elf_01.jpg",
+  Skyborne: "/patch-notes/icons/inv_misc_head_elf_02.jpg",
+};
+
+function groupIcon(name: string) {
+  return raceIcons[name] ?? `/classes/icons/${name.toLowerCase().replace(/[^a-z]/g, "")}.jpg`;
 }
 
 function statusColor(status: string) {
@@ -75,7 +87,7 @@ export default function PatchNotesPage() {
               {build.groups.length > 0 ? <div className="mt-3 space-y-2">{build.groups.map((group) => (
                 <details key={`${build.build}-${group.name}`} className="rounded-lg border border-line/50 bg-deep/30">
                   <summary className="cursor-pointer px-3 py-2 text-sm text-parchment">
-                    <span className="inline-flex items-center gap-2">{group.name !== "Blizzard's posts on it" ? <img src={classIcon(group.name)} alt="" width={20} height={20} className="size-5 rounded object-cover" /> : null}{group.name}</span>
+                    <span className="inline-flex items-center gap-2">{group.name !== "Blizzard's posts on it" ? <img src={groupIcon(group.name)} alt="" width={20} height={20} className="size-5 rounded object-cover" /> : null}{group.name}</span>
                     <span className="ml-2 text-[10px] text-muted">{group.counts.map((count) => count.text).join(" · ")}</span>
                     {group.line ? <span className="mt-1 block text-[10px] text-muted/70">{group.line}</span> : null}
                   </summary>
