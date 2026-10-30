@@ -40,6 +40,36 @@ const exact: Record<string, string> = {
   "pages": "页面", "items": "物品", "spells": "法术", "sets": "套装", "votes": "票", "specs": "专精",
   "Overview": "概述", "Changes": "变化", "Pros & cons": "优劣势", "Races": "种族",
   "Abilities": "技能", "BiS": "BiS", "Dungeons": "副本", "Classes": "职业",
+  "Every spec, one page": "每个专精，一页看完",
+  "DATABASE · ITEMS": "数据库 · 物品",
+  "Item database": "物品数据库",
+  "Search 7,823 Forever items by name, type, and slot. Names, quality, and item level are imported from the Blue Hermit dataset.": "按名称、类型和部位搜索 7,823 件 Forever 物品。名称、品质与物品等级来自蓝色隐士数据。",
+  "All types": "全部类型", "Armor": "护甲", "Weapon": "武器", "Consumable": "消耗品", "Container": "容器", "Reagent": "材料", "Quest": "任务", "Trade Goods": "贸易品",
+  "Blue Hermit": "蓝色隐士",
+
+  "Nine classes, 28 specs. Pick a class, then a spec: overview, what changed, pros and cons, race recommendations, and professions.": "九大职业、28 个专精。选择职业后再选专精：概述、变化、优劣势、种族推荐与专业建议。",
+  "Not sure? Take the class finder": "不确定？做个职业测试",
+  "9 classes": "9 个职业", "5 core sections": "5 个核心板块",
+  "DEMANDING": "高难度", "MODERATE": "中等", "EASY": "简单",
+  "TANK": "坦克", "HEALER": "治疗",
+  "Class overview": "职业概览",
+  "Dungeons in Forever": "Forever 副本",
+  "Forever adds nine dungeons between levels 13 and 60, alongside 26 Classic dungeons. Hover a bar for details, or open a dungeon for its bosses and loot.": "Forever 在 13–60 级新增九个副本，并保留 26 个经典副本。悬停查看详情，或打开副本查看首领与掉落。",
+  "9 new dungeons": "9 个新副本", "26 from Classic": "26 个经典副本", "218 recorded bosses": "218 个已记录首领",
+  "BOSSES & LOOT": "首领与掉落", "Open a dungeon": "打开副本",
+  "Jump straight to its bosses and loot table.": "直接查看首领与掉落表。",
+  "Select a dungeon": "选择副本", "New": "新副本",
+  "Spec guides": "专精攻略", "Class abilities": "职业技能", "What changed": "改动内容",
+  "All classes": "全部职业", "The baseline tank: no self-heals, rage economy, unmatched group demand.": "经典坦克基准：没有自疗，依靠怒气，团队需求极高。",
+  "The flexible healer: blessings, auras, and strong group utility.": "灵活的治疗者：祝福、光环与强大的团队辅助。",
+  "The ranged specialist: pets, traps, and the best solo leveling.": "远程专家：宠物、陷阱与最强单刷练级。",
+  "The stealth assassin: burst damage, locks, and pickpocket utility.": "潜行刺客：爆发伤害、控制与偷窃辅助。",
+  "The dedicated healer: strong single-target and group healing.": "专职治疗：强大的单体与群体治疗。",
+  "The totem support: healing, elemental damage, and group buffs.": "图腾辅助：治疗、元素伤害与团队增益。",
+  "The spellcaster: portals, crowd control, and burst magic.": "施法者：传送门、控制与爆发法术。",
+  "The dark caster: curses, demons, and sustained damage.": "暗影施法者：诅咒、恶魔与持续伤害。",
+  "The shapeshifter: tanking, healing, and ranged damage in one class.": "变形者：一个职业兼顾坦克、治疗与远程输出。",
+
 };
 
 const phrase: [RegExp, string][] = [
@@ -50,6 +80,8 @@ const phrase: [RegExp, string][] = [
   [/^Lv(\d+)\s+cap.*?(\d+)\s+specs$/i, "等级上限 $1 · $2 个专精"],
   [/(\d[\d,]*)\s+pages/gi, "$1 页面"], [/(\d[\d,]*)\s+items/gi, "$1 物品"], [/(\d[\d,]*)\s+spells/gi, "$1 法术"], [/(\d[\d,]*)\s+sets/gi, "$1 套装"],
   [/(\d[\d,]*)\s+votes/gi, "$1 票"],
+  [/new dungeons/gi, "个新副本"], [/from Classic/gi, "个经典副本"], [/recorded bosses/gi, "个已记录首领"],
+  [/TANK/gi, "坦克"], [/HEALER/gi, "治疗"],
   [/^Search ([\d,+]+) entries.*$/i, "搜索 $1+ 条目"],
 ];
 
