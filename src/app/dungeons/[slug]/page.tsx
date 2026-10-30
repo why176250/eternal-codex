@@ -67,8 +67,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
           return true;
         }),
       };
-    })
-    .filter((entry) => entry.items.length > 0);
+    });
 
   return (
     <main>

@@ -65,8 +65,8 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                       title={`${dungeon.nameEn} · ${dungeon.levelMin}-${dungeon.levelMax}`}
                       className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
-                        borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
-                        backgroundColor: dungeon.image ? "#0b1422" : "#1a1a2e",
+                        borderColor: dungeon.image ? (dungeon.category === "new" ? "#4ea8d888" : "#a9884c88") : "#252b3a",
+                        backgroundColor: dungeon.image ? "#0b1422" : "#151a26",
                       }}
                     >
                       {dungeon.image ? (
