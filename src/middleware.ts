@@ -26,6 +26,9 @@ export function middleware(request: NextRequest) {
 
   if (isZh && !zhCore.has(pathname)) {
     const rest = pathname.replace(/^\/zh/, "");
+    if (rest.startsWith("/classes/") || rest.startsWith("/items/") || rest.startsWith("/dungeons/") || rest.startsWith("/bis/")) {
+      return NextResponse.next({ request: { headers } });
+    }
 
     if (rest === "/data/items") return rewrite("/items");
     if (rest === "/data/spells") return rewrite("/spells");
