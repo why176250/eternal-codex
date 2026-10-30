@@ -13,6 +13,15 @@ function postProcess(value: string) {
   ];
   let out = value;
   for (const [re, text] of fixes) out = out.replace(re, text);
+  out = out
+    .replace(/高难度升级难度/g, "升级难度高")
+    .replace(/Eversixty额外/g, "其他")
+    .replace(/(\d+)专精攻略/g, "$1 篇专精攻略")
+    .replace(/(\d+)个首领/g, "$1 个首领")
+    .replace(/(\d+)掉落/g, "$1 件掉落")
+    .replace(/走之前/g, "出发前")
+    .replace(/Forever更改地图/g, "Forever 地图改动")
+    .replace(/地图\s*可用的/g, "地图可用");
   return out;
 }
 
