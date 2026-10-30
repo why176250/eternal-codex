@@ -26,22 +26,8 @@ export function middleware(request: NextRequest) {
 
   if (isZh && !zhCore.has(pathname)) {
     const rest = pathname.replace(/^\/zh/, "");
-    if (rest.startsWith("/classes/") || rest.startsWith("/items/") || rest.startsWith("/dungeons/") || rest.startsWith("/bis/")) {
+    if (rest.startsWith("/classes/") || rest.startsWith("/items/") || rest.startsWith("/dungeons/") || rest.startsWith("/bis/") || rest.startsWith("/professions/") || rest.startsWith("/guides/") || rest === "/data/items") {
       return NextResponse.next({ request: { headers } });
-    }
-
-    if (rest === "/data/items") return rewrite("/items");
-    if (rest === "/data/spells") return rewrite("/spells");
-    if (rest === "/data/npcs") return rewrite("/npcs");
-
-    if (rest.startsWith("/professions/")) {
-      const slug = rest.slice("/professions/".length);
-      const search = new URLSearchParams({ p: slug });
-      return rewrite("/professions", search);
-    }
-
-    if (rest.startsWith("/guides/") && !rest.startsWith("/guides/forever/")) {
-      return rewrite(`/guides/forever/${rest.slice("/guides/".length)}`);
     }
 
     if (rest.startsWith("/dungeons/")) {
