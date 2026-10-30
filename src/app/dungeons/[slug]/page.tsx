@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { permanentRedirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { LootItemLink } from "@/components/LootItemLink";
 import { fcSlugById, getDungeonImagePath, getDungeonMap, getFcDungeonBySlug, resolveFcSlug } from "@/lib/dungeon-fc";
 import {
   getDetailBossCards,
@@ -147,7 +148,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
                           <td className="px-3 py-3 text-muted">—</td>
                           <td className="max-w-64 px-3 py-3 leading-relaxed text-muted">{starts}</td>
                           <td className="px-3 py-3">
-                            {quest.rewards?.items?.length ? <div className="space-y-1.5">{quest.rewards.items.map((item) => <div key={item.name} className="flex items-center gap-2">{item.icon ? <img src={`https://foreverchanges.pro${item.icon}`} alt="" width={20} height={20} className="size-5 rounded border border-line/70 object-cover" /> : null}<span style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span></div>)}</div> : <span className="text-muted">—</span>}
+                            {quest.rewards?.items?.length ? <div className="space-y-1">{quest.rewards.items.map((item) => <LootItemLink key={item.name} item={item} size={20} />)}</div> : <span className="text-muted">—</span>}
                           </td>
                         </tr>
                       );

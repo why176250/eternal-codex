@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findDungeonQuest } from "@/lib/dungeon-details";
 import { quests } from "@/lib/quests-db";
+import { LootItemLink } from "@/components/LootItemLink";
 
 type Params = { id: string };
 const qualityColors: Record<string, string> = { "0": "#9d9d9d", "1": "#ffffff", "2": "#1eff00", "3": "#4aa3ff", "4": "#a335ee" };
@@ -34,7 +35,7 @@ export default async function QuestPage({ params }: { params: Promise<Params> })
             <div className="panel mt-5 divide-y divide-line/50 p-4">
               {quest.objectives.map((objective) => <div key={objective.key} className="grid gap-1 py-2 text-sm sm:grid-cols-[8rem_minmax(0,1fr)]"><span className="text-muted">{objective.key}</span><span className="text-parchment/80">{objective.value}</span></div>)}
             </div>
-            {quest.rewards?.items?.length ? <div className="mt-5"><h2 className="display text-lg text-parchment">{quest.rewards.label}</h2><div className="mt-2 grid gap-2 sm:grid-cols-2">{quest.rewards.items.map((item) => <div key={item.name} className="rounded-lg border border-line/60 bg-deep/30 p-2"><div className="flex items-center gap-2">{item.icon ? <img src={`https://foreverchanges.pro${item.icon}`} alt="" width={32} height={32} className="size-8 rounded border border-line/70 object-cover" /> : null}<span className="text-xs" style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span></div>{item.type ? <p className="mt-1 text-[10px] text-muted">{item.type}</p> : null}</div>)}</div></div> : null}
+            {quest.rewards?.items?.length ? <div className="mt-5"><h2 className="display text-lg text-parchment">{quest.rewards.label}</h2><div className="mt-2 grid gap-2 sm:grid-cols-2">{quest.rewards.items.map((item) => <div key={item.name} className="rounded-lg border border-line/60 bg-deep/30 p-2"><LootItemLink item={item} size={32} /></div>)}</div></div> : null}
             {found?.detail ? <Link href={`/dungeons/${found.slug}`} className="mt-5 inline-block text-xs text-gold/80">Back to dungeon →</Link> : null}
           </>
         ) : (
