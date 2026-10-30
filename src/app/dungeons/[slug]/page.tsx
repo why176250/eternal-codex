@@ -7,6 +7,12 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 type Params = { slug: string };
 
+const SLOT_SUFFIX = /\s+(Main Hand|Off Hand|Two-Hand|One-Hand|Ranged|Head|Neck|Shoulder|Back|Chest|Wrist|Hands|Waist|Legs|Feet|Finger|Trinket|Shield)(, [A-Za-z]+)?$/i;
+
+function cleanItemName(name: string) {
+  return name.replace(SLOT_SUFFIX, "").trim();
+}
+
 export function generateStaticParams(): Params[] {
   return foreverDungeons.map((dungeon) => ({ slug: dungeon.id }));
 }
@@ -30,9 +36,10 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
   const mapImage = getDungeonImagePath(dungeon.map);
   const bossLoot = dungeon.bosses.map((boss, index) => ({
     boss,
-    items: index === 0 && dungeon.firstBossLoot?.length
+    items: (index === 0 && dungeon.firstBossLoot?.length
       ? dungeon.firstBossLoot
-      : dungeon.lootFull.filter((item) => item.toLowerCase().includes(boss.toLowerCase())),
+      : dungeon.lootFull.filter((item) => item.toLowerCase().includes(boss.toLowerCase()))
+    ).map(cleanItemName),
   }));
 
   return (
@@ -92,7 +99,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
                     <span className="grid size-10 shrink-0 place-items-center rounded-full border border-line/80 bg-deep text-sm text-gold-soft">{boss.slice(0, 1)}</span>
                     <div className="min-w-0"><p className="truncate text-sm text-parchment">{boss}</p><p className="text-[10px] text-muted">Boss {index + 1}</p></div>
                   </div>
-                  {items.length > 0 ? <ul className="mt-3 space-y-1 border-t border-line/50 pt-2 text-xs text-muted">{items.map((item) => <li key={item}>{item}</li>)}</ul> : <p className="mt-3 border-t border-line/50 pt-2 text-[10px] text-muted/60">Per-boss split is not available; see the full drop list below.</p>}
+                  {items.length > 0 ? <ul className="mt-3 space-y-1 border-t border-line/50 pt-2 text-xs text-muted">{items.map((item) => <li key={item}>{item}</li>)}</ul> : null}
                 </article>
               ))}
             </div>
@@ -106,7 +113,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
               </div>
               <div className="panel mt-3 max-h-96 overflow-y-auto p-4">
                 <div className="grid gap-x-6 gap-y-1 text-xs leading-relaxed text-muted sm:grid-cols-2">
-                  {dungeon.lootFull.map((item: string, index: number) => <p key={`${item}-${index}`}>{item}</p>)}
+                  {dungeon.lootFull.map((item: string, index: number) => <p key={`${item}-${index}`}>{cleanItemName(item)}</p>)}
                 </div>
               </div>
             </section>
