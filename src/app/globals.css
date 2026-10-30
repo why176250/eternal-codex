@@ -262,8 +262,8 @@ a {
 
 /* Wide-screen margin rail: hidden until there is real space beside the 1370px shell. */
 .latest-float {
-  left: max(1rem, calc((100vw - 85.625rem) / 2 - 18.5rem));
-  width: clamp(13rem, calc((100vw - 85.625rem) / 2 - 3rem), 17.5rem);
+  left: max(1rem, calc((100vw - 85.625rem) / 2 - 23rem));
+  width: min(22rem, calc((100vw - 85.625rem) / 2 - 2rem));
 }
 
 
@@ -420,8 +420,8 @@ a {
 
 /* Wide-screen left rail: balance card above, three quick-start cards below. */
 .quick-start-rail {
-  left: max(1rem, calc((100vw - 85.625rem) / 2 - 18.5rem));
+  left: max(1rem, calc((100vw - 85.625rem) / 2 - 23rem));
   top: 25rem;
-  width: clamp(13rem, calc((100vw - 85.625rem) / 2 - 3rem), 17.5rem);
+  width: min(22rem, calc((100vw - 85.625rem) / 2 - 2rem));
   z-index: 30;
 }
