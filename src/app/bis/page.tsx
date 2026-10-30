@@ -5,7 +5,7 @@ import { bisClasses, bisSpecOptions, getBisClass, getBisSpec } from "@/lib/wcl-b
 export const metadata: Metadata = {
   title: "BiS gear — WoW Forever level 30",
   description: "Level 30 best-in-slot gear for every WoW Forever class, with slots, enchants, stats, alternatives, and sources.",
-  alternates: { canonical: "/bis" },
+  alternates: { canonical: "/bis", languages: { en: "/bis", "zh-Hans": "/zh/bis", "x-default": "/bis" } },
 };
 
 type SearchParams = Promise<{ class?: string; side?: string; spec?: string; level?: string }>;

@@ -12,7 +12,7 @@ export function LangSync() {
 
   useEffect(() => {
     const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
-    document.documentElement.lang = isZh ? "zh-CN" : "en";
+    document.documentElement.lang = isZh ? "zh-Hans" : "en";
   }, [pathname]);
 
   return null;

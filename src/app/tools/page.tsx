@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Tools — talent, legacy, BiS, XP, and class popularity",
   description:
     "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, an exact 1–60 XP calculator, and the launch class-popularity poll.",
-  alternates: { canonical: "/tools" },
+  alternates: { canonical: "/tools", languages: { en: "/tools", "zh-Hans": "/zh/tools", "x-default": "/tools" } },
 };
 
 const stats = [
@@ -38,11 +38,10 @@ export default function ToolsPage() {
       <section className="container-x py-10 md:py-12">
         <div className="grid gap-4 lg:grid-cols-3">
           {/* Build planner: one block, two stages */}
-          <section className="panel relative overflow-hidden p-6 lg:col-span-2 md:p-7">
+          <section className="panel relative flex flex-col overflow-hidden p-6 lg:col-span-2 md:p-7">
             <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/70 to-transparent" />
             <div className="flex flex-wrap items-center gap-2">
               <span className="badge badge-teal">Live</span>
-              <span className="badge">Legacy live</span>
               <span className="ml-auto text-[11px] text-muted">天赋 · 传承模拟</span>
             </div>
 
@@ -63,7 +62,7 @@ export default function ToolsPage() {
                   <span className="accent-tile grid size-10 place-items-center rounded-lg border" style={{ "--accent": "#e3bd78" } as React.CSSProperties}>
                     <ModuleIcon id="talents" />
                   </span>
-                  <span className="text-[10px] uppercase tracking-wider text-teal">Live</span>
+                  
                 </div>
                 <h3 className="display mt-4 text-lg text-parchment">Talent calculator</h3>
                 <p className="mt-1 text-xs leading-relaxed text-muted">
@@ -83,7 +82,7 @@ export default function ToolsPage() {
                   <span className="accent-tile grid size-10 place-items-center rounded-lg border" style={{ "--accent": "#6fd5c5" } as React.CSSProperties}>
                     <ModuleIcon id="talents" />
                   </span>
-                  <span className="text-[10px] uppercase tracking-wider text-teal">Live</span>
+                  
                 </div>
                 <h3 className="display mt-4 text-lg text-parchment">Legacy progression</h3>
                 <p className="mt-1 text-xs leading-relaxed text-muted">
@@ -128,11 +127,11 @@ export default function ToolsPage() {
           </section>
 
           {/* Right column: BiS + XP */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2">
             <Link
               href="/bis"
               style={{ "--accent": "#9bb7ff" } as React.CSSProperties}
-              className="panel panel-hover group relative flex flex-col overflow-hidden p-6"
+              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-6"
             >
               <span className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70" style={{ background: "linear-gradient(90deg, transparent, #9bb7ff80, transparent)" }} />
               <div className="flex items-start justify-between gap-3">
@@ -160,7 +159,7 @@ export default function ToolsPage() {
             <Link
               href="/tools/xp"
               style={{ "--accent": "#8fe0c0" } as React.CSSProperties}
-              className="panel panel-hover group relative flex flex-col overflow-hidden p-6"
+              className="panel panel-hover group relative flex h-full flex-col overflow-hidden p-6"
             >
               <span className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70" style={{ background: "linear-gradient(90deg, transparent, #8fe0c080, transparent)" }} />
               <div className="flex items-start justify-between gap-3">

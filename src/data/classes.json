@@ -3,7 +3,10 @@
     "id": "warrior",
     "name": "Warrior",
     "accent": "#C79C6E",
-    "roles": ["Tank", "DPS"],
+    "roles": [
+      "Tank",
+      "DPS"
+    ],
     "difficulty": 3,
     "tagline": "The baseline tank: no self-heals, rage economy, unmatched group demand.",
     "summary": "Warriors define Classic tanking and remain the default main tank for a reason: threat, mitigation, and cooldowns all scale with gear. The trade-off is a slow, resource-hungry solo start. If you want to be the person every dungeon group needs, this is it.",
@@ -19,7 +22,10 @@
     "id": "paladin",
     "name": "Paladin",
     "accent": "#F58CBA",
-    "roles": ["Healer", "DPS"],
+    "roles": [
+      "Healer",
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "Durable melee healer with the best group blessings and a forgiving solo path.",
     "summary": "Paladins trade burst for reliability: plate, shields, and self-healing make them hard to kill. Healing is the safest group role, and Retribution levels comfortably. Whether protection tanking is viable depends on the build — verify in game before committing.",
@@ -35,7 +41,9 @@
     "id": "hunter",
     "name": "Hunter",
     "accent": "#ABD473",
-    "roles": ["DPS"],
+    "roles": [
+      "DPS"
+    ],
     "difficulty": 1,
     "tagline": "Fastest solo leveler in the game: your pet tanks, you kite.",
     "summary": "Hunters level faster than anything else because the pet absorbs damage and you control the fight from range. The skill ceiling moves to pet management, ammo economy, and kiting — all of which matter more in Forever's denser launch-week zones.",
@@ -50,8 +58,10 @@
   {
     "id": "rogue",
     "name": "Rogue",
-    "accent": "#E8D44D",
-    "roles": ["DPS"],
+    "accent": "#FFF569",
+    "roles": [
+      "DPS"
+    ],
     "difficulty": 3,
     "tagline": "Stealth, lockpicking, and the best single-target melee toolkit.",
     "summary": "Rogues bring control and strong single-target damage but pay for it with thin defenses. Stealth changes how you approach quests and dungeons, and lockpicking opens shortcuts and lockboxes that many groups will pay for.",
@@ -66,8 +76,11 @@
   {
     "id": "priest",
     "name": "Priest",
-    "accent": "#E6E6E6",
-    "roles": ["Healer", "DPS"],
+    "accent": "#FFFFFF",
+    "roles": [
+      "Healer",
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "The best healing toolkit and a surprisingly smooth wand-based solo path.",
     "summary": "Priests are the most complete healer: shields, renews, dispels, and resurrection. Solo leveling is better than its reputation thanks to wand damage and Spirit Tap, which turns kills into mana.",
@@ -83,7 +96,10 @@
     "id": "shaman",
     "name": "Shaman",
     "accent": "#0070DE",
-    "roles": ["Healer", "DPS"],
+    "roles": [
+      "Healer",
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "Totem support and burst damage; the Horde's best utility pick.",
     "summary": "Shamans bring group-wide totems, strong burst, and a healing toolkit that keeps groups alive through messy pulls. Totem placement is the real skill — a well-placed Earthbind or Grounding Totem wins fights before they start.",
@@ -99,7 +115,9 @@
     "id": "mage",
     "name": "Mage",
     "accent": "#69CCF0",
-    "roles": ["DPS"],
+    "roles": [
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "Portals, conjured food, and the best AoE farming in the game.",
     "summary": "Mages are the convenience class: free food and water, portals to every capital, and frost control that makes solo play safe. AoE farming turns them into gold machines — but launch-week farming spots will be contested.",
@@ -115,7 +133,9 @@
     "id": "warlock",
     "name": "Warlock",
     "accent": "#9482C9",
-    "roles": ["DPS"],
+    "roles": [
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "Pet sustain, self-resources, and a free mount at 40.",
     "summary": "Warlocks level with almost no downtime: the Voidwalker tanks, Drain Life sustains, and healthstones keep you alive. Fear is both a tool and a liability — learn where it causes patrols to bring friends.",
@@ -131,7 +151,11 @@
     "id": "druid",
     "name": "Druid",
     "accent": "#FF7D0A",
-    "roles": ["Healer", "Tank", "DPS"],
+    "roles": [
+      "Healer",
+      "Tank",
+      "DPS"
+    ],
     "difficulty": 2,
     "tagline": "The most flexible class: bear tank, cat DPS, or tree healer in one character.",
     "summary": "Druids can fill any group role, which makes them the best class for players who hate being locked out of content. The catch is gear competition: feral and caster gear rarely overlap, so plan your loot early.",

@@ -137,7 +137,7 @@ export const dataItems: SectionItem[] = [
     href: "/dungeons",
     status: "live",
     summary:
-      "All 45 Forever dungeons, raids, and travel routes with level bands and locations.",
+      "All 35 Forever dungeons with level bands, locations, bosses, and loot.",
     bullets: [],
   },
   {
@@ -249,7 +249,7 @@ export const dataItems: SectionItem[] = [
     zh: "服务器状态",
     href: "/server-status",
     status: "live",
-    summary: "Site and dataset coverage; realm uptime feed is not connected.",
+    summary: "Site and dataset coverage across the Eversixty database. Realm status is coming after launch.",
     bullets: [],
   },
   {

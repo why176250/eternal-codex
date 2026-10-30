@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Professions — recipes, skill-up paths, and camp items",
   description:
     "All 12 professions and 2,213 recipes for World of Warcraft: Forever — recipes, 1–300 skill paths, Merchant's Favor, and camp items.",
-  alternates: { canonical: "/professions" },
+  alternates: { canonical: "/professions", languages: { en: "/professions", "zh-Hans": "/zh/professions", "x-default": "/professions" } },
 };
 
 type SearchParams = Promise<{ p?: string; q?: string; page?: string; tab?: string; c?: string; quality?: string }>;

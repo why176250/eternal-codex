@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Class guides",
   description:
     "Nine classes and 28 spec guides for World of Warcraft: Forever — overview, changes, pros and cons, race recommendations, and professions.",
-  alternates: { canonical: "/classes" },
+  alternates: { canonical: "/classes", languages: { en: "/classes", "zh-Hans": "/zh/classes", "x-default": "/classes" } },
 };
 
 export default function ClassesPage() {

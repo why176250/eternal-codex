@@ -45,7 +45,7 @@ export function SpecTierBoard({ compact = false }: { compact?: boolean }) {
               <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 bg-deep/30 px-1.5 py-1">
                 {tierItems.map((item) => (
                   <Link key={`${tier}-${item.specId}-${item.name}`} href={`/classes/${item.classSlug}`} title={item.nameEn} className={`flex items-center gap-1 rounded border border-line/50 bg-abyss/40 px-1 py-0.5 transition-colors hover:border-gold/40 ${compact ? "max-w-[9rem]" : ""}`}>
-                    <img src={item.icon} alt="" width={compact ? 20 : 24} height={compact ? 20 : 24} className={`shrink-0 rounded object-cover ${compact ? "size-5" : "size-6"}`} />
+                    <img src={item.icon} alt="" width={compact ? 24 : 24} height={compact ? 24 : 24} className="shrink-0 rounded-sm object-cover size-6" />
                     <span className={`truncate ${compact ? "text-[10px]" : "text-xs"} text-parchment`}>{item.nameEn}</span>
                   </Link>
                 ))}

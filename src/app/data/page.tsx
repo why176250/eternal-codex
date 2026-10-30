@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "Data — dungeons, items, sets, abilities, racials, vendors, pets",
   description:
     "Reference data for World of Warcraft: Forever: dungeon and raid bands, item database, sets, class abilities, racials, vendor favor, and hunter pets.",
-  alternates: { canonical: "/data" },
+  alternates: { canonical: "/data", languages: { en: "/data", "zh-Hans": "/zh/data", "x-default": "/data" } },
 };
 
 export default function DataPage() {
@@ -32,7 +32,7 @@ export default function DataPage() {
     <main>
       <section className="border-b border-line/60">
         <div className="container-x py-14 md:py-20">
-          <p className="eyebrow">Data</p>
+          <div className="flex items-center gap-3"><p className="eyebrow">Data</p><span className="badge badge-teal">15 datasets live</span></div>
           <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
             The reference layer
           </h1>
@@ -57,15 +57,8 @@ export default function DataPage() {
                 <img src={cardArt[item.slug]} alt="" className="absolute inset-0 h-full w-full object-cover opacity-60 brightness-105 saturate-[0.9] transition-transform duration-500 group-hover:scale-[1.04]" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/80 to-abyss/25" />
                 <div className="relative z-10 flex h-full flex-col">
-                  <div className="flex items-center justify-between">
-                    <span
-                      className={
-                        item.status === "live" ? "badge badge-teal" : "badge"
-                      }
-                    >
-                      {item.status === "live" ? "Live" : "Planned"}
-                    </span>
-                    <span className="text-[11px] text-muted">{item.zh}</span>
+                  <div className="flex items-center justify-end">
+                    <span className="text-[10px] uppercase tracking-[0.14em] text-muted/60">{item.status === "live" ? "Available" : "Planned"}</span>
                   </div>
                   <h2 className="display mt-4 text-lg text-parchment">
                     {item.label}

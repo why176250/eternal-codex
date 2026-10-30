@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Guides",
   description:
     "Eight full World of Warcraft: Forever guides: class quests, crafting speed gear, PvP ranks, hidden books, and more.",
-  alternates: { canonical: "/guides" },
+  alternates: { canonical: "/guides", languages: { en: "/guides", "zh-Hans": "/zh/guides", "x-default": "/guides" } },
 };
 
 function updatedLabel(value: string) {
@@ -61,7 +61,7 @@ export default function GuidesPage() {
                   alt=""
                   width={96}
                   height={96}
-                  className="absolute -right-2 top-1/2 size-24 -translate-y-1/2 rotate-6 rounded-lg border border-line/50 opacity-80"
+                  className="absolute right-3 top-1/2 size-20 -translate-y-1/2 rotate-3 rounded-lg border border-line/50 object-cover opacity-85"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/70 to-transparent" />
                 <span className="badge absolute bottom-4 left-4">{guide.category || "Guide"}</span>
@@ -71,7 +71,7 @@ export default function GuidesPage() {
                   {guide.title}
                 </h2>
                 <p className="mt-1 text-[11px] text-muted/70">{guide.subtitle}</p>
-                <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-muted">
+                <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted">
                   {guide.description}
                 </p>
                 <div className="mt-auto flex items-center justify-between gap-3 pt-4 text-[11px] text-muted/70">

@@ -62,16 +62,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:flex" />
-          <Link
-            href="/search"
-            className="hidden items-center gap-2 rounded-md border border-line bg-panel px-3 py-1.5 text-xs text-muted transition-colors hover:border-gold/40 hover:text-parchment sm:flex"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
-              <path d="m16.5 16.5 4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-            {isZh ? "搜索" : "Search"}
-          </Link>
+
           <button
             type="button"
             onClick={() => setOpen((value) => !value)}
@@ -118,13 +109,7 @@ export function Header() {
               </span>
               <LanguageSwitcher />
             </div>
-            <Link
-              href="/search"
-              onClick={() => setOpen(false)}
-              className="mt-1 rounded-md px-3 py-2.5 text-sm text-gold/90 hover:text-gold-soft"
-            >
-              {isZh ? "搜索数据库 →" : "Search the database →"}
-            </Link>
+
           </nav>
         </div>
       )}
