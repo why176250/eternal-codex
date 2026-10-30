@@ -7,6 +7,7 @@ import { nav, site } from "@/lib/site";
 export function Footer() {
   const pathname = usePathname();
   const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const localHref = (href: string) => (isZh ? `/zh${href}` : href);
 
   const zhLabels: Record<string, string> = {
     "/tools": "工具",
@@ -37,7 +38,7 @@ export function Footer() {
             {nav.map((item) => (
               <li key={item.href}>
                 <Link
-                  href={item.href}
+                  href={localHref(item.href)}
                   className="text-muted transition-colors hover:text-gold-soft"
                 >
                   {isZh ? zhLabels[item.href] ?? item.label : item.label}
@@ -51,13 +52,13 @@ export function Footer() {
           <p className="eyebrow mb-3">{isZh ? "编辑" : "Editorial"}</p>
           <ul className="space-y-2 text-muted">
             <li>
-              <Link href="/about" className="transition-colors hover:text-gold-soft">
+              <Link href={localHref("/about")} className="transition-colors hover:text-gold-soft">
                 {isZh ? "我们如何核实数据" : "How we verify data"}
               </Link>
             </li>
             <li>
               <Link
-                href="/about#corrections"
+                href={localHref("/about") + "#corrections"}
                 className="transition-colors hover:text-gold-soft"
               >
                 {isZh ? "报告错误" : "Report a correction"}
@@ -93,13 +94,13 @@ export function Footer() {
               : "Fan-made community resource. Not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc."}
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <Link href="/privacy" className="transition-colors hover:text-gold-soft">
+            <Link href={localHref("/privacy")} className="transition-colors hover:text-gold-soft">
               {isZh ? "隐私政策" : "Privacy"}
             </Link>
-            <Link href="/terms" className="transition-colors hover:text-gold-soft">
+            <Link href={localHref("/terms")} className="transition-colors hover:text-gold-soft">
               {isZh ? "条款与免责" : "Terms"}
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-gold-soft">
+            <Link href={localHref("/contact")} className="transition-colors hover:text-gold-soft">
               {isZh ? "联系与纠错" : "Contact"}
             </Link>
             <span className="text-muted/50">Built with Next.js.</span>

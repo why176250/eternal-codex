@@ -10,6 +10,7 @@ export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const localHref = (href: string) => (isZh ? `/zh${href}` : href);
   const zhLabels: Record<string, string> = {
     "/tools": "工具",
     "/data": "数据",
@@ -19,7 +20,7 @@ export function Header() {
   return (
     <header className="site-header sticky top-0 z-50 border-b border-line/80 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-3">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
+        <Link href={isZh ? "/zh" : "/"} className="flex min-w-0 items-center gap-3">
           <img
             src="/brand/eversixty-mark.svg"
             alt=""
@@ -47,7 +48,7 @@ export function Header() {
             return (
               <Link
                 key={item.href}
-                href={item.href}
+                href={localHref(item.href)}
                 className={
                   active
                     ? "whitespace-nowrap rounded-md bg-gold/10 px-3 py-1.5 text-gold-soft"
@@ -91,7 +92,7 @@ export function Header() {
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={localHref(item.href)}
                   onClick={() => setOpen(false)}
                   className={
                     active
