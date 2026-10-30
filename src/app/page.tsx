@@ -11,7 +11,7 @@ export default function HomePage() {
     <main>
       <LatestChangesFloat />
       <section className="container-x pb-12 pt-5 md:pt-8">
-        <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-end lg:justify-between">
+        <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <Link href="/" className="inline-flex items-center gap-4">
               <img

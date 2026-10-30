@@ -322,7 +322,7 @@ a {
   overflow: hidden;
   border: 1px solid rgba(70, 94, 128, 0.4);
   border-radius: 1rem;
-  min-height: 26rem;
+  min-height: 22rem;
   background-image:
     linear-gradient(90deg, rgba(5, 8, 15, 0.98) 0%, rgba(5, 8, 15, 0.92) 36%, rgba(5, 8, 15, 0.42) 64%, rgba(5, 8, 15, 0.74) 100%),
     url("/page-art/yunhai.webp");
@@ -347,6 +347,10 @@ a {
 .hero-banner > * {
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .hero-banner { min-height: 30rem; }
 }
 
 .hero-banner .hero-title {
