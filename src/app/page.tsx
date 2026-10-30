@@ -5,10 +5,12 @@ import { DataUpdatingLink } from "@/components/DataUpdatingLink";
 import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 import { SpecTierBoard } from "@/components/SpecTierBoard";
+import { LatestChangesFloat } from "@/components/LatestChangesFloat";
 
 export default function HomePage() {
   return (
     <main>
+      <LatestChangesFloat />
       <section className="container-x pb-14 pt-10 md:pt-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>

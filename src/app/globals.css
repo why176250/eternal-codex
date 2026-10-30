@@ -250,3 +250,9 @@ a {
   text-decoration-color: rgba(227, 189, 120, 0.7);
   outline: none;
 }
+
+/* Wide-screen margin rail: hidden until there is real space beside the 1370px shell. */
+.latest-float {
+  left: max(1rem, calc((100vw - 85.625rem) / 2 - 18.5rem));
+  width: clamp(13rem, calc((100vw - 85.625rem) / 2 - 3rem), 17.5rem);
+}
