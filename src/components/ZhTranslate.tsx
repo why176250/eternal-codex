@@ -41,6 +41,10 @@ const exact: Record<string, string> = {
   "Overview": "概述", "Changes": "变化", "Pros & cons": "优劣势", "Races": "种族",
   "Abilities": "技能", "BiS": "BiS", "Dungeons": "副本", "Classes": "职业",
   "Every spec, one page": "每个专精，一页看完",
+  "Home": "首页", "Item details": "物品详情", "Sells for": "出售价格", "Requires level": "需要等级",
+  "Rare": "稀有", "Uncommon": "优秀", "Epic": "史诗", "Legendary": "传说", "Neck": "颈部", "Finger": "手指", "Trinket": "饰品", "Back": "背部", "Chest": "胸部", "Waist": "腰部", "Legs": "腿部", "Feet": "脚", "Wrist": "手腕", "Hands": "手", "Head": "头部", "Shoulder": "肩部", "Shield": "盾牌", "Off-hand": "副手", "One-Hand": "单手", "Two-Hand": "双手", "Ranged": "远程",
+  "DUNGEON": "副本", "LEVEL": "等级",
+
   "DATABASE · ITEMS": "数据库 · 物品",
   "Item database": "物品数据库",
   "Search 7,823 Forever items by name, type, and slot. Names, quality, and item level are imported from the Blue Hermit dataset.": "按名称、类型和部位搜索 7,823 件 Forever 物品。名称、品质与物品等级来自蓝色隐士数据。",

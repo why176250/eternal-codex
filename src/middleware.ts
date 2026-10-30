@@ -10,7 +10,9 @@ export function middleware(request: NextRequest) {
   if (pathname.startsWith("/zh/")) {
     const url = request.nextUrl.clone();
     const rest = pathname.replace(/^\/zh/, "");
-    if (rest === "/data/items") url.pathname = "/items";
+    if (rest === "/dungeons/hot") url.pathname = "/dungeons/hall-of-thanes";
+    else if (rest === "/dungeons/bfd") url.pathname = "/dungeons/blackfathom-deeps";
+    else if (rest === "/data/items") url.pathname = "/items";
     else if (rest === "/data/spells") url.pathname = "/spells";
     else if (rest === "/data/npcs") url.pathname = "/npcs";
     else if (rest.startsWith("/guides/") && !rest.startsWith("/guides/forever/")) url.pathname = `/guides/forever/${rest.slice("/guides/".length)}`;
