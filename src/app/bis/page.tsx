@@ -41,7 +41,6 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
           <p className="eyebrow">BiS gear · Level 30</p>
           <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
             <div><h1 className="display text-3xl text-parchment md:text-5xl">{meta.name} <span className="text-gold-soft">Best in Slot</span></h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">Recommended level 30 {meta.name} gear by slot, with stats, enchants, and sources. Click an item to see its page.</p></div>
-            <Link href="/bis/forever" className="rounded-lg border border-gold/35 bg-gold/[0.06] px-3 py-2 text-xs text-gold-soft">Level 20 / 30 lists →</Link>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             {bisClasses.map((cls) => <Link key={cls.slug} href={classHref(cls.slug)} className={`flex items-center gap-2 rounded-lg border px-2.5 py-2 text-xs transition-colors ${cls.slug === selected ? "border-gold/55 bg-gold/10 text-parchment" : "border-line/70 text-muted hover:border-gold/40 hover:text-parchment"}`}><img src={cls.icon} alt="" width={22} height={22} className="size-5 rounded border border-line/70 object-cover" /><span>{cls.name}</span></Link>)}
