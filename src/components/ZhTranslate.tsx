@@ -108,6 +108,14 @@ function translate(raw: string, names: Record<string, string>): string {
   return out === text ? raw : raw.replace(text, out);
 }
 
+async function translateApi(texts: string[]): Promise<Record<string, string>> {
+  try {
+    const response = await fetch("/api/zh-translate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ texts }) });
+    const data = (await response.json()) as { translations?: string[] };
+    return Object.fromEntries(texts.map((text, i) => [text, data.translations?.[i] || text]));
+  } catch { return Object.fromEntries(texts.map((text) => [text, text])); }
+}
+
 const SKIP = new Set(["SCRIPT", "STYLE", "CODE", "PRE", "TEXTAREA"]);
 
 export function ZhTranslate() {
@@ -140,8 +148,43 @@ export function ZhTranslate() {
         const el = input as HTMLInputElement; const p = el.placeholder; const t = translate(p, names); if (t !== p) el.placeholder = t;
       });
     };
-    fetch("/zh-names.json").then((r) => r.json()).then((data) => { if (active) { names = data; run(); } }).catch(() => run());
+    fetch("/zh-names.json").then((r) => r.json()).then((data) => { if (active) { names = data; run(); void translateRemaining(); } }).catch(() => { run(); void translateRemaining(); });
     run();
+
+    async function translateRemaining() {
+      const candidates = new Map<string, Text[]>();
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          const parent = node.parentElement;
+          if (!parent || SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
+          const value = (node.nodeValue ?? "").trim();
+          if (value.length < 5 || !/[A-Za-z]/.test(value) || /[\u4e00-\u9fff]/.test(value) || original.has(node as Text)) return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        },
+      });
+      let node: Text | null;
+      while ((node = walker.nextNode() as Text | null)) {
+        const value = (node.nodeValue ?? "").trim();
+        if (!candidates.has(value)) candidates.set(value, []);
+        candidates.get(value)!.push(node);
+      }
+      const values = [...candidates.keys()].slice(0, 60);
+      for (let i = 0; i < values.length; i += 12) {
+        const batch = values.slice(i, i + 12);
+        const result = await translateApi(batch);
+        if (!active) return;
+        for (const text of batch) {
+          const translated = result[text];
+          if (!translated || translated === text) continue;
+          for (const target of candidates.get(text) ?? []) {
+            if (!target.isConnected) continue;
+            if (!original.has(target)) original.set(target, target.nodeValue ?? "");
+            target.nodeValue = translated;
+          }
+        }
+      }
+    }
+
     const obs = new MutationObserver(() => { run(); });
     obs.observe(document.body, { childList: true, subtree: true });
     return () => {
