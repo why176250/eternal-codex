@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageArt } from "@/components/PageArt";
 import { LangSync } from "@/components/LangSync";
+import { ZhTranslate } from "@/components/ZhTranslate";
 import { headers } from "next/headers";
 import { site } from "@/lib/site";
 
@@ -71,6 +72,7 @@ export default async function RootLayout({
     <html lang={lang}>
       <body>
         <LangSync />
+        <ZhTranslate />
         <div className="flex min-h-screen flex-col">
           <Header />
           <div className="relative">
