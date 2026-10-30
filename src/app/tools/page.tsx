@@ -38,11 +38,11 @@ export default function ToolsPage() {
       <section className="container-x py-10 md:py-12">
         <div className="grid gap-4 lg:grid-cols-3">
           {/* Build planner: one block, two stages */}
-          <section className="panel relative flex flex-col overflow-hidden p-6 lg:col-span-2 md:p-7">
+          <section className="panel relative flex flex-col self-start overflow-hidden p-6 lg:col-span-2 md:p-7">
             <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/70 to-transparent" />
             <div className="flex flex-wrap items-center gap-2">
               <span className="badge badge-teal">Live</span>
-              <span className="ml-auto text-[11px] text-muted">天赋 · 传承模拟</span>
+              <span className="ml-auto text-[11px] text-muted">Talents &amp; Legacy</span>
             </div>
 
             <h2 className="display mt-4 text-2xl text-parchment">
@@ -141,7 +141,7 @@ export default function ToolsPage() {
                 <span className="badge badge-teal">Live</span>
               </div>
               <h2 className="display mt-4 text-xl text-parchment">BiS Planner</h2>
-              <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">BiS 配装</p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">BiS Gear</p>
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 Level 30 best-in-slot gear for all nine classes, with enchants,
                 stats, alternatives, and sources.
@@ -169,7 +169,7 @@ export default function ToolsPage() {
                 <span className="badge badge-teal">Live</span>
               </div>
               <h2 className="display mt-4 text-xl text-parchment">Experience calculator</h2>
-              <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">经验计算器</p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-muted/70">XP Calculator</p>
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 Exact 1–60 table, kills per mob level, rested XP, quest turn-ins,
                 and time to 60.
