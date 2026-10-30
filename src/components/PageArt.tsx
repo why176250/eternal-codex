@@ -35,9 +35,13 @@ export function PageArt() {
   if (!art) return null;
   return (
     <div aria-hidden="true" className="page-art pointer-events-none absolute inset-x-0 top-0 h-[24rem] overflow-hidden">
-      <img src={art.src} alt="" className="absolute right-0 top-0 h-full w-[64%] object-cover opacity-[0.52] saturate-[0.9] brightness-[1.3]" style={{ objectPosition: art.pos }} loading="lazy" />
-      <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/75 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss/95" />
+      <div className="absolute right-6 top-10 hidden aspect-[16/9] w-[min(42rem,52vw)] overflow-hidden rounded-2xl border border-gold/15 shadow-[0_30px_80px_-50px_#000] md:block lg:right-10">
+        <img src={art.src} alt="" className="h-full w-full object-cover opacity-[0.58] saturate-[0.9] brightness-[1.32]" style={{ objectPosition: art.pos }} loading="lazy" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-abyss/75 via-abyss/15 to-transparent" />
+        <div className="absolute inset-0 ring-1 ring-inset ring-white/[0.04]" />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/85 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss" />
     </div>
   );
 }
