@@ -66,11 +66,12 @@ export function TimelineBars({ lanes }: { lanes: TimelineLane[] }) {
                       className="relative flex h-full w-full items-center rounded-lg border shadow-sm"
                       style={{
                         borderColor: dungeon.category === "new" ? "#4ea8d888" : "#a9884c88",
-                        backgroundColor: "#08111f",
+                        backgroundColor: "#0b1422",
                       }}
                     >
-                      <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: dungeon.image ? `url(${dungeon.image})` : undefined, filter: "brightness(1.25)" }} />
-                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.58), rgba(4,14,24,.12))" : "linear-gradient(90deg, rgba(18,13,8,.62), rgba(18,13,8,.12))" }} />
+                      {dungeon.image ? <span className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${dungeon.image})`, filter: "brightness(1.15)" }} /> : null}
+                      <span className="absolute inset-0 bg-black/60" />
+                      <span className="absolute inset-0" style={{ background: dungeon.category === "new" ? "linear-gradient(90deg, rgba(4,14,24,.28), rgba(4,14,24,.05))" : "linear-gradient(90deg, rgba(18,13,8,.32), rgba(18,13,8,.05))" }} />
                       <span className="relative z-10 flex h-full min-w-0 flex-1 flex-col justify-center gap-0.5 px-2.5 py-1.5">
                         {dungeon.levelMin >= 58 ? (
                           <span className="whitespace-nowrap text-[10px] font-bold leading-tight text-white">{shortName(dungeon.nameEn)}</span>

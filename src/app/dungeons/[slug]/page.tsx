@@ -42,16 +42,33 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
   if (!dungeon) notFound();
   const map = getDungeonMap(slug);
   const mapImage = getDungeonImagePath(dungeon.map);
-  const lootDetail = dungeon.lootDetail?.length
+  const lootDetail: { href: string; icon: string; name: string; type: string; quality: string }[] = dungeon.lootDetail?.length
     ? dungeon.lootDetail
     : dungeon.lootFull.map((name) => ({ href: "", icon: "", name: cleanItemName(name), type: "", quality: "1" }));
-  const bossLoot = dungeon.bosses.map((boss, index) => ({
-    boss,
-    items: (index === 0 && dungeon.firstBossLoot?.length
-      ? dungeon.firstBossLoot
-      : dungeon.lootFull.filter((item) => item.toLowerCase().includes(boss.toLowerCase()))
-    ).map(cleanItemName),
-  }));
+
+  const detailByName = new Map(lootDetail.map((item) => [cleanItemName(item.name).toLowerCase(), item]));
+  const firstBossItems = (dungeon.firstBossLoot ?? [])
+    .map((name) => detailByName.get(cleanItemName(name).toLowerCase()))
+    .filter((item): item is (typeof lootDetail)[number] => Boolean(item));
+
+  const bossLoot = dungeon.bosses
+    .map((boss, index) => {
+      const tokens = boss.toLowerCase().split(/\s+/).filter((token) => token.length > 3);
+      const matched = index === 0 && firstBossItems.length > 0
+        ? firstBossItems
+        : lootDetail.filter((item) => tokens.some((token) => item.name.toLowerCase().includes(token)));
+      const seen = new Set<string>();
+      return {
+        boss,
+        items: matched.filter((item) => {
+          const key = `${item.name}-${item.href}`;
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        }),
+      };
+    })
+    .filter((entry) => entry.items.length > 0);
 
   return (
     <main>
@@ -110,7 +127,13 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
                     <span className="grid size-10 shrink-0 place-items-center rounded-full border border-line/80 bg-deep text-sm text-gold-soft">{boss.slice(0, 1)}</span>
                     <div className="min-w-0"><p className="truncate text-sm text-parchment">{boss}</p><p className="text-[10px] text-muted">Boss {index + 1}</p></div>
                   </div>
-                  {items.length > 0 ? <ul className="mt-3 space-y-1 border-t border-line/50 pt-2 text-xs text-muted">{items.map((item) => <li key={item}>{item}</li>)}</ul> : null}
+                  <ul className="mt-3 space-y-1.5 border-t border-line/50 pt-2">
+                    {items.map((item) => {
+                      const id = itemId(item.href);
+                      const row = <><img src={item.icon ? `https://foreverchanges.pro${item.icon}` : undefined} alt="" width={28} height={28} className="size-7 shrink-0 rounded border border-line/70 object-cover" /><span className="min-w-0 flex-1"><span className="block truncate text-xs" style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span>{item.type ? <span className="block text-[10px] text-muted">{item.type}</span> : null}</span></>;
+                      return id ? <li key={`${boss}-${item.name}`}><Link href={`/item/${id}`} className="flex items-center gap-2 rounded px-1 py-1 hover:bg-white/[0.03]">{row}</Link></li> : <li key={`${boss}-${item.name}`} className="flex items-center gap-2 px-1 py-1">{row}</li>;
+                    })}
+                  </ul>
                 </article>
               ))}
             </div>

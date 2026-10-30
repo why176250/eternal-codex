@@ -1,5 +1,4 @@
 import raw from "@/data/dungeons-timeline.json";
-import dungeonImages from "@/data/dungeon-images.json";
 import { foreverDungeons } from "@/lib/forever";
 import { getDungeonImagePath, getFcDungeon } from "@/lib/dungeon-fc";
 
@@ -84,7 +83,7 @@ function layout(entries: RawDungeon[]): TimelineEntry[] {
       ...entry,
       id,
       nameEn: englishById.get(id) ?? entry.name,
-      image: fcMap ?? dungeonImages[id as keyof typeof dungeonImages] ?? null,
+      image: fcMap ?? null,
       row,
     };
   });
