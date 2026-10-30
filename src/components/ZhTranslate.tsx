@@ -153,7 +153,13 @@ export function ZhTranslate() {
         const el = input as HTMLInputElement; const p = el.placeholder; const t = translate(p, names); if (t !== p) el.placeholder = t;
       });
     };
-    fetch("/zh-names.json").then((r) => r.json()).then((data) => { if (active) { names = data; run(); void translateRemaining(); } }).catch(() => { run(); void translateRemaining(); });
+    const translateTitle = async () => {
+      const title = document.title;
+      if (!title || /[\u4e00-\u9fff]/.test(title)) return;
+      const result = await translateApi([title]);
+      if (active && result[title] && result[title] !== title) document.title = result[title];
+    };
+    fetch("/zh-names.json").then((r) => r.json()).then((data) => { if (active) { names = data; run(); void translateRemaining(); void translateTitle(); } }).catch(() => { run(); void translateRemaining(); void translateTitle(); });
     run();
 
     async function translateRemaining() {
