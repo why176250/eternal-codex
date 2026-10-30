@@ -417,3 +417,11 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .hero-art::before { filter: none; }
 }
+
+/* Wide-screen left rail: balance card above, three quick-start cards below. */
+.quick-start-rail {
+  left: max(1rem, calc((100vw - 85.625rem) / 2 - 18.5rem));
+  top: 25rem;
+  width: clamp(13rem, calc((100vw - 85.625rem) / 2 - 3rem), 17.5rem);
+  z-index: 30;
+}

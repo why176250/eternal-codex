@@ -5,11 +5,13 @@ import { modules } from "@/lib/modules";
 import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
 import { SpecTierBoard } from "@/components/SpecTierBoard";
 import { LatestChangesFloat } from "@/components/LatestChangesFloat";
+import { QuickStartRail } from "@/components/QuickStartRail";
 
 export default function HomePage() {
   return (
     <main>
       <LatestChangesFloat />
+      <QuickStartRail />
       <section className="container-x pb-10 pt-3 md:pt-4">
         <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
@@ -155,7 +157,7 @@ export default function HomePage() {
 
         <SpecTierBoard compact />
 
-        <div className="mt-5 border-t border-line/60 pt-4">
+        <div className="mt-5 border-t border-line/60 pt-4 min-[1800px]:hidden">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="eyebrow">Start here</p>
