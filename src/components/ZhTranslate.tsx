@@ -129,6 +129,9 @@ export function ZhTranslate() {
     if (!(pathname === "/zh" || pathname.startsWith("/zh/"))) return;
     let names: Record<string, string> = {};
     let active = true;
+    let apiTimer: number | undefined;
+    let apiRunning = false;
+    const apiCache = new Map<string, string>();
     const original = new Map<Text, string>();
     const run = () => {
       if (!active) return;
@@ -163,6 +166,8 @@ export function ZhTranslate() {
     run();
 
     async function translateRemaining() {
+      if (apiRunning) return;
+      apiRunning = true;
       const candidates = new Map<string, Text[]>();
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
         acceptNode(node) {
@@ -179,10 +184,13 @@ export function ZhTranslate() {
         if (!candidates.has(value)) candidates.set(value, []);
         candidates.get(value)!.push(node);
       }
-      const values = [...candidates.keys()].slice(0, 160);
+      const values = [...candidates.keys()].filter((value) => !apiCache.has(value)).slice(0, 160);
       for (let i = 0; i < values.length; i += 12) {
         const batch = values.slice(i, i + 12);
-        const result = await translateApi(batch);
+        const fresh = batch.filter((value) => !apiCache.has(value));
+        if (fresh.length === 0) continue;
+        const result = await translateApi(fresh);
+        for (const value of fresh) apiCache.set(value, result[value] ?? value);
         if (!active) return;
         for (const text of batch) {
           const translated = result[text];
@@ -194,15 +202,21 @@ export function ZhTranslate() {
           }
         }
       }
+      apiRunning = false;
     }
 
+    const scheduleApi = () => {
+      window.clearTimeout(apiTimer);
+      apiTimer = window.setTimeout(() => { void translateRemaining(); }, 600);
+    };
     const delayed = window.setTimeout(() => { void translateRemaining(); }, 2500);
-    const obs = new MutationObserver(() => { run(); });
+    const obs = new MutationObserver(() => { run(); scheduleApi(); });
     obs.observe(document.body, { childList: true, subtree: true });
     return () => {
       active = false;
       obs.disconnect();
       window.clearTimeout(delayed);
+      window.clearTimeout(apiTimer);
       for (const [node, value] of original) if (node.isConnected) node.nodeValue = value;
       original.clear();
     };
