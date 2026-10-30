@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Experience calculator — XP to 60 and kills per level",
   description:
     "Classic/Forever XP calculator: exact 1–60 table, remaining XP, kills per mob level, elites, rested mob XP, quest turn-ins, and time estimates.",
-  alternates: { canonical: "/tools/xp", languages: { en: "/tools/xp", "zh-Hans": "/zh/tools/xp", "x-default": "/tools/xp" } },
+  alternates: { canonical: "/tools/xp" },
 };
 
 export default function XpPage() {

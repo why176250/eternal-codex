@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Legacy planner — 3 trees, 65 points",
   description:
     "Plan the Forever legacy progression: three trees, point gates, rank text, and the 15/25/40/55 reward track. Imported from the Blue Hermit community dataset.",
-  alternates: { canonical: "/tools/legacy", languages: { en: "/tools/legacy", "zh-Hans": "/zh/tools/legacy", "x-default": "/tools/legacy" } },
+  alternates: { canonical: "/tools/legacy" },
 };
 
 export default function LegacyPage() {

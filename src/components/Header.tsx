@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav, site } from "@/lib/site";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function Header() {
   const pathname = usePathname();
@@ -62,7 +61,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LanguageSwitcher className="hidden sm:flex" />
 
           <button
             type="button"
@@ -104,12 +102,7 @@ export function Header() {
                 </Link>
               );
             })}
-            <div className="flex items-center justify-between px-3 py-2.5">
-              <span className="text-sm text-muted">
-                {isZh ? "语言" : "Language"}
-              </span>
-              <LanguageSwitcher />
-            </div>
+
 
           </nav>
         </div>

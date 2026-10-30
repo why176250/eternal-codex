@@ -1,8 +1,0 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { foreverDungeons } from "@/lib/forever";
-import { fcSlugById } from "@/lib/dungeon-fc";
-export const metadata: Metadata = { title:"副本资料 — 魔兽世界：无限", alternates:{canonical:"/zh/dungeons",languages:{en:"/dungeons","zh-Hans":"/zh/dungeons","x-default":"/dungeons"}} };
-export default function ZhDungeons(){
- const list=(foreverDungeons as {id:string;name:string;nameZh?:string;band:string;type:string;isNew?:boolean;location?:string}[]).filter(d=>!d.id.startsWith("route-")&&!d.id.startsWith("zone-"));
- return <main><section className="container-x py-10 md:py-14"><p className="eyebrow">副本资料</p><h1 className="display mt-2 text-3xl text-parchment md:text-5xl">副本与掉落</h1><p className="mt-3 text-sm text-muted">35 个 Forever 副本，中文名、等级段、地图与首领掉落。</p></section><section className="container-x pb-20"><h2 className="display text-xl text-parchment">全新副本</h2><div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{list.filter(d=>d.isNew).map(d=><Link key={d.id} href={`/zh/dungeons/${fcSlugById[d.id]??d.id}`} className="panel panel-hover p-4"><p className="text-sm text-parchment">{d.nameZh||d.name}</p><p className="mt-1 text-[10px] text-muted">{d.band} · {d.location||"位置未知"}</p></Link>)}</div><h2 className="display mt-8 text-xl text-parchment">经典副本</h2><div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{list.filter(d=>!d.isNew).map(d=><Link key={d.id} href={`/zh/dungeons/${fcSlugById[d.id]??d.id}`} className="panel panel-hover p-4"><p className="text-sm text-parchment">{d.nameZh||d.name}</p><p className="mt-1 text-[10px] text-muted">{d.band} · {d.location||"位置未知"}</p></Link>)}</div></section></main>}

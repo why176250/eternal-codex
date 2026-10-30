@@ -5,7 +5,7 @@ import { itemSets, searchSets } from "@/lib/transmog-db";
 export const metadata: Metadata = {
   title: "Transmog — Forever item sets",
   description: "Browse Forever transmog item sets by class and name, with every piece.",
-  alternates: { canonical: "/transmog", languages: { en: "/transmog", "zh-Hans": "/zh/transmog", "x-default": "/transmog" } },
+  alternates: { canonical: "/transmog" },
 };
 
 type SearchParams = Promise<{ q?: string; class?: string; page?: string }>;

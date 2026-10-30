@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "About & editorial standards",
   description:
     "How Eversixty verifies World of Warcraft: Forever guides, what our confidence levels mean, and how to report a correction.",
-  alternates: { canonical: "/about", languages: { en: "/about", "zh-Hans": "/zh/about", "x-default": "/about" } },
+  alternates: { canonical: "/about" },
 };
 
 const confidence = [

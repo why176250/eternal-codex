@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Forever guides — imported from Sargeras",
   description:
     "Eight full Forever guides covering classes, professions, PvP ranks, and hidden quests, imported from the Sargeras community project.",
-  alternates: { canonical: "/guides/forever", languages: { en: "/guides/forever", "zh-Hans": "/zh/guides/forever", "x-default": "/guides/forever" } },
+  alternates: { canonical: "/guides/forever" },
 };
 
 export default function ForeverGuidesPage() {

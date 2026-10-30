@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Dungeons — the Forever leveling ladder",
   description:
     "Nine new Forever dungeons and 26 Classic dungeons on a level timeline, with images, level ranges, and links to bosses and loot.",
-  alternates: { canonical: "/dungeons", languages: { en: "/dungeons", "zh-Hans": "/zh/dungeons", "x-default": "/dungeons" } },
+  alternates: { canonical: "/dungeons" },
 };
 
 const BOSSES = directoryBossTotal;

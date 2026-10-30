@@ -5,7 +5,7 @@ import { npcs, searchNpcs } from "@/lib/npcs-db";
 export const metadata: Metadata = {
   title: "NPCs — Forever NPC database",
   description: "Search 6,220 Forever NPCs by name, type, rank, and level.",
-  alternates: { canonical: "/npcs", languages: { en: "/npcs", "zh-Hans": "/zh/npcs", "x-default": "/npcs" } },
+  alternates: { canonical: "/npcs" },
 };
 
 type SearchParams = Promise<{ q?: string }>;

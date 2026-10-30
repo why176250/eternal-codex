@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { headers } from "next/headers";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { LangSync } from "@/components/LangSync";
 import { PageArt } from "@/components/PageArt";
-import { HreflangSync } from "@/components/HreflangSync";
 import { site } from "@/lib/site";
 
-const baseMetadata: Metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: site.title,
@@ -62,38 +59,13 @@ const baseMetadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export async function generateMetadata(): Promise<Metadata> {
-  const h = await headers();
-  const pathname = h.get("x-eversixty-pathname") ?? "/";
-  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
-  const enPath = isZh ? (pathname.replace(/^\/zh/, "") || "/") : pathname;
-  const zhPath = isZh ? pathname : pathname === "/" ? "/zh" : `/zh${pathname}`;
-  return {
-    ...baseMetadata,
-    alternates: {
-      languages: {
-        en: `${site.url}${enPath}`,
-        "zh-Hans": `${site.url}${zhPath}`,
-        "x-default": `${site.url}${enPath}`,
-      },
-    },
-  };
-}
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const requestHeaders = await headers();
-  const lang = requestHeaders.get("x-eversixty-locale") === "zh-Hans" ? "zh-Hans" : "en";
-  const pathname = requestHeaders.get("x-eversixty-pathname") ?? "/";
-  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
-  const enPath = isZh ? (pathname.replace(/^\/zh/, "") || "/") : pathname;
-  const zhPath = isZh ? pathname : pathname === "/" ? "/zh" : `/zh${pathname}`;
   return (
-    <html lang={lang}>
+    <html lang="en">
       <body>
-        <LangSync />
-        <HreflangSync />
         <div className="flex min-h-screen flex-col">
           <Header />
           <div className="relative">

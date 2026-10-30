@@ -32,14 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${site.url}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${site.url}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${site.url}/zh`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${site.url}/zh/dungeons`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/classes`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/bis`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/professions`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/data`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${site.url}/zh/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${site.url}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${site.url}/tools/talents`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/tools/xp`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
@@ -149,13 +141,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...foreverGuideRoutes,
   ];
 
-  const zhRoutes: MetadataRoute.Sitemap = allRoutes
-    .filter((entry) => !entry.url.includes(`${site.url}/zh`))
-    .map((entry) => ({
-      ...entry,
-      url: entry.url === site.url ? `${site.url}/zh` : entry.url.replace(`${site.url}/`, `${site.url}/zh/`),
-      priority: Math.min(entry.priority ?? 0.5, 0.6),
-    }));
-
-  return [...allRoutes, ...zhRoutes];
+  return allRoutes;
 }

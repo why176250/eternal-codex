@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Spells — Forever spellbook",
   description:
     "Search World of Warcraft: Forever spells and abilities by name and school. Browse the global spell index.",
-  alternates: { canonical: "/spells", languages: { en: "/spells", "zh-Hans": "/zh/spells", "x-default": "/spells" } },
+  alternates: { canonical: "/spells" },
 };
 
 const PAGE_SIZE = 60;

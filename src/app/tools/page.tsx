@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Tools — talent, legacy, BiS, XP, and class popularity",
   description:
     "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, an exact 1–60 XP calculator, and the launch class-popularity poll.",
-  alternates: { canonical: "/tools", languages: { en: "/tools", "zh-Hans": "/zh/tools", "x-default": "/tools" } },
+  alternates: { canonical: "/tools" },
 };
 
 const stats = [

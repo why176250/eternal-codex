@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Dungeon data — Forever instances and routes",
   description:
     "All 45 Forever dungeons, raids, and travel routes with level bands, locations, and notes, imported from the Sargeras community dataset.",
-  alternates: { canonical: "/data/dungeons", languages: { en: "/data/dungeons", "zh-Hans": "/zh/data/dungeons", "x-default": "/data/dungeons" } },
+  alternates: { canonical: "/data/dungeons" },
 };
 
 export default function DungeonDataPage() {

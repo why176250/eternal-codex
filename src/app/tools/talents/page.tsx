@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Talent planner — all nine classes",
   description:
     "Browse and allocate talent points for all nine Forever classes. Talent data imported from the Sargeras community dataset.",
-  alternates: { canonical: "/tools/talents", languages: { en: "/tools/talents", "zh-Hans": "/zh/tools/talents", "x-default": "/tools/talents" } },
+  alternates: { canonical: "/tools/talents" },
 };
 
 export default function TalentsPage() {

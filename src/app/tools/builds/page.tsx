@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Talent Hall — community builds",
   description:
     "1,100+ community talent builds for World of Warcraft: Forever, with point distribution, author ranking, and spec popularity. Collected from the Sargerastech community site.",
-  alternates: { canonical: "/tools/builds", languages: { en: "/tools/builds", "zh-Hans": "/zh/tools/builds", "x-default": "/tools/builds" } },
+  alternates: { canonical: "/tools/builds" },
 };
 
 export default function BuildsPage() {

@@ -4,7 +4,7 @@ import { ClassWheel } from "@/components/ClassWheel";
 export const metadata: Metadata = {
   title: "Class wheel — random Forever class picker",
   description: "Spin a class wheel to pick a random World of Warcraft: Forever class. Pure front-end, for fun only.",
-  alternates: { canonical: "/tools/class-wheel", languages: { en: "/tools/class-wheel", "zh-Hans": "/zh/tools/class-wheel", "x-default": "/tools/class-wheel" } },
+  alternates: { canonical: "/tools/class-wheel" },
 };
 
 export default function ClassWheelPage() {

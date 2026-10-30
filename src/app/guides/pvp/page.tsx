@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "PvP guides — planned",
   description:
     "PvP guides for World of Warcraft: Forever: battleground roles, world PvP, and class matchups. Planned for after launch.",
-  alternates: { canonical: "/guides/pvp", languages: { en: "/guides/pvp", "zh-Hans": "/zh/guides/pvp", "x-default": "/guides/pvp" } },
+  alternates: { canonical: "/guides/pvp" },
 };
 
 export default function PvpGuidesPage() {

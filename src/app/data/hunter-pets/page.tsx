@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Hunter pets — families, beasts, and pet skills",
   description:
     "18 pet families, 502 tameable beasts, and 61 pet skills for World of Warcraft: Forever. Browse families, diets, modifiers, zones, and skill ranks.",
-  alternates: { canonical: "/data/hunter-pets", languages: { en: "/data/hunter-pets", "zh-Hans": "/zh/data/hunter-pets", "x-default": "/data/hunter-pets" } },
+  alternates: { canonical: "/data/hunter-pets" },
 };
 
 export default function HunterPetsPage() {

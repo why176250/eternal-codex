@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Class finder — class and race recommendation",
   description:
     "Five questions to narrow down your class and race for World of Warcraft: Forever. Get three class matches with roles, reasons, and recommended races.",
-  alternates: { canonical: "/class-finder", languages: { en: "/class-finder", "zh-Hans": "/zh/class-finder", "x-default": "/class-finder" } },
+  alternates: { canonical: "/class-finder" },
 };
 
 export default function ClassFinderPage() {

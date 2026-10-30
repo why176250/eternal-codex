@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Vendor recipes — profession crafting costs",
   description:
     "320 profession recipes with reagent lists, grouped by profession. Imported from the Sargeras community dataset.",
-  alternates: { canonical: "/data/vendors", languages: { en: "/data/vendors", "zh-Hans": "/zh/data/vendors", "x-default": "/data/vendors" } },
+  alternates: { canonical: "/data/vendors" },
 };
 
 const qualityColors: Record<number, string> = {
