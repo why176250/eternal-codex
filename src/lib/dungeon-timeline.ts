@@ -1,6 +1,7 @@
 import raw from "@/data/dungeons-timeline.json";
 import dungeonImages from "@/data/dungeon-images.json";
 import { foreverDungeons } from "@/lib/forever";
+import { getDungeonImagePath, getFcDungeon } from "@/lib/dungeon-fc";
 
 type RawDungeon = {
   name: string;
@@ -77,11 +78,13 @@ function layout(entries: RawDungeon[]): TimelineEntry[] {
       rows[row] = end;
     }
     const id = idByName[entry.name] ?? "hot";
+    const fcDungeon = getFcDungeon(id);
+    const fcMap = getDungeonImagePath(fcDungeon?.map ?? null);
     return {
       ...entry,
       id,
       nameEn: englishById.get(id) ?? entry.name,
-      image: dungeonImages[id as keyof typeof dungeonImages] ?? null,
+      image: fcMap ?? dungeonImages[id as keyof typeof dungeonImages] ?? null,
       row,
     };
   });
