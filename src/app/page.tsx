@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main>
       <LatestChangesFloat />
-      <section className="container-x pb-12 pt-5 md:pt-8">
+      <section className="container-x pb-10 pt-3 md:pt-4">
         <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <Link href="/" className="inline-flex items-center gap-4">
@@ -44,7 +44,7 @@ export default function HomePage() {
           <LaunchCountdown />
         </div>
 
-        <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5 md:mt-8">
+        <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:gap-5 md:mt-5">
           {modules.map((module) => {
             const Card = Link;
             return (
