@@ -25,6 +25,11 @@ const arts: { route: string; src: string; pos?: string }[] = [
   { route: "/server-status", src: "/legacy/bg/2.jpg", pos: "center 35%" },
   { route: "/about", src: "/page-art/classic-small/WoW_ClassicLaunchPressKit_ThousandNeedles_3840x2160.webp", pos: "center 45%" },
   { route: "/contact", src: "/page-art/classic-small/WoW_ClassicLaunchPressKit_ScarletMonastery_3840x2160.webp", pos: "center 42%" },
+  { route: "/data/sets", src: "/page-art/classic-small/ClassicLaunch_WoW_Onyxia_3840x2160.webp", pos: "center 44%" },
+  { route: "/data/abilities", src: "/page-art/classic-small/WoW_Classic_Molten_Core_3840x2160.webp", pos: "center 42%" },
+  { route: "/data/racials", src: "/page-art/classic-small/WoW_Classic_Barrens_3840x2160.webp", pos: "center 45%" },
+  { route: "/data/vendors", src: "/page-art/classic-small/WoW_ClassicLaunchPressKit_ThousandNeedles_3840x2160.webp", pos: "center 45%" },
+  { route: "/data/hunter-pets", src: "/page-art/classic-small/WoW_ClassicLaunchPressKit_UngoroHunter_3840x2160.webp", pos: "center 45%" },
 ];
 
 export function PageArt() {
