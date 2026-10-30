@@ -92,3 +92,14 @@ export function uniqueBossLoot(detail: DungeonDetail) {
   }
   return [...map.values()];
 }
+
+export function findDungeonQuest(idOrHref: string) {
+  const wanted = idOrHref.replace(/^quest-/, "").replace(/^\/quest\//, "").split("/")[0];
+  for (const [slug, detail] of Object.entries(details)) {
+    for (const group of detail.quests?.groups ?? []) {
+      const quest = group.quests.find((entry) => entry.id.replace(/^quest-/, "") === wanted || entry.href.includes(`/quest/${wanted}`));
+      if (quest) return { quest, detail, slug, faction: group.faction };
+    }
+  }
+  return undefined;
+}
