@@ -5,6 +5,7 @@ import { getDbItem } from "@/lib/items-db";
 import { getGuideItem } from "@/lib/guide-items";
 import { getProfessionItem } from "@/lib/profession-items";
 import { fcItemQualityLabel, getFcItem } from "@/lib/fc-items";
+import { getWclItem, itemQualityColors, itemQualityLabels } from "@/lib/wcl-items";
 
 type Params = { id: string };
 const qualityColor: Record<string, string> = {
@@ -19,6 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     if (fcItem) {
       const quality = fcItemQualityLabel(fcItem.quality);
       return { title: `${fcItem.name} — ${quality} item`, description: fcItem.summary || `${fcItem.name}, ${quality} ${fcItem.slot}.` };
+    }
+    const wclItem = getWclItem(id);
+    if (wclItem) {
+      const quality = itemQualityLabels[wclItem.q] ?? "Item";
+      return { title: `${wclItem.n} — ${quality} item`, description: `${wclItem.n}, ${quality} ${wclItem.c || "item"} in the WoW Forever item database.` };
     }
     const guideItem = getGuideItem(id);
     if (guideItem) return { title: `${guideItem.name_en || guideItem.name} — guide item`, description: "An item referenced in a Forever guide." };
@@ -56,6 +62,26 @@ export default async function ItemPage({ params }: { params: Promise<Params> }) 
               {fcItem.req ? <p className="mt-3 text-xs text-muted">Requires Level {fcItem.req}</p> : null}
               {fcItem.sell ? <p className="mt-1 text-xs text-muted/70">{fcItem.sell}</p> : null}
               {fcItem.summary ? <p className="mt-4 border-t border-line/50 pt-3 text-xs leading-relaxed text-muted/80">{fcItem.summary}</p> : null}
+            </div>
+          </section>
+        </main>
+      );
+    }
+    const wclItem = getWclItem(id);
+    if (wclItem) {
+      const quality = itemQualityLabels[wclItem.q] ?? "Item";
+      return (
+        <main>
+          <div className="container-x pt-8 text-xs text-muted"><Link href="/search" className="hover:text-gold-soft">Item database</Link> / <span className="text-parchment/80">{wclItem.n}</span></div>
+          <section className="container-x max-w-3xl pb-20 pt-8">
+            <div className="flex flex-wrap items-center gap-2 text-xs"><span className="badge">{wclItem.st === "new" ? "New in Forever" : wclItem.st === "changed" ? "Changed from Classic" : wclItem.st === "same" ? "Unchanged" : "Not in Forever"}</span><span className="text-muted">{wclItem.s || "Item"}</span>{wclItem.l ? <span className="text-muted">iLvl {wclItem.l}</span> : null}</div>
+            <div className="mt-5 flex items-start gap-4">
+              {wclItem.k ? <img src={`https://wowforever.wclbox.com/tubiao/${wclItem.k}.jpg`} alt="" width={72} height={72} className="size-20 shrink-0 rounded-lg border border-line/80" /> : null}
+              <div><h1 className="display text-3xl md:text-4xl" style={{ color: itemQualityColors[wclItem.q] ?? "#ede7d7" }}>{wclItem.n}</h1><p className="mt-1 text-sm text-muted">{quality} · {wclItem.s || "Item"}{wclItem.l ? ` · Item level ${wclItem.l}` : ""}{wclItem.r ? ` · Requires ${wclItem.r}` : ""}</p></div>
+            </div>
+            <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted">
+              {wclItem.src ? <p className="text-xs">Source: {wclItem.src}</p> : <p>Item details are being indexed from the WCLBox dataset.</p>}
+              <p className="mt-3 text-xs text-muted/60">Item ID {wclItem.i} · {wclItem.c || "Uncategorized"}</p>
             </div>
           </section>
         </main>
