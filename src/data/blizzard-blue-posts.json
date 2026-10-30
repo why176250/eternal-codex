@@ -1,6 +1,6 @@
 {
  "source": "https://us.forums.blizzard.com/en/wow/groups/blizzard-tracker/posts.json",
- "fetchedAt": "2026-10-30T03:53:35.429Z",
+ "fetchedAt": "2026-10-30T03:57:17.859Z",
  "posts": [
   {
    "id": 30675695,
@@ -23,17 +23,6 @@
    "author": "Blizzard Entertainment",
    "userTitle": "Blizzard News",
    "avatar": "https://us.forums.blizzard.com/en/wow/plugins/discourse-blizzard-plugin/images/avatars/wow/default.png"
-  },
-  {
-   "id": 30673098,
-   "topicId": 2383391,
-   "title": "Midnight: Echoes of the Worldcore PTR Development Notes",
-   "excerpt": "The 12.1.7 PTR has been updated and will be available for testing when the Talebound demo becomes available tomorrow. TALES TAKE A DARK TURN IN TALEBOUND [image] Talebound will be available for testing this weekend October 30 at 10:00am PDT through November 2 at 10:00am PDT Prepare to be draw…",
-   "createdAt": "2026-10-29T18:28:06.118Z",
-   "url": "https://us.forums.blizzard.com/t/midnight-echoes-of-the-worldcore-ptr-development-notes/2383391/5",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
   },
   {
    "id": 30671248,
@@ -69,72 +58,6 @@
    "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/kaivax/96/948_2.png"
   },
   {
-   "id": 30649379,
-   "topicId": 2227871,
-   "title": "The Burning Crusade Hotfixes - Updated October 27",
-   "excerpt": "October 27, 2026 The Burning Crusade Classic Heroic Dungeon keys now require Honored reputation instead of Revered.",
-   "createdAt": "2026-10-28T00:44:50.842Z",
-   "url": "https://us.forums.blizzard.com/t/the-burning-crusade-hotfixes-updated-october-27/2227871/191",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
-  },
-  {
-   "id": 30649354,
-   "topicId": 2382684,
-   "title": "World of Warcraft: Midnight Hotfixes - October 27",
-   "excerpt": "October 27, 2026 Classes Druid Feral All damage done increased by 5%. Does not affect PvP combat. Restoration Developer’s note: These changes are intended to help Restoration Druid deal with burst damage in dungeons, as they are behind other healers. They are performing well in raid settings…",
-   "createdAt": "2026-10-28T00:43:08.817Z",
-   "url": "https://us.forums.blizzard.com/t/world-of-warcraft-midnight-hotfixes-october-27/2382684/141",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
-  },
-  {
-   "id": 30644593,
-   "topicId": 2394005,
-   "title": "Gold Transactions Must Be Direct",
-   "excerpt": "We’ve recently completed a round of actions taken against accounts that were found to have participated in spending real money on gold provided by a third party (RMT). Some of the accounts actioned purchased the illicit gold and had the seller deliver it to a different player who provided a service …",
-   "createdAt": "2026-10-27T21:52:26.003Z",
-   "url": "https://us.forums.blizzard.com/t/gold-transactions-must-be-direct/2394005/1",
-   "author": "Kaivax",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/kaivax/96/948_2.png"
-  },
-  {
-   "id": 30640021,
-   "topicId": 2393487,
-   "title": "Bring the Spirit of the Sea Home with the New Grimtide Estate and Grimtide Decor Packs!",
-   "excerpt": "Bring the haunting spirit of the sea home with the Grimtide collection for World of Warcraft Housing, featuring the Spirited Grimtide Manse exterior, Spirited Grimtide Foyer interior, and a coordinated pack of …",
-   "createdAt": "2026-10-27T20:14:19.238Z",
-   "url": "https://us.forums.blizzard.com/t/bring-the-spirit-of-the-sea-home-with-the-new-grimtide-estate-and-grimtide-decor-packs/2393487/1",
-   "author": "Blizzard Entertainment",
-   "userTitle": "Blizzard News",
-   "avatar": "https://us.forums.blizzard.com/en/wow/plugins/discourse-blizzard-plugin/images/avatars/wow/default.png"
-  },
-  {
-   "id": 30639364,
-   "topicId": 2393431,
-   "title": "Name Reservation Issue for Oceanic Players",
-   "excerpt": "Attention Oceanic players connecting to Australian-based servers! Due to a bug, you must create any characters on Roleplay or Roleplay-PvP rulesets before creating characters on Normal or PvP rulesets. If you first create a character on the Normal or PvP ruleset, the Roleplay and Roleplay-PvP rule…",
-   "createdAt": "2026-10-27T20:02:47.505Z",
-   "url": "https://us.forums.blizzard.com/t/name-reservation-issue-for-oceanic-players/2393431/1",
-   "author": "Kaivax",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/kaivax/96/948_2.png"
-  },
-  {
-   "id": 30638690,
-   "topicId": 2393388,
-   "title": "Add the Living Heartsbane Cauldron Mount to your Collection",
-   "excerpt": "Take command of this cursed creation and ride across Azeroth in wicked style. The Living Heartsbane Cauldron is a delightfully macabre mount, ready to whisk you into adventures by ground or sky. View Full Article",
-   "createdAt": "2026-10-27T19:30:27.238Z",
-   "url": "https://us.forums.blizzard.com/t/add-the-living-heartsbane-cauldron-mount-to-your-collection/2393388/1",
-   "author": "Blizzard Entertainment",
-   "userTitle": "Blizzard News",
-   "avatar": "https://us.forums.blizzard.com/en/wow/plugins/discourse-blizzard-plugin/images/avatars/wow/default.png"
-  },
-  {
    "id": 30638185,
    "topicId": 2393349,
    "title": "Your Next Adventure in WoW: Forever Starts in the WoW Portal Room",
@@ -157,17 +80,6 @@
    "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/kaivax/96/948_2.png"
   },
   {
-   "id": 30628648,
-   "topicId": 2382684,
-   "title": "World of Warcraft: Midnight Hotfixes - October 27",
-   "excerpt": "October 26, 2026 Classes Shaman Enhancement Resolved an issue causing Voltaic Blaze to not hit secondary targets when Ula’tek is the main target. Warlock Affliction Fixed an issue where the Cooldown Manager would sometimes not display Summon Darkglare correctly. Hallow’s End Neighb…",
-   "createdAt": "2026-10-27T01:01:32.728Z",
-   "url": "https://us.forums.blizzard.com/t/world-of-warcraft-midnight-hotfixes-october-27/2382684/135",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
-  },
-  {
    "id": 30624529,
    "topicId": 2360696,
    "title": "WoW Forever Beta Development Notes – Updated October 26",
@@ -179,17 +91,6 @@
    "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/kaivax/96/948_2.png"
   },
   {
-   "id": 30623027,
-   "topicId": 2392403,
-   "title": "Join in the Talebound Demo on October 30",
-   "excerpt": "Take the Talebound demo for a spooky spin on the Player Test Realm (PTR) and experience the Red Hollow introduction, three eerie tales across Normal, Veteran, and Heroic difficulties, and all three classes: Slayer, Inquisitor, and Witch. No subscription is …",
-   "createdAt": "2026-10-26T18:00:12.133Z",
-   "url": "https://us.forums.blizzard.com/t/join-in-the-talebound-demo-on-october-30/2392403/1",
-   "author": "Blizzard Entertainment",
-   "userTitle": "Blizzard News",
-   "avatar": "https://us.forums.blizzard.com/en/wow/plugins/discourse-blizzard-plugin/images/avatars/wow/default.png"
-  },
-  {
    "id": 30622338,
    "topicId": 2392363,
    "title": "Watch the WoW: Forever Short Story, “Unbowed”",
@@ -199,28 +100,6 @@
    "author": "Blizzard Entertainment",
    "userTitle": "Blizzard News",
    "avatar": "https://us.forums.blizzard.com/en/wow/plugins/discourse-blizzard-plugin/images/avatars/wow/default.png"
-  },
-  {
-   "id": 30595975,
-   "topicId": 2382684,
-   "title": "World of Warcraft: Midnight Hotfixes - October 27",
-   "excerpt": "October 23, 2026 Classes Shaman Enhancement Resolved an issue causing Surging Elements to not appear on the Cooldown Manager. Warlock Fixed issues that caused some warlock summons and Diabolic Occuli to sometimes incorrectly target enemies outside of combat. This corrects summons from Affl…",
-   "createdAt": "2026-10-23T23:43:36.860Z",
-   "url": "https://us.forums.blizzard.com/t/world-of-warcraft-midnight-hotfixes-october-27/2382684/127",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
-  },
-  {
-   "id": 30595423,
-   "topicId": 2390748,
-   "title": "Class Tuning Incoming - October 27",
-   "excerpt": "The following class adjustments will arrive with scheduled weekly maintenance (October 27 in this region). CLASS CHANGES DRUID Feral All damage done increased by 5%. Does not affect PvP combat. Restoration Developer’s note: These changes are intended to help Restoration Druid deal with burst…",
-   "createdAt": "2026-10-23T22:52:38.516Z",
-   "url": "https://us.forums.blizzard.com/t/class-tuning-incoming-october-27/2390748/1",
-   "author": "Linxy",
-   "userTitle": "Community Manager",
-   "avatar": "https://us.forums.blizzard.com/en/wow/user_avatar/us.forums.blizzard.com/linxy/96/860_2.png"
   }
  ]
 }

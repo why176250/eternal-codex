@@ -31,6 +31,6 @@ const posts = parsed.posts.map((post) => ({
   author: post.name || post.username,
   userTitle: post.user_title || 'Blizzard',
   avatar: post.avatar_template?.startsWith('http') ? post.avatar_template.replace('{size}', '96') : `https://us.forums.blizzard.com${(post.avatar_template || '').replace('{size}', '96')}`,
-})).filter((post) => post.title && !/^About the /i.test(post.title));
+})).filter((post) => post.title && !/^About the /i.test(post.title) && /forever/i.test(`${post.title} ${post.excerpt}`));
 fs.writeFileSync('src/data/blizzard-blue-posts.json', JSON.stringify({ source: url, fetchedAt: new Date().toISOString(), posts }, null, 1));
 console.log(`saved ${posts.length} posts`);

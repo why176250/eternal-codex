@@ -5,7 +5,7 @@ import updates from "@/data/site-updates.json";
 
 export const metadata: Metadata = {
   title: "Patch notes — Blizzard blue posts",
-  description: "Latest official Blizzard blue posts from the World of Warcraft forums, plus Eversixty release notes.",
+  description: "Official Blizzard blue posts about WoW Forever, plus Eversixty release notes.",
   alternates: { canonical: "/patch-notes" },
 };
 
@@ -35,8 +35,8 @@ export default function PatchNotesPage() {
           <p className="eyebrow">Patch notes · Blizzard blue posts</p>
           <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">Blizzard blue posts</h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-            The latest official posts from the World of Warcraft forums. Every entry
-            links back to the Blizzard forum thread.
+            The latest official Blizzard posts about World of Warcraft: Forever.
+            Every entry links back to the Blizzard forum thread.
           </p>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-[11px] text-muted/70">
             <span className="badge">Official source</span>
