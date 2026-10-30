@@ -139,9 +139,10 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
                     {detail.quests.groups.flatMap((group) => group.quests.map((quest) => {
                       const level = quest.levelLine?.match(/Level (\d+)/)?.[1] ?? "—";
                       const starts = quest.objectives.find((objective) => objective.key === "Starts")?.value ?? "—";
+                      const nameColor = group.faction === "Alliance" ? "#4aa3ff" : group.faction === "Horde" ? "#ff6b6b" : "#ede7d7";
                       return (
                         <tr key={quest.id} id={quest.id} className="border-t border-line/40 align-top">
-                          <td className="px-3 py-3"><Link href={`/quests/${quest.id}`} className="flex items-start gap-1.5 text-parchment hover:text-gold-soft"><span className="mt-0.5 text-gold/80">!</span><span className="max-w-56">{quest.name}</span></Link></td>
+                          <td className="px-3 py-3"><Link href={`/quests/${quest.id}`} className="flex items-start gap-1.5 hover:text-gold-soft" style={{ color: nameColor }}><span className="mt-0.5 text-gold/80">!</span><span className="max-w-56">{quest.name}</span></Link></td>
                           <td className="px-3 py-3 text-muted">{level}</td>
                           <td className="px-3 py-3 text-muted">{group.faction === "Both factions" ? "Both" : group.faction}</td>
                           <td className="px-3 py-3 text-muted">—</td>

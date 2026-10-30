@@ -22,12 +22,13 @@ export default async function QuestPage({ params }: { params: Promise<Params> })
   const db = quests.find((quest) => String(quest.id) === id.replace(/^quest-/, ""));
   if (!found && !db) notFound();
   const quest = found?.quest;
+  const factionColor = found?.faction === "Alliance" ? "#4aa3ff" : found?.faction === "Horde" ? "#ff6b6b" : "#ede7d7";
   return (
     <main>
       <div className="container-x pt-8 text-xs text-muted"><Link href="/quests" className="hover:text-gold-soft">Quests</Link> / <span className="text-parchment/80">{quest?.name ?? db?.title}</span></div>
       <section className="container-x max-w-3xl pb-20 pt-8">
         <p className="eyebrow">Quest{found ? ` · ${found.detail.h1}` : ""}</p>
-        <h1 className="display mt-2 text-3xl text-parchment md:text-4xl">{quest?.name ?? db?.title}</h1>
+        <h1 className="display mt-2 text-3xl md:text-4xl" style={{ color: factionColor }}>{quest?.name ?? db?.title}</h1>
         {quest ? <p className="mt-1 text-xs text-muted">{quest.levelLine} · {found?.faction}</p> : null}
         {quest ? (
           <>
