@@ -15,27 +15,6 @@ import {
 } from "@/lib/dungeon-details";
 
 type Params = { slug: string };
-const qualityColors: Record<string, string> = {
-  "0": "#9d9d9d", "1": "#ffffff", "2": "#1eff00", "3": "#4aa3ff", "4": "#a335ee",
-};
-
-function itemId(href: string) {
-  return href.match(/\/item\/(\d+)/)?.[1] ?? "";
-}
-
-function ItemRow({ item, size = 28 }: { item: DetailItem; size?: number }) {
-  const id = itemId(item.href);
-  const content = (
-    <>
-      {item.icon ? <img src={`https://foreverchanges.pro${item.icon}`} alt="" width={size} height={size} className="shrink-0 rounded border border-line/70 object-cover" style={{ width: size, height: size }} loading="lazy" /> : <span className="grid shrink-0 place-items-center rounded border border-line/70 bg-deep text-[9px] text-muted" style={{ width: size, height: size }}>?</span>}
-      <span className="min-w-0 flex-1">
-        <span className="block truncate text-xs" style={{ color: qualityColors[item.quality] ?? "#ede7d7" }}>{item.name}</span>
-        {item.type ? <span className="block text-[10px] text-muted">{item.type}</span> : null}
-      </span>
-    </>
-  );
-  return id ? <Link href={`/item/${id}`} className="flex items-center gap-2 rounded px-1 py-1 hover:bg-white/[0.03]">{content}</Link> : <div className="flex items-center gap-2 px-1 py-1">{content}</div>;
-}
 
 export function generateStaticParams(): Params[] {
   return Object.values(fcSlugById).map((slug) => ({ slug }));
@@ -114,7 +93,7 @@ export default async function DungeonPage({ params }: { params: Promise<Params> 
                     {section.portrait ? <img src={`https://foreverchanges.pro${section.portrait}`} alt="" width={44} height={44} className="size-11 rounded-full border border-line/80 object-cover" /> : <span className="grid size-11 shrink-0 place-items-center rounded-full border border-line/80 bg-deep text-sm text-gold-soft">{section.name.slice(0, 1)}</span>}
                     <div className="min-w-0"><p className="truncate text-sm text-parchment">{section.name}</p><p className="text-[10px] text-muted">{section.kind === "boss" ? section.levelText || "Boss" : section.kind === "trash" ? "Trash mobs" : "Container"}</p></div>
                   </div>
-                  <ul className="mt-3 space-y-1 border-t border-line/50 pt-2">{section.items.map((item) => <li key={`${section.name}-${item.name}`}><ItemRow item={item} /></li>)}</ul>
+                  <ul className="mt-3 space-y-1 border-t border-line/50 pt-2">{section.items.map((item) => <li key={`${section.name}-${item.name}`}><LootItemLink item={item} size={28} /></li>)}</ul>
                 </article>
               ))}
             </div>
