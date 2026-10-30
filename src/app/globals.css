@@ -327,7 +327,7 @@ a {
   margin-left: calc(50% - 50vw);
   padding-left: max(1.25rem, calc((100vw - 85.625rem) / 2 + 1.25rem));
   padding-right: max(1.25rem, calc((100vw - 85.625rem) / 2 + 1.25rem));
-  min-height: 22rem;
+  min-height: 16rem;
   background: transparent;
 }
 
