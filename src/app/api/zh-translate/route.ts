@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import glossary from "@/data/zh-glossary.json";
+import glossary from "@/data/zh-proper.json";
 
 function postProcess(value: string) {
   const fixes: [RegExp, string][] = [

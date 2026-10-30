@@ -41,6 +41,7 @@ const exact: Record<string, string> = {
   "Overview": "概述", "Changes": "变化", "Pros & cons": "优劣势", "Races": "种族",
   "Abilities": "技能", "BiS": "BiS", "Dungeons": "副本", "Classes": "职业",
   "FOREVER · CLASSIC+": "FOREVER · CLASSIC+",
+  "The Hall of Thanes": "领主之厅",
   "滴": "掉落", "邮件": "锁甲", "皮革": "皮甲", "布料": "布甲", "Arms": "武器", "Arms套件": "武器",
   "高难度升级难度": "升级难度高",
   "Every spec, one page": "每个专精，一页看完",
