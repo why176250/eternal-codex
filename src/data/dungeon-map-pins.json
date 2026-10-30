@@ -1,0 +1,515 @@
+{
+ "excavation-site": {
+  "image": "maps/excavation-site.webp",
+  "width": 2100,
+  "height": 1400,
+  "pins": [
+   {
+    "name": "Saltspine",
+    "nameCn": "盐脊",
+    "npcId": null,
+    "x": 49.8,
+    "y": 39.5,
+    "display": 144209
+   },
+   {
+    "name": "Shadetooth",
+    "nameCn": "暗齿",
+    "npcId": 260325,
+    "x": 40,
+    "y": 48.3,
+    "display": 144210
+   },
+   {
+    "name": "Highland Horror",
+    "nameCn": "高地恐魔",
+    "npcId": null,
+    "x": 8.2,
+    "y": 39.5,
+    "display": 9010
+   },
+   {
+    "name": "Relic Guardian",
+    "nameCn": "遗迹守卫者",
+    "npcId": 260326,
+    "x": 34.5,
+    "y": 68.5,
+    "display": 144224
+   }
+  ]
+ },
+ "hall-of-thanes": {
+  "image": "maps/hall-of-thanes.webp",
+  "width": 2100,
+  "height": 1400,
+  "pins": [
+   {
+    "name": "Faldrim Anvilmar",
+    "nameCn": "法德林·安威玛尔",
+    "npcId": 261306,
+    "x": 50.9,
+    "y": 62.5,
+    "display": 142826
+   },
+   {
+    "name": "Magmatus",
+    "nameCn": "茵弗努斯",
+    "npcId": 261316,
+    "x": 62.5,
+    "y": 49,
+    "display": 1070
+   },
+   {
+    "name": "Plunder",
+    "nameCn": "劫掠者",
+    "npcId": 261311,
+    "x": 51,
+    "y": 49.5,
+    "display": 142840
+   },
+   {
+    "name": "Durgen Dirgehammer",
+    "nameCn": "杜根·挽锤",
+    "npcId": 261319,
+    "x": 51,
+    "y": 22,
+    "display": 142837
+   }
+  ]
+ },
+ "ragefire-chasm": {
+  "image": "maps/ragefire-chasm.webp",
+  "width": 1002,
+  "height": 668,
+  "pins": [
+   {
+    "name": "Oggleflint",
+    "nameCn": "奥格弗林特",
+    "npcId": 11517,
+    "x": 56.1,
+    "y": 38,
+    "display": 11611
+   },
+   {
+    "name": "Taragaman the Hungerer",
+    "nameCn": "饥饿者塔拉加曼",
+    "npcId": 11520,
+    "x": 41,
+    "y": 57.7,
+    "display": 7970
+   },
+   {
+    "name": "Jergosh the Invoker",
+    "nameCn": "祈求者耶戈什",
+    "npcId": 11518,
+    "x": 33,
+    "y": 84.5,
+    "display": 11429
+   },
+   {
+    "name": "Bazzalan",
+    "nameCn": "巴扎兰",
+    "npcId": 11519,
+    "x": 41.5,
+    "y": 86.2,
+    "display": 2007
+   }
+  ]
+ },
+ "razorfen-kraul": {
+  "image": "maps/razorfen-kraul.webp",
+  "width": 1002,
+  "height": 668,
+  "pins": [
+   {
+    "name": "Aggem Thorncurse",
+    "nameCn": "阿格姆",
+    "npcId": 4424,
+    "x": 80.8,
+    "y": 54.5,
+    "display": 6097
+   },
+   {
+    "name": "Death Speaker Jargba",
+    "nameCn": "亡语者贾格巴",
+    "npcId": 4428,
+    "x": 87.9,
+    "y": 41.4,
+    "display": 4644
+   },
+   {
+    "name": "Roogug",
+    "nameCn": "鲁古格",
+    "npcId": 6168,
+    "x": 64.8,
+    "y": 42.1,
+    "display": 6110
+   },
+   {
+    "name": "Overlord Ramtusk",
+    "nameCn": "主宰拉姆塔斯",
+    "npcId": 4420,
+    "x": 56.9,
+    "y": 29.8,
+    "display": 4652
+   },
+   {
+    "name": "Razorfen Spearhide",
+    "nameCn": "剃刀沼泽刺鬃守卫",
+    "npcId": 4438,
+    "x": 53.4,
+    "y": 35.5,
+    "display": 6078
+   },
+   {
+    "name": "Agathelos the Raging",
+    "nameCn": "暴怒的阿迦赛罗斯",
+    "npcId": 4422,
+    "x": 11.2,
+    "y": 72.4,
+    "display": 2450
+   },
+   {
+    "name": "Blind Hunter",
+    "nameCn": "盲眼猎手",
+    "npcId": 4425,
+    "x": 11,
+    "y": 30.3,
+    "display": 4735
+   },
+   {
+    "name": "Charlga Razorflank",
+    "nameCn": "卡尔加·刺肋",
+    "npcId": 4421,
+    "x": 26.4,
+    "y": 32.4,
+    "display": 4642
+   },
+   {
+    "name": "Earthcaller Halmgar",
+    "nameCn": "唤地者哈穆加",
+    "npcId": 4842,
+    "x": 49.4,
+    "y": 47.1,
+    "display": 6102
+   }
+  ]
+ },
+ "ruins-of-lordaeron": {
+  "image": "maps/ruins-of-lordaeron.webp",
+  "width": 2100,
+  "height": 1400,
+  "pins": [
+   {
+    "name": "The Baron",
+    "nameCn": "男爵",
+    "npcId": 250660,
+    "x": 58.8,
+    "y": 69.8,
+    "display": 144188
+   },
+   {
+    "name": "Witherfang",
+    "nameCn": "枯牙",
+    "npcId": 250483,
+    "x": 66.8,
+    "y": 39.2,
+    "display": 144189
+   },
+   {
+    "name": "The Abandoned",
+    "nameCn": "被遗弃者",
+    "npcId": 250631,
+    "x": 41,
+    "y": 53.3,
+    "display": 138667
+   },
+   {
+    "name": "Bjork",
+    "nameCn": "比约克",
+    "npcId": 256097,
+    "x": 39.2,
+    "y": 42.5,
+    "display": 144170
+   },
+   {
+    "name": "Rath'mael",
+    "nameCn": "拉斯玛尔",
+    "npcId": 250657,
+    "x": 45.8,
+    "y": 62.7,
+    "display": 144175
+   },
+   {
+    "name": "Viktor the Vile",
+    "nameCn": "邪恶的维克多",
+    "npcId": 256035,
+    "x": 37.7,
+    "y": 64.8,
+    "display": 139455
+   },
+   {
+    "name": "Lordaeron Captain",
+    "nameCn": "洛丹伦上尉",
+    "npcId": 255699,
+    "x": 38.5,
+    "y": 25,
+    "display": 139050
+   }
+  ]
+ },
+ "scarlet-monastery-armory": {
+  "image": "maps/scarlet-monastery-armory.webp"
+ },
+ "scarlet-monastery-cathedral": {
+  "image": "maps/scarlet-monastery-cathedral.webp"
+ },
+ "scarlet-monastery-graveyard": {
+  "image": "maps/scarlet-monastery-graveyard.webp"
+ },
+ "scarlet-monastery-library": {
+  "image": "maps/scarlet-monastery-library.webp"
+ },
+ "the-stockade": {
+  "image": "maps/the-stockade.webp"
+ },
+ "wailing-caverns": {
+  "image": "maps/wailing-caverns.webp",
+  "width": 1002,
+  "height": 668,
+  "pins": [
+   {
+    "name": "Lord Cobrahn",
+    "nameCn": "考布莱恩",
+    "npcId": 3669,
+    "x": 15.6,
+    "y": 58.5,
+    "display": 4213
+   },
+   {
+    "name": "Lady Anacondra",
+    "nameCn": "安娜科德拉",
+    "npcId": 3671,
+    "x": 30.5,
+    "y": 43.2,
+    "display": 4313
+   },
+   {
+    "name": "Lady Anacondra",
+    "nameCn": "安娜科德拉",
+    "npcId": 3671,
+    "x": 28.1,
+    "y": 31.8,
+    "display": 4313
+   },
+   {
+    "name": "Lady Anacondra",
+    "nameCn": "安娜科德拉",
+    "npcId": 3671,
+    "x": 47,
+    "y": 45.6,
+    "display": 4313
+   },
+   {
+    "name": "Lady Anacondra",
+    "nameCn": "安娜科德拉",
+    "npcId": 3671,
+    "x": 40.3,
+    "y": 27.4,
+    "display": 4313
+   },
+   {
+    "name": "Kresh",
+    "nameCn": "克雷什",
+    "npcId": 3653,
+    "x": 25.8,
+    "y": 44.6,
+    "display": 5126
+   },
+   {
+    "name": "Lord Serpentis",
+    "nameCn": "瑟芬迪斯",
+    "npcId": 3673,
+    "x": 62.5,
+    "y": 53.3,
+    "display": 4215
+   },
+   {
+    "name": "Verdan the Everliving",
+    "nameCn": "永生者沃尔丹",
+    "npcId": 5775,
+    "x": 56.4,
+    "y": 47.4,
+    "display": 4256
+   },
+   {
+    "name": "Mutanus the Devourer",
+    "nameCn": "吞噬者穆坦努斯",
+    "npcId": 3654,
+    "x": 34.2,
+    "y": 15.8,
+    "display": 4088
+   }
+  ]
+ },
+ "the-deadmines": {
+  "image": null,
+  "width": 1002,
+  "height": 668,
+  "note": "no image in fc/scarlet; pins only",
+  "pins": [
+   {
+    "name": "Rhahk'Zor",
+    "nameCn": "拉克佐",
+    "npcId": 644,
+    "x": 38.6,
+    "y": 60.9,
+    "display": 14403
+   },
+   {
+    "name": "Miner Johnson",
+    "nameCn": "矿工约翰森",
+    "npcId": 3586,
+    "x": 52.7,
+    "y": 50.5,
+    "display": 556
+   },
+   {
+    "name": "Sneed",
+    "nameCn": "斯尼德",
+    "npcId": 643,
+    "x": 45,
+    "y": 88.9,
+    "display": 7125
+   },
+   {
+    "name": "Sneed's Shredder",
+    "nameCn": "斯尼德的伐木机",
+    "npcId": 642,
+    "x": 48.5,
+    "y": 92.4,
+    "display": 1269
+   }
+  ]
+ },
+ "blackfathom-deeps": {
+  "image": null,
+  "width": 1002,
+  "height": 668,
+  "note": "no image in fc/scarlet; pins only",
+  "pins": [
+   {
+    "name": "Ghamoo-ra",
+    "nameCn": "加摩拉",
+    "npcId": 201722,
+    "x": 32.9,
+    "y": 60.2,
+    "display": 5027
+   },
+   {
+    "name": "Lady Sarevess",
+    "nameCn": "萨利维丝",
+    "npcId": 204068,
+    "x": 10.1,
+    "y": 36,
+    "display": 4979
+   },
+   {
+    "name": "Gelihast",
+    "nameCn": "格里哈斯特",
+    "npcId": 204921,
+    "x": 52.3,
+    "y": 55.1,
+    "display": 1773
+   }
+  ]
+ },
+ "shadowfang-keep": {
+  "image": null,
+  "width": 1002,
+  "height": 668,
+  "note": "no image in fc/scarlet; pins only",
+  "pins": [
+   {
+    "name": "Rethilgore",
+    "nameCn": "雷希戈尔",
+    "npcId": 3914,
+    "x": 66.1,
+    "y": 71.1,
+    "display": 524
+   },
+   {
+    "name": "Fel Steed / Shadow Charger",
+    "nameCn": "魔化骏马/暗影冲锋兽",
+    "npcId": null,
+    "x": 33.1,
+    "y": 62.6,
+    "display": 1952
+   },
+   {
+    "name": "Commander Springvale",
+    "nameCn": "指挥官斯普林瓦尔",
+    "npcId": 4278,
+    "x": 25.5,
+    "y": 55.6,
+    "display": 3223
+   },
+   {
+    "name": "Jordan's Smithing Hammer",
+    "nameCn": "乔丹的锻造之锤",
+    "npcId": null,
+    "x": 37.3,
+    "y": 53.8,
+    "display": null
+   }
+  ]
+ },
+ "gnomeregan": {
+  "image": null,
+  "width": 1002,
+  "height": 668,
+  "note": "no image in fc/scarlet; pins only",
+  "pins": [
+   {
+    "name": "Grubbis",
+    "nameCn": "格鲁比斯",
+    "npcId": 217280,
+    "x": 81.9,
+    "y": 65.1,
+    "display": 6533
+   },
+   {
+    "name": "Viscous Fallout",
+    "nameCn": "粘性辐射尘",
+    "npcId": 220007,
+    "x": 57.6,
+    "y": 56.6,
+    "display": 5497
+   }
+  ]
+ },
+ "city-of-dalaran": {
+  "image": null,
+  "width": 2100,
+  "height": 1400,
+  "note": "no image in fc/scarlet; pins only",
+  "pins": [
+   {
+    "name": "Atrexis the Grave Knight",
+    "nameCn": "墓穴骑士阿特雷克斯",
+    "npcId": 247126,
+    "x": 60.9,
+    "y": 58.9,
+    "display": 145787
+   },
+   {
+    "name": "Lyn the Ignored",
+    "nameCn": "被无视的琳恩",
+    "npcId": 247032,
+    "x": 69,
+    "y": 16.6,
+    "display": 130235
+   }
+  ]
+ }
+}

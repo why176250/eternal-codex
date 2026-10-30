@@ -6,6 +6,7 @@ import { foreverDungeons } from "@/lib/forever";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { site } from "@/lib/site";
 import { getDungeonStats } from "@/lib/dungeon-stats";
+import { getDungeonImagePath, getDungeonMap, getFcDungeon } from "@/lib/dungeon-fc";
 
 type Params = { slug: string };
 
@@ -43,6 +44,9 @@ export default async function DungeonPage({
 
   const drops = getItemsBySource(dungeon.name);
   const foreverStats = getDungeonStats(dungeon.id);
+  const fcDungeon = getFcDungeon(dungeon.id);
+  const dungeonMap = getDungeonMap(dungeon.id);
+  const mapImage = getDungeonImagePath(fcDungeon?.map ?? null);
   const isRaid = dungeon.type === "Raid";
 
   return (
@@ -97,6 +101,44 @@ export default async function DungeonPage({
               <p className="mt-1 text-sm text-parchment">{drops.length}</p>
             </div>
           </div>
+
+          {mapImage && dungeonMap ? (
+            <section className="mt-10">
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <h2 className="display text-xl text-parchment">Dungeon map</h2>
+                  <p className="mt-1 text-xs text-muted">{(dungeonMap.pins?.length ?? 0) > 0 ? `${dungeonMap.pins?.length} boss pins` : "Map only"}</p>
+                </div>
+                <span className="text-[10px] text-muted/60">ForeverChanges map</span>
+              </div>
+              <div className="relative mt-3 overflow-hidden rounded-lg border border-line/70 bg-deep" style={{ aspectRatio: `${dungeonMap.width ?? 16} / ${dungeonMap.height ?? 9}` }}>
+                <img src={mapImage} alt={`${dungeon.name} map`} className="h-full w-full object-cover" />
+                {(dungeonMap.pins ?? []).map((pin) => (
+                  <span key={`${pin.name}-${pin.x}-${pin.y}`} className="group absolute z-10 -translate-x-1/2 -translate-y-1/2" style={{ left: `${pin.x}%`, top: `${pin.y}%` }} title={pin.name}>
+                    <span className="grid size-5 place-items-center rounded-full border border-gold/80 bg-abyss/90 text-[9px] font-bold text-gold-soft shadow-lg">×</span>
+                    <span className="pointer-events-none absolute bottom-full left-1/2 mb-1 hidden -translate-x-1/2 whitespace-nowrap rounded border border-line bg-panel px-1.5 py-0.5 text-[10px] text-parchment group-hover:block">{pin.name}</span>
+                  </span>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          {fcDungeon && (fcDungeon.bosses.length > 0 || fcDungeon.lootFull.length > 0) ? (
+            <section className="mt-10">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {fcDungeon.bosses.length > 0 ? <div className="panel p-4"><p className="eyebrow">Bosses</p><ul className="mt-2 space-y-1 text-sm text-muted">{fcDungeon.bosses.map((boss) => <li key={boss}>{boss}</li>)}</ul></div> : null}
+                {fcDungeon.lootFull.length > 0 ? <div className="panel p-4"><p className="eyebrow">Drops</p><p className="mt-2 text-2xl text-parchment">{fcDungeon.lootCount ?? fcDungeon.lootFull.length}</p><p className="text-xs text-muted">items in the full drop list</p></div> : null}
+              </div>
+              {fcDungeon.lootFull.length > 0 ? (
+                <details className="panel mt-3 p-4">
+                  <summary className="cursor-pointer text-sm text-gold/85">Show full drop list ({fcDungeon.lootFull.length})</summary>
+                  <div className="mt-3 max-h-80 overflow-y-auto text-xs leading-relaxed text-muted">
+                    <div className="grid gap-x-6 gap-y-1 sm:grid-cols-2">{fcDungeon.lootFull.map((item, index) => <p key={`${item}-${index}`}>{item}</p>)}</div>
+                  </div>
+                </details>
+              ) : null}
+            </section>
+          ) : null}
 
           <section className="mt-10">
             <div className="flex items-end justify-between gap-4">
