@@ -6,6 +6,7 @@ const OUT = "src/data/wcl-patch-notes.json";
 const page = await fetch(`${BASE}/en/buding`, { headers: { "User-Agent": "Mozilla/5.0" } });
 if (!page.ok) throw new Error(`page ${page.status}`);
 const html = await page.text();
+const latestBox = parseLatestBox(html);
 const revision = html.match(/r-\d{10,}/)?.[0];
 if (!revision) throw new Error("data revision not found");
 const response = await fetch(`${BASE}/_shuju/${revision}/en/buding.json`, { headers: { "User-Agent": "Mozilla/5.0" } });
@@ -19,6 +20,23 @@ function dateLabel(value) {
 }
 function countText(n, singular, plural = `${singular}s`) {
   return `${n} ${n === 1 ? singular : plural}`;
+}
+function parseLatestBox(source) {
+  const box = source.match(/bd-latest[\s\S]*?<ul>([\s\S]*?)<\/ul>/)?.[1] ?? "";
+  const items = [...box.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map((match) => match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+  const value = (re) => Number(items.join(" ").match(re)?.[1] ?? 0);
+  const date = source.match(/bd-latest-date[\s\S]*?<a[^>]*>([^<]+)<\/a>/)?.[1]?.trim() ?? "";
+  const build = source.match(/bd-latest-date[\s\S]*?href="#([^"]+)"/)?.[1] ?? "";
+  return {
+    displayDate: date,
+    build,
+    buffs: value(/(\d+)\s+buffs?/i),
+    nerfs: value(/(\d+)\s+nerfs?/i),
+    otherChanges: value(/(\d+)\s+other changes/i),
+    talentTreeChanges: value(/(\d+)\s+talent tree changes/i),
+    newItems: value(/(\d+)\s+new items/i),
+    changedItems: value(/(\d+)\s+changed items/i),
+  };
 }
 function groupFrom(entry) {
   const changes = (entry.specs ?? []).flatMap((spec) => (spec.changes ?? []).map((change) => ({ ...change, spec: spec.name })));
@@ -88,12 +106,26 @@ const bluePosts = (raw.bluePosts ?? []).map((post) => ({
 }));
 
 const next = { latest, bluePosts, builds };
+const balance = {
+  date: current?.date ?? "",
+  displayDate: latestBox.displayDate,
+  displayDateZh: current?.date ? `${current.date.slice(0, 4)}年${current.date.slice(5, 7)}月${current.date.slice(8, 10)}日` : "",
+  build: latestBox.build,
+  buffs: latestBox.buffs,
+  nerfs: latestBox.nerfs,
+  otherChanges: latestBox.otherChanges,
+  talentTreeChanges: latestBox.talentTreeChanges,
+  newItems: latestBox.newItems,
+  changedItems: latestBox.changedItems,
+};
 const text = JSON.stringify(next, null, 2) + "\n";
+const balanceText = JSON.stringify(balance, null, 2) + "\n";
 let previous = "";
+let previousBalance = "";
 try { previous = await fs.readFile(OUT, "utf8"); } catch {}
-if (previous === text) {
-  console.log("No changes");
-} else {
-  await fs.writeFile(OUT, text);
-  console.log(`Updated ${builds.length} builds, ${bluePosts.length} blue posts, current ${current?.build}`);
-}
+try { previousBalance = await fs.readFile("src/data/balance-latest.json", "utf8"); } catch {}
+let changed = false;
+if (previous !== text) { await fs.writeFile(OUT, text); changed = true; }
+if (previousBalance !== balanceText) { await fs.writeFile("src/data/balance-latest.json", balanceText); changed = true; }
+if (!changed) console.log("No changes");
+else console.log(`Updated ${builds.length} builds, ${bluePosts.length} blue posts, current ${current?.build}, latest ${balance.displayDate}`);

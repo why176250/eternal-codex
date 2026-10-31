@@ -32,11 +32,11 @@ export default function BalancePage() {
         </div>
         <div className="panel mt-4 p-5 text-sm leading-relaxed text-muted">
           <p className="font-medium text-parchment">What changed</p>
-          <p className="mt-2">The October 28 build is mostly a mage talent pass: Arcane Focus leaves the Arcane tree, Elemental Precision becomes Precision with hit chance for all spells, Improved Fireball becomes Accelerant, Incineration and Critical Mass change ranks, and several talents move. The same build changes the Adventurer’s Tent and four items.</p>
+          <p className="mt-2">The latest build changed {balance.buffs} buffs, {balance.nerfs} nerfs, {balance.otherChanges} other class changes, {balance.talentTreeChanges} talent-tree changes, and {balance.newItems + balance.changedItems} items.</p>
         </div>
         <div className="mt-5 flex flex-wrap gap-3">
           <Link href="/patch-notes" className="rounded-lg border border-line px-4 py-2 text-xs text-muted hover:border-gold/40 hover:text-parchment">← All patch notes</Link>
-          <a href={balance.source} target="_blank" rel="noreferrer" className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft">Full class-by-class source →</a>
+          <Link href="/patch-notes" className="rounded-lg border border-gold/40 bg-gold/[0.06] px-4 py-2 text-xs text-gold-soft">Full class-by-class notes →</Link>
         </div>
       </section>
     </main>

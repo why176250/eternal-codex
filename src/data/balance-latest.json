@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-28",
-  "displayDate": "October 28, 2026",
-  "build": "1.60.1.70685",
-  "buffs": 1,
-  "nerfs": 1,
-  "otherChanges": 3,
-  "talentTreeChanges": 5,
-  "newItems": 0,
-  "changedItems": 0,
-  "source": "https://wowforever.wclbox.com/en/buding"
+  "date": "2026-10-30",
+  "displayDate": "October 30, 2026",
+  "displayDateZh": "2026年10月30日",
+  "build": "1.60.1.70707",
+  "buffs": 17,
+  "nerfs": 9,
+  "otherChanges": 26,
+  "talentTreeChanges": 58,
+  "newItems": 39,
+  "changedItems": 56
 }

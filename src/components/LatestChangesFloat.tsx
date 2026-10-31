@@ -52,7 +52,7 @@ export function LatestChangesFloat({ zh = false, basePath = "" }: { zh?: boolean
           ×
         </button>
         <p className="text-base font-semibold text-[#f0c96a]">{zh ? "最近一次平衡调整" : "Latest balance changes"}</p>
-        <p className="mt-1 text-sm text-[#6fcf97]">{zh ? "2026年10月28日" : balance.displayDate}</p>
+        <p className="mt-1 text-sm text-[#6fcf97]">{zh ? balance.displayDateZh : balance.displayDate}</p>
         <p className="mt-1 text-[10px] text-muted/60">{zh ? "版本" : "Build"} {balance.build}</p>
         <div className="mt-3 space-y-1.5 text-xs">
           <p className="flex items-center gap-1.5 text-[#6fcf97]"><span aria-hidden="true">↑</span>{balance.buffs} {zh ? "项增强" : "buffs"}</p>
