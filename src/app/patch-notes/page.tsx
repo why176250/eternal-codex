@@ -49,7 +49,7 @@ export default function PatchNotesPage() {
             <div>
               <p className="eyebrow">World of Warcraft: Forever</p>
               <h1 className="display mt-2 text-4xl text-parchment md:text-6xl">Patch Notes <small className="mt-1 block text-lg font-normal text-gold-soft md:text-2xl">What every beta build changed</small></h1>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">The 24 updates of the WoW Forever beta, build by build, newest first. Open a class to see its spell and talent buffs, nerfs and other changes one by one.</p>
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">The {builds.length} updates of the WoW Forever beta, build by build, newest first. Open a class to see its spell and talent buffs, nerfs and other changes one by one.</p>
             </div>
             <aside className="border border-gold/25 bg-[#101017]/85 p-4 shadow-2xl backdrop-blur">
               <p className="text-xs uppercase tracking-[0.18em] text-gold/80">Latest balance changes</p>
@@ -100,7 +100,7 @@ export default function PatchNotesPage() {
             </article>
           ))}
         </div>
-        <div className="mt-8 flex flex-wrap gap-3"><Link href="/data" className="text-xs text-gold/80 hover:text-gold-soft">Browse the database →</Link><a href="https://wowforever.wclbox.com/en/buding" target="_blank" rel="noreferrer" className="text-xs text-muted hover:text-parchment">Source: WCLBox patch notes →</a></div>
+        <div className="mt-8 flex flex-wrap gap-3"><Link href="/data" className="text-xs text-gold/80 hover:text-gold-soft">Browse the database →</Link></div>
       </section>
     </main>
   );
