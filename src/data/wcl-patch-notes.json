@@ -3,7 +3,7 @@
     "items": [
       {
         "cls": "is-buff",
-        "text": "17 buffs"
+        "text": "18 buffs"
       },
       {
         "cls": "is-nerf",
@@ -1216,8 +1216,26 @@
       "build": "Build 1.60.1.70707",
       "tag": "Current",
       "isCurrent": true,
-      "summary": "6 classes and 8 races changed spells and talents; 39 new items.",
+      "summary": "7 classes and 8 races changed spells and talents; 39 new items.",
       "groups": [
+        {
+          "name": "Warrior",
+          "line": "Vengeance",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "1 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Vengeance",
+              "status": "Buff",
+              "delta": "",
+              "desc": "Immediately counters enemies, dealing 138 + 25% melee attack power to 168 + 25% melee attack power damage, and dealing a lot of threat. Revenge can only be used after a successful block, dodge, or parry."
+            }
+          ]
+        },
         {
           "name": "Paladin",
           "line": "Seal of Righteousness, Light's Vigil, Holy Power, Spiritual Focus",
@@ -2288,7 +2306,7 @@
         }
       ],
       "counts": {
-        "buffs": 17,
+        "buffs": 18,
         "nerfs": 9,
         "changes": 26,
         "talentChanges": 75,
