@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 export default function ZhHomePage() {
   return (
     <main>
-      <LatestChangesFloat basePath="/zh" />
-      <QuickStartRail basePath="/zh" />
+      <LatestChangesFloat zh basePath="/zh" />
+      <QuickStartRail zh basePath="/zh" />
       <section className="container-x pb-10 pt-3 md:pt-4">
         <div className="hero-banner flex flex-col gap-6 p-4 md:p-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
@@ -161,7 +161,7 @@ export default function ZhHomePage() {
           </span>
         </Link>
 
-        <SpecTierBoard compact basePath="/zh" />
+        <SpecTierBoard compact zh basePath="/zh" />
 
         <div className="mt-5 border-t border-line/60 pt-4 min-[1800px]:hidden">
           <div className="flex flex-wrap items-end justify-between gap-4">
