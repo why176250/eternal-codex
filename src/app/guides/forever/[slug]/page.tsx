@@ -47,7 +47,7 @@ export default async function ForeverGuidePage({
       <article className="container-x max-w-3xl pb-20 pt-8">
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="badge">{guide.category || "Guide"}</span>
-          <span className="text-muted">Imported · Sargeras</span>
+          <span className="text-muted">Official data, Wowhead</span>
           <span className="text-muted/60">
             Updated{" "}
             {new Intl.DateTimeFormat("en-US", {

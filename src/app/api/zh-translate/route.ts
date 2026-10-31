@@ -18,6 +18,8 @@ function postProcess(value: string) {
   out = out
     .replace(/高难度升级难度/g, "升级难度高")
     .replace(/暴风雪/g, "暴雪")
+    .replace(/官方数据[，,]\s*Wowhead/gi, "官方数据，WCL")
+    .replace(/官方数据与\s*Wowhead/gi, "官方数据与 WCL")
     .replace(/武器和天赋/g, "法术和天赋")
     .replace(/类别/g, "职业")
     .replace(/覆盖/g, "涵盖")

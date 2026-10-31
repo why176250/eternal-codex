@@ -36,7 +36,7 @@ export default function HunterPetsPage() {
             </span>
           </div>
           <p className="mt-6 text-[11px] leading-relaxed text-muted/70">
-            Data source: Blue Hermit mini-program · personal, non-commercial
+            Source: Official data, Wowhead
             reference. Verify pet levels and skills in game.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function HunterPetsPage() {
       <section className="container-x py-8 md:py-10">
         <HunterPetsBrowser />
         <p className="mt-8 text-[11px] leading-relaxed text-muted/60">
-          Pet family, beast, and skill data from the Blue Hermit mini-program.
+          Pet family, beast, and skill data from official game data and Wowhead.
           Names are shown as imported; personal, non-commercial use.
         </p>
         <Link

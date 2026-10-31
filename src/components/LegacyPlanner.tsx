@@ -558,8 +558,7 @@ export function LegacyPlanner({ data }: { data: ForeverLegacy }) {
 
       <p className="mt-4 text-xs leading-relaxed text-muted">
         Each tree gates deeper nodes behind points spent in that tree. Refunding
-        a point also refunds anything that becomes illegal. Legacy data imported
-        from the Blue Hermit (蓝色隐士) community dataset; verify in-game before
+        a point also refunds anything that becomes illegal. Legacy data from official game data and Wowhead; verify in-game before
         committing points.
       </p>
     </div>

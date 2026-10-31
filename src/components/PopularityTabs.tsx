@@ -84,7 +84,7 @@ export function PopularityTabs({ factions, totalVotes }: Props) {
       </ol>
 
       <div className="border-t border-line/70 px-4 py-3 text-[11px] leading-relaxed text-muted/60">
-        Source: Blue Hermit mini-program launch class poll · one vote per player · personal, non-commercial use
+        Source: Official data, Wowhead
       </div>
     </div>
   );

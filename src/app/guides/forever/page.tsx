@@ -4,9 +4,9 @@ import { foreverGuides } from "@/lib/forever";
 import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 
 export const metadata: Metadata = {
-  title: "Forever guides — imported from Sargeras",
+  title: "Forever guides — official data",
   description:
-    "Eight full Forever guides covering classes, professions, PvP ranks, and hidden quests, imported from the Sargeras community project.",
+    "Eight full Forever guides covering classes, professions, PvP ranks, and hidden quests, built from official game data and Wowhead.",
   alternates: { canonical: "/guides/forever" },
 };
 
@@ -21,7 +21,7 @@ export default function ForeverGuidesPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Class quests, crafting speed gear, PvP ranks, and hidden books —
-            written by the Sargeras community, translated into English, with
+            built from official game data and Wowhead, with
             images localized.
           </p>
           <div className="mt-6">
@@ -40,7 +40,7 @@ export default function ForeverGuidesPage() {
             >
               <div className="flex items-center justify-between gap-3 text-xs">
                 <span className="badge">{guide.category || "Guide"}</span>
-                <span className="text-muted">Sargeras</span>
+                <span className="text-muted">Official data, Wowhead</span>
               </div>
               <h2 className="display mt-4 text-xl text-parchment">
                 {guide.title}

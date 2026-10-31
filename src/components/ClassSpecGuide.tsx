@@ -176,7 +176,7 @@ export function ClassSpecGuide({ specs, accent, className }: Props) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line/70 px-5 py-4 text-[11px] leading-relaxed text-muted/70 md:px-7">
         <p>
-          Source: Blue Hermit mini-program · Class Guides (Forever) · Updated{" "}
+          Source: Official data, Wowhead · Updated{" "}
           {activeSpec.updatedAt} · Personal, non-commercial use
         </p>
         <p className="text-muted/50">

@@ -81,7 +81,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
       </section>
 
       <section className="container-x py-7">
-        {level === "60" ? <div className="panel p-6"><p className="eyebrow">Level 60 BiS</p><h2 className="display mt-2 text-2xl text-parchment">Level 60 sets open after launch</h2><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">The current WCLBox import only contains level 30 beta sets. Level 60 BiS will be added once the launch data is available.</p><Link href={levelHref("30")} className="mt-4 inline-block rounded-md border border-gold/40 px-3 py-2 text-xs text-gold-soft">Back to Level 30 →</Link></div> : <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
+        {level === "60" ? <div className="panel p-6"><p className="eyebrow">Level 60 BiS</p><h2 className="display mt-2 text-2xl text-parchment">Level 60 sets open after launch</h2><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">The current official data import only contains level 30 beta sets. Level 60 BiS will be added once the launch data is available.</p><Link href={levelHref("30")} className="mt-4 inline-block rounded-md border border-gold/40 px-3 py-2 text-xs text-gold-soft">Back to Level 30 →</Link></div> : <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
           <div>
             <div className="panel p-4">
               <div className="flex flex-wrap items-end justify-between gap-2"><div><p className="eyebrow">Character equipment</p><h2 className="display mt-1 text-xl text-parchment">{side === "a" ? "Alliance" : "Horde"} setup</h2></div><span className="text-[10px] text-muted/60">{gear.length} slots</span></div>
@@ -104,7 +104,7 @@ export default async function BisPage({ searchParams }: { searchParams: SearchPa
             <div className="panel p-4 text-[11px] leading-relaxed text-muted/70">Calculated from the first item in each slot, two rings and the listed enchants, using level 30 class and racial base stats. Excludes buffs and talents.</div>
           </aside>
         </div>}
-        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><a href={`https://wowforever.wclbox.com/en/peizhuang/${selected}`} target="_blank" rel="noreferrer" className="text-muted hover:text-parchment">Source: WCLBoxBiS →</a></div>
+        <div className="mt-6 flex flex-wrap gap-3 text-xs"><Link href="/bis/builds" className="text-muted hover:text-parchment">Build browser →</Link><span className="text-muted">Source: Official data, Wowhead</span></div>
       </section>
     </main>
   );

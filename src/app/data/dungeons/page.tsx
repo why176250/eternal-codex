@@ -7,7 +7,7 @@ import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 export const metadata: Metadata = {
   title: "Dungeon data — Forever instances and routes",
   description:
-    "All 45 Forever dungeons, raids, and travel routes with level bands, locations, and notes, imported from the Sargeras community dataset.",
+    "All 45 Forever dungeons, raids, and travel routes with level bands, locations, and notes, built from official game data and Wowhead.",
   alternates: { canonical: "/data/dungeons" },
 };
 

@@ -41,11 +41,11 @@ export default async function ItemsPage({ searchParams }: { searchParams: Search
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Search {dbItems.length.toLocaleString("en-US")} Forever items by name,
             type, and slot. Names, quality, and item level are imported from the
-            Blue Hermit dataset.
+            Official game data and Wowhead.
           </p>
           <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
             <span className="rounded-full border border-line/80 px-3 py-1">{dbItems.length.toLocaleString("en-US")} items</span>
-            <span className="rounded-full border border-line/80 px-3 py-1">Blue Hermit</span>
+            <span className="rounded-full border border-line/80 px-3 py-1">Official data, Wowhead</span>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 export const metadata: Metadata = {
   title: "Vendor recipes — profession crafting costs",
   description:
-    "320 profession recipes with reagent lists, grouped by profession. Imported from the Sargeras community dataset.",
+    "320 profession recipes with reagent lists, grouped by profession. Built from official game data and Wowhead.",
   alternates: { canonical: "/data/vendors" },
 };
 

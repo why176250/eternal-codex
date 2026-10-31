@@ -7,7 +7,7 @@ import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 export const metadata: Metadata = {
   title: "Talent planner — all nine classes",
   description:
-    "Browse and allocate talent points for all nine Forever classes. Talent data imported from the Sargeras community dataset.",
+    "Browse and allocate talent points for all nine Forever classes. Talent data from official game data and Wowhead.",
   alternates: { canonical: "/tools/talents" },
 };
 

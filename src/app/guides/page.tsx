@@ -30,7 +30,7 @@ export default function GuidesPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Class quests, crafting speed gear, PvP ranks, hidden books, and
-            more. Imported from the Sargeras community project and translated
+            more. Built from official game data and Wowhead, translated
             into English.
           </p>
           <div className="mt-5 flex flex-wrap gap-2 text-[11px] text-muted">
@@ -38,7 +38,7 @@ export default function GuidesPage() {
               {foreverGuides.length} guides
             </span>
             <span className="rounded-full border border-line/80 px-3 py-1">
-              Imported · Sargeras
+              Official data, Wowhead
             </span>
             <span className="rounded-full border border-line/80 px-3 py-1">
               Updated {updatedLabel("2026-10-28")}

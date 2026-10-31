@@ -7,7 +7,7 @@ import { isPlannerValid } from "@/lib/talent-build-valid";
 export const metadata: Metadata = {
   title: "Talent Hall — community builds",
   description:
-    "1,100+ community talent builds for World of Warcraft: Forever, with point distribution, author ranking, and spec popularity. Collected from the Sargerastech community site.",
+    "1,100+ community talent builds for World of Warcraft: Forever, with point distribution, author ranking, and spec popularity. Collected from official game data and Wowhead.",
   alternates: { canonical: "/tools/builds" },
 };
 
@@ -43,7 +43,7 @@ export default function BuildsPage() {
             {builds.length.toLocaleString("en-US")} builds
           </span>
           <span className="rounded-full border border-line/80 px-3 py-1">
-            Source: Sargerastech
+            Source: Official data, Wowhead
           </span>
         </div>
       </header>

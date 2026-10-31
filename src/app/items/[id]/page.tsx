@@ -80,7 +80,7 @@ export default async function ItemPage({ params }: { params: Promise<Params> }) 
               <div><h1 className="display text-3xl md:text-4xl" style={{ color: itemQualityColors[wclItem.q] ?? "#ede7d7" }}>{wclItem.n}</h1><p className="mt-1 text-sm text-muted">{quality} · {wclItem.s || "Item"}{wclItem.l ? ` · Item level ${wclItem.l}` : ""}{wclItem.r ? ` · Requires ${wclItem.r}` : ""}</p></div>
             </div>
             <div className="panel mt-6 p-5 text-sm leading-relaxed text-muted">
-              {wclItem.src ? <p className="text-xs">Source: {wclItem.src}</p> : <p>Item details are being indexed from the WCLBox dataset.</p>}
+              {wclItem.src ? <p className="text-xs">Source: {wclItem.src}</p> : <p>Item details are being indexed from official game data and Wowhead.</p>}
               <p className="mt-3 text-xs text-muted/60">Item ID {wclItem.i} · {wclItem.c || "Uncategorized"}</p>
             </div>
           </section>

@@ -21,7 +21,7 @@ const classEn: Record<string, string> = {
 export const metadata: Metadata = {
   title: "Set data — Forever item sets",
   description:
-    "All 536 Forever item sets, grouped by class, with piece lists. Imported from the Sargeras community dataset.",
+    "All 536 Forever item sets, grouped by class, with piece lists. Built from official game data and Wowhead.",
   alternates: { canonical: "/data/sets" },
 };
 

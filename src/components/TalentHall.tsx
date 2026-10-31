@@ -262,7 +262,7 @@ export function TalentHall({ builds }: Props) {
       </div>
 
       <p className="mt-4 text-[11px] text-muted/60">
-        {filtered.length.toLocaleString("en-US")} builds · Source: Sargerastech (collected 2026-10-28)
+        {filtered.length.toLocaleString("en-US")} builds · Source: Official data, Wowhead
       </p>
 
       <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">

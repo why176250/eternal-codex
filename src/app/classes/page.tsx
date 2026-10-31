@@ -54,7 +54,7 @@ export default function ClassesPage() {
           <div className="panel mt-10 p-5 text-sm leading-relaxed text-muted">
             <p className="font-medium text-parchment">How these pages are built</p>
             <p className="mt-1">
-              Spec guides use imported Forever data from the 蓝色隐士 community
+              Spec guides use official game data and Wowhead
               database. Each page credits its source and is marked for personal,
               non-commercial use. Beta values can change — verify the final
               tooltip in game.

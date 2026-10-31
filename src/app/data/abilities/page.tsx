@@ -6,7 +6,7 @@ import { ForeverSourceNote } from "@/components/ForeverSourceNote";
 export const metadata: Metadata = {
   title: "Class abilities — Forever spell index",
   description:
-    "Search 12,799 Forever abilities and spells by name and school. Imported from the Sargeras community dataset.",
+    "Search 12,799 Forever abilities and spells by name and school. Built from official game data and Wowhead.",
   alternates: { canonical: "/data/abilities" },
 };
 

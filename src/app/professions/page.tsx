@@ -319,7 +319,7 @@ export default async function ProfessionsPage({ searchParams }: { searchParams: 
           </div>
         ) : null}
 
-        <p className="mt-8 text-[11px] leading-relaxed text-muted/60">Recipe data from the Blue Hermit mini-program. Recipe and reagent names are shown as imported; personal, non-commercial use.</p>
+        <p className="mt-8 text-[11px] leading-relaxed text-muted/60">Recipe data from official game data and Wowhead.</p>
       </section>
     </main>
   );

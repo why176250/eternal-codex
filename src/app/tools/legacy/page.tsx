@@ -6,7 +6,7 @@ import { foreverLegacy } from "@/lib/forever";
 export const metadata: Metadata = {
   title: "Legacy planner — 3 trees, 65 points",
   description:
-    "Plan the Forever legacy progression: three trees, point gates, rank text, and the 15/25/40/55 reward track. Imported from the Blue Hermit community dataset.",
+    "Plan the Forever legacy progression: three trees, point gates, rank text, and the 15/25/40/55 reward track. Imported from official game data and Wowhead.",
   alternates: { canonical: "/tools/legacy" },
 };
 
@@ -39,7 +39,7 @@ export default function LegacyPage() {
         </div>
 
         <p className="mt-6 text-xs leading-relaxed text-muted/70">
-          Legacy data: Blue Hermit (蓝色隐士) community dataset, imported for
+          Legacy data from official game data and Wowhead, imported for
           personal, non-commercial reference. Point values and ranks can change
           before launch — verify in-game.
         </p>
