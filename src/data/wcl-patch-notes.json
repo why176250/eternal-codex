@@ -33,10 +33,32 @@
       "date": "2026-10-29T21:00:50.143Z",
       "dateLabel": "2026.10.29",
       "author": "Blizzard employees",
-      "title": "World of Warcraft: Forever launches globally on November 4th!",
+      "title": "World of Warcraft: Forever launches globally on November 4",
       "url": "https://us.forums.blizzard.com/en/wow/t/world-of-warcraft-forever-goes-live-globally-november-4/2396008/1",
       "paras": [
-        "Embark on your first adventure in World of Warcraft: Forever, or return to a refreshed Azeroth. The game will launch globally on November 4th at 3: 00pm PST. Adventure to level 60 on the Classic Continent, explore new stories, and meet like-minded adventurers. It will coexist with official suits and Classic Era, making it your permanent home, community first, and journey.\nAs important as the destination.\nview the full text"
+        "Blizzard has announced an opening time: November 4 at 15:00 PST, or 23:00 UTC, worldwide. Team copies open December 9."
+      ]
+    },
+    {
+      "id": "blue-post-30673599",
+      "date": "2026-10-29T19:02:50.481Z",
+      "dateLabel": "2026.10.29",
+      "author": "Blizzard employees",
+      "title": "Old Player's Return Guide",
+      "url": "https://us.forums.blizzard.com/en/wow/t/return-to-azeroth-in-world-of-warcraft-forever/2395922/1",
+      "paras": [
+        "Blizzard's note for returning players: Play with a valid World of Warcraft subscription or playtime, installed in the game version menu of Battle.net."
+      ]
+    },
+    {
+      "id": "blue-post-30658235",
+      "date": "2026-10-28T17:00:10.883Z",
+      "dateLabel": "2026.10.28",
+      "author": "Blizzard employees",
+      "title": "A beginner's guide",
+      "url": "https://us.forums.blizzard.com/en/wow/t/new-player%E2%80%99s-starter-guide-welcome-to-world-of-warcraft-forever/2394974/1",
+      "paras": [
+        "Blizzard's introductory article for new players: Create characters starting at level 1, understand the basic gameplay, and find your place in this long-running world."
       ]
     },
     {
@@ -87,7 +109,7 @@
       "title": "October 27 Development Note Supplement: Race Speciality",
       "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/8",
       "paras": [
-        "Blizzard added the missing elements to the Race Feature Update thread on October 26, which also took effect at launch."
+        "Blizzard added the missing content to the race adjustment post on October 26, and all of it has now entered the game data."
       ]
     },
     {
@@ -98,7 +120,7 @@
       "title": "October 26 Development Note: Race Speciality Adjustment",
       "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7",
       "paras": [
-        "The last round of race adjustment before opening service, which takes effect from the server when opening service, is not available in the current client."
+        "The final round of changes to race feats before service launch. These changes, with the exception of Blood Berserk, have been included in the October 30 release (1.60.1.70707) hotfix data, listed in the update for that release."
       ]
     },
     {
@@ -1232,7 +1254,7 @@
               "name": "Vengeance",
               "status": "Buff",
               "delta": "",
-              "desc": "Immediately counters enemies, dealing 138 + 25% melee attack power to 168 + 25% melee attack power damage, and dealing a lot of threat. Revenge can only be used after a successful block, dodge, or parry."
+              "desc": "Immediately counters enemies, dealing 138 + 22.5% melee attack power to 168 + 22.5% melee attack power damage, and dealing a lot of threat. Revenge can only be used after a successful block, dodge, or parry."
             }
           ]
         },
@@ -1357,6 +1379,18 @@
               "desc": "Increases critical strike chance by 30% when Holy Shock is cast on allies unaffected by your Oath of Holy Light."
             },
             {
+              "name": "Blessing of Light",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Greater Blessing of Light",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Righteous Fury",
               "status": "",
               "delta": "",
@@ -1475,6 +1509,24 @@
               "status": "",
               "delta": "",
               "desc": "Reduces the duration of Stun and Charm effects by 20%."
+            },
+            {
+              "name": "save",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "group rescue",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Undo",
+              "status": "",
+              "delta": "",
+              "desc": ""
             },
             {
               "name": "Vindication",
@@ -2386,6 +2438,12 @@
               "name": "Ice Lance",
               "status": "",
               "delta": "null → Cooldown time 8 seconds",
+              "desc": ""
+            },
+            {
+              "name": "Frost Blast",
+              "status": "",
+              "delta": "",
               "desc": ""
             }
           ]
