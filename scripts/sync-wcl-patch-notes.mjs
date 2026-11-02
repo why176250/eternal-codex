@@ -84,16 +84,16 @@ const builds = (raw.builds ?? []).map((build) => {
 });
 
 const current = builds.find((build) => build.isCurrent) ?? builds[0];
-const latest = current ? {
+const latest = {
   items: [
-    { cls: "is-buff", text: countText(current.counts.buffs, "buff") },
-    { cls: "is-nerf", text: countText(current.counts.nerfs, "nerf") },
-    { cls: "is-change", text: countText(current.counts.changes, "other change") },
-    { cls: "is-items", text: countText(current.counts.talentChanges, "talent tree change") },
-    { cls: "is-items", text: countText(current.counts.newItems, "new item") },
-    { cls: "is-items", text: countText(current.counts.changedItems, "changed item") },
+    { cls: "is-buff", text: countText(latestBox.buffs, "buff") },
+    { cls: "is-nerf", text: countText(latestBox.nerfs, "nerf") },
+    { cls: "is-change", text: countText(latestBox.otherChanges, "other change") },
+    { cls: "is-items", text: `${latestBox.talentTreeChanges} talent tree changes` },
+    { cls: "is-items", text: countText(latestBox.newItems, "new item") },
+    { cls: "is-items", text: countText(latestBox.changedItems, "changed item") },
   ],
-} : { items: [] };
+};
 
 const bluePosts = (raw.bluePosts ?? []).map((post) => ({
   id: `blue-post-${post.id}`,
