@@ -7,6 +7,7 @@ import { LangSync } from "@/components/LangSync";
 import { ZhTranslate } from "@/components/ZhTranslate";
 import { headers } from "next/headers";
 import { site } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -71,6 +72,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body>
+        <Analytics />
         <LangSync />
         <ZhTranslate />
         <div className="flex min-h-screen flex-col">
