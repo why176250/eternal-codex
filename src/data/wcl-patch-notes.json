@@ -3,31 +3,64 @@
     "items": [
       {
         "cls": "is-buff",
-        "text": "18 buffs"
+        "text": "37 buffs"
       },
       {
         "cls": "is-nerf",
-        "text": "9 nerfs"
+        "text": "5 nerfs"
       },
       {
         "cls": "is-change",
-        "text": "26 other changes"
+        "text": "6 other changes"
       },
       {
         "cls": "is-items",
-        "text": "63 talent tree changes"
+        "text": "42 talent tree changes"
       },
       {
         "cls": "is-items",
-        "text": "39 new items"
+        "text": "0 new items"
       },
       {
         "cls": "is-items",
-        "text": "56 changed items"
+        "text": "54 changed items"
       }
     ]
   },
   "bluePosts": [
+    {
+      "id": "blue-post-30743268",
+      "date": "2026-11-03T20:00:09.240Z",
+      "dateLabel": "2026.11.03",
+      "author": "Blizzard employees",
+      "title": "Play World of Warcraft: Forever with the controller",
+      "url": "https://us.forums.blizzard.com/en/wow/t/explore-wow-forever-with-a-gamepad/2400119/1",
+      "paras": [
+        "Prefer a controller? Learn another way to play World of Warcraft Forever: from movement and casting to tweaking settings. GamePad support is in beta, with more improvements coming.\nview the full text"
+      ]
+    },
+    {
+      "id": "blue-post-30741364",
+      "date": "2026-11-03T18:00:10.220Z",
+      "dateLabel": "2026.11.03",
+      "author": "Blizzard employees",
+      "title": "World of Warcraft: Forever--New Changes and Familiar Tastes",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever%E2%80%94what%E2%80%99s-new-and-what-feels-familiar/2400000/1",
+      "paras": [
+        "World of Warcraft: Forever has something for explorers, dungeon groups, collectors, role-players and PvP fans. Learn how its interface convenience, course updates and progress system complement the unique understanding of the original World of Warcraft, and what happens if you play modern games as well.\nview the full text"
+      ]
+    },
+    {
+      "id": "blue-post-30732723",
+      "date": "2026-11-03T03:20:33.210Z",
+      "dateLabel": "2026.11.03",
+      "author": "community Manager",
+      "title": "November 2 Development Note: Last round of changes before service launch",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
+      "paras": [
+        "Summarize the changes made in the two and a half weeks since October 15. The damage of all classes has increased, and the health of high-level monsters has also increased accordingly. Between the opening of the server and the opening of the next month's team dungeon, except for loopholes and obvious imbalances, there will be no major numerical adjustments."
+      ]
+    },
     {
       "id": "blue-post-30675695",
       "date": "2026-10-29T21:00:50.143Z",
@@ -107,7 +140,7 @@
       "dateLabel": "2026.10.27",
       "author": "community Manager",
       "title": "October 27 Development Note Supplement: Race Speciality",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/8",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/8",
       "paras": [
         "Blizzard added the missing content to the race adjustment post on October 26, and all of it has now entered the game data."
       ]
@@ -118,7 +151,7 @@
       "dateLabel": "2026.10.26",
       "author": "community Manager",
       "title": "October 26 Development Note: Race Speciality Adjustment",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/7",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/7",
       "paras": [
         "The final round of changes to race feats before service launch. These changes, with the exception of Blood Berserk, have been included in the October 30 release (1.60.1.70707) hotfix data, listed in the update for that release."
       ]
@@ -365,7 +398,7 @@
       "dateLabel": "2026.10.16",
       "author": "community Manager",
       "title": "October 15 Development Instructions",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/6",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/6",
       "paras": [
         "The beta realm has been updated to build 70425. Here are the main changes for this round organized by category."
       ]
@@ -466,7 +499,7 @@
       "dateLabel": "2026.10.08",
       "author": "community Manager",
       "title": "October 8 Development Notes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/5",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/5",
       "paras": [
         "October 8-The beta realm update opens new dungeons and adjusts dungeon experience and class values."
       ]
@@ -708,7 +741,7 @@
       "dateLabel": "2026.10.01",
       "author": "community Manager",
       "title": "October 1 Development Notes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/4",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/4",
       "paras": [
         "Level cap increased to level 30. Added Dungeon Digging Field: Wetlands (levels 26-31), Razor Heights and Aldaman. Improved visibility in rainy days, temporarily removed ray-tracing shadow options. Added Barber Shop to Darnassus and Thunder Bluff. Campfire no longer deals damage to players below level 5. All nine classes have been modified, with Warrior changing the most.(Critical Strike Rage, Fury, and Defense talent reshuffled); Druids removed Tiger Rage and added two Cat Form talents. Dungeon quest bonus EXP reduced by 50%, Honor item price increased by approximately 50%, Honor cap increased to 25000."
       ]
@@ -928,7 +961,7 @@
       "dateLabel": "2026.09.24",
       "author": "community Manager",
       "title": "September 24 Development Notes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696/1",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/1",
       "paras": [
         "Fixed issues such as not playing forward shake when casting spells, unable to cast spells during Camp Fire buff, etc. Fixed a memory leak that caused performance to gradually decrease. Reset talent for only 1 silver during beta. Druid multiple healing skills can critical hit, rage base damage increased by about 50%, Mangle renamed Primal Bite; Paladin Holy Strike damage increased by all levels, cooldown reduced to 10 seconds; Mage Fire talent buff duration increased; Shaman Lightning Arrow high level damage increased."
       ]
@@ -1233,11 +1266,1326 @@
   ],
   "builds": [
     {
+      "date": "2026-11-02",
+      "dateLabel": "November 2, 2026",
+      "build": "Build undefined",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "6 classes and 1 race changed spells and talents; 0 new items.",
+      "groups": [
+        {
+          "name": "Warrior",
+          "line": "Improved Tactical Mastery, Two-Handed Weapon Specialization, Taste for Blood, Improved Slam",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "10 buff"
+            },
+            {
+              "cls": "is-change",
+              "text": "4 changes"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Improved Tactical Mastery",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Two-Handed Weapon Specialization",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Taste for Blood",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Slam",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Booming Voice",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Enrage",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "reckless swing",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "blood drinkers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flurry",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Cyclone Slash",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloodthirst",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Defiance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Defensive Stance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Slam",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Paladin",
+          "line": "Two-Handed Weapon Specialization, Vengeance",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "2 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Two-Handed Weapon Specialization",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vengeance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Rogue",
+          "line": "Improved Expose Armor, Murder, Lethality, Vigor",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "21 buff"
+            },
+            {
+              "cls": "is-nerf",
+              "text": "7 nerf"
+            },
+            {
+              "cls": "is-change",
+              "text": "10 changes"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Improved Expose Armor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Murder",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lethality",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vigor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blood spatter",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Relentless Strikes",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Venom",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Seal Fate",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mutilate",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Eviscerate",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Sinister Strike",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Sprint",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "calmness",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flawless Execution",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Weapon Expertise",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Aggression",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dual Wield Specialization",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sharp Flash",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Change",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Opportunity",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dirty Deeds",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Camouflage",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Premeditation",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Saw Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Elusiveness",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ghostly Strike",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Distract",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Quick Escape",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Heightened Senses",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Hemorrhage",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Quietus",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cutthroat",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bootknife",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Thousand Cuts",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Death Mark",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "stab",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deadly Poison",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Instant Poison",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Shaman",
+          "line": "Lightning Overload, Lava Burst, Thunder Summon, Elemental Mastery",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "10 buff"
+            },
+            {
+              "cls": "is-nerf",
+              "text": "1 nerf"
+            },
+            {
+              "cls": "is-change",
+              "text": "5 changes"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Lightning Overload",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lava Burst",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Thunder Summon",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Elemental Mastery",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Elemental Reach",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Ghost Wolf",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stormstrike",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mental Dexterity",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flurry",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Riptide",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Totemic Projection",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lightning Bolt",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chain Lightning",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Earth Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flame Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Frost Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Warlock",
+          "line": "Wrack, Shadow and Flame",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "2 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Wrack",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shadow and Flame",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Druid",
+          "line": "Rend and Tear, Bear Form, Dire Bear Form, Shred",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "11 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Rend and Tear",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bear Form",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dire Bear Form",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shred",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Claw",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ravage",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rip",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rake",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ferocious Bite",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pounce",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Starfire",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Skyborne",
+          "line": "Skysight",
+          "counts": [
+            {
+              "cls": "is-nerf",
+              "text": "1 nerf"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Skysight",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 56,
+        "nerfs": 9,
+        "changes": 19,
+        "talentChanges": 47,
+        "newItems": 0,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "dateLabel": "November 3, 2026",
+      "build": "Build 1.60.1.70755",
+      "tag": "Current",
+      "isCurrent": true,
+      "summary": "7 classes and 0 races changed spells and talents; 0 new items.",
+      "groups": [
+        {
+          "name": "Warrior",
+          "line": "Spearing Strike, Two-Handed Weapon Specialization, Improved Tactical Mastery, Improved Slam",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "6 buff"
+            },
+            {
+              "cls": "is-nerf",
+              "text": "1 nerf"
+            },
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Spearing Strike",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Two-Handed Weapon Specialization",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Tactical Mastery",
+              "status": "Buff",
+              "delta": "5 → 3",
+              "desc": ""
+            },
+            {
+              "name": "Improved Slam",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Taste for Blood",
+              "status": "Buff",
+              "delta": "5 → 2",
+              "desc": ""
+            },
+            {
+              "name": "Slam",
+              "status": "Buff",
+              "delta": "Cooldown: 18 seconds → Cooldown: 15 seconds",
+              "desc": ""
+            },
+            {
+              "name": "Enrage",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flurry",
+              "status": "Buff",
+              "delta": "5 → 3",
+              "desc": ""
+            },
+            {
+              "name": "Raging Blow",
+              "status": "Nerf",
+              "delta": "1 → 2",
+              "desc": ""
+            },
+            {
+              "name": "blood drinkers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "reckless swing",
+              "status": "",
+              "delta": "",
+              "desc": "Causing your next 4 melee attacks to generate 5 additional rage each. Lasts 8 seconds."
+            }
+          ]
+        },
+        {
+          "name": "Paladin",
+          "line": "Holy Shield, Vengeance",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "1 buff"
+            },
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Holy Shield",
+              "status": "",
+              "delta": "null → Instant",
+              "desc": "Increases your chance to block by 30% for 10 seconds. Each block deals 221 holy damage. Holy Shield deals 20% additional threat. Each block costs 1 charge. 4 charges."
+            },
+            {
+              "name": "Vengeance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Rogue",
+          "line": "Mutilate, Lethality, Murder, Improved Expose Armor",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "12 buff"
+            },
+            {
+              "cls": "is-nerf",
+              "text": "3 nerf"
+            },
+            {
+              "cls": "is-change",
+              "text": "2 changes"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Mutilate",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lethality",
+              "status": "Buff",
+              "delta": "5 → 2",
+              "desc": ""
+            },
+            {
+              "name": "Murder",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Expose Armor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Relentless Strikes",
+              "status": "Nerf",
+              "delta": "1 → 5",
+              "desc": ""
+            },
+            {
+              "name": "Seal Fate",
+              "status": "Buff",
+              "delta": "5 → 3",
+              "desc": ""
+            },
+            {
+              "name": "Vigor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mutilate",
+              "status": "",
+              "delta": "",
+              "desc": "Instantly attack with two weapons, each dealing 90% weapon damage plus 40 damage. Damage dealt to poisoned targets increased by 20%. Reward 2 combo points."
+            },
+            {
+              "name": "Venom",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mutilate",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "blood spatter",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the duration of your Split ability by 6 seconds and your Garrote ability by 9 seconds."
+            },
+            {
+              "name": "Venom",
+              "status": "",
+              "delta": "",
+              "desc": "Enchant Stabbing: Increases Poison damage by 30% and Poison chance by 20% for 6 seconds."
+            },
+            {
+              "name": "Dual Wield Specialization",
+              "status": "Buff",
+              "delta": "5 → 2",
+              "desc": ""
+            },
+            {
+              "name": "Improved Sprint",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Aggression",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Weapon Expertise",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flawless Execution",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "calm",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the energy cost of ready to fire by 10."
+            },
+            {
+              "name": "sharp flash",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the energy generated by your Stabbing ability by 15 and reduces the cooldown by 2.0 seconds."
+            },
+            {
+              "name": "death mark",
+              "status": "Nerf",
+              "delta": "25 yards → 20 yards distance",
+              "desc": ""
+            },
+            {
+              "name": "Camouflage",
+              "status": "Buff",
+              "delta": "5 → 3",
+              "desc": ""
+            },
+            {
+              "name": "Elusiveness",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Change",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Opportunity",
+              "status": "",
+              "delta": "2 → 5",
+              "desc": ""
+            },
+            {
+              "name": "Improved Ambush",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dirty Deeds",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Distract",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Saw Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Premeditation",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ghostly Strike",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Heightened Senses",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cutthroat",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dirty Tricks",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Thousand Cuts",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Quietus",
+              "status": "",
+              "delta": "5 → 2",
+              "desc": ""
+            },
+            {
+              "name": "death mark",
+              "status": "",
+              "delta": "",
+              "desc": "Final Skill: Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1 point: Store 12% damage. Maximum damage before critical strike is ${63+(1*102)+1 $&gt; 0 *$<attackP>}.\n   2 Points: Store 24% damage. Damage cap is ${63+(2*102)+2 &lt;$0 *$<attackP>}.\n   3 Points: Store 36% damage, damage limit is ${63+(3*102)+3 &lt;$0 *$<attackP>} points.\n   4 Points: Store 48% damage. Damage cap is ${63+(4*102)+4 &lt;$0 *$<attackP>}.\n   5 Points: Store 60% damage. Damage cap is ${63+(5*102)+5 &lt;$0 *$<attackP>}."
+            },
+            {
+              "name": "boot knife",
+              "status": "",
+              "delta": "",
+              "desc": "Your jab has a 100% chance to add 2 combo points to your target."
+            },
+            {
+              "name": "Mind-numbing Poison III",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deadly Poison IV",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Wound Poison IV",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deadly Poison V",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Instant Poison VI",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Priest",
+          "line": "Binding Heal",
+          "counts": [],
+          "entries": [
+            {
+              "name": "Binding Heal",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Shaman",
+          "line": "Lightning Bolt, Earth Shock, Flame Shock, Frost Shock",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "8 buff"
+            },
+            {
+              "cls": "is-nerf",
+              "text": "1 nerf"
+            },
+            {
+              "cls": "is-change",
+              "text": "2 changes"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Lightning Bolt",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Earth Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flame Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Frost Shock",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chain Lightning",
+              "status": "",
+              "delta": "315 mana → 495 mana",
+              "desc": ""
+            },
+            {
+              "name": "Lava Burst",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Totemic Projection",
+              "status": "Nerf",
+              "delta": "Cooldown 1 minute → cooldown time: 30 seconds",
+              "desc": ""
+            },
+            {
+              "name": "Stormstrike",
+              "status": "Buff",
+              "delta": "Cooldown time 8 seconds → cooldown time 6 seconds",
+              "desc": ""
+            },
+            {
+              "name": "Flurry",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Lightning Shield",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Improved Ghost Wolf",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mental Dexterity",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Riptide",
+              "status": "",
+              "delta": "385 mana → 230 mana · cooldown time 6 seconds → Cooldown time 12 seconds",
+              "desc": "Heals an allied target, restoring 0 health and an additional 805 health over 15 seconds. Increases the effect of your direct healing chain on that target by 25%."
+            },
+            {
+              "name": "Call of Thunder",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the critical strike chance of your Lightning Arrow and Chain Lightning by 5%."
+            },
+            {
+              "name": "Lightning Overload",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lava Burst",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Warlock",
+          "line": "Shadow and Flame",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "1 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Shadow and Flame",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Druid",
+          "line": "Starfire, Claw, Rip, Shred",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "9 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Starfire",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Claw",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rip",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shred",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ferocious Bite",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rake",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ravage",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pounce",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rend and Tear",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 37,
+        "nerfs": 5,
+        "changes": 6,
+        "talentChanges": 56,
+        "newItems": 0,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "dateLabel": "November 2, 2026",
+      "build": "Build 1.60.1.70753",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "1 class and 1 race changed spells and talents; 1 new item.",
+      "groups": [
+        {
+          "name": "Paladin",
+          "line": "Holy Shield",
+          "counts": [
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Holy Shield",
+              "status": "",
+              "delta": "null → 60 · null → 240 mana · null → cooldown of 10 seconds",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Orc",
+          "line": "Command",
+          "counts": [
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Command",
+              "status": "",
+              "delta": "null → Instant",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "1 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Pouch of Violet Dust",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 2,
+        "talentChanges": 0,
+        "newItems": 1,
+        "changedItems": 0
+      }
+    },
+    {
       "date": "2026-10-30",
       "dateLabel": "October 30, 2026",
       "build": "Build 1.60.1.70707",
-      "tag": "Current",
-      "isCurrent": true,
+      "tag": "Beta",
+      "isCurrent": false,
       "summary": "7 classes and 8 races changed spells and talents; 39 new items.",
       "groups": [
         {
@@ -1604,9 +2952,20 @@
         },
         {
           "name": "Hunter",
-          "line": "Pathfinding, Improved Revive Pet",
-          "counts": [],
+          "line": "Aspect of the Hawk, Pathfinding, Improved Revive Pet, Serpent Sting",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "8 buff"
+            }
+          ],
           "entries": [
+            {
+              "name": "Aspect of the Hawk",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
             {
               "name": "Pathfinding",
               "status": "",
@@ -1616,6 +2975,48 @@
             {
               "name": "Improved Revive Pet",
               "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Serpent Sting",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Arcane Shot",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Aimed Shot",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Trueshot Aura",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sniper Shot",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Barrage",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lightning Reflexes",
+              "status": "Buff",
               "delta": "",
               "desc": ""
             }
@@ -2358,10 +3759,10 @@
         }
       ],
       "counts": {
-        "buffs": 18,
+        "buffs": 26,
         "nerfs": 9,
         "changes": 26,
-        "talentChanges": 75,
+        "talentChanges": 77,
         "newItems": 39,
         "changedItems": 0
       }
