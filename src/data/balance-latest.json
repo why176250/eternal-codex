@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-03",
-  "displayDate": "November 3, 2026",
-  "displayDateZh": "2026年11月03日",
-  "build": "1.60.1.70755",
-  "buffs": 37,
-  "nerfs": 5,
-  "otherChanges": 6,
-  "talentTreeChanges": 42,
+  "date": "2026-11-05",
+  "displayDate": "November 5, 2026",
+  "displayDateZh": "2026年11月05日",
+  "build": "1.60.1.70790",
+  "buffs": 0,
+  "nerfs": 0,
+  "otherChanges": 2,
+  "talentTreeChanges": 0,
   "newItems": 0,
-  "changedItems": 54
+  "changedItems": 7
 }

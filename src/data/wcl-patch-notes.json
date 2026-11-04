@@ -3,19 +3,19 @@
     "items": [
       {
         "cls": "is-buff",
-        "text": "37 buffs"
+        "text": "0 buffs"
       },
       {
         "cls": "is-nerf",
-        "text": "5 nerfs"
+        "text": "0 nerfs"
       },
       {
         "cls": "is-change",
-        "text": "6 other changes"
+        "text": "2 other changes"
       },
       {
         "cls": "is-items",
-        "text": "42 talent tree changes"
+        "text": "0 talent tree changes"
       },
       {
         "cls": "is-items",
@@ -23,20 +23,42 @@
       },
       {
         "cls": "is-items",
-        "text": "54 changed items"
+        "text": "7 changed items"
       }
     ]
   },
   "bluePosts": [
     {
+      "id": "blue-post-30756539",
+      "date": "2026-11-04T19:35:16.582Z",
+      "dateLabel": "2026.11.04",
+      "author": "community Manager",
+      "title": "November 2 Development Notes: Supplemental interfaces and accessibility features",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/10",
+      "paras": [
+        "Blizzard added a section on interface and accessibility changes to the developer notes."
+      ]
+    },
+    {
+      "id": "blue-post-30755588",
+      "date": "2026-11-04T18:13:53.056Z",
+      "dateLabel": "2026.11.04",
+      "author": "community Manager",
+      "title": "World of Warcraft: Forever",
+      "url": "https://us.forums.blizzard.com/en/wow/t/world-of-warcraft-forever-launch-time/2400905/1",
+      "paras": [
+        "All regions are served at the same time: 15:00 Pacific Time on November 4, i.e. 07:00 Beijing Time on November 5."
+      ]
+    },
+    {
       "id": "blue-post-30743268",
       "date": "2026-11-03T20:00:09.240Z",
       "dateLabel": "2026.11.03",
       "author": "Blizzard employees",
-      "title": "Play World of Warcraft: Forever with the controller",
+      "title": "World of Warcraft: Forever",
       "url": "https://us.forums.blizzard.com/en/wow/t/explore-wow-forever-with-a-gamepad/2400119/1",
       "paras": [
-        "Prefer a controller? Learn another way to play World of Warcraft Forever: from movement and casting to tweaking settings. GamePad support is in beta, with more improvements coming.\nview the full text"
+        "Want to play with the controller? This article describes the movement, casting and settings under the controller. Controller support is currently in beta and will be improved in the future."
       ]
     },
     {
@@ -1886,7 +1908,61 @@
         "buffs": 56,
         "nerfs": 9,
         "changes": 19,
-        "talentChanges": 47,
+        "talentChanges": 44,
+        "newItems": 0,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "dateLabel": "November 5, 2026",
+      "build": "Build 1.60.1.70790",
+      "tag": "Current",
+      "isCurrent": true,
+      "summary": "2 classes and 0 races changed spells and talents; 0 new items.",
+      "groups": [
+        {
+          "name": "Warrior",
+          "line": "Improved Slam",
+          "counts": [
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Improved Slam",
+              "status": "",
+              "delta": "",
+              "desc": "Decreases the cooldown of your Slam ability by 5.0 seconds, reduces the cast time and common cooldown by 0.50 seconds, and Slam no longer interrupts or delays your melee swing timer."
+            }
+          ]
+        },
+        {
+          "name": "Rogue",
+          "line": "death mark",
+          "counts": [
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "death mark",
+              "status": "",
+              "delta": "",
+              "desc": "Finish skill. Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. Double the damage stored for Garrote and Split. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1 point: Store 12% damage, damage limit is ${((156+(1*245)+1 <$0 *0)*(0crit/100+1))*1} points.\n   2 Points: Store 24% damage, damage limit is ${((156+(2*245)+2 <$0 *0)*(0crit/100+1))*1} points.\n   3 Points: Store 36% damage, damage limit is ${((156+(3*245)+3 <$0 *0)*(0crit/100+1))*1} points.\n   4 Points: Store 48% damage, damage limit is ${((156+(4*245)+4 <$0 *0)*(0crit/100+1))*1} points.\n   5 Points: Store 60% damage. Damage limit is ${((156+(5*245)+5 <$0 *0)*(0crit/100+1))*1} points."
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 2,
+        "talentChanges": 1,
         "newItems": 0,
         "changedItems": 0
       }
@@ -1895,8 +1971,8 @@
       "date": "2026-11-03",
       "dateLabel": "November 3, 2026",
       "build": "Build 1.60.1.70755",
-      "tag": "Current",
-      "isCurrent": true,
+      "tag": "Beta",
+      "isCurrent": false,
       "summary": "7 classes and 0 races changed spells and talents; 0 new items.",
       "groups": [
         {
@@ -1905,15 +1981,11 @@
           "counts": [
             {
               "cls": "is-buff",
-              "text": "6 buff"
-            },
-            {
-              "cls": "is-nerf",
-              "text": "1 nerf"
+              "text": "8 buff"
             },
             {
               "cls": "is-change",
-              "text": "1 change"
+              "text": "2 changes"
             }
           ],
           "entries": [
@@ -1966,10 +2038,10 @@
               "desc": ""
             },
             {
-              "name": "Raging Blow",
-              "status": "Nerf",
+              "name": "Improved Whirlwind",
+              "status": "",
               "delta": "1 → 2",
-              "desc": ""
+              "desc": "Reduces the cooldown of Whirlwind by 2 seconds and increases the damage it does to the nearest enemy by 30%."
             },
             {
               "name": "blood drinkers",
@@ -1982,6 +2054,18 @@
               "status": "",
               "delta": "",
               "desc": "Causing your next 4 melee attacks to generate 5 additional rage each. Lasts 8 seconds."
+            },
+            {
+              "name": "Defensive Stance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Defiance",
+              "status": "Buff",
+              "delta": "",
+              "desc": ""
             }
           ]
         },
@@ -2027,7 +2111,7 @@
             },
             {
               "cls": "is-change",
-              "text": "2 changes"
+              "text": "5 changes"
             }
           ],
           "entries": [
@@ -2116,6 +2200,12 @@
               "desc": ""
             },
             {
+              "name": "Improved Eviscerate",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the damage dealt by your Bite ability by 20%. Increases the damage and storage rate of Death Mark by 20%."
+            },
+            {
               "name": "Aggression",
               "status": "Buff",
               "delta": "",
@@ -2150,6 +2240,12 @@
               "status": "Nerf",
               "delta": "25 yards → 20 yards distance",
               "desc": ""
+            },
+            {
+              "name": "Ghostly Strike",
+              "status": "",
+              "delta": "",
+              "desc": "Attacks enemies, dealing 125% weapon damage (180% when your master is armed with a dagger) and increasing your chance to dodge by 15% for 7 seconds. Your next ambush or garrote within 7 seconds does not need to be in Stealth. Rewards 1 combo point."
             },
             {
               "name": "Camouflage",
@@ -2209,7 +2305,7 @@
               "name": "Ghostly Strike",
               "status": "",
               "delta": "",
-              "desc": ""
+              "desc": "Attacks enemies, dealing 125% weapon damage (180% when your master is armed with a dagger) and increasing your chance to dodge by 15% for 7 seconds. Your next ambush or garrote within 7 seconds does not need to be in Stealth. Rewards 1 combo point."
             },
             {
               "name": "Heightened Senses",
@@ -2236,16 +2332,16 @@
               "desc": ""
             },
             {
-              "name": "Quietus",
+              "name": "Quick escape",
               "status": "",
               "delta": "5 → 2",
-              "desc": ""
+              "desc": "Increases the maximum number of targets you can Sap simultaneously by 1 and increases your movement speed by 30% after Sap a target for 3 seconds."
             },
             {
               "name": "death mark",
               "status": "",
               "delta": "",
-              "desc": "Final Skill: Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1 point: Store 12% damage. Maximum damage before critical strike is ${63+(1*102)+1 $&gt; 0 *$<attackP>}.\n   2 Points: Store 24% damage. Damage cap is ${63+(2*102)+2 &lt;$0 *$<attackP>}.\n   3 Points: Store 36% damage, damage limit is ${63+(3*102)+3 &lt;$0 *$<attackP>} points.\n   4 Points: Store 48% damage. Damage cap is ${63+(4*102)+4 &lt;$0 *$<attackP>}.\n   5 Points: Store 60% damage. Damage cap is ${63+(5*102)+5 &lt;$0 *$<attackP>}."
+              "desc": "Final Skill: Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1: Store 12% damage. Maximum damage before critical strike is 165 + 4% melee attack power.\n   2 Points: Store 24% damage. Damage cap is 267 + 8% melee attack power.\n   3 Points: 36% damage stored. Maximum damage is 369 + 12% melee attack power.\n   4 points: Stores 48% of damage, with a maximum damage limit of 471 + 16% of melee attack strength.\n   5 Points: Store 60% damage. Damage cap is 573 + 20% melee attack power."
             },
             {
               "name": "boot knife",
@@ -2282,6 +2378,12 @@
               "status": "Buff",
               "delta": "",
               "desc": ""
+            },
+            {
+              "name": "Improved Sinister Strike",
+              "status": "",
+              "delta": "",
+              "desc": ""
             }
           ]
         },
@@ -2304,7 +2406,7 @@
           "counts": [
             {
               "cls": "is-buff",
-              "text": "8 buff"
+              "text": "7 buff"
             },
             {
               "cls": "is-nerf",
@@ -2312,7 +2414,7 @@
             },
             {
               "cls": "is-change",
-              "text": "2 changes"
+              "text": "4 changes"
             }
           ],
           "entries": [
@@ -2360,9 +2462,9 @@
             },
             {
               "name": "Stormstrike",
-              "status": "Buff",
+              "status": "",
               "delta": "Cooldown time 8 seconds → cooldown time 6 seconds",
-              "desc": ""
+              "desc": "Instantly strikes, dealing 150% weapon damage and increasing the damage dealt to that target by 20% the next time you use Lightning Bolt, Chain Lightning, or Mega Shock for 12 seconds."
             },
             {
               "name": "Flurry",
@@ -2392,13 +2494,19 @@
               "name": "Riptide",
               "status": "",
               "delta": "385 mana → 230 mana · cooldown time 6 seconds → Cooldown time 12 seconds",
-              "desc": "Heals an allied target, restoring 0 health and an additional 805 health over 15 seconds. Increases the effect of your direct healing chain on that target by 25%."
+              "desc": "Restores 805 health for 15 seconds to an allied target, and increases the effect of your Chain of Healing cast directly on that target by 25%."
             },
             {
               "name": "Call of Thunder",
               "status": "",
               "delta": "",
               "desc": "Increases the critical strike chance of your Lightning Arrow and Chain Lightning by 5%."
+            },
+            {
+              "name": "Elemental Reach",
+              "status": "",
+              "delta": "",
+              "desc": "Increases the range of your Lightning Arrow, Chain of Lightning, and Flame Nova by 6 yards."
             },
             {
               "name": "Lightning Overload",
@@ -2408,6 +2516,12 @@
             },
             {
               "name": "Lava Burst",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Elemental Mastery",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2500,10 +2614,10 @@
         }
       ],
       "counts": {
-        "buffs": 37,
-        "nerfs": 5,
-        "changes": 6,
-        "talentChanges": 56,
+        "buffs": 38,
+        "nerfs": 4,
+        "changes": 12,
+        "talentChanges": 62,
         "newItems": 0,
         "changedItems": 0
       }
