@@ -7,7 +7,7 @@
       },
       {
         "cls": "is-nerf",
-        "text": "0 nerfs"
+        "text": "1 nerf"
       },
       {
         "cls": "is-change",
@@ -19,15 +19,81 @@
       },
       {
         "cls": "is-items",
-        "text": "0 new items"
+        "text": "30 new items"
       },
       {
         "cls": "is-items",
-        "text": "7 changed items"
+        "text": "14 changed items"
       }
     ]
   },
   "bluePosts": [
+    {
+      "id": "blue-post-30768701",
+      "date": "2026-11-05T15:42:52.385Z",
+      "dateLabel": "2026.11.05",
+      "author": "community Manager",
+      "title": "Known issues (updated November 5)",
+      "url": "https://us.forums.blizzard.com/en/wow/t/known-issues-wow-forever-updated-nov-5/2402363/1",
+      "paras": [
+        "Blizzard has compiled World of Warcraft: Forever known issues, which are being followed up and planned to be fixed. Not a complete list, but will be updated continuously."
+      ]
+    },
+    {
+      "id": "blue-post-30768128",
+      "date": "2026-11-05T15:22:45.960Z",
+      "dateLabel": "2026.11.05",
+      "author": "community Manager",
+      "title": "Forever Bug feedback board posting notice",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-bug-report-forum-guidelines/2402319/1",
+      "paras": [
+        "This section is only used to report bugs for quality assurance team replication and repair; chat, speculation and irrelevant feedback will be deleted. Please write down the replication steps, it is better to attach videos or screenshots; do not ask for blue post reply in the post, no reply does not mean not see, every post will read. Report format: Summarize the problem in one sentence, then list the steps by number, and finally specify the expected behavior and the actual behavior of the error, preferably with the full name of the role and the rule type."
+      ]
+    },
+    {
+      "id": "blue-post-30764314",
+      "date": "2026-11-05T06:39:29.532Z",
+      "dateLabel": "2026.11.05",
+      "author": "Blizzard employees",
+      "title": "Airships and boats broke down?",
+      "url": "https://us.forums.blizzard.com/en/wow/t/zeppelins-broken/2401777/15",
+      "paras": [
+        "Developer Aggrend replied: We know that ships, airships and other transportation vehicles will be trapped in the maelstrom for a long time. Temporary solution: Teleportation gates have been placed near most docks and airship towers. Ships can use them to travel to and from the mainland when they get lost. The official repair will be launched tomorrow morning. These teleportation gates will be removed after confirmation takes effect."
+      ]
+    },
+    {
+      "id": "blue-post-30764270",
+      "date": "2026-11-05T06:35:55.371Z",
+      "dateLabel": "2026.11.05",
+      "author": "Blizzard employees",
+      "title": "Only eight or nine people in the main city?",
+      "url": "https://us.forums.blizzard.com/en/wow/t/why-do-i-see-maybe-8-people-inside-the-main-city/2401806/27",
+      "paras": [
+        "Developer Aggrend replied: We know that some areas are too few people, not as lively as they should be. Tomorrow will adjust the relevant values to make the places more popular."
+      ]
+    },
+    {
+      "id": "blue-post-30762649",
+      "date": "2026-11-05T02:43:58.499Z",
+      "dateLabel": "2026.11.05",
+      "author": "community Manager",
+      "title": "Fixed: Limited players joining by inviting friends",
+      "url": "https://us.forums.blizzard.com/en/wow/t/issues-resolved-for-invite-a-friend-players/2401646/1",
+      "paras": [
+        "Blizzard has launched a hot fix: Players who join World of Warcraft: Forever through the \"Invite Friends\" code will be unexpectedly restricted from using some chat channels and will not be able to level up to 10 or above, join a guild, form a team, or trade items with other players. Players who have encountered this problem can log out of the game and log in again."
+      ]
+    },
+    {
+      "id": "blue-post-30761638",
+      "date": "2026-11-05T00:30:07.691Z",
+      "dateLabel": "2026.11.05",
+      "author": "Blizzard employees",
+      "title": "Watch Live Collar Toy: A Bag of Purple Powder",
+      "url": "https://us.forums.blizzard.com/en/wow/t/set-your-campfire-ablaze-with-the-pouch-of-violet-dust/2401461/1",
+      "paras": [
+        "During the launch week of World of Warcraft: Forever, watch any eligible World of Warcraft live stream on Twitch.tv for 4 hours and receive a toy called \"Bag of Purple Powder\" to light your bonfire."
+      ]
+    },
     {
       "id": "blue-post-30756539",
       "date": "2026-11-04T19:35:16.582Z",
@@ -88,10 +154,10 @@
       "date": "2026-10-29T21:00:50.143Z",
       "dateLabel": "2026.10.29",
       "author": "Blizzard employees",
-      "title": "World of Warcraft: Forever launches globally on November 4",
-      "url": "https://us.forums.blizzard.com/en/wow/t/world-of-warcraft-forever-goes-live-globally-november-4/2396008/1",
+      "title": "World of Warcraft: Forever has been launched globally",
+      "url": "https://us.forums.blizzard.com/en/wow/t/world-of-warcraft-forever-now-live/2396008/1",
       "paras": [
-        "Blizzard has announced an opening time: November 4 at 15:00 PST, or 23:00 UTC, worldwide. Team copies open December 9."
+        "World of Warcraft: Forever is now available worldwide. New players can start their first adventure, and older players can return to the remade Azeroth: level up to 60 on the original continent, experience new stories, and meet other adventurers. It ranks alongside the official and classic suits, and is a long-running home that puts the community first, and the journey itself as important as the destination."
       ]
     },
     {
@@ -1352,7 +1418,7 @@
               "desc": ""
             },
             {
-              "name": "blood drinkers",
+              "name": "Gore Drinker",
               "status": "",
               "delta": "",
               "desc": ""
@@ -1919,7 +1985,7 @@
       "build": "Build 1.60.1.70790",
       "tag": "Current",
       "isCurrent": true,
-      "summary": "2 classes and 0 races changed spells and talents; 0 new items.",
+      "summary": "3 classes and 0 races changed spells and talents; 30 new items.",
       "groups": [
         {
           "name": "Warrior",
@@ -1941,7 +2007,7 @@
         },
         {
           "name": "Rogue",
-          "line": "death mark",
+          "line": "Death Mark",
           "counts": [
             {
               "cls": "is-change",
@@ -1950,20 +2016,230 @@
           ],
           "entries": [
             {
-              "name": "death mark",
+              "name": "Death Mark",
               "status": "",
               "delta": "",
-              "desc": "Finish skill. Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. Double the damage stored for Garrote and Split. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1 point: Store 12% damage, damage limit is ${((156+(1*245)+1 <$0 *0)*(0crit/100+1))*1} points.\n   2 Points: Store 24% damage, damage limit is ${((156+(2*245)+2 <$0 *0)*(0crit/100+1))*1} points.\n   3 Points: Store 36% damage, damage limit is ${((156+(3*245)+3 <$0 *0)*(0crit/100+1))*1} points.\n   4 Points: Store 48% damage, damage limit is ${((156+(4*245)+4 <$0 *0)*(0crit/100+1))*1} points.\n   5 Points: Store 60% damage. Damage limit is ${((156+(5*245)+5 <$0 *0)*(0crit/100+1))*1} points."
+              "desc": "Finish skill. Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. Double the damage stored for Garrote and Split. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1: Store 12% damage, damage cap 355 + 4% melee attack power.\n   2 Points: Store 24% damage. Damage cap is 572 + 8% melee attack power.\n   3 Points: 36% damage stored. Maximum damage is 789 + 12% melee attack power.\n   4 Points: Store 48% damage. Damage cap is 1006 + 16% melee attack power.\n   5 Points: Store 60% damage. Damage cap is 1223 + 20% melee attack power."
+            }
+          ]
+        },
+        {
+          "name": "Shaman",
+          "line": "Chain Lightning",
+          "counts": [
+            {
+              "cls": "is-nerf",
+              "text": "1 nerf"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Chain Lightning",
+              "status": "Nerf",
+              "delta": "Cast time 2 seconds → Cast time 2.5 seconds",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "30 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Robes of Insight",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Freezing Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Warden Staff",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stoneslayer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Skullplate Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Quillshooter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Glacial Spike",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fire Ruby",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Arcane Crystal Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ancient Skyborne Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Skal's broken gauntlet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stromgarde Hood",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rusted Troll War Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mutinous Cuffs",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "South Seas Shroud",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Saltseer's Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Old leather jacket",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Swamp scavenger scales",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Befouled Water Globe",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Narassin's Tome",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Abyssal Mote",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Xonos foot wrap",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ancient Switches Thrown",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Demon Strike Badge",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dripping mud robe",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "portable wormhole generator",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Portable Repair Bot",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Enchanted Silk Bag",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Adventurer trainee's supply kit",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Adventurer's bag",
+              "status": "",
+              "delta": "",
+              "desc": ""
             }
           ]
         }
       ],
       "counts": {
         "buffs": 0,
-        "nerfs": 0,
+        "nerfs": 1,
         "changes": 2,
         "talentChanges": 1,
-        "newItems": 0,
+        "newItems": 30,
         "changedItems": 0
       }
     },
@@ -2044,13 +2320,13 @@
               "desc": "Reduces the cooldown of Whirlwind by 2 seconds and increases the damage it does to the nearest enemy by 30%."
             },
             {
-              "name": "blood drinkers",
+              "name": "Gore Drinker",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
-              "name": "reckless swing",
+              "name": "Reckless Swings",
               "status": "",
               "delta": "",
               "desc": "Causing your next 4 melee attacks to generate 5 additional rage each. Lasts 8 seconds."
@@ -2176,7 +2452,7 @@
               "desc": ""
             },
             {
-              "name": "blood spatter",
+              "name": "Blood Splatter",
               "status": "",
               "delta": "",
               "desc": "Increases the duration of your Split ability by 6 seconds and your Garrote ability by 9 seconds."
@@ -2224,19 +2500,19 @@
               "desc": ""
             },
             {
-              "name": "calm",
+              "name": "Composure",
               "status": "",
               "delta": "",
               "desc": "Increases the energy cost of ready to fire by 10."
             },
             {
-              "name": "sharp flash",
+              "name": "Flash of Steel",
               "status": "",
               "delta": "",
               "desc": "Increases the energy generated by your Stabbing ability by 15 and reduces the cooldown by 2.0 seconds."
             },
             {
-              "name": "death mark",
+              "name": "Death Mark",
               "status": "Nerf",
               "delta": "25 yards → 20 yards distance",
               "desc": ""
@@ -2332,19 +2608,19 @@
               "desc": ""
             },
             {
-              "name": "Quick escape",
+              "name": "Quick Getaway",
               "status": "",
               "delta": "5 → 2",
               "desc": "Increases the maximum number of targets you can Sap simultaneously by 1 and increases your movement speed by 30% after Sap a target for 3 seconds."
             },
             {
-              "name": "death mark",
+              "name": "Death Mark",
               "status": "",
               "delta": "",
               "desc": "Final Skill: Mark the target. For each combo point, store a portion of the damage your attacks deal to the target. After 6 seconds, deal the stored damage to the target, but the damage does not exceed the upper limit determined by attack power and critical hit chance:\n   1: Store 12% damage. Maximum damage before critical strike is 165 + 4% melee attack power.\n   2 Points: Store 24% damage. Damage cap is 267 + 8% melee attack power.\n   3 Points: 36% damage stored. Maximum damage is 369 + 12% melee attack power.\n   4 points: Stores 48% of damage, with a maximum damage limit of 471 + 16% of melee attack strength.\n   5 Points: Store 60% damage. Damage cap is 573 + 20% melee attack power."
             },
             {
-              "name": "boot knife",
+              "name": "Boot Knife",
               "status": "",
               "delta": "",
               "desc": "Your jab has a 100% chance to add 2 combo points to your target."
@@ -2829,13 +3105,13 @@
               "desc": ""
             },
             {
-              "name": "Holy Oath",
+              "name": "Oath of Light",
               "status": "",
               "delta": "",
               "desc": "Make an oath to protect an ally target for 5 minutes. Increases healing by up to 0 with Holy Light, up to 0 with Holy Flash, and up to 0 with Holy Shock. Paladins can only make one Holy Oath at a time."
             },
             {
-              "name": "Endless Holy Light",
+              "name": "Boundless Light",
               "status": "",
               "delta": "",
               "desc": "Increases critical strike chance by 30% when Holy Shock is cast on allies unaffected by your Oath of Holy Light."
@@ -2961,13 +3237,13 @@
               "desc": ""
             },
             {
-              "name": "Shield oath",
+              "name": "Shieldsworn",
               "status": "",
               "delta": "",
               "desc": "Reduces the cooldown of your Holy Strike by 4 seconds. In addition, Holy Strike now attacks with your shield, triggering your current Holy Shield and Shield Specialization talents without consuming their number or triggering their cooldown, and giving you the ability to block spells for 6 seconds."
             },
             {
-              "name": "steadfast and persevering (in face of difficulties)",
+              "name": "Stoicism",
               "status": "",
               "delta": "",
               "desc": "Reduces the duration of Stun and Charm effects by 20%."
@@ -3027,7 +3303,7 @@
               "desc": "Increases the critical strike chance of all your spells and attacks by 6%."
             },
             {
-              "name": "Anger without seal",
+              "name": "Unsealed Wrath",
               "status": "",
               "delta": "",
               "desc": "Your melee attacks store a copy of the current Seal for 15 seconds and stack up to 3 times. Hit with another Seal consumes all layers, and each layer causes the stored Seal to trigger once at its normal chance."
@@ -3057,7 +3333,7 @@
               "desc": ""
             },
             {
-              "name": "exorcism",
+              "name": "Turn Evil",
               "status": "",
               "delta": "",
               "desc": "Shortens the cast time of your Hyped Undead by 1.0 seconds, reduces its cooldown by 10 seconds, and also makes it effective against demons."
@@ -3138,7 +3414,7 @@
         },
         {
           "name": "Priest",
-          "line": "Cure Disease, Abolish Disease, Binding Heal, Holy bondage",
+          "line": "Cure Disease, Abolish Disease, Binding Heal, Holy Binding",
           "counts": [
             {
               "cls": "is-buff",
@@ -3165,7 +3441,7 @@
               "desc": ""
             },
             {
-              "name": "Holy bondage",
+              "name": "Holy Binding",
               "status": "",
               "delta": "",
               "desc": "Each time you heal a target other than yourself with a quick heal, you also heal yourself for 50% of your health. This heal does not pose a threat."
@@ -3267,7 +3543,7 @@
         },
         {
           "name": "Druid",
-          "line": "Genesis, Ferocious Bite, Lacerate, primitive bite",
+          "line": "Genesis, Ferocious Bite, Lacerate, Primal Bite",
           "counts": [
             {
               "cls": "is-buff",
@@ -3298,13 +3574,13 @@
               "desc": ""
             },
             {
-              "name": "primitive bite",
+              "name": "Primal Bite",
               "status": "",
               "delta": "48 → 60",
               "desc": ""
             },
             {
-              "name": "The Power of Transformation",
+              "name": "Shifting Power",
               "status": "Buff",
               "delta": "Cooldown: 16 seconds → Cooldown time 8 seconds",
               "desc": ""
@@ -3322,7 +3598,7 @@
               "desc": ""
             },
             {
-              "name": "primitive bite",
+              "name": "Primal Bite",
               "status": "Buff",
               "delta": "",
               "desc": ""
@@ -3346,19 +3622,19 @@
               "desc": ""
             },
             {
-              "name": "The Power of Transformation",
+              "name": "Shifting Power",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
-              "name": "Strengthen the power of deformation",
+              "name": "Improved Shifting Power",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
-              "name": "Predator commandments",
+              "name": "Predatory Discipline",
               "status": "",
               "delta": "",
               "desc": "Your Ferocious Bite no longer converts extra energy into damage, but it will still do extra damage based on your excess energy."
@@ -3433,7 +3709,7 @@
         },
         {
           "name": "Dwarf",
-          "line": "The Earthfury, Craftsman's precision, Find Treasure",
+          "line": "The Earthfury, Artisan's Precision, Find Treasure",
           "counts": [],
           "entries": [
             {
@@ -3443,7 +3719,7 @@
               "desc": ""
             },
             {
-              "name": "Craftsman's precision",
+              "name": "Artisan's Precision",
               "status": "",
               "delta": "",
               "desc": "Increases the hit chance of all your spells and attacks by 1%."
@@ -3458,11 +3734,11 @@
         },
         {
           "name": "Orc",
-          "line": "atrocity, Command",
+          "line": "Savage, Command",
           "counts": [],
           "entries": [
             {
-              "name": "atrocity",
+              "name": "Savage",
               "status": "",
               "delta": "",
               "desc": ""
@@ -3599,7 +3875,7 @@
         },
         {
           "name": "Skyborne (High Order)",
-          "line": "Read Ley Line, Wind Blessed",
+          "line": "Read Leyline, Wind Blessed",
           "counts": [
             {
               "cls": "is-nerf",
@@ -3612,7 +3888,7 @@
           ],
           "entries": [
             {
-              "name": "Read Ley Line",
+              "name": "Read Leyline",
               "status": "",
               "delta": "Cast time 2 seconds → Cast Time 0.5 seconds",
               "desc": "Attempts to drain the power of a nearby magic net energy line, increasing your health and mana regeneration by 50% for 15 seconds. If there is a magic net energy line nearby, you gain resonance for 1 hour, increasing the effect of this ability by 100% during that time."
@@ -5214,7 +5490,7 @@
               "desc": "Reduces the mana cost of your Devouring Plague by 50%.\n\nWhen an affected target dies, the plague spreads to 2 nearby enemies within 10 yards and retains its remaining duration."
             },
             {
-              "name": "Dark Enlightenment",
+              "name": "Dark Inspiration",
               "status": "",
               "delta": "",
               "desc": "Your Mind Blast and Fully Guided Mind Flay trigger Dark Enlightenment, increasing the Spirit of you and your party members by 15% for 10 seconds."
@@ -5306,7 +5582,7 @@
               "desc": "Increases the damage dealt by your Fire Totem and Flame Shock, Flame Nova, and Lava Burst by 15%. Increases the duration of Flame Shock by 9 seconds."
             },
             {
-              "name": "The Trial of Fire",
+              "name": "Trial by Fire",
               "status": "",
               "delta": "",
               "desc": "Increases the damage dealt by your Fire Nova by 20%, reduces the cooldown by 4 seconds, and increases the duration of your Lava Totem by 20 seconds."
@@ -5605,7 +5881,7 @@
         },
         {
           "name": "Orc",
-          "line": "Blood Fury, Shatter Curse, atrocity",
+          "line": "Blood Fury, Shatter Curse, Savage",
           "counts": [
             {
               "cls": "is-nerf",
@@ -5630,7 +5906,7 @@
               "desc": "Instantly removes all Curse and Disaster effects. All Magic damage received is reduced by 5%. Lasts for 8 seconds."
             },
             {
-              "name": "atrocity",
+              "name": "Savage",
               "status": "",
               "delta": "",
               "desc": ""
@@ -5754,7 +6030,7 @@
         },
         {
           "name": "Skyborne (High Order)",
-          "line": "Walk on Air, Read Ley Line, Wind Blessed",
+          "line": "Walk on Air, Read Leyline, Wind Blessed",
           "counts": [
             {
               "cls": "is-buff",
@@ -5769,7 +6045,7 @@
               "desc": ""
             },
             {
-              "name": "Read Ley Line",
+              "name": "Read Leyline",
               "status": "Buff",
               "delta": "",
               "desc": ""
@@ -6017,7 +6293,7 @@
               "desc": "Reduces the rage cost of your Cleave and Whirlwind by 3 points."
             },
             {
-              "name": "Fury, precision.",
+              "name": "Furious Precision",
               "status": "",
               "delta": "",
               "desc": "Increases the hit chance of your secondary attacks by 10%."
@@ -6029,7 +6305,7 @@
               "desc": "Increases the time before anger fades after you leave combat by 10 seconds."
             },
             {
-              "name": "blood drinkers",
+              "name": "Gore Drinker",
               "status": "",
               "delta": "",
               "desc": "Your Enrage, Berserk Wrath, Blood Rage, Death Wish, and Bloodlust will restore 1.0% of your maximum health each of your next 3 melee attacks."
@@ -6284,7 +6560,7 @@
         },
         {
           "name": "Druid",
-          "line": "Wrath, Thorns, natural instinct, Enrage",
+          "line": "Wrath, Thorns, Natural Instinct, Enrage",
           "counts": [
             {
               "cls": "is-nerf",
@@ -6309,7 +6585,7 @@
               "desc": ""
             },
             {
-              "name": "natural instinct",
+              "name": "Natural Instinct",
               "status": "",
               "delta": "",
               "desc": "Increases the critical damage bonus of your melee skills by 20%, and increases the healing effect of your spells by 25% of your Intelligence."
@@ -6843,7 +7119,7 @@
         },
         {
           "name": "Druid",
-          "line": "Moonkin Form, Shredding Attacks, King of the Jungle, Predatory Instincts",
+          "line": "Moonkin Form, Shredding Attacks, King of the Jungle, predatory instincts",
           "counts": [
             {
               "cls": "is-change",
@@ -6870,7 +7146,7 @@
               "desc": ""
             },
             {
-              "name": "Predatory Instincts",
+              "name": "predatory instincts",
               "status": "",
               "delta": "",
               "desc": ""

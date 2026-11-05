@@ -4,9 +4,9 @@
   "displayDateZh": "2026年11月05日",
   "build": "1.60.1.70790",
   "buffs": 0,
-  "nerfs": 0,
+  "nerfs": 1,
   "otherChanges": 2,
   "talentTreeChanges": 0,
-  "newItems": 0,
-  "changedItems": 7
+  "newItems": 30,
+  "changedItems": 14
 }
