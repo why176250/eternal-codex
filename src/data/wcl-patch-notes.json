@@ -15,19 +15,79 @@
       },
       {
         "cls": "is-items",
-        "text": "0 talent tree changes"
+        "text": "1 talent tree changes"
       },
       {
         "cls": "is-items",
-        "text": "30 new items"
+        "text": "94 new items"
       },
       {
         "cls": "is-items",
-        "text": "14 changed items"
+        "text": "18 changed items"
       }
     ]
   },
   "bluePosts": [
+    {
+      "id": "blue-post-30783956",
+      "date": "2026-11-06T21:11:39.116Z",
+      "dateLabel": "2026.11.06",
+      "author": "community Manager",
+      "title": "Career Adjustment Coming Soon-November 10",
+      "url": "https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092/1",
+      "paras": [
+        "Now that players around the world are leveling up in World of Warcraft: Eternity, we've discovered some class issues that we believe need immediate change. Today, we're still investigating these issues and are planning to release patches on Tuesday, November 10th to address the following issues:",
+        "- We've seen that Hunter Pets and Voodoo Airwalkers are not like\nAs durable as the tanks we want. Our goal is to keep their effectiveness relatively the same as in Classic Era. We will adjust their statistics as needed to achieve this goal.",
+        "- Affliction Warlock reports show that the ability to always channel superior damage to simultaneously inflict time-varying damage to life siphons, such as Corruption, and\nMisery of Suffering. We'll make adjustments to ensure that these are always worth the combined spell damage and don't affect the total damage output of the Misery Warlock.",
+        "- Enhanced wizards have found that intelligence and spell abilities are higher attributes than strength and attack power. We plan to make changes so that strength is always their attribute.\nStrongest stat, enhanced wizards don't like items for mages and warlocks. Ideally, the best item for enhancement has strength or attack power, and some wisdom and/or spell power.",
+        "Please note: from now on, leveling up enhanced shaman players will need to collect power and attack equipment.",
+        "We might find something new.\nQuestion…"
+      ]
+    },
+    {
+      "id": "blue-post-30774771",
+      "date": "2026-11-06T02:34:10.279Z",
+      "dateLabel": "2026.11.06",
+      "author": "community Manager",
+      "title": "November 5 Hot Fix: Refresh, Item, Battlefield, and Quest fixes",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-5-2026/2403040/1",
+      "paras": [
+        "Blizzard announced a November 5 server hotfix involving monster refresh, druid training, merchant items, plain running, and quests. The announcement was released November 6, Beijing time; the hotfix date follows the official label."
+      ]
+    },
+    {
+      "id": "blue-post-30772587",
+      "date": "2026-11-05T22:00:07.091Z",
+      "dateLabel": "2026.11.05",
+      "author": "Blizzard employees",
+      "title": "Watch Forged Forever",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever%E2%80%93-watch-forging-forever/2402802/1",
+      "paras": [
+        "The video shows you how World of Warcraft: Forever's first legendary weapon, Whispering Wood Tardramir, was forged."
+      ]
+    },
+    {
+      "id": "blue-post-30772586",
+      "date": "2026-11-05T22:00:06.897Z",
+      "dateLabel": "2026.11.05",
+      "author": "Blizzard employees",
+      "title": "Watch Forged Forever",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever%E2%80%93-watch-forging-forever/2402801/1",
+      "paras": [
+        "The video shows you how World of Warcraft: Forever's first legendary weapon, Whispering Wood Tardramir, was forged."
+      ]
+    },
+    {
+      "id": "blue-post-30768844",
+      "date": "2026-11-05T15:51:58.058Z",
+      "dateLabel": "2026.11.05",
+      "author": "community Manager",
+      "title": "You can't see your teammates after forming a team: Official inquiry about phase refresh status",
+      "url": "https://us.forums.blizzard.com/en/wow/t/phasing-issues-with-group-still-persist-from-beta/2402367/2",
+      "paras": [
+        "Blizzard please check if there is a blue prompt in the bottom right corner after accepting the party invitation; click on the prompt, can you select \"refresh immediately\" in the pop-up window, and whether you are in the same phase as your teammates after refreshing. This is the troubleshooting step, the original post has not confirmed that the problem has been fixed."
+      ]
+    },
     {
       "id": "blue-post-30768701",
       "date": "2026-11-05T15:42:52.385Z",
@@ -1985,7 +2045,7 @@
       "build": "Build 1.60.1.70790",
       "tag": "Current",
       "isCurrent": true,
-      "summary": "3 classes and 0 races changed spells and talents; 30 new items.",
+      "summary": "3 classes and 0 races changed spells and talents; 94 new items.",
       "groups": [
         {
           "name": "Warrior",
@@ -2047,7 +2107,7 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "30 new"
+              "text": "94 new"
             }
           ],
           "entries": [
@@ -2070,6 +2130,42 @@
               "desc": ""
             },
             {
+              "name": "Sword of Omen",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Prophetic Cane",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sword of Serenity",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bonebiter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Black Menace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Talvash's Enhancing Necklace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Stoneslayer",
               "status": "",
               "delta": "",
@@ -2082,7 +2178,121 @@
               "desc": ""
             },
             {
+              "name": "Spellshifter Rod",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gemshale Pauldrons",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Masons Fraternity Ring",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Engineer's Guild Headpiece",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dwarven Charge",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Explorer's League Lodestar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Quillshooter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dragonclaw Ring",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dragon's Blood Necklace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "X'caliboar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Swine Fists",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Plaguerot Sprig",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vanquisher's Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Amberglow Talisman",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rainstrider Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Helm of Exile",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Orb of Lorica",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Zealous Shadowshard Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Prodigious Shadowshard Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mark of the Chosen",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2112,6 +2322,150 @@
               "desc": ""
             },
             {
+              "name": "Guardian Staff",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Band of Purification",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Medal of Courage",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dank Shoulderpads",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Magister Cowl",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Leggings of Freedom and Sorrow",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Decaying Flesh Bands",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Abjurer's Bands",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fur-Lined Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Coyote Hide Wraps",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Farholde Horns",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Crocskin Waders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Resistance Breaker Spaulder",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shadowlight Athame",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chain of the Corruptor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Krol'dok Warplate Chest",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Krol'dok Warplate Helmet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Emblem of Slamming",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Prisoner Handwraps",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bolder'ok Loincloth",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dunston's Ogre Duster",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pauldron of Order",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Orc Bone Bow",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Eluvi'ana",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Skal's broken gauntlet",
               "status": "",
               "delta": "",
@@ -2119,6 +2473,42 @@
             },
             {
               "name": "Stromgarde Hood",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bigger Rock on Bigger Stick",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Curio-Adorned Necklace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rock on Stick",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stick No Rock",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Twilight Initiate's Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Torn Cultist Cloak",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2154,7 +2544,19 @@
               "desc": ""
             },
             {
+              "name": "Dragonscale Buckler",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Swamp scavenger scales",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ancient Hilt",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2188,48 +2590,6 @@
               "status": "",
               "delta": "",
               "desc": ""
-            },
-            {
-              "name": "Demon Strike Badge",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Dripping mud robe",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "portable wormhole generator",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Portable Repair Bot",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Enchanted Silk Bag",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Adventurer trainee's supply kit",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Adventurer's bag",
-              "status": "",
-              "delta": "",
-              "desc": ""
             }
           ]
         }
@@ -2239,7 +2599,7 @@
         "nerfs": 1,
         "changes": 2,
         "talentChanges": 1,
-        "newItems": 30,
+        "newItems": 94,
         "changedItems": 0
       }
     },
@@ -7895,7 +8255,7 @@
               "desc": ""
             },
             {
-              "name": "Letter Opener",
+              "name": "Sharpened Letter Opener",
               "status": "",
               "delta": "",
               "desc": ""

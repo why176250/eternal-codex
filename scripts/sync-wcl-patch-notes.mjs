@@ -7,6 +7,7 @@ const page = await fetch(`${BASE}/en/buding`, { headers: { "User-Agent": "Mozill
 if (!page.ok) throw new Error(`page ${page.status}`);
 const html = await page.text();
 const latestBox = parseLatestBox(html);
+const itemSummary = html.match(/plus\s+(\d+)\s+new items\s+and\s+(\d+)\s+changed items/i);
 const revision = html.match(/r-\d{10,}/)?.[0];
 if (!revision) throw new Error("data revision not found");
 const response = await fetch(`${BASE}/_shuju/${revision}/en/buding.json`, { headers: { "User-Agent": "Mozilla/5.0" } });
@@ -84,14 +85,27 @@ const builds = (raw.builds ?? []).map((build) => {
 });
 
 const current = builds.find((build) => build.isCurrent) ?? builds[0];
+let previousBalance = {};
+try { previousBalance = JSON.parse(await fs.readFile("src/data/balance-latest.json", "utf8")); } catch {}
+const currentBuildId = current?.build?.replace(/^Build\s+/, "") ?? "";
+const effectiveLatest = latestBox.displayDate ? latestBox : {
+  displayDate: current?.dateLabel ?? "",
+  build: currentBuildId,
+  buffs: current?.counts?.buffs ?? 0,
+  nerfs: current?.counts?.nerfs ?? 0,
+  otherChanges: current?.counts?.changes ?? 0,
+  talentTreeChanges: current?.counts?.talentChanges ?? 0,
+  newItems: itemSummary ? Number(itemSummary[1]) : current?.counts?.newItems ?? 0,
+  changedItems: itemSummary ? Number(itemSummary[2]) : 0,
+};
 const latest = {
   items: [
-    { cls: "is-buff", text: countText(latestBox.buffs, "buff") },
-    { cls: "is-nerf", text: countText(latestBox.nerfs, "nerf") },
-    { cls: "is-change", text: countText(latestBox.otherChanges, "other change") },
-    { cls: "is-items", text: `${latestBox.talentTreeChanges} talent tree changes` },
-    { cls: "is-items", text: countText(latestBox.newItems, "new item") },
-    { cls: "is-items", text: countText(latestBox.changedItems, "changed item") },
+    { cls: "is-buff", text: countText(effectiveLatest.buffs, "buff") },
+    { cls: "is-nerf", text: countText(effectiveLatest.nerfs, "nerf") },
+    { cls: "is-change", text: countText(effectiveLatest.otherChanges, "other change") },
+    { cls: "is-items", text: `${effectiveLatest.talentTreeChanges} talent tree changes` },
+    { cls: "is-items", text: countText(effectiveLatest.newItems, "new item") },
+    { cls: "is-items", text: countText(effectiveLatest.changedItems, "changed item") },
   ],
 };
 
@@ -108,20 +122,19 @@ const bluePosts = (raw.bluePosts ?? []).map((post) => ({
 const next = { latest, bluePosts, builds };
 const balance = {
   date: current?.date ?? "",
-  displayDate: latestBox.displayDate,
+  displayDate: effectiveLatest.displayDate,
   displayDateZh: current?.date ? `${current.date.slice(0, 4)}年${current.date.slice(5, 7)}月${current.date.slice(8, 10)}日` : "",
-  build: latestBox.build,
-  buffs: latestBox.buffs,
-  nerfs: latestBox.nerfs,
-  otherChanges: latestBox.otherChanges,
-  talentTreeChanges: latestBox.talentTreeChanges,
-  newItems: latestBox.newItems,
-  changedItems: latestBox.changedItems,
+  build: effectiveLatest.build,
+  buffs: effectiveLatest.buffs,
+  nerfs: effectiveLatest.nerfs,
+  otherChanges: effectiveLatest.otherChanges,
+  talentTreeChanges: effectiveLatest.talentTreeChanges,
+  newItems: effectiveLatest.newItems,
+  changedItems: effectiveLatest.changedItems,
 };
 const text = JSON.stringify(next, null, 2) + "\n";
 const balanceText = JSON.stringify(balance, null, 2) + "\n";
 let previous = "";
-let previousBalance = "";
 try { previous = await fs.readFile(OUT, "utf8"); } catch {}
 try { previousBalance = await fs.readFile("src/data/balance-latest.json", "utf8"); } catch {}
 let changed = false;
