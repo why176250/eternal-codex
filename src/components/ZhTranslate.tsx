@@ -43,6 +43,7 @@ const exact: Record<string, string> = {
   "FOREVER · CLASSIC+": "FOREVER · CLASSIC+",
   "The Hall of Thanes": "领主之厅",
   "Class population": "职业人口", "Live class population": "实时职业人口",
+  "Tools / Class population": "工具 / 职业人口", "TOOLS / CLASS POPULATION": "工具 / 职业人口",
   "All": "全部", "Horde": "部落", "Alliance": "联盟", "characters": "个角色",
   "Source: Community census · ClassicPlus.io": "来源：社区普查 · ClassicPlus.io",
   "Community census sampled since the beta opened; it includes beta-era characters and is not a unique-player count. Percentages come from the census source and are not re-rounded here.": "社区普查自测试服开放起采样，包含测试期角色，不是独立玩家数。百分比来自普查源，本站不重新四舍五入。",
