@@ -1,0 +1,247 @@
+{
+  "updatedAt": "2026-11-07",
+  "source": "community-census",
+  "sourceUrl": "https://classicplus.io/",
+  "scope": {
+    "region": "global",
+    "realms": [
+      "all"
+    ],
+    "levelBand": "all",
+    "countType": "characters"
+  },
+  "totalCharacters": 1148135,
+  "factions": {
+    "All": [
+      {
+        "classId": 3,
+        "name": "Hunter",
+        "count": 175909,
+        "percent": 15.3
+      },
+      {
+        "classId": 1,
+        "name": "Warrior",
+        "count": 139562,
+        "percent": 12.2
+      },
+      {
+        "classId": 2,
+        "name": "Paladin",
+        "count": 134886,
+        "percent": 11.7
+      },
+      {
+        "classId": 9,
+        "name": "Druid",
+        "count": 131029,
+        "percent": 11.4
+      },
+      {
+        "classId": 8,
+        "name": "Shaman",
+        "count": 128585,
+        "percent": 11.2
+      },
+      {
+        "classId": 4,
+        "name": "Mage",
+        "count": 113197,
+        "percent": 9.9
+      },
+      {
+        "classId": 7,
+        "name": "Rogue",
+        "count": 110875,
+        "percent": 9.7
+      },
+      {
+        "classId": 6,
+        "name": "Warlock",
+        "count": 107827,
+        "percent": 9.4
+      },
+      {
+        "classId": 5,
+        "name": "Priest",
+        "count": 106265,
+        "percent": 9.3
+      }
+    ],
+    "Horde": [
+      {
+        "classId": 3,
+        "name": "Hunter",
+        "count": 82423,
+        "percent": 14
+      },
+      {
+        "classId": 8,
+        "name": "Shaman",
+        "count": 81003,
+        "percent": 13.7
+      },
+      {
+        "classId": 1,
+        "name": "Warrior",
+        "count": 70966,
+        "percent": 12
+      },
+      {
+        "classId": 2,
+        "name": "Paladin",
+        "count": 69102,
+        "percent": 11.7
+      },
+      {
+        "classId": 9,
+        "name": "Druid",
+        "count": 66806,
+        "percent": 11.3
+      },
+      {
+        "classId": 6,
+        "name": "Warlock",
+        "count": 61789,
+        "percent": 10.5
+      },
+      {
+        "classId": 7,
+        "name": "Rogue",
+        "count": 56134,
+        "percent": 9.5
+      },
+      {
+        "classId": 5,
+        "name": "Priest",
+        "count": 51869,
+        "percent": 8.8
+      },
+      {
+        "classId": 4,
+        "name": "Mage",
+        "count": 50320,
+        "percent": 8.5
+      }
+    ],
+    "Alliance": [
+      {
+        "classId": 3,
+        "name": "Hunter",
+        "count": 93486,
+        "percent": 16.8
+      },
+      {
+        "classId": 1,
+        "name": "Warrior",
+        "count": 68596,
+        "percent": 12.3
+      },
+      {
+        "classId": 2,
+        "name": "Paladin",
+        "count": 65784,
+        "percent": 11.8
+      },
+      {
+        "classId": 9,
+        "name": "Druid",
+        "count": 64223,
+        "percent": 11.5
+      },
+      {
+        "classId": 4,
+        "name": "Mage",
+        "count": 62877,
+        "percent": 11.3
+      },
+      {
+        "classId": 7,
+        "name": "Rogue",
+        "count": 54741,
+        "percent": 9.8
+      },
+      {
+        "classId": 5,
+        "name": "Priest",
+        "count": 54396,
+        "percent": 9.8
+      },
+      {
+        "classId": 8,
+        "name": "Shaman",
+        "count": 47582,
+        "percent": 8.5
+      },
+      {
+        "classId": 6,
+        "name": "Warlock",
+        "count": 46038,
+        "percent": 8.3
+      }
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-11-07",
+      "totalCharacters": 1148135,
+      "classes": [
+        {
+          "classId": 3,
+          "name": "Hunter",
+          "count": 175909,
+          "percent": 15.3
+        },
+        {
+          "classId": 1,
+          "name": "Warrior",
+          "count": 139562,
+          "percent": 12.2
+        },
+        {
+          "classId": 2,
+          "name": "Paladin",
+          "count": 134886,
+          "percent": 11.7
+        },
+        {
+          "classId": 9,
+          "name": "Druid",
+          "count": 131029,
+          "percent": 11.4
+        },
+        {
+          "classId": 8,
+          "name": "Shaman",
+          "count": 128585,
+          "percent": 11.2
+        },
+        {
+          "classId": 4,
+          "name": "Mage",
+          "count": 113197,
+          "percent": 9.9
+        },
+        {
+          "classId": 7,
+          "name": "Rogue",
+          "count": 110875,
+          "percent": 9.7
+        },
+        {
+          "classId": 6,
+          "name": "Warlock",
+          "count": 107827,
+          "percent": 9.4
+        },
+        {
+          "classId": 5,
+          "name": "Priest",
+          "count": 106265,
+          "percent": 9.3
+        }
+      ]
+    }
+  ],
+  "sampleNote": "Community census, characters sampled since beta opened."
+}

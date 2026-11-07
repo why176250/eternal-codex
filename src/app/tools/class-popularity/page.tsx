@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PopularityTabs } from "@/components/PopularityTabs";
 import { popularity } from "@/lib/popularity";
 
 export const metadata: Metadata = {
-  title: "Launch class popularity",
+  title: "Launch poll — final snapshot",
   description:
-    "Which class is the most popular pick for World of Warcraft: Forever? 41,270 votes from the launch poll, split by faction.",
+    "Final snapshot of the 41,270-vote launch class poll for World of Warcraft: Forever.",
   alternates: { canonical: "/tools/class-popularity" },
 };
 
@@ -23,9 +24,9 @@ export default function ClassPopularityPage() {
       </div>
 
       <header className="container-x pb-10 pt-8">
-        <p className="eyebrow">Tools / Class popularity</p>
+        <p className="eyebrow">Tools / Historical snapshot</p>
         <h1 className="display mt-3 text-3xl text-parchment md:text-5xl">
-          Launch class popularity
+          Launch poll — final snapshot
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
           A launch-intent poll for World of Warcraft: Forever. One vote per
@@ -45,6 +46,7 @@ export default function ClassPopularityPage() {
       </header>
 
       <section className="container-x pb-20">
+        <div className="mb-5 rounded-lg border border-gold/25 bg-gold/[0.04] p-4 text-sm leading-relaxed text-muted">This poll is a historical snapshot from before launch. For live character counts by class, open <Link href="/tools/class-population" className="text-gold-soft underline underline-offset-2">Class population →</Link>.</div>
         <PopularityTabs
           factions={popularity.factions}
           totalVotes={popularity.totalVotes}

@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ModuleIcon } from "@/components/ModuleIcon";
 import { DataUpdatingLink } from "@/components/DataUpdatingLink";
-import { classNameEn, classIconPath, popularity } from "@/lib/popularity";
+import population from "@/data/class-population.json";
 
 export const metadata: Metadata = {
-  title: "Tools — talent, legacy, BiS, XP, and class popularity",
+  title: "Tools — talent, legacy, BiS, XP, and class population",
   description:
-    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, an exact 1–60 XP calculator, and the launch class-popularity poll.",
+    "Interactive planners for World of Warcraft: Forever: talent calculator, legacy progression, BiS checklists, an exact 1–60 XP calculator, and live class population.",
   alternates: { canonical: "/tools" },
 };
 
@@ -29,7 +29,7 @@ export default function ToolsPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
             Two progression planners, BiS checklists, an exact XP calculator,
-            and the launch class-popularity poll. Each tool states its source,
+            and live class population. Each tool states its source,
             its assumptions, and what is still being verified.
           </p>
         </div>
@@ -211,30 +211,29 @@ export default function ToolsPage() {
         </Link>
 
         <Link
-          href="/tools/class-popularity"
+          href="/tools/class-population"
           className="panel panel-hover group mt-4 flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between"
         >
           <div className="min-w-0">
-            <p className="eyebrow">Class popularity</p>
-            <p className="display mt-1 text-xl text-parchment">Launch class popularity</p>
+            <p className="eyebrow">Class population</p>
+            <p className="display mt-1 text-xl text-parchment">Live class population</p>
             <p className="mt-1 text-xs text-muted">
-              {popularity.totalVotes.toLocaleString("en-US")} votes · Updated{" "}
-              {popularity.updatedAt}
+              {population.totalCharacters.toLocaleString("en-US")} characters · Updated {population.updatedAt}
             </p>
           </div>
           <div className="grid grid-cols-3 gap-3">
-            {popularity.factions["全部"].slice(0, 3).map((entry, index) => (
+            {population.factions.All.slice(0, 3).map((entry, index) => (
               <div key={entry.classId} className="flex items-center gap-2">
                 <span className="display text-[10px] text-gold/40">0{index + 1}</span>
                 <img
-                  src={classIconPath(entry.icon)}
+                  src={`/classes/icons/${entry.name.toLowerCase()}.jpg`}
                   alt=""
                   width={32}
                   height={32}
                   className="size-8 rounded border border-line/80"
                 />
                 <span className="min-w-0">
-                  <span className="block truncate text-xs text-parchment">{classNameEn(entry)}</span>
+                  <span className="block truncate text-xs text-parchment">{entry.name}</span>
                   <span className="block text-[10px] text-gold-soft">
                     {entry.percent.toFixed(1)}%
                   </span>
