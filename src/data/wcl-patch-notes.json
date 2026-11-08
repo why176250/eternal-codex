@@ -3,7 +3,7 @@
     "items": [
       {
         "cls": "is-buff",
-        "text": "1 buff"
+        "text": "2 buffs"
       },
       {
         "cls": "is-nerf",
@@ -19,15 +19,27 @@
       },
       {
         "cls": "is-items",
-        "text": "180 new items"
+        "text": "255 new items"
       },
       {
         "cls": "is-items",
-        "text": "9 changed items"
+        "text": "10 changed items"
       }
     ]
   },
   "bluePosts": [
+    {
+      "id": "blue-post-30808041",
+      "date": "2026-11-08T19:47:33.475Z",
+      "dateLabel": "2026.11.08",
+      "author": "community Manager",
+      "title": "November 8 Dungeon enemies experience increased",
+      "url": "https://us.forums.blizzard.com/en/wow/t/dungeon-enemy-xp-increased-november-8/2406595/1",
+      "paras": [
+        "At around 11:05 PST today, we deployed a hot fix that improved the dungeon killing experience by 50%, so it feels better to go back and run.",
+        "Happy dungeon crawlers, good luck mutant leather!"
+      ]
+    },
     {
       "id": "blue-post-30786304",
       "date": "2026-11-07T01:07:59.018Z",
@@ -2057,13 +2069,1051 @@
       }
     },
     {
+      "date": "2026-11-09",
+      "dateLabel": "November 9, 2026",
+      "build": "Build 1.60.1.70862",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "0 classes and 0 races changed spells and talents; 87 new items.",
+      "groups": [
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "87 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Blackskull Shield",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ribbly's Quiver",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Taran Icebreaker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shadowforge Bushmaster",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stonevault Bonebreaker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloodletter Scalpel",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dragon's Eye",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Windscale Sarong",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloodshot Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spritecaster Cape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Earthslag Shoulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Silkweb Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Girdle of Beastial Fury",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Golem Skull Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pyric Caduceus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Verek's Collar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flameweave Cuffs",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shalehusk Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Force of Will",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cape of the Fire Salamander",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chief Architect's Monocle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lead Surveyor's Mantle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Impervious Giant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blood-Etched Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ghostshroud",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deathdealer Breastplate",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Legplates of the Eternal Guardian",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Seal of Ascension",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Doomshot",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Skyshroud Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Trueaim Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blinkstrike Armguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Swiftfoot Treads",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fungus Shroud Armor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Hurley's Tankard",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lethtendris's Wand",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Band of Vigor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gloves of Shadowy Mist",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gloves of Restoration",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ring of Demonic Potency",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Obsidian Bauble",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tempest Talisman",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Merciful Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Satyr's Bow",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Waveslicer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stoneflower Staff",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flamescarred Shoulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Odious Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Eldritch Reinforced Legplates",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Force Imbued Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cloak of the Cosmos",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mind Carver",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sprinter's Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spry Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bonecrusher",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Backwood Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sedge Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ogre Pocket Knife",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gordok Nose Ring",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mud Stained Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Observer's Shield",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Monstrous Glaive",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mugger's Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gordok Bracers of Power",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Duskbat Drape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ebon Mask",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Whisperwalk Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Azurite Fists",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Enamored Water Spirit",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Wildstaff",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Golem Fitted Pauldrons",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Greaves of Withering Despair",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dark Warder's Pauldrons",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Verek's Leash",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Incanter's Pantaloons",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Brush Cutter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Weed Whacker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deadhead Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Katerina's Shanker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Crystalline Pauldrons",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 0,
+        "talentChanges": 0,
+        "newItems": 87,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "dateLabel": "November 8, 2026",
+      "build": "Build 1.60.1.70862",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "0 classes and 0 races changed spells and talents; 172 new items.",
+      "groups": [
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "172 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Bloodrazor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lumbering Ogre Axe",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Precisely Calibrated Boomstick",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Holy Diadem",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ruthless Shiv",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sul'thraze the Lasher",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sang'thraze the Deflector",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ginn-su Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Miner's Hat of the Deep",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gahz'rilla Scale Armor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Jinxed Hoodoo Skin",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Diabolic Skiver",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ripsaw",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vice Grips",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lifeblood Amulet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Essence of Eranikus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chained Essence of Eranikus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Manslayer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Corpseshroud",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Death's Head Vestment",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Quillward Harness",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Atal'ai Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Atal'ai Girdle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Darkwater Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blade of the Wretched",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Eater of the Dead",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vestments of the Atal'ai Prophet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gloves of the Atal'ai Prophet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dire Nail",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Horns of Eranikus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Crest of Supremacy",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tooth of Eranikus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spire of Hakkar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Jang'thraze the Protector",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ogreseer Fists",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lagrave's Seal",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Basaltscale Armor",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Azure Moon Amice",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Raincaster Drape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lavaplate Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Drakefang Butcher",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dawnspire Cord",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sandstalker Ankleguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Desertwalker Cane",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Keris of Zul'Serak",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Butcher's Apron",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tressermane Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rivenspike",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Edgemaster's Handguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lady Maye's Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Prismcharm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gemshard Heart",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Charstone Dirk",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Eye of Theradras",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Megashot Rifle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gizlock's Hypertech Buckler",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Inventor's Focal Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Albino Crocscale Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rotgrip Mantle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Helm of the Mountain",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rockgrip Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cloud Stone",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Grovekeeper's Drape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Soothsayer's Headdress",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Nature's Embrace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Noxious Shooter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Noxxion's Shackles",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vinerot Sandals",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Phytoskin Spaulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Brusslehide Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Satyr's Lash",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Infernal Trickster Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Princess Theradras' Scepter",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloomsprout Headpiece",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fist of Stone",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Oddly Magical Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shaggy Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Hyena Hide Jerkin",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Carrion Scorpid Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Scarab Plate Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 0,
+        "talentChanges": 0,
+        "newItems": 172,
+        "changedItems": 0
+      }
+    },
+    {
       "date": "2026-11-07",
       "dateLabel": "November 7, 2026",
       "build": "Build 1.60.1.70862",
       "tag": "Current",
       "isCurrent": true,
-      "summary": "1 class and 0 races changed spells and talents; 180 new items.",
+      "summary": "2 classes and 0 races changed spells and talents; 255 new items.",
       "groups": [
+        {
+          "name": "Priest",
+          "line": "Fear Ward",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "1 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Fear Ward",
+              "status": "Buff",
+              "delta": "Cannot be used in shadow form → null",
+              "desc": ""
+            }
+          ]
+        },
         {
           "name": "Druid",
           "line": "Bear Form, Ravage",
@@ -2098,12 +3148,24 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "180 new"
+              "text": "255 new"
             }
           ],
           "entries": [
             {
+              "name": "Blackskull Shield",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Spellforce Rod",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ribbly's Quiver",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2115,7 +3177,7 @@
               "desc": ""
             },
             {
-              "name": "Ruthless Shiv",
+              "name": "Taran Icebreaker",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2128,6 +3190,18 @@
             },
             {
               "name": "Shriveled Heart",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shadowforge Bushmaster",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stonevault Bonebreaker",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2152,6 +3226,12 @@
             },
             {
               "name": "Embrace of the Lycan",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloodletter Scalpel",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2205,6 +3285,18 @@
               "desc": ""
             },
             {
+              "name": "Dragon's Eye",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Windscale Sarong",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Featherskin Cape",
               "status": "",
               "delta": "",
@@ -2212,6 +3304,18 @@
             },
             {
               "name": "Warrior's Embrace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Bloodshot Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spritecaster Cape",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2235,7 +3339,25 @@
               "desc": ""
             },
             {
+              "name": "Earthslag Shoulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Silkweb Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Carapace of Anub'shiah",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Girdle of Beastial Fury",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2247,7 +3369,31 @@
               "desc": ""
             },
             {
+              "name": "Golem Skull Helm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pyric Caduceus",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Searingscale Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Verek's Collar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flameweave Cuffs",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2265,7 +3411,25 @@
               "desc": ""
             },
             {
+              "name": "Shalehusk Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Sash of the Burning Heart",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Force of Will",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cape of the Fire Salamander",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2289,6 +3453,18 @@
               "desc": ""
             },
             {
+              "name": "Chief Architect's Monocle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Lead Surveyor's Mantle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Rancor Boots",
               "status": "",
               "delta": "",
@@ -2307,6 +3483,18 @@
               "desc": ""
             },
             {
+              "name": "Impervious Giant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blood-Etched Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "The Hammer of Grace",
               "status": "",
               "delta": "",
@@ -2314,6 +3502,24 @@
             },
             {
               "name": "Robes of the Royal Crown",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ghostshroud",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Deathdealer Breastplate",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Legplates of the Eternal Guardian",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2415,169 +3621,13 @@
               "desc": ""
             },
             {
+              "name": "Seal of Ascension",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Mutilator",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Songstone of Ironforge",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Magni's Will",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Chiselbrand Girdle",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Smokey's Lighter",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Fallbrush Handgrips",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Wolfshear Leggings",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Seal of the Dawn",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Smolderweb's Eye",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Crown of the Penitent",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Band of the Penitent",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Argent Defender",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Argent Avenger",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Argent Crusader",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Testament of Hope",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cape of the Black Baron",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Wyrmtongue Shoulders",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Crown of Tyranny",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Tome of Knowledge",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Skul's Fingerbone Claws",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Wailing Nightbane Pauldrons",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Wail of the Banshee",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Skull of Burning Shadows",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Twilight Void Bracers",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Husk of Nerub'enkan",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Crypt Stalker Leggings",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Spectral Essence",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Verdant Footpads",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2586,11 +3636,11 @@
         }
       ],
       "counts": {
-        "buffs": 1,
+        "buffs": 2,
         "nerfs": 1,
         "changes": 0,
         "talentChanges": 0,
-        "newItems": 180,
+        "newItems": 255,
         "changedItems": 0
       }
     },
@@ -3645,7 +4695,7 @@
               "desc": ""
             },
             {
-              "name": "Xonos foot wrap",
+              "name": "Xorothian Footwraps",
               "status": "",
               "delta": "",
               "desc": ""
