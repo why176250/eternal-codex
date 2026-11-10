@@ -7,11 +7,11 @@
       },
       {
         "cls": "is-nerf",
-        "text": "1 nerf"
+        "text": "0 nerfs"
       },
       {
         "cls": "is-change",
-        "text": "0 other changes"
+        "text": "1 other change"
       },
       {
         "cls": "is-items",
@@ -19,7 +19,7 @@
       },
       {
         "cls": "is-items",
-        "text": "543 new items"
+        "text": "3 new items"
       },
       {
         "cls": "is-items",
@@ -28,6 +28,83 @@
     ]
   },
   "bluePosts": [
+    {
+      "id": "blue-post-30843939",
+      "date": "2026-11-10T21:35:22.464Z",
+      "dateLabel": "2026.11.10",
+      "author": "community Manager",
+      "title": "Most people want to increase their copy experience",
+      "url": "https://us.forums.blizzard.com/en/wow/t/the-majority-wants-increased-dungeon-xp/2406555/254",
+      "paras": [
+        "We've tracked this very carefully, and the hot fix we deployed on Sunday, November 8th raised the value of Dungeon Kill XP from 40% Classic Era to 60% Classic Era. We later thought the tweaks worked well enough to produce Dungeon level WoW speeds that matched the rest of Forever's content."
+      ]
+    },
+    {
+      "id": "blue-post-30831545",
+      "date": "2026-11-10T04:23:46.156Z",
+      "dateLabel": "2026.11.10",
+      "author": "community Manager",
+      "title": "November 9 Hot Fix: Class fixes, Dungeon tweaks, and Mission fixes",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-9-2026/2403040/5",
+      "paras": [
+        "Blizzard has released the server hotfix instructions for November 9 (released at noon on November 10, Beijing time). The following are sorted by original posts, including Wild Charge (Cheetah), Assault, Nature Instinct, Dexterity Stopwatch and Immortal Essence changes. This site has seen corresponding updates in the server hotfix data."
+      ]
+    },
+    {
+      "id": "blue-post-30830930",
+      "date": "2026-11-10T03:11:34.974Z",
+      "dateLabel": "2026.11.10",
+      "author": "community Manager",
+      "title": "November 10: PvP camp balance adjustment (blue paste supplement)",
+      "url": "https://us.forums.blizzard.com/en/wow/t/pvp-faction-balance-updates-november-10/2408781/174",
+      "paras": [
+        "Blizzard added: earlier in the day, the number of players in the same map was reduced in several crowded areas, and the PvP rules server decreased even more in response to player feedback about overcrowding in many areas, which will continue to be observed and adjusted. This change was also recorded in the November 9 hot fix note."
+      ]
+    },
+    {
+      "id": "blue-post-30830868",
+      "date": "2026-11-10T03:04:13.020Z",
+      "dateLabel": "2026.11.10",
+      "author": "community Manager",
+      "title": "November 10: PvP camp balance adjustment (blue post reply)",
+      "url": "https://us.forums.blizzard.com/en/wow/t/pvp-faction-balance-updates-november-10/2408781/158",
+      "paras": [
+        "Blizzard replied to the claim that \"demo characters affect camp ratio\": After extensive research, there is no evidence that demo characters make any impact. The so-called 55 - 45, statistics are all levels of online active population over time."
+      ]
+    },
+    {
+      "id": "blue-post-30830227",
+      "date": "2026-11-10T02:05:13.558Z",
+      "dateLabel": "2026.11.10",
+      "author": "community Manager",
+      "title": "November 10: PvP Rules Server Camp Balance Adjustment",
+      "url": "https://us.forums.blizzard.com/en/wow/t/pvp-faction-balance-updates-november-10/2408781/1",
+      "paras": [
+        "Blizzard said that PvP rule servers require two camps to be evenly matched. The current ratio of the largest difference between regions is about 55 to 45, which is still not as expected, so the character creation mechanism has been adjusted: instead of a snapshot of the overall camp status of PvP rule servers in each region, the goal is to be as close as possible to 50 to 50. In the short term, it will be increasingly difficult for the larger party to create new characters, currently tribes in North American PvP rule servers, and alliances in European role playing PvP; as the population moves, the restricted party may switch. Blizzard acknowledges that it can be frustrating not to choose which faction to play at the moment, but believes it is necessary to ensure long-term health, especially in the early stages of the game when guilds and opposing relationships are just forming."
+      ]
+    },
+    {
+      "id": "blue-post-30829178",
+      "date": "2026-11-10T00:36:27.237Z",
+      "dateLabel": "2026.11.10",
+      "author": "Blizzard employees",
+      "title": "Warcraft Weekly: Forever Online, Darkest Night Talebound Demo and November Dessert Theme Store",
+      "url": "https://us.forums.blizzard.com/en/wow/t/prepare-for-forever-try-midnight%E2%80%99s-talebound-and-discover-sweet-treats-in-wow-weekly/2408677/1",
+      "paras": [
+        "Blizzard's World of Warcraft: Forever news roundup for the week: World of Warcraft: Forever launched globally on November 4th, with Darkest Nights Talebound's spooky adventure demo and November's dessert-themed store. The weekly also features practical guides, new stories, new rewards and new favorites. See the official full article for details."
+      ]
+    },
+    {
+      "id": "blue-post-30829081",
+      "date": "2026-11-10T00:26:57.074Z",
+      "dateLabel": "2026.11.10",
+      "author": "Blizzard employees",
+      "title": "Warcraft Weekly: Forever Online, Darkest Night Talebound Demo and November Dessert Theme Store",
+      "url": "https://us.forums.blizzard.com/en/wow/t/prepare-for-forever-try-midnight%E2%80%99s-talebound-and-discover-sweet-treats-in-wow-weekly/2408668/1",
+      "paras": [
+        "Blizzard's World of Warcraft: Forever news roundup for the week: World of Warcraft: Forever launched globally on November 4th, with Darkest Nights Talebound's spooky adventure demo and November's dessert-themed store. The weekly also features practical guides, new stories, new rewards and new favorites. See the official full article for details."
+      ]
+    },
     {
       "id": "blue-post-30808041",
       "date": "2026-11-08T19:47:33.475Z",
@@ -45,7 +122,7 @@
       "dateLabel": "2026.11.07",
       "author": "community Manager",
       "title": "November 6 Hot Fix: Class Correction, Leather Making and Dungeon Quests",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-6-2026/2403040/4",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-9-2026/2403040/4",
       "paras": [
         "Blizzard has released November 6 server hot fix, announcement released on November 7 Beijing time. The following is a summary of the key points, see the official original post for a complete list."
       ]
@@ -78,9 +155,9 @@
       "dateLabel": "2026.11.06",
       "author": "community Manager",
       "title": "November 5 Hot Fix: Refresh, Item, Battlefield, and Quest fixes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-6-2026/2403040/1",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-9-2026/2403040/1",
       "paras": [
-        "This article retains the November 5 hotfix summary. The official original post has been merged with the November 6 content, and the latest revision is also available in the November 6 hotfix entry; the date is still officially marked."
+        "This article retains the November 5 hotfix summary. The official original post has now merged November 6 and November 9, with more recent revisions appearing in the hotfix entry of the corresponding date; the date remains official."
       ]
     },
     {
@@ -2068,12 +2145,12 @@
       }
     },
     {
-      "date": "2026-11-10",
-      "dateLabel": "November 10, 2026",
-      "build": "Build 1.60.1.70862",
+      "date": "2026-11-11",
+      "dateLabel": "November 11, 2026",
+      "build": "Build 1.60.1.70888",
       "tag": "Beta",
       "isCurrent": false,
-      "summary": "0 classes and 0 races changed spells and talents; 56 new items.",
+      "summary": "0 classes and 0 races changed spells and talents; 14 new items.",
       "groups": [
         {
           "name": "Items",
@@ -2081,12 +2158,240 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "56 new"
+              "text": "14 new"
             }
           ],
           "entries": [
             {
+              "name": "Headchopper",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blackmetal Cape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Aristocratic Cuffs",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stoneshield Cloak",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Archivist Cape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mark of Fordring",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ornate Adamantium Breastplate",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shimmering Platinum Warhammer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Shroud of the Exile",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fordring's Seal",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Willey's Back Scratcher",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cinderedge Crescent",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Scarlet Forgemaster's Bindings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Predator's Shroud",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 0,
+        "talentChanges": 0,
+        "newItems": 14,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "dateLabel": "November 10, 2026",
+      "build": "Build 1.60.1.70888",
+      "tag": "Current",
+      "isCurrent": true,
+      "summary": "2 classes and 0 races changed spells and talents; 3 new items.",
+      "groups": [
+        {
+          "name": "Hunter",
+          "line": "Summon Hawk, Arcane Shot",
+          "counts": [
+            {
+              "cls": "is-buff",
+              "text": "2 buff"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Summon Hawk",
+              "status": "Buff",
+              "delta": "190 mana → 11% of base mana",
+              "desc": ""
+            },
+            {
+              "name": "Arcane Shot",
+              "status": "Buff",
+              "delta": "190 mana → 11% of base mana",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Warlock",
+          "line": "Wrack",
+          "counts": [
+            {
+              "cls": "is-change",
+              "text": "1 change"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Wrack",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "3 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Rusthowl's Worn Collar",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Calm Air Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Krellack's Carapace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 2,
+        "nerfs": 0,
+        "changes": 1,
+        "talentChanges": 0,
+        "newItems": 3,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "dateLabel": "November 10, 2026",
+      "build": "Build 1.60.1.70862",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "0 classes and 0 races changed spells and talents; 225 new items.",
+      "groups": [
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "225 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Destiny",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Axe of the Deep Woods",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Skullflame Shield",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Myrmidon's Signet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Digmaster 5000",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2098,13 +2403,151 @@
               "desc": ""
             },
             {
+              "name": "Flaming Incinerator",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Winter's Bite",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Mistwalker Boots",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
+              "name": "Soulcatcher Halo",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Murkwater Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Slimescale Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mindseye Circle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dragon's Call",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spiderfang Carapace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rubicund Armguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Dregmetal Spaulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stone of the Earth",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Circle of Flame",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Cyclopean Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Emperor's New Cape",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Emperor's Seal",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Searing Needle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Doomforged Straightedge",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Funeral Pyre Vestment",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Blisterbane Wrap",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Swiftwalker Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Hands of the Exalted Herald",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "High Priestess Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Backusarian Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Riphook",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2134,7 +2577,31 @@
               "desc": ""
             },
             {
+              "name": "Plate of the Shaman King",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Talisman of Evasion",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Phase Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Sunderseer Mantle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Armswake Cloak",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2158,7 +2625,31 @@
               "desc": ""
             },
             {
+              "name": "Cloudrunner Girdle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Demonic Runed Spaulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Slaghide Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Magus Ring",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Swiftdart Battleboots",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2170,7 +2661,157 @@
               "desc": ""
             },
             {
+              "name": "Robes of the Exalted",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Demonshear",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Gift of the Elven Magi",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Fire Striders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Slavedriver's Cane",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Soulstealer Mantle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Songbird Blouse",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Willey's Portable Howitzer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Master Cannoneer Boots",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Rainbow Girdle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Foresight Girdle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Postmaster's Tunic",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Postmaster's Trousers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Postmaster's Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Postmaster's Treads",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "The Postmaster's Seal",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Malown's Slam",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Vambraces of the Sadist",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Timmy's Galoshes",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tearfall Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Darkbind Fingers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flamescarred Girdle",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Darkspinner Claws",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Banshee Finger",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Chillhide Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tombstone Breastplate",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2188,235 +2829,19 @@
               "desc": ""
             },
             {
+              "name": "Heart of the Fiend",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Windreaver Greaves",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
-              "name": "Death's Clutch",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deadwalker Mantle",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deathbone Girdle",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deathbone Sabatons",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deathbone Gauntlets",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deathbone Legguards",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Deathbone Chestplate",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cadaverous Belt",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cadaverous Armor",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cadaverous Leggings",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cadaverous Gloves",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Cadaverous Walkers",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Gordok's Handguards",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Gordok's Gauntlets",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Gordok's Gloves",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Gordok's Handwraps",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Barrier Shield",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Ghoul Skin Leggings",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Dimly Opalescent Ring",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Bone Golem Shoulders",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Shivery Handwraps",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Leggings of Frenzied Magic",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Totem of Sustaining",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Ouroboros Ring",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Eagle's Head Signet",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Malefactor's End",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Engraved Band",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Luxurious Smoking Jacket",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Impish Chain Hood",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Burnished Pridescales",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Horns of Varrox",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Husk of the Husk",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Everstaring Abomination Eye",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Ranger Lord's Longsword",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Mossflayer Warlord's Girdle",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Gruff's Tough Tongue",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Clutchmother's Guards",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Den Champion's Binding",
+              "name": "Gravestone War Axe",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2429,7 +2854,7 @@
         "nerfs": 0,
         "changes": 0,
         "talentChanges": 0,
-        "newItems": 56,
+        "newItems": 225,
         "changedItems": 0
       }
     },
@@ -3457,9 +3882,9 @@
       "date": "2026-11-07",
       "dateLabel": "November 7, 2026",
       "build": "Build 1.60.1.70862",
-      "tag": "Current",
-      "isCurrent": true,
-      "summary": "2 classes and 0 races changed spells and talents; 543 new items.",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "2 classes and 0 races changed spells and talents; 712 new items.",
       "groups": [
         {
           "name": "Priest",
@@ -3513,10 +3938,22 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "543 new"
+              "text": "712 new"
             }
           ],
           "entries": [
+            {
+              "name": "Destiny",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Axe of the Deep Woods",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
             {
               "name": "Skullflame Shield",
               "status": "",
@@ -3555,6 +3992,12 @@
             },
             {
               "name": "Shadowblade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Myrmidon's Signet",
               "status": "",
               "delta": "",
               "desc": ""
@@ -3638,6 +4081,12 @@
               "desc": ""
             },
             {
+              "name": "Digmaster 5000",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Gahz'rilla Fang",
               "status": "",
               "delta": "",
@@ -3674,6 +4123,12 @@
               "desc": ""
             },
             {
+              "name": "Flaming Incinerator",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Bloodletter Scalpel",
               "status": "",
               "delta": "",
@@ -3687,6 +4142,12 @@
             },
             {
               "name": "Freezing Shard",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Winter's Bite",
               "status": "",
               "delta": "",
               "desc": ""
@@ -3710,7 +4171,31 @@
               "desc": ""
             },
             {
+              "name": "Soulcatcher Halo",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Murkwater Gauntlets",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Slimescale Bracers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Silvershell Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Mindseye Circle",
               "status": "",
               "delta": "",
               "desc": ""
@@ -3860,6 +4345,12 @@
               "desc": ""
             },
             {
+              "name": "Dragon's Call",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Spritecaster Cape",
               "status": "",
               "delta": "",
@@ -3920,79 +4411,13 @@
               "desc": ""
             },
             {
+              "name": "Spiderfang Carapace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Silkweb Gloves",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Hookfang Shanker",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Ban'thok Sash",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Naglering",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Shadefiend Boots",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Graverot Cape",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Carapace of Anub'shiah",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Splinthide Shoulders",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Girdle of Beastial Fury",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Grizzle's Skinner",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Stonewall Girdle",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Savage Gladiator Chain",
-              "status": "",
-              "delta": "",
-              "desc": ""
-            },
-            {
-              "name": "Savage Gladiator Leggings",
               "status": "",
               "delta": "",
               "desc": ""
@@ -4005,7 +4430,7 @@
         "nerfs": 1,
         "changes": 0,
         "talentChanges": 0,
-        "newItems": 543,
+        "newItems": 712,
         "changedItems": 0
       }
     },
