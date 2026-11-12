@@ -7,7 +7,7 @@
       },
       {
         "cls": "is-nerf",
-        "text": "0 nerfs"
+        "text": "2 nerfs"
       },
       {
         "cls": "is-change",
@@ -15,11 +15,11 @@
       },
       {
         "cls": "is-items",
-        "text": "0 talent tree changes"
+        "text": "2 talent tree changes"
       },
       {
         "cls": "is-items",
-        "text": "17 new items"
+        "text": "54 new items"
       },
       {
         "cls": "is-items",
@@ -29,14 +29,55 @@
   },
   "bluePosts": [
     {
+      "id": "blue-post-30876030",
+      "date": "2026-11-12T19:10:52.697Z",
+      "dateLabel": "2026.11.12",
+      "author": "community Manager",
+      "title": "World of Warcraft: Eternal Hot Fix-November 11, 2026",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/9",
+      "paras": [
+        "Please note:",
+        "Due to unexpected deployment delays, the following changes have been launched in all regions today at 10:45 a.m. PST.",
+        "Professional Shaman",
+        "- Weapon enchantments and weapon totems can now be cast simultaneously.",
+        "- enhance",
+        "- Storm Strike damage reduced to 100% of weapon damage (down from 150%), cooldown increased to 8 seconds (down from 6 seconds).",
+        "-\nMind Agility: Intellect to Attack conversion rate reduced to 33/66/100%(down from 50/100/150%).",
+        "- Whirlpool Weapon now reduces cast time and mana cost by 20% each time it is cast at all levels (down from 4/8/12/16/20%), activation chance now increases with level, and activates 6/7/8/9/10 times per minute (down from 20\nNumber of times per minute, regardless of grade).",
+        "- Updated the Whirlpool tooltip to show the Shaman's % chance of activating the skill based on his master's weapon speed. For example, if the Shaman invests 5 points in Whirlpool and uses a weapon with a speed of 3.6, it shows a 60% chance of activating per swing, whereas if the Shaman uses a weapon with a speed of 3.6, it shows a 60% chance of activating per swing.\n2.0 Speed weapon, has a 33% chance to activate when swung."
+      ]
+    },
+    {
+      "id": "blue-post-30863849",
+      "date": "2026-11-12T00:48:47.076Z",
+      "dateLabel": "2026.11.12",
+      "author": "community Manager",
+      "title": "November 11 Hotfix: Class fix, Riverwood monster weakening and Tailor backpack tweaks",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/8",
+      "paras": [
+        "Blizzard has released a server hotfix for November 11 (released on November 12 AM GMT). The following are sorted by original posts."
+      ]
+    },
+    {
+      "id": "blue-post-30863846",
+      "date": "2026-11-12T00:48:41.201Z",
+      "dateLabel": "2026.11.12",
+      "author": "community Manager",
+      "title": "Blue Post Supplement: Auction House Changes Postponed to November 17 After Maintenance",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/7",
+      "paras": [
+        "Blizzard notes: auction house changes in the november 10th hotfix notes have been temporarily removed. They will go live with weekly maintenance on november 17th, when the hotfix notes will be written back."
+      ]
+    },
+    {
       "id": "blue-post-30849309",
       "date": "2026-11-11T03:27:33.720Z",
       "dateLabel": "2026.11.11",
       "author": "community Manager",
       "title": "November 10 Hot Fix: Class Adjustments, High Level Quests plus Gold, and Class Modifications",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-10-2026/2403040/6",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/6",
       "paras": [
-        "Blizzard has released a server hotfix for November 10 (released at noon on November 11, Beijing time), including previously announced class changes: Hunter and Warlock pets, Pain Warlock, and Enhanced Shaman. The following are sorted according to the original posts, and the specific values are subject to the official original posts."
+        "Blizzard has released a November 10 server hotfix (released at noon on November 11, Beijing time), including previously announced class changes: Hunter and Warlock pets, Pain Warlock, and Enhanced Shaman. The auction house changes listed in the original post have been removed and are now available for maintenance on November 17. The following are sorted by original post, and the specific values are subject to the official original post."
       ]
     },
     {
@@ -78,7 +119,7 @@
       "dateLabel": "2026.11.10",
       "author": "community Manager",
       "title": "November 9 Hot Fix: Class fixes, Dungeon tweaks, and Mission fixes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-10-2026/2403040/5",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/5",
       "paras": [
         "Blizzard has released the server hotfix instructions for November 9 (released at noon on November 10, Beijing time). The following are sorted by original posts, including Wild Charge (Cheetah), Assault, Nature Instinct, Dexterity Stopwatch and Immortal Essence changes. This site has seen corresponding updates in the server hotfix data."
       ]
@@ -155,7 +196,7 @@
       "dateLabel": "2026.11.07",
       "author": "community Manager",
       "title": "November 6 Hot Fix: Class Correction, Leather Making and Dungeon Quests",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-10-2026/2403040/4",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/4",
       "paras": [
         "Blizzard has released November 6 server hot fix, announcement released on November 7 Beijing time. The following is a summary of the key points, see the official original post for a complete list."
       ]
@@ -188,9 +229,9 @@
       "dateLabel": "2026.11.06",
       "author": "community Manager",
       "title": "November 5 Hot Fix: Refresh, Item, Battlefield, and Quest fixes",
-      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-10-2026/2403040/1",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040/1",
       "paras": [
-        "This article retains the November 5 hotfix summary. The official original post has now merged November 6, 9 and 10, with newer corrections also appearing in the hotfix entry of the corresponding date; the date remains official."
+        "This article retains the November 5 hot fix summary. The official original post has now merged November 6, 9, 10, and 11, with more recent corrections also appearing in the hot fix entry of the corresponding date; the date remains official."
       ]
     },
     {
@@ -2178,12 +2219,12 @@
       }
     },
     {
-      "date": "2026-11-12",
-      "dateLabel": "November 12, 2026",
+      "date": "2026-11-13",
+      "dateLabel": "November 13, 2026",
       "build": "Build 1.60.1.70888",
       "tag": "Beta",
       "isCurrent": false,
-      "summary": "0 classes and 0 races changed spells and talents; 14 new items.",
+      "summary": "0 classes and 0 races changed spells and talents; 6 new items.",
       "groups": [
         {
           "name": "Items",
@@ -2191,10 +2232,100 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "14 new"
+              "text": "6 new"
             }
           ],
           "entries": [
+            {
+              "name": "Conqueror's Medallion",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Brightspark Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Royal Seal of Eldre'Thalas",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Conqueror's Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Unleashed Swarm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Silithid Queen's Husk",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "buffs": 0,
+        "nerfs": 0,
+        "changes": 0,
+        "talentChanges": 0,
+        "newItems": 6,
+        "changedItems": 0
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "dateLabel": "November 12, 2026",
+      "build": "Build 1.60.1.70888",
+      "tag": "Beta",
+      "isCurrent": false,
+      "summary": "0 classes and 0 races changed spells and talents; 45 new items.",
+      "groups": [
+        {
+          "name": "Items",
+          "line": "New and changed items",
+          "counts": [
+            {
+              "cls": "is-items",
+              "text": "45 new"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Brain Hacker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Expert Goldminer's Helmet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spire of the Stoneshaper",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Battlechaser's Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
             {
               "name": "Breastplate of the Chromatic Flight",
               "status": "",
@@ -2208,7 +2339,19 @@
               "desc": ""
             },
             {
+              "name": "Warmaster Legguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Legplates of the Chromatic Defier",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tristam Legguards",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2221,6 +2364,24 @@
             },
             {
               "name": "Demonskin Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Alanna's Embrace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Book of the Dead",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Crest of Retribution",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2250,7 +2411,73 @@
               "desc": ""
             },
             {
+              "name": "Barovian Family Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ebon Hilt of Marduk",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flame Walkers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Marksman Bands",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Royal Seal of Eldre'Thalas",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Denwatcher's Shoulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Coldstone Slippers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tattered Leather Hood",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Innervating Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Plaguehound Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Morlune's Bracer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stratholme Militia Shoulderguard",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2262,7 +2489,55 @@
               "desc": ""
             },
             {
+              "name": "Specter's Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Malicious Axe",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Oblivion's Touch",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Band of the Damned",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sad-Sack Sandals",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Staff of Sorrow",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Dragonblood Greatsword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Scrawled Note",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Diamond Studded Belt",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2278,6 +2553,24 @@
               "status": "",
               "delta": "",
               "desc": ""
+            },
+            {
+              "name": "Dinosaur Hide Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Time-Forgotten Bindings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pylon Poker",
+              "status": "",
+              "delta": "",
+              "desc": ""
             }
           ]
         }
@@ -2287,7 +2580,7 @@
         "nerfs": 0,
         "changes": 0,
         "talentChanges": 0,
-        "newItems": 14,
+        "newItems": 45,
         "changedItems": 0
       }
     },
@@ -2807,7 +3100,7 @@
       "build": "Build 1.60.1.70888",
       "tag": "Current",
       "isCurrent": true,
-      "summary": "3 classes and 0 races changed spells and talents; 17 new items.",
+      "summary": "4 classes and 0 races changed spells and talents; 54 new items.",
       "groups": [
         {
           "name": "Hunter",
@@ -2852,6 +3145,30 @@
           ]
         },
         {
+          "name": "Shaman",
+          "line": "Stormstrike, Mental Dexterity",
+          "counts": [
+            {
+              "cls": "is-nerf",
+              "text": "2 nerf"
+            }
+          ],
+          "entries": [
+            {
+              "name": "Stormstrike",
+              "status": "Nerf",
+              "delta": "cooldown time 6 seconds → Cooldown time 8 seconds",
+              "desc": ""
+            },
+            {
+              "name": "Mental Dexterity",
+              "status": "Nerf",
+              "delta": "",
+              "desc": ""
+            }
+          ]
+        },
+        {
           "name": "Warlock",
           "line": "Wrack",
           "counts": [
@@ -2875,10 +3192,40 @@
           "counts": [
             {
               "cls": "is-items",
-              "text": "17 new"
+              "text": "54 new"
             }
           ],
           "entries": [
+            {
+              "name": "Brain Hacker",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Expert Goldminer's Helmet",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Conqueror's Medallion",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Spire of the Stoneshaper",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Battlechaser's Greaves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
             {
               "name": "Breastplate of the Chromatic Flight",
               "status": "",
@@ -2892,7 +3239,19 @@
               "desc": ""
             },
             {
+              "name": "Warmaster Legguards",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Legplates of the Chromatic Defier",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tristam Legguards",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2905,6 +3264,24 @@
             },
             {
               "name": "Demonskin Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Alanna's Embrace",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Book of the Dead",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Crest of Retribution",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2934,13 +3311,133 @@
               "desc": ""
             },
             {
+              "name": "Barovian Family Sword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Ebon Hilt of Marduk",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Flame Walkers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Marksman Bands",
               "status": "",
               "delta": "",
               "desc": ""
             },
             {
+              "name": "Brightspark Gloves",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Royal Seal of Eldre'Thalas",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Royal Seal of Eldre'Thalas",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Denwatcher's Shoulders",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Coldstone Slippers",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Tattered Leather Hood",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Innervating Band",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Plaguehound Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Morlune's Bracer",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Stratholme Militia Shoulderguard",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
               "name": "Sacred Cloth Leggings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Specter's Blade",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Malicious Axe",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Oblivion's Touch",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Conqueror's Pendant",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Band of the Damned",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Sad-Sack Sandals",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Staff of Sorrow",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2953,6 +3450,30 @@
             },
             {
               "name": "Dragonblood Greatsword",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Scrawled Note",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Diamond Studded Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Unleashed Swarm",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Silithid Queen's Husk",
               "status": "",
               "delta": "",
               "desc": ""
@@ -2980,16 +3501,34 @@
               "status": "",
               "delta": "",
               "desc": ""
+            },
+            {
+              "name": "Dinosaur Hide Belt",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Time-Forgotten Bindings",
+              "status": "",
+              "delta": "",
+              "desc": ""
+            },
+            {
+              "name": "Pylon Poker",
+              "status": "",
+              "delta": "",
+              "desc": ""
             }
           ]
         }
       ],
       "counts": {
         "buffs": 3,
-        "nerfs": 0,
+        "nerfs": 2,
         "changes": 1,
-        "talentChanges": 0,
-        "newItems": 17,
+        "talentChanges": 2,
+        "newItems": 54,
         "changedItems": 0
       }
     },
